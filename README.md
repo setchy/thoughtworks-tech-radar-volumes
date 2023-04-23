@@ -6,3 +6,5 @@ A collection of datasets for the [latest Thoughtworks Technology Radar](https://
 You can use these datasets with either
 - self-hosted [thoughtworks/build-your-own-radar](https://github.com/thoughtworks/build-your-own-radar#using-csv-data)
 - hosted https://radar.thoughtworks.com/
+
+Remember, you will need to use the RAW file URL for these to work directly from GitHub
