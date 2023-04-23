@@ -1,5 +1,5 @@
 name,ring,quadrant,isNew,hasMovedIn,hasMovedOut,description
-Four key metrics,Adopt,Techniques,FALSE,FALSE,FALSE,
+Four key metrics,Adopt,Techniques,FALSE,FALSE,FALSE,<p>To measure software delivery performance, more and more organizations are defaulting to the <strong>four key metrics</strong> as defined by the <a href="https://www.devops-research.com/" target="_blank">DORA research</a> program: change lead time, deployment frequency, mean time to restore (MTTR) and change fail percentage. This research and its statistical analysis have shown a clear link between high-delivery performance and these metrics; they provide a great leading indicator for how a delivery organization as a whole is doing.</p>
 Single team remote wall,Adopt,Techniques,FALSE,TRUE,FALSE,
 Data mesh,Trial,Techniques,FALSE,FALSE,FALSE,
 Definition of production readiness,Trial,Techniques,TRUE,FALSE,FALSE,
