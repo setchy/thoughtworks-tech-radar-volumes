@@ -2,7 +2,7 @@ name,ring,quadrant,isNew,description
 Continuous deployment,Assess,Techniques,TRUE,
 Incremental data warehousing,Assess,Techniques,TRUE,
 Evolutionary architecture,Assess,Techniques,TRUE,
-Evoutionary database,Trial,Techniques,TRUE,
+Evolutionary database,Trial,Techniques,TRUE,
 Web as platform,Trial,Techniques,TRUE,
 Emergent design,Trial,Techniques,TRUE,
 Lean software development,Trial,Techniques,TRUE,
