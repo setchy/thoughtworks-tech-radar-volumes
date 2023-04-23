@@ -1,5 +1,9 @@
 name,ring,quadrant,isNew,hasMovedIn,hasMovedOut,description
-Four key metrics,Adopt,Techniques,FALSE,FALSE,FALSE,
+Four key metrics,Adopt,Techniques,FALSE,FALSE,FALSE,"<p>To measure software delivery performance, more and more organizations are turning to the <strong>four key metrics</strong> as defined by the <a href=""https://www.devops-research.com/"" target=""_blank"">DORA research</a> program: change lead time, deployment frequency, mean time to restore (MTTR) and change fail percentage. This research and its statistical analysis have shown a clear link between high delivery performance and these metrics; they provide a great leading indicator for how a team, or even a whole delivery organization, is doing.</p>
+
+<p>We're still big proponents of these metrics, but we've also learned some lessons since we first started monitoring them. And we're increasingly seeing misguided measurement approaches with tools that help teams measure these metrics based purely on their continuous delivery (CD) pipelines. In particular when it comes to the stability metrics (MTTR and change fail percentage), CD pipeline data alone doesn't provide enough information to determine what a deployment failure with real user impact is. Stability metrics only make sense if they include data about real incidents that degrade service for the users.</p>
+
+<p>And as with all metrics, we recommend to always keep in mind the ultimate intention behind a measurement and use them to reflect and learn. For example, before spending weeks to build up sophisticated dashboard tooling, consider just regularly taking the <a href=""https://www.devops-research.com/quickcheck.html"" target=""_blank"">DORA quick check</a> in team retrospectives. This gives the team the opportunity to reflect on which <a href=""https://www.devops-research.com/research.html#capabilities"" target=""_blank"">capabilities</a> they could work on to improve their metrics, which can be much more effective than overdetailed out-of-the-box tooling.</p>"
 Platform engineering product teams,Adopt,Techniques,FALSE,FALSE,FALSE,
 Zero trust architecture ,Adopt,Techniques,FALSE,TRUE,FALSE,
 CBOR/JSON bilingual protocols,Trial,Techniques,TRUE,FALSE,FALSE,
@@ -7,7 +11,7 @@ Data mesh,Trial,Techniques,FALSE,FALSE,FALSE,
 Living documentation in legacy systems,Trial,Techniques,TRUE,FALSE,FALSE,
 Micro frontends for mobile,Trial,Techniques,FALSE,FALSE,FALSE,
 Remote mob programming,Trial,Techniques,FALSE,TRUE,FALSE,
-Single team remote wall,Trial,Techniques,TRUE,FALSE,FALSE,
+Single team remote wall,Trial,Techniques,TRUE,FALSE,FALSE,"<p>With the increased use of remote distributed teams, one of the things we hear people have missed having is the physical team wall. This is a single place where all the various story cards, tasks, status and progress can be displayed, acting as an information radiator and hub for the team. Often the wall was an integration point with the actual data being stored in different systems. As teams have become remote, they've had to revert to looking into the individual source systems and getting an ""at a glance"" view of a project has become very difficult. A <strong>single team remote wall</strong> is a simple technique to reintroduce the team wall virtually. While there might be some overhead in keeping this up-to-date, we feel the benefits to the team are worth it. For some teams, updating the physical wall formed part of the daily ""ceremonies"" the team did together, and the same can be done with a remote wall.</p>"
 Team cognitive load ,Trial,Techniques,FALSE,FALSE,FALSE,
 AR spatial anchors,Assess,Techniques,TRUE,FALSE,FALSE,
 Hotwire ,Assess,Techniques,FALSE,FALSE,FALSE,
