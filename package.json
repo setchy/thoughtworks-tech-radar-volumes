@@ -9,6 +9,7 @@
         "generate:data": "ts-node src/index.ts",
         "generate:csvs": "ts-node src/csv.ts",
         "sort:alphabetic": "ts-node src/sortAlpha.ts",
+        "count": "ts-node src/countRows.ts",
         "lint": "run-s -c -l eslint prettier",
         "lint-fix": "run-s -c -l eslint:fix prettier-fix",
         "eslint": "eslint --ext .ts src",
