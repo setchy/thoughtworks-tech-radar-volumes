@@ -5,6 +5,16 @@
     "main": "index.js",
     "scripts": {
         "start": "ts-node src/index.ts",
+        "generate:links": "ts-node src/links.ts",
+        "generate:data": "ts-node src/index.ts",
+        "generate:csvs": "ts-node src/csv.ts",
+        "sort:alphabetic": "ts-node src/sortAlpha.ts",
+        "lint": "run-s -c -l eslint prettier",
+        "lint-fix": "run-s -c -l eslint:fix prettier-fix",
+        "eslint": "eslint --ext .ts src",
+        "eslint:fix": "eslint --fix --ext .ts src",
+        "prettier": "prettier --check .",
+        "prettier-fix": "prettier --write .",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [
@@ -17,14 +27,19 @@
         "@types/jsdom": "21.1.1",
         "@types/lodash": "4.14.194",
         "@types/node": "18.16.0",
+        "@typescript-eslint/eslint-plugin": "5.56.0",
+        "@typescript-eslint/parser": "5.56.0",
+        "eslint": "8.36.0",
+        "eslint-config-prettier": "8.8.0",
         "jsdom": "21.1.1",
         "lodash": "4.17.21",
+        "npm-run-all": "4.1.5",
+        "prettier": "2.8.7",
         "ts-node": "10.9.1",
         "typescript": "5.0.4"
     },
     "engines": {
         "node": "18"
     },
-    "dependencies": {
-    }
+    "dependencies": {}
 }

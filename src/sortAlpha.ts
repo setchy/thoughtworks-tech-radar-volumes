@@ -2,10 +2,8 @@ import { MasterData } from './types';
 import fs from 'fs';
 import _ from 'lodash';
 import { FILES } from './constants';
-import { parse } from 'url';
-import { getQuadrantNameFromPath } from './helpers';
 
-function sortData() {
+function sortDataAlphabetically() {
     const masterData: MasterData = JSON.parse(
         fs.readFileSync(FILES.DATA.MASTER).toString(),
     );
@@ -19,17 +17,4 @@ function sortData() {
     );
 }
 
-// sortData();
-
-function testThis() {
-    const { host, path } = parse(
-        'https://www.thoughtworks.com/radar/platforms/net-core',
-    );
-
-    console.log(host);
-    console.log(path);
-
-    console.log(getQuadrantNameFromPath(path));
-}
-
-testThis();
+sortDataAlphabetically();
