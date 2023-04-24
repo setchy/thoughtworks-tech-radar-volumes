@@ -34,9 +34,10 @@ function generateVolumeCSVs() {
             ].join(','),
         );
 
-        console.log('Creating CSV file', `temp/Volume ${volume}.csv`);
+        const filename = `Thoughtworks Technology Radar Volume ${volume}`;
+        console.log('Creating CSV file', `volumes/${filename}.csv`);
         fs.writeFileSync(
-            `${FILES.TEMP}Volume ${volume}.csv`,
+            `volumes/${filename}.csv`,
             CSV_HEADERS.join(',') + '\n' + csvData.join('\n'),
         );
     });

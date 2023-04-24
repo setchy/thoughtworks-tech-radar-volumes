@@ -9,7 +9,7 @@ import {
     getBlipNameFromDOM,
     getDescriptionHTMLFromBlipDOM,
     getPublishedDateFromBlipDOM,
-    getQuadrantNameFromBlipDOM,
+    getQuadrantNameFromPath,
     getRingNameFromBlipDOM,
 } from './helpers';
 
@@ -48,8 +48,7 @@ export async function extractBlipTimeline(
                         const publishedDate =
                             getPublishedDateFromBlipDOM(blipUpdateDOM);
                         const volume = getVolumeNameFromDate(publishedDate);
-                        const quadrant =
-                            getQuadrantNameFromBlipDOM(blipUpdateDOM);
+                        const quadrant = getQuadrantNameFromPath(path);
                         const ring = getRingNameFromBlipDOM(blipUpdateDOM);
                         const descriptionHtml =
                             getDescriptionHTMLFromBlipDOM(blipUpdateDOM);

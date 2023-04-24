@@ -23,17 +23,13 @@ export function getRingNameFromBlipDOM(dom: JSDOM): string {
     );
 }
 
-export function getQuadrantNameFromBlipDOM(dom: JSDOM): string {
-    const cssClass = 'cmp-blip-timeline__item--ring';
+// Format is: /radar/quadrant-name/blip-name
+export function getQuadrantNameFromPath(path: string | null): string {
+    if (path) {
+        return path.split('/')[2].toLowerCase();
+    }
 
-    const quadrantDiv = dom.window.document.querySelector(`div.${cssClass}`);
-    return (
-        quadrantDiv?.classList
-            .toString()
-            .replace(cssClass, '')
-            .trim()
-            .toLowerCase() || ''
-    );
+    return 'unknown';
 }
 
 export function getPublishedDateFromBlipDOM(dom: JSDOM): string {
