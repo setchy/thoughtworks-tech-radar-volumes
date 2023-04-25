@@ -9,7 +9,10 @@ export const FILES = {
         LINKS: 'data/links.json',
         MASTER: 'data/master.json',
     },
-    TEMP: 'temp/',
+    VOLUMES: {
+        FOLDER: 'volumes',
+        FILE_PREFIX: 'Thoughtworks Technology Radar Volume'
+    }
 };
 
 export const CSV_HEADERS = [

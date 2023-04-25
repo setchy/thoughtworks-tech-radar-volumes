@@ -1,8 +1,8 @@
 import { MasterData } from './types';
 import fs from 'fs';
 import _ from 'lodash';
-import { FILES, QUADRANT_SORT_ORDER, RING_SORT_ORDER } from './constants';
-import { getShortPath } from './utils';
+import { FILES, QUADRANT_SORT_ORDER, RING_SORT_ORDER } from './common/constants';
+import { getShortPath } from './common/utils';
 import { extractRadarLinks } from './links';
 import { extractBlipTimeline } from './timeline';
 

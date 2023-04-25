@@ -1,7 +1,7 @@
-import { MasterData } from './types';
+import { MasterData } from '../types';
 import fs from 'fs';
 import _ from 'lodash';
-import { FILES } from './constants';
+import { FILES } from '../common/constants';
 
 function sortDataAlphabetically() {
     const masterData: MasterData = JSON.parse(

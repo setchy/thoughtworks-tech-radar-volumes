@@ -1,9 +1,9 @@
 import https from 'https';
 import { JSDOM } from 'jsdom';
 import { parse } from 'url';
-import { BlipTimelineEntry, MasterData } from './types';
+import { BlipTimelineEntry, MasterData } from '../types';
 import _ from 'lodash';
-import { RING_SORT_ORDER } from './constants';
+import { RING_SORT_ORDER } from '../common/constants';
 import { getVolumeNameFromDate } from './utils';
 import {
     getBlipNameFromDOM,
@@ -11,7 +11,7 @@ import {
     getPublishedDateFromBlipDOM,
     getQuadrantNameFromPath,
     getRingNameFromBlipDOM,
-} from './helpers';
+} from './utils';
 
 export async function extractBlipTimeline(
     blipURL: string,

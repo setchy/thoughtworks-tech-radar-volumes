@@ -1,4 +1,5 @@
 import { JSDOM } from 'jsdom';
+import { VOLUME_PUBLICATION_DATES } from '../common/constants';
 
 export function getBlipNameFromDOM(dom: JSDOM): string {
     const cssClass = 'hero-banner__overlay__container__title';
@@ -49,5 +50,13 @@ export function getDescriptionHTMLFromBlipDOM(dom: JSDOM): string {
         dom.window.document
             .querySelector(`div.${cssClass}`)
             ?.innerHTML.trim() || ''
+    );
+}
+
+export function getVolumeNameFromDate(publishedDate: string): number {
+    return (
+        VOLUME_PUBLICATION_DATES.findIndex(
+            (volumePublicationDate) => volumePublicationDate === publishedDate,
+        ) + 1
     );
 }

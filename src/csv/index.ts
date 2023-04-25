@@ -5,7 +5,7 @@ import {
     FILES,
     QUADRANT_SORT_ORDER,
     RING_SORT_ORDER,
-} from './constants';
+} from '../common/constants';
 import { escapeDescriptionHTML } from './utils';
 
 function generateVolumeCSVs() {
@@ -34,10 +34,10 @@ function generateVolumeCSVs() {
             ].join(','),
         );
 
-        const filename = `Thoughtworks Technology Radar Volume ${volume}`;
-        console.log('Creating CSV file', `volumes/${filename}.csv`);
+        const filename = `${FILES.VOLUMES.FOLDER}/${FILES.VOLUMES.FILE_PREFIX} ${volume}.csv`;
+        console.log('Creating CSV file', filename);
         fs.writeFileSync(
-            `volumes/${filename}.csv`,
+            filename,
             CSV_HEADERS.join(',') + '\n' + csvData.join('\n'),
         );
     });

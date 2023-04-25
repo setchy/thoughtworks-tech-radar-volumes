@@ -1,7 +1,7 @@
 import https from 'https';
 import { parse } from 'url';
 import fs from 'fs';
-import { FILES, URLS } from './constants';
+import { FILES, URLS } from '../common/constants';
 import { constructFullURL } from './utils';
 
 export async function extractRadarLinks(): Promise<string[]> {
