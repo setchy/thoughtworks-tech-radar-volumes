@@ -3,7 +3,7 @@ A collection of datasets for the [latest Thoughtworks Technology Radar](https://
 
 ### How to use with build-your-own-radar
 
-You can use these datasets with either
+You can use any of the `volumes/*` datasets with either
 - self-hosted [thoughtworks/build-your-own-radar](https://github.com/thoughtworks/build-your-own-radar#using-csv-data)
 - hosted https://radar.thoughtworks.com/
 
