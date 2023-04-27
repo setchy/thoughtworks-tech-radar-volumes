@@ -1,5 +1,8 @@
 import { JSDOM } from 'jsdom';
-import { VOLUME_PUBLICATION_DATES } from '../common/constants';
+import {
+    NOT_FOUND_VOLUME_NUMBER,
+    VOLUME_PUBLICATION_DATES,
+} from '../common/constants';
 
 export function getBlipNameFromDOM(dom: JSDOM): string {
     const cssClass = 'hero-banner__overlay__container__title';
@@ -54,9 +57,16 @@ export function getDescriptionHTMLFromBlipDOM(dom: JSDOM): string {
 }
 
 export function getVolumeNameFromDate(publishedDate: string): number {
-    return (
-        VOLUME_PUBLICATION_DATES.findIndex(
-            (volumePublicationDate) => volumePublicationDate === publishedDate,
-        ) + 1
+    const index = VOLUME_PUBLICATION_DATES.findIndex(
+        (volumePublicationDate) => volumePublicationDate === publishedDate,
     );
+
+    if (index < 0) {
+        console.error(
+            'ERROR: Publication volume not found in "VOLUME_PUBLICATION_DATES".  Please update the array with the new date->volume mappings',
+        );
+        return NOT_FOUND_VOLUME_NUMBER;
+    }
+
+    return index + 1;
 }

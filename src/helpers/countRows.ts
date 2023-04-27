@@ -1,9 +1,9 @@
 import fs from 'fs';
 import _ from 'lodash';
-import { FILES } from '../common/constants';
+import { CSV_HEADERS, FILES } from '../common/constants';
 
 function countRows() {
-    for (let i = 1; i <= 27; i++) {
+    for (let i = 1; i <= CSV_HEADERS.length; i++) {
         const data = fs.readFileSync(
             `${FILES.VOLUMES.FOLDER}/${FILES.VOLUMES.FILE_PREFIX} ${i}.csv`,
         );

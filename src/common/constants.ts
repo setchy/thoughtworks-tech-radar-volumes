@@ -11,8 +11,8 @@ export const FILES = {
     },
     VOLUMES: {
         FOLDER: 'volumes',
-        FILE_PREFIX: 'Thoughtworks Technology Radar Volume'
-    }
+        FILE_PREFIX: 'Thoughtworks Technology Radar Volume',
+    },
 };
 
 export const CSV_HEADERS = [
@@ -53,7 +53,10 @@ export const VOLUME_PUBLICATION_DATES = [
     'Oct 2021',
     'Mar 2022',
     'Oct 2022',
+    'Apr 2023',
 ];
+
+export const NOT_FOUND_VOLUME_NUMBER = 100;
 
 export const QUADRANT_SORT_ORDER = [
     'techniques',
