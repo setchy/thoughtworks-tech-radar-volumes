@@ -110,8 +110,6 @@ function calculateBlipMovements(blipMasterData: MasterData) {
                 blipMasterData.blipEntries[i].hasMovedOut = true;
             } else if (currentRingIndex < previousRingIndex) {
                 blipMasterData.blipEntries[i].hasMovedIn = true;
-            } else if (currentVolumeIndex !== previousVolumeIndex + 1) {
-                blipMasterData.blipEntries[i].isNew = true;
             }
         }
     }

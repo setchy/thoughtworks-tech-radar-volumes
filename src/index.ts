@@ -1,7 +1,11 @@
 import { MasterData } from './types';
 import fs from 'fs';
 import _ from 'lodash';
-import { FILES, QUADRANT_SORT_ORDER, RING_SORT_ORDER } from './common/constants';
+import {
+    FILES,
+    QUADRANT_SORT_ORDER,
+    RING_SORT_ORDER,
+} from './common/constants';
 import { getShortPath } from './common/utils';
 import { extractRadarLinks } from './links';
 import { extractBlipTimeline } from './timeline';
@@ -17,7 +21,7 @@ async function generateMasterData() {
 
     for (const [index, link] of radarLinks.entries()) {
         console.log(
-            `${index} of ${
+            `${index + 1} of ${
                 radarLinks.length
             }: Extracting blip timeline from ${getShortPath(link)}`,
         );

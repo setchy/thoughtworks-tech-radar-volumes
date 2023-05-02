@@ -4241,7 +4241,7 @@
         "volume": 6,
         "publishedDate": "Mar 2012",
         "descriptionHtml": "We have long been less than enthusiastic about RIA technologies such as Flash and Silverlight because of vendor lock in potential, anemic support for agile engineering practices, and potential for overuse. It seems even the large vendors are starting to agree with us. Now that modern versions of HTML handle most of the common cases that formerly required RIA, we feel that new projects must have enormous justification and careful strategic thought before using any of these technologies.",
-        "isNew": true,
+        "isNew": false,
         "hasMovedIn": false,
         "hasMovedOut": false
     },
@@ -5132,7 +5132,7 @@
         "volume": 7,
         "publishedDate": "Oct 2012",
         "descriptionHtml": "For problems that fit the document databases model, MongoDB provides easy programmability, a query interface, high availability with automated failover, and automated sharding capabilities. It allows for a smooth transition to NoSQL data stores from the RDBMS model, with the inclusion of familiar concepts, such as the ability to define indexes.",
-        "isNew": true,
+        "isNew": false,
         "hasMovedIn": false,
         "hasMovedOut": false
     },
@@ -5187,7 +5187,7 @@
         "volume": 7,
         "publishedDate": "Oct 2012",
         "descriptionHtml": "",
-        "isNew": true,
+        "isNew": false,
         "hasMovedIn": false,
         "hasMovedOut": false
     },
@@ -6826,7 +6826,7 @@
         "volume": 8,
         "publishedDate": "May 2013",
         "descriptionHtml": "",
-        "isNew": true,
+        "isNew": false,
         "hasMovedIn": false,
         "hasMovedOut": false
     },
@@ -13558,7 +13558,7 @@
         "volume": 14,
         "publishedDate": "Apr 2016",
         "descriptionHtml": "<p>We continue to see a lot of excitement from people using the <a href=\"http://elixir-lang.org/\"><strong>Elixir</strong></a> programming language. Elixir, which is built on top of the Erlang virtual machine, is showing promise for creating highly concurrent and fault-tolerant systems. Elixir has distinctive features such as the Pipe operator, which allows developers to build a pipeline of functions as you would in the UNIX command shell. The shared byte code allows Elixir to interoperate with Erlang and leverage existing libraries while supporting tools such as the Mix build tool, the Iex interactive shell and the ExUnit unit testing framework.</p>",
-        "isNew": true,
+        "isNew": false,
         "hasMovedIn": false,
         "hasMovedOut": false
     },
@@ -13569,7 +13569,7 @@
         "volume": 14,
         "publishedDate": "Apr 2016",
         "descriptionHtml": "",
-        "isNew": true,
+        "isNew": false,
         "hasMovedIn": false,
         "hasMovedOut": false
     },
@@ -13657,7 +13657,7 @@
         "volume": 15,
         "publishedDate": "Nov 2016",
         "descriptionHtml": "<p>We’ve decided to bring <strong>consumer-driven contract testing</strong> back from the archive for this edition even though we had allowed it to fade in the past. The concept isn’t new, but with the mainstream acceptance of microservices, we need to remind people that <a href=\"http://www.martinfowler.com/articles/consumerDrivenContracts.html\">consumer-driven contracts</a> are an essential part of a mature <a href=\"http://martinfowler.com/articles/microservice-testing/\">microservice testing</a> portfolio, enabling independent service deployments. But in addition, we want to point out that consumer-driven contract testing is a technique and an attitude that requires no special tool to implement. We love frameworks like <a href=\"https://github.com/realestate-com-au/pact\">Pact</a> because they make proper contract tests easier to implement in certain contexts. But we have noticed a tendency for teams to focus on the framework rather than on the general practice. Writing Pact tests is not a guarantee that you are creating consumer-driven contracts; likewise, in many situations you should be creating good consumer-driven contracts even where no pre-built testing tool exists.</p>",
-        "isNew": true,
+        "isNew": false,
         "hasMovedIn": false,
         "hasMovedOut": false
     },
@@ -13888,7 +13888,7 @@
         "volume": 15,
         "publishedDate": "Nov 2016",
         "descriptionHtml": "<p>As more organizations are choosing to deploy applications in the cloud, we're regularly finding IT groups that are wastefully trying to replicate their existing data center management and security approaches in the cloud. This often comes in the form of firewalls, load balancers, network proxies, access control, security appliances and services that are extended into the cloud with minimal rethinking. We've seen organizations build their own orchestration APIs in front of the cloud providers to constrain the services that can be utilized by teams. In most cases these layers serve only to cripple the capability, taking away most of the intended benefits of moving to the cloud. In this edition of the Radar, we've chosen to rehighlight <strong>cloud lift and shift</strong> as a technique to avoid. Organizations should instead look more deeply at the intent of their existing security and operational controls, and look for alternative controls that work in the cloud without creating unnecessary constraints. Many of those controls will already exist for mature cloud providers, and teams that adopt the cloud can use native APIs for self-serve provisioning and operations.</p>",
-        "isNew": true,
+        "isNew": false,
         "hasMovedIn": false,
         "hasMovedOut": false
     },
@@ -14031,7 +14031,7 @@
         "volume": 15,
         "publishedDate": "Nov 2016",
         "descriptionHtml": "<p><strong><a href=\"https://www.microsoft.com/net/core\">.NET Core</a></strong> is an open source modular product for creating applications that can be easily deployed in Windows, macOS and Linux. .NET Core makes it possible to build cross-platform web applications using <a href=\"http://www.asp.net/core\">ASP.NET Core</a> with a set of tools, libraries and frameworks—another choice for microservices architecture. The community around .NET Core and other related projects has been growing. New tools have appeared and evolved quickly, such as <a href=\"https://www.thoughtworks.com/radar/tools/visual-studio-code\">Visual Studio Code</a>. There are <a href=\"https://www.thoughtworks.com/radar/platforms/docker\">Docker</a> <a href=\"https://www.microsoft.com/net/core#docker\">images</a> based on both Linux and Windows (<a href=\"https://www.thoughtworks.com/radar/platforms/microsoft-nano-server\">Nano Server</a>) with .NET Core that simplify applying a microservice architecture. CoreCLR and CoreFX appeared in the Radar in the past. However, a few months ago Microsoft <a href=\"https://blogs.msdn.microsoft.com/dotnet/2016/06/27/announcing-net-core-1-0\">announced</a> the release of .NET Core 1.0, the first stable version. We see good new opportunities, changes and a vibrant community as reasons to keep assessing this product.</p>",
-        "isNew": true,
+        "isNew": false,
         "hasMovedIn": false,
         "hasMovedOut": false
     },
@@ -14185,7 +14185,7 @@
         "volume": 15,
         "publishedDate": "Nov 2016",
         "descriptionHtml": "<p>We are seeing too many organizations run into trouble as they attempt to use their <strong>CMS as a platform</strong> for delivering large and complex digital applications. This is often driven by the vendor-fueled hope of bypassing unresponsive IT organizations and enabling the business to drag and drop changes directly to production. While we are very supportive of providing content producers with the right tools and workflows, for applications with complex business logic we tend to recommend treating your CMS as a component of your platform (often in a hybrid or headless mode) cooperating cleanly with other services, rather than attempting to implement all of your functionality in the CMS itself.</p>",
-        "isNew": true,
+        "isNew": false,
         "hasMovedIn": false,
         "hasMovedOut": false
     },
@@ -15351,7 +15351,7 @@
         "volume": 16,
         "publishedDate": "Mar 2017",
         "descriptionHtml": "<p><strong><a href=\"https://mesosphere.com/product/\">Mesosphere DCOS</a></strong> is a platform built on top of <a href=\"https://www.thoughtworks.com/radar/platforms/apache-mesos\">Mesos</a> that abstracts away your underlying infrastructure for containerized applications as well as for applications you don't want to run inside Docker. This may be overkill for more modest deployments, but we're beginning to see successes with both the commercial and <a href=\"https://dcos.io/\">open source versions</a>. We particularly like that it facilitates portability between different cloud providers as well as dedicated hardware, and that for containerized workloads you're not tied into one container orchestration framework. Although upgrades can be a little more complex than we would like, the overall stack is stabilizing nicely.</p>",
-        "isNew": true,
+        "isNew": false,
         "hasMovedIn": false,
         "hasMovedOut": false
     },
@@ -15747,7 +15747,7 @@
         "volume": 16,
         "publishedDate": "Mar 2017",
         "descriptionHtml": "<p>Distributed systems often utilize multithreading, event-based communication and nonblocking I/O to improve the overall system efficiency. These programming techniques impose challenges such as low-level threading, synchronization, thread safety, concurrent data structures, and non-blocking I/O. The open source <strong><a href=\"http://reactivex.io/\">ReactiveX</a></strong> library beautifully abstracts away these concerns, provides the required application plumbing, and extends the <a href=\"https://en.wikipedia.org/wiki/Observer_pattern\">observable pattern</a> on streams of asynchronous events. ReactiveX also has an active developer community and supports a growing list of languages, the most recent addition being <a href=\"https://github.com/ReactiveX/RxSwift\">RxSwift</a>. It also implements binding to mobile and desktop platforms.</p>",
-        "isNew": true,
+        "isNew": false,
         "hasMovedIn": false,
         "hasMovedOut": false
     },
@@ -18563,7 +18563,7 @@
         "volume": 19,
         "publishedDate": "Nov 2018",
         "descriptionHtml": "<p><a href=\"https://martinfowler.com/articles/microservices.html\">Microservices</a> has emerged as a leading architectural technique in modern cloud-based systems, but we still think teams should proceed carefully when making this choice. <strong>Microservice envy</strong> tempts teams to complicate their architecture by having lots of services simply because it's a fashionable architecture choice. Platforms such as <a href=\"https://www.thoughtworks.com/radar/platforms/kubernetes\">Kubernetes</a> make it much easier to deploy complex sets of microservices, and vendors are pushing their solutions to managing microservices, potentially leading teams further down this path. It's important to remember that microservices trade development complexity for operational complexity and require a solid foundation of automated testing, continuous delivery and DevOps culture.</p>",
-        "isNew": true,
+        "isNew": false,
         "hasMovedIn": false,
         "hasMovedOut": false
     },
@@ -19399,7 +19399,7 @@
         "volume": 20,
         "publishedDate": "Apr 2019",
         "descriptionHtml": "<p>In the last year we've seen <strong>Chaos Engineering</strong> move from a much talked-about idea to an accepted, mainstream approach to improving and assuring distributed system resilience. As organizations large and small begin to implement Chaos Engineering as an operational process, we're learning how to apply these techniques safely at scale. The approach is definitely not for everyone, and to be effective and safe, it requires organizational support at scale. Industry acceptance and available expertise will definitely increase with the appearance of commercial services such as <a href=\"https://www.thoughtworks.com/radar/tools/gremlin\">Gremlin</a> and deployment tools such as <a href=\"https://www.thoughtworks.com/radar/tools/spinnaker\">Spinnaker</a> implementing some Chaos Engineering tools.</p>",
-        "isNew": true,
+        "isNew": false,
         "hasMovedIn": false,
         "hasMovedOut": false
     },
@@ -19872,7 +19872,7 @@
         "volume": 20,
         "publishedDate": "Apr 2019",
         "descriptionHtml": "<p><a href=\"http://helm.sh\"><strong>Helm</strong></a> is a package manager for <a href=\"https://www.thoughtworks.com/radar/platforms/kubernetes\">Kubernetes</a>. It comes with a repository of curated Kubernetes applications that are maintained in the official <a href=\"https://github.com/helm/charts\">Charts repository</a>. Helm has two components: a command line utility called Helm and a cluster component called Tiller. Securing a Kubernetes cluster is a wide and nuanced topic, but we highly recommend setting up Tiller in a role-based access control (RBAC) environment. We've used Helm in a number of client projects and its dependency management, templating and hook mechanism has greatly simplified the application lifecycle management in Kubernetes. However, we recommend proceeding with caution — Helm's <a href=\"https://www.thoughtworks.com/radar/techniques/templating-in-yaml\">YAML templating</a> can be difficult to understand, and Tiller still has some rough edges. Helm 3 is expected to address these issues.</p>",
-        "isNew": true,
+        "isNew": false,
         "hasMovedIn": false,
         "hasMovedOut": false
     },
@@ -20807,7 +20807,7 @@
         "volume": 21,
         "publishedDate": "Nov 2019",
         "descriptionHtml": "<p><strong><a href=\"https://azure.microsoft.com/en-us/services/devops/\">Azure DevOps</a></strong> services include a set of managed services such as hosted Git repos, CI/CD pipelines, automated testing tooling, backlog management tooling and artifact repository. Azure DevOps Pipelines have been maturing over time. We particularly like its ability to define <a href=\"https://www.thoughtworks.com/radar/techniques/pipelines-as-code\">Pipelines as code</a> and its ecosystem of extensions on the Azure DevOps <a href=\"https://marketplace.visualstudio.com/azuredevops\">marketplace</a>. At the time of writing, our teams are still running into a few immature features, including lack of an effective UI for pipeline visualization and navigation and the inability to trigger a pipeline from artifacts or other pipelines.</p>",
-        "isNew": true,
+        "isNew": false,
         "hasMovedIn": false,
         "hasMovedOut": false
     },
@@ -21401,7 +21401,7 @@
         "volume": 21,
         "publishedDate": "Nov 2019",
         "descriptionHtml": "<p>We've seen many successful <strong><a href=\"https://github.com/facebook/graphql\">GraphQL</a></strong> implementations on our projects. We've seen some interesting patterns of use too, including <a href=\"https://www.thoughtworks.com/radar/techniques/graphql-for-server-side-resource-aggregation\">GraphQL for server-side resource aggregation</a>. That said, we've concerns about misuse of this framework and some of the problems that can occur. Examples include performance gotchas around N+1 queries and lots of boilerplate code needed when adding new models, leading to complexity. There are workarounds to these gotchas such as query caching. Even though it's not a silver bullet, we still think it's worth assessing as part of your architecture.</p>",
-        "isNew": true,
+        "isNew": false,
         "hasMovedIn": false,
         "hasMovedOut": false
     },
@@ -21500,7 +21500,7 @@
         "volume": 22,
         "publishedDate": "May 2020",
         "descriptionHtml": "<p>Although <strong>infrastructure as code</strong> is a relatively old technique (we’ve featured it in the Radar in 2011), it has become vitally important in the modern cloud era where the act of setting up infrastructure has become the passing of configuration instructions to a cloud platform. When we say \"as code\" we mean that all the good practices we've learned in the software world should be applied to infrastructure. Using source control, adhering to the <a href=\"https://en.wikipedia.org/wiki/Don%27t_repeat_yourself\">DRY principle</a>, modularization, maintainability, and using automated testing and deployment are all critical practices. Those of us with a deep software and infrastructure background need to empathize with and support colleagues who do not. Saying \"treat infrastructure like code\" isn't enough; we need to ensure the hard-won learnings from the software world are also applied consistently throughout the infrastructure realm.</p>",
-        "isNew": true,
+        "isNew": false,
         "hasMovedIn": false,
         "hasMovedOut": false
     },
@@ -21522,7 +21522,7 @@
         "volume": 22,
         "publishedDate": "May 2020",
         "descriptionHtml": "<p>The <strong>pipelines as code</strong> technique emphasizes that the configuration of delivery pipelines that build, test and deploy our applications or infrastructure should be treated as code; they should be placed under source control and modularized in reusable components with automated testing and deployment. As organizations move to decentralized autonomous teams building <a href=\"https://martinfowler.com/articles/microservices.html\">microservices</a> or <a href=\"https://www.thoughtworks.com/radar/techniques/micro-frontends\">micro frontends</a>, the need for engineering practices in managing pipelines as code increases to keep building and deploying software consistent within the organization. This need has given rise to delivery pipeline templates and tooling that enable a standardized way to build and deploy services and applications. Such tools use the <em>declarative delivery pipelines</em> of applications, adopting a pipeline blueprint to execute the underlying tasks for various stages of a delivery lifecycle such as build, test and deployment; and they abstract away implementation details. The ability to build, test and deploy pipelines as code should be one of the evaluation criteria for choosing a CI/CD tool.</p>",
-        "isNew": true,
+        "isNew": false,
         "hasMovedIn": false,
         "hasMovedOut": false
     },
@@ -21731,7 +21731,7 @@
         "volume": 22,
         "publishedDate": "May 2020",
         "descriptionHtml": "<p>It is rather curious, that after over a decade of industry experience with cloud migration, we still feel it's necessary to call out <strong>cloud lift and shift</strong>; a practice that views cloud simply as a hosting solution, resulting in the replication of an existing architecture, security practices and IT operational models in the cloud. This fails to realize the cloud's promises of agility and digital innovation. A cloud migration requires intentional change across multiple axes toward a cloud-native state, and depending on the unique migration circumstances, each organization might end up somewhere on the spectrum from cloud lift and shift to cloud native. Systems architecture, for example, is one of the pillars of delivery agility and often requires change. The temptation to simply <a href=\"https://cloud.google.com/migrate/anthos/docs/anthos-migrate-benefits\">lift and shift existing systems as containers</a> to the cloud can be strong. While this tactic can speed up cloud migration, it falls short when it comes to creating agility and delivering features and value. Enterprise security in the cloud is fundamentally different from traditional perimeter-based security through firewalls and zoning, and it demands a journey toward <a href=\"https://www.thoughtworks.com/radar/techniques/zero-trust-architecture-zta\">zero trust architecture</a>. The IT operating model too has to be reformed to safely provide cloud services through self-serve automated platforms and empower teams to take more of the operational responsibility and gain autonomy. Last but not least, organizations must build a foundation to enable continuous change, such as creating pipelines with continuous testing of applications and infrastructure as a part of the migration. These will help the migration process, result in a more robust and well-factored system and give organizations a way to continue to evolve and improve their systems.</p>",
-        "isNew": true,
+        "isNew": false,
         "hasMovedIn": false,
         "hasMovedOut": false
     },
@@ -21764,7 +21764,7 @@
         "volume": 22,
         "publishedDate": "May 2020",
         "descriptionHtml": "<p>Five years ago we highlighted the problems with <strong>long-lived branches with Gitflow</strong>. Essentially, long-lived branches are the opposite of continuously integrating all changes to the source code, and in our experience continuous integration is the better approach for most kinds of software development. Later we extended our caution to <a href=\"https://www.thoughtworks.com/radar/techniques/gitflow\">Gitflow</a> itself, because we saw teams using it almost exclusively with long-lived branches. Today, we still see teams in settings where continuous delivery of web-based systems is the stated goal being drawn to long-lived branches. So we were delighted that the author of Gitflow has now added a note to his <a href=\"https://nvie.com/posts/a-successful-git-branching-model/\">original article</a>, explaining that Gitflow was not intended for such use cases.</p>",
-        "isNew": true,
+        "isNew": false,
         "hasMovedIn": false,
         "hasMovedOut": false
     },
@@ -21786,7 +21786,7 @@
         "volume": 22,
         "publishedDate": "May 2020",
         "descriptionHtml": "<p>We previously had <strong>.NET Core</strong> in Adopt, indicating that it had become our default for .NET projects. But we felt it's worth again calling attention to .NET Core. With the release of .NET Core 3.<em>x</em> last year, the bulk of the features from .NET Framework have now been ported into .NET Core. With the announcement that <a href=\"https://devblogs.microsoft.com/dotnet/introducing-net-5\">.NET Framework is on its last release</a>, Microsoft have reinforced the view that <a href=\"https://devblogs.microsoft.com/dotnet/net-core-is-the-future-of-net/\">.NET Core is the future of .NET</a>. Microsoft has done a lot of work to make .NET Core <a href=\"https://devblogs.microsoft.com/dotnet/using-net-and-docker-together-dockercon-2019-update/\">container friendly</a>. Most of our .NET Core–based projects target Linux and are often deployed as containers. The upcoming <a href=\"https://devblogs.microsoft.com/dotnet/introducing-net-5/\">.NET 5</a> release looks promising, and we're looking forward to it.</p>",
-        "isNew": true,
+        "isNew": false,
         "hasMovedIn": false,
         "hasMovedOut": false
     },
@@ -21851,7 +21851,7 @@
         "ring": "trial",
         "volume": 22,
         "publishedDate": "May 2020",
-        "descriptionHtml": "<p>The <a href=\"https://www.thoughtworks.com/radar/languages-and-frameworks/graphql\">GraphQL</a> ecosystem and community keep growing. <strong><a href=\"https://hotchocolate.io/\">Hot Chocolate</a></strong> is a GraphQL server for .NET (Core and Classic). It lets you build and host schemas and then serve queries against them using the same base components of GraphQL — data loader, resolver, schema, operations and types. The team behind Hot Chocolate has recently added schema stitching, which allows for a single entry point to query across multiple schemas aggregated from different locations. Despite the potential to misuse this approach, our teams are happy with Hot Chocolate — it’s well documented, and we're able to deliver value quickly to our clients.</p>",
+        "descriptionHtml": "<p>The <a href=\"https://www.thoughtworks.com/radar/languages-and-frameworks/graphql\">GraphQL</a> ecosystem and community keep growing. <strong><a href=\"https://hotchocolate.io/\">Hot Chocolate</a></strong> is a GraphQL server for .NET (Core and Classic). It lets you build and host schemas and then serve queries against them using the same base components of GraphQL — data loader, resolver, schema, operations and types. The team behind Hot Chocolate has recently added schema stitching, which allows for a single entry point to query across multiple schemas aggregated from different locations. Despite the potential to misuse this approach, our teams are happy with Hot Chocolate ��� it’s well documented, and we're able to deliver value quickly to our clients.</p>",
         "isNew": false,
         "hasMovedIn": true,
         "hasMovedOut": false
@@ -21874,7 +21874,7 @@
         "volume": 22,
         "publishedDate": "May 2020",
         "descriptionHtml": "<p><strong><a href=\"https://opentelemetry.io/\">OpenTelemetry</a></strong> is an open source observability project that merges <a href=\"https://opentracing.io/\">OpenTracing</a> and <a href=\"https://github.com/census-instrumentation\">OpenCensus</a>. The OpenTelemetry project includes <a href=\"https://github.com/open-telemetry/opentelemetry-specification\">specification</a>, libraries, agents, and other components needed to capture telemetry from services to better observe, manage and debug them. It covers the three pillars of observability — distributed tracing, metrics and logging (currently in beta) — and its specification connects these three pieces through <a href=\"https://github.com/open-telemetry/opentelemetry-specification/blob/master/specification/correlationcontext/api.md\">correlations</a>; thus you can use <em>metrics</em> to pinpoint a problem, locate the corresponding <em>traces</em> to discover where the problem occured, and ultimately study the corresponding <em>logs</em> to find the exact root cause. OpenTelemetry components can be connected to back-end observability systems such as <a href=\"https://www.thoughtworks.com/radar/tools/prometheus\">Prometheus</a> and <a href=\"https://www.thoughtworks.com/radar/tools/jaeger\">Jaeger</a> among <a href=\"https://opentelemetry.io/registry/?s=exporter\">others</a>. Formation of OpenTracing is a positive step toward the convergence of standardization and the simplification of tooling.</p>",
-        "isNew": true,
+        "isNew": false,
         "hasMovedIn": false,
         "hasMovedOut": false
     },
@@ -22028,7 +22028,7 @@
         "volume": 22,
         "publishedDate": "May 2020",
         "descriptionHtml": "<p><strong><a href=\"http://www.cypress.io/\">Cypress</a></strong> is still a favorite among our teams where developers manage end-to-end tests themselves, as part of a healthy <a href=\"https://martinfowler.com/articles/practical-test-pyramid.html#End-to-endTests\">test pyramid</a>, of course. We decided to call it out again in this Radar because recent versions of Cypress have added <a href=\"https://cypress.io/blog/2020/02/06/introducing-firefox-and-edge-support-in-cypress-4-0/\">support for Firefox</a>, and we strongly suggest testing on multiple browsers. The dominance of Chrome and Chromium-based browsers has led to a worrying trend of teams seemingly only testing with Chrome which can lead to <a href=\"https://twitter.com/mike_conley/status/1245797292453609478\">nasty surprises</a>.</p>",
-        "isNew": true,
+        "isNew": false,
         "hasMovedIn": false,
         "hasMovedOut": false
     },
@@ -22160,7 +22160,7 @@
         "volume": 22,
         "publishedDate": "May 2020",
         "descriptionHtml": "<p><strong><a href=\"https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare-pack\">Visual Studio Live Share</a></strong> is a suite of extensions for <a href=\"https://www.thoughtworks.com/radar/tools/visual-studio-code\">Visual Studio Code</a> and Visual Studio. At a time when teams are searching for good remote collaboration options, we want to call attention to the excellent tooling here. Live Share provides a good, low-latency remote-pairing experience, and requires significantly less bandwidth than the brute-force approach of sharing your entire desktop. Importantly, developers can work with their preferred configuration, extensions and key mappings during a pairing session. In addition to real-time collaboration for editing and debugging code, Live Share allows voice calls and sharing terminals and servers.</p>",
-        "isNew": true,
+        "isNew": false,
         "hasMovedIn": false,
         "hasMovedOut": false
     },
@@ -22171,7 +22171,7 @@
         "volume": 22,
         "publishedDate": "May 2020",
         "descriptionHtml": "<p>Since we first mentioned <strong>visual regression testing tools</strong> in 2014, the use of the technique has spread and the tools landscape has evolved. <a href=\"https://www.thoughtworks.com/radar/tools/backstopjs\">BackstopJS</a> remains an excellent choice with new features being added regularly, including support for running inside Docker containers. <a href=\"https://www.thoughtworks.com/radar/tools/loki\">Loki</a> was featured in our previous Radar. <a href=\"https://applitools.com/\">Applitools</a>, <a href=\"https://crossbrowsertesting.com/\">CrossBrowserTesting</a> and <a href=\"https://percy.io/\">Percy</a> are SaaS solutions. Another notable mention is <a href=\"https://github.com/rsmbl\">Resemble.js</a>, an image diffing library. Although most teams use it indirectly as part of BackstopJS, some of our teams have been using it to analyze and compare images of web pages directly. In general, our experience shows that visual regression tools are less useful in the early stages when the interface goes through significant changes, but they certainly prove their worth as the product matures and the interface stabilizes.</p>",
-        "isNew": true,
+        "isNew": false,
         "hasMovedIn": false,
         "hasMovedOut": false
     },
@@ -22435,7 +22435,7 @@
         "volume": 22,
         "publishedDate": "May 2020",
         "descriptionHtml": "<p><strong><a href=\"http://www.rust-lang.org/\">Rust</a></strong> is continuously gaining in popularity. We've had heated discussions about which is better, Rust or C++/Go, without a clear winner. However, we're glad to see Rust has improved significantly, with more built-in APIs being added and stabilized, including <a href=\"https://blog.rust-lang.org/2019/11/07/Async-await-stable.html\">advanced async support</a>, since we mentioned it in our previous Radar. In addition, Rust has also inspired the design of new languages. For example, the <a href=\"https://developers.libra.org/docs/move-overview\">Move language</a> on Libra borrows Rust's way of managing memory to manage resources, ensuring that digital assets can never be copied or implicitly discarded.</p>",
-        "isNew": true,
+        "isNew": false,
         "hasMovedIn": false,
         "hasMovedOut": false
     },
@@ -22578,7 +22578,7 @@
         "volume": 23,
         "publishedDate": "Oct 2020",
         "descriptionHtml": "<p>Automating the estimation, tracking and projection of cloud infrastructure's run cost is necessary for today's organizations. The cloud providers' savvy pricing models, combined with the proliferation of pricing parameters and the dynamic nature of today's architecture, can lead to surprisingly expensive run costs. For example, the price of <a href=\"https://www.thoughtworks.com/radar/techniques/serverless-architecture\">serverless</a> based on API calls, event streaming solutions based on traffic or data processing clusters based on running jobs, all have a dynamic nature that changes over time as the architecture evolves. When our teams manage infrastructure on the cloud, implementing <strong>run cost as architecture fitness function</strong> is one of their early activities. This means that our teams can observe the cost of running services against the value delivered; when they see deviations from what was expected or acceptable, they'll discuss whether it's time to evolve the architecture. The observation and calculation of the run cost is implemented as an automated function.</p>",
-        "isNew": true,
+        "isNew": false,
         "hasMovedIn": false,
         "hasMovedOut": false
     },
@@ -22842,7 +22842,7 @@
         "volume": 23,
         "publishedDate": "Oct 2020",
         "descriptionHtml": "<p>Over the last few decades <a href=\"https://en.wikipedia.org/wiki/Notebook_interface\">computational notebooks</a>, first introduced by <a href=\"https://en.wikipedia.org/wiki/Wolfram_Mathematica\">Wolfram Mathematica</a>, have evolved to support scientific research, exploration and educational workflows. Naturally, in support of data science workflows and with the likes of <a href=\"https://jupyter.org/\">Jupyter notebooks</a> and <a href=\"https://docs.databricks.com/notebooks/index.html\">Databricks notebooks</a>, they've become a great companion by providing a simple and intuitive interactive computation environment for combining code to analyze data with rich text and visualization to tell a data story. Notebooks were designed to provide an ultimate medium for modern scientific communication and innovation. In recent years, however, we've seen a trend for notebooks to be the medium for running the type of production-quality code typically used to drive enterprise operations. We see notebook <a href=\"https://databricks.com/blog/2017/10/30/continuous-integration-continuous-delivery-databricks.html\">platform providers advertising</a> the use of their exploratory notebooks in production. This is a case of good intentions — democratizing programming for data scientists — implemented poorly and at the cost of scalability, maintainability, resiliency and all the other qualities that a long-lived production code needs to support. We don't recommend <strong>productionizing notebooks</strong> and instead encourage empowering data scientists to build production-ready code with the right programming frameworks, thus simplifying the <a href=\"https://www.thoughtworks.com/radar/techniques/continuous-delivery-for-machine-learning-cd4ml\">continuous delivery</a> tooling and abstracting complexity away through end-to-end ML platforms.</p>",
-        "isNew": true,
+        "isNew": false,
         "hasMovedIn": false,
         "hasMovedOut": false
     },
@@ -22897,7 +22897,7 @@
         "volume": 23,
         "publishedDate": "Oct 2020",
         "descriptionHtml": "<p>For many of our teams, <a href=\"https://www.thoughtworks.com/radar/tools/terraform\">Terraform</a> has become the default choice for defining cloud infrastructure. However, some of our teams have been experimenting with <strong><a href=\"https://docs.aws.amazon.com/cdk/latest/guide/home.html\">AWS Cloud Development Kit</a></strong> (AWS CDK), and they like what they've seen so far. In particular, they like the use of first-class programming languages instead of configuration files which allows them to use existing tools, test approaches and skills. Like similar tools, care is still needed to ensure deployments remain easy to understand and maintain. It currently supports <a href=\"https://www.thoughtworks.com/radar/languages-and-frameworks/typescript\">TypeScript</a>, JavaScript, Python, Java and C# and .NET. We'll continue to watch AWS CDK, especially since the AWS and HashiCorp teams recently launched a <a href=\"https://aws.amazon.com/blogs/developer/introducing-the-cloud-development-kit-for-terraform-preview/\">preview for Cloud Development Kit for Terraform</a> to generate Terraform configurations and enable provisioning with the Terraform platform.</p>",
-        "isNew": true,
+        "isNew": false,
         "hasMovedIn": false,
         "hasMovedOut": false
     },
@@ -22974,7 +22974,7 @@
         "volume": 23,
         "publishedDate": "Oct 2020",
         "descriptionHtml": "<p>We've seen interest in <strong><a href=\"https://pulumi.io/\">Pulumi</a></strong> slowly but steadily rising. Pulumi fills a gaping hole in the infrastructure coding world where <a href=\"https://www.thoughtworks.com/radar/tools/terraform\">Terraform</a> maintains a firm hold. While Terraform is a tried-and-true standby, its declarative nature suffers from inadequate abstraction facilities and limited testability. Terraform is adequate when the infrastructure is entirely static, but dynamic infrastructure definitions call for a real programming language. Pulumi distinguishes itself by allowing configurations to be written in <a href=\"https://www.thoughtworks.com/radar/languages-and-frameworks/typescript\">TypeScript</a>/JavaScript, <a href=\"https://www.thoughtworks.com/radar/languages-and-frameworks/python-3\">Python</a> and <a href=\"https://www.thoughtworks.com/radar/languages-and-frameworks/go-language\">Go</a> — no markup language or templating required. Pulumi is tightly focused on cloud-native architectures — including containers, serverless functions and data services — and provides good support for <a href=\"https://www.thoughtworks.com/radar/platforms/kubernetes\">Kubernetes</a>. Recently, <a href=\"https://www.thoughtworks.com/radar/platforms/aws-cloud-development-kit\">AWS CDK</a> has mounted a challenge, but Pulumi remains the only cloud-neutral tool in this area. We're anticipating wider Pulumi adoption in the future and looking forward to a viable tool and knowledge ecosystem emerging to support it.</p>",
-        "isNew": true,
+        "isNew": false,
         "hasMovedIn": false,
         "hasMovedOut": false
     },
@@ -23183,7 +23183,7 @@
         "volume": 23,
         "publishedDate": "Oct 2020",
         "descriptionHtml": "<p><strong><a href=\"https://yarnpkg.com/\">Yarn</a></strong> continues to be the package manager of choice for many teams. We're excited about Yarn 2, a major new release with a long list of changes and improvements. In addition to usability tweaks and improvements in the area of workspaces, Yarn 2 introduces the concept of <em>zero-installs</em>, which allows developers to run a project directly after cloning it. However, Yarn 2 includes some breaking changes which makes the upgrade <a href=\"https://yarnpkg.com/advanced/migration\">nontrivial</a>. It also defaults to <a href=\"https://classic.yarnpkg.com/en/docs/pnp/\">plug'n'play</a> (PnP) environments and at the same time doesn't support React Native in PnP environments. Teams can, of course, opt out of PnP or stay on Yarn 1. They should be aware, though, that Yarn 1 is now in maintenance mode.</p>",
-        "isNew": true,
+        "isNew": false,
         "hasMovedIn": false,
         "hasMovedOut": false
     },
@@ -23831,7 +23831,7 @@
         "ring": "assess",
         "volume": 24,
         "publishedDate": "Apr 2021",
-        "descriptionHtml": "<p>One of the most nuanced decisions facing companies at the moment is the adoption of low-code or no-code platforms, that is, platforms that solve very specific problems in very limited domains. Many vendors are pushing aggressively into this space. The problems we see with these platforms typically relate to an inability to apply good engineering practices such as versioning. Testing too is typically really hard. However, we noticed some interesting new entrants to the market �� including <a href=\"https://www.honeycode.aws/\">Amazon Honeycode</a>, which makes it easy to create simple task or event management apps, and <a href=\"https://parabola.io/\">Parabola</a> for IFTTT-like cloud workflows — which is why we're once again including <strong>bounded low-code platforms</strong> in this volume. Nevertheless, we remain deeply skeptical about their wider applicability since these tools, like Japanese Knotweed, have a knack of escaping their bounds and tangling everything together. That's why we still strongly advise caution in their adoption.</p>",
+        "descriptionHtml": "<p>One of the most nuanced decisions facing companies at the moment is the adoption of low-code or no-code platforms, that is, platforms that solve very specific problems in very limited domains. Many vendors are pushing aggressively into this space. The problems we see with these platforms typically relate to an inability to apply good engineering practices such as versioning. Testing too is typically really hard. However, we noticed some interesting new entrants to the market — including <a href=\"https://www.honeycode.aws/\">Amazon Honeycode</a>, which makes it easy to create simple task or event management apps, and <a href=\"https://parabola.io/\">Parabola</a> for IFTTT-like cloud workflows — which is why we're once again including <strong>bounded low-code platforms</strong> in this volume. Nevertheless, we remain deeply skeptical about their wider applicability since these tools, like Japanese Knotweed, have a knack of escaping their bounds and tangling everything together. That's why we still strongly advise caution in their adoption.</p>",
         "isNew": false,
         "hasMovedIn": false,
         "hasMovedOut": false
@@ -23986,7 +23986,7 @@
         "volume": 24,
         "publishedDate": "Apr 2021",
         "descriptionHtml": "<p>Our positioning regarding \"being agile before doing agile\" and our opinions around this topic shouldn't come as a surprise; but since <strong><a href=\"http://www.scaledagileframework.com/\">SAFe™</a></strong> (Scaled Agile Framework®), per Gartner’s May 2019<a href=\"http://go.scaledagile.com/Gartner-a.html\"> report</a>, is the most considered and most used enterprise agile framework, and since we're seeing more and more enterprises going through organizational changes, we thought it was time to raise awareness on this topic again. We've come across organizations struggling with SAFe's over-standardized, phase-gated processes. Those processes create friction in the organizational structure and its operating model. It can also promote silos in the organization, preventing platforms from becoming real business capabilities enablers. The top-down control generates waste in the value stream and discourages engineering talent creativity, while limiting autonomy and experimentation in the teams. Rather than measuring effort and focusing on standardized ceremonies, we recommend a leaner, value-driven approach and governance to help eliminate organizational friction such as <a href=\"https://www.thoughtworks.com/books/edge\">EDGE</a>, as well as a <a href=\"https://www.thoughtworks.com/radar/techniques/team-cognitive-load\">team cognitive load</a> assessment to identify types of teams and determine how they should better interact with each other.</p>\n\n<p>Scaled Agile Framework® and SAFe™ are trademarks of Scaled Agile, Inc.</p>",
-        "isNew": true,
+        "isNew": false,
         "hasMovedIn": false,
         "hasMovedOut": false
     },
@@ -24063,7 +24063,7 @@
         "volume": 24,
         "publishedDate": "Apr 2021",
         "descriptionHtml": "<p>Since we last mentioned <strong><a href=\"https://www.snowflake.com/\">Snowflake</a></strong> in the Radar, we've gained more experience with it as well as with <a href=\"https://www.thoughtworks.com/radar/techniques/data-mesh\">data mesh</a> as an alternative to data warehouses and lakes. Snowflake continues to impress with features like time travel, zero-copy cloning, data sharing and its marketplace. We also haven't found anything we don't like about it, all of which has led to our consultants generally preferring it over the alternatives. Redshift is moving toward storage and compute separation, which has been a strong point of Snowflake, but even with Redshift Spectrum it isn't as convenient and flexible to use, partly because it is bound by its Postgres heritage (we do still like <a href=\"https://www.thoughtworks.com/radar/platforms/postgresql-for-nosql\">Postgres</a>, by the way). Federated queries can be a reason to go with Redshift. When it comes to operations, Snowflake is much simpler to run. <a href=\"https://www.thoughtworks.com/radar/platforms/bigquery\">BigQuery</a>, which is another alternative, is very easy to operate, but in a multicloud setup Snowflake is a better choice. We can also report that we've used Snowflake successfully with <a href=\"https://www.thoughtworks.com/radar/platforms/google-cloud-platform\">GCP</a>, <a href=\"https://www.thoughtworks.com/radar/platforms/aws\">AWS</a>, and <a href=\"https://www.thoughtworks.com/radar/platforms/azure\">Azure</a>.</p>",
-        "isNew": true,
+        "isNew": false,
         "hasMovedIn": false,
         "hasMovedOut": false
     },
@@ -24800,7 +24800,7 @@
         "volume": 25,
         "publishedDate": "Oct 2021",
         "descriptionHtml": "<p>To measure software delivery performance, more and more organizations are turning to the <strong>four key metrics</strong> as defined by the <a href=\"https://www.devops-research.com/\">DORA research</a> program: change lead time, deployment frequency, mean time to restore (MTTR) and change fail percentage. This research and its statistical analysis have shown a clear link between high delivery performance and these metrics; they provide a great leading indicator for how a team, or even a whole delivery organization, is doing.</p>\n\n<p>We're still big proponents of these metrics, but we've also learned some lessons since we first started monitoring them. And we're increasingly seeing misguided measurement approaches with tools that help teams measure these metrics based purely on their continuous delivery (CD) pipelines. In particular when it comes to the stability metrics (MTTR and change fail percentage), CD pipeline data alone doesn't provide enough information to determine what a deployment failure with real user impact is. Stability metrics only make sense if they include data about real incidents that degrade service for the users.</p>\n\n<p>And as with all metrics, we recommend to always keep in mind the ultimate intention behind a measurement and use them to reflect and learn. For example, before spending weeks to build up sophisticated dashboard tooling, consider just regularly taking the <a href=\"https://www.devops-research.com/quickcheck.html\">DORA quick check</a> in team retrospectives. This gives the team the opportunity to reflect on which <a href=\"https://www.devops-research.com/research.html#capabilities\">capabilities</a> they could work on to improve their metrics, which can be much more effective than overdetailed out-of-the-box tooling.</p>",
-        "isNew": true,
+        "isNew": false,
         "hasMovedIn": false,
         "hasMovedOut": false
     },
@@ -24844,7 +24844,7 @@
         "volume": 25,
         "publishedDate": "Oct 2021",
         "descriptionHtml": "<p>Increasingly, we see a mismatch between what data-driven organizations want to achieve and what the current data architectures and organizational structures allow. Organizations want to embed data-driven decision-making, machine learning and analytics into many aspects of their products and services and how they operate internally; essentially they want to augment every aspect of their operational landscape with data-driven intelligence. Yet, we still have a ways to go before we can embed analytical data, access to it and how it is managed into the business domains and operations. Today, every aspect of managing analytical data is externalized outside of the operational business domains to the data team and to the data management monoliths: data lakes and data warehouses. <strong><a href=\"https://martinfowler.com/articles/data-monolith-to-mesh.html\">Data mesh</a></strong> is a decentralized sociotechnical approach to remove the dichotomy of analytical data and business operation. Its objective is to embed sharing and using analytical data into each operational business domain and close the gap between the operational and analytical planes. It's founded on four principles: domain data ownership, data as a product, self-serve data platform and computational federated governance.</p>\n\n<p>Our teams have been implementing the <a href=\"https://martinfowler.com/articles/data-mesh-principles.html\">data mesh architecture</a>; they've created new architectural abstractions such as the data product quantum to encapsulate the code, data and policy as an autonomous unit of analytical data sharing embedded into operational domains; and they've built self-serve data platform capabilities to manage the lifecycle of data product quanta in a declarative manner as described in <em><a href=\"https://www.oreilly.com/library/view/data-mesh/9781492092384/\">Data Mesh</a></em>. Despite our technical advances, we're still experiencing friction using the existing technologies in a data mesh topology, not to mention the resistance of business domains to embrace sharing and using data as a first-class responsibility in some organizations.</p>",
-        "isNew": true,
+        "isNew": false,
         "hasMovedIn": false,
         "hasMovedOut": false
     },
@@ -24866,7 +24866,7 @@
         "volume": 25,
         "publishedDate": "Oct 2021",
         "descriptionHtml": "<p>Since introducing them in the Radar in 2016, we've seen widespread adoption of <a href=\"https://www.thoughtworks.com/radar/techniques/micro-frontends\">micro frontends</a> for web UIs. Recently, however, we've seen projects extend this architectural style to include <strong>micro frontends for mobile</strong> applications as well. When the application becomes sufficiently large and complex, it becomes necessary to distribute the development over multiple teams. This presents the challenge of maintaining team autonomy while integrating their work into a single app. Some teams write their own frameworks to enable this development style, and in the past we've mentioned <a href=\"https://www.thoughtworks.com/radar/languages-and-frameworks/atlas-and-beehive\">Atlas and Beehive</a> as possible ways to simplify the problem of integrating multiteam app development. More recently, we've seen teams using <a href=\"https://www.thoughtworks.com/radar/languages-and-frameworks/react-native\">React Native</a> to accomplish the same thing. Each React Native micro frontend is kept in its own repository where it can be built, tested and deployed separately. The team responsible for the overall application can then aggregate those micro frontends built by different teams into a single released app.</p>",
-        "isNew": true,
+        "isNew": false,
         "hasMovedIn": false,
         "hasMovedOut": false
     },
@@ -25185,7 +25185,7 @@
         "volume": 25,
         "publishedDate": "Oct 2021",
         "descriptionHtml": "<p><a href=\"https://www.xtdb.com/main/index.html\"><strong>XTDB</strong></a> is an open-source document database with bitemporal graph queries. It natively supports two time axes for each record: <em>valid</em> time, when a fact occurs, and <em>transaction</em> time, when a fact is processed and recorded by the database. Support for bitemporality is beneficial in numerous scenarios, including analytical use cases executing time-aware queries; auditing historical changes to facts; supporting distributed data architectures that must guarantee globally consistent point-in-time queries such as <a href=\"https://www.thoughtworks.com/radar/techniques/data-mesh\">data mesh</a>; and preserving data immutability. XTDB takes information in document form, expressed in the Extensible Data Notation (EDN) format, a subset of the Clojure language. XTDB supports graph as well as SQL queries and is extensible through a REST API layer and Kafka Connect, among other modules. We're excited to see a growth in adoption of XTDB and the addition of features such as support for transactions and SQL.</p>",
-        "isNew": true,
+        "isNew": false,
         "hasMovedIn": false,
         "hasMovedOut": false
     },
@@ -25196,7 +25196,7 @@
         "volume": 25,
         "publishedDate": "Oct 2021",
         "descriptionHtml": "<p>Releasing applications for iOS involves a code-signing step. Although supported by Apple's toolchain, the process can be cumbersome, error prone and full of unexpected surprises. We're happy to report that <a href=\"https://fastlane.tools/\"><strong>fastlane</strong></a>, already our tool of choice for automating the release process of mobile applications, provides a better solution: <a href=\"https://docs.fastlane.tools/actions/match\">match</a> is integrated into fastlane's smooth process, and it implements a <a href=\"https://codesigning.guide/\">new approach</a> to manage code signing for teams. Instead of storing the signing keys in the developer's macOS keychain — the default approach — the new approach revolves around storing the keys and certificates in a Git repository. This not only makes it easier to on-board new team members and set up new development machines; in our experience, it also is the easiest method to integrate signing into continuous delivery pipelines.</p>",
-        "isNew": true,
+        "isNew": false,
         "hasMovedIn": false,
         "hasMovedOut": false
     },
@@ -25218,7 +25218,7 @@
         "volume": 25,
         "publishedDate": "Oct 2021",
         "descriptionHtml": "<p><strong><a href=\"https://batect.dev/\">Batect</a></strong> continues to gain traction among our developers and is considered by many to be a default approach for configuring local development and test environments. This open-source tool (which happens to be developed by a Thoughtworker) makes it easy to set up and share a build environment based on <a href=\"https://www.thoughtworks.com/radar/techniques/docker-for-builds\">Docker</a>. Batect then becomes the entry point for your build system, replacing the ubiquitous go script as the basis for a “<a href=\"https://www.thoughtworks.com/insights/blog/praise-go-script-part-i\">check out and go</a>” approach. Batect continues to evolve in response to developer feedback and recently added support for Docker's BuildKit and shell tab completion.</p>",
-        "isNew": true,
+        "isNew": false,
         "hasMovedIn": false,
         "hasMovedOut": false
     },
@@ -25537,7 +25537,7 @@
         "volume": 25,
         "publishedDate": "Oct 2021",
         "descriptionHtml": "<p><strong><a href=\"https://reactjs.org/docs/hooks-intro.html\">React Hooks</a></strong> have introduced a new approach to managing stateful logic; given React components have always been closer to functions than classes, Hooks have embraced this and brought state to the functions, instead of using classes to take function to the state with methods. Another staple of state management in React applications is <a href=\"https://www.thoughtworks.com/radar/languages-and-frameworks/redux\">Redux</a>, and we've already noted that it has come under scrutiny, suggesting that sometimes the complexity of Redux isn't worth it and in such cases a simple approach using Hooks is preferable. Rolling this completely on your own can quickly become tricky; therefore we recommend considering a combination of <a href=\"https://reactjs.org/docs/context.html\">React Context</a> and the useContext and useReducer hooks, along the lines explained in this <a href=\"https://blog.logrocket.com/guide-to-react-usereducer-hook/\">blog post</a>.</p>",
-        "isNew": true,
+        "isNew": false,
         "hasMovedIn": false,
         "hasMovedOut": false
     },
@@ -26065,7 +26065,7 @@
         "volume": 26,
         "publishedDate": "Mar 2022",
         "descriptionHtml": "<p>For organizations using Azure as their primary cloud provider, <a href=\"https://azure.microsoft.com/en-us/services/data-factory/\">Azure Data Factory</a> is currently the default for orchestrating data-processing pipelines. It supports data ingestion, copying data from and to different storage types on prem or on Azure and executing transformation logic. Although we've had adequate experience with Azure Data Factory for simple migrations of data stores from on prem to the cloud, we discourage the use of <strong>Azure Data Factory for orchestration</strong> of complex data-processing pipelines and workflows. We've had some success with Azure Data Factory when it's used primarily to move data between systems. For more complex data pipelines, it still has its challenges, including poor debuggability and error reporting; limited observability as Azure Data Factory logging capabilities don't integrate with other products such as Azure Data Lake Storage or Databricks, making it difficult to get an end-to-end observability in place; and availability of data source-triggering mechanisms only to certain regions. At this time, we encourage using other open-source orchestration tools (e.g., <a href=\"https://www.thoughtworks.com/radar/tools/airflow\">Airflow</a>) for complex data pipelines and limiting Azure Data Factory for data copying or snapshotting. Our teams continue to use Data Factory to move and extract data, but for larger operations we recommend other, more well-rounded workflow tools.</p>",
-        "isNew": true,
+        "isNew": false,
         "hasMovedIn": false,
         "hasMovedOut": false
     },
@@ -26109,7 +26109,7 @@
         "volume": 26,
         "publishedDate": "Mar 2022",
         "descriptionHtml": "<p>As the <strong><a href=\"https://azure.microsoft.com/en-us/services/devops/\">Azure DevOps</a></strong> ecosystem keeps growing, our teams are using it more with success. These services contain a set of managed services, including hosted Git repos, build and deployment pipelines, automated testing tooling, backlog management tooling and artifact repository. We've seen our teams gaining experience in using this platform with good results, which means Azure DevOps is maturing. We particularly like its flexibility; it allows you to use the services you want even if they're from different providers. For instance, you could use an external Git repository while still using the Azure DevOps pipeline services. Our teams are especially excited about <a href=\"https://azure.microsoft.com/en-us/services/devops/pipelines/\">Azure DevOps Pipelines</a>. As the ecosystem matures, we're seeing an uptick in onboarding teams that are already on the Azure stack as it easily integrates with the rest of the Microsoft world.</p>",
-        "isNew": true,
+        "isNew": false,
         "hasMovedIn": false,
         "hasMovedOut": false
     },
@@ -26131,7 +26131,7 @@
         "volume": 26,
         "publishedDate": "Mar 2022",
         "descriptionHtml": "<p>Many of our teams choose <strong><a href=\"http://circleci.com/\">CircleCI</a></strong> for their continuous integration needs, and they appreciate its ability to run complex pipelines efficiently. The CircleCI developers continue to add new features with CircleCI, now in version 3.0. <a href=\"https://circleci.com/docs/2.0/concepts/#orbs\">Orbs</a> and <a href=\"https://circleci.com/docs/2.0/executor-types/\">executors</a> were called out by our teams as being particularly useful. Orbs are reusable snippets of code that automate repeated processes, speed up project setup and make it easy to integrate with third-party tools. The wide variety of executor types provides flexibility to set up jobs in Docker, Linux, macOS or Windows VMs.</p>",
-        "isNew": true,
+        "isNew": false,
         "hasMovedIn": false,
         "hasMovedOut": false
     },
@@ -26142,7 +26142,7 @@
         "volume": 26,
         "publishedDate": "Mar 2022",
         "descriptionHtml": "<p>When we originally blipped <strong><a href=\"https://www.couchbase.com/\">Couchbase</a></strong> in 2013, it was seen primarily as a persistent cache that evolved from a merger of <a href=\"https://github.com/membase\">Membase</a> and <a href=\"https://couchdb.apache.org/\">CouchDB</a>. Since then, it has undergone steady improvement and an ecosystem of related tools and commercial offerings has grown up around it. Among the additions to the product suite are Couchbase Mobile and the Couchbase Sync Gateway. These features work together to keep persistent data on edge devices up-to-date even when the device is offline for periods of time due to intermittent connectivity. As these devices proliferate, we see increasing need for embedded persistence that continues to work whether or not the device happens to be connected. Recently, one of our teams evaluated Couchbase for its offline sync capability and found that this off-the-shelf capability saved them considerable effort that they otherwise would have had to invest themselves.</p>",
-        "isNew": true,
+        "isNew": false,
         "hasMovedIn": false,
         "hasMovedOut": false
     },
@@ -26230,7 +26230,7 @@
         "volume": 26,
         "publishedDate": "Mar 2022",
         "descriptionHtml": "<p>For several years now, the Linux kernel has included the extended Berkeley Packet Filter (<strong><a href=\"https://ebpf.io/\">eBPF</a></strong>), a virtual machine that provides the ability to attach filters to particular sockets. But eBPF goes far beyond packet filtering and allows custom scripts to be triggered at various points within the kernel with very little overhead. Although this technology isn't new, it's now coming into its own with the increasing use of microservices deployed as orchestrated containers. Kubernetes and service mesh technology such as <a href=\"https://www.thoughtworks.com/radar/platforms/istio\">Istio</a> are commonly used, and they employ sidecars to implement control functionality. With new tools — <a href=\"https://github.com/solo-io/bumblebee\">Bumblebee</a> in particular makes building, running and distributing eBPF programs much easier — eBPF can be seen as an alternative to the traditional sidecar. A maintainer of <a href=\"https://www.thoughtworks.com/radar/tools/cilium\">Cilium</a>, a tool in this space, has even proclaimed the <a href=\"https://isovalent.com/blog/post/2021-12-08-ebpf-servicemesh\">demise of the sidecar</a>. An approach based on eBPF reduces some overhead in performance and operation that comes with sidecars, but it doesn't support common features such as SSL termination.</p>",
-        "isNew": true,
+        "isNew": false,
         "hasMovedIn": false,
         "hasMovedOut": false
     },
@@ -26846,7 +26846,7 @@
         "volume": 26,
         "publishedDate": "Mar 2022",
         "descriptionHtml": "<p><strong><a href=\"http://webassembly.org/\">WebAssembly</a></strong> (WASM) is the W3C standard that provides capabilities of executing code in the browser. Supported by all major browsers and backward compatible, it's a binary compilation format designed to run in the browser at near native speeds. It opens up the range of languages you can use to write front-end functionality, with early focus on C, C++ and Rust, and it's also an <a href=\"https://llvm.org/\">LLVM compilation</a> target. When run in the sandbox, it can interact with JavaScript and shares the same permissions and security model. Portability and security are key capabilities that will enable most platforms, including mobile and IoT.</p>",
-        "isNew": true,
+        "isNew": false,
         "hasMovedIn": false,
         "hasMovedOut": false
     },
@@ -26912,7 +26912,7 @@
         "volume": 27,
         "publishedDate": "Oct 2022",
         "descriptionHtml": "<p>We continue to recommend that teams carry out <strong><a href=\"https://www.owasp.org/index.php/Category:Threat_Modeling\">threat modeling</a></strong> — a set of techniques to help you identify and classify potential threats during the development process — but we want to emphasize that this is not a one-off activity only done at the start of projects; teams need to avoid the <a href=\"https://www.thoughtworks.com/radar/techniques/security-sandwich\">security sandwich</a>. This is because throughout the lifetime of any software, new threats will emerge and existing ones will continue to evolve thanks to external events and ongoing changes to requirements and architecture. This means that threat modeling needs to be repeated periodically — the frequency of repetition will depend on the circumstances and will need to consider factors such as the cost of running the exercise and the potential risk to the business. When used in conjunction with other techniques, such as establishing cross-functional security requirements to address common risks in the project's technologies and using automated security scanners, threat modeling can be a powerful asset.</p>",
-        "isNew": true,
+        "isNew": false,
         "hasMovedIn": false,
         "hasMovedOut": false
     },
@@ -26989,7 +26989,7 @@
         "volume": 27,
         "publishedDate": "Oct 2022",
         "descriptionHtml": "<p>Since introducing them in the Radar in 2016, we've seen widespread adoption of <a href=\"https://www.thoughtworks.com/radar/techniques/micro-frontends\">micro frontends</a> for web UIs. Recently, however, we've seen projects extend this architectural style to include <strong>micro frontends for mobile</strong> apps as well. When an app becomes sufficiently large and complex, it becomes necessary to distribute the development over multiple teams. This presents a number of challenges around team autonomy, repository structures and integration frameworks. In the past we've mentioned <a href=\"https://www.thoughtworks.com/radar/languages-and-frameworks/atlas-and-beehive\">Atlas and BeeHive</a>, but these frameworks failed to gain traction and are no longer in active development. More recent approaches include <a href=\"https://github.com/tuist/tuist\">Tuist</a> or the <a href=\"https://www.thoughtworks.com/radar/languages-and-frameworks/swift-package-manager\">Swift Package Manager</a> for integrating the work of multiple teams into a single app. But in our experience, teams often end up implementing their own framework for integration. While we definitely see a need for modularity in scaling up mobile development teams, the case for micro frontends is less certain. This is because while micro frontends imply a direct correspondence between teams and pages or components, this structure could end up blurring responsibilities for business domain contexts, thereby increasing <a href=\"https://www.thoughtworks.com/radar/techniques/team-cognitive-load\">team cognitive load</a>. Our advice is to follow the basics of good, clean application design, embrace modularity when scaling up to multiple teams and adopt a micro frontend architecture only when the modules and the business domain are strongly aligned.</p>",
-        "isNew": true,
+        "isNew": false,
         "hasMovedIn": false,
         "hasMovedOut": false
     },
@@ -27132,7 +27132,7 @@
         "volume": 27,
         "publishedDate": "Oct 2022",
         "descriptionHtml": "<p>When we first included it in the Radar two years ago, <strong>verifiable credentials</strong> (VC) was an intriguing standard with some promising potential applications, but it wasn't widely known or understood outside the community of enthusiasts. This was particularly true when it came to the credential-granting institutions, such as state governments, who would be responsible for implementing the standards. Two years and one pandemic later, the demand for cryptographically secure, privacy-respecting and machine-verifiable electronic credentials has grown and, as a result, governments are starting to wake up to VC's potential. We're now starting to see VC crop up in our work for public-sector clients. The <a href=\"https://www.w3.org/TR/vc-data-model/\">W3C standard</a> puts credential holders at the center, which is similar to our experience when using physical credentials: users can put their verifiable credentials in their own digital wallets and show them to anyone at any time without the permission of the credentials' issuer. This decentralized approach also enables users to better manage and selectively disclose their own information which greatly improves data privacy protection. For example, powered by zero-knowledge proof technology, you can construct a verifiable credential to prove that you're an adult without revealing your birthday. It’s important to note that although many VC-based <a href=\"https://www.thoughtworks.com/radar/techniques/decentralized-identity\">decentralized identity</a> solutions rely on blockchain technology, blockchain is not a prerequisite for all VC implementations.</p>",
-        "isNew": true,
+        "isNew": false,
         "hasMovedIn": false,
         "hasMovedOut": false
     },
@@ -28023,7 +28023,7 @@
         "volume": 28,
         "publishedDate": "Apr 2023",
         "descriptionHtml": "<p>We keep getting good feedback from teams <strong>applying product management to internal platforms</strong>. One key feature to remember, though: It's not just about team structure or renaming existing platform teams; it’s also about applying product-centric working practices within the team. Specifically, we've received feedback that teams face challenges with this technique unless they have a product-centric mindset. This likely means additional roles, such as a product manager, alongside changes to other areas, such as requirements gathering and the measurement of success. Working this way means establishing empathy with internal consumers (the development teams) and collaborating with them on the design. Platform product managers create roadmaps and ensure the platform delivers value to the business and enhances the developer experience. We continue to see this technique as key to building internal platforms to roll out new digital solutions quickly and efficiently.</p>",
-        "isNew": true,
+        "isNew": false,
         "hasMovedIn": false,
         "hasMovedOut": false
     },
@@ -28056,7 +28056,7 @@
         "volume": 28,
         "publishedDate": "Apr 2023",
         "descriptionHtml": "<p>Automatically estimating, tracking and predicting cloud infrastructure run cost is crucial for today's organizations. The cloud providers' savvy pricing models, combined with the proliferation of pricing parameters and the dynamic nature of today's architecture, can lead to surprisingly expensive run costs. Even though this technique has been in Adopt since 2019, we want to highlight the importance of considering <strong>run cost as an architecture fitness function</strong>, especially today, due to accelerated cloud adoption and the growing attention to FinOps practices. Many commercial platforms provide tools that can consolidate and clarify cloud costs for business leaders. Some of them are designed to show cloud run costs to finance organizations or originating business units. </p>\n\n<p>However, cloud consumption decisions are usually made at the engineering level, where systems are designed. It's important that the engineers making design decisions have some way of predicting the cost impact of their architectural decisions. Some teams automate this prediction early in the development lifecycle. Tools like <a href=\"https://www.thoughtworks.com/radar/tools/infracost\">Infracost</a> help teams predict cost impact when thinking about possible changes to infrastructure as code. This computation can be automated and woven into the CD pipeline. Note that cost will be impacted by architectural decisions combined with actual usage levels; to do this properly, you need good projections of expected usage levels. Early and frequent feedback on run cost can prevent it from soaring. When the predicted cost deviates from what was expected or acceptable, the team can discuss whether it's time to evolve the architecture.</p>",
-        "isNew": true,
+        "isNew": false,
         "hasMovedIn": false,
         "hasMovedOut": false
     },
@@ -28165,7 +28165,7 @@
         "ring": "assess",
         "volume": 28,
         "publishedDate": "Apr 2023",
-        "descriptionHtml": "<p>Team knowledge management is a familiar concept with teams using tools such as wikis to store information and onboard new team members. Some of our teams now prefer to use <strong><a href=\"https://logseq.com/\">logseq</a> as a team knowledge base</strong>. An open-source knowledge-management system, loqsec is powered by a graph database, helps users organize thoughts, notes and ideas and can be adapted for team use with Git-based storage. Logseq allows teams to build a democratic and accessible knowledge base, providing each member with a personalized learning journey and facilitating efficient onboarding. However, as with any knowledge management tool, teams will need to apply good curation and management of their knowledge base to avoid information overload or disorganization.</p>\n\n<p>While similar functionality is available in tools like <a href=\"https://www.thoughtworks.com/radar/tools/obsidian\">Obsidian</a>, the key difference lies in Logseq's focus on consumption, with paragraph-based linking enabling team members to quickly find the relevant context without having to read an entire article.</p>",
+        "descriptionHtml": "<p>Team knowledge management is a familiar concept with teams using tools such as wikis to store information and onboard new team members. Some of our teams now prefer to use <strong><a href=\"https://logseq.com/\">Logseq</a> as a team knowledge base</strong>. An open-source knowledge-management system, Logseq is powered by a graph database, helps users organize thoughts, notes and ideas and can be adapted for team use with Git-based storage. Logseq allows teams to build a democratic and accessible knowledge base, providing each member with a personalized learning journey and facilitating efficient onboarding. However, as with any knowledge management tool, teams will need to apply good curation and management of their knowledge base to avoid information overload or disorganization.</p>\n\n<p>While similar functionality is available in tools like <a href=\"https://www.thoughtworks.com/radar/tools/obsidian\">Obsidian</a>, the key difference lies in Logseq's focus on consumption, with paragraph-based linking enabling team members to quickly find the relevant context without having to read an entire article.</p>",
         "isNew": true,
         "hasMovedIn": false,
         "hasMovedOut": false
@@ -28243,7 +28243,7 @@
         "volume": 28,
         "publishedDate": "Apr 2023",
         "descriptionHtml": "<p>While <a href=\"https://www.thoughtworks.com/radar/techniques/serverless-architecture\">serverless architectures</a> can be extremely useful for solving some problems, they do come with a certain level of complexity, especially when they involve nontrivial execution and data flows across multiple interdependent <a href=\"https://www.thoughtworks.com/radar/platforms/aws-lambda\">Lambdas</a> — this can sometimes result in a <strong><a href=\"https://twitter.com/ctford/status/1128774411832762369\">Lambda pinball</a></strong> architecture. Our teams have reported that maintaining and testing Lambda pinball architectures can be very challenging: understanding the infrastructure, deployment, diagnosis and debugging can become difficult. At a code level, simple mapping between domain concepts and the multiple Lambdas involved is practically impossible, making any changes and additions challenging. Although we believe serverless is the right fit for some problems and domains, it's not a \"silver bullet\" for every problem, which is why you should try to avoid Lambda pinball. One pattern that can help is to draw a distinction between public and published interfaces and apply domain boundaries with published interfaces between them.</p>",
-        "isNew": true,
+        "isNew": false,
         "hasMovedIn": false,
         "hasMovedOut": false
     },
@@ -28265,7 +28265,7 @@
         "volume": 28,
         "publishedDate": "Apr 2023",
         "descriptionHtml": "<p>Headless content management systems have become a common component of digital platforms. <strong><a href=\"http://www.contentful.com/\">Contentful</a></strong> is still our default choice in this space, but new entrants like <a href=\"https://www.thoughtworks.com/radar/platforms/strapi\">Strapi</a> have impressed us too. We particularly like Contentful's API-first approach and implementation of <a href=\"http://www.contentful.com/r/knowledgebase/cms-as-code/\">CMS as code</a>. It supports powerful content modeling primitives as code and content model evolution scripts, which allow it to be treated like other data store schemas and enable <a href=\"http://martinfowler.com/articles/evodb.html\">evolutionary database design</a> practices to be applied to CMS development. Recently, Contentful has released an <a href=\"https://www.contentful.com/developers/docs/extensibility/app-framework/\">app framework</a> to write apps that make it easier to adapt Contentful to individual business processes and to integrate with other services. Apps can be built by and for a specific organization but a marketplace for apps is emerging, too.</p>",
-        "isNew": true,
+        "isNew": false,
         "hasMovedIn": false,
         "hasMovedOut": false
     },
