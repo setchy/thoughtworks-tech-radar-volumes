@@ -92,11 +92,6 @@ function calculateBlipMovements(blipMasterData: MasterData) {
         }
 
         if (i > 0) {
-            const currentVolumeIndex = blipMasterData.blipEntries[i].volume;
-
-            const previousVolumeIndex =
-                blipMasterData.blipEntries[i - 1].volume;
-
             const currentRingIndex = _.indexOf(
                 RING_SORT_ORDER,
                 blipMasterData.blipEntries[i].ring,

@@ -1,5 +1,4 @@
 import fs from 'fs';
-import _ from 'lodash';
 import { CSV_HEADERS, FILES } from '../common/constants';
 
 function countRows() {
