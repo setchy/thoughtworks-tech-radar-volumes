@@ -27,9 +27,7 @@ function generateVolumeCSVs() {
                 row.name,
                 row.ring,
                 row.quadrant,
-                row.isNew.toString().toUpperCase(),
-                row.hasMovedIn.toString().toUpperCase(),
-                row.hasMovedOut.toString().toUpperCase(),
+                getStatus(row),
                 escapeDescriptionHTML(row.descriptionHtml),
             ].join(','),
         );
@@ -41,6 +39,18 @@ function generateVolumeCSVs() {
             CSV_HEADERS.join(',') + '\n' + csvData.join('\n'),
         );
     });
+}
+
+function getStatus(row: any) {
+    if (row.isNew) {
+        return 'new';
+    } else if (row.hasMovedIn) {
+        return 'moved in';
+    } else if (row.hasMovedOut) {
+        return 'moved out';
+    } else {
+        return 'no change';
+    }
 }
 
 generateVolumeCSVs();

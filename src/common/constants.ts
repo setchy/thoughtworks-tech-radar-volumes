@@ -19,9 +19,7 @@ export const CSV_HEADERS = [
     'name',
     'ring',
     'quadrant',
-    'isNew',
-    'hasMovedIn',
-    'hasMovedOut',
+    'status',
     'description',
 ];
 
