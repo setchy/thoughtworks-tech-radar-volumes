@@ -27,6 +27,7 @@ function generateVolumeCSVs() {
                 row.name,
                 row.ring,
                 row.quadrant,
+                row.isNew.toString().toUpperCase(),
                 getStatus(row),
                 escapeDescriptionHTML(row.descriptionHtml),
             ].join(','),
