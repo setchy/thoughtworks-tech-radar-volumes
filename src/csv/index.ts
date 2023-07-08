@@ -19,7 +19,7 @@ function generateVolumeCSVs() {
         const sortedData = _.orderBy(data, [
             (entry) => _.indexOf(QUADRANT_SORT_ORDER, entry.quadrant),
             (entry) => _.indexOf(RING_SORT_ORDER, entry.ring),
-            'name',
+            (entry) => entry.name.toLowerCase(),
         ]);
 
         const csvData = sortedData.map((row) =>
