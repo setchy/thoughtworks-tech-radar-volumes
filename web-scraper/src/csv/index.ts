@@ -36,7 +36,7 @@ function generateVolumeCSVs() {
         const filename = `${FILES.VOLUMES.FOLDER}/${FILES.VOLUMES.FILE_PREFIX} ${volume}.csv`;
         console.log('Creating CSV file', filename);
         fs.writeFileSync(
-            filename,
+            '../' + filename,
             CSV_HEADERS.join(',') + '\n' + csvData.join('\n'),
         );
     });
