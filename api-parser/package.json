@@ -1,0 +1,46 @@
+{
+    "name": "thoughtworks-tech-radar-volumes",
+    "version": "1.0.0",
+    "description": "CLI and complete volume dataset for Thoughtworks Technology Radars",
+    "author": "Adam Setch @setchy",
+    "homepage": "https://github.com/setchy/thoughtworks-tech-radar-volumes",
+    "license": "ISC",
+    "main": "dist/index.js",
+    "repository": "setchy/thoughtworks-tech-radar-volumes",
+    "dependencies": {
+        "axios": "^1.4.0"
+    },
+    "devDependencies": {
+        "@tsconfig/node18": "18.2.0",
+        "@types/jsdom": "21.1.1",
+        "@types/lodash": "4.14.195",
+        "@types/node": "18.17.0",
+        "@typescript-eslint/eslint-plugin": "6.1.0",
+        "@typescript-eslint/parser": "6.1.0",
+        "eslint": "8.45.0",
+        "eslint-config-prettier": "8.8.0",
+        "jsdom": "22.1.0",
+        "lodash": "4.17.21",
+        "npm-run-all": "4.1.5",
+        "prettier": "3.0.0",
+        "ts-node": "10.9.1",
+        "typescript": "5.1.6"
+    },
+    "scripts": {
+        "start": "ts-node src/index.ts",
+        "lint": "run-s -c -l eslint prettier",
+        "lint-fix": "run-s -c -l eslint:fix prettier-fix",
+        "eslint": "eslint . --ext .ts --config .eslintrc",
+        "eslint:fix": "eslint . --fix --ext .ts --config .eslintrc",
+        "prettier": "prettier --check .",
+        "prettier-fix": "prettier --write .",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "engines": {
+        "node": "18"
+    },
+    "bugs": "https://github.com/setchy/thoughtworks-tech-radar-volumes/issues",
+    "keywords": [
+        "tech-radar"
+    ]
+}
