@@ -28,7 +28,7 @@ export interface RadarBlip {
     blip_selector: string;
 }
 
-enum BlipStatus {
+export enum BlipStatus {
     NO_CHANGE = 'c',
     NEW = 't',
     MOVE_IN = 'move_in',
