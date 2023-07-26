@@ -6,8 +6,8 @@ export const URLS = {
 
 export const FILES = {
     DATA: {
-        LINKS: 'data/links.json',
-        MASTER: 'data/master.json',
+        LINKS: 'data/search-links.json',
+        MASTER: 'data/search-data.json',
     },
     VOLUMES: {
         FOLDER: 'volumes',
