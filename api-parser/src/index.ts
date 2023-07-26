@@ -17,7 +17,7 @@ async function generateCSVs() {
             await axios.get<RadarPublication[]>(URLS.SEARCH_API)
         ).data;
 
-        console.log(publications);
+        fs.writeFileSync(FILES.DATA.RAW, JSON.stringify(publications, null, 4));
 
         let volumeNumber = 1;
 
@@ -47,8 +47,8 @@ async function generateCSVs() {
             const csvData = sortedBlips.map((blip) =>
                 [
                     blip.name,
-                    blip.ring,
-                    blip.quadrant,
+                    blip.ring.toLowerCase(),
+                    blip.quadrant.toLowerCase(),
                     isNewBlip(blip.blip_status),
                     calculateBlipStatus(blip.blip_status),
                     escapeDescriptionHTML(blip.description),

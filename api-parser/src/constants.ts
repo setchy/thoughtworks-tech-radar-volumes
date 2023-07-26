@@ -7,6 +7,9 @@ export const FILES = {
         FOLDER: 'volumes',
         FILE_PREFIX: 'Thoughtworks Technology Radar Volume',
     },
+    DATA: {
+        RAW: 'data/api-response.json',
+    },
 };
 
 export const CSV_HEADERS = [
