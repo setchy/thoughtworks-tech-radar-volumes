@@ -6,10 +6,10 @@ import {
     RING_SORT_ORDER,
 } from './constants';
 import axios from 'axios';
-import { RadarBlip, RadarPublication } from './types';
 import _ from 'lodash';
 import fs from 'fs';
 import { calculateBlipStatus, escapeDescriptionHTML, isNewBlip } from './utils';
+import type { RadarBlip, RadarPublication } from './types';
 
 async function generateCSVs() {
     try {
@@ -55,7 +55,7 @@ async function generateCSVs() {
                 ].join(','),
             );
 
-            const filename = `${FILES.VOLUMES.FOLDER}/${FILES.VOLUMES.FILE_PREFIX} ${volumeNumber} (${publicationDateFormatted}).csv`;
+            const filename = `../${FILES.VOLUMES.FOLDER}/${FILES.VOLUMES.FILE_PREFIX} ${volumeNumber} (${publicationDateFormatted}).csv`;
             console.log('Creating CSV file', filename);
             fs.writeFileSync(
                 filename,
