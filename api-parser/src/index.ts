@@ -19,17 +19,13 @@ async function generateCSVs() {
 
         fs.writeFileSync(FILES.DATA.RAW, JSON.stringify(publications, null, 4));
 
-        let volumeNumber = 1;
-
-        for (const publication of publications) {
-            const publicationDate = new Date(publication.date);
-            const publicationDateFormatted = publicationDate.toLocaleDateString(
-                'default',
-                {
-                    year: 'numeric',
-                    month: 'short',
-                },
-            );
+        publications.forEach((publication, volume) => {
+            const publicationDate = new Date(
+                publication.date,
+            ).toLocaleDateString('default', {
+                year: 'numeric',
+                month: 'short',
+            });
 
             const blips = publication.blips;
 
@@ -42,28 +38,33 @@ async function generateCSVs() {
                 (blip: RadarBlip) => blip.name.toLowerCase(),
             ]);
 
-            // TODO - loop over sortedBlips and backfill any missing attributes for older publications.
+            const csvData = sortedBlips.map((blip) => {
+                const movement = calculateBlipStatus(
+                    publications,
+                    volume,
+                    blip,
+                );
 
-            const csvData = sortedBlips.map((blip) =>
-                [
+                return [
                     blip.name,
                     blip.ring.toLowerCase(),
                     blip.quadrant.toLowerCase(),
-                    isNewBlip(blip.blip_status),
-                    calculateBlipStatus(blip.blip_status),
+                    isNewBlip(movement),
+                    movement,
                     escapeDescriptionHTML(blip.description),
-                ].join(','),
-            );
+                ].join(',');
+            });
 
-            const filename = `../${FILES.VOLUMES.FOLDER}/${FILES.VOLUMES.FILE_PREFIX} ${volumeNumber} (${publicationDateFormatted}).csv`;
+            // const filename = `../${FILES.VOLUMES.FOLDER}/${FILES.VOLUMES.FILE_PREFIX} ${volume + 1} (${publicationDate}).csv`;
+            const filename = `../${FILES.VOLUMES.FOLDER}/${
+                FILES.VOLUMES.FILE_PREFIX
+            } ${volume + 1}.csv`;
             console.log('Creating CSV file', filename);
             fs.writeFileSync(
                 filename,
                 CSV_HEADERS.join(',') + '\n' + csvData.join('\n'),
             );
-
-            volumeNumber += 1;
-        }
+        });
     } catch (error) {
         console.error(`Failed to fetch ${URLS.SEARCH_API}: ${error}`);
     }
