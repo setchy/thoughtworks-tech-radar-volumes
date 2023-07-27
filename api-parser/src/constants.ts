@@ -4,7 +4,8 @@ export const URLS = {
 
 export const FILES = {
     VOLUMES: {
-        FOLDER: 'volumes',
+        CSV_FOLDER: 'volumes/csv',
+        JSON_FOLDER: 'volumes/json',
         FILE_PREFIX: 'Thoughtworks Technology Radar Volume',
     },
     DATA: {

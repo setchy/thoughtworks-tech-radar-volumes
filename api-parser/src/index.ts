@@ -11,7 +11,7 @@ import fs from 'fs';
 import { calculateBlipStatus, escapeDescriptionHTML, isNewBlip } from './utils';
 import type { RadarBlip, RadarPublication } from './types';
 
-async function generateCSVs() {
+async function generateVolumes() {
     try {
         const publications = (
             await axios.get<RadarPublication[]>(URLS.SEARCH_API)
@@ -43,34 +43,86 @@ async function generateCSVs() {
                 (blip: RadarBlip) => blip.name.toLowerCase(),
             ]);
 
-            const csvData = sortedBlips.map((blip) => {
-                const movement = calculateBlipStatus(
-                    publications,
-                    volume,
-                    blip,
-                );
-
-                return [
-                    blip.name,
-                    blip.ring.toLowerCase(),
-                    blip.quadrant.toLowerCase(),
-                    isNewBlip(movement),
-                    movement,
-                    escapeDescriptionHTML(blip.description),
-                ].join(',');
-            });
-
-            const filename = `../${FILES.VOLUMES.FOLDER}/${FILES.VOLUMES.FILE_PREFIX} ${volumeNumber} (${publicationDate}).csv`;
-
-            console.log('Creating CSV file', filename);
-            fs.writeFileSync(
-                filename,
-                CSV_HEADERS.join(',') + '\n' + csvData.join('\n'),
-            );
+            createCSVs(publications, sortedBlips, volume);
+            createJSONs(publications, sortedBlips, volume);
         });
     } catch (error) {
         console.error(`Failed to fetch ${URLS.SEARCH_API}: ${error}`);
     }
 }
 
-generateCSVs();
+generateVolumes();
+
+function createCSVs(
+    publications: RadarPublication[],
+    blips: RadarBlip[],
+    volume: number,
+) {
+    const publicationDate = new Date(
+        publications[volume].date,
+    ).toLocaleDateString('default', {
+        year: 'numeric',
+        month: 'short',
+    });
+
+    const volumeNumber = (volume + 1).toLocaleString('en-US', {
+        minimumIntegerDigits: 2,
+        useGrouping: false,
+    });
+
+    const csvData = blips.map((blip) => {
+        const movement = calculateBlipStatus(publications, volume, blip);
+
+        return [
+            blip.name,
+            blip.ring.toLowerCase(),
+            blip.quadrant.toLowerCase(),
+            isNewBlip(movement),
+            movement,
+            escapeDescriptionHTML(blip.description),
+        ].join(',');
+    });
+
+    const filename = `../${FILES.VOLUMES.CSV_FOLDER}/${FILES.VOLUMES.FILE_PREFIX} ${volumeNumber} (${publicationDate}).csv`;
+
+    console.log('Creating CSV file', filename);
+    fs.writeFileSync(
+        filename,
+        CSV_HEADERS.join(',') + '\n' + csvData.join('\n'),
+    );
+}
+
+function createJSONs(
+    publications: RadarPublication[],
+    blips: RadarBlip[],
+    volume: number,
+) {
+    const publicationDate = new Date(
+        publications[volume].date,
+    ).toLocaleDateString('default', {
+        year: 'numeric',
+        month: 'short',
+    });
+
+    const volumeNumber = (volume + 1).toLocaleString('en-US', {
+        minimumIntegerDigits: 2,
+        useGrouping: false,
+    });
+
+    const jsonData = blips.map((blip) => {
+        const movement = calculateBlipStatus(publications, volume, blip);
+
+        return {
+            name: blip.name,
+            ring: blip.ring.toLowerCase(),
+            quadrant: blip.quadrant.toLowerCase(),
+            isNew: isNewBlip(movement),
+            status: movement,
+            description: escapeDescriptionHTML(blip.description),
+        };
+    });
+
+    const filename = `../${FILES.VOLUMES.JSON_FOLDER}/${FILES.VOLUMES.FILE_PREFIX} ${volumeNumber} (${publicationDate}).json`;
+
+    fs.writeFileSync(filename, JSON.stringify(jsonData, null, 4));
+}

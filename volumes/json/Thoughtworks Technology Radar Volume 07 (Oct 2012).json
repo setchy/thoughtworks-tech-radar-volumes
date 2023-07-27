@@ -1,0 +1,858 @@
+[
+    {
+        "name": "Advanced analytics",
+        "ring": "adopt",
+        "quadrant": "techniques",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"Machine learning, semantic analysis, text mining, quantitative analytics, and other advanced analytics techniques have steadily matured over the past 15 years. They offer incredible potential for prediction, forecasting, identifying repeatable patterns, and providing insight into unstructured data. Historically, our ability to store and rapidly analyze large amounts of audio, video and image data has been severely limited. This placed constraints on sample size, as well as the time it would take to validate analytical models and put them into production. Now, using a spectrum of new technologies like NoSQL, data harvesters, MapReduce frameworks, and clusters of shared-nothing commodity servers, we have the power necessary to make truly effective use of these techniques. Combined with the massive increase in global data available from sensors, mobile devices and social media and we see this as a field with tremendous opportunity.\""
+    },
+    {
+        "name": "Aggregates as documents",
+        "ring": "adopt",
+        "quadrant": "techniques",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"\""
+    },
+    {
+        "name": "Automated deployment pipeline",
+        "ring": "adopt",
+        "quadrant": "techniques",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"\""
+    },
+    {
+        "name": "Guerrilla user testing",
+        "ring": "adopt",
+        "quadrant": "techniques",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"\""
+    },
+    {
+        "name": "Health check pages",
+        "ring": "adopt",
+        "quadrant": "techniques",
+        "isNew": "FALSE",
+        "status": "no change",
+        "description": "\"We have found adding simple health check pages to applications is incredibly useful. This allows people to quickly understand the health of an individual node. We often extend them to add metrics like the number of orders placed, error rates, or similar information. Using simple embedded web servers, even non-web based services can easily expose internal information over HTTP. By using microformats, these web pages can easily be scraped by other monitoring tools to become part of holistic monitoring.\""
+    },
+    {
+        "name": "In-process acceptance testing",
+        "ring": "adopt",
+        "quadrant": "techniques",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"\""
+    },
+    {
+        "name": "Windows infrastructure automation",
+        "ring": "adopt",
+        "quadrant": "techniques",
+        "isNew": "FALSE",
+        "status": "moved in",
+        "description": "\"Mature tools such as PowerShell, together with newer options such as Chef and Puppet, lead us to highlight Windows infrastructure automation on this edition of the technology radar. Manual configuration using a mouse and menu options is slow and leads to misconfiguration and “snowflake” machines in an unknown state. We recommend command-line tools for their clarity and scriptability.\""
+    },
+    {
+        "name": "Work-in-Progress limits",
+        "ring": "adopt",
+        "quadrant": "techniques",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"It might sound odd for us to mention this, given how mainstream Agile development has become, but we are noticing teams rediscover and embrace work-in-progress limits. Methods such as Kanban limit the amount of in-flight work, forcing better workflow into the team and more visibility into bottlenecks.\""
+    },
+    {
+        "name": "Agile analytics",
+        "ring": "trial",
+        "quadrant": "techniques",
+        "isNew": "FALSE",
+        "status": "no change",
+        "description": "\"Applying agile methods to data warehousing, business intelligence and agile analytics provides better return and improved business responsiveness. This is done by applying lightweight technologies like REST services to move data around in near real-time instead of batch updates. This allows information about customer behavior and application usage to be derived and responses incorporated within the applications for better user experience and data visualization.\""
+    },
+    {
+        "name": "Configuration in DNS",
+        "ring": "trial",
+        "quadrant": "techniques",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"Application deployments often suffer from an excess of environment-specific configuration settings, including the hostnames of dependent services. Configuration in DNS is a valuable technique to reduce this complexity by using standard hostnames like ‘mail’ or ‘db’ and have DNS resolve to the correct host for that environment. This can be achieved in multiple ways, including split-horizon DNS or configuring search subdomains. Collaboration between development teams and IT operations is essential to achieve this, but that is unfortunately still difficult in some organizations.\""
+    },
+    {
+        "name": "Declarative provisioning",
+        "ring": "trial",
+        "quadrant": "techniques",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"Tools such as Pallet offer a compelling approach to environment creation and management through declarative provisioning. Usually, this is accomplished by declaring your environment topology - a number of instances, OS, network configuration and applications - using a DSL, and then creating the entire environment automatically via a commandline tool. This approach differs in the decoupling of instance creation and application provision, and in the addition of the ability to declare dependencies between domain-specific application-level services over multiple boxes.\""
+    },
+    {
+        "name": "Edge Side Includes for page composition",
+        "ring": "trial",
+        "quadrant": "techniques",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"\""
+    },
+    {
+        "name": "Infrastructure automation of development workstations",
+        "ring": "trial",
+        "quadrant": "techniques",
+        "isNew": "FALSE",
+        "status": "no change",
+        "description": "\"Automation is one of the core practices of Continuous Delivery. While companies are getting better at automating the management of infrastructure and environments, one commonly forgotten aspect is infrastructure automation of development workstations. This leads to huge gains in productivity by avoiding manually building specific environments and allows a seamless pairing environment. As with other parts of the environment, tools like Puppet and Chef can be used though they are not entirely necessary as the judicious use of platform packaging and language build tools can be sufficient.\""
+    },
+    {
+        "name": "Logs as data",
+        "ring": "trial",
+        "quadrant": "techniques",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"\""
+    },
+    {
+        "name": "Microservices",
+        "ring": "trial",
+        "quadrant": "techniques",
+        "isNew": "FALSE",
+        "status": "moved in",
+        "description": "\"\""
+    },
+    {
+        "name": "Mobile first",
+        "ring": "trial",
+        "quadrant": "techniques",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"\""
+    },
+    {
+        "name": "Out-of-container functional testing",
+        "ring": "trial",
+        "quadrant": "techniques",
+        "isNew": "FALSE",
+        "status": "no change",
+        "description": "\"With the popularity of embedded HTTP servers increasing, so has the technique of out-of-container functional testing. That is writing tests at the boundary of the system, using a mock container to provide both fast feedback and high coverage. Servers such as Jetty and tools like Plasma for the .Net platform can provide a significant reduction in the time it takes to run your test suite.\""
+    },
+    {
+        "name": "Performance testing as a first-class citizen",
+        "ring": "trial",
+        "quadrant": "techniques",
+        "isNew": "FALSE",
+        "status": "no change",
+        "description": "\"\""
+    },
+    {
+        "name": "Polyglot Persistence",
+        "ring": "trial",
+        "quadrant": "techniques",
+        "isNew": "FALSE",
+        "status": "no change",
+        "description": "\"Polyglot persistence is the technique of storing data in various data stores based on efficiency and how that data is going to be used. Do not just use the default database, often an RDBMS, for all the needs of the application. Instead, ask questions like: Does session management data belong in the database or does it belong in a key-value store? Do relationships between customers and products belong in a graph database? Using NoSQL databases like MongoDB, Riak and Neo4J allows us to reconsider how data is treated, even with-in a single application.\""
+    },
+    {
+        "name": "Remote usability testing",
+        "ring": "trial",
+        "quadrant": "techniques",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"Bringing users in to a controlled environment for formal testing can be a slow and expensive proposition. Much useful, qualitative feedback can be gathered quickly and cheaply through guerrilla user testing - by going out into the world and testing with small samples of the general public. Another alternative is remote usability testing, where you can send out everything from wireframes to final applications for testing by people all over the world. Usabila, Loop11 and Treejack all provide tools where you can ask users to carry out specific tasks, and capture everything from the time taken to complete a task, to the user’s thoughts and feelings while doing so.\""
+    },
+    {
+        "name": "Responsive web design",
+        "ring": "trial",
+        "quadrant": "techniques",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"\""
+    },
+    {
+        "name": "Semantic monitoring",
+        "ring": "trial",
+        "quadrant": "techniques",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"\""
+    },
+    {
+        "name": "Deployment and scripting test tools",
+        "ring": "assess",
+        "quadrant": "techniques",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"With deployment automation tools maturing, including PowerShell on Windows, scripts are increasingly sophisticated and contain a lot of logic. We recommend deployment and scripting test tools, such as Pester for PowerShell and TOFT for Chef and Puppet. It is critical to have good test coverage around the most important aspects of your deployment automation.\""
+    },
+    {
+        "name": "Database based integration",
+        "ring": "hold",
+        "quadrant": "techniques",
+        "isNew": "FALSE",
+        "status": "no change",
+        "description": "\"For those organizations that are required to integrate systems, many continue to use a common database, sharing data between applications through the database tier. In many cases this has become an established and accepted architectural pattern: database based integration. The side affect of such an approach is greater coupling of database schemas, release schedules, performance and quality of service across applications.\""
+    },
+    {
+        "name": "Exhaustive browser-based testing",
+        "ring": "hold",
+        "quadrant": "techniques",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"\""
+    },
+    {
+        "name": "Feature branching",
+        "ring": "hold",
+        "quadrant": "techniques",
+        "isNew": "FALSE",
+        "status": "no change",
+        "description": "\"Disappointingly, we continue to see development teams embrace the practice of feature branching to isolate work and defer integration. Feature branches commonly cause significant pain and unpredictability during late merges, but more importantly prevent the continual design improvement necessary to maintain high quality software. We recommend continuous integration and branch by abstraction as an alternative to feature branching.\""
+    },
+    {
+        "name": "Test recorders",
+        "ring": "hold",
+        "quadrant": "techniques",
+        "isNew": "FALSE",
+        "status": "no change",
+        "description": "\"Test recorders seem invaluable as they provide a quick way to capture navigation through an application. However, we strongly advise against their regular use, as it tends to result in brittle tests which break with small changes to the UI. The test code they produce tends to be relatively poor and riddled with unnecessary duplication. Most importantly, test recorders tend to cut channels of communication between the test automation and development teams. When faced with an application that is difficult to test through the user interface, the solution is to have a critical conversation between the teams to build a more testable UI.\""
+    },
+    {
+        "name": "ATOM",
+        "ring": "adopt",
+        "quadrant": "platforms",
+        "isNew": "FALSE",
+        "status": "no change",
+        "description": "\"One of the foundational technologies of the Web as platform, Atom is an extensible data syndication format with broad tool support in almost all languages. In conjunction with the Atom Publication Protocol, Atom comprises a lightweight platform for publishing and consuming data with high quality-of-service guarantees. Atom-based solutions trade scalability for latency, however, making Atom often inappropriate for very low-latency scenarios.\""
+    },
+    {
+        "name": "Care about hardware",
+        "ring": "adopt",
+        "quadrant": "platforms",
+        "isNew": "FALSE",
+        "status": "no change",
+        "description": "\"This platform was included in this edition of the Radar for visibility. We felt that there wasn't anything substantial to add to the discourse around it, but that it was important to keep this in view.\""
+    },
+    {
+        "name": "Mobile payment systems",
+        "ring": "adopt",
+        "quadrant": "platforms",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"Despite apparent resistance in the Global North, mobile payment systems such as Kenya’s M-Pesa are providing secure cashless monetary transactions. With the service rolling out across Africa, the system opens up the market for the millions of people with mobile phones but lacking access to traditional banking outlets. Providers such as Square are slowly improving the situation, but the North continues to lag.\""
+    },
+    {
+        "name": "Neo4J",
+        "ring": "adopt",
+        "quadrant": "platforms",
+        "isNew": "FALSE",
+        "status": "moved in",
+        "description": "\"\""
+    },
+    {
+        "name": "Continuous integration in the cloud",
+        "ring": "trial",
+        "quadrant": "platforms",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"\""
+    },
+    {
+        "name": "Couchbase",
+        "ring": "trial",
+        "quadrant": "platforms",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"\""
+    },
+    {
+        "name": "Domain-specific PaaS",
+        "ring": "trial",
+        "quadrant": "platforms",
+        "isNew": "FALSE",
+        "status": "no change",
+        "description": "\"We find that many businesses are starting to build their own internal cloud deployment environments that can be easily replicated for development and testing environments. In many cases, provisioning is selfservice, and with a single keystroke, developers can create a set of hosts that implement core enterprise assets and collaborating systems. In a sense, this is a domain-specific PaaS offered to internal customers.\""
+    },
+    {
+        "name": "Hybrid clouds",
+        "ring": "trial",
+        "quadrant": "platforms",
+        "isNew": "FALSE",
+        "status": "moved in",
+        "description": "\"Hybrid clouds combine the best features of public clouds and private data centers. They allow applications to run in a private data center during normal periods, and then use rented space in a public cloud for overflow capacity during peak traffic periods. There are now a number of infrastructure solutions that allow automatic and consistent deployment across a hybrid cloud, such as Palette and RightScale. With robust offerings from Amazon, Rackspace and others, we are moving hybrid clouds to “Trial” on this edition of the radar.\""
+    },
+    {
+        "name": "Linux containers",
+        "ring": "trial",
+        "quadrant": "platforms",
+        "isNew": "FALSE",
+        "status": "no change",
+        "description": "\"One style of virtualization that is particularly attractive for SaaS and PaaS implementations is the virtual container. Linux containers such as OpenVZ provide the isolation and management benefits of a virtual machine without the overhead usually associated with general-purpose virtualization. In the container model, the guest OS is limited to being the same as the underlying host OS, but that is not a serious limitation for many cloud applications.\""
+    },
+    {
+        "name": "MongoDB",
+        "ring": "trial",
+        "quadrant": "platforms",
+        "isNew": "FALSE",
+        "status": "no change",
+        "description": "\"For problems that fit the document databases model, MongoDB provides easy programmability, a query interface, high availability with automated failover, and automated sharding capabilities. It allows for a smooth transition to NoSQL data stores from the RDBMS model, with the inclusion of familiar concepts, such as the ability to define indexes.\""
+    },
+    {
+        "name": "Node.js",
+        "ring": "trial",
+        "quadrant": "platforms",
+        "isNew": "FALSE",
+        "status": "moved in",
+        "description": "\"For many years JavaScript was predominantly used as a client side Web programming language, but a lightweight language such as JavaScript can easily be embedded in different environments, including the server side. Node.js allows developers to write applications in JavaScript on both client and server sides. Since most servers spend the majority of their time waiting for I/O operations, Node.js’ event driven non-blocking architecture is very efficient. Unlike threadbased solutions, Node.js does not need to wait for I/O operations to complete while processing incoming requests, making it a good choice when implementing high performance services.\""
+    },
+    {
+        "name": "Private Clouds",
+        "ring": "trial",
+        "quadrant": "platforms",
+        "isNew": "FALSE",
+        "status": "no change",
+        "description": "\"Because of concerns over privacy and security, or a need to repurpose existing hardware investments, many businesses are choosing to implement their own private cloud. There are are a variety of products, both open source and commercial for this purpose, but it should be noted that compute, storage, and network management are only the starting points for a useful private cloud. There are many services and processes that must be custom implemented to provide a cloud facility that rivals the public offerings from Amazon, Rackspace, or others.\""
+    },
+    {
+        "name": "Riak",
+        "ring": "trial",
+        "quadrant": "platforms",
+        "isNew": "FALSE",
+        "status": "moved in",
+        "description": "\"\""
+    },
+    {
+        "name": "Single threaded servers with asynchronous I/O",
+        "ring": "trial",
+        "quadrant": "platforms",
+        "isNew": "FALSE",
+        "status": "moved in",
+        "description": "\"Node.js is just one example of a class of single threaded servers with asynchronous I/O that are seeing increased popularity. A traditional web or application server associates each incoming request with a thread until all the processing tasks associated with that request are complete and the response has been sent back. If any of those tasks involve I/O, the thread blocks while that I/O takes place. This approach can waste finite resources such as file descriptors and memory since each connection occupies a thread whether or not that thread is actually consuming CPU cycles. An alternative architecture is starting to emerge in implementations like Node.js (a JavaScript server running on Google V8), Nginx (an open source web server and proxy), and Webbit (a Java application server), that uses a single thread to serve many connections, processing all I/O asynchronously. These servers support orders of magnitude more simultaneous connections because each one consumes far fewer resources.\""
+    },
+    {
+        "name": "Azure",
+        "ring": "assess",
+        "quadrant": "platforms",
+        "isNew": "FALSE",
+        "status": "no change",
+        "description": "\"\""
+    },
+    {
+        "name": "BigQuery",
+        "ring": "assess",
+        "quadrant": "platforms",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"Google’s BigQuery brings data analytics to the cloud. Rather than loading data into an expensive data-warehouse with predefined indexes, BigQuery allows you to upload and investigate a data set through ad-hoc SQL-like queries. This is a great way to create a cheap proof-of-concept or even a complete application, as processing of hundreds of gigabytes of data by thousands of servers happens in seconds.\""
+    },
+    {
+        "name": "Calatrava",
+        "ring": "assess",
+        "quadrant": "platforms",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"\""
+    },
+    {
+        "name": "Datomic",
+        "ring": "assess",
+        "quadrant": "platforms",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"\""
+    },
+    {
+        "name": "Open source IaaS",
+        "ring": "assess",
+        "quadrant": "platforms",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"Selecting the right cloud provider from an almost bewildering array of options continues to be difficult. One strategy is to adopt an open source IaaS platform such as OpenStack or CloudStack. This allows you to run a private cloud that is consistent with a public cloud, and to migrate from one cloud provider to another should the need arise. Going one step further, Apache’s Deltacloud abstracts away from specific provider APIs to give a consistent experience across cloud platforms.\""
+    },
+    {
+        "name": "Vert.x",
+        "ring": "assess",
+        "quadrant": "platforms",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"Representing yet another evolution away from traditional, free-standing application containers, Vert.x is an application framework that bridges synchronous and asynchronous programming styles. This gives the programmer the option to trade off scalability and performance for simplicity. Unlike Node.js, Vert.x is a library that can be called from a variety of languages supported on the JVM, including Java, Ruby and JavaScript.\""
+    },
+    {
+        "name": "Windows Phone",
+        "ring": "assess",
+        "quadrant": "platforms",
+        "isNew": "FALSE",
+        "status": "moved out",
+        "description": "\"Despite a promising start to Windows Phone, a well thought-out user interface, and probably the best development experience of any mobile platform, we have seen several stumbles in the execution of the platform strategy by Microsoft and its partners. This makes us less optimistic about the future of the platform than we were in the last radar.\""
+    },
+    {
+        "name": "Java portal servers",
+        "ring": "hold",
+        "quadrant": "platforms",
+        "isNew": "FALSE",
+        "status": "no change",
+        "description": "\"A continuing cause of delivery problems lies in the use of Java Portal Server packages. These problems occur in both open source and commercial portal platforms. The promised productivity of these platforms is hindered by their complex and unwieldy programming models and difficulty in automating deployment, data migration, and tests. Although product demos are compelling, the base features of portal products are often a poor fit for real web applications, while the extra advertised features such as single sign-on or search are usually already served by existing, targeted, enterprise assets.\""
+    },
+    {
+        "name": "Meteor.js",
+        "ring": "hold",
+        "quadrant": "platforms",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"Meteor.js is a client- and server-side JavaScript application framework, run inside a web browser, or in a Node.js container, and backed by MongoDB for persistence. It uses “Smart Packages” - little bundles of code that can run in the browser or as part of a cloud service. It allows hot code deploys and live in-browser updates. We think the idea is great, even if the framework is not yet ready for primetime.\""
+    },
+    {
+        "name": "Singleton infrastructure",
+        "ring": "hold",
+        "quadrant": "platforms",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"\""
+    },
+    {
+        "name": "WS-*",
+        "ring": "hold",
+        "quadrant": "platforms",
+        "isNew": "FALSE",
+        "status": "no change",
+        "description": "\"\""
+    },
+    {
+        "name": "Zero-code packages",
+        "ring": "hold",
+        "quadrant": "platforms",
+        "isNew": "FALSE",
+        "status": "no change",
+        "description": "\"There are a number of enterprise software packages on the market that purport to offer flexible functionality with zero coding. This is certainly an appealing notion – that a non-technical business user could configure software to the unique requirements of any business without learning a programming language or hiring a professional software developer. However, it should be kept in mind that any change that affects the behavior of software in production, whether it is code, configuration, data or environments, could cause defects or failures in the business system. Writing code is only one step in a professional software production lifecycle. The need for repeatable analysis, testing, build, and deployment does not go away because the system is modified via a dragand- drop interface instead of a high-level programming language. When evaluating a zero-code package, ensure that the the product supports these processes and that you have the necessary IT support structures in place to implement them.\""
+    },
+    {
+        "name": "AppCode",
+        "ring": "adopt",
+        "quadrant": "tools",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"Apple’s mobile devices are going strong and native apps are a cornerstone of their success. Writing these native apps has become much more pleasant and productive since JetBrains launched AppCode, an IDE for iOS and OS X development that replicates the strengths of their IDEs for other platforms.\""
+    },
+    {
+        "name": "Embedded servlet containers",
+        "ring": "adopt",
+        "quadrant": "tools",
+        "isNew": "FALSE",
+        "status": "moved in",
+        "description": "\"We have talked much already about embedded servlet containers - and these are now widely adopted on our projects. Tools such as SimpleWeb and Webbit take the simple, embedded approach further and offer raw HTTP server functionality without implementing the Java Servlet specification. We are pleased to see a corresponding reduction in the complexity of test code that takes advantage of this.\""
+    },
+    {
+        "name": "Graphite",
+        "ring": "adopt",
+        "quadrant": "tools",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"\""
+    },
+    {
+        "name": "Immutable servers",
+        "ring": "adopt",
+        "quadrant": "tools",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"\""
+    },
+    {
+        "name": "Infrastructure as code",
+        "ring": "adopt",
+        "quadrant": "tools",
+        "isNew": "FALSE",
+        "status": "no change",
+        "description": "\"We continue to highlight infrastructure as code. This technique treats infrastructure configuration in the same way as code; checking configuration into source control, then carefully pushing changes out to the data center.\""
+    },
+    {
+        "name": "Jasmine paired with Node.js",
+        "ring": "adopt",
+        "quadrant": "tools",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"\""
+    },
+    {
+        "name": "Silverback",
+        "ring": "adopt",
+        "quadrant": "tools",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"There are a couple of usability testing tools that match our preferred ‘guerrilla’ approach. Eye-tracking has long been a useful technique when designing compelling user interfaces, however the equipment and software associated with it is expensive and typically requires the use of specialist firms. Crazy Egg is a cheaper, software-only solution that produces heat maps based on mouse movement. This movement has a strong correlation with gaze, and can be used as a reasonable approximation. Silverback captures not only the screen during a test, but also records the face and voice of the user. This can be invaluable in sharing rich test experiences with the wider development team.\""
+    },
+    {
+        "name": "Apache Pig",
+        "ring": "trial",
+        "quadrant": "tools",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"\""
+    },
+    {
+        "name": "D3",
+        "ring": "trial",
+        "quadrant": "tools",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"D3 is a JavaScript library for binding datasets into the DOM, and then declaratively transforming the document to create rich visualizations - ranging from graphs to heatmaps. With support for HTML, CSS and SVG, and an extensible plug-in model, we like the fact that this library allows us to deliver information in more intuitive ways.\""
+    },
+    {
+        "name": "Dependency Structure Matrices",
+        "ring": "trial",
+        "quadrant": "tools",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"We strongly favor code-base visualization techniques. In particular, Dependency Structure Matrices (DSM) have proven to be extremely useful, especially in support of an evolutionary architecture and emergent design. Tools support for DSM is widespread.\""
+    },
+    {
+        "name": "Frank",
+        "ring": "trial",
+        "quadrant": "tools",
+        "isNew": "FALSE",
+        "status": "no change",
+        "description": "\"\""
+    },
+    {
+        "name": "Gradle",
+        "ring": "trial",
+        "quadrant": "tools",
+        "isNew": "FALSE",
+        "status": "moved in",
+        "description": "\"Two things have caused fatigue with XML-based build tools like Ant and Maven: too many angry pointy braces and the coarseness of plug-in architectures. While syntax issues can be dealt with through generation, plug-in architectures severely limit the ability for build tools to grow gracefully as projects become more complex. We have come to feel that plug-ins are the wrong level of abstraction, and prefer language-based tools like Gradle and Rake instead, because they offer finer-grained abstractions and more flexibility long term.\""
+    },
+    {
+        "name": "Highcharts",
+        "ring": "trial",
+        "quadrant": "tools",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"Increasingly performant JavaScript engines, combined with widespread support for embedded SVG documents in HTML, has lead to pure JavaScript-based client-side graphing and visualization solutions gaining a lot of traction. Highcharts is one of the best ones we have come across, with out-of-the-box support for multiple highly-configurable interactive chart types, and the ability to easily render large data sets.\""
+    },
+    {
+        "name": "Jade",
+        "ring": "trial",
+        "quadrant": "tools",
+        "isNew": "FALSE",
+        "status": "no change",
+        "description": "\"This tool was included in this edition of the Radar for visibility. We felt that there wasn't anything substantial to add to the discourse around it, but that it was important to keep this in view.\""
+    },
+    {
+        "name": "JavaScript micro frameworks",
+        "ring": "trial",
+        "quadrant": "tools",
+        "isNew": "FALSE",
+        "status": "no change",
+        "description": "\"With mobile applications on the rise, JavaScript size and performance is even more critical. JavaScript micro frameworks have emerged as a direct response to ‘bloat’ in some of the larger libraries. These small libraries do exactly one thing, such as DOM selection or MVC, and can be under one kilobyte in size. By combining a number of micro frameworks, developers can get exactly the functionality they need without the overhead of a larger library. Microjs.com hosts a collection of these micro frameworks, as well as a tool that can bundle them into a single library.\""
+    },
+    {
+        "name": "Locust",
+        "ring": "trial",
+        "quadrant": "tools",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"\""
+    },
+    {
+        "name": "NuGet",
+        "ring": "trial",
+        "quadrant": "tools",
+        "isNew": "FALSE",
+        "status": "no change",
+        "description": "\"Package management systems are a widely accepted practice for incorporating third party libraries. Tools such as RubyGems, Maven, APT, are available at both language and system level. NuGet is such a system for .Net platform. It consists of a Visual Studio IDE extension and a PowerShell module that opens the possibility for further improving build automation on the .Net platform.\""
+    },
+    {
+        "name": "PSake",
+        "ring": "trial",
+        "quadrant": "tools",
+        "isNew": "FALSE",
+        "status": "no change",
+        "description": "\"\""
+    },
+    {
+        "name": "Rake for Java & .NET",
+        "ring": "trial",
+        "quadrant": "tools",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"Of all the build tools and languages we use across our projects, the one we keep coming back to is Rake. Rake is a beautiful, simple and powerful build language implemented as an internal Domain-Specific Language on Ruby. Ruby’s ability to run across several virtual-machine platforms means that Rake is equally available - while leaving open the option to utilize more language-specific tools for some tasks. Finding a similar combination of elegance and flexibility is difficult regardless of your platform, so we recommend trying Rake for Java and .Net projects.\""
+    },
+    {
+        "name": "SaaS performance testing tools",
+        "ring": "trial",
+        "quadrant": "tools",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"Rather than wrestling with licenses and setting up clusters of machines for performance testing, we’re seeing a rise in SaaS performance testing tools such as Blitz.io and Tealeaf. These services make it easy to run performance tests with a huge number of geographically diverse clients, without investing heavily in infrastructure.\""
+    },
+    {
+        "name": "Vagrant",
+        "ring": "trial",
+        "quadrant": "tools",
+        "isNew": "FALSE",
+        "status": "no change",
+        "description": "\"The tool Vagrant makes it simple for teams to distribute virtualized development environments constructed using version-control friendly descriptors. Vagrant helps eliminate environmental differences in development and reduce troubleshooting waste.\""
+    },
+    {
+        "name": "Crazy Egg",
+        "ring": "assess",
+        "quadrant": "tools",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"There are a couple of usability testing tools that match our preferred ‘guerrilla’ approach. Eye-tracking has long been a useful technique when designing compelling user interfaces, however the equipment and software associated with it is expensive and typically requires the use of specialist firms. Crazy Egg is a cheaper, software-only solution that produces heat maps based on mouse movement. This movement has a strong correlation with gaze, and can be used as a reasonable approximation. Silverback captures not only the screen during a test, but also records the face and voice of the user. This can be invaluable in sharing rich test experiences with the wider development team.\""
+    },
+    {
+        "name": "GemJars",
+        "ring": "assess",
+        "quadrant": "tools",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"In a mixed Ruby/Java application, running on the JVM, there are differences in package format and dependency resolution that need to be dealt with. By providing an Ivy compatible proxy that packages RubyGems as JARs and uses Ivy to resolve Gem dependencies, GemJars consolidates and simplifies the building of truly polyglot codebases.\""
+    },
+    {
+        "name": "Light Table",
+        "ring": "assess",
+        "quadrant": "tools",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"\""
+    },
+    {
+        "name": "Logic-free markup",
+        "ring": "assess",
+        "quadrant": "tools",
+        "isNew": "FALSE",
+        "status": "no change",
+        "description": "\"While MVC has been a staple of web development for the past few years, most libraries and frameworks fail to adhere to one of its most important principles: keeping logic out of the view layer. The consequences of not having logicfree markup include complex dependencies, difficulty testing and inability to reuse code. Recent DSLs like Mustache are available for many languages and platforms and have started to turn the trend. They allow editing in any tool, without extra requirements for language support and provide huge gains for UI development and overall application design.\""
+    },
+    {
+        "name": "Riemann",
+        "ring": "assess",
+        "quadrant": "tools",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"\""
+    },
+    {
+        "name": "Zipkin",
+        "ring": "assess",
+        "quadrant": "tools",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"When building distributed applications to address web-scale or big data requirements, setting up appropriate monitoring tools becomes a non-trivial exercise. Zipkin is a tool that instruments the different components of a service-based system and visualizes the breakdown of logical requests passing through multiple services using a ‘firebug-like’ view. The raw data can be stored in Hadoop for more advanced reporting and data mining.\""
+    },
+    {
+        "name": "Zucchini",
+        "ring": "assess",
+        "quadrant": "tools",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"Zucchini is a testing framework that provides Cucumber-style BDD testing for iOS apps. It uses CoffeeScript for feature definitions, takes screenshots as tests are run, and we’ve been very happy with it.\""
+    },
+    {
+        "name": "ESB",
+        "ring": "hold",
+        "quadrant": "tools",
+        "isNew": "FALSE",
+        "status": "no change",
+        "description": "\"IT departments are increasingly striving to liberate data from disparate systems. A broad set of approaches have been promoted under the generic term Service Oriented Architecture (SOA). This has led to confusion about what the term and approach actually means. We believe businesses do not need the complex enterprise service bus products advocated by vendors. ESBs actively undermine the reasons for choosing the bus approach: low latency, loose coupling, and transparency.\""
+    },
+    {
+        "name": "Maven",
+        "ring": "hold",
+        "quadrant": "tools",
+        "isNew": "FALSE",
+        "status": "no change",
+        "description": "\"Maven has long been a staple of build automation in the Java space. However, given its lack of flexibility and support for automation best practices, especially in the Continuous Delivery domain, the use of alternatives such as Gradle should be considered.\""
+    },
+    {
+        "name": "VCS with “implicit workflow”",
+        "ring": "hold",
+        "quadrant": "tools",
+        "isNew": "FALSE",
+        "status": "no change",
+        "description": "\"Some tools seek to enable and facilitate different ways of working. Unfortunately other tools are created using a different premise, one of low trust in users and the need to enforce a predefined process. ClearCase and TFS do this. This makes version control systems with “implicit workflow” unsuitable tools for modern agile software development. Project methodologies and the best ways of working on a project need to emerge. Tools that enforce high ceremony around things like check in just get in the way and kill productivity.\""
+    },
+    {
+        "name": "Care about languages",
+        "ring": "adopt",
+        "quadrant": "languages-and-frameworks",
+        "isNew": "FALSE",
+        "status": "no change",
+        "description": "\"The industry is experiencing something of a renaissance in programming languages. Thoughtworks thinks it is time to start assessing which other languages will help your organization while taking stock of the useful lifetime remaining for your current choices. You need to care about languages. Traditionally structured organizations with separate support teams may find skills constrain choice, DevOps offers a path forwards here.\""
+    },
+    {
+        "name": "Clojure",
+        "ring": "adopt",
+        "quadrant": "languages-and-frameworks",
+        "isNew": "FALSE",
+        "status": "moved in",
+        "description": "\"\""
+    },
+    {
+        "name": "SASS, SCSS, LESS, and Stylus",
+        "ring": "adopt",
+        "quadrant": "languages-and-frameworks",
+        "isNew": "FALSE",
+        "status": "moved in",
+        "description": "\"CSS has been an extremely popular and effective DSL for styling web pages. It does, however, have some annoying limitations which have led to a number of languages that build on CSS to make it easier to write and modify. We’ve had good experiences with SASS, SCSS, and LESS.\""
+    },
+    {
+        "name": "Scala",
+        "ring": "adopt",
+        "quadrant": "languages-and-frameworks",
+        "isNew": "FALSE",
+        "status": "moved in",
+        "description": "\"\""
+    },
+    {
+        "name": "AngularJS and Knockout",
+        "ring": "trial",
+        "quadrant": "languages-and-frameworks",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"We are seeing a common pattern of creating single-page web applications. Rather than requiring full page refresh, these request smaller sets of data from the server, and change the displayed content of their page through modifying the DOM. To make this more manageable, JavaScript MV* frameworks have been developed that support data binding, client-side templates, and validation. While lightweight applications may not need a framework, for more complex scenarios, AngularJS and Knockout should be considered as the current front-runners in this field.\""
+    },
+    {
+        "name": "Domain-Specific Languages",
+        "ring": "trial",
+        "quadrant": "languages-and-frameworks",
+        "isNew": "FALSE",
+        "status": "no change",
+        "description": "\"Domain-Specific Languages is an old technique that we think is significantly under-used. We hope that the publication of Martin Fowler’s latest book will encourage more people to utilize them.\""
+    },
+    {
+        "name": "Dropwizard",
+        "ring": "trial",
+        "quadrant": "languages-and-frameworks",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"\""
+    },
+    {
+        "name": "HTML 5 for offline applications",
+        "ring": "trial",
+        "quadrant": "languages-and-frameworks",
+        "isNew": "FALSE",
+        "status": "no change",
+        "description": "\"\""
+    },
+    {
+        "name": "Jekyll",
+        "ring": "trial",
+        "quadrant": "languages-and-frameworks",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"\""
+    },
+    {
+        "name": "Require.js",
+        "ring": "trial",
+        "quadrant": "languages-and-frameworks",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"As adoption continues to expand, so does the size of many JavaScript codebases. To improve modularity of code and help manage this, we are seeing teams embrace libraries such as Require.js. Using the Asynchronous Module Definition (AMD) format, code is split into modules, easing development and maintenance, and an optimization tool then combines and minifies scripts for production deployment.\""
+    },
+    {
+        "name": "Scratch, Alice, and Kodu",
+        "ring": "trial",
+        "quadrant": "languages-and-frameworks",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"\""
+    },
+    {
+        "name": "Sinatra",
+        "ring": "trial",
+        "quadrant": "languages-and-frameworks",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"Micro-frameworks are emerging as a way to handle increasing complexity in applications both on client- and server-side. Sinatra was one of the early precursors of that trend in server-side space, exposing a lightweight DSL to build fast services that can be easily composed. Flask, Scalatra and Compojure are similar offerings for Python, Scala and Clojure respectively.\""
+    },
+    {
+        "name": "Twitter Bootstrap",
+        "ring": "trial",
+        "quadrant": "languages-and-frameworks",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"\""
+    },
+    {
+        "name": "ClojureScript",
+        "ring": "assess",
+        "quadrant": "languages-and-frameworks",
+        "isNew": "FALSE",
+        "status": "no change",
+        "description": "\"\""
+    },
+    {
+        "name": "F#",
+        "ring": "assess",
+        "quadrant": "languages-and-frameworks",
+        "isNew": "FALSE",
+        "status": "no change",
+        "description": "\"Microsoft’s F# continues to evolve, with the recent release of F# 3.0 beta. F# is excellent at concisely expressing business and domain logic. Developers trying to achieve explicit business logic within an application may opt to express their domain in F# with the majority of plumbing code in C#.\""
+    },
+    {
+        "name": "Gremlin",
+        "ring": "assess",
+        "quadrant": "languages-and-frameworks",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"Gremlin is an imperative graph traversal language supported by multiple graph databases. Its concise constructs can be used in place of the native language of the database, leading to faster development times and, in some cases, faster execution. We recommend its use as a good alternative in simple scenarios.\""
+    },
+    {
+        "name": "JavaScript as a platform",
+        "ring": "assess",
+        "quadrant": "languages-and-frameworks",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"\""
+    },
+    {
+        "name": "Lua",
+        "ring": "assess",
+        "quadrant": "languages-and-frameworks",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"\""
+    },
+    {
+        "name": "RubyMotion",
+        "ring": "assess",
+        "quadrant": "languages-and-frameworks",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"\""
+    },
+    {
+        "name": "Backbone.js",
+        "ring": "hold",
+        "quadrant": "languages-and-frameworks",
+        "isNew": "FALSE",
+        "status": "moved out",
+        "description": "\"\""
+    },
+    {
+        "name": "Component-based frameworks",
+        "ring": "hold",
+        "quadrant": "languages-and-frameworks",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"\""
+    },
+    {
+        "name": "Google Dart",
+        "ring": "hold",
+        "quadrant": "languages-and-frameworks",
+        "isNew": "FALSE",
+        "status": "no change",
+        "description": "\"Dart is Google’s attempt at creating a programming language to replace JavaScript due to JavaScript’s perceived flaws and inherent performance issues. Dart, in line with previous Google languages, provides Java-like syntax and semantics that are intended to be more appealing than JavaScript’s prototype-based nature. Reception within the browser-development community has been understandably cool and it remains to be seen if the language will become more widely accepted, though Chrome’s continued rise and the search for alternatives like CoffeeScript may yet shift that balance.\""
+    },
+    {
+        "name": "Logic in stored procedures",
+        "ring": "hold",
+        "quadrant": "languages-and-frameworks",
+        "isNew": "FALSE",
+        "status": "no change",
+        "description": "\"\""
+    }
+]
