@@ -27,6 +27,11 @@ async function generateCSVs() {
                 month: 'short',
             });
 
+            const volumeNumber = (volume + 1).toLocaleString('en-US', {
+                minimumIntegerDigits: 2,
+                useGrouping: false,
+            });
+
             const blips = publication.blips;
 
             // Confirm that the blips are sorted
@@ -55,9 +60,7 @@ async function generateCSVs() {
                 ].join(',');
             });
 
-            const filename = `../${FILES.VOLUMES.FOLDER}/${
-                FILES.VOLUMES.FILE_PREFIX
-            } ${volume + 1} (${publicationDate}).csv`;
+            const filename = `../${FILES.VOLUMES.FOLDER}/${FILES.VOLUMES.FILE_PREFIX} ${volumeNumber} (${publicationDate}).csv`;
 
             console.log('Creating CSV file', filename);
             fs.writeFileSync(
