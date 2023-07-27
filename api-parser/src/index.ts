@@ -55,10 +55,10 @@ async function generateCSVs() {
                 ].join(',');
             });
 
-            // const filename = `../${FILES.VOLUMES.FOLDER}/${FILES.VOLUMES.FILE_PREFIX} ${volume + 1} (${publicationDate}).csv`;
             const filename = `../${FILES.VOLUMES.FOLDER}/${
                 FILES.VOLUMES.FILE_PREFIX
-            } ${volume + 1}.csv`;
+            } ${volume + 1} (${publicationDate}).csv`;
+
             console.log('Creating CSV file', filename);
             fs.writeFileSync(
                 filename,
