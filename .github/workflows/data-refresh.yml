@@ -1,0 +1,42 @@
+name: Dataset Refresh
+
+on:
+    schedule:
+        - cron: '0 0 * * 0' # Runs every Sunday at midnight UTC. You can customize the schedule using cron syntax.
+    workflow_dispatch: # This allows manual triggering from the GitHub Actions UI.
+
+jobs:
+    build_and_pr:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v2
+
+            - name: Set up Node.js
+              uses: actions/setup-node@v2
+              with:
+                  node-version: '18'
+
+            - name: Install dependencies
+              run: npm install
+
+            - name: Refresh datasets
+              run: npm start
+
+            - name: Commit and push changes
+              run: |
+                  git config --global user.name "Adam Setch"
+                  git config --global user.email "adam.setch@outlook.com-email@example.com"
+                  git add .
+                  git commit -m "Automated dataset refresh - $(date +'%Y-%m-%d')"
+                  git push
+
+            - name: Create Pull Request
+              uses: peter-evans/create-pull-request@v3
+              with:
+                  token: ${{ secrets.GITHUB_TOKEN }}
+                  branch: weekly-build # Change this to the branch name where you want to raise the PR.
+                  commit-message: "Automated dataset refresh - $(date +'%Y-%m-%d')"
+                  title: "Automated dataset refresh - $(date +'%Y-%m-%d')"
+                  body: 'Automated dataset refresh'
