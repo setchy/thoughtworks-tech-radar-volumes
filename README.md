@@ -23,7 +23,7 @@ _Note: to use the CSV or JSON data formats you will need to use the GitHub RAW f
 
 ## How are the datasets updated?
 
-The datasets are manually refreshed every 6 months in alignment with Thoughtworks officially publishing their latest Volume.
+The datasets are refreshed every 6 months in alignment with Thoughtworks officially publishing their latest Volume.
 
 The process for generating the CSVs has been automated.
 
