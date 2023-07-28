@@ -25,6 +25,7 @@ jobs:
 
             - name: Refresh datasets
               run: |
+                  cd api-parser
                   npm start
 
             - name: Commit and push changes
