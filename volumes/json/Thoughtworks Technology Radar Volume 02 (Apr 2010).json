@@ -1,0 +1,474 @@
+[
+    {
+        "name": "Build pipelines",
+        "ring": "adopt",
+        "quadrant": "techniques",
+        "isNew": "FALSE",
+        "status": "no change",
+        "description": "\"\""
+    },
+    {
+        "name": "Emergent design",
+        "ring": "adopt",
+        "quadrant": "techniques",
+        "isNew": "FALSE",
+        "status": "moved in",
+        "description": "\"\""
+    },
+    {
+        "name": "Evolutionary database",
+        "ring": "adopt",
+        "quadrant": "techniques",
+        "isNew": "FALSE",
+        "status": "moved in",
+        "description": "\"\""
+    },
+    {
+        "name": "Web as platform",
+        "ring": "adopt",
+        "quadrant": "techniques",
+        "isNew": "FALSE",
+        "status": "moved in",
+        "description": "\"\""
+    },
+    {
+        "name": "Automation of technical tests",
+        "ring": "trial",
+        "quadrant": "techniques",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"Significant advances in the tools for automating functional testing haven’t been replicated in the technical testing space. Data management for performance, load and soak testing is a particular issue. However, the tools are improving and increased visibility for these tools supports the early and often technical testing that we advocate.\""
+    },
+    {
+        "name": "Continuous deployment",
+        "ring": "trial",
+        "quadrant": "techniques",
+        "isNew": "FALSE",
+        "status": "moved in",
+        "description": "\"\""
+    },
+    {
+        "name": "Lean software development",
+        "ring": "trial",
+        "quadrant": "techniques",
+        "isNew": "FALSE",
+        "status": "no change",
+        "description": "\"As Agile practices move further toward mainstream adoption, we see significant benefits from the adoption of Lean software development practices as well. These practices have their roots in the Toyota Production System and complement much of our understanding of Agile software development to date. One topic that Lean has also given us greater insight into is that of set-based design. Set-based design leads us to implement similar solutions at the same time while the cost of doing so is constrained. This leads us into the area of emergent design and the ability to let experience shape our design decisions and defer key decisions until the last responsible moment.\""
+    },
+    {
+        "name": "Polyglot programming",
+        "ring": "trial",
+        "quadrant": "techniques",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"This technique was included in this edition of the Radar for visibility. We felt that there wasn't anything substantial to add to the discourse around it, but that it was important to keep this in view.\""
+    },
+    {
+        "name": "Service choreography",
+        "ring": "trial",
+        "quadrant": "techniques",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"\""
+    },
+    {
+        "name": "Visualization and metrics",
+        "ring": "trial",
+        "quadrant": "techniques",
+        "isNew": "FALSE",
+        "status": "no change",
+        "description": "\"\""
+    },
+    {
+        "name": "Incremental data warehousing",
+        "ring": "assess",
+        "quadrant": "techniques",
+        "isNew": "FALSE",
+        "status": "no change",
+        "description": "\"\""
+    },
+    {
+        "name": "OAuth",
+        "ring": "assess",
+        "quadrant": "techniques",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"The Web is a global data structure that enables us to share information. However not all data is meant to be shared by everyone and it’s important to be able to share information on the Web in a disciplined and governable manner without requiring massive centralized infrastructure. OAuth provides a way of sharing resources on the Web responsibly and securely. It is a Web protocol (for Web browsers or machine-to-machine interactions), which allows federated authorization of access to Web resources. What’s interesting is that OAuth is a simple protocol to implement and utilize and yet its design goals match many common enterprise authorization problems. OAuth remains in the assessment category, however, because it has fragmented, and the IETF has not yet drawn the community back together under an Internet RFC.\""
+    },
+    {
+        "name": "Scrum certification",
+        "ring": "hold",
+        "quadrant": "techniques",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"\""
+    },
+    {
+        "name": "ALT.NET",
+        "ring": "adopt",
+        "quadrant": "platforms",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"\""
+    },
+    {
+        "name": "Cloud",
+        "ring": "adopt",
+        "quadrant": "platforms",
+        "isNew": "FALSE",
+        "status": "no change",
+        "description": "\"The Cloud continues to be of interest to us, with Software as a Service the most mature cloud component. Platform and Infrastructure as service offerings have reached different levels of maturity, and we reflect that in our placement of EC2, Google App Engine and Azure.\""
+    },
+    {
+        "name": "IE6 End of Life",
+        "ring": "adopt",
+        "quadrant": "platforms",
+        "isNew": "FALSE",
+        "status": "no change",
+        "description": "\"\""
+    },
+    {
+        "name": "iPhone",
+        "ring": "adopt",
+        "quadrant": "platforms",
+        "isNew": "FALSE",
+        "status": "no change",
+        "description": "\"The iPhone and android operating systems have rapidly become key players in the mobile platform marketplace. Apple’s app store and Google’s open source operating system have helped both companies leapfrog the competition in capturing developer mindshare.\""
+    },
+    {
+        "name": "JVM as platform",
+        "ring": "adopt",
+        "quadrant": "platforms",
+        "isNew": "FALSE",
+        "status": "no change",
+        "description": "\"\""
+    },
+    {
+        "name": "Platform roadmaps",
+        "ring": "adopt",
+        "quadrant": "platforms",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"\""
+    },
+    {
+        "name": "Android",
+        "ring": "trial",
+        "quadrant": "platforms",
+        "isNew": "FALSE",
+        "status": "no change",
+        "description": "\"\""
+    },
+    {
+        "name": "EC2 & S3",
+        "ring": "trial",
+        "quadrant": "platforms",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"The Cloud continues to be of interest to us, with Software as a Service the most mature cloud component. Platform and Infrastructure as service offerings have reached different levels of maturity, and we reflect that in our placement of EC2, Google App Engine and Azure.\""
+    },
+    {
+        "name": "Application appliances",
+        "ring": "assess",
+        "quadrant": "platforms",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"This platform was included in this edition of the Radar for visibility. We felt that there wasn't anything substantial to add to the discourse around it, but that it was important to keep this in view.\""
+    },
+    {
+        "name": "Facebook as business platform",
+        "ring": "assess",
+        "quadrant": "platforms",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"\""
+    },
+    {
+        "name": "Google App Engine",
+        "ring": "assess",
+        "quadrant": "platforms",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"The Cloud continues to be of interest to us, with Software as a Service the most mature cloud component. Platform and Infrastructure as service offerings have reached different levels of maturity, and we reflect that in our placement of EC2, Google App Engine and Azure.\""
+    },
+    {
+        "name": "Google as corporate platform",
+        "ring": "assess",
+        "quadrant": "platforms",
+        "isNew": "FALSE",
+        "status": "no change",
+        "description": "\"\""
+    },
+    {
+        "name": "Large format mobile devices",
+        "ring": "assess",
+        "quadrant": "platforms",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"Large format mobile devices, such as the Apple iPad and Amazon Kindle, provide a new model of ubiquitous computing. Their long battery life, simple interfaces and easy connectivity have the potential to change the way we interact with computers. Apple’s new user interfaces discard the familiar desktop metaphors of files and folders that have been standard since the introduction of the Macintosh in 1984.\""
+    },
+    {
+        "name": "Location based services",
+        "ring": "assess",
+        "quadrant": "platforms",
+        "isNew": "FALSE",
+        "status": "no change",
+        "description": "\"\""
+    },
+    {
+        "name": "Mobile Web",
+        "ring": "assess",
+        "quadrant": "platforms",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"\""
+    },
+    {
+        "name": "Azure",
+        "ring": "hold",
+        "quadrant": "platforms",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"\""
+    },
+    {
+        "name": "GWT",
+        "ring": "hold",
+        "quadrant": "platforms",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"Google Web Toolkit (GWT) offers an interesting premise: write Swing-like Java code and generate unit testable JavaScript widgets and user interfaces. From a practical standpoint this doesn’t work well. First, using code-gen to produce the artifacts is time consuming, artificially extending build times and requiring manual changes to obtain optimal package layout. Second, if the JavaScript doesn’t behave exactly as you want you will have to hack the generated code. Third, using Java to generate JavaScript means that you can’t take direct advantage of the powerful features of JavaScript or numerous libraries such as JQuery. Finally, the JUnit support is quite limited, for example code using reflection cannot be tested.\""
+    },
+    {
+        "name": "IE8",
+        "ring": "hold",
+        "quadrant": "platforms",
+        "isNew": "FALSE",
+        "status": "no change",
+        "description": "\"\""
+    },
+    {
+        "name": "Rich Internet Applications",
+        "ring": "hold",
+        "quadrant": "platforms",
+        "isNew": "FALSE",
+        "status": "moved out",
+        "description": "\"\""
+    },
+    {
+        "name": "WS-* beyond basic profile",
+        "ring": "hold",
+        "quadrant": "platforms",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"\""
+    },
+    {
+        "name": "ASP.NET MVC",
+        "ring": "adopt",
+        "quadrant": "tools",
+        "isNew": "FALSE",
+        "status": "no change",
+        "description": "\"\""
+    },
+    {
+        "name": "Squid",
+        "ring": "adopt",
+        "quadrant": "tools",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"This tool was included in this edition of the Radar for visibility. We felt that there wasn't anything substantial to add to the discourse around it, but that it was important to keep this in view.\""
+    },
+    {
+        "name": "Subversion",
+        "ring": "adopt",
+        "quadrant": "tools",
+        "isNew": "FALSE",
+        "status": "moved in",
+        "description": "\"\""
+    },
+    {
+        "name": "Distributed version control",
+        "ring": "trial",
+        "quadrant": "tools",
+        "isNew": "FALSE",
+        "status": "no change",
+        "description": "\"Subversion moves back into the Adopt section of the radar because it is a solid version control tool suitable for most teams. We consider Subversion’s features to be the basic standard for a modern version control tool. Thoughtworkers continue to embrace and recommend Distributed Version Control tools such as Git and Mercurial, but we caution that these systems often require deeper understanding to get the most out of them. New to the radar is GitHub, a “social coding” tool supporting both source code hosting and social networking. GitHub is arguably one of the main reasons Git has become the leading DVCS tool, and GitHub’s collaboration features are often used by enterprises that need to support distributed teams.\""
+    },
+    {
+        "name": "Message buses without smarts",
+        "ring": "trial",
+        "quadrant": "tools",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"\""
+    },
+    {
+        "name": "MongoDB",
+        "ring": "trial",
+        "quadrant": "tools",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"\""
+    },
+    {
+        "name": "Neo4J",
+        "ring": "trial",
+        "quadrant": "tools",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"\""
+    },
+    {
+        "name": "Next-generation test tools",
+        "ring": "trial",
+        "quadrant": "tools",
+        "isNew": "FALSE",
+        "status": "moved in",
+        "description": "\"\""
+    },
+    {
+        "name": "Cross mobile platforms",
+        "ring": "assess",
+        "quadrant": "tools",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"\""
+    },
+    {
+        "name": "GitHub",
+        "ring": "assess",
+        "quadrant": "tools",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"\""
+    },
+    {
+        "name": "NoSQL",
+        "ring": "assess",
+        "quadrant": "tools",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"\""
+    },
+    {
+        "name": "RDF triple stores",
+        "ring": "assess",
+        "quadrant": "tools",
+        "isNew": "FALSE",
+        "status": "no change",
+        "description": "\"Semantic Web W3C standards, and the tools implementing them, are at last worthy of real attention. RDF and RDFa allow anyone to say anything about anything in a sharable, structured format. This proves a much more powerful means of linking and structuring data from disparate sources than the strictness of RDBMS, or the mess that is unstructured Web data. Correspondingly SPARQL is the query standard that allows information to be mined from RDF marked-up data.\""
+    },
+    {
+        "name": "Restfulie",
+        "ring": "assess",
+        "quadrant": "tools",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"\""
+    },
+    {
+        "name": "Visualizations for business data",
+        "ring": "assess",
+        "quadrant": "tools",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"This tool was included in this edition of the Radar for visibility. We felt that there wasn't anything substantial to add to the discourse around it, but that it was important to keep this in view.\""
+    },
+    {
+        "name": "ESB",
+        "ring": "hold",
+        "quadrant": "tools",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"\""
+    },
+    {
+        "name": "Language workbenches",
+        "ring": "hold",
+        "quadrant": "tools",
+        "isNew": "FALSE",
+        "status": "no change",
+        "description": "\"It is likely that test languages will continue to evolve with the assistance of language workbenches, tools that assist in the creation of domain specific languages. Tools such as Jetbrains’ MPS and Intentional Software’s offering are leading the industry in this area. Both provide ways of creating new languages to map business software more closely to the end user’s domain language.\""
+    },
+    {
+        "name": "C# 4.0",
+        "ring": "adopt",
+        "quadrant": "languages-and-frameworks",
+        "isNew": "FALSE",
+        "status": "moved in",
+        "description": "\"\""
+    },
+    {
+        "name": "JavaScript as a first class language",
+        "ring": "adopt",
+        "quadrant": "languages-and-frameworks",
+        "isNew": "FALSE",
+        "status": "no change",
+        "description": "\"\""
+    },
+    {
+        "name": "Ruby/Jruby",
+        "ring": "adopt",
+        "quadrant": "languages-and-frameworks",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"\""
+    },
+    {
+        "name": "Domain-Specific Languages",
+        "ring": "trial",
+        "quadrant": "languages-and-frameworks",
+        "isNew": "FALSE",
+        "status": "no change",
+        "description": "\"\""
+    },
+    {
+        "name": "Groovy",
+        "ring": "trial",
+        "quadrant": "languages-and-frameworks",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"\""
+    },
+    {
+        "name": "Clojure",
+        "ring": "assess",
+        "quadrant": "languages-and-frameworks",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"In the previous radar, we lumped functional languages together in a group. For this version, we’ve exploded that group and started calling out the ones interesting to us. Of the current crop of functional languages, the one we like the most is Clojure: a simple, elegant implementation of Lisp on the JVM. The other two that we fi nd interesting are Scala (a re-thinking of Java in functional form) and F#, the OCaml derivative from Microsoft that now appears “in the box” in Visual Studio 2010.\""
+    },
+    {
+        "name": "F#",
+        "ring": "assess",
+        "quadrant": "languages-and-frameworks",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"In the previous radar, we lumped functional languages together in a group. For this version, we’ve exploded that group and started calling out the ones interesting to us. Of the current crop of functional languages, the one we like the most is Clojure: a simple, elegant implementation of Lisp on the JVM. The other two that we fi nd interesting are Scala (a re-thinking of Java in functional form) and F#, the OCaml derivative from Microsoft that now appears “in the box” in Visual Studio 2010.\""
+    },
+    {
+        "name": "HTML 5",
+        "ring": "assess",
+        "quadrant": "languages-and-frameworks",
+        "isNew": "FALSE",
+        "status": "no change",
+        "description": "\"HTML 5 offers a large number of improvements over HTML 4 and XHTML 1.0. Many of these improvements are focused on providing support for developing complex web applications, and improving integration of rich content such as audio and video in standard ways. Features such as client-side storage, web sockets and offline use will further establish the position of the web browser as a viable enterprise application platform.\""
+    },
+    {
+        "name": "Java language end of life",
+        "ring": "assess",
+        "quadrant": "languages-and-frameworks",
+        "isNew": "FALSE",
+        "status": "no change",
+        "description": "\"\""
+    },
+    {
+        "name": "Scala",
+        "ring": "assess",
+        "quadrant": "languages-and-frameworks",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"In the previous radar, we lumped functional languages together in a group. For this version, we’ve exploded that group and started calling out the ones interesting to us. Of the current crop of functional languages, the one we like the most is Clojure: a simple, elegant implementation of Lisp on the JVM. The other two that we fi nd interesting are Scala (a re-thinking of Java in functional form) and F#, the OCaml derivative from Microsoft that now appears “in the box” in Visual Studio 2010.\""
+    }
+]
