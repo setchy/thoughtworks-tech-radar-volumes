@@ -4,8 +4,8 @@ import { parse } from 'url';
 import { BlipTimelineEntry, MasterData } from '../types';
 import _ from 'lodash';
 import { RING_SORT_ORDER } from '../common/constants';
-import { getVolumeNameFromDate } from './utils';
 import {
+    getVolumeNameFromDate,
     getBlipNameFromDOM,
     getDescriptionHTMLFromBlipDOM,
     getPublishedDateFromBlipDOM,
