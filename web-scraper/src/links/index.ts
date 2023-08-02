@@ -1,42 +1,65 @@
-import https from 'https';
-import { parse } from 'url';
 import fs from 'fs';
 import { FILES, URLS } from '../common/constants';
-import { constructFullURL } from './utils';
+import puppeteer from 'puppeteer';
 
-export async function extractRadarLinks(): Promise<string[]> {
-    const { host, path } = parse(URLS.SEARCH);
+export async function extractRadarLinks() {
+    const links: string[] = [];
 
-    return new Promise((resolve, reject) => {
-        const request = https.get({ host, path }, (response) => {
-            if (response.statusCode !== 200) {
-                reject(
-                    new Error(
-                        `Failed to fetch ${URLS.SEARCH}: ${response.statusMessage}`,
-                    ),
+    const PAGE_SIZE = 10;
+
+    let i = 0;
+    let totalRecords;
+
+    const browser = await puppeteer.launch({ headless: 'new' });
+
+    while (true) {
+        const page = await browser.newPage();
+
+        // Navigate the page to a URL
+        await page.goto(`${URLS.SEARCH}?firstResult=${i}`);
+
+        // Wait for the elements to be present before extracting them
+        await page.waitForSelector('a[data-testid="result-item__title"]');
+
+        if (totalRecords === undefined) {
+            totalRecords = await page.evaluate(() => {
+                const spanElement = document.querySelector(
+                    'span[data-testid="pagination-info-text"]',
                 );
-            } else {
-                let html = '';
-                response.on('data', (chunk) => (html += chunk));
-                response.on('end', () => {
-                    const links: string[] = [];
-                    const regex =
-                        /href="(\/radar\/(languages-and-frameworks|techniques|platforms|tools)\/[^"]+)"/g;
-                    let match;
-                    while ((match = regex.exec(html))) {
-                        links.push(constructFullURL(match[1]));
-                    }
+                const text = spanElement?.textContent;
+                const regex = /(out of )(\d+)/;
+                const match = text?.match(regex);
+                return match ? parseInt(match[2]) : null;
+            });
+        }
 
-                    fs.writeFileSync(
-                        FILES.DATA.LINKS,
-                        JSON.stringify(links, null, 4),
-                    );
-                    resolve(links);
-                });
-            }
-        });
-        request.on('error', (error) => reject(error));
-    });
+        if (!totalRecords || i > totalRecords) {
+            break;
+        }
+
+        // Extract the elements with the given data-testid attribute
+        const elements = await page.$$eval(
+            'a[data-testid="result-item__title"]',
+            (links) => links.map((link) => link.href),
+        );
+
+        console.log(
+            `Adding items ${i + 1} through ${
+                i + elements.length
+            } to the list...`,
+        );
+        links.push(...elements);
+        links.sort();
+
+        fs.writeFileSync(FILES.DATA.LINKS, JSON.stringify(links, null, 4));
+
+        i += PAGE_SIZE;
+
+        // Add an artificial delay to reduce chance of CloudFront rate limiting
+        await new Promise((r) => setTimeout(r, 5000));
+    }
+
+    browser.close();
 }
 
 extractRadarLinks();
