@@ -15,7 +15,8 @@ async function generateMasterData() {
         blipEntries: [],
     };
 
-    const radarLinks = await extractRadarLinks();
+    // const radarLinks = await extractRadarLinks();
+    const radarLinks = JSON.parse(fs.readFileSync(FILES.DATA.LINKS, 'utf8'));
 
     console.log(`Found ${radarLinks.length} radar links`);
 
@@ -28,6 +29,9 @@ async function generateMasterData() {
 
         const blipMasterData: MasterData = await extractBlipTimeline(link);
         masterData.blipEntries.push(...blipMasterData.blipEntries);
+
+        // Add an artificial delay to reduce chance of CloudFront rate limiting
+        await new Promise((r) => setTimeout(r, 5000));
     }
 
     const sortedMasterData = _.orderBy(masterData.blipEntries, [

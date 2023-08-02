@@ -1,4 +1,4 @@
-import https from 'https';
+import puppeteer from 'puppeteer';
 import { JSDOM } from 'jsdom';
 import { parse } from 'url';
 import { BlipTimelineEntry, MasterData } from '../types';
@@ -16,73 +16,58 @@ import {
 export async function extractBlipTimeline(
     blipURL: string,
 ): Promise<MasterData> {
-    const { host, path } = parse(blipURL);
+    const { path } = parse(blipURL);
 
-    return new Promise((resolve, reject) => {
-        const request = https.get({ host, path }, (response) => {
-            if (response.statusCode !== 200) {
-                reject(
-                    new Error(
-                        `Failed to fetch ${blipURL}: ${response.statusMessage}`,
-                    ),
-                );
-            } else {
-                let html = '';
-                response.on('data', (chunk) => (html += chunk));
-                response.on('end', () => {
-                    const blipMasterData: MasterData = {
-                        blipEntries: [],
-                    };
+    const browser = await puppeteer.launch({ headless: 'new' });
 
-                    const dom = new JSDOM(html);
+    const page = await browser.newPage();
+    await page.goto(blipURL);
 
-                    const blipTimeline =
-                        dom.window.document.querySelectorAll(
-                            "div[blip='blip']",
-                        );
+    const blipMasterData: MasterData = {
+        blipEntries: [],
+    };
 
-                    blipTimeline.forEach((blipUpdate) => {
-                        const blipUpdateDOM = new JSDOM(blipUpdate.innerHTML);
+    await page.waitForSelector('div[blip="blip"]');
 
-                        const name = getBlipNameFromDOM(dom);
-                        const publishedDate =
-                            getPublishedDateFromBlipDOM(blipUpdateDOM);
-                        const volume = getVolumeNameFromDate(publishedDate);
-                        const quadrant = getQuadrantNameFromPath(path);
-                        const ring = getRingNameFromBlipDOM(blipUpdateDOM);
-                        const descriptionHtml =
-                            getDescriptionHTMLFromBlipDOM(blipUpdateDOM);
+    const timelineEntries = await page.$$eval(
+        'div[blip="blip"]',
+        (publications) =>
+            publications.map((publication) => publication.innerHTML),
+    );
 
-                        const blipTimelineEntry: BlipTimelineEntry = {
-                            name: name,
-                            quadrant: quadrant,
-                            ring: ring,
-                            volume: volume,
-                            publishedDate: publishedDate,
-                            descriptionHtml: descriptionHtml,
+    timelineEntries.forEach((blipPublication) => {
+        const blipUpdateDOM = new JSDOM(blipPublication);
 
-                            // Default these to false - will be reset after calculating movements
-                            isNew: false,
-                            hasMovedIn: false,
-                            hasMovedOut: false,
-                        };
+        const name = getBlipNameFromDOM(blipUpdateDOM);
+        const publishedDate = getPublishedDateFromBlipDOM(blipUpdateDOM);
+        const volume = getVolumeNameFromDate(publishedDate);
+        const quadrant = getQuadrantNameFromPath(path);
+        const ring = getRingNameFromBlipDOM(blipUpdateDOM);
+        const descriptionHtml = getDescriptionHTMLFromBlipDOM(blipUpdateDOM);
 
-                        blipMasterData.blipEntries.push(blipTimelineEntry);
-                    });
+        const blipTimelineEntry: BlipTimelineEntry = {
+            name: name,
+            quadrant: quadrant,
+            ring: ring,
+            volume: volume,
+            publishedDate: publishedDate,
+            descriptionHtml: descriptionHtml,
 
-                    // Reverse the order so that it's easier to calculate the isNew, hasMovedIn, hasMovedOut boolean values
-                    blipMasterData.blipEntries = _.reverse(
-                        blipMasterData.blipEntries,
-                    );
+            // Default these to false - will be reset after calculating movements
+            isNew: false,
+            hasMovedIn: false,
+            hasMovedOut: false,
+        };
 
-                    calculateBlipMovements(blipMasterData);
-
-                    resolve(blipMasterData);
-                });
-            }
-        });
-        request.on('error', (error) => reject(error));
+        blipMasterData.blipEntries.push(blipTimelineEntry);
     });
+
+    // Reverse the order so that it's easier to calculate the isNew, hasMovedIn, hasMovedOut boolean values
+    blipMasterData.blipEntries = _.reverse(blipMasterData.blipEntries);
+
+    calculateBlipMovements(blipMasterData);
+
+    return blipMasterData;
 }
 
 function calculateBlipMovements(blipMasterData: MasterData) {
