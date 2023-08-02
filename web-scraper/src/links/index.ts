@@ -1,6 +1,7 @@
 import fs from 'fs';
 import { FILES, URLS } from '../common/constants';
 import puppeteer from 'puppeteer';
+import _ from 'lodash';
 
 export async function extractRadarLinks(): Promise<string[]> {
     const links: string[] = [];
@@ -51,8 +52,6 @@ export async function extractRadarLinks(): Promise<string[]> {
         links.push(...elements);
         links.sort();
 
-        fs.writeFileSync(FILES.DATA.LINKS, JSON.stringify(links, null, 4));
-
         i += PAGE_SIZE;
 
         // Add an artificial delay to reduce chance of CloudFront rate limiting
@@ -60,6 +59,10 @@ export async function extractRadarLinks(): Promise<string[]> {
     }
 
     browser.close();
+
+    const uniqueLinks = _.uniq(links);
+
+    fs.writeFileSync(FILES.DATA.LINKS, JSON.stringify(uniqueLinks, null, 4));
 
     return links;
 }
