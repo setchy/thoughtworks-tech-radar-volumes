@@ -2,7 +2,7 @@ import fs from 'fs';
 import { FILES, URLS } from '../common/constants';
 import puppeteer from 'puppeteer';
 
-export async function extractRadarLinks() {
+export async function extractRadarLinks(): Promise<string[]> {
     const links: string[] = [];
 
     const PAGE_SIZE = 10;
@@ -60,6 +60,8 @@ export async function extractRadarLinks() {
     }
 
     browser.close();
+
+    return links;
 }
 
 extractRadarLinks();
