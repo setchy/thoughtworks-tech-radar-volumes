@@ -25,9 +25,9 @@
         "typescript": "5.1.6"
     },
     "scripts": {
-        "start": "ts-node src/index.ts",
+        "start": "run-s -l generate:*",
         "generate:links": "ts-node src/links/index.ts",
-        "generate:data": "ts-node src/index.ts",
+        "generate:data": "ts-node src/timeline/index.ts",
         "generate:csv": "ts-node src/csv/index.ts",
         "validate:alpha": "ts-node src/helpers/sortAlpha.ts",
         "validate:count": "ts-node src/helpers/countRows.ts",
