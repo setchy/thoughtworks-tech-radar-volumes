@@ -15,15 +15,18 @@ import {
     getQuadrantNameFromPath,
     getRingNameFromBlipDOM,
 } from './utils';
-import puppeteer from 'puppeteer';
+import puppeteer, { Page } from 'puppeteer';
 
 import fs from 'fs';
 
 import { getShortPath } from './../common/utils';
 
-let page;
+let page: Page;
 
 async function generateMasterData() {
+    const browser = await puppeteer.launch({ headless: 'new' });
+    page = await browser.newPage();
+
     const masterData: MasterData = {
         blipEntries: [],
     };
@@ -66,8 +69,6 @@ export async function extractBlipTimeline(
 ): Promise<MasterData> {
     const { path } = parse(blipURL);
 
-    const browser = await puppeteer.launch({ headless: 'new' });
-    page = await browser.newPage();
     await page.goto(blipURL);
 
     const blipMasterData: MasterData = {
