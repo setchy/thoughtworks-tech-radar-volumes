@@ -4,15 +4,6 @@ import {
     VOLUME_PUBLICATION_DATES,
 } from '../common/constants';
 
-export function getBlipNameFromDOM(dom: JSDOM): string {
-    const cssClass = 'hero-banner__overlay__container__title';
-
-    return (
-        dom.window.document.querySelector(`h1.${cssClass}`)?.innerHTML.trim() ||
-        ''
-    );
-}
-
 export function getRingNameFromBlipDOM(dom: JSDOM): string {
     const cssClass = 'cmp-blip-timeline__item--ring';
 

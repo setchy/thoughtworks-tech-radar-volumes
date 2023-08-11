@@ -9,7 +9,6 @@ import {
 } from '../common/constants';
 import {
     getVolumeNameFromDate,
-    getBlipNameFromDOM,
     getDescriptionHTMLFromBlipDOM,
     getPublishedDateFromBlipDOM,
     getQuadrantNameFromPath,
@@ -83,9 +82,21 @@ export async function extractBlipTimeline(
             publications.map((publication) => publication.innerHTML),
     );
 
-    timelineEntries.forEach((blipPublication) => {
+    const blipNameElement = await page.$(
+        '.hero-banner__overlay__container__title',
+    );
+    const blipName =
+        (await blipNameElement?.evaluate(
+            (element) => element.textContent?.trim(),
+        )) || '';
+
+    timelineEntries.forEach((blipPublicationHtml) => {
         const blipTimelineEntry: BlipTimelineEntry =
-            createBlipTimelineEntryFromPublication(blipPublication, path);
+            createBlipTimelineEntryFromPublication(
+                blipName,
+                blipPublicationHtml,
+                path,
+            );
 
         blipMasterData.blipEntries.push(blipTimelineEntry);
     });
@@ -99,12 +110,12 @@ export async function extractBlipTimeline(
 }
 
 function createBlipTimelineEntryFromPublication(
-    blipPublication: string,
+    blipName: string,
+    blipPublicationHtml: string,
     path: string | null,
 ) {
-    const blipUpdateDOM = new JSDOM(blipPublication);
+    const blipUpdateDOM = new JSDOM(blipPublicationHtml);
 
-    const name = getBlipNameFromDOM(blipUpdateDOM);
     const publishedDate = getPublishedDateFromBlipDOM(blipUpdateDOM);
     const volume = getVolumeNameFromDate(publishedDate);
     const quadrant = getQuadrantNameFromPath(path);
@@ -112,7 +123,7 @@ function createBlipTimelineEntryFromPublication(
     const descriptionHtml = getDescriptionHTMLFromBlipDOM(blipUpdateDOM);
 
     const blipTimelineEntry: BlipTimelineEntry = {
-        name: name,
+        name: blipName,
         quadrant: quadrant,
         ring: ring,
         volume: volume,
@@ -124,6 +135,7 @@ function createBlipTimelineEntryFromPublication(
         hasMovedIn: false,
         hasMovedOut: false,
     };
+
     return blipTimelineEntry;
 }
 
