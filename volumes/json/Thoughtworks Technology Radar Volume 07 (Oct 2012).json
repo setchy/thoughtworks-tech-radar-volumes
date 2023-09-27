@@ -48,6 +48,14 @@
         "description": "\"\""
     },
     {
+        "name": "Infrastructure as code",
+        "ring": "adopt",
+        "quadrant": "techniques",
+        "isNew": "FALSE",
+        "status": "no change",
+        "description": "\"We continue to highlight infrastructure as code. This technique treats infrastructure configuration in the same way as code; checking configuration into source control, then carefully pushing changes out to the data center.\""
+    },
+    {
         "name": "Windows infrastructure automation",
         "ring": "adopt",
         "quadrant": "techniques",
@@ -192,7 +200,7 @@
         "description": "\"For those organizations that are required to integrate systems, many continue to use a common database, sharing data between applications through the database tier. In many cases this has become an established and accepted architectural pattern: database based integration. The side affect of such an approach is greater coupling of database schemas, release schedules, performance and quality of service across applications.\""
     },
     {
-        "name": "Exhaustive browser-based testing",
+        "name": "Exhaustive browser based testing",
         "ring": "hold",
         "quadrant": "techniques",
         "isNew": "TRUE",
@@ -456,22 +464,6 @@
         "description": "\"\""
     },
     {
-        "name": "Infrastructure as code",
-        "ring": "adopt",
-        "quadrant": "tools",
-        "isNew": "FALSE",
-        "status": "no change",
-        "description": "\"We continue to highlight infrastructure as code. This technique treats infrastructure configuration in the same way as code; checking configuration into source control, then carefully pushing changes out to the data center.\""
-    },
-    {
-        "name": "Jasmine paired with Node.js",
-        "ring": "adopt",
-        "quadrant": "tools",
-        "isNew": "TRUE",
-        "status": "new",
-        "description": "\"\""
-    },
-    {
         "name": "Silverback",
         "ring": "adopt",
         "quadrant": "tools",
@@ -542,6 +534,14 @@
         "isNew": "FALSE",
         "status": "no change",
         "description": "\"With mobile applications on the rise, JavaScript size and performance is even more critical. JavaScript micro frameworks have emerged as a direct response to ‘bloat’ in some of the larger libraries. These small libraries do exactly one thing, such as DOM selection or MVC, and can be under one kilobyte in size. By combining a number of micro frameworks, developers can get exactly the functionality they need without the overhead of a larger library. Microjs.com hosts a collection of these micro frameworks, as well as a tool that can bundle them into a single library.\""
+    },
+    {
+        "name": "Jekyll",
+        "ring": "trial",
+        "quadrant": "tools",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"\""
     },
     {
         "name": "Locust",
@@ -688,6 +688,14 @@
         "description": "\"\""
     },
     {
+        "name": "Jasmine paired with Node.js",
+        "ring": "adopt",
+        "quadrant": "languages-and-frameworks",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"\""
+    },
+    {
         "name": "SASS, SCSS, LESS, and Stylus",
         "ring": "adopt",
         "quadrant": "languages-and-frameworks",
@@ -696,7 +704,7 @@
         "description": "\"CSS has been an extremely popular and effective DSL for styling web pages. It does, however, have some annoying limitations which have led to a number of languages that build on CSS to make it easier to write and modify. We’ve had good experiences with SASS, SCSS, and LESS.\""
     },
     {
-        "name": "Scala",
+        "name": "Scala, the good parts",
         "ring": "adopt",
         "quadrant": "languages-and-frameworks",
         "isNew": "FALSE",
@@ -728,19 +736,11 @@
         "description": "\"\""
     },
     {
-        "name": "HTML 5 for offline applications",
+        "name": "HTML5 for offline applications",
         "ring": "trial",
         "quadrant": "languages-and-frameworks",
         "isNew": "FALSE",
         "status": "no change",
-        "description": "\"\""
-    },
-    {
-        "name": "Jekyll",
-        "ring": "trial",
-        "quadrant": "languages-and-frameworks",
-        "isNew": "TRUE",
-        "status": "new",
         "description": "\"\""
     },
     {
@@ -840,7 +840,7 @@
         "description": "\"\""
     },
     {
-        "name": "Google Dart",
+        "name": "Dart",
         "ring": "hold",
         "quadrant": "languages-and-frameworks",
         "isNew": "FALSE",

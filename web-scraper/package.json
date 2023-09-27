@@ -8,10 +8,10 @@
     "main": "dist/index.js",
     "repository": "setchy/thoughtworks-tech-radar-volumes",
     "devDependencies": {
-        "@tsconfig/node18": "18.2.2",
+        "@tsconfig/node20": "20.1.2",
         "@types/jsdom": "21.1.3",
         "@types/lodash": "4.14.199",
-        "@types/node": "18.18.0",
+        "@types/node": "20.7.0",
         "@typescript-eslint/eslint-plugin": "6.7.3",
         "@typescript-eslint/parser": "6.7.3",
         "eslint": "8.50.0",
@@ -28,7 +28,7 @@
         "start": "run-s -l generate:*",
         "generate:links": "ts-node src/links/index.ts",
         "generate:data": "ts-node src/timeline/index.ts",
-        "generate:csv": "ts-node src/csv/index.ts",
+        "generate:volumes": "ts-node src/files/index.ts",
         "lint": "run-s -c -l eslint prettier",
         "lint-fix": "run-s -c -l eslint:fix prettier-fix",
         "eslint": "eslint . --ext .ts --config .eslintrc",
@@ -38,7 +38,7 @@
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "engines": {
-        "node": "18"
+        "node": "20"
     },
     "bugs": "https://github.com/setchy/thoughtworks-tech-radar-volumes/issues",
     "keywords": [

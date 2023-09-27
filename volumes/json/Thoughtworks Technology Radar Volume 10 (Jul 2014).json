@@ -5,7 +5,7 @@
         "quadrant": "techniques",
         "isNew": "TRUE",
         "status": "new",
-        "description": "\"<b>Forward Secrecy</b> (sometimes known as &quot;Perfect Forward Secrecy&quot; or PFS) is a cryptographic technique that protects previous communications sessions even if a server’s master keys are later compromised. Despite being simple to enable for HTTPS connections, many servers are not configured this way, and we recommend enabling forward secrecy to improve security. Note that we don't generally like the word &quot;perfect&quot; when used to describe cryptographic protocols - even the best protocol can be broken by a flaw in implementation, random number generator, or by advances in cryptanalytic techniques. Even so, it's important to enable the best security available, whilst keeping informed of new attacks and protocol improvements.\""
+        "description": "\"<b>Forward Secrecy</b> (sometimes known as \"\"Perfect Forward Secrecy\"\" or PFS) is a cryptographic technique that protects previous communications sessions even if a server’s master keys are later compromised. Despite being simple to enable for HTTPS connections, many servers are not configured this way, and we recommend enabling forward secrecy to improve security. Note that we don't generally like the word \"\"perfect\"\" when used to describe cryptographic protocols - even the best protocol can be broken by a flaw in implementation, random number generator, or by advances in cryptanalytic techniques. Even so, it's important to enable the best security available, whilst keeping informed of new attacks and protocol improvements.\""
     },
     {
         "name": "Segregated DOM plus node for JS Testing",
@@ -21,7 +21,7 @@
         "quadrant": "techniques",
         "isNew": "FALSE",
         "status": "no change",
-        "description": "\"When using techniques such as &quot;instrument all the things&quot; and semantic logging, it can be very useful to <b>capture domain events explicitly</b>. You can avoid having to infer user intent behind state transitions by modeling these transitions as first-class concerns. One method of achieving this outcome is to use an event sourced architecture with application events being mapped to business meaningful events.\""
+        "description": "\"When using techniques such as \"\"instrument all the things\"\" and semantic logging, it can be very useful to <b>capture domain events explicitly</b>. You can avoid having to infer user intent behind state transitions by modeling these transitions as first-class concerns. One method of achieving this outcome is to use an event sourced architecture with application events being mapped to business meaningful events.\""
     },
     {
         "name": "Development environments in the cloud",
@@ -53,7 +53,7 @@
         "quadrant": "techniques",
         "isNew": "TRUE",
         "status": "new",
-        "description": "\"With the proliferation of single-page JavaScript applications, we have found that slow Ajax calls, excessive DOM manipulation, and unexpected JavaScript errors in the browser can have a big impact on perceived website responsiveness. It is very useful to collect and aggregate this profiling information from real end-users' browsers. <a href='http://newrelic.com/real-user-monitoring'><b>Real user monitoring</b></a> provides early warning and diagnosis of production issues, and helps pinpoint them to a specific locality.\""
+        "description": "\"With the proliferation of single-page JavaScript applications, we have found that slow Ajax calls, excessive DOM manipulation, and unexpected JavaScript errors in the browser can have a big impact on perceived website responsiveness. It is very useful to collect and aggregate this profiling information from real end-users' browsers. <a href=\"\"http://newrelic.com/real-user-monitoring\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><b>Real user monitoring</b><span class=\"\"pop-out-icon\"\"></span></a> provides early warning and diagnosis of production issues, and helps pinpoint them to a specific locality.\""
     },
     {
         "name": "Humane registry",
@@ -61,7 +61,7 @@
         "quadrant": "techniques",
         "isNew": "TRUE",
         "status": "new",
-        "description": "\"A Microservice architecture by its very nature increases significantly the number of applications, services, and interactions in your deployed environments. Our projects are showing renewed focus on building <a href='http://martinfowler.com/bliki/HumaneRegistry.html'><b>Humane Registries</b></a> which aggregate information about running services from the live environment and present it in a form for humans to comprehend. These registries favor up-to-date information from running services instead of human-curated documentation.\""
+        "description": "\"A Microservice architecture by its very nature increases significantly the number of applications, services, and interactions in your deployed environments. Our projects are showing renewed focus on building <a href=\"\"http://martinfowler.com/bliki/HumaneRegistry.html\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><b>Humane Registries</b><span class=\"\"pop-out-icon\"\"></span></a> which aggregate information about running services from the live environment and present it in a form for humans to comprehend. These registries favor up-to-date information from running services instead of human-curated documentation.\""
     },
     {
         "name": "Inverse Conway Maneuver",
@@ -128,7 +128,7 @@
         "description": "\"Treating logs as data gives us greater insight into the operational activity of the systems we build. <b>Structured logging</b>, which is using a consistent, predetermined message format containing semantic information, builds on this technique and enables tools such as Graylog2 and Splunk to yield deeper insights.\""
     },
     {
-        "name": "Tailored Service Template",
+        "name": "Tailored service templates",
         "ring": "trial",
         "quadrant": "techniques",
         "isNew": "TRUE",
@@ -189,15 +189,7 @@
         "quadrant": "techniques",
         "isNew": "FALSE",
         "status": "no change",
-        "description": "\"As cloud adoption grows we are unfortunately seeing a trend to treat the cloud as just another hosting provider. <b>Cloud lift and shift</b> is unfortunately being encouraged by large vendors re-branding existing hosting offerings as &quot;cloud.&quot; Few of these offer any real flexibility or pay-as-you-use pricing. If you think you can move to the cloud without re-architecting, you are probably not doing it right.\""
-    },
-    {
-        "name": "DevOps as a team",
-        "ring": "hold",
-        "quadrant": "techniques",
-        "isNew": "TRUE",
-        "status": "new",
-        "description": "\"Some companies with good intentions create a separate <b>DevOps team</b>, which misconstrues the definition of DevOps. Rather than a role, DevOps is a cultural movement encouraging collaboration between operations specialists and developers. Rather than create yet another silo and suffer the consequences of Conway's Law, we advise you to embed these skills into teams, improving feedback loops and communication pathways by removing friction.\""
+        "description": "\"As cloud adoption grows we are unfortunately seeing a trend to treat the cloud as just another hosting provider. <b>Cloud lift and shift</b> is unfortunately being encouraged by large vendors re-branding existing hosting offerings as \"\"cloud.\"\" Few of these offer any real flexibility or pay-as-you-use pricing. If you think you can move to the cloud without re-architecting, you are probably not doing it right.\""
     },
     {
         "name": "Ignoring OWASP Top 10",
@@ -208,12 +200,20 @@
         "description": "\"Barely a week goes by without the IT industry being embarrassed by yet another high profile loss of data, leak of passwords, or breach of a supposedly secure system. There are good resources to help with making sure security gets treated as a first-class concern during software development and we need to stop ignoring them; the <b>OWASP Top 10</b> is a good place to start.\""
     },
     {
+        "name": "Separate DevOps team",
+        "ring": "hold",
+        "quadrant": "techniques",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"Some companies with good intentions create a separate <b>DevOps team</b>, which misconstrues the definition of DevOps. Rather than a role, DevOps is a cultural movement encouraging collaboration between operations specialists and developers. Rather than create yet another silo and suffer the consequences of Conway's Law, we advise you to embed these skills into teams, improving feedback loops and communication pathways by removing friction.\""
+    },
+    {
         "name": "Testing as a separate organization",
         "ring": "hold",
         "quadrant": "techniques",
         "isNew": "TRUE",
         "status": "new",
-        "description": "\"We continue to see organizations create separate Development and QA teams. Fast feedback is a core tenet of Agile and critical to the success of a project. Using a separate QA team slows down this feedback, creates an &quot;us and them&quot; mentality and makes it more difficult to build quality into the software. Testing should be a tightly integrated activity and isn't something the team can outsource. We recommend integrated teams where testers work closely with developers instead of having <b>testing as a separate organization.</b>\""
+        "description": "\"We continue to see organizations create separate Development and QA teams. Fast feedback is a core tenet of Agile and critical to the success of a project. Using a separate QA team slows down this feedback, creates an \"\"us and them\"\" mentality and makes it more difficult to build quality into the software. Testing should be a tightly integrated activity and isn't something the team can outsource. We recommend integrated teams where testers work closely with developers instead of having <b>testing as a separate organization.</b>\""
     },
     {
         "name": "Velocity as productivity",
@@ -221,7 +221,7 @@
         "quadrant": "techniques",
         "isNew": "FALSE",
         "status": "no change",
-        "description": "\"Of all the approaches that we might disagree with, equating velocity with productivity has become so prevalent that we felt it important to call it out in our hold ring. When properly used, velocity allows the incorporation of &quot;yesterday's weather&quot; into the iteration planning process. Velocity is simply a capacity estimate for a given team at a given time. It can improve as a team gels or by fixing problems like technical debt or a flaky build server. However, like all metrics, it can be misused. For example, over-zealous project managers attempt to insist on continual improvement of velocity. Treating <b>velocity as productivity</b> leads to unproductive team behaviors that optimize the metric at the expense of actual working software.\""
+        "description": "\"Of all the approaches that we might disagree with, equating velocity with productivity has become so prevalent that we felt it important to call it out in our hold ring. When properly used, velocity allows the incorporation of \"\"yesterday's weather\"\" into the iteration planning process. Velocity is simply a capacity estimate for a given team at a given time. It can improve as a team gels or by fixing problems like technical debt or a flaky build server. However, like all metrics, it can be misused. For example, over-zealous project managers attempt to insist on continual improvement of velocity. Treating <b>velocity as productivity</b> leads to unproductive team behaviors that optimize the metric at the expense of actual working software.\""
     },
     {
         "name": "Hadoop 2.0",
@@ -238,6 +238,14 @@
         "isNew": "FALSE",
         "status": "moved in",
         "description": "\"In the last technology radar, we spoke about <b>Vumi</b> as a platform for using USSD as a UI for feature phones. Vumi has become very stable and its open source nature gives it appeal. In our projects, we have been able to integrate with telecommunication networks seamlessly and rapidly due to the simplicity of configuration. The platform is also readily available and scalable.\""
+    },
+    {
+        "name": "Docker",
+        "ring": "trial",
+        "quadrant": "platforms",
+        "isNew": "FALSE",
+        "status": "moved in",
+        "description": "\"<b>Docker</b> continues to gain momentum, and is seeing use on projects although mostly in non-production environments. Docker provides a set of tools to efficiently package and distribute executable machine images, which can then be launched as lightweight containers. A considerable community is growing around the tool. Notable is <a href=\"\"https://coreos.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">CoreOS<span class=\"\"pop-out-icon\"\"></span></a> which is an operating system based on ChromeOS built for deploying Docker containers across a cluster with tools for deployment, service discovery and configuration.\""
     },
     {
         "name": "iBeacon",
@@ -264,12 +272,20 @@
         "description": "\"The number and maturity of on-premise <b>private cloud</b> options continue to increase. From OpenStack-based options like Rackspace's private cloud to PAAS options like CloudFoundry, for those organizations seeking to make use of existing infrastructure or for whom an increased level of control is needed over off-premise cloud, then these solutions are well worth a look.\""
     },
     {
+        "name": "Apache Spark",
+        "ring": "assess",
+        "quadrant": "platforms",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"For iterative processing such as machine learning and interactive analysis, Hadoop map-reduce does not work very well because of its batch-oriented nature. <b>Spark</b> is a fast and general engine for large-scale data processing. It aims to extend map-reduce for iterative algorithms and interactive low latency data mining. It also ships with a machine learning library.\""
+    },
+    {
         "name": "ARM Server SoC",
         "ring": "assess",
         "quadrant": "platforms",
         "isNew": "TRUE",
         "status": "new",
-        "description": "\"AMD recently released an <a href='http://www.anandtech.com/show/7989/amd-announces-project-skybridge-pincompatible-arm-and-x86-socs-in-2015'>8-core <b>ARM SoC</b> (System on a Chip)</a> designed for servers and has committed to releasing an ARM SoC with integrated graphics in 2015. ARM-based servers are an interesting alternative to x86 because they are significantly more energy efficient. For some workloads, building an ARM-powered Cloud is preferable.\""
+        "description": "\"AMD recently released an <a href=\"\"http://www.anandtech.com/show/7989/amd-announces-project-skybridge-pincompatible-arm-and-x86-socs-in-2015\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">8-core <b>ARM SoC</b> (System on a Chip)<span class=\"\"pop-out-icon\"\"></span></a> designed for servers and has committed to releasing an ARM SoC with integrated graphics in 2015. ARM-based servers are an interesting alternative to x86 because they are significantly more energy efficient. For some workloads, building an ARM-powered Cloud is preferable.\""
     },
     {
         "name": "CoAP",
@@ -285,7 +301,7 @@
         "quadrant": "platforms",
         "isNew": "TRUE",
         "status": "new",
-        "description": "\"Although the IaaS space is crowded, there is room for new competitors to enter the market. <a href='http://digitalocean.com'><b>DigitalOcean</b></a> has impressed us recently with its cost, speed and simplicity. If all you need is basic compute infrastructure, it is well worth a look.\""
+        "description": "\"Although the IaaS space is crowded, there is room for new competitors to enter the market. <a href=\"\"http://digitalocean.com\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><b>DigitalOcean</b><span class=\"\"pop-out-icon\"\"></span></a> has impressed us recently with its cost, speed and simplicity. If all you need is basic compute infrastructure, it is well worth a look.\""
     },
     {
         "name": "Espruino",
@@ -301,7 +317,7 @@
         "quadrant": "platforms",
         "isNew": "TRUE",
         "status": "new",
-        "description": "\"Given the popularity of event sourcing, it is no surprise that tools in this space are maturing. <a href='http://geteventstore.com'><b>EventStore</b></a> is an open source functional database for storing immutable events and performing complex event processing on the event streams. Unlike other tools in this space, EventStore exposes event streams as Atom collections which therefore require no special infrastructure such as message buses or highly specialized clients to use.&nbsp;\""
+        "description": "\"Given the popularity of event sourcing, it is no surprise that tools in this space are maturing. <a href=\"\"http://geteventstore.com\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><b>EventStore</b><span class=\"\"pop-out-icon\"\"></span></a> is an open source functional database for storing immutable events and performing complex event processing on the event streams. Unlike other tools in this space, EventStore exposes event streams as Atom collections which therefore require no special infrastructure such as message buses or highly specialized clients to use.&nbsp;\""
     },
     {
         "name": "Low-cost robotics",
@@ -317,7 +333,7 @@
         "quadrant": "platforms",
         "isNew": "TRUE",
         "status": "new",
-        "description": "\"<a href='http://mapbox.com'><b>Mapbox</b></a> is an open mapping platform we have used on several projects. It allows a developer to quickly add a map to an application and to style the map. Mapbox can serve as an alternative to conventional mapping platforms, and it also allows for mobile friendly maps.\""
+        "description": "\"<a href=\"\"http://mapbox.com\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><b>Mapbox</b><span class=\"\"pop-out-icon\"\"></span></a> is an open mapping platform we have used on several projects. It allows a developer to quickly add a map to an application and to style the map. Mapbox can serve as an alternative to conventional mapping platforms, and it also allows for mobile friendly maps.\""
     },
     {
         "name": "OpenID Connect",
@@ -349,7 +365,7 @@
         "quadrant": "platforms",
         "isNew": "TRUE",
         "status": "new",
-        "description": "\"<b>Two-factor authentication</b> significantly improves security over simple password-based systems. <a href='http://tools.ietf.org/html/rfc6238'>RFC 6238</a> -- <a href='http://en.wikipedia.org/wiki/Time-based_One-time_Password_Algorithm'>Time-based One-Time Password</a> Algorithm -- is a standard for two-factor authentication. &quot;Standard&quot; authenticator apps from <a href='https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2'>Google</a> and <a href='http://www.windowsphone.com/en-us/store/app/authenticator/e7994dbc-2336-4950-91ba-ca22d653759b'>Microsoft</a> provide tokens to smartphone users, and there are a number of other client and server implementations readily available. With providers such as Google, Facebook, Dropbox and Evernote using <b>TOTP</b>, there really is no excuse to continue using simple password-based authentication where stronger security would be appropriate.\""
+        "description": "\"<b>Two-factor authentication</b> significantly improves security over simple password-based systems. <a href=\"\"http://tools.ietf.org/html/rfc6238\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">RFC 6238<span class=\"\"pop-out-icon\"\"></span></a> -- <a href=\"\"http://en.wikipedia.org/wiki/Time-based_One-time_Password_Algorithm\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Time-based One-Time Password<span class=\"\"pop-out-icon\"\"></span></a> Algorithm -- is a standard for two-factor authentication. \"\"Standard\"\" authenticator apps from <a href=\"\"https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Google<span class=\"\"pop-out-icon\"\"></span></a> and <a href=\"\"http://www.windowsphone.com/en-us/store/app/authenticator/e7994dbc-2336-4950-91ba-ca22d653759b\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Microsoft<span class=\"\"pop-out-icon\"\"></span></a> provide tokens to smartphone users, and there are a number of other client and server implementations readily available. With providers such as Google, Facebook, Dropbox and Evernote using <b>TOTP</b>, there really is no excuse to continue using simple password-based authentication where stronger security would be appropriate.\""
     },
     {
         "name": "Web Components standard",
@@ -365,7 +381,7 @@
         "quadrant": "platforms",
         "isNew": "FALSE",
         "status": "no change",
-        "description": "\"The gap between what &quot;enterprise-class&quot; commercial packages provide and what is actually needed is widening. This is especially true for internet facing applications. Innovative solutions that really scale and easily support modern techniques such as continuous delivery are written by practitioners for practitioners. They originate with many internet scale companies and are refined as open source software. <b>Big enterprise solutions</b> often obstruct effective delivery due to their accumulated bloat, cumbersome licensing restrictions, and feature sets that are driven by check-lists and imaginary requirements far removed from the realities of most development teams.\""
+        "description": "\"The gap between what \"\"enterprise-class\"\" commercial packages provide and what is actually needed is widening. This is especially true for internet facing applications. Innovative solutions that really scale and easily support modern techniques such as continuous delivery are written by practitioners for practitioners. They originate with many internet scale companies and are refined as open source software. <b>Big enterprise solutions</b> often obstruct effective delivery due to their accumulated bloat, cumbersome licensing restrictions, and feature sets that are driven by check-lists and imaginary requirements far removed from the realities of most development teams.\""
     },
     {
         "name": "CMS as a platform",
@@ -424,14 +440,6 @@
         "description": "\"Following our recommendation in the last radar to consider a focus on reducing mean time to recovery, we want to highlight <b>Chaos Monkey</b> from Netflix's Simian Army suite. It is a tool that randomly disables instances in the production environment during normal operation. When run with comprehensive monitoring and a team on stand by, it helps to uncover unexpected weaknesses in the system, which in turn allows the development team to build automatic recovery mechanisms ahead of time, rather than struggling to respond to an outage that caught everyone by surprise.\""
     },
     {
-        "name": "Docker",
-        "ring": "trial",
-        "quadrant": "tools",
-        "isNew": "FALSE",
-        "status": "moved in",
-        "description": "\"<b>Docker</b> continues to gain momentum, and is seeing use on projects although mostly in non-production environments. Docker provides a set of tools to efficiently package and distribute executable machine images, which can then be launched as lightweight containers. A considerable community is growing around the tool. Notable is <a href='https://coreos.com/'>CoreOS</a> which is an operating system based on ChromeOS built for deploying Docker containers across a cluster with tools for deployment, service discovery and configuration.\""
-    },
-    {
         "name": "Flyway",
         "ring": "trial",
         "quadrant": "tools",
@@ -445,7 +453,7 @@
         "quadrant": "tools",
         "isNew": "TRUE",
         "status": "new",
-        "description": "\"The big Cloud providers have clearly raised the bar for provisioning, monitoring, and configuration, simplifying these tasks dramatically through powerful tools. Organizations that want to keep their compute and storage resources in-house are looking for similar solutions that work within their organizational context. <a href='http://theforeman.org/'><b>Foreman</b></a> has worked really well for us, and it is open-source software, too.\""
+        "description": "\"The big Cloud providers have clearly raised the bar for provisioning, monitoring, and configuration, simplifying these tasks dramatically through powerful tools. Organizations that want to keep their compute and storage resources in-house are looking for similar solutions that work within their organizational context. <a href=\"\"http://theforeman.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><b>Foreman</b><span class=\"\"pop-out-icon\"\"></span></a> has worked really well for us, and it is open-source software, too.\""
     },
     {
         "name": "GenyMotion",
@@ -453,7 +461,7 @@
         "quadrant": "tools",
         "isNew": "TRUE",
         "status": "new",
-        "description": "\"Device fragmentation in the Android world is often cited as a problem because it can be difficult to understand how your applications will behave on a large number of disparate platforms. <a href='http://genymotion.com'><b>GenyMotion</b></a> is an emulator which can mimic the characteristics of a number of different Android devices. Our teams have found this very effective in giving fast feedback for our Android applications.\""
+        "description": "\"Device fragmentation in the Android world is often cited as a problem because it can be difficult to understand how your applications will behave on a large number of disparate platforms. <a href=\"\"http://genymotion.com\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><b>GenyMotion</b><span class=\"\"pop-out-icon\"\"></span></a> is an emulator which can mimic the characteristics of a number of different Android devices. Our teams have found this very effective in giving fast feedback for our Android applications.\""
     },
     {
         "name": "GoCD",
@@ -461,7 +469,7 @@
         "quadrant": "tools",
         "isNew": "TRUE",
         "status": "new",
-        "description": "\"Owing to the increasing interest in Continuous Delivery and deployment pipelines, we see many teams trying to extend their Continuous Integration tooling with plugins that provide deployment pipelines at a visual level. <a href='http://go.cd'><b>GoCD</b></a> is a tool that was built with the concept of deployment pipelines at its core. GoCD has the ability to sequence workflows both sequentially and in parallel at many levels, to execute specific tasks only on certain machines as well as to deterministically promote and propagate artifacts, which is a key enabler for Continuous Delivery. These are capabilities that most Continuous Integration tools lack, and we recommend that teams who might have otherwise tried to build a deployment pipeline from their Continuous Integration server try GoCD instead. GoCD was built by Thoughtworks, is open-source, and is available for free for all teams. The <a href='https://github.com/gocd/gocd/'>source code</a> is available under the Apache 2.0 license.\""
+        "description": "\"Owing to the increasing interest in Continuous Delivery and deployment pipelines, we see many teams trying to extend their Continuous Integration tooling with plugins that provide deployment pipelines at a visual level. <a href=\"\"http://go.cd\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><b>GoCD</b><span class=\"\"pop-out-icon\"\"></span></a> is a tool that was built with the concept of deployment pipelines at its core. GoCD has the ability to sequence workflows both sequentially and in parallel at many levels, to execute specific tasks only on certain machines as well as to deterministically promote and propagate artifacts, which is a key enabler for Continuous Delivery. These are capabilities that most Continuous Integration tools lack, and we recommend that teams who might have otherwise tried to build a deployment pipeline from their Continuous Integration server try GoCD instead. GoCD was built by Thoughtworks, is open-source, and is available for free for all teams. The <a href=\"\"https://github.com/gocd/gocd/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">source code<span class=\"\"pop-out-icon\"\"></span></a> is available under the Apache 2.0 license.\""
     },
     {
         "name": "Grunt.js",
@@ -493,7 +501,7 @@
         "quadrant": "tools",
         "isNew": "TRUE",
         "status": "new",
-        "description": "\"We featured 'Machine image as a build artifact' in the last Radar, as an excellent way to implement fast spin-up, immutable servers. The thing holding this technique back was the difficulty in building images, especially when targeting more than one platform. <a href='http://packer.io'><b>Packer</b></a>&nbsp;solves this, using your configuration management tool of choice to create images for a number of platforms including AWS, Rackspace, DigitalOcean and even Docker and Vagrant, although we have found the VMWare support to be problematic.\""
+        "description": "\"We featured 'Machine image as a build artifact' in the last Radar, as an excellent way to implement fast spin-up, immutable servers. The thing holding this technique back was the difficulty in building images, especially when targeting more than one platform. <a href=\"\"http://packer.io\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><b>Packer</b><span class=\"\"pop-out-icon\"\"></span></a>&nbsp;solves this, using your configuration management tool of choice to create images for a number of platforms including AWS, Rackspace, DigitalOcean and even Docker and Vagrant, although we have found the VMWare support to be problematic.\""
     },
     {
         "name": "Pact & Pacto",
@@ -501,7 +509,7 @@
         "quadrant": "tools",
         "isNew": "TRUE",
         "status": "new",
-        "description": "\"Consumer-Driven Contracts are a testing approach to help service interfaces evolve with confidence without unknowingly breaking consumers. The similarly named <a href='https://github.com/realestate-com-au/pact'><b>Pact</b></a> and <a href='http://thoughtworks.github.io/pacto'><b>Pacto</b></a> are two new open-source tools which allow testing interactions between service providers and consumers in isolation against a contract. Both have grown out of projects which are building RESTful microservices and show great promise.\""
+        "description": "\"Consumer-Driven Contracts are a testing approach to help service interfaces evolve with confidence without unknowingly breaking consumers. The similarly named <a href=\"\"https://github.com/realestate-com-au/pact\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><b>Pact</b><span class=\"\"pop-out-icon\"\"></span></a> and <a href=\"\"http://thoughtworks.github.io/pacto\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><b>Pacto</b><span class=\"\"pop-out-icon\"\"></span></a> are two new open-source tools which allow testing interactions between service providers and consumers in isolation against a contract. Both have grown out of projects which are building RESTful microservices and show great promise.\""
     },
     {
         "name": "Prototype On Paper",
@@ -549,7 +557,7 @@
         "quadrant": "tools",
         "isNew": "TRUE",
         "status": "new",
-        "description": "\"Mobile test automation is becoming increasingly important. <a href='http://appium.io'><b>Appium</b></a> is a test automation framework which can be used to test mobile web, mobile native and mobile hybrid applications on iOS and Android. At the core, Appium is a webserver that exposes a REST API, receiving connections from a client, listening for commands, executing those commands on a mobile device and responding with an HTTP response representing the result of the command execution. It allows tests to be written against multiple platforms (iOS, Android) using the same API. Appium is open source with easy set up using npm.\""
+        "description": "\"Mobile test automation is becoming increasingly important. <a href=\"\"http://appium.io\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><b>Appium</b><span class=\"\"pop-out-icon\"\"></span></a> is a test automation framework which can be used to test mobile web, mobile native and mobile hybrid applications on iOS and Android. At the core, Appium is a webserver that exposes a REST API, receiving connections from a client, listening for commands, executing those commands on a mobile device and responding with an HTTP response representing the result of the command execution. It allows tests to be written against multiple platforms (iOS, Android) using the same API. Appium is open source with easy set up using npm.\""
     },
     {
         "name": "Consul",
@@ -581,7 +589,7 @@
         "quadrant": "tools",
         "isNew": "TRUE",
         "status": "new",
-        "description": "\"<a href='http://leafletjs.com'><b>Leaflet.js</b></a> is a JavaScript library for mobile-friendly interactive maps. The library places a huge emphasis on performance, usability and simplicity, and as such works efficiently across mobile platforms and desktop browsers. It is a viable library to consider when building interactive maps for mobiles.\""
+        "description": "\"<a href=\"\"http://leafletjs.com\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><b>Leaflet.js</b><span class=\"\"pop-out-icon\"\"></span></a> is a JavaScript library for mobile-friendly interactive maps. The library places a huge emphasis on performance, usability and simplicity, and as such works efficiently across mobile platforms and desktop browsers. It is a viable library to consider when building interactive maps for mobiles.\""
     },
     {
         "name": "Mountebank",
@@ -589,7 +597,7 @@
         "quadrant": "tools",
         "isNew": "TRUE",
         "status": "new",
-        "description": "\"When testing services, we commonly need to stub out downstream collaborating services. Written by a Thoughtworker, <a href='http://www.mbtest.org'><b>Mountebank</b></a> is a lightweight service which you can configure via HTTP that is capable of stubbing and mocking HTTP, HTTPS, SMTP and TCP.\""
+        "description": "\"When testing services, we commonly need to stub out downstream collaborating services. Written by a Thoughtworker, <a href=\"\"http://www.mbtest.org\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><b>Mountebank</b><span class=\"\"pop-out-icon\"\"></span></a> is a lightweight service which you can configure via HTTP that is capable of stubbing and mocking HTTP, HTTPS, SMTP and TCP.\""
     },
     {
         "name": "Papertrail",
@@ -608,20 +616,12 @@
         "description": "\"<b>Roslyn</b>, a .NET compiler platform under the Apache License 2.0, is a next-generation set of compilers for C# and VB.NET written entirely as managed code. It provides access to the compiler as a service and includes code analysis APIs allowing developers to access information from the compiler that was previously treated as a black box, for example syntactic and semantic models. The most immediate impact should be seen in enhancements to .NET IDEs through refactoring and code generation tools. We also expect to see improved code diagnostics and static analysis, although it will be interesting to see what the community comes up with. Meanwhile Xamarin has a Mono-compatible copy of Roslyn source code hosted on GitHub and plans to bundle Roslyn’s compilers with Mono as it stabilizes, in addition to integrating the best parts into their code base.\""
     },
     {
-        "name": "Spark",
-        "ring": "assess",
-        "quadrant": "tools",
-        "isNew": "TRUE",
-        "status": "new",
-        "description": "\"For iterative processing such as machine learning and interactive analysis, Hadoop map-reduce does not work very well because of its batch-oriented nature. <b>Spark</b> is a fast and general engine for large-scale data processing. It aims to extend map-reduce for iterative algorithms and interactive low latency data mining. It also ships with a machine learning library.\""
-    },
-    {
         "name": "Swagger",
         "ring": "assess",
         "quadrant": "tools",
         "isNew": "TRUE",
         "status": "new",
-        "description": "\"<a href='https://helloreverb.com/developers/swagger'><b>Swagger</b></a> is a standard way to describe a RESTful API so that documentation and client examples can be generated automatically. We think there's a need for some standards in this area and hope that this approach embraces Postel's law and avoids the <a href='http://en.wikipedia.org/wiki/Robustness_principle'>tight-coupling and inflexibility</a> of standards like WSDL. A number of tools are now available to <a href='https://github.com/wordnik/swagger-ui'>render documentation and client pages</a> from swagger-compliant descriptions.\""
+        "description": "\"<a href=\"\"https://helloreverb.com/developers/swagger\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><b>Swagger</b><span class=\"\"pop-out-icon\"\"></span></a> is a standard way to describe a RESTful API so that documentation and client examples can be generated automatically. We think there's a need for some standards in this area and hope that this approach embraces Postel's law and avoids the <a href=\"\"http://en.wikipedia.org/wiki/Robustness_principle\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">tight-coupling and inflexibility<span class=\"\"pop-out-icon\"\"></span></a> of standards like WSDL. A number of tools are now available to <a href=\"\"https://github.com/wordnik/swagger-ui\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">render documentation and client pages<span class=\"\"pop-out-icon\"\"></span></a> from swagger-compliant descriptions.\""
     },
     {
         "name": "Xamarin",
@@ -661,7 +661,7 @@
         "quadrant": "languages-and-frameworks",
         "isNew": "FALSE",
         "status": "moved in",
-        "description": "\"The <b>Go language</b> gradually changed status from &quot;Just Another Language&quot; to a valuable tool in many projects. While steadfastly single paradigm in a world of increasingly complex languages, it seems to keep a nice balance between expressiveness, power, and simplicity.\""
+        "description": "\"The <b>Go language</b> gradually changed status from \"\"Just Another Language\"\" to a valuable tool in many projects. While steadfastly single paradigm in a world of increasingly complex languages, it seems to keep a nice balance between expressiveness, power, and simplicity.\""
     },
     {
         "name": "Java 8",
@@ -672,7 +672,7 @@
         "description": "\"The team behind <b>Java 8</b> had to fight two battles: the community forces encouraging forever backwards compatibility (a long hallmark of Java) and the technical challenge of making a deep language change mesh with existing libraries and features. They succeeded on both fronts, breathing new life into the Java Language and placing it on par with other mainstream languages in terms of functional programming features. In particular, Java 8 has excellent syntactic magic that allows seamless interoperability between Lambda blocks, the new higher-order function feature, and SAM (Single Abstract Method) interfaces, the traditional way of passing behavior.\""
     },
     {
-        "name": "Reactive Extensions across languages",
+        "name": "ReactiveX",
         "ring": "adopt",
         "quadrant": "languages-and-frameworks",
         "isNew": "FALSE",
@@ -709,7 +709,7 @@
         "quadrant": "languages-and-frameworks",
         "isNew": "TRUE",
         "status": "new",
-        "description": "\"We see lots of teams creating RESTful interfaces without paying any attention to hypermedia. <a href='http://stateless.co/hal_specification.html'><b>HAL</b></a> is a simple format for incorporating hyperlinks into JSON representations which is easy to implement and consume. HAL is well supported by libraries for parsing and representing JSON, and there are HAL-aware REST client libraries such as <a href='https://github.com/codegram/hyperclient'>Hyperclient</a> which make it easy to navigate resources by following links.\""
+        "description": "\"We see lots of teams creating RESTful interfaces without paying any attention to hypermedia. <a href=\"\"http://stateless.co/hal_specification.html\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><b>HAL</b><span class=\"\"pop-out-icon\"\"></span></a> is a simple format for incorporating hyperlinks into JSON representations which is easy to implement and consume. HAL is well supported by libraries for parsing and representing JSON, and there are HAL-aware REST client libraries such as <a href=\"\"https://github.com/codegram/hyperclient\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Hyperclient<span class=\"\"pop-out-icon\"\"></span></a> which make it easy to navigate resources by following links.\""
     },
     {
         "name": "Hive",
@@ -749,7 +749,7 @@
         "quadrant": "languages-and-frameworks",
         "isNew": "TRUE",
         "status": "new",
-        "description": "\"<a href='https://github.com/kriskowal/q'><b>Q</b></a> is a fully Promises/A+ compliant implementation in JavaScript that lets users compose promises arbitrarily deeply without the need for the deeply nested callbacks that obscure control flow. Q takes care of threading fulfilled values and rejected promises through the appropriate code paths. The space of Promises/A+ compliant libraries is currently very active with alternatives like <a href='https://github.com/petkaantonov/bluebird'><b>Bluebird</b></a> also rapidly gaining mindshare.\""
+        "description": "\"<a href=\"\"https://github.com/kriskowal/q\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><b>Q</b><span class=\"\"pop-out-icon\"\"></span></a> is a fully Promises/A+ compliant implementation in JavaScript that lets users compose promises arbitrarily deeply without the need for the deeply nested callbacks that obscure control flow. Q takes care of threading fulfilled values and rejected promises through the appropriate code paths. The space of Promises/A+ compliant libraries is currently very active with alternatives like <a href=\"\"https://github.com/petkaantonov/bluebird\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><b>Bluebird</b><span class=\"\"pop-out-icon\"\"></span></a> also rapidly gaining mindshare.\""
     },
     {
         "name": "R as Compute Platform",
@@ -821,7 +821,7 @@
         "quadrant": "languages-and-frameworks",
         "isNew": "TRUE",
         "status": "new",
-        "description": "\"<a href='http://projects.spring.io/spring-boot'><b>Spring Boot</b></a> allows easy set up of standalone Spring-based applications. It's ideal for pulling up new microservices and easy to deploy. It also makes data access less of a pain due to the hibernate mappings with much less boilerplate code.\""
+        "description": "\"<a href=\"\"http://projects.spring.io/spring-boot\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><b>Spring Boot</b><span class=\"\"pop-out-icon\"\"></span></a> allows easy set up of standalone Spring-based applications. It's ideal for pulling up new microservices and easy to deploy. It also makes data access less of a pain due to the hibernate mappings with much less boilerplate code.\""
     },
     {
         "name": "TypeScript",

@@ -112,7 +112,7 @@
         "description": "\"DevOps is a new movement seeking to achieve the business need for rapid delivery of software products while maintaining the stability of live environments. It uses two approaches: first, promoting closer collaboration between development and operations; second, applying practices shared with agile (collaboration, automation, simplicity, etc) to operations processes such as provisioning, change management, and production monitoring. It encompasses culture, processes, and tools - all supporting better communication, faster feedback and delivery, and more predictable outcomes.\""
     },
     {
-        "name": "Incremental data warehousing",
+        "name": "Iterative data warehousing",
         "ring": "assess",
         "quadrant": "techniques",
         "isNew": "FALSE",
@@ -176,6 +176,14 @@
         "description": "\"The iPhone changed the face of the mobile phone. The iPad has the potential to radically alter the way users interact with and consume Web-based resources and applications and will spawn a plethora of similar tablet devices. The addition of wireless application distribution in IOS4 allows organizations to securely host and distribute in-house applications without using the App Store, overcoming one of the main barriers to corporate adoption. IOS4’s introduction of multitasking with applications running in the background has opened up new possibilities for enterprise applications, at the cost of extra battery usage.\""
     },
     {
+        "name": "JRuby",
+        "ring": "adopt",
+        "quadrant": "platforms",
+        "isNew": "FALSE",
+        "status": "no change",
+        "description": "\"\""
+    },
+    {
         "name": "JVM as platform",
         "ring": "adopt",
         "quadrant": "platforms",
@@ -206,6 +214,22 @@
         "isNew": "FALSE",
         "status": "moved in",
         "description": "\"\""
+    },
+    {
+        "name": "MongoDB",
+        "ring": "trial",
+        "quadrant": "platforms",
+        "isNew": "FALSE",
+        "status": "no change",
+        "description": "\"Document-oriented databases treat each record as a document with the ability to add any number of fields of arbitrary size. A relatively large amount of the attention that has been directed at document databases has landed on mongoDB, a highly scalable option with support for querying, indexing, replication and sharding. Beyond its enterprise feature set, its popularity is aided by its driver support for Java, Ruby, PHP, C#, Python and a number of other languages.\""
+    },
+    {
+        "name": "Neo4J",
+        "ring": "trial",
+        "quadrant": "platforms",
+        "isNew": "FALSE",
+        "status": "no change",
+        "description": "\"Graph databases store information as interconnected nodes with arbitrary relations rather than tables and nameless relations. Graph databases are an excellent choice for complex domains with semi-structured data since they’re schema-less and highly extensible. Neo4j is the front-runner in the graph database space being an embedded Java component, which supports fast storage and search of graphs for Java solutions (including server applications). The Neo4j community is highly active and now has a basic REST API enabling it as more general purpose database engine. Neo4j moving into the trial category is representative of our experience trialling it in real-world scenarios and the early successes we’ve achieved.\""
     },
     {
         "name": "App containers",
@@ -256,14 +280,6 @@
         "description": "\"\""
     },
     {
-        "name": "iPad",
-        "ring": "assess",
-        "quadrant": "platforms",
-        "isNew": "TRUE",
-        "status": "new",
-        "description": "\"\""
-    },
-    {
         "name": "Location based services",
         "ring": "assess",
         "quadrant": "platforms",
@@ -272,7 +288,7 @@
         "description": "\"Google maps has led the way in bringing mapping mainstream. But businesses, governments and non-profit organizations are now learning to use these location based services to communicate more effectively with customers. With other mapping services providers getting into the act, there is going to be a proliferation of applications built around mapping targeted at customers who are now much more map-savvy.\""
     },
     {
-        "name": "Mobile Web",
+        "name": "Mobile web",
         "ring": "assess",
         "quadrant": "platforms",
         "isNew": "FALSE",
@@ -296,6 +312,14 @@
         "description": "\"\""
     },
     {
+        "name": "Tablet",
+        "ring": "assess",
+        "quadrant": "platforms",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"\""
+    },
+    {
         "name": "GWT",
         "ring": "hold",
         "quadrant": "platforms",
@@ -312,7 +336,7 @@
         "description": "\"Internet browsers such as Google Chrome, Safari, Opera and Firefox, have made serious inroads in the implementation of the HTML 5 specification. With these advances it is now possible to experience many of the improvements that HTML brings. Unfortunately so far Microsoft has lagged on implementing these new standards. We recommend that organizations favor standards compliant browsers over IE8.\""
     },
     {
-        "name": "Rich Internet Applications",
+        "name": "RIA",
         "ring": "hold",
         "quadrant": "platforms",
         "isNew": "FALSE",
@@ -320,7 +344,7 @@
         "description": "\"Rich Internet Applications (RIA) are a popular topic, driven by the effort and marketing of big vendors pushing their offerings. RIA is useful for complex visualizations but ill-suited for other programming tasks because it doesn’t fully support the engineering hygiene we require for our tools: testing is difficult and application partitioning is cumbersome. These frameworks also don’t support common elements we take for granted in applications hosted in a browser: bookmarking, addressability, browser controls, and other aspects. We’re not entirely critical of these tools, but think that their sweet spot is rich visualizations, not building traditional data entry CRUD applications.\""
     },
     {
-        "name": "WS-* beyond basic profile",
+        "name": "WS-*",
         "ring": "hold",
         "quadrant": "platforms",
         "isNew": "FALSE",
@@ -384,22 +408,6 @@
         "description": "\"\""
     },
     {
-        "name": "MongoDB",
-        "ring": "trial",
-        "quadrant": "tools",
-        "isNew": "FALSE",
-        "status": "no change",
-        "description": "\"Document-oriented databases treat each record as a document with the ability to add any number of fields of arbitrary size. A relatively large amount of the attention that has been directed at document databases has landed on mongoDB, a highly scalable option with support for querying, indexing, replication and sharding. Beyond its enterprise feature set, its popularity is aided by its driver support for Java, Ruby, PHP, C#, Python and a number of other languages.\""
-    },
-    {
-        "name": "Neo4J",
-        "ring": "trial",
-        "quadrant": "tools",
-        "isNew": "FALSE",
-        "status": "no change",
-        "description": "\"Graph databases store information as interconnected nodes with arbitrary relations rather than tables and nameless relations. Graph databases are an excellent choice for complex domains with semi-structured data since they’re schema-less and highly extensible. Neo4j is the front-runner in the graph database space being an embedded Java component, which supports fast storage and search of graphs for Java solutions (including server applications). The Neo4j community is highly active and now has a basic REST API enabling it as more general purpose database engine. Neo4j moving into the trial category is representative of our experience trialling it in real-world scenarios and the early successes we’ve achieved.\""
-    },
-    {
         "name": "Next-generation test tools",
         "ring": "trial",
         "quadrant": "tools",
@@ -432,7 +440,7 @@
         "description": "\"\""
     },
     {
-        "name": "Github",
+        "name": "GitHub",
         "ring": "assess",
         "quadrant": "tools",
         "isNew": "FALSE",
@@ -481,14 +489,6 @@
     },
     {
         "name": "JavaScript as a first class language",
-        "ring": "adopt",
-        "quadrant": "languages-and-frameworks",
-        "isNew": "FALSE",
-        "status": "no change",
-        "description": "\"\""
-    },
-    {
-        "name": "JRuby",
         "ring": "adopt",
         "quadrant": "languages-and-frameworks",
         "isNew": "FALSE",
@@ -552,7 +552,7 @@
         "description": "\"As we have discussed previously, the Java language appears to be moving slowly as the Java community waits for Java 7. Having waited for new language features to surface for almost 3 years, the Java community has begun to innovate in new languages that run on the Java Virtual Machine, languages such as Groovy, JRuby, Scala and Clojure. With the increase in number of languages available on the JVM, we expect enterprises to begin to assess the suitability of reducing the amount of Java specific code developed in their enterprise applications in favor of these newer languages. This is not to say that enterprises should outright abandon Java as a programming language, we do however suggest that you look for alternatives that may be more fi t for purpose in the area that new development is taking place.\""
     },
     {
-        "name": "Scala",
+        "name": "Scala, the good parts",
         "ring": "assess",
         "quadrant": "languages-and-frameworks",
         "isNew": "FALSE",
