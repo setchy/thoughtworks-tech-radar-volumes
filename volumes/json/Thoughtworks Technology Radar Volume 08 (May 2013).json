@@ -496,6 +496,14 @@
         "description": "\"Jekyll represents the “microization” of frameworks in the web publishing space. While the focus is maintained on doing one thing - sites that feature blogs - as transparently as possible, it also shows the path to a more lightweight future. One example of this that we like is that it is now trivially easy to publish useful documentation for your software project.\""
     },
     {
+        "name": "Librarian-puppet and Librarian-Chef",
+        "ring": "trial",
+        "quadrant": "tools",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"\""
+    },
+    {
         "name": "Locust",
         "ring": "trial",
         "quadrant": "tools",
@@ -520,20 +528,12 @@
         "description": "\"\""
     },
     {
-        "name": "Puppet-librarian and Chef-librarian",
-        "ring": "trial",
-        "quadrant": "tools",
-        "isNew": "TRUE",
-        "status": "new",
-        "description": "\"\""
-    },
-    {
         "name": "TestFlight & HockeyApp",
         "ring": "trial",
         "quadrant": "tools",
         "isNew": "TRUE",
         "status": "new",
-        "description": "\"Both TestFlight and HockeyApp allow you to manage the deployment of mobile applications without an app store, makinguser testing easier. They offer crash reporting and analytic capabilities to gather data in the field. HockeyApp supports IOS, Android, & Windows Phone, while TestFlight supports iOS and Android. We have used both tools successfully to help deliver mobile applications. This is clearly a fast evolving space.\""
+        "description": "\"Both TestFlight and HockeyApp allow you to manage the deployment of mobile applications without an app store, makinguser testing easier. They offer crash reporting and analytic capabilities to gather data in the field. HockeyApp supports IOS, Android, &amp; Windows Phone, while TestFlight supports iOS and Android. We have used both tools successfully to help deliver mobile applications. This is clearly a fast evolving space.\""
     },
     {
         "name": "Browser-based templating",
@@ -600,20 +600,12 @@
         "description": "\"Riemann is an open source server that aggregates and relays events in real time. Written in Clojure, and based on Netty, it is capable of handling thousands of concurrent connections per node. Riemann uses a simple Protobuf protocol for events, which allows it to aggregate everything from CPU and memory use to orders placed to error rates. It forwards to systems like Graphite, triggers email alerts, and provides a dashboard for monitoring these metrics. Riemann is an important part of the movement towards handling data as generic streams of events in real-time, as opposed to using specialized systems for different types of data.\""
     },
     {
-        "name": "Snowplow Analytics",
+        "name": "Snowplow Analytics & Piwik",
         "ring": "assess",
         "quadrant": "tools",
         "isNew": "TRUE",
         "status": "new",
         "description": "\"We see great promise in Snowplow Analytics, an open source web analytics platform that derives intelligent information from regular web analytics, based on open data principles and cloud Storage.\""
-    },
-    {
-        "name": "UIAutomator",
-        "ring": "assess",
-        "quadrant": "tools",
-        "isNew": "TRUE",
-        "status": "new",
-        "description": "\"UIAutomator looks like the most promising tool for testing Android user interfaces by allowing fine-grained control over components during test and facilitating testing on multiple Devices.\""
     },
     {
         "name": "Heavyweight test tools",
@@ -664,12 +656,12 @@
         "description": "\"We have long thought of JavaScript as a first class language, and have been keenly following the development of testing tools in that space. The cream of the crop for out-of-browser testing is currently Jasmine. Jasmine paired with Node.js is the go-to choice for robust testing of both client- and serverside JavaScript.\""
     },
     {
-        "name": "Scala",
+        "name": "Scala, the good parts",
         "ring": "adopt",
         "quadrant": "languages-and-frameworks",
         "isNew": "FALSE",
         "status": "no change",
-        "description": "\"In the previous radar we had two JVMbased functional programming languages, Clojure and Scala, in our Assess category. We had expressed a slight preference for Clojure because it is the smaller and more focused language. Since the last radar we have realized that the wider applicability of Scala makes it more approachable for enterprise developers, and we have witnessed great successes in the adoption of Scala. Consequently we have moved Scala into our Trial category. Pay careful attention to the idiomatic use of Scala if it is introduced to a new team to avoid &quot;Java without semicolons&quot; or Perl styles.\""
+        "description": "\"In the previous radar we had two JVMbased functional programming languages, Clojure and Scala, in our Assess category. We had expressed a slight preference for Clojure because it is the smaller and more focused language. Since the last radar we have realized that the wider applicability of Scala makes it more approachable for enterprise developers, and we have witnessed great successes in the adoption of Scala. Consequently we have moved Scala into our Trial category. Pay careful attention to the idiomatic use of Scala if it is introduced to a new team to avoid \"\"Java without semicolons\"\" or Perl styles.\""
     },
     {
         "name": "Sinatra",

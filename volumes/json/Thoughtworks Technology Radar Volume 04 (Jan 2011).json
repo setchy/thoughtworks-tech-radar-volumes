@@ -32,6 +32,14 @@
         "description": "\"The industry has seen significant changes to the way we use and store data over the past few years. Agile development practices have lead to greater emphasis on evolutionary database design, requiring new tools that support migration of schemas in line with changes to the domain model of an application. As storage space consistently becomes cheaper and data access speeds increase, many organizations are investigating the use of multiple schemas to hold data for different purposes, e.g. transactional and analysis schemas. Incremental data warehousing is becoming increasingly popular as the cost of moving data between a transactional data store and an analysis environment is less than the value of having access to near real-time reporting of critical business data.\""
     },
     {
+        "name": "Infrastructure as code",
+        "ring": "adopt",
+        "quadrant": "techniques",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"The large number of hosts and devices in a modern datacenter or cloud deployment have made manually installing and configuring infrastructure unwise. Infrastructure as code is an approach whereby infrastructure configuration is scripted or described by files that are stored in version control, and changes are pushed out to the datacenter in a controlled manner. This parallels the discipline of source control and build promotion used in software development, hence ‘as code’. The two front-running open source tools for infrastructure automation are Chef and Puppet. They both use a textual DSL to script automation. Using this approach provides consistent and repeatable environment changes, reducing the manual effort involved, especially in troubleshooting environmental differences.\""
+    },
+    {
         "name": "Platform roadmaps",
         "ring": "adopt",
         "quadrant": "techniques",
@@ -152,7 +160,7 @@
         "description": "\"Business are running 24x7, but the information needed to make business decisions is being provided by outdated methods using ETL jobs in batch mode. The batch window is shrinking as businesses move to global markets and are open for longer durations. The data provided by these jobs is out of date by the time the business needs to make a decision. There is substantial value in taking the event as it happens in the transactional system and feeding it to the data warehouse so that the business can get near real-time business intelligence.\""
     },
     {
-        "name": "Smart Systems",
+        "name": "Smart systems",
         "ring": "assess",
         "quadrant": "techniques",
         "isNew": "TRUE",
@@ -192,6 +200,14 @@
         "description": "\"\""
     },
     {
+        "name": "JRuby",
+        "ring": "adopt",
+        "quadrant": "platforms",
+        "isNew": "FALSE",
+        "status": "no change",
+        "description": "\"Functional languages have a wide range of practical uses, including simulation, computational fi nance, computational science, large scale data processing and parsing. These fields benefit from functional programming techniques that simplify concurrent execution and the expression of complex mathematical functions concisely. Functional programming requires a shift in thinking for enterprise developers experienced in object oriented development. Moving to an often terse syntax for solving complex problems may initially be intimidating to many. As with all forms of programming languages, syntax is just one aspect of the language itself. In functional programming another significant aspect is the use of common idioms. These idioms speed code comprehension and increase overall maintainability. This might not be news to all, but it is worth noting that dynamic languages are long ready for adoption and trial. Ruby, particularly when deployed on JRuby, is ready for adoption. Thoughtworks uses Ruby and JRuby extensively in both its Services and Product work. Groovy is ready for trial and could prove more accessible than Ruby/JRuby in a Java shop. For the right type of applications, Ruby, JRuby, and Groovy prove far more effective, expressive, and productive than Java and C#.\""
+    },
+    {
         "name": "KVM",
         "ring": "adopt",
         "quadrant": "platforms",
@@ -205,7 +221,7 @@
         "quadrant": "platforms",
         "isNew": "FALSE",
         "status": "no change",
-        "description": "\"AWS is the most mature and broadest of the current cloud offerings providing scalable services for computation (EC2), storage (S3 & SBS), databases (SimpleDB & RDS), messaging (SQS & SNS), etc. The list of services provided by AWS continues to expand rapidly with new services being added on an almost monthly basis, (http://bit.ly/90887v). While existing applications can be deployed on AWS through the use of Amazon Machine Images the full benefits of this platform will come from applications that are developed to take advantage of AWS. The usage based billing model adopted by AWS allows organizations to scale applications without large upfront investment and avoid the overhead cost of under utilized hardware.\""
+        "description": "\"AWS is the most mature and broadest of the current cloud offerings providing scalable services for computation (EC2), storage (S3 &amp; SBS), databases (SimpleDB &amp; RDS), messaging (SQS &amp; SNS), etc. The list of services provided by AWS continues to expand rapidly with new services being added on an almost monthly basis, (http://bit.ly/90887v). While existing applications can be deployed on AWS through the use of Amazon Machine Images the full benefits of this platform will come from applications that are developed to take advantage of AWS. The usage based billing model adopted by AWS allows organizations to scale applications without large upfront investment and avoid the overhead cost of under utilized hardware.\""
     },
     {
         "name": "Facebook as business platform",
@@ -224,20 +240,20 @@
         "description": "\"Heroku is a beautifully simple Platform as a Service (PaaS) for Rack-compatible frameworks such as Ruby on Rails. In contrast to similar offerings for other languages, which often limit development to a programming model specific to the service platform, Heroku uses the standard Rails stack and even allows deployment with a plain Git push. Heroku was recently acquired by Salesforce.com and so has significant backing behind their service.\""
     },
     {
-        "name": "iPad",
-        "ring": "trial",
-        "quadrant": "platforms",
-        "isNew": "FALSE",
-        "status": "moved in",
-        "description": "\"The iPhone changed the face of the mobile phone. The iPad has the potential to radically alter the way users interact with and consume Web-based resources and applications and will spawn a plethora of similar tablet devices. The addition of wireless application distribution in IOS4 allows organizations to securely host and distribute in-house applications without using the App Store, overcoming one of the main barriers to corporate adoption. IOS4’s introduction of multitasking with applications running in the background has opened up new possibilities for enterprise applications, at the cost of extra battery usage.\""
-    },
-    {
-        "name": "Mobile Web",
+        "name": "Mobile web",
         "ring": "trial",
         "quadrant": "platforms",
         "isNew": "FALSE",
         "status": "moved in",
         "description": "\"Mobile Web was in our Assess category on previous radars, but we’ve moved it into Trial in recognition of the fact that the Web is increasingly consumed through iPhone, Android and tablet devices. Many devices can render a fair approximation of a desktop browser experience, but to present the user with a truly optimal experience we recommend adapting a site to the screen size, display and control behaviors particular to the device. Techniques such as progressive enhancement can allow a single site to adapt to both desktop and mobile browsers. Large format mobile devices, such as the Apple iPad and Amazon Kindle, provide a new model of ubiquitous computing. Their long battery life, simple interfaces and easy connectivity have the potential to change the way we interact with computers. Apple’s new user interfaces discard the familiar desktop metaphors of files and folders that have been standard since the introduction of the Macintosh in 1984.\""
+    },
+    {
+        "name": "Tablet",
+        "ring": "trial",
+        "quadrant": "platforms",
+        "isNew": "FALSE",
+        "status": "moved in",
+        "description": "\"The iPhone changed the face of the mobile phone. The iPad has the potential to radically alter the way users interact with and consume Web-based resources and applications and will spawn a plethora of similar tablet devices. The addition of wireless application distribution in IOS4 allows organizations to securely host and distribute in-house applications without using the App Store, overcoming one of the main barriers to corporate adoption. IOS4’s introduction of multitasking with applications running in the background has opened up new possibilities for enterprise applications, at the cost of extra battery usage.\""
     },
     {
         "name": "App containers",
@@ -328,20 +344,12 @@
         "description": "\"\""
     },
     {
-        "name": "WS-* beyond basic profile",
+        "name": "WS-*",
         "ring": "hold",
         "quadrant": "platforms",
         "isNew": "FALSE",
         "status": "no change",
         "description": "\"Web services are now widely used as an enabler for service oriented architectures as well as for the integration of existing applications. We see mature tools and largely interoperable implementations for web service standards covered by WS-I Basic Profile, but we remain skeptical about the proliferation and value of WS-* standards beyond Basic Profile.\""
-    },
-    {
-        "name": "Infrastructure as code",
-        "ring": "adopt",
-        "quadrant": "tools",
-        "isNew": "TRUE",
-        "status": "new",
-        "description": "\"The large number of hosts and devices in a modern datacenter or cloud deployment have made manually installing and configuring infrastructure unwise. Infrastructure as code is an approach whereby infrastructure configuration is scripted or described by files that are stored in version control, and changes are pushed out to the datacenter in a controlled manner. This parallels the discipline of source control and build promotion used in software development, hence ‘as code’. The two front-running open source tools for infrastructure automation are Chef and Puppet. They both use a textual DSL to script automation. Using this approach provides consistent and repeatable environment changes, reducing the manual effort involved, especially in troubleshooting environmental differences.\""
     },
     {
         "name": "Squid",
@@ -440,7 +448,7 @@
         "description": "\"\""
     },
     {
-        "name": "Github",
+        "name": "GitHub",
         "ring": "assess",
         "quadrant": "tools",
         "isNew": "FALSE",
@@ -504,14 +512,6 @@
         "description": "\"\""
     },
     {
-        "name": "JRuby",
-        "ring": "adopt",
-        "quadrant": "languages-and-frameworks",
-        "isNew": "FALSE",
-        "status": "no change",
-        "description": "\"Functional languages have a wide range of practical uses, including simulation, computational fi nance, computational science, large scale data processing and parsing. These fields benefit from functional programming techniques that simplify concurrent execution and the expression of complex mathematical functions concisely. Functional programming requires a shift in thinking for enterprise developers experienced in object oriented development. Moving to an often terse syntax for solving complex problems may initially be intimidating to many. As with all forms of programming languages, syntax is just one aspect of the language itself. In functional programming another significant aspect is the use of common idioms. These idioms speed code comprehension and increase overall maintainability. This might not be news to all, but it is worth noting that dynamic languages are long ready for adoption and trial. Ruby, particularly when deployed on JRuby, is ready for adoption. Thoughtworks uses Ruby and JRuby extensively in both its Services and Product work. Groovy is ready for trial and could prove more accessible than Ruby/JRuby in a Java shop. For the right type of applications, Ruby, JRuby, and Groovy prove far more effective, expressive, and productive than Java and C#.\""
-    },
-    {
         "name": "Ruby",
         "ring": "adopt",
         "quadrant": "languages-and-frameworks",
@@ -552,7 +552,7 @@
         "description": "\"HTML 5 continues to be the preferred choice for developing complex Web-based applications, with features including improved integration of rich audio and video content, clientside storage, better document structure, Web sockets and offline use. Safari, Chrome, Firefox and Opera each support significant subsets of the proposed standards, with support coming in Internet Explorer 9. HTML 5 is likely to remain in draft for some time to come, however; early adopters may wish to reflect on the bleakly comedic saga of two separate groups attempting to drive its evolution.\""
     },
     {
-        "name": "SASS, SCSS, and LESS",
+        "name": "SASS, SCSS, LESS, and Stylus",
         "ring": "trial",
         "quadrant": "languages-and-frameworks",
         "isNew": "TRUE",
@@ -560,7 +560,7 @@
         "description": "\"\""
     },
     {
-        "name": "Scala",
+        "name": "Scala, the good parts",
         "ring": "trial",
         "quadrant": "languages-and-frameworks",
         "isNew": "FALSE",

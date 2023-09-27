@@ -28,7 +28,7 @@
         "start": "run-s -l generate:*",
         "generate:links": "ts-node src/links/index.ts",
         "generate:data": "ts-node src/timeline/index.ts",
-        "generate:csv": "ts-node src/csv/index.ts",
+        "generate:volumes": "ts-node src/files/index.ts",
         "lint": "run-s -c -l eslint prettier",
         "lint-fix": "run-s -c -l eslint:fix prettier-fix",
         "eslint": "eslint . --ext .ts --config .eslintrc",

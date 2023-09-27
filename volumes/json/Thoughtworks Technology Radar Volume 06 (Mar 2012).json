@@ -45,7 +45,7 @@
         "quadrant": "techniques",
         "isNew": "FALSE",
         "status": "no change",
-        "description": "\"Emergent design is one of the more advanced aspects of agile engineering practices, and therefore an area of active research & development. Such architectures should be driven by the underlying technical requirements of the system, rather than speculative planning for a future that may change. We have identified at least two facets of emergent design: the Lean software principle of last responsible moment, which mostly applies to greenfield projects, and finding & harvesting idiomatic patterns, which is more applicable to existing projects.\""
+        "description": "\"Emergent design is one of the more advanced aspects of agile engineering practices, and therefore an area of active research &amp; development. Such architectures should be driven by the underlying technical requirements of the system, rather than speculative planning for a future that may change. We have identified at least two facets of emergent design: the Lean software principle of last responsible moment, which mostly applies to greenfield projects, and finding &amp; harvesting idiomatic patterns, which is more applicable to existing projects.\""
     },
     {
         "name": "Evolutionary architecture",
@@ -69,6 +69,14 @@
         "quadrant": "techniques",
         "isNew": "TRUE",
         "status": "new",
+        "description": "\"\""
+    },
+    {
+        "name": "Infrastructure as code",
+        "ring": "adopt",
+        "quadrant": "techniques",
+        "isNew": "FALSE",
+        "status": "no change",
         "description": "\"\""
     },
     {
@@ -120,14 +128,6 @@
         "description": "\"Technical debt is a powerful and useful metaphor for dealing with the compromises we make when building software. Unfortunately it has become a catch-all term for many different kinds of issues and problems, leading to confusion and “devaluation” of the term. A very useful approach for dealing with this is catagorization of technical debt, assigning value and prioritizing debt payback in an analogous way to user stories. This helps the team focus on the most important areas and keeps issues transparent and measurable.\""
     },
     {
-        "name": "Embedded servlet containers",
-        "ring": "trial",
-        "quadrant": "techniques",
-        "isNew": "TRUE",
-        "status": "new",
-        "description": "\"Embedding a servlet container, such as Jetty, inside a Java application has many advantages over running the application inside a container. Testing is relatively painless because of the simple startup, and the development environment is closer to production. Nasty surprises like mismatched versions of libraries or drivers are eliminated by not sharing across multiple applications. While you will have to manage and monitor multiple Java Virtual Machines in production using this model, we feel the advantages offered by the simplicity and isolation are significant.\""
-    },
-    {
         "name": "Event API’s",
         "ring": "trial",
         "quadrant": "techniques",
@@ -160,6 +160,14 @@
         "description": "\"\""
     },
     {
+        "name": "Polyglot Persistence",
+        "ring": "trial",
+        "quadrant": "techniques",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"\""
+    },
+    {
         "name": "Single command deploy",
         "ring": "trial",
         "quadrant": "techniques",
@@ -184,7 +192,7 @@
         "description": "\"\""
     },
     {
-        "name": "Event sourcing",
+        "name": "Event Sourcing",
         "ring": "assess",
         "quadrant": "techniques",
         "isNew": "FALSE",
@@ -352,14 +360,6 @@
         "description": "\"\""
     },
     {
-        "name": "Offline mobile webapps (just HTML5)",
-        "ring": "trial",
-        "quadrant": "platforms",
-        "isNew": "FALSE",
-        "status": "no change",
-        "description": "\"HTML5 includes features that allow control and storage of offline data within the browser using client side JavaScript. These features allows creation of offline mobile web applications in a cross platform way that would have previously required installed applications. For instance an application that can download articles for reading later or a data capture application that can work offline and upload when you are online. While the standard is not finalized yet, support for these offline features is available and ready for use in the WebKit based browsers found on iOS, Android and newer Blackberry phones.\""
-    },
-    {
         "name": "Private Clouds",
         "ring": "trial",
         "quadrant": "platforms",
@@ -384,7 +384,7 @@
         "description": "\"Ubiquitous computing is tricky term as it covers many different ideas. What we find interesting and exciting at the moment is that both consumer and specialist mobile devices are increasingly based on commodity operating systems such as Android or iOS. This means that in many cases, software can be developed by organizations themselves, opening the door to innovative new applications without requiring expensive niche skills. Lower price points for the hardware also make this area more accessible, especially with peripherals like payment card readers, PIN key pads and high quality bar code scanners becoming available for both Android and iOS devices. When combined with features already available on these consumer devices, whole new ways of working open up.\""
     },
     {
-        "name": "Windows Phone 7",
+        "name": "Windows Phone",
         "ring": "trial",
         "quadrant": "platforms",
         "isNew": "TRUE",
@@ -430,6 +430,14 @@
         "isNew": "TRUE",
         "status": "new",
         "description": "\"OpenSocial is a specification that provides a standard way to share content between semi-trusted applications. While initially proposed for public facing social networking sites, it has possibly more potential within the corporate firewall, where the benefits of being able to share data and content between applications in a standard manner frequently outweigh the requirements of scale and security.\""
+    },
+    {
+        "name": "Riak",
+        "ring": "assess",
+        "quadrant": "platforms",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"Riak is a distributed key-value store that is schemaless and data-type agnostic. It can be put to good use in write heavy projects to store data such as sessions, shopping carts and streaming logs. The ability of the distributed cluster to self recover, distribute data across the cluster with tunable consistency and availability settings, do collision detection and resolve those if needed can be helpful in high availability environments and provide interesting solutions in the architecture.\""
     },
     {
         "name": "Single threaded servers with asynchronous I/O",
@@ -520,20 +528,20 @@
         "description": "\"Starting from a challenge posed to the Linux community to stop using commercial version control, Git has proved itself. Git embodies a well architected, high performance implementation of distributed version control. Git is powerful, so it should be used with respect, but that power enables agile engineering workflows that simply cannot exist with other tools. Git’s popularity is supported by the existence of GitHub. GitHub combines public and private Git repositories, social networking, and a host of other innovative tools and approaches.\""
     },
     {
-        "name": "Infrastructure as code",
-        "ring": "adopt",
-        "quadrant": "tools",
-        "isNew": "FALSE",
-        "status": "no change",
-        "description": "\"\""
-    },
-    {
         "name": "Client-side MVC",
         "ring": "trial",
         "quadrant": "tools",
         "isNew": "TRUE",
         "status": "new",
         "description": "\"This tool was included in this edition of the Radar for visibility. We felt that there wasn't anything substantial to add to the discourse around it, but that it was important to keep this in view.\""
+    },
+    {
+        "name": "Embedded servlet containers",
+        "ring": "trial",
+        "quadrant": "tools",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"Embedding a servlet container, such as Jetty, inside a Java application has many advantages over running the application inside a container. Testing is relatively painless because of the simple startup, and the development environment is closer to production. Nasty surprises like mismatched versions of libraries or drivers are eliminated by not sharing across multiple applications. While you will have to manage and monitor multiple Java Virtual Machines in production using this model, we feel the advantages offered by the simplicity and isolation are significant.\""
     },
     {
         "name": "FPM",
@@ -600,14 +608,6 @@
         "description": "\"\""
     },
     {
-        "name": "Polyglot Persistence",
-        "ring": "trial",
-        "quadrant": "tools",
-        "isNew": "TRUE",
-        "status": "new",
-        "description": "\"\""
-    },
-    {
         "name": "PowerShell",
         "ring": "trial",
         "quadrant": "tools",
@@ -662,14 +662,6 @@
         "isNew": "FALSE",
         "status": "no change",
         "description": "\"Open source BI tools such as Pentaho, JasperSoft, CloverETL, Talend, BIRT and SpagoBI are matching features with the proprietary tools and allowing for easy entry into the BI space. We recommend that you assess them.\""
-    },
-    {
-        "name": "Riak",
-        "ring": "assess",
-        "quadrant": "tools",
-        "isNew": "TRUE",
-        "status": "new",
-        "description": "\"Riak is a distributed key-value store that is schemaless and data-type agnostic. It can be put to good use in write heavy projects to store data such as sessions, shopping carts and streaming logs. The ability of the distributed cluster to self recover, distribute data across the cluster with tunable consistency and availability settings, do collision detection and resolve those if needed can be helpful in high availability environments and provide interesting solutions in the architecture.\""
     },
     {
         "name": "Sonar",
@@ -768,7 +760,15 @@
         "description": "\"\""
     },
     {
-        "name": "SASS, SCSS, and LESS",
+        "name": "HTML5 for offline applications",
+        "ring": "trial",
+        "quadrant": "languages-and-frameworks",
+        "isNew": "FALSE",
+        "status": "no change",
+        "description": "\"HTML5 includes features that allow control and storage of offline data within the browser using client side JavaScript. These features allows creation of offline mobile web applications in a cross platform way that would have previously required installed applications. For instance an application that can download articles for reading later or a data capture application that can work offline and upload when you are online. While the standard is not finalized yet, support for these offline features is available and ready for use in the WebKit based browsers found on iOS, Android and newer Blackberry phones.\""
+    },
+    {
+        "name": "SASS, SCSS, LESS, and Stylus",
         "ring": "trial",
         "quadrant": "languages-and-frameworks",
         "isNew": "FALSE",
@@ -776,7 +776,7 @@
         "description": "\"\""
     },
     {
-        "name": "Scala",
+        "name": "Scala, the good parts",
         "ring": "trial",
         "quadrant": "languages-and-frameworks",
         "isNew": "FALSE",
@@ -816,7 +816,7 @@
         "description": "\"This language/framework was included in this edition of the Radar for visibility. We felt that there wasn't anything substantial to add to the discourse around it, but that it was important to keep this in view.\""
     },
     {
-        "name": "Google Dart",
+        "name": "Dart",
         "ring": "hold",
         "quadrant": "languages-and-frameworks",
         "isNew": "TRUE",

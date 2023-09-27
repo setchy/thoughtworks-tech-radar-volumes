@@ -56,6 +56,14 @@
         "description": "\"\""
     },
     {
+        "name": "Infrastructure as code",
+        "ring": "adopt",
+        "quadrant": "techniques",
+        "isNew": "FALSE",
+        "status": "no change",
+        "description": "\"The DevOps movement continues to grow, with developers and operations staff working closely together to solve the “software last mile” problem. Infrastructure as code is a technique for treating infrastructure configuration in the same way as code; checking it into source control, then using it to push changes out to the data center. In addition to web server, application server and application configuration, we are seeing network configuration treated in the same way. Network switch, firewall and load balancer configuration can be infrastructure as code, and even changed at runtime.\""
+    },
+    {
         "name": "Platform roadmaps",
         "ring": "adopt",
         "quadrant": "techniques",
@@ -176,7 +184,7 @@
         "description": "\"This technique was included in this edition of the Radar for visibility. We felt that there wasn't anything substantial to add to the discourse around it, but that it was important to keep this in view.\""
     },
     {
-        "name": "Event sourcing",
+        "name": "Event Sourcing",
         "ring": "assess",
         "quadrant": "techniques",
         "isNew": "TRUE",
@@ -189,7 +197,7 @@
         "quadrant": "techniques",
         "isNew": "FALSE",
         "status": "no change",
-        "description": "\"Smart Phones with a GPS, cameras and a screen are but one example of smart systems which are proliferating around us, fusing the real and the digital world. Augmented reality apps like Google Goggles, geolocation services & smart grids are just some of the possible applications.\""
+        "description": "\"Smart Phones with a GPS, cameras and a screen are but one example of smart systems which are proliferating around us, fusing the real and the digital world. Augmented reality apps like Google Goggles, geolocation services &amp; smart grids are just some of the possible applications.\""
     },
     {
         "name": "Database based integration",
@@ -280,15 +288,7 @@
         "description": "\"\""
     },
     {
-        "name": "Offline mobile webapps (just HTML5)",
-        "ring": "trial",
-        "quadrant": "platforms",
-        "isNew": "TRUE",
-        "status": "new",
-        "description": "\"\""
-    },
-    {
-        "name": "Tablet (formerly iPad)",
+        "name": "Tablet",
         "ring": "trial",
         "quadrant": "platforms",
         "isNew": "FALSE",
@@ -392,20 +392,12 @@
         "description": "\"\""
     },
     {
-        "name": "Github",
+        "name": "GitHub",
         "ring": "adopt",
         "quadrant": "tools",
         "isNew": "FALSE",
         "status": "moved in",
         "description": "\"\""
-    },
-    {
-        "name": "Infrastructure as code",
-        "ring": "adopt",
-        "quadrant": "tools",
-        "isNew": "FALSE",
-        "status": "no change",
-        "description": "\"The DevOps movement continues to grow, with developers and operations staff working closely together to solve the “software last mile” problem. Infrastructure as code is a technique for treating infrastructure configuration in the same way as code; checking it into source control, then using it to push changes out to the data center. In addition to web server, application server and application configuration, we are seeing network configuration treated in the same way. Network switch, firewall and load balancer configuration can be infrastructure as code, and even changed at runtime.\""
     },
     {
         "name": "Subversion",
@@ -456,7 +448,7 @@
         "description": "\"NoSQL technologies are maturing daily, allowing for innovative solutions as businesses need to scale massively or ask intelligent questions of existing data. Technologies like MongoDB, Riak, Neo4J, Cassandra and many others are helping power the NoSQL space.\""
     },
     {
-        "name": "Powershell",
+        "name": "PowerShell",
         "ring": "trial",
         "quadrant": "tools",
         "isNew": "TRUE",
@@ -486,14 +478,6 @@
         "isNew": "FALSE",
         "status": "no change",
         "description": "\"Exposing APIs to a large developer community creates nonfunctional requirements that are often the same from one business to another. Key management, authentication, access control, traffic management, caching, tracking and reporting are often implemented as commodity functions that can be reused across applications and businesses without modification. Some service providers have spotted this trend and are offering API management via software as a service. Prominent vendors in this space include Mashery and Apigee, who both offer the option of hosting the service on a customer’s own infrastructure. API management services may also be interesting to enterprise customers who are using Web as platform techniques for their internal SOA, providing a lighter weight alternative to traditional SOA management tools.\""
-    },
-    {
-        "name": "Backbone.js",
-        "ring": "assess",
-        "quadrant": "tools",
-        "isNew": "TRUE",
-        "status": "new",
-        "description": "\"Even though JavaScript increasingly plays a more important role in today’s world of software development, it is still troublesome to organize in a clean structure. Backbone.js is a library which provides an MVC (model view controller) framework for JavaScript heavy applications. It allows developers to write JavaScript code in a more manageable and testable way.\""
     },
     {
         "name": "Deltacloud",
@@ -597,7 +581,7 @@
         "quadrant": "languages-and-frameworks",
         "isNew": "FALSE",
         "status": "no change",
-        "description": "\"The maintainability, testability and readability of JavaScript is a very significant contributor to the productivity of teams producing Web-based applications and sites. Thoughtworks believes JavaScript deserves to be treated as a first class language, viewing it as second class citizen has become an excuse for a whole series of bad practice we would not tolerate in Java or C#. We need to use the same kind of tools (e.g. unit testing) and approaches (e.g. refactoring) as we’d use for any other production language. V8 and other JavaScript engines are raising the bar on performance, while Flash & Silverlight seem to be losing momentum to HTML5 + JavaScript in areas where a rich client-like experience is required. This is good news for all interested in open standards on the Web.\""
+        "description": "\"The maintainability, testability and readability of JavaScript is a very significant contributor to the productivity of teams producing Web-based applications and sites. Thoughtworks believes JavaScript deserves to be treated as a first class language, viewing it as second class citizen has become an excuse for a whole series of bad practice we would not tolerate in Java or C#. We need to use the same kind of tools (e.g. unit testing) and approaches (e.g. refactoring) as we’d use for any other production language. V8 and other JavaScript engines are raising the bar on performance, while Flash &amp; Silverlight seem to be losing momentum to HTML5 + JavaScript in areas where a rich client-like experience is required. This is good news for all interested in open standards on the Web.\""
     },
     {
         "name": "CoffeeScript",
@@ -624,7 +608,15 @@
         "description": "\"HAML is a language that allows you to use indentation to lay out the structure of HTML. While not a general replacement for HTML, it is effective for focusing on the hierarchical structure of tags.\""
     },
     {
-        "name": "SASS, SCSS, and LESS",
+        "name": "HTML5 for offline applications",
+        "ring": "trial",
+        "quadrant": "languages-and-frameworks",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"\""
+    },
+    {
+        "name": "SASS, SCSS, LESS, and Stylus",
         "ring": "trial",
         "quadrant": "languages-and-frameworks",
         "isNew": "FALSE",
@@ -632,12 +624,20 @@
         "description": "\"\""
     },
     {
-        "name": "Scala",
+        "name": "Scala, the good parts",
         "ring": "trial",
         "quadrant": "languages-and-frameworks",
         "isNew": "FALSE",
         "status": "no change",
         "description": "\"\""
+    },
+    {
+        "name": "Backbone.js",
+        "ring": "assess",
+        "quadrant": "languages-and-frameworks",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"Even though JavaScript increasingly plays a more important role in today’s world of software development, it is still troublesome to organize in a clean structure. Backbone.js is a library which provides an MVC (model view controller) framework for JavaScript heavy applications. It allows developers to write JavaScript code in a more manageable and testable way.\""
     },
     {
         "name": "Clojure",

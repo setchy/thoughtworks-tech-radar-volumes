@@ -40,7 +40,7 @@
         "description": "\"Previously, support for Windows in tools like Chef and Puppet was lacking, leading to large amounts of Powershell scripting to achieve simple infrastructure automation tasks. Achieving the same level of automation for Windows was more challenging than for Unix. In the last 12 months however, both Chef and Puppet support for Windows has improved drastically.  That support, combined with the inherent power of Powershell makes Windows infrastructure automation extremely viable.\""
     },
     {
-        "name": "Capture domain events explicitily",
+        "name": "Capture domain events explicitly",
         "ring": "trial",
         "quadrant": "techniques",
         "isNew": "TRUE",
@@ -304,6 +304,14 @@
         "description": "\"The recent explosion of mobile-focused products, coupled with widespread adoption of 'Lean Start-up' approaches that put a premium on time-to-market for new ideas, has spawned an ecosystem of Backend as a service (BaaS) offerings that enable developers to focus on the client application while offloading backend concerns. Assess adding these services to your toolkit where fast and low-cost proving of a new product idea is important. Our usual advice on build/buy/borrow decisions still applies: be clear on which functional areas are strategic to your business and which are commodities. For potentially strategic areas be sure to plan a migration path that will allow you to use the BaaS provider to get started quickly, while avoiding friction when your architecture evolves and you need to migrate to owning this functionality and customizing it as a differentiator.\""
     },
     {
+        "name": "Docker",
+        "ring": "assess",
+        "quadrant": "platforms",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"The Docker open-source project has generated a great deal of interest within Thoughtworks, and is growing in momentum and maturity. Docker allows applications to be packaged and published as portable lightweight containers that run identically on a laptop or a production cluster. It provides tooling for the creation and management of application containers, and a run-time environment based on LXC (LinuX Containers).\""
+    },
+    {
         "name": "Low-cost robotics",
         "ring": "assess",
         "quadrant": "platforms",
@@ -381,7 +389,7 @@
         "quadrant": "tools",
         "isNew": "FALSE",
         "status": "no change",
-        "description": "\"<a href='http://d3js.org/'>D3</a> continues to gain traction as a library for creating rich visualisations in the browser. Previously, it was somewhat low-level, requiring more work for the creation of commonly used visualisations than less sophisticated, more targeted libraries. Since the last radar, libraries like Rickshaw for charting and Crossfilter for in-browser dataset exploration have helped make D3 even more accessible than before.\""
+        "description": "\"<a href=\"\"http://d3js.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">D3<span class=\"\"pop-out-icon\"\"></span></a> continues to gain traction as a library for creating rich visualisations in the browser. Previously, it was somewhat low-level, requiring more work for the creation of commonly used visualisations than less sophisticated, more targeted libraries. Since the last radar, libraries like Rickshaw for charting and Crossfilter for in-browser dataset exploration have helped make D3 even more accessible than before.\""
     },
     {
         "name": "Dependency management for JavaScript",
@@ -512,12 +520,12 @@
         "description": "\"Cloud-init is a simple but powerful technique for carrying out actions on a cloud instance at boot time. It is particularly useful when used with instance metadata to allow a newly booted instance to pull the configuration, dependencies and software needed to perform a particular role. When used together with the Immutable or Phoenix server pattern, this can create a very responsive and light-weight mechanism for managing deployments in the cloud.\""
     },
     {
-        "name": "Docker",
+        "name": "Hosted solutions for testing iOS",
         "ring": "assess",
         "quadrant": "tools",
         "isNew": "TRUE",
         "status": "new",
-        "description": "\"The Docker open-source project has generated a great deal of interest within Thoughtworks, and is growing in momentum and maturity. Docker allows applications to be packaged and published as portable lightweight containers that run identically on a laptop or a production cluster. It provides tooling for the creation and management of application containers, and a run-time environment based on LXC (LinuX Containers).\""
+        "description": "\"\""
     },
     {
         "name": "Octopus",
@@ -534,14 +542,6 @@
         "isNew": "TRUE",
         "status": "new",
         "description": "\"Many monitoring tools are built around the idea of the machine. We monitor what the machine is doing and which software is running on it. When it comes to cloud based infrastructure, especially patterns like Phoenix and Immutable servers this is a problematic approach. Machines come and go, but what is important is that the services remain working. Sensu allows a machine to register itself as playing a particular role and Sensu then monitors it on that basis. When we are finished with the machine we can simply de-register it.\""
-    },
-    {
-        "name": "Travis for OSX/iOS",
-        "ring": "assess",
-        "quadrant": "tools",
-        "isNew": "TRUE",
-        "status": "new",
-        "description": "\"\""
     },
     {
         "name": "Visual regression testing tools",
@@ -629,7 +629,7 @@
         "quadrant": "languages-and-frameworks",
         "isNew": "TRUE",
         "status": "new",
-        "description": "\"The Go language was originally developed by Google as a system programming language to replace C & C++. Four years out, Go is gaining traction in other areas. The combination of very small, statically linked binaries combined with an excellent HTTP library means Go has been popular with organizations making use of finer-grained, microservice architectures.\""
+        "description": "\"The Go language was originally developed by Google as a system programming language to replace C &amp; C++. Four years out, Go is gaining traction in other areas. The combination of very small, statically linked binaries combined with an excellent HTTP library means Go has been popular with organizations making use of finer-grained, microservice architectures.\""
     },
     {
         "name": "Hive",
@@ -648,12 +648,12 @@
         "description": "\"\""
     },
     {
-        "name": "Reactive Extensions across languages",
+        "name": "ReactiveX",
         "ring": "trial",
         "quadrant": "languages-and-frameworks",
         "isNew": "TRUE",
         "status": "new",
-        "description": "\"Reactive Programming deals with streams or values that change over time. Using elements of data flow, implicit concurrency and transparent event propagation, these techniques enable efficient handling of events on a large scale with a high degree of efficiency and low latency. In the previous radar, we mentioned Reactive Extensions in .NET due to the extensive work done by Microsoft in making Rx a core part of the .NET framework. Since then, with the introduction of the Reactive Cocoa library for Objective C, the Java port of Reactive Extensions, the React JavaScript library, the Elm language based on Haskell & the Flapjax JavaScript library, we are extending this blip to include Reactive Extensions across languages.\""
+        "description": "\"Reactive Programming deals with streams or values that change over time. Using elements of data flow, implicit concurrency and transparent event propagation, these techniques enable efficient handling of events on a large scale with a high degree of efficiency and low latency. In the previous radar, we mentioned Reactive Extensions in .NET due to the extensive work done by Microsoft in making Rx a core part of the .NET framework. Since then, with the introduction of the Reactive Cocoa library for Objective C, the Java port of Reactive Extensions, the React JavaScript library, the Elm language based on Haskell &amp; the Flapjax JavaScript library, we are extending this blip to include Reactive Extensions across languages.\""
     },
     {
         "name": "Web API",

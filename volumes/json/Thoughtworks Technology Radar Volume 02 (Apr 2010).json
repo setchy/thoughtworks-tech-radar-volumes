@@ -24,6 +24,14 @@
         "description": "\"\""
     },
     {
+        "name": "Platform roadmaps",
+        "ring": "adopt",
+        "quadrant": "techniques",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"\""
+    },
+    {
         "name": "Web as platform",
         "ring": "adopt",
         "quadrant": "techniques",
@@ -80,20 +88,12 @@
         "description": "\"\""
     },
     {
-        "name": "Incremental data warehousing",
+        "name": "Iterative data warehousing",
         "ring": "assess",
         "quadrant": "techniques",
         "isNew": "FALSE",
         "status": "no change",
         "description": "\"\""
-    },
-    {
-        "name": "OAuth",
-        "ring": "assess",
-        "quadrant": "techniques",
-        "isNew": "TRUE",
-        "status": "new",
-        "description": "\"The Web is a global data structure that enables us to share information. However not all data is meant to be shared by everyone and it’s important to be able to share information on the Web in a disciplined and governable manner without requiring massive centralized infrastructure. OAuth provides a way of sharing resources on the Web responsibly and securely. It is a Web protocol (for Web browsers or machine-to-machine interactions), which allows federated authorization of access to Web resources. What’s interesting is that OAuth is a simple protocol to implement and utilize and yet its design goals match many common enterprise authorization problems. OAuth remains in the assessment category, however, because it has fragmented, and the IETF has not yet drawn the community back together under an Internet RFC.\""
     },
     {
         "name": "Scrum certification",
@@ -136,19 +136,19 @@
         "description": "\"The iPhone and android operating systems have rapidly become key players in the mobile platform marketplace. Apple’s app store and Google’s open source operating system have helped both companies leapfrog the competition in capturing developer mindshare.\""
     },
     {
+        "name": "JRuby",
+        "ring": "adopt",
+        "quadrant": "platforms",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"\""
+    },
+    {
         "name": "JVM as platform",
         "ring": "adopt",
         "quadrant": "platforms",
         "isNew": "FALSE",
         "status": "no change",
-        "description": "\"\""
-    },
-    {
-        "name": "Platform roadmaps",
-        "ring": "adopt",
-        "quadrant": "platforms",
-        "isNew": "TRUE",
-        "status": "new",
         "description": "\"\""
     },
     {
@@ -166,6 +166,22 @@
         "isNew": "TRUE",
         "status": "new",
         "description": "\"The Cloud continues to be of interest to us, with Software as a Service the most mature cloud component. Platform and Infrastructure as service offerings have reached different levels of maturity, and we reflect that in our placement of EC2, Google App Engine and Azure.\""
+    },
+    {
+        "name": "MongoDB",
+        "ring": "trial",
+        "quadrant": "platforms",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"\""
+    },
+    {
+        "name": "Neo4J",
+        "ring": "trial",
+        "quadrant": "platforms",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"\""
     },
     {
         "name": "Application appliances",
@@ -216,12 +232,28 @@
         "description": "\"\""
     },
     {
-        "name": "Mobile Web",
+        "name": "Mobile web",
         "ring": "assess",
         "quadrant": "platforms",
         "isNew": "TRUE",
         "status": "new",
         "description": "\"\""
+    },
+    {
+        "name": "OAuth",
+        "ring": "assess",
+        "quadrant": "platforms",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"The Web is a global data structure that enables us to share information. However not all data is meant to be shared by everyone and it’s important to be able to share information on the Web in a disciplined and governable manner without requiring massive centralized infrastructure. OAuth provides a way of sharing resources on the Web responsibly and securely. It is a Web protocol (for Web browsers or machine-to-machine interactions), which allows federated authorization of access to Web resources. What’s interesting is that OAuth is a simple protocol to implement and utilize and yet its design goals match many common enterprise authorization problems. OAuth remains in the assessment category, however, because it has fragmented, and the IETF has not yet drawn the community back together under an Internet RFC.\""
+    },
+    {
+        "name": "RDFa",
+        "ring": "assess",
+        "quadrant": "platforms",
+        "isNew": "FALSE",
+        "status": "no change",
+        "description": "\"Semantic Web W3C standards, and the tools implementing them, are at last worthy of real attention. RDF and RDFa allow anyone to say anything about anything in a sharable, structured format. This proves a much more powerful means of linking and structuring data from disparate sources than the strictness of RDBMS, or the mess that is unstructured Web data. Correspondingly SPARQL is the query standard that allows information to be mined from RDF marked-up data.\""
     },
     {
         "name": "Azure",
@@ -248,7 +280,7 @@
         "description": "\"\""
     },
     {
-        "name": "Rich Internet Applications",
+        "name": "RIA",
         "ring": "hold",
         "quadrant": "platforms",
         "isNew": "FALSE",
@@ -256,7 +288,7 @@
         "description": "\"\""
     },
     {
-        "name": "WS-* beyond basic profile",
+        "name": "WS-*",
         "ring": "hold",
         "quadrant": "platforms",
         "isNew": "TRUE",
@@ -264,7 +296,7 @@
         "description": "\"\""
     },
     {
-        "name": "ASP.NET MVC",
+        "name": "ASP",
         "ring": "adopt",
         "quadrant": "tools",
         "isNew": "FALSE",
@@ -304,22 +336,6 @@
         "description": "\"\""
     },
     {
-        "name": "MongoDB",
-        "ring": "trial",
-        "quadrant": "tools",
-        "isNew": "TRUE",
-        "status": "new",
-        "description": "\"\""
-    },
-    {
-        "name": "Neo4J",
-        "ring": "trial",
-        "quadrant": "tools",
-        "isNew": "TRUE",
-        "status": "new",
-        "description": "\"\""
-    },
-    {
         "name": "Next-generation test tools",
         "ring": "trial",
         "quadrant": "tools",
@@ -350,14 +366,6 @@
         "isNew": "TRUE",
         "status": "new",
         "description": "\"\""
-    },
-    {
-        "name": "RDF triple stores",
-        "ring": "assess",
-        "quadrant": "tools",
-        "isNew": "FALSE",
-        "status": "no change",
-        "description": "\"Semantic Web W3C standards, and the tools implementing them, are at last worthy of real attention. RDF and RDFa allow anyone to say anything about anything in a sharable, structured format. This proves a much more powerful means of linking and structuring data from disparate sources than the strictness of RDBMS, or the mess that is unstructured Web data. Correspondingly SPARQL is the query standard that allows information to be mined from RDF marked-up data.\""
     },
     {
         "name": "Restfulie",
@@ -405,14 +413,6 @@
         "quadrant": "languages-and-frameworks",
         "isNew": "FALSE",
         "status": "no change",
-        "description": "\"\""
-    },
-    {
-        "name": "Ruby/Jruby",
-        "ring": "adopt",
-        "quadrant": "languages-and-frameworks",
-        "isNew": "TRUE",
-        "status": "new",
         "description": "\"\""
     },
     {
@@ -464,7 +464,7 @@
         "description": "\"\""
     },
     {
-        "name": "Scala",
+        "name": "Scala, the good parts",
         "ring": "assess",
         "quadrant": "languages-and-frameworks",
         "isNew": "TRUE",

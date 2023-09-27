@@ -27,13 +27,13 @@ The datasets are refreshed every 6 months in alignment with Thoughtworks officia
 
 The process for generating the CSVs has been automated.
 
-### /api-parser (recommended)
+### /api-parser (experimental)
 
 The latest implementation which uses the public Thoughtworks Radar Search REST API.
 
 To execute, simply run `npm start`.
 
-### /web-scraper (deprecated)
+### /web-scraper (recommended)
 
 The original implementation which used a three-step process of parsing the public HTML content.
 
@@ -45,6 +45,6 @@ This will extract _all_ blip links from the https://thoughtworks.com/radar/searc
 
 Using the contents of `data/links.json`, fetch each of the publication entries and place into `data/master.json`
 
-### npm run generate:csv
+### npm run generate:volumes
 
-Using the contents of `data/master.json`, generate CSV files for each publication/volume and place into `volumes/*`
+Using the contents of `data/master.json`, generate CSV and JSON files for each publication/volume and place into `volumes/*`
