@@ -4,6 +4,7 @@ import puppeteer, { Page } from 'puppeteer';
 import _ from 'lodash';
 
 const SELECTOR_RESULT_ITEM = 'a[data-testid="result-item__title"]';
+const DEFAULT_PAGE_SIZE = 10;
 const links: string[] = [];
 
 let page: Page;
@@ -21,6 +22,7 @@ export async function extractRadarLinks(): Promise<string[]> {
         // On the first parse, extract and store the total records we're targeting to parse
         if (totalRecords === undefined) {
             totalRecords = await getTotalRecordCount();
+            console.log(`Total records to parse: ${totalRecords}`);
         }
 
         if (!totalRecords || i === totalRecords) {
@@ -41,6 +43,12 @@ export async function extractRadarLinks(): Promise<string[]> {
 
     const uniqueLinks = _.uniq(links);
     fs.writeFileSync(FILES.DATA.LINKS, JSON.stringify(uniqueLinks, null, 4));
+
+    if (uniqueLinks.length !== totalRecords) {
+        console.warn(
+            `WARNING: The number of unique links extracted (${uniqueLinks.length}) does not match the total number of records (${totalRecords}).`,
+        );
+    }
 
     return uniqueLinks;
 }
