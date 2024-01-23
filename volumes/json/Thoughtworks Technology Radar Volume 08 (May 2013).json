@@ -608,6 +608,14 @@
         "description": "\"We see great promise in Snowplow Analytics, an open source web analytics platform that derives intelligent information from regular web analytics, based on open data principles and cloud Storage.\""
     },
     {
+        "name": "UIAutomator",
+        "ring": "assess",
+        "quadrant": "tools",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"UIAutomator looks like the most promising tool for testing Android user interfaces by allowing fine-grained control over components during test and facilitating testing on multiple Devices.\""
+    },
+    {
         "name": "Heavyweight test tools",
         "ring": "hold",
         "quadrant": "tools",

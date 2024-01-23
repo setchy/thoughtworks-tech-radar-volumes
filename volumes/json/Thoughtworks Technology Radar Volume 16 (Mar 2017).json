@@ -48,6 +48,14 @@
         "description": "\"<p>Although much documentation can be replaced with highly readable code and tests, in a world of <a href=\"\"https://www.thoughtworks.com/radar/techniques/evolutionary-architecture\"\">evolutionary architecture</a> it's important to record certain design decisions for the benefit of future team members and for external oversight. <strong>Lightweight Architecture Decision Records</strong> is <a href=\"\"http://thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">a technique<span class=\"\"pop-out-icon\"\"></span></a> for capturing important architectural decisions along with their context and consequences. Although these items are often stored in a wiki or collaboration tool, we generally prefer <a href=\"\"https://github.com/npryce/adr-tools\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">storing them in source control<span class=\"\"pop-out-icon\"\"></span></a> with simple markup.</p>\""
     },
     {
+        "name": "Progressive Web Applications",
+        "ring": "trial",
+        "quadrant": "techniques",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"<p>The increase in <strong>Progressive Web Applications</strong> (PWAs) is the latest attempt to bring back the mobile web in response to users' \"\"app fatigue\"\". Originally proposed by Google in 2015, PWAs are web applications that take advantage of the latest technologies to combine the best of web and native mobile applications. Using a set of open standard technologies such as, <a href=\"\"https://w3c.github.io/ServiceWorker/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">service workers<span class=\"\"pop-out-icon\"\"></span></a>, the <a href=\"\"https://www.w3.org/TR/appmanifest/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">app manifest<span class=\"\"pop-out-icon\"\"></span></a>, and cache and push APIs, we can create applications that are platform independent and deliver app-like user experiences. This brings parity to web and native applications and helps mobile developers reach users beyond the walled garden of the app stores. Think of PWAs as websites that act and feel like native apps.</p>\""
+    },
+    {
         "name": "Prototyping with InVision and Sketch",
         "ring": "trial",
         "quadrant": "techniques",

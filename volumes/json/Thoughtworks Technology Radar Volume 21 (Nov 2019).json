@@ -664,6 +664,14 @@
         "description": "\"<p>The JavaScript world moves pretty fast, and as we gain more experience using a framework our recommendations change. The <strong><a href=\"\"https://testing-library.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">React Testing Library<span class=\"\"pop-out-icon\"\"></span></a></strong> is a good example of a framework that with deeper usage has eclipsed the alternatives to become the sensible default when testing React-based frontends. Our teams like the fact that tests written with this framework are less brittle than with alternative frameworks such as <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/enzyme\"\">Enzyme</a> because you're encouraged to test component relationships individually as opposed to testing all implementation details.</p>\""
     },
     {
+        "name": "Styled components",
+        "ring": "trial",
+        "quadrant": "languages-and-frameworks",
+        "isNew": "TRUE",
+        "status": "new",
+        "description": "\"<p>Using tagged template literals <strong><a href=\"\"https://www.styled-components.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">styled components<span class=\"\"pop-out-icon\"\"></span></a></strong> make it possible to put the CSS needed to style a React component directly into the JavaScript code that creates the component. This greatly reduces the pain with managing CSS and obviates the need for naming conventions or other means of avoiding naming conflicts in CSS. Developers can see the styling when looking at the component definition, and they don't have to memorize several megabytes worth of CSS. Of course, placing the CSS into the JavaScript code can make it harder to get a consistent view across the styling of different components, which is why we recommend understanding the trade-offs with this approach.</p>\""
+    },
+    {
         "name": "TensorFlow",
         "ring": "trial",
         "quadrant": "languages-and-frameworks",
