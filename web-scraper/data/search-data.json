@@ -6732,6 +6732,17 @@
         "hasMovedOut": false
     },
     {
+        "name": "UIAutomator",
+        "quadrant": "tools",
+        "ring": "assess",
+        "volume": 8,
+        "publishedDate": "May 2013",
+        "descriptionHtml": "UIAutomator looks like the most promising tool for testing Android user interfaces by allowing fine-grained control over components during test and facilitating testing on multiple Devices.",
+        "isNew": true,
+        "hasMovedIn": false,
+        "hasMovedOut": false
+    },
+    {
         "name": "Heavyweight test tools",
         "quadrant": "tools",
         "ring": "hold",
@@ -14971,6 +14982,17 @@
         "hasMovedOut": false
     },
     {
+        "name": "Progressive Web Applications",
+        "quadrant": "techniques",
+        "ring": "trial",
+        "volume": 16,
+        "publishedDate": "Mar 2017",
+        "descriptionHtml": "<p>The increase in <strong>Progressive Web Applications</strong> (PWAs) is the latest attempt to bring back the mobile web in response to users' \"app fatigue\". Originally proposed by Google in 2015, PWAs are web applications that take advantage of the latest technologies to combine the best of web and native mobile applications. Using a set of open standard technologies such as, <a href=\"https://w3c.github.io/ServiceWorker/\" target=\"_blank\" aria-label=\"This is an external link. Opens in new window\" class=\"pop-out\">service workers<span class=\"pop-out-icon\"></span></a>, the <a href=\"https://www.w3.org/TR/appmanifest/\" target=\"_blank\" aria-label=\"This is an external link. Opens in new window\" class=\"pop-out\">app manifest<span class=\"pop-out-icon\"></span></a>, and cache and push APIs, we can create applications that are platform independent and deliver app-like user experiences. This brings parity to web and native applications and helps mobile developers reach users beyond the walled garden of the app stores. Think of PWAs as websites that act and feel like native apps.</p>",
+        "isNew": true,
+        "hasMovedIn": false,
+        "hasMovedOut": false
+    },
+    {
         "name": "Prototyping with InVision and Sketch",
         "quadrant": "techniques",
         "ring": "trial",
@@ -19481,6 +19503,17 @@
         "hasMovedOut": false
     },
     {
+        "name": "Ethical OS",
+        "quadrant": "techniques",
+        "ring": "assess",
+        "volume": 20,
+        "publishedDate": "Apr 2019",
+        "descriptionHtml": "<p>As developers at ThoughtWorks we're acutely aware of the ethics of the work we do. As society becomes ever more reliant on technology, it's important that we consider ethics when making decisions as software development teams. Several toolkits have emerged that can help us think through some of the future implications of the software we're building. They include <a href=\"http://tarotcardsoftech.artefactgroup.com/\" target=\"_blank\" aria-label=\"This is an external link. Opens in new window\" class=\"pop-out\">Tarot Cards of Tech<span class=\"pop-out-icon\"></span></a> and <strong><a href=\"https://ethicalos.org/\" target=\"_blank\" aria-label=\"This is an external link. Opens in new window\" class=\"pop-out\">Ethical OS<span class=\"pop-out-icon\"></span></a></strong>, which we've had good feedback on. Ethical OS is a thinking framework and a set of tools that drive discussions around the ethics of building software. The framework is a collaboration between the Institute for the Future and the Tech and Society Solutions Lab. It's based on a practical set of risk zones, such as addiction and the <a href=\"https://eand.co/the-dopamine-economy-336b239272ef\" target=\"_blank\" aria-label=\"This is an external link. Opens in new window\" class=\"pop-out\">dopamine economy<span class=\"pop-out-icon\"></span></a>, plus a number of scenarios to drive conversation and discussion.</p>",
+        "isNew": true,
+        "hasMovedIn": false,
+        "hasMovedOut": false
+    },
+    {
         "name": "Smart contracts",
         "quadrant": "techniques",
         "ring": "assess",
@@ -21326,6 +21359,17 @@
         "descriptionHtml": "<p>The JavaScript world moves pretty fast, and as we gain more experience using a framework our recommendations change. The <strong><a href=\"https://testing-library.com/\" target=\"_blank\" aria-label=\"This is an external link. Opens in new window\" class=\"pop-out\">React Testing Library<span class=\"pop-out-icon\"></span></a></strong> is a good example of a framework that with deeper usage has eclipsed the alternatives to become the sensible default when testing React-based frontends. Our teams like the fact that tests written with this framework are less brittle than with alternative frameworks such as <a href=\"https://www.thoughtworks.com/radar/languages-and-frameworks/enzyme\">Enzyme</a> because you're encouraged to test component relationships individually as opposed to testing all implementation details.</p>",
         "isNew": false,
         "hasMovedIn": true,
+        "hasMovedOut": false
+    },
+    {
+        "name": "Styled components",
+        "quadrant": "languages-and-frameworks",
+        "ring": "trial",
+        "volume": 21,
+        "publishedDate": "Nov 2019",
+        "descriptionHtml": "<p>Using tagged template literals <strong><a href=\"https://www.styled-components.com/\" target=\"_blank\" aria-label=\"This is an external link. Opens in new window\" class=\"pop-out\">styled components<span class=\"pop-out-icon\"></span></a></strong> make it possible to put the CSS needed to style a React component directly into the JavaScript code that creates the component. This greatly reduces the pain with managing CSS and obviates the need for naming conventions or other means of avoiding naming conflicts in CSS. Developers can see the styling when looking at the component definition, and they don't have to memorize several megabytes worth of CSS. Of course, placing the CSS into the JavaScript code can make it harder to get a consistent view across the styling of different components, which is why we recommend understanding the trade-offs with this approach.</p>",
+        "isNew": true,
+        "hasMovedIn": false,
         "hasMovedOut": false
     },
     {
