@@ -19,8 +19,6 @@ import puppeteer, { Page } from 'puppeteer';
 
 import fs from 'fs';
 
-import { getShortPath } from './../common/utils';
-
 let page: Page;
 
 async function generateMasterData() {
@@ -41,7 +39,7 @@ async function generateMasterData() {
         console.log(
             `${index + 1} of ${
                 radarLinks.length
-            }: Extracting blip timeline from ${getShortPath(link)}`,
+            }: Extracting blip timeline from ${link}`,
         );
 
         const blipMasterData: MasterData = await extractBlipTimeline(link);
