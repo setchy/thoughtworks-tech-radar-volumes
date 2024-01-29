@@ -1,10 +1,9 @@
 import fs from 'fs';
-import { FILES, URLS } from '../common/constants';
+import { DEFAULT_WAIT_TIME, FILES, URLS } from '../common/constants';
 import puppeteer, { Page } from 'puppeteer';
 import _ from 'lodash';
 
 const SELECTOR_RESULT_ITEM = 'a[data-testid="result-item__title"]';
-const DEFAULT_PAGE_SIZE = 10;
 const links: string[] = [];
 
 let page: Page;
@@ -36,7 +35,7 @@ export async function extractRadarLinks(): Promise<string[]> {
         i += paginatedBlips.length;
 
         // Add an artificial delay to reduce chance of CloudFront rate limiting
-        await new Promise((r) => setTimeout(r, 5000));
+        await new Promise((r) => setTimeout(r, DEFAULT_WAIT_TIME));
     }
 
     browser.close();

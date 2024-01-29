@@ -5,9 +5,9 @@ import {
     FILES,
     QUADRANT_SORT_ORDER,
     RING_SORT_ORDER,
-    VOLUME_PUBLICATION_DATES,
 } from '../common/constants';
 import { escapeDescriptionHTML } from './utils';
+import { getStatus, getVolumeFileName } from './utils';
 
 function generateVolumes() {
     const data = JSON.parse(fs.readFileSync(FILES.DATA.MASTER).toString());
@@ -64,34 +64,6 @@ function generateJSON(volume: string, volumeData: any[]) {
     )}.json`;
     console.log('Creating JSON file', jsonFilename);
     fs.writeFileSync('../' + jsonFilename, JSON.stringify(jsonData, null, 4));
-}
-
-function getVolumeFileName(volume: string) {
-    return `${FILES.VOLUMES.FILE_PREFIX} ${getPaddedVolumeNumber(
-        volume,
-    )} (${getVolumePublicationDate(volume)})`;
-}
-
-function getPaddedVolumeNumber(volume: string) {
-    return volume.padStart(2, '0');
-}
-
-function getVolumePublicationDate(volume: string) {
-    const volumeBaseZero = parseInt(volume) - 1;
-
-    return VOLUME_PUBLICATION_DATES[volumeBaseZero];
-}
-
-function getStatus(row: any) {
-    if (row.isNew) {
-        return 'new';
-    } else if (row.hasMovedIn) {
-        return 'moved in';
-    } else if (row.hasMovedOut) {
-        return 'moved out';
-    } else {
-        return 'no change';
-    }
 }
 
 generateVolumes();

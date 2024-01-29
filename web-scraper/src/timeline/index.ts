@@ -3,6 +3,7 @@ import { parse } from 'url';
 import { BlipTimelineEntry, MasterData } from '../types';
 import _ from 'lodash';
 import {
+    DEFAULT_WAIT_TIME,
     FILES,
     QUADRANT_SORT_ORDER,
     RING_SORT_ORDER,
@@ -47,7 +48,7 @@ async function generateMasterData() {
         masterData.blipEntries.push(...blipMasterData.blipEntries);
 
         // Add an artificial delay to reduce chance of CloudFront rate limiting
-        await new Promise((r) => setTimeout(r, 5000));
+        await new Promise((r) => setTimeout(r, DEFAULT_WAIT_TIME));
     }
 
     const sortedMasterData = _.orderBy(masterData.blipEntries, [
