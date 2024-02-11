@@ -1,8 +1,8 @@
 name: Dataset Refresh
 
 on:
-    schedule:
-        - cron: '0 0 * * 0' # Runs every Sunday at midnight UTC. You can customize the schedule using cron syntax.
+    #schedule:
+    #    - cron: '0 0 * * 0' # Runs every Sunday at midnight UTC. You can customize the schedule using cron syntax.
     workflow_dispatch: # This allows manual triggering from the GitHub Actions UI.
 
 jobs:
