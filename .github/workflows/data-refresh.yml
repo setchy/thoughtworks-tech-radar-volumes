@@ -13,20 +13,19 @@ jobs:
             - name: Checkout code
               uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4
 
-            - name: Set up Node.js
-              uses: actions/setup-node@v4
+            - uses: pnpm/action-setup@v3
               with:
-                  node-version: '18'
+                  version: 8
 
             - name: Install dependencies
               run: |
                   cd web-scraper
-                  npm install
+                  pnpm install
 
             - name: Refresh datasets
               run: |
                   cd web-scraper
-                  npm start
+                  pnpm start
 
             - name: Commit and push changes
               run: |
