@@ -12,7 +12,7 @@ export async function extractRadarLinks(): Promise<string[]> {
     let i = 0;
     let totalRecords;
 
-    const browser = await puppeteer.launch({ headless: 'new' });
+    const browser = await puppeteer.launch();
     page = await browser.newPage();
 
     while (true) {
