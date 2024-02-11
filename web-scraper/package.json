@@ -14,6 +14,7 @@
         "@types/node": "20.11.17",
         "@typescript-eslint/eslint-plugin": "6.21.0",
         "@typescript-eslint/parser": "6.21.0",
+        "commander": "12.0.0",
         "eslint": "8.56.0",
         "eslint-config-prettier": "9.1.0",
         "jsdom": "24.0.0",
@@ -25,10 +26,7 @@
         "typescript": "5.3.3"
     },
     "scripts": {
-        "start": "run-s -l generate:*",
-        "generate:links": "ts-node src/links/index.ts",
-        "generate:data": "ts-node src/timeline/index.ts",
-        "generate:volumes": "ts-node src/files/index.ts",
+        "start": "ts-node src/index.ts",
         "lint": "run-s -c -l eslint prettier",
         "lint-fix": "run-s -c -l eslint:fix prettier-fix",
         "eslint": "eslint . --ext .ts --config .eslintrc",

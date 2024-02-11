@@ -21,8 +21,8 @@ import fs from 'fs';
 
 let page: Page;
 
-async function generateMasterData() {
-    const browser = await puppeteer.launch({ headless: 'new' });
+export async function generateMasterData() {
+    const browser = await puppeteer.launch();
     page = await browser.newPage();
 
     const masterData: MasterData = {
@@ -85,8 +85,8 @@ export async function extractBlipTimeline(
         '.hero-banner__overlay__container__title',
     );
     const blipName =
-        (await blipNameElement?.evaluate(
-            (element) => element.textContent?.trim(),
+        (await blipNameElement?.evaluate((element) =>
+            element.textContent?.trim(),
         )) || '';
 
     timelineEntries.forEach((blipPublicationHtml) => {
@@ -162,5 +162,3 @@ function calculateBlipMovements(blipMasterData: MasterData) {
         }
     }
 }
-
-generateMasterData();

@@ -9,7 +9,7 @@ import {
 import { escapeDescriptionHTML } from './utils';
 import { getStatus, getVolumeFileName } from './utils';
 
-function generateVolumes() {
+export function generateVolumes(reportType: 'all' | 'csv' | 'json') {
     const data = JSON.parse(fs.readFileSync(FILES.DATA.MASTER).toString());
 
     const groupedByVolumes = _.groupBy(data, 'volume');
@@ -21,9 +21,18 @@ function generateVolumes() {
             (entry) => entry.name.toLowerCase(),
         ]);
 
-        generateCSV(volume, sortedData);
-
-        generateJSON(volume, sortedData);
+        switch (reportType) {
+            case 'csv':
+                generateCSV(volume, sortedData);
+                break;
+            case 'json':
+                generateJSON(volume, sortedData);
+                break;
+            default:
+                generateCSV(volume, sortedData);
+                generateJSON(volume, sortedData);
+                break;
+        }
     });
 }
 
@@ -65,5 +74,3 @@ function generateJSON(volume: string, volumeData: any[]) {
     console.log('Creating JSON file', jsonFilename);
     fs.writeFileSync('../' + jsonFilename, JSON.stringify(jsonData, null, 4));
 }
-
-generateVolumes();

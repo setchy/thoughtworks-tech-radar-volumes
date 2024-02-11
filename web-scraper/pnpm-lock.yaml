@@ -23,6 +23,9 @@ devDependencies:
   '@typescript-eslint/parser':
     specifier: 6.21.0
     version: 6.21.0(eslint@8.56.0)(typescript@5.3.3)
+  commander:
+    specifier: 12.0.0
+    version: 12.0.0
   eslint:
     specifier: 8.56.0
     version: 8.56.0
@@ -601,6 +604,11 @@ packages:
     engines: {node: '>= 0.8'}
     dependencies:
       delayed-stream: 1.0.0
+    dev: true
+
+  /commander@12.0.0:
+    resolution: {integrity: sha512-MwVNWlYjDTtOjX5PiD7o5pK0UrFU/OYgcJfjjK4RaHZETNtjJqrZa9Y9ds88+A+f+d5lv+561eZ+yCKoS3gbAA==}
+    engines: {node: '>=18'}
     dev: true
 
   /concat-map@0.0.1:

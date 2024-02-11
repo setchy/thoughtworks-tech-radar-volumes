@@ -52,8 +52,6 @@ export async function extractRadarLinks(): Promise<string[]> {
     return uniqueLinks;
 }
 
-extractRadarLinks();
-
 async function getTotalRecordCount(): Promise<number | null> {
     return await page.evaluate(() => {
         const spanElement = document.querySelector(

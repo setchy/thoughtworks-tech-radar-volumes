@@ -25,26 +25,40 @@ _Note: to use the CSV or JSON data formats you will need to use the GitHub RAW f
 
 The datasets are refreshed every 6 months in alignment with Thoughtworks officially publishing their latest Volume.
 
-The process for generating the CSVs has been automated.
+The process for generating the CSVs and JSON volumes has been automated.
+
+### /web-scraper (recommended)
+
+An implementation which used a three-step process of parsing the public HTML content.
+
+```
+Usage: tech-radar-volumes [options]
+
+A CLI tool to fetch and process ThoughtWorks Tech Radar data
+
+Options:
+  -l, --links           fetch all radar blip page links from archive
+  -d, --data            fetch detailed blip history from archive
+  -v, --volumes <type>  generate CSV and JSON volumes (choices: "all", "csv", "json")
+  -h, --help            display help for command
+```
+
+You can run this CLI via `pnpm start --help`
+
+#### --links
+
+This will extract _all_ blip links from the https://thoughtworks.com/radar/search and place into `data/links.json`
+
+#### --data
+
+Using the contents of `data/links.json`, fetch each of the publication entries and place into `data/master.json`
+
+### --volumes
+
+Using the contents of `data/master.json`, generate CSV and JSON files for each publication/volume and place into `volumes/*`
 
 ### /api-parser (experimental)
 
 The latest implementation which uses the public Thoughtworks Radar Search REST API.
 
 To execute, simply run `npm start`.
-
-### /web-scraper (recommended)
-
-The original implementation which used a three-step process of parsing the public HTML content.
-
-#### npm run generate:links
-
-This will extract _all_ blip links from the https://thoughtworks.com/radar/search and place into `data/links.json`
-
-#### npm run generate:data
-
-Using the contents of `data/links.json`, fetch each of the publication entries and place into `data/master.json`
-
-### npm run generate:volumes
-
-Using the contents of `data/master.json`, generate CSV and JSON files for each publication/volume and place into `volumes/*`
