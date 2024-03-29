@@ -41,5 +41,6 @@
     "bugs": "https://github.com/setchy/thoughtworks-tech-radar-volumes/issues",
     "keywords": [
         "tech-radar"
-    ]
+    ],
+    "packageManager": "pnpm@8.15.5"
 }
