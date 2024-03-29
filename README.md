@@ -1,17 +1,20 @@
 # Thoughtworks Technology Radar Volumes
 
-> This repository is a personal project and is not officially affiliated with Thoughtworks
+> [!NOTE]  
+> _This repository is a personal project and is not officially affiliated with Thoughtworks_
 
-A collection of datasets for the [latest Thoughtworks Technology Radar](https://www.thoughtworks.com/radar) and all [archived volumes](https://www.thoughtworks.com/radar/archive)
+A complete collection of datasets for the popular [Thoughtworks Technology Radar](https://www.thoughtworks.com/radar), including all [archived volumes](https://www.thoughtworks.com/radar/archive)
 
-## Getting started
+## Usage
 
+### How to use
 You can use any of the below `Data Formats` with either
 
-1.  self-hosted BYOR radar - [thoughtworks/build-your-own-radar](https://github.com/thoughtworks/build-your-own-radar#using-csv-data)
-2.  Thoughtworks hosted - [radar.thoughtworks.com](https://radar.thoughtworks.com/)
+1.  launch via [setchy.io/radars](https://setchy.io/radars) quick links
+2.  Thoughtworks hosted radar - [radar.thoughtworks.com](https://radar.thoughtworks.com/)
+3.  self-hosted BYOR radar - [thoughtworks/build-your-own-radar](https://github.com/thoughtworks/build-your-own-radar)
 
-## Available data formats
+### Available data formats
 
 The following three data formats are currently supported:
 
@@ -19,7 +22,8 @@ The following three data formats are currently supported:
 -   <img src="./assets/csv-icon.png" width="26" height="26" alt="CSV"></img> [GitHub - Thoughtworks Volumes (CSV)](https://github.com/setchy/thoughtworks-tech-radar-volumes/tree/main/volumes/csv)
 -   <img src="./assets/json-icon.png" width="26" height="26" alt="JSON"></img> [GitHub - Thoughtworks Volumes (JSON)](https://github.com/setchy/thoughtworks-tech-radar-volumes/tree/main/volumes/json)
 
-_Note: to use the CSV or JSON data formats you will need to use the GitHub RAW file URL (eg: [Volume 28](<https://raw.githubusercontent.com/setchy/thoughtworks-tech-radar-volumes/main/volumes/csv/Thoughtworks%20Technology%20Radar%20Volume%2028%20(Apr%202023).csv>))_
+> [!IMPORTANT]
+> _When using either the CSV or JSON data formats, please make sure to use the the GitHub RAW file URL (eg: [Volume 29](<https://raw.githubusercontent.com/setchy/thoughtworks-tech-radar-volumes/main/volumes/csv/Thoughtworks%20Technology%20Radar%20Volume%2029%20(Sep%202023).csv>))_
 
 ## How are the datasets updated?
 
@@ -56,9 +60,3 @@ Using the contents of `data/links.json`, fetch each of the publication entries a
 ### --volumes
 
 Using the contents of `data/master.json`, generate CSV and JSON files for each publication/volume and place into `volumes/*`
-
-### /api-parser (experimental)
-
-The latest implementation which uses the public Thoughtworks Radar Search REST API.
-
-To execute, simply run `npm start`.
