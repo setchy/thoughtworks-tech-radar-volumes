@@ -11,7 +11,7 @@ A complete collection of datasets for the popular [Thoughtworks Technology Radar
 
 There are a few ways you can use to view the interactive technology radar
 
-1.  launch via [setchy.io/radars](https://setchy.io/radars) quick links
+1.  via [setchy.io/radars](https://setchy.io/radars)
 2.  Thoughtworks hosted radar - [radar.thoughtworks.com](https://radar.thoughtworks.com/)
 3.  self-hosted BYOR radar - [thoughtworks/build-your-own-radar](https://github.com/thoughtworks/build-your-own-radar)
 
