@@ -2,6 +2,7 @@ export const URLS = {
     BASE: 'https://www.thoughtworks.com',
     RADAR: 'https://www.thoughtworks.com/radar',
     SEARCH: 'https://www.thoughtworks.com/radar/search',
+    SITEMAP: 'https://www.thoughtworks.com/rest/radar/sitemap/en.xml',
 };
 
 export const FILES = {
@@ -67,4 +68,4 @@ export const QUADRANT_SORT_ORDER = [
 
 export const RING_SORT_ORDER = ['adopt', 'trial', 'assess', 'hold'];
 
-export const DEFAULT_WAIT_TIME = 5000;
+export const DEFAULT_WAIT_TIME = 0;

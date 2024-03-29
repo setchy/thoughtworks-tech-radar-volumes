@@ -1,5 +1,5 @@
 import { Command, Option } from 'commander';
-import { extractRadarLinks } from './links';
+import { parseRadarSitemap } from './links';
 import { generateVolumes } from './files';
 import { generateMasterData } from './timeline';
 const program = new Command();
@@ -21,8 +21,8 @@ program.parse(process.argv);
 const options = program.opts();
 
 if (options.links) {
-    console.log('fetching all radar blip page links from archive');
-    extractRadarLinks();
+    console.log('fetching all radar blip page links from sitemap');
+    parseRadarSitemap();
 } else if (options.data) {
     console.log('fetching detailed blip history from archive');
     generateMasterData();
@@ -30,7 +30,12 @@ if (options.links) {
     console.log(`generating ${options.volumes} volumes`);
     generateVolumes(options.volumes);
 } else {
-    extractRadarLinks().then(() =>
-        generateMasterData().then(() => generateVolumes('all')),
-    );
+    console.log('fetching all radar blip page links from sitemap');
+    parseRadarSitemap().then(() => {
+        console.log('fetching detailed blip history from archive');
+        generateMasterData().then(() => {
+            console.log(`generating all volumes`);
+            generateVolumes('all');
+        });
+    });
 }
