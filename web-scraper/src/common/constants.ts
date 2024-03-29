@@ -67,5 +67,3 @@ export const QUADRANT_SORT_ORDER = [
 ];
 
 export const RING_SORT_ORDER = ['adopt', 'trial', 'assess', 'hold'];
-
-export const DEFAULT_WAIT_TIME = 0;

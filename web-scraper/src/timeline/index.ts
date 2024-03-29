@@ -1,9 +1,7 @@
 import { JSDOM } from 'jsdom';
-import { parse } from 'url';
 import { BlipTimelineEntry, MasterData } from '../types';
 import _ from 'lodash';
 import {
-    DEFAULT_WAIT_TIME,
     FILES,
     QUADRANT_SORT_ORDER,
     RING_SORT_ORDER,
@@ -18,11 +16,15 @@ import {
 import puppeteer, { Page } from 'puppeteer';
 
 import fs from 'fs';
+import { exit } from 'process';
 
 let page: Page;
 
 export async function generateMasterData() {
-    const browser = await puppeteer.launch();
+    const browser = await puppeteer.launch({
+        headless: true,
+        slowMo: 45, // To reduce chance of CloudFront rate limiting
+    });
     page = await browser.newPage();
 
     const masterData: MasterData = {
@@ -44,10 +46,9 @@ export async function generateMasterData() {
 
         const blipMasterData: MasterData = await extractBlipTimeline(link);
         masterData.blipEntries.push(...blipMasterData.blipEntries);
-
-        // Add an artificial delay to reduce chance of CloudFront rate limiting
-        await new Promise((r) => setTimeout(r, DEFAULT_WAIT_TIME));
     }
+
+    browser.close();
 
     const sortedMasterData = _.orderBy(masterData.blipEntries, [
         'volume',
@@ -65,9 +66,16 @@ export async function generateMasterData() {
 export async function extractBlipTimeline(
     blipURL: string,
 ): Promise<MasterData> {
-    const { path } = parse(blipURL);
+    const { pathname } = new URL(blipURL);
 
-    await page.goto(blipURL);
+    const response = await page.goto(blipURL);
+
+    if (response?.status() === 403) {
+        console.warn(
+            `Encountered HTTP 403 Forbidden: Cloudflare has rate limited us...`,
+        );
+        exit(1);
+    }
 
     const blipMasterData: MasterData = {
         blipEntries: [],
@@ -94,7 +102,7 @@ export async function extractBlipTimeline(
             createBlipTimelineEntryFromPublication(
                 blipName,
                 blipPublicationHtml,
-                path,
+                pathname,
             );
 
         blipMasterData.blipEntries.push(blipTimelineEntry);
