@@ -28,13 +28,13 @@ jobs:
                   pnpm start
 
             - name: Commit and push changes
-              run: |
-                  git config --global user.name "Adam Setch"
-                  git config --global user.email "adam.setch@outlook.com-email@example.com"
-                  git checkout -b weekly-build
-                  git add .
-                  git commit -m "Automated dataset refresh - $(date +'%Y-%m-%d')"
-                  git push
+                run: |
+                    git config --global user.name "Adam Setch"
+                    git config --global user.email "adam.setch@outlook.com-email@example.com"
+                    git checkout -b weekly-build
+                    git add .
+                    git diff --quiet --exit-code || git commit -m "Automated dataset refresh - $(date +'%Y-%m-%d')"
+                    git push
 
     pull-request:
         runs-on: ubuntu-latest
