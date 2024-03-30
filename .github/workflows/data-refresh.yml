@@ -34,7 +34,7 @@ jobs:
                   git checkout -b weekly-build
                   git add .
                   git diff --quiet --exit-code || git commit -m "Automated dataset refresh - $(date +'%Y-%m-%d')"
-                  git push
+                  git push --set-upstream origin weekly-build
 
     pull-request:
         runs-on: ubuntu-latest
