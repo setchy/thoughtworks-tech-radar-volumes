@@ -53,7 +53,7 @@ function generateCSV(volume: string, volumeData: any[]) {
     )}.csv`;
     console.log('Creating CSV file', csvFilename);
     fs.writeFileSync(
-        '../' + csvFilename,
+        csvFilename,
         CSV_HEADERS.join(',') + '\n' + csvData.join('\n'),
     );
 }
@@ -72,5 +72,5 @@ function generateJSON(volume: string, volumeData: any[]) {
         volume,
     )}.json`;
     console.log('Creating JSON file', jsonFilename);
-    fs.writeFileSync('../' + jsonFilename, JSON.stringify(jsonData, null, 4));
+    fs.writeFileSync(jsonFilename, JSON.stringify(jsonData, null, 4));
 }
