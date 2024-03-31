@@ -5,15 +5,16 @@
 
 A complete collection of datasets for the popular [Thoughtworks Technology Radar][tw-radar], including all [archived volumes][tw-archive]
 
-## Usage
+## Datasets
 
 ### How to use
 
 There are a few ways you can use to view the interactive technology radar
 
-1.  via [setchy.io/radars][setchy-radar]
-2.  Thoughtworks hosted radar - [radar.thoughtworks.com][tw-byor]
-3.  self-hosted BYOR radar - [thoughtworks/build-your-own-radar][github-byor]
+1.  My own hosted radar with enhancements - [radar.setchy.io][setchy-radar]
+2.  via my catalogue - [setchy.io/radars][setchy-radars]
+3.  Thoughtworks hosted radar - [radar.thoughtworks.com][tw-byor]
+4.  self-hosted BYOR radar - [thoughtworks/build-your-own-radar][github-byor]
 
 ### Available data formats
 
@@ -26,15 +27,16 @@ The technology radar datasets are provided in three formats; CSV, JSON and a com
 -   <img src="./assets/icons/json.png" width="26" height="26" alt="JSON"></img> [GitHub - Thoughtworks Volumes (JSON)][volumes-json]
 -   <img src="./assets/icons/google-sheets.svg" width="24" height="24" alt="Google Sheets" /> [Google Sheets - Thoughtworks Technology Radar Volumes][volumes-google-sheets]
 
-## How are the datasets updated?
 
-The datasets are refreshed every 6 months in alignment with Thoughtworks officially publishing their latest Volume.
+### How are the datasets updated?
 
-The process for generating the CSVs and JSON volumes has been automated.
+The CSV and JSON datasets are automatically checked for any updates weekly.  For Google Sheets, this is currently manual.
 
-### /web-scraper (recommended)
+_Note: Thoughtworks typically publish a new technology radar volume twice per year.
 
-An implementation which used a three-step process of parsing the public HTML content.
+## Command Line Interface (CLI)
+
+The CLI has three main functions to assist with the dataset automation.
 
 ```
 Usage: tech-radar-volumes [options]
@@ -50,11 +52,11 @@ Options:
 
 You can run this CLI via `pnpm start --help`
 
-#### --links
+### --links
 
 This will extract _all_ blip links from the [Thoughtworks Radar Search][tw-search] and place into `data/links.json`
 
-#### --data
+### --data
 
 Using the contents of `data/links.json`, fetch each of the publication entries and place into `data/master.json`
 
@@ -62,7 +64,8 @@ Using the contents of `data/links.json`, fetch each of the publication entries a
 
 Using the contents of `data/master.json`, generate CSV and JSON files for each publication/volume and place into `volumes/*`
 
-[setchy-radar]: https://setchy.io/radars
+[setchy-radar]: https://radar.setchy.io
+[setchy-radars]: https://setchy.io/radars
 
 [latest-csv]: https://raw.githubusercontent.com/setchy/thoughtworks-tech-radar-volumes/main/volumes/csv/Thoughtworks%20Technology%20Radar%20Volume%2029%20(Sep%202023).csv
 [volumes-csv]: https://github.com/setchy/thoughtworks-tech-radar-volumes/tree/main/volumes/csv
