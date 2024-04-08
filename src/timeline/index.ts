@@ -15,8 +15,8 @@ import {
   getVolumeNameFromDate,
 } from './utils';
 
-import fs from 'node:fs';
 import { exit } from 'node:process';
+import { readJSONFile, writeJSONFile } from '../utils';
 
 let page: Page;
 
@@ -31,7 +31,7 @@ export async function generateMasterData() {
     blipEntries: [],
   };
 
-  const radarLinks = JSON.parse(fs.readFileSync(FILES.DATA.LINKS, 'utf8'));
+  const radarLinks = readJSONFile<string[]>(FILES.DATA.LINKS);
 
   console.log(
     `Commencing processing of ${radarLinks.length} blip timelines...`,
@@ -57,10 +57,7 @@ export async function generateMasterData() {
     'name',
   ]);
 
-  fs.writeFileSync(
-    FILES.DATA.MASTER,
-    JSON.stringify(sortedMasterData, null, 4),
-  );
+  writeJSONFile(FILES.DATA.MASTER, sortedMasterData);
 }
 
 export async function extractBlipTimeline(

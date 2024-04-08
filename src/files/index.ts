@@ -1,4 +1,3 @@
-import fs from 'node:fs';
 import _ from 'lodash';
 import {
   CSV_HEADERS,
@@ -7,13 +6,12 @@ import {
   RING_SORT_ORDER,
 } from '../common/constants';
 import type { BlipTimelineEntry } from '../types';
+import { readJSONFile, writeCSVFile, writeJSONFile } from '../utils';
 import { escapeDescriptionHTML } from './utils';
 import { getStatus, getVolumeFileName } from './utils';
 
 export function generateVolumes(reportType: 'all' | 'csv' | 'json') {
-  const data: BlipTimelineEntry[] = JSON.parse(
-    fs.readFileSync(FILES.DATA.MASTER).toString(),
-  );
+  const data = readJSONFile<BlipTimelineEntry[]>(FILES.DATA.MASTER);
 
   const groupedByVolumes = _.groupBy(data, 'volume');
 
@@ -40,29 +38,26 @@ export function generateVolumes(reportType: 'all' | 'csv' | 'json') {
 }
 
 function generateCSV(volume: string, volumeData: BlipTimelineEntry[]) {
-  const csvData = volumeData.map((row) =>
-    [
-      row.name,
-      row.ring,
-      row.quadrant,
-      row.isNew.toString().toUpperCase(),
-      getStatus(row),
-      escapeDescriptionHTML(row.descriptionHtml),
-    ].join(','),
-  );
+  const data = volumeData.map((row) => [
+    row.name,
+    row.ring,
+    row.quadrant,
+    row.isNew.toString().toUpperCase(),
+    getStatus(row),
+    escapeDescriptionHTML(row.descriptionHtml),
+  ]);
 
-  const csvFilename = `${FILES.VOLUMES.FOLDER}/csv/${getVolumeFileName(
+  const filename = `${FILES.VOLUMES.FOLDER}/csv/${getVolumeFileName(
     volume,
   )}.csv`;
-  console.log('Creating CSV file', csvFilename);
-  fs.writeFileSync(
-    csvFilename,
-    `${CSV_HEADERS.join(',')}\n${csvData.join('\n')}`,
-  );
+
+  console.log('Creating CSV file', filename);
+
+  writeCSVFile(filename, CSV_HEADERS, data);
 }
 
 function generateJSON(volume: string, volumeData: BlipTimelineEntry[]) {
-  const jsonData = volumeData.map((row) => ({
+  const data = volumeData.map((row) => ({
     name: row.name,
     ring: row.ring,
     quadrant: row.quadrant,
@@ -71,9 +66,9 @@ function generateJSON(volume: string, volumeData: BlipTimelineEntry[]) {
     description: escapeDescriptionHTML(row.descriptionHtml),
   }));
 
-  const jsonFilename = `${FILES.VOLUMES.FOLDER}/json/${getVolumeFileName(
+  const filename = `${FILES.VOLUMES.FOLDER}/json/${getVolumeFileName(
     volume,
   )}.json`;
-  console.log('Creating JSON file', jsonFilename);
-  fs.writeFileSync(jsonFilename, JSON.stringify(jsonData, null, 4));
+  console.log('Creating JSON file', filename);
+  writeJSONFile(filename, data);
 }

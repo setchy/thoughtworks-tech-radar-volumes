@@ -1,6 +1,6 @@
-import fs from 'node:fs';
 import _ from 'lodash';
 import { FILES, URLS } from '../common/constants';
+import { writeJSONFile } from '../utils';
 
 export async function parseRadarSitemap(): Promise<string[]> {
   const sitemap = await (await fetch(URLS.SITEMAP)).text();
@@ -17,7 +17,7 @@ export async function parseRadarSitemap(): Promise<string[]> {
   links.sort();
 
   const uniqueLinks = _.uniq(links);
-  fs.writeFileSync(FILES.DATA.LINKS, JSON.stringify(uniqueLinks, null, 4));
+  writeJSONFile(FILES.DATA.LINKS, uniqueLinks);
 
   console.log(`Found ${uniqueLinks.length} unique radar blip page links`);
 
