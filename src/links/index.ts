@@ -1,24 +1,25 @@
-import fs from 'fs';
-import { FILES, URLS } from '../common/constants';
 import _ from 'lodash';
+import { FILES, URLS } from '../common/constants';
+import { writeJSONFile } from '../utils';
 
 export async function parseRadarSitemap(): Promise<string[]> {
-    const sitemap = await (await fetch(URLS.SITEMAP)).text();
+  const sitemap = await (await fetch(URLS.SITEMAP)).text();
 
-    const regex = /<loc>(.*?)<\/loc>/g;
-    const links: string[] = [];
-    let match;
+  const regex = /<loc>(.*?)<\/loc>/g;
+  const links: string[] = [];
+  let match = regex.exec(sitemap);
 
-    while ((match = regex.exec(sitemap)) !== null) {
-        links.push(match[1]);
-    }
+  while (match !== null) {
+    links.push(match[1]);
+    match = regex.exec(sitemap);
+  }
 
-    links.sort();
+  links.sort();
 
-    const uniqueLinks = _.uniq(links);
-    fs.writeFileSync(FILES.DATA.LINKS, JSON.stringify(uniqueLinks, null, 4));
+  const uniqueLinks = _.uniq(links);
+  writeJSONFile(FILES.DATA.LINKS, uniqueLinks);
 
-    console.log(`Found ${uniqueLinks.length} unique radar blip page links`);
+  console.log(`Found ${uniqueLinks.length} unique radar blip page links`);
 
-    return uniqueLinks;
+  return uniqueLinks;
 }
