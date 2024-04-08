@@ -6,11 +6,14 @@ import {
   QUADRANT_SORT_ORDER,
   RING_SORT_ORDER,
 } from '../common/constants';
+import type { BlipTimelineEntry } from '../types';
 import { escapeDescriptionHTML } from './utils';
 import { getStatus, getVolumeFileName } from './utils';
 
 export function generateVolumes(reportType: 'all' | 'csv' | 'json') {
-  const data = JSON.parse(fs.readFileSync(FILES.DATA.MASTER).toString());
+  const data: BlipTimelineEntry[] = JSON.parse(
+    fs.readFileSync(FILES.DATA.MASTER).toString(),
+  );
 
   const groupedByVolumes = _.groupBy(data, 'volume');
 
@@ -36,7 +39,7 @@ export function generateVolumes(reportType: 'all' | 'csv' | 'json') {
   });
 }
 
-function generateCSV(volume: string, volumeData: any[]) {
+function generateCSV(volume: string, volumeData: BlipTimelineEntry[]) {
   const csvData = volumeData.map((row) =>
     [
       row.name,
@@ -58,7 +61,7 @@ function generateCSV(volume: string, volumeData: any[]) {
   );
 }
 
-function generateJSON(volume: string, volumeData: any[]) {
+function generateJSON(volume: string, volumeData: BlipTimelineEntry[]) {
   const jsonData = volumeData.map((row) => ({
     name: row.name,
     ring: row.ring,

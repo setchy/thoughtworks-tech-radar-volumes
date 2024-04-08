@@ -1,5 +1,5 @@
 import { FILES, VOLUME_PUBLICATION_DATES } from '../common/constants';
-import type { BlipStatus } from '../types';
+import type { BlipStatus, BlipTimelineEntry } from '../types';
 
 export function escapeDescriptionHTML(description: string): string {
   const escapedDescription = description
@@ -21,7 +21,7 @@ function getVolumePublicationDate(volume: string) {
 
   return VOLUME_PUBLICATION_DATES[volumeBaseZero];
 }
-export function getStatus(row: any): BlipStatus {
+export function getStatus(row: BlipTimelineEntry): BlipStatus {
   if (row.isNew) {
     return 'new';
   }

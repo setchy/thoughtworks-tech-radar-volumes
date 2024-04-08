@@ -96,7 +96,7 @@ export async function extractBlipTimeline(
       element.textContent?.trim(),
     )) || '';
 
-  timelineEntries.forEach((blipPublicationHtml) => {
+  for (const blipPublicationHtml of timelineEntries) {
     const blipTimelineEntry: BlipTimelineEntry =
       createBlipTimelineEntryFromPublication(
         blipName,
@@ -105,7 +105,7 @@ export async function extractBlipTimeline(
       );
 
     blipMasterData.blipEntries.push(blipTimelineEntry);
-  });
+  }
 
   // Reverse the order so that it's easier to calculate the isNew, hasMovedIn, hasMovedOut boolean values
   blipMasterData.blipEntries = _.reverse(blipMasterData.blipEntries);

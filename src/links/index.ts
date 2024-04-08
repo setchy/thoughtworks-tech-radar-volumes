@@ -7,10 +7,11 @@ export async function parseRadarSitemap(): Promise<string[]> {
 
   const regex = /<loc>(.*?)<\/loc>/g;
   const links: string[] = [];
-  let match: RegExpExecArray | null;
+  let match = regex.exec(sitemap);
 
-  while ((match = regex.exec(sitemap)) !== null) {
+  while (match !== null) {
     links.push(match[1]);
+    match = regex.exec(sitemap);
   }
 
   links.sort();
