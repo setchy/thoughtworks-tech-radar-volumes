@@ -90,15 +90,19 @@ async function updateGoogleSheets(
 
   const sheetName = `Vol ${volume} (${getVolumePublicationDate(volume)})`;
   const sheetId = process.env.GOOGLE_SHEET_ID;
-  const credentials = process.env.GOOGLE_APPLICATION_CREDENTIALS;
+  const clientEmail = process.env.GOOGLE_CLIENT_EMAIL;
+  const privateKey = process.env.GOOGLE_PRIVATE_KEY;
 
-  if (!sheetId || !credentials) {
-    console.error('Missing Google Sheet ID or Access Token');
+  if (!sheetId || !clientEmail || !privateKey) {
+    console.error('Missing Sheet ID, Client Email or Private Key');
     exit(1);
   }
 
   const auth = new google.auth.GoogleAuth({
-    keyFile: credentials,
+    credentials: {
+      client_email: clientEmail,
+      private_key: privateKey,
+    },
     scopes: ['https://www.googleapis.com/auth/spreadsheets'],
   });
 
@@ -112,24 +116,6 @@ async function updateGoogleSheets(
       spreadsheetId: sheetId,
       range: sheetName,
     });
-
-    // for (const index in response.data.values) {
-    //   const i = Number.parseInt(index);
-    //   const descriptionIndex = 5;
-    //   const sheetData = response.data.values[i];
-    //   const newData = data[i];
-    //   newData[descriptionIndex] = newData[descriptionIndex]
-    //     .replace(/^"|"$/g, '')
-    //     .replace(/""/g, '"'); // The description field in the dataset has some funky quotes
-
-    //   if (sheetData.toString() !== newData.toString()) {
-    //     console.log(
-    //       `Found that row ${index} in ${sheetName} that needs updating`,
-    //     );
-    //     console.log('\tCurrent Data:', sheetData);
-    //     console.log('\tNew Data:', newData);
-    //   }
-    // }
   } catch (error) {
     console.warn(`Sheet ${sheetName} not found.  Creating new sheet...`);
 
