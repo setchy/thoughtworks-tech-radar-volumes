@@ -3,3 +3,4 @@ dist/
 temp/
 
 config/.env
+credentials.json
