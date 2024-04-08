@@ -3,6 +3,7 @@ export const URLS = {
   RADAR: 'https://www.thoughtworks.com/radar',
   SEARCH: 'https://www.thoughtworks.com/radar/search',
   SITEMAP: 'https://www.thoughtworks.com/rest/radar/sitemap/en.xml',
+  GOOGLE_SHEET: 'https://docs.google.com/spreadsheets/d/',
 };
 
 export const FILES = {

@@ -16,7 +16,7 @@ export function getVolumeFileName(volume: string) {
 function getPaddedVolumeNumber(volume: string) {
   return volume.padStart(2, '0');
 }
-function getVolumePublicationDate(volume: string) {
+export function getVolumePublicationDate(volume: string) {
   const volumeBaseZero = Number.parseInt(volume) - 1;
 
   return VOLUME_PUBLICATION_DATES[volumeBaseZero];

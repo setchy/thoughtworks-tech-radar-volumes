@@ -15,3 +15,6 @@ export interface BlipTimelineEntry {
 }
 
 export type BlipStatus = 'new' | 'moved in' | 'moved out' | 'no change';
+
+export const reportTypes = ['all', 'csv', 'json', 'google-sheets'] as const;
+export type ReportType = (typeof reportTypes)[number];

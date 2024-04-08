@@ -1,7 +1,13 @@
+import * as dotenv from 'dotenv';
+dotenv.config({
+  path: './config/.env',
+});
+
 import { Command, Option } from 'commander';
 import { generateVolumes } from './files';
 import { parseRadarSitemap } from './links';
 import { generateMasterData } from './timeline';
+import { reportTypes } from './types';
 const program = new Command();
 
 program
@@ -11,7 +17,7 @@ program
   .option('-d, --data', 'fetch detailed blip history from archive')
   .addOption(
     new Option('-v, --volumes <type>', 'generate CSV and JSON volumes').choices(
-      ['all', 'csv', 'json'],
+      reportTypes,
     ),
   );
 
