@@ -1,33 +1,38 @@
 import { FILES, VOLUME_PUBLICATION_DATES } from '../common/constants';
+import type { BlipStatus } from '../types';
 
 export function escapeDescriptionHTML(description: string): string {
-    const escapedDescription = description
-        .replace(/"/g, '""')
-        .replace(/\n/g, '<br>');
+  const escapedDescription = description
+    .replace(/"/g, '""')
+    .replace(/\n/g, '<br>');
 
-    return `"${escapedDescription}"`;
+  return `"${escapedDescription}"`;
 }
 export function getVolumeFileName(volume: string) {
-    return `${FILES.VOLUMES.FILE_PREFIX} ${getPaddedVolumeNumber(
-        volume
-    )} (${getVolumePublicationDate(volume)})`;
+  return `${FILES.VOLUMES.FILE_PREFIX} ${getPaddedVolumeNumber(
+    volume,
+  )} (${getVolumePublicationDate(volume)})`;
 }
 function getPaddedVolumeNumber(volume: string) {
-    return volume.padStart(2, '0');
+  return volume.padStart(2, '0');
 }
 function getVolumePublicationDate(volume: string) {
-    const volumeBaseZero = parseInt(volume) - 1;
+  const volumeBaseZero = Number.parseInt(volume) - 1;
 
-    return VOLUME_PUBLICATION_DATES[volumeBaseZero];
+  return VOLUME_PUBLICATION_DATES[volumeBaseZero];
 }
-export function getStatus(row: any) {
-    if (row.isNew) {
-        return 'new';
-    } else if (row.hasMovedIn) {
-        return 'moved in';
-    } else if (row.hasMovedOut) {
-        return 'moved out';
-    } else {
-        return 'no change';
-    }
+export function getStatus(row: any): BlipStatus {
+  if (row.isNew) {
+    return 'new';
+  }
+
+  if (row.hasMovedIn) {
+    return 'moved in';
+  }
+
+  if (row.hasMovedOut) {
+    return 'moved out';
+  }
+
+  return 'no change';
 }
