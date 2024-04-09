@@ -22,9 +22,9 @@ jobs:
                   run_install: true
 
             - name: Update Google Sheets
-              run: |
-                  pnpm start -v google-sheets
               env:
                 GOOGLE_SHEET_ID: ${{ secrets.GOOGLE_SHEET_ID }}
                 GOOGLE_CLIENT_EMAIL: ${{ secrets.GOOGLE_CLIENT_EMAIL }}
                 GOOGLE_PRIVATE_KEY: ${{ secrets.GOOGLE_PRIVATE_KEY }}
+              run: |
+                  pnpm start -v google-sheets
