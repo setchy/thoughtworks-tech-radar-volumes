@@ -1,0 +1,30 @@
+name: Google Sheets Sync
+
+on:
+    workflow_dispatch: # This allows manual triggering from the GitHub Actions UI.
+
+jobs:
+    refresh:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4
+
+            - name: Setup Node.js
+              uses: actions/setup-node@v4
+              with:
+                node-version-file: '.nvmrc'
+
+            - name: Setup pnpm
+              uses: pnpm/action-setup@v3
+              with:
+                  run_install: true
+
+            - name: Update Google Sheets
+              run: |
+                  pnpm start -v google-sheets
+              env:
+                GOOGLE_SHEET_ID: ${{ secrets.GOOGLE_SHEET_ID }}
+                GOOGLE_CLIENT_EMAIL: ${{ secrets.GOOGLE_CLIENT_EMAIL }}
+                GOOGLE_PRIVATE_KEY: ${{ secrets.GOOGLE_PRIVATE_KEY }}
