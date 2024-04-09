@@ -27,4 +27,7 @@ jobs:
                 GOOGLE_CLIENT_EMAIL: ${{ secrets.GOOGLE_CLIENT_EMAIL }}
                 GOOGLE_PRIVATE_KEY: ${{ secrets.GOOGLE_PRIVATE_KEY }}
               run: |
-                  export GOOGLE_SHEET_ID=$GOOGLE_SHEET_ID GOOGLE_CLIENT_EMAIL=$GOOGLE_CLIENT_EMAIL GOOGLE_PRIVATE_KEY=$GOOGLE_PRIVATE_KEY && pnpm start -v google-sheets
+                  export GOOGLE_SHEET_ID=${{ secrets.GOOGLE_SHEET_ID }}
+                  export GOOGLE_CLIENT_EMAIL=${{ secrets.GOOGLE_CLIENT_EMAIL }}
+                  export GOOGLE_PRIVATE_KEY=${{ secrets.GOOGLE_PRIVATE_KEY }}
+                  pnpm start -v google-sheets
