@@ -91,7 +91,11 @@ async function updateGoogleSheets(
   const sheetName = `Vol ${volume} (${getVolumePublicationDate(volume)})`;
   const sheetId = process.env.GOOGLE_SHEET_ID;
   const clientEmail = process.env.GOOGLE_CLIENT_EMAIL;
-  const privateKey = process.env.GOOGLE_PRIVATE_KEY;
+  /**
+   * https://stackoverflow.com/questions/74131595/error-error1e08010cdecoder-routinesunsupported-with-google-auth-library
+   */
+  const privateKey =
+    process.env.GOOGLE_PRIVATE_KEY?.split(String.raw`\n`).join('\n');
 
   if (!sheetId || !clientEmail || !privateKey) {
     console.error('Missing Sheet ID, Client Email or Private Key');
