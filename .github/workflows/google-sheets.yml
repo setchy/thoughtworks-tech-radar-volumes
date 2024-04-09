@@ -27,4 +27,5 @@ jobs:
                 GOOGLE_CLIENT_EMAIL: ${{ secrets.GOOGLE_CLIENT_EMAIL }}
                 GOOGLE_PRIVATE_KEY: ${{ secrets.GOOGLE_PRIVATE_KEY }}
               run: |
+                  echo $GOOGLE_SHEET_ID
                   pnpm start -v google-sheets
