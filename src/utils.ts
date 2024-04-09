@@ -8,12 +8,6 @@ export function writeJSONFile(filename: string, contents: unknown) {
   fs.writeFileSync(filename, `${JSON.stringify(contents, null, 2)}\n`);
 }
 
-export function writeCSVFile(
-  filename: string,
-  headers: string[],
-  data: string[][],
-) {
-  const csvData = data.map((row) => row.join(','));
-
-  fs.writeFileSync(filename, `${headers.join(',')}\n${csvData.join('\n')}\n`);
+export function writeCSVFile(filename: string, data: string[]) {
+  fs.writeFileSync(filename, data.join('\n'));
 }

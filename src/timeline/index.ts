@@ -68,7 +68,7 @@ export async function extractBlipTimeline(
   const response = await page.goto(blipURL);
 
   if (response?.status() === 403) {
-    console.warn(
+    console.error(
       'Encountered HTTP 403 Forbidden: Cloudflare has rate limited us...',
     );
     exit(1);
