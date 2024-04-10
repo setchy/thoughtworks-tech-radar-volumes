@@ -46,7 +46,7 @@ A CLI tool to fetch and process ThoughtWorks Tech Radar data
 Options:
   -l, --links           fetch all radar blip page links from archive
   -d, --data            fetch detailed blip history from archive
-  -v, --volumes <type>  generate CSV and JSON volumes (choices: "all", "csv", "json")
+  -v, --volumes <type>  generate CSV and JSON volumes (choices: "all", "csv", "json", "google-sheets")
   -h, --help            display help for command
 ```
 
