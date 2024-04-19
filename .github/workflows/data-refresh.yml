@@ -38,15 +38,13 @@ jobs:
               uses: peter-evans/create-pull-request@v6
               with:
                   token: ${{ secrets.GITHUB_TOKEN }}
-                  commit-message: "Automated dataset refresh"
-                  committer: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
-                  author: ${{ github.actor }} <${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com>
-                  signoff: false
+                  commit-message: |
+                    Automated dataset refresh
                   branch: automated/volume-updates
                   delete-branch: true
                   title: "Radar Volumes Refresh"
                   body: |
-                      Refresh technology radar datasets from latest sources.
+                    Refresh technology radar datasets from latest sources.
                   labels: |
-                      data-refresh
+                    data-refresh
                   reviewers: setchy
