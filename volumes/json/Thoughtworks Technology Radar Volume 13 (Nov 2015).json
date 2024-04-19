@@ -1,818 +1,818 @@
 [
-  {
-    "name": "Consumer-driven contract testing",
-    "ring": "adopt",
-    "quadrant": "techniques",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p>When two independently developed services are collaborating, changes to the supplier’s API can cause failures for all its consumers. Consuming services usually cannot test against live suppliers since such tests are slow and <a href=\"\"http://martinfowler.com/articles/nonDeterminism.html#RemoteServices\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">brittle<span class=\"\"pop-out-icon\"\"></span></a>, so it’s best to use <a href=\"\"http://martinfowler.com/bliki/TestDouble.html\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Test Doubles<span class=\"\"pop-out-icon\"\"></span></a>, leading to the danger that the test doubles get out of sync with the real supplier service. Consumer teams can protect themselves from these failures by using <a href=\"\"http://martinfowler.com/bliki/IntegrationContractTest.html\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">integration contract tests<span class=\"\"pop-out-icon\"\"></span></a> – tests that compare actual service responses with test values. While such contract tests are valuable, they are even more useful when consuming services provide these tests to the supplier, who can then run all their consumers’ contract tests to determine if their changes are likely to cause problems – adopting <a href=\"\"http://www.martinfowler.com/articles/consumerDrivenContracts.html\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">consumer-driven contracts<span class=\"\"pop-out-icon\"\"></span></a>. Such <strong>consumer-driven contract tests</strong> are an essential part of a mature <a href=\"\"http://martinfowler.com/articles/microservice-testing/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">microservice testing<span class=\"\"pop-out-icon\"\"></span></a> portfolio.</p>\""
-  },
-  {
-    "name": "Decoupling deployment from release",
-    "ring": "adopt",
-    "quadrant": "techniques",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Generated infrastructure diagrams",
-    "ring": "adopt",
-    "quadrant": "techniques",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p>When we need a diagram that describes the current infrastructure or physical architecture we usually take to our favorite technical diagramming tool. If you are using the cloud or virtualization technologies this no longer makes sense, we can use the provided APIs to interrogate the actual infrastructure and generate a live, <strong>automated infrastructure diagram</strong> using simple tools like <a href=\"\"http://www.graphviz.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">GraphViz<span class=\"\"pop-out-icon\"\"></span></a> or by outputting SVG.</p>\""
-  },
-  {
-    "name": "NoPSD",
-    "ring": "adopt",
-    "quadrant": "techniques",
-    "isNew": "FALSE",
-    "status": "moved in",
-    "description": "\"<p>'Just In Time Design' is an important and useful concept for visual design that the <a href=\"\"https://www.thoughtworks.com/p2magazine/issue02/continuous-design/\"\"><strong>NoPSD</strong></a> movement attempts to capture. You don't need to design the whole application or every UI element up front. Design things as you need them with as lightweight tools as you can use. We have seen a corresponding growth in simpler tools with faster learning curves, such as <a href=\"\"http://www.sketchapp.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Sketch</strong><span class=\"\"pop-out-icon\"\"></span></a>, as well as an increasing return to pen-and-paper (especially when paired with an existing robust <a href=\"\"https://www.thoughtworks.com/radar/techniques/living-css-style-guides\"\"><strong>digital style guide</strong></a>). Because of the limitations of flat mock-ups when you’re designing for screens, creating prototypes of varying fidelity with tools such as <a href=\"\"http://www.invisionapp.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Invision</strong><span class=\"\"pop-out-icon\"\"></span></a>, <a href=\"\"http://framerjs.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>FramerJS</strong><span class=\"\"pop-out-icon\"\"></span></a> and <strong>Origami</strong> - or simply HTML/CSS and a bit of JavaScript - has also become increasingly common and valuable for communicating design intent.</p>\""
-  },
-  {
-    "name": "Products over projects",
-    "ring": "adopt",
-    "quadrant": "techniques",
-    "isNew": "FALSE",
-    "status": "moved in",
-    "description": "\"\""
-  },
-  {
-    "name": "Threat modeling",
-    "ring": "adopt",
-    "quadrant": "techniques",
-    "isNew": "FALSE",
-    "status": "moved in",
-    "description": "\"<p>With the number of high-profile security breaches in the past months, software development teams no longer need convincing that they must place an emphasis on writing secure software and dealing with their users’ data in a responsible way. The teams face a steep learning curve, though, and the vast number of potential threats - ranging from organized crime and government spying to teenagers who attack systems 'for the lulz' can be overwhelming. <a href=\"\"https://www.owasp.org/index.php/Category:Threat_Modeling\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Threat modeling</strong><span class=\"\"pop-out-icon\"\"></span></a> provides a set of techniques, mostly from a defensive perspective, that help you understand and classify potential threats. Turned into 'evil-user stories', threat models can give a team a manageable and effective approach to making their systems more secure.</p>\""
-  },
-  {
-    "name": "BEM",
-    "ring": "trial",
-    "quadrant": "techniques",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"<p>Debugging CSS problems can be painful. How many times have you had to trawl through thousands of overridden styles to work out the source of your problem? This has led many of our teams to introduce various guidelines such as avoiding cascading and overrides, making styles opt-in and emphasizing thoughtful naming. <a href=\"\"http://getbem.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>BEM</strong><span class=\"\"pop-out-icon\"\"></span></a> is a simple CSS naming convention (standing for Block, Element, Modifier) that helps give semantic clarity and structure to your CSS. By using BEM, it becomes much easier to understand which CSS rules are influencing the appearance of an element and, more importantly, the intent of those rules. This approach can be seen as moving the OO lesson of favoring composition over inheritance to the world of CSS.</p>\""
-  },
-  {
-    "name": "BFF - Backend for frontends",
-    "ring": "trial",
-    "quadrant": "techniques",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Docker for builds",
-    "ring": "trial",
-    "quadrant": "techniques",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"<p>One of the many innovative uses of <a href=\"\"https://www.docker.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Docker<span class=\"\"pop-out-icon\"\"></span></a> that we’ve seen on our projects is a technique to manage build-time dependencies. In the past, it was common to run build agents on an OS, augmented with dependencies needed for the target build. But with Docker it is possible to run the compilation step in an isolated environment complete with dependencies without contaminating the build agent. This technique of using <strong>Docker for builds</strong>  has proven particularly useful for compiling Golang binaries, and the <a href=\"\"https://github.com/CenturyLinkLabs/golang-builder\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">golang-builder<span class=\"\"pop-out-icon\"\"></span></a> container is available for this very purpose.</p>\""
-  },
-  {
-    "name": "Event Storming",
-    "ring": "trial",
-    "quadrant": "techniques",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"<p><a href=\"\"http://ziobrando.blogspot.be/2013/11/introducing-event-storming.html\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Event Storming</strong><span class=\"\"pop-out-icon\"\"></span></a> is a useful way to do rapid “outside-in” domain modeling: starting with the events that occur in the domain rather than a static data model. Run as a facilitated workshop, it focuses on discovering key domain events, placing them along a timeline, identifying their triggers and then exploring their relationships. This approach is particularly useful for people taking a CQRS or <a href=\"\"https://www.thoughtworks.com/radar/techniques/event-sourcing\"\">Event Sourcing</a> approach. Getting the right people in the room is important - a blend of business and technical people who bring both the questions and the answers. Ensuring that you have enough wall space for modeling is the second key to success. Look to discover the big picture, with the goal of collectively understanding the domain in all of its complexity, before diving into solutions.</p>\""
-  },
-  {
-    "name": "Flux",
-    "ring": "trial",
-    "quadrant": "techniques",
-    "isNew": "FALSE",
-    "status": "moved in",
-    "description": "\"\""
-  },
-  {
-    "name": "Idempotency filter",
-    "ring": "trial",
-    "quadrant": "techniques",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "iFrames for sandboxing",
-    "ring": "trial",
-    "quadrant": "techniques",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "NPM for all the things",
-    "ring": "trial",
-    "quadrant": "techniques",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Offline first web applications",
-    "ring": "trial",
-    "quadrant": "techniques",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p><strong>Offline first web applications</strong> provide the ability to design web applications for offline access by employing caching and updating mechanisms. The implementation requires a flag in the DOM to check whether the accessing device is offline or online, accessing local storage when offline, and synchronising data when online. All the major browsers now support an offline mode, which bootstraps the process of downloading and caching the resources such as HTML, CSS, JavaScript, images and other kinds of resources. There are some tools which help simplify offline first implementation such as <a href=\"\"http://hood.ie/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Hoodie</strong><span class=\"\"pop-out-icon\"\"></span></a>, and <a href=\"\"http://couchdb.apache.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>CouchDB</strong><span class=\"\"pop-out-icon\"\"></span></a> also offers ability to work with a locally deployed application on a local data storage.</p>\""
-  },
-  {
-    "name": "Phoenix Environments",
-    "ring": "trial",
-    "quadrant": "techniques",
-    "isNew": "FALSE",
-    "status": "moved in",
-    "description": "\"\""
-  },
-  {
-    "name": "QA in production",
-    "ring": "trial",
-    "quadrant": "techniques",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Accumulate-only data",
-    "ring": "assess",
-    "quadrant": "techniques",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p>Immutable data structures are becoming more popular, with functional languages such as Clojure and Scala providing immutability by default. Immutability allows code to be more easily written, read and reasoned about. Using an <strong>accumulate-only data store</strong> can confer some of these benefits in the database layer, as well as make audit and historical querying simple. Implementation options vary, from specific accumulative data stores such as <a href=\"\"http://www.datomic.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Datomic<span class=\"\"pop-out-icon\"\"></span></a> to simply using an “append-don’t-update” approach with a traditional database. <strong>Accumulate-only</strong> is a design strategy whereby data is removed via retraction rather than update; <strong>append-only</strong> is an implementation technique.</p>\""
-  },
-  {
-    "name": "Bug bounties",
-    "ring": "assess",
-    "quadrant": "techniques",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"<p>More and more organizations are starting to use <strong>bug bounties</strong> to encourage reporting of what are often security-related bugs, and in general help improve the quality of their software. To support these programs, companies like <a href=\"\"https://hackerone.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">HackerOne<span class=\"\"pop-out-icon\"\"></span></a> and <a href=\"\"https://bugcrowd.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">BugCrowd<span class=\"\"pop-out-icon\"\"></span></a> can help organizations manage this process more easily. We have limited experience with these offerings ourselves, but we like the idea of encouraging people to help come forward and highlight what can often be damaging vulnerabilities in an open and transparent way. It's worth noting that there might be some legal issues with encouraging users to find vulnerabilities in your software, so please do check that out first.</p>\""
-  },
-  {
-    "name": "Data Lake",
-    "ring": "assess",
-    "quadrant": "techniques",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p>A <a href=\"\"http://martinfowler.com/bliki/DataLake.html\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Data Lake</strong><span class=\"\"pop-out-icon\"\"></span></a> is an immutable data store of largely unprocessed 'raw' data, acting as a source for data analytics. Whereas the more familiar Data Warehouse filters and processes the data before storing it, the lake just captures the raw data, leaving it to the users of that data to carry out the particular analysis that they need. Examples include HDFS or HBase within a <a href=\"\"https://hadoop.apache.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Hadoop<span class=\"\"pop-out-icon\"\"></span></a>, <a href=\"\"http://spark.apache.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Spark<span class=\"\"pop-out-icon\"\"></span></a> or <a href=\"\"https://storm.apache.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Storm<span class=\"\"pop-out-icon\"\"></span></a> processing framework. Usually only a small group of data scientists work on the raw data, developing streams of processed data into lakeshore data marts for most users to query. A Data Lake should only be used for analytics and reporting. For collaboration between operational systems we prefer using services designed for that purpose.</p>\""
-  },
-  {
-    "name": "Hosted IDE's",
-    "ring": "assess",
-    "quadrant": "techniques",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Monitoring of invariants",
-    "ring": "assess",
-    "quadrant": "techniques",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Reactive architectures",
-    "ring": "assess",
-    "quadrant": "techniques",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p>The techniques of functional reactive programming have steadily gained in popularity over recent years, and we’re seeing increased interest in extending this concept to distributed systems architectures. Partly inspired by “<a href=\"\"http://www.reactivemanifesto.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">The Reactive Manifesto<span class=\"\"pop-out-icon\"\"></span></a>”, these <strong>reactive architectures</strong> are based on a one-way, asynchronous flow of immutable events through a network of independent processes (perhaps implemented as microservices). In the right setting, these systems are scalable and resilient and decrease the coupling between individual processing units. However, architectures based entirely on asynchronous message passing introduce complexity and often rely on proprietary frameworks. We recommend assessing the performance and scalability needs of your system before committing to this as a default architectural style.</p>\""
-  },
-  {
-    "name": "Gitflow",
-    "ring": "hold",
-    "quadrant": "techniques",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "High performance envy/web scale envy",
-    "ring": "hold",
-    "quadrant": "techniques",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Microservice envy",
-    "ring": "hold",
-    "quadrant": "techniques",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p>We remain convinced that microservices can offer significant advantages to organizations, in terms of improving team autonomy and faster frequency of change. The additional complexity that comes from distributed systems requires an additional level of maturity and investment. We are concerned that some teams are rushing in to adopting microservices without understanding the changes to development, test, and operations that are required to do them well. Our general advice remains simple. Avoid <strong>microservice envy</strong>  and start with one or two services before rushing headlong into developing more, to allow your teams time to adjust and understand the right level of granularity.</p>\""
-  },
-  {
-    "name": "Pace-layered Application Strategy",
-    "ring": "hold",
-    "quadrant": "techniques",
-    "isNew": "FALSE",
-    "status": "moved out",
-    "description": "\"<p>Gartner's <strong>Pace-layered Application Strategy</strong> approach appears to be creating an unhelpful focus on the idea of layers within an architecture. We find thinking about the pace of change within different <strong>business capabilities</strong> (which can be made up of several architectural layers) to be a more useful concept. The danger in focusing on layers is that many types of change cut across multiple layers. For example, being able to add new class of stock to a website is not just about having an easy-to-change CMS; you also need to update the database, integration points, warehouse systems, etc. The recognition that some parts of an architecture need to be more maneuverable than others is useful. However, a focus on layers is proving unhelpful.</p>\""
-  },
-  {
-    "name": "Programming in your CI/CD tool",
-    "ring": "hold",
-    "quadrant": "techniques",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p>We still see teams configure their CI and CD tools by directly embedding complex multi-line commands directly into the configuration of the tool. Often these embedded commands also contains steps that would only ever take effect in the build environment including things such as CI specific environment variables, steps that would create/modify files and templates only in the CI environment etc. This makes the build environment a special beast - whose results cannot be duplicated locally on a developer's machine.</p><br><br><p>This is extremely problematic because the CI/CD tool, which is supposed to expose problems in your code, itself becomes a complex beast whose behavior is hard to debug and whose results are hard to replicate.</p><br><br><p>The way to avoid <strong>programming in your CI/CD tool</strong> is to extract the complexities of the build process from the guts of the tool and into a simple script which can be invoked by a single command. This script can then be executed on any developer workstation and therefore eliminates the privileged/singular status of the build environment.</p>\""
-  },
-  {
-    "name": "SAFe™",
-    "ring": "hold",
-    "quadrant": "techniques",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"\""
-  },
-  {
-    "name": "Separate DevOps team",
-    "ring": "hold",
-    "quadrant": "techniques",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p>In the last radar issue we advised against creating a <strong>separate DevOps team</strong> , as DevOps is about creating a culture of shared responsibility in delivery teams. We recommend embedding operations skills into delivery teams to reduce friction and deliver better outcomes. However where there is a need for significant investment in tooling and automation, we do see a role for a Delivery Engineering team.  Rather than being a helpdesk, these teams build tooling and enable teams to deploy, monitor, and maintain their own production environments.</p>\""
-  },
-  {
-    "name": "TOTP Two-Factor Authentication",
-    "ring": "adopt",
-    "quadrant": "platforms",
-    "isNew": "FALSE",
-    "status": "moved in",
-    "description": "\"\""
-  },
-  {
-    "name": "Apache Mesos",
-    "ring": "trial",
-    "quadrant": "platforms",
-    "isNew": "FALSE",
-    "status": "moved in",
-    "description": "\"\""
-  },
-  {
-    "name": "Apache Spark",
-    "ring": "trial",
-    "quadrant": "platforms",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p><a href=\"\"https://spark.apache.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Apache Spark</strong><span class=\"\"pop-out-icon\"\"></span></a> has been steadily gaining ground as a fast and general engine for large-scale data processing. The engine is written in Scala and is well suited for applications that reuse a working set of data across multiple parallel operations. It’s designed to work as a standalone cluster or as part of Hadoop YARN cluster. It can access data from sources such as HDFS, Cassandra, S3 etc. Spark also offers many higher level operators in order to ease the development of data parallel applications. As a generic data processing platform it has enabled development of many higher level tools such as interactive SQL (Spark SQL), real time streaming (Spark Streaming), machine learning library (MLib), R-on-Spark etc.</p>\""
-  },
-  {
-    "name": "AWS Lambda",
-    "ring": "trial",
-    "quadrant": "platforms",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"<p>AWS releases a huge number of new features on what seems like a monthly basis, so it can sometimes be hard for any new service offering to rise above the noise, but <strong><a href=\"\"https://aws.amazon.com/lambda/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Lambda<span class=\"\"pop-out-icon\"\"></span></a></strong> certainly manages to attract notice. Initially just supporting JavaScript, but now adding support for JVM-based applications (with more no doubt to follow), Lambda allows you to fire up very short-lived processes either in reaction to an event, or via a call from the related <a href=\"\"https://aws.amazon.com/api-gateway/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">API Gateway<span class=\"\"pop-out-icon\"\"></span></a>. For stateless services, this means you don’t need to worry about running any long-lived machines, potentially reducing costs and improving security. Despite other forays into the PaaS space by AWS, Lambda looks the closest to getting this right.</p>\""
-  },
-  {
-    "name": "Cloudera Impala",
-    "ring": "trial",
-    "quadrant": "platforms",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p>For a while now the Hadoop community has been trying to bring low-latency, interactive SQL capability to the Hadoop platform (better known as SQL-on-Hadoop). This has led to a few open source systems such as Cloudera Impala, Apache Drill, Facebook’s Presto etc being developed actively through 2014. We think the SQL-on-Hadoop trend signals an important shift as it changes Hadoop's proposition from being a batch oriented technology that was complementary to databases into something that could compete with them.  <a href=\"\"http://www.cloudera.com/content/cloudera/en/products-and-services/cdh/impala.html\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Cloudera Impala</strong><span class=\"\"pop-out-icon\"\"></span></a> was one of the first SQL-on-Hadoop platforms. It is a distributed, massively-parallel, C++ based query engine. The core component of this platform is the Impala daemon that coordinates the execution of the SQL query across one or more nodes of the Impala cluster. Impala is designed to read data from files stored on HDFS in all popular file formats. It leverages Hive's metadata catalog, in order to share databases and tables between the two database platforms. Impala comes with a shell as well as JDBC and ODBC drivers for applications to use.</p>\""
-  },
-  {
-    "name": "Fastly",
-    "ring": "trial",
-    "quadrant": "platforms",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"<p><strong><a href=\"\"https://www.fastly.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Fastly<span class=\"\"pop-out-icon\"\"></span></a></strong>, one of a number of CDNs on the market, has a large and growing following on ThoughtWorks projects and is used by many web-scale household names, such as GitHub and Twitter. Its feature set, speed and price point combine to make it a very attractive option when you’re looking for an edge caching solution. We have also seen significant cost savings on projects that move to this platform from another CDN. If you are in the market for a CDN, you could do worse than investigate this one.</p>\""
-  },
-  {
-    "name": "H2O",
-    "ring": "trial",
-    "quadrant": "platforms",
-    "isNew": "FALSE",
-    "status": "moved in",
-    "description": "\"<p>Predictive analytics are used in more and more products, often directly in end user-facing functionality. <a href=\"\"http://h2o.ai/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>H2O</strong><span class=\"\"pop-out-icon\"\"></span></a> is an interesting open source package (with a startup behind it) that makes predictive analytics accessible to development teams, offering straightforward use of a wide variety of analytics, great performance and easy integration on JVM-based platforms. At the same time it integrates with the data scientists’ favorite tools, R and Python, as well as Hadoop and Spark.</p>\""
-  },
-  {
-    "name": "HSTS",
-    "ring": "trial",
-    "quadrant": "platforms",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": ".NET Core",
-    "ring": "assess",
-    "quadrant": "platforms",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p><strong><a href=\"\"https://github.com/dotnet/coreclr\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">CoreCLR<span class=\"\"pop-out-icon\"\"></span></a></strong> and** <a href=\"\"https://github.com/dotnet/corefx\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">CoreFX<span class=\"\"pop-out-icon\"\"></span></a>** is the core platform and framework for .NET. Although not new, they have recently been open sourced by Microsoft. A key change is that these dependencies are bin-deployable, they do not need to be installed on a machine in advance.  This eases side-by-side deployments, allowing applications to use different framework versions without conflicts. Something written in .NET is then an implementation detail, you can install a .NET dependency into any environment. A .NET tool is no different than something written in C from an external dependency perspective, making it a much more attractive option for general purpose applications and utilities. CoreFX is also being factored into individual NuGet dependencies, so that applications can pull what they need, keeping the footprint for .NET applications and libraries small and making it easier to replace part of the framework.</p>\""
-  },
-  {
-    "name": "Apache Kafka",
-    "ring": "assess",
-    "quadrant": "platforms",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p>Many recent developments in enterprise software revolve around asynchronous sequences of immutable event sequences as opposed to synchronous, point-to-point requests that modify state. <a href=\"\"http://kafka.apache.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Apache</strong>   <strong>Kafka</strong><span class=\"\"pop-out-icon\"\"></span></a> is an open-source messaging framework that supports this architectural style by publishing ordered message feeds to many independent, lightweight consumers. Kafka’s unique design allows the number of consumers to scale while maintaining strong ordering on the messages.</p>\""
-  },
-  {
-    "name": "Apache Kylin",
-    "ring": "assess",
-    "quadrant": "platforms",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p><a href=\"\"http://www.kylin.io/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Apache Kylin</strong><span class=\"\"pop-out-icon\"\"></span></a> is an open source analytics solution from eBay Inc. that enables SQL based multidimensional analysis (OLAP) on very large datasets. Kylin is intended to be a Hadoop based hybrid OLAP (HOLAP) solution that will eventually support both MOLAP and ROLAP style multidimensional analysis. With Kylin you can define cubes using a Cube Designer and initiate an offline process that builds these cubes. The offline process performs a pre-join step to join facts and dimension tables into a flattened out structure. This is followed by a pre-aggregation phase where individual cuboids are built using Map Reduce jobs. The results are stored in HDFS sequence files and are later loaded into HBase. The data requests can originate from SQL submitted using a SQL-based tool. The query engine (based on <strong>Apache Calcite</strong> ), determines if the target dataset exists in HBase. If so, the engine directly accesses the target data from HBase and returns the result with sub-second latency. If not, the engine routes the queries to <strong>Hive</strong> (or any other SQL on Hadoop solution enabled on the cluster).</p>\""
-  },
-  {
-    "name": "AWS ECS",
-    "ring": "assess",
-    "quadrant": "platforms",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Ceph",
-    "ring": "assess",
-    "quadrant": "platforms",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Deis",
-    "ring": "assess",
-    "quadrant": "platforms",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p>Heroku, with its 12-factor application model, has changed the way we think about building, deploying, and hosting web applications.  <a href=\"\"http://deis.io/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Deis</strong><span class=\"\"pop-out-icon\"\"></span></a> encapsulates the Heroku PaaS model in an open-source framework that deploys onto Docker containers hosted anywhere.  Deis is still evolving, but for applications that fit the 12-factor model it has the potential to greatly simplify deployment and hosting in the environment of your choice.  Deis is yet another example of the rich ecosystem of platforms and tools emerging around Docker.</p>\""
-  },
-  {
-    "name": "Kubernetes",
-    "ring": "assess",
-    "quadrant": "platforms",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"<p><strong><a href=\"\"http://kubernetes.io/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Kubernetes<span class=\"\"pop-out-icon\"\"></span></a></strong> is Google's answer to the problem of deploying containers into a cluster of machines, which is becoming an increasingly common scenario. It is not the solution used by Google internally but an open source project that originated at Google and has seen a fair number of external contributions. <a href=\"\"https://www.docker.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Docker<span class=\"\"pop-out-icon\"\"></span></a> and <a href=\"\"https://coreos.com/rkt/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Rocket<span class=\"\"pop-out-icon\"\"></span></a> are supported as container formats, and services offered include health management, replication and discovery. A similar solution in this space is <a href=\"\"https://www.thoughtworks.com/radar/platforms/rancher\"\">Rancher</a>.</p>\""
-  },
-  {
-    "name": "Linux Security Modules",
-    "ring": "assess",
-    "quadrant": "platforms",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p>While server hardening is an old technique that is considered fairly commonplace by sysadmins who have had to manage production systems, it has not become commonplace among the developer community. However, the rise in the DevOps culture has resulted in renewed focus on tools like SELinux, AppArmor and Grsecurity that aim to make this simpler, at least on the Linux ecosystem. Each of these tools comes with their own strengths and weaknesses and it is currently hard to pick one as being the only one you will need. That said, we highly recommend that all teams at least assess which <strong>Linux security modules</strong> would be the right one for them and make security and server hardening a part of their development workflow.</p>\""
-  },
-  {
-    "name": "Mesosphere DCOS",
-    "ring": "assess",
-    "quadrant": "platforms",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Microsoft Nano Server",
-    "ring": "assess",
-    "quadrant": "platforms",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"<p>In contrast to modern cloud and container solutions based on Linux, even Windows Server Core is large and unwieldy. Microsoft is reacting and has provided the <a href=\"\"http://www.theregister.co.uk/2015/05/15/wrestling_with_microsoft_nano_server_preview/?page=1\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">first previews<span class=\"\"pop-out-icon\"\"></span></a> of <a href=\"\"https://msdn.microsoft.com/en-us/library/mt126167.aspx\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Nano Server</strong><span class=\"\"pop-out-icon\"\"></span></a>, a further-stripped-down version of Windows Server that drops the GUI stack, 32-bit Win32 support, local logins and remote desktop support, resulting in an on-disk size of about 400MB. The early previews are difficult to work with, and the final solution will be restricted to using the CoreCLR, but for companies that are interested in running .NET-based solutions, Nano Server is definitely worth a look at this stage.</p>\""
-  },
-  {
-    "name": "Particle Photon/Particle Electron",
-    "ring": "assess",
-    "quadrant": "platforms",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p><strong><a href=\"\"https://www.particle.io/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Particle<span class=\"\"pop-out-icon\"\"></span></a></strong> (formally Spark.io) is a full stack solution for cloud connected devices. <strong>Particle Photon</strong> is a microcontroller with wifi module. <strong>Particle Electron</strong> is a variant that connects to a cellular network. Particle OS adds REST API to the devices. This simplifies the entry to IoT and building your own connected devices.</p>\""
-  },
-  {
-    "name": "Presto",
-    "ring": "assess",
-    "quadrant": "platforms",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Rancher",
-    "ring": "assess",
-    "quadrant": "platforms",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"<p><strong><a href=\"\"http://rancher.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Rancher<span class=\"\"pop-out-icon\"\"></span></a></strong> is an open source solution that allows deployment of containers into a cluster of machines, which is becoming an increasingly common scenario. It provides services such lifecycle management, monitoring, health checks and discovery. Also included is a completely containerized operating system based on <a href=\"\"https://www.docker.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Docker<span class=\"\"pop-out-icon\"\"></span></a>. The broad focus on containerization and very small footprint are key advantages for Rancher. A similar solution in this space is <a href=\"\"https://www.thoughtworks.com/radar/platforms/kubernetes\"\">Kubernetes</a>.</p>\""
-  },
-  {
-    "name": "Time series databases",
-    "ring": "assess",
-    "quadrant": "platforms",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p>A <strong>time series database</strong> (TSDB) is a system that is optimized for handling time series data. It allows users to perform CRUD operations on various time series organized as database objects. It also provides the ability to perform statistical calculations on the series as a whole. Although TSDBs are not entirely a new technology we are seeing a renewed interest in the these databases primarily in the realm of IoT applications. This is being facilitated by many open source and commercial platforms (such as  <strong>OpenTSDB</strong> , <strong>InfluxDB</strong> , <strong>Druid</strong> , <strong>BlueFloodDB</strong> etc.) that have mushroomed recently. Its also worth mentioning that some of these systems use other distributed databases such <strong>Cassandra</strong> and <strong>HBase</strong> as their underlying storage engine.</p>\""
-  },
-  {
-    "name": "Application Servers",
-    "ring": "hold",
-    "quadrant": "platforms",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"\""
-  },
-  {
-    "name": "Overambitious API gateways",
-    "ring": "hold",
-    "quadrant": "platforms",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "SPDY",
-    "ring": "hold",
-    "quadrant": "platforms",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p>The <strong><a href=\"\"https://www.chromium.org/spdy/spdy-whitepaper\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">SPDY<span class=\"\"pop-out-icon\"\"></span></a></strong> protocol was developed by Google from 2009 as an experiment to provide an alternative protocol to address performance shortcomings of HTTP/1.1. The new HTTP/2 standard protocol includes many of the key performance features of SPDY, and Google has announced it will drop browser SPDY support in early 2016. If your application requires the features of SPDY, we recommend you look instead at HTTP/2.</p>\""
-  },
-  {
-    "name": "Superficial private cloud",
-    "ring": "hold",
-    "quadrant": "platforms",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Composer",
-    "ring": "adopt",
-    "quadrant": "tools",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p>Although the idea of dependency management is not new and considered to be a fundamental development practice, it is not widely adopted by the PHP community. <strong><a href=\"\"https://getcomposer.org\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Composer<span class=\"\"pop-out-icon\"\"></span></a></strong> is a tool for dependency management in PHP. It is strongly influenced by tools from other technology stacks like Node's npm and Ruby's Bundler. We are now seeing wide adoption across PHP projects and it is fairly mature. You can still have to do some shims for internal libraries, you can use it for most external libraries.</p>\""
-  },
-  {
-    "name": "Mountebank",
-    "ring": "adopt",
-    "quadrant": "tools",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p>Good testing of components in an enterprise system is critical and with increased emphasis on service-based separation and deployment automation—critical factors for success with microservices—better tooling in this space is needed. The industry term “service virtualization” refers to tools that can emulate specific components in such an environment. We have seen great success with <a href=\"\"http://www.mbtest.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Mountebank</strong><span class=\"\"pop-out-icon\"\"></span></a>, a lightweight tool for stubbing and mocking HTTP, HTTPS, SMTP and TCP.</p>\""
-  },
-  {
-    "name": "Postman",
-    "ring": "adopt",
-    "quadrant": "tools",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p><strong><a href=\"\"http://www.getpostman.com/features\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Postman<span class=\"\"pop-out-icon\"\"></span></a></strong> is a Chrome extension that acts as a REST client in your browser, allowing you to create requests and inspect responses.  It is a useful tool when developing an API or implementing a client to call an existing API. Postman supports OAuth1 and OAuth2 tokens allowing addition of them to requests where necessary. The response is available as a prettified JSON or XML. With Postman you are able to retrieve a history of requests performed to quickly edit and test the API response to different data. It offers a suite of extensions that allow you to use it as a full-blown test runner too, although we discourage the record and replay style of testing it promotes.</p>\""
-  },
-  {
-    "name": "Browsersync",
-    "ring": "trial",
-    "quadrant": "tools",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Carthage",
-    "ring": "trial",
-    "quadrant": "tools",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Consul",
-    "ring": "trial",
-    "quadrant": "tools",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p>We continue to be impressed with <strong><a href=\"\"http://consul.io\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Consul<span class=\"\"pop-out-icon\"\"></span></a></strong>, a service discovery tool supporting both DNS and HTTP-based discovery mechanisms. It goes beyond other discovery tools by providing customizable health-checks for registered services, ensuring that unhealthy instances are marked accordingly. More tools have emerged to work with Consul to make it even more powerful. <a href=\"\"https://github.com/hashicorp/consul-template\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Consul Template<span class=\"\"pop-out-icon\"\"></span></a> enables configuration files to be populated with information from Consul, making things like client-side load balancing using mod_proxy much easier. In the world of Docker, <a href=\"\"https://github.com/gliderlabs/registrator\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">registrator<span class=\"\"pop-out-icon\"\"></span></a> can automatically register docker containers as they appear with Consul with extremely little effort, making it much easier to manage container-based setups.</p>\""
-  },
-  {
-    "name": "Docker Toolbox",
-    "ring": "trial",
-    "quadrant": "tools",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"<p>Previously, we recommended <a href=\"\"https://www.thoughtworks.com/radar/tools/boot2docker\"\">boot2docker</a> as a way of easily running Docker on your local Windows or OS X machine. <strong><a href=\"\"https://www.docker.com/toolbox\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Docker Toolbox<span class=\"\"pop-out-icon\"\"></span></a></strong> now replaces boot2docker, adding some tooling as well. Now included is <a href=\"\"https://kitematic.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Kitematic<span class=\"\"pop-out-icon\"\"></span></a> for managing your containers, as well as <a href=\"\"https://docs.docker.com/compose/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Docker Compose<span class=\"\"pop-out-icon\"\"></span></a> for managing multi-Docker setup (Mac only). It can be used safely as a drop-in replacement for boot2docker, and it will even handle the upgrade for you.</p>\""
-  },
-  {
-    "name": "Gitrob",
-    "ring": "trial",
-    "quadrant": "tools",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"<p>Safely storing secrets such as passwords and access tokens in code repositories is now supported by a growing number of tools - for example, <a href=\"\"https://github.com/AGWA/git-crypt\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">git-crypt<span class=\"\"pop-out-icon\"\"></span></a> and <a href=\"\"https://www.thoughtworks.com/radar/tools/blackbox\"\">Blackbox</a>, which we mentioned in the previous Technology Radar. Despite the availability of these tools, it is still, unfortunately, all too common that secrets are stored unprotected. In fact, it is so common that automated exploit software is used to find AWS credentials and spin up EC2 instances to mine Bitcoins, leaving the attacker with the Bitcoins and the account owner with the bill. <a href=\"\"https://github.com/michenriksen/gitrob\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Gitrob</strong><span class=\"\"pop-out-icon\"\"></span></a> takes a similar approach and scans an organization’s GitHub repositories, flagging all files that might contain sensitive information that shouldn’t have been pushed to the repository. This is obviously a reactive approach. Gitrob can only alert teams when it is (almost) too late. For this reason, Gitrob can only ever be a complementary tool, to minimize damage.</p>\""
-  },
-  {
-    "name": "GitUp",
-    "ring": "trial",
-    "quadrant": "tools",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Hamms",
-    "ring": "trial",
-    "quadrant": "tools",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p>Many many wonderful stories of failure in our industry are caused by the assumption that networks are always reliable and servers respond quickly and correctly all the time. <a href=\"\"https://github.com/kevinburke/hamms\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Hamms</strong><span class=\"\"pop-out-icon\"\"></span></a> is an interesting open-source tool which acts as a badly behaved HTTP server, triggering a number of failures including connection failures or slow and/or malformed responses. It may be useful for testing that your software handles failures gracefully.</p>\""
-  },
-  {
-    "name": "IndexedDB",
-    "ring": "trial",
-    "quadrant": "tools",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p>As single page applications and offline-first become more viable and widespread there is a growing need to persist data in the web browser. Local Storage is very easy to use and well supported by the web browsers. For more complex use cases, there is IndexedDB. While it can be a good solution we recommend to only use it when absolutely necessary, due to the increase in complexity and a somewhat clumsy API. We have also had positive experience with the <a href=\"\"https://github.com/mozilla/localForage\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">localForage<span class=\"\"pop-out-icon\"\"></span></a> framework that provides an abstraction layer over the various persistence solutions.</p>\""
-  },
-  {
-    "name": "Polly",
-    "ring": "trial",
-    "quadrant": "tools",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p>Several of our teams working on .NET projects have recommended <strong><a href=\"\"https://github.com/michael-wolfenden/Polly\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Polly<span class=\"\"pop-out-icon\"\"></span></a></strong> as being useful in building microservice-based systems. It encourages the fluent expression of transient exception-handling policies and the Circuit Breaker pattern, including policies such as Retry, Retry Forever and Wait and Retry. Similar libraries already exist in other languages (Hystrix for Java for example), and Polly is a welcome addition from the .NET community. Integrating well with Polly is <strong><a href=\"\"https://www.thoughtworks.com/radar/tools/brighter\"\">Brighter</a></strong>. Brighter is another small open source .Net library that provides scaffolding to implement command invocation. Combining the two libraries provides useful circuit-breaking functionality especially in the context of the Ports and Adapters pattern and CQRS. Although they can be used separately, in the wild our teams find they work well together.</p>\""
-  },
-  {
-    "name": "REST-assured",
-    "ring": "trial",
-    "quadrant": "tools",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p><strong><a href=\"\"https://code.google.com/p/rest-assured/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">REST-assured<span class=\"\"pop-out-icon\"\"></span></a></strong> is a Java domain specific language for testing and validating RESTful services. It simplifies the testing of REST based services built on top of HTTP Builder. REST-assured supports the different REST requests and can be used to validate and verify the responses from the APIs. It also provides a JSON schema validation and can thus be used to verify that the endpoints are returning the right types of expected data.</p>\""
-  },
-  {
-    "name": "Sensu",
-    "ring": "trial",
-    "quadrant": "tools",
-    "isNew": "FALSE",
-    "status": "moved in",
-    "description": "\"<p>Many monitoring tools are built around the concept of the machine or instance. The increasing use of patterns like <a href=\"\"http://martinfowler.com/bliki/PhoenixServer.html\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Phoenix Server<span class=\"\"pop-out-icon\"\"></span></a> and tools like <a href=\"\"https://www.docker.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Docker<span class=\"\"pop-out-icon\"\"></span></a> mean this is an increasingly unhelpful way to model infrastructure: Instances are becoming transient while services are the things that persist. <a href=\"\"https://sensu.io/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Sensu</strong><span class=\"\"pop-out-icon\"\"></span></a> allows an instance to register itself as playing a particular role, and Sensu then monitors it on that basis. Over time, different instances playing that role may come and go. Given these factors and the increasing maturity of the tool, we felt it was time to bring Sensu back on to the radar.</p>\""
-  },
-  {
-    "name": "SysDig",
-    "ring": "trial",
-    "quadrant": "tools",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "ZAP",
-    "ring": "trial",
-    "quadrant": "tools",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p>The <strong><a href=\"\"https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">ZED Attack Proxy (ZAP)<span class=\"\"pop-out-icon\"\"></span></a></strong> is a project from OWASP which allows you to probe an existing site for security vulnerabilities in an automated fashion. It can be used as part of periodic security testing, or else integrated into a CD pipeline to provide ongoing checks for common vulnerabilities. The use of a tool like ZAP doesn’t replace the need to think carefully about security and do other sorts of more thorough testing, but as another tool to help ensure our systems are more secure it’s a good addition to the toolbox.</p>\""
-  },
-  {
-    "name": "Concourse",
-    "ring": "assess",
-    "quadrant": "tools",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Espresso",
-    "ring": "assess",
-    "quadrant": "tools",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"<p><strong><a href=\"\"https://developer.android.com/training/testing/espresso\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Espresso<span class=\"\"pop-out-icon\"\"></span></a></strong> is an Android functional-testing tool. Its small-core API hides the messy implementation details and helps in writing concise tests, with faster and reliable test execution.</p>\""
-  },
-  {
-    "name": "Gauge",
-    "ring": "assess",
-    "quadrant": "tools",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"<p><strong><a href=\"\"https://gauge.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Gauge<span class=\"\"pop-out-icon\"\"></span></a></strong> is a lightweight cross-platform test-automation tool. Specifications are written in free-form Markdown, so test cases can be written in the business language and can be incorporated into any existing documentation format. Supported languages are implemented as plugins to a single core implementation, which ensures consistency across language implementations. This tool, open sourced by ThoughtWorks, also supports parallel execution out of the box for all supported platforms.</p>\""
-  },
-  {
-    "name": "Gor",
-    "ring": "assess",
-    "quadrant": "tools",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p><a href=\"\"https://github.com/buger/gor\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Gor</strong><span class=\"\"pop-out-icon\"\"></span></a> is an open-source tool for capturing and replaying live HTTP traffic into a test environment in order to continuously test your system with real data. It can be used to increase confidence in code deployments, configuration changes and infrastructure changes.</p>\""
-  },
-  {
-    "name": "ievms",
-    "ring": "assess",
-    "quadrant": "tools",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Let's Encrypt",
-    "ring": "assess",
-    "quadrant": "tools",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"<p>Although more sites every day are implementing HTTPS to help protect their own users and improve the integrity of the web as a whole, there are many more sites to go. In addition, we see more and more people using HTTPS within their enterprises, to provide additional security guarantees. One of the main blockers to wider adoption has been the process of getting a certificate in the first place. Aside from the cost, the process itself is far from slick. <a href=\"\"https://letsencrypt.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Let’s Encrypt</strong><span class=\"\"pop-out-icon\"\"></span></a>, a new Certificate Authority, aims to solve all this. First, it provides certificates for free. Second, and arguably more important, it also provides an extremely easy-to-use command-line API, making it easy to fully automate the process of issuing, upgrading and installing certificates. We think that Let’s Encrypt, in beta at the moment, has the chance to be revolutionary in terms of helping more of the web get on to HTTPS, and at the same time showing what good, automatable tools for the security-conscious should look like.</p>\""
-  },
-  {
-    "name": "Pageify",
-    "ring": "assess",
-    "quadrant": "tools",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"<p><strong><a href=\"\"https://github.com/paramadeep/pageify\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Pageify<span class=\"\"pop-out-icon\"\"></span></a></strong> is a Ruby library for building page objects for UI automation tests, focusing on faster test execution and code readability. It offers simple APIs to dynamically define, operate and assert on the page objects, allowing readable code even when handling elements with complex hierarchies in the DOM. It bundles integration for <strong>WebDriver</strong> and <strong>Capybara</strong>.</p>\""
-  },
-  {
-    "name": "Prometheus",
-    "ring": "assess",
-    "quadrant": "tools",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"\""
-  },
-  {
-    "name": "Quick",
-    "ring": "assess",
-    "quadrant": "tools",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p><strong><a href=\"\"https://github.com/Quick/Quick\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Quick<span class=\"\"pop-out-icon\"\"></span></a></strong> is a testing framework for Swift and Objective-C, which comes bundled with <strong>Nimble</strong> , a matcher framework for tests. Quick helps verify the behavior of Swift and Objective-C programs. Quick has the same syntactic flavour as <strong>RSpec</strong> and <strong>Jasmine</strong> and is easy to set up. It is very organized, allows for assertion of types and makes it easy to test asynchronous code.</p>\""
-  },
-  {
-    "name": "RAML",
-    "ring": "assess",
-    "quadrant": "tools",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Security Monkey",
-    "ring": "assess",
-    "quadrant": "tools",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p><strong><a href=\"\"https://github.com/Netflix/security_monkey\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Security Monkey<span class=\"\"pop-out-icon\"\"></span></a></strong> is another tool in Netflix’s Simian Army, which is a suite of tools designed to ensure that systems are being built in a resilient fashion. As well as providing a (configurable) assessment of any potential security vulnerabilities in your AWS setup, it can also be used to monitor changes on an ongoing basis, alerting different groups as required. It does overlap in some ways with AWS’ own <a href=\"\"https://aws.amazon.com/premiumsupport/trustedadvisor/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Trusted Advisor Report<span class=\"\"pop-out-icon\"\"></span></a> and <a href=\"\"http://aws.amazon.com/cloudtrail/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">CloudTrail<span class=\"\"pop-out-icon\"\"></span></a> service, as it was developed prior to both these services being made generally available, but its capabilities do go beyond these offerings. If either of those services don’t quite meet your requirements, Security Monkey is worth a look.</p>\""
-  },
-  {
-    "name": "Sleepy Puppy",
-    "ring": "assess",
-    "quadrant": "tools",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Visual Studio Code",
-    "ring": "assess",
-    "quadrant": "tools",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"<p><strong><a href=\"\"https://code.visualstudio.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Visual Studio Code<span class=\"\"pop-out-icon\"\"></span></a></strong> is Microsoft’s free IDE editor, available across platforms. We find the version-control integration with Git very beneficial to promoting continuous integration practices. Visual Studio Code also provides a means of integrating with external tools via tasks, with autodetection of grunt/gulp tasks eliminating the need for running grunt/gulp tasks via terminals and simply using the editor. With the growth of the Docker ecosystem, this IDE offers support for the dockerfile with snippets and definitions of valid commands.</p>\""
-  },
-  {
-    "name": "Citrix for development",
-    "ring": "hold",
-    "quadrant": "tools",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p>Many organizations are still forcing distributed or offshore development teams to use <strong>Citrix remote desktop for development</strong>. Although this provides a simple security model – assets supposedly never leave the organization’s servers - using remote desktops for development absolutely cripples developer productivity. There’s not much point paying a cheaper hourly rate for developers if you’re going to impose both the distribution and remote-desktop burdens on them, and we wish more offshore vendors would admit these drawbacks to their clients. It’s much better to use either a 'clean room' secured offshore environment where local development can be done, or a <a href=\"\"https://www.thoughtworks.com/radar/techniques/hosted-ide-s\"\">Hosted IDE</a> (e.g. <a href=\"\"https://www.thoughtworks.com/radar/tools/ievms\"\">ievms</a>)</p>\""
-  },
-  {
-    "name": "ES6",
-    "ring": "adopt",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Nancy",
-    "ring": "adopt",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p>Since we last talked about <strong><a href=\"\"http://nancyfx.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Nancy<span class=\"\"pop-out-icon\"\"></span></a></strong> on the technology radar it has become the default choice on our .NET projects. Architectures centred around small, vertical slices and microservices simply require light-weight deployment options and low ceremony tooling.</p>\""
-  },
-  {
-    "name": "Swift",
-    "ring": "adopt",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "FALSE",
-    "status": "moved in",
-    "description": "\"<p>A year after its public debut, <a href=\"\"https://developer.apple.com/swift/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Swift</strong><span class=\"\"pop-out-icon\"\"></span></a> is now our default choice for development in the Apple ecosystem. With the recent release of Swift 2, the language approaches a level of maturity that provides the stability and performance required for most projects. Swift still has issues, especially around tool support, refactoring and testing. However, we feel that these are not substantial enough to warrant avoiding Swift. At the same time, porting large, existing Objective-C codebases is unlikely to pay off. The announcement that Swift will become open source software is a further positive sign. We are hopeful that this will not just be another dumping of internally developed code into a public repository, because Apple has clearly stated that community contributions are encouraged and will be accepted.</p>\""
-  },
-  {
-    "name": "Enlive",
-    "ring": "trial",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "React.js",
-    "ring": "trial",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p>One benefit of the ongoing avalanche of front-end JavaScript frameworks is that occasionally a new idea crops up that makes us think. <a href=\"\"http://facebook.github.io/react/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>React.js</strong><span class=\"\"pop-out-icon\"\"></span></a> is a UI/view framework in which JavaScript functions generate HTML in a reactive data flow. It differs significantly from frameworks like <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/angularjs\"\">AngularJS</a> in that it only allows one-way data bindings, greatly simplifying the rendering logic. We have seen several smaller projects achieve success with React.js, and developers are drawn to its clean, composable approach to componentization.</p>\""
-  },
-  {
-    "name": "SignalR",
-    "ring": "trial",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Spring Boot",
-    "ring": "trial",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p><a href=\"\"http://projects.spring.io/spring-boot\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Spring Boot</strong><span class=\"\"pop-out-icon\"\"></span></a> allows easy setup of standalone Spring-based applications. It's ideal for pulling up new microservices and easy to deploy. It also makes data access less of a pain, thanks to the JPA mappings through Spring Data. We like that Spring Boot simplifies Java services built with Spring but have learned to be cautious of the many dependencies. Spring still lurks just beneath the surface. If you’re writing microservices with Java, you might also consider using <strong>Dropwizard</strong> or a microframework like <a href=\"\"http://sparkjava.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Spark<span class=\"\"pop-out-icon\"\"></span></a> to get the benefits of Spring Boot without the enormous weight of Spring.</p>\""
-  },
-  {
-    "name": "Axon",
-    "ring": "assess",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"<p>While we still have some reservations about <a href=\"\"http://martinfowler.com/bliki/CQRS.html\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">CQRS<span class=\"\"pop-out-icon\"\"></span></a> as a general pattern, the approach can work very well in specific places. In those specific situations, however, a lot of work is left to the developer to properly execute CQRS. <strong><a href=\"\"http://www.axonframework.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Axon<span class=\"\"pop-out-icon\"\"></span></a></strong> is a framework that can help with this on the JVM, and we’ve used it with some success. Although it certainly can’t be considered a perfect solution right now, it continues to evolve and may make much more sense than trying to write everything from scratch.</p>\""
-  },
-  {
-    "name": "Ember.js",
-    "ring": "assess",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p>Widespread usage of AngularJS continues on ThoughtWorks projects, although not every experience is positive. We continue to advise teams to assess whether the additional complexity of a single-page JavaScript application is necessary to meet their requirements.  We also recommend assessing alternative frameworks, and in this radar edition we highlight <a href=\"\"http://emberjs.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Ember.js</strong><span class=\"\"pop-out-icon\"\"></span></a> which is growing in popularity within ThoughtWorks.  Ember is praised for its approach of opinionated convention over configuration, responsive core team of committers, performance, and build tooling support via Ember CLI.</p>\""
-  },
-  {
-    "name": "Frege",
-    "ring": "assess",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"<p>Following many other programming languages, one of the language geeks’ absolute favourites, <a href=\"\"https://www.haskell.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Haskell<span class=\"\"pop-out-icon\"\"></span></a>, is now also available on the JVM in the form of <a href=\"\"https://github.com/Frege/frege\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Frege</strong><span class=\"\"pop-out-icon\"\"></span></a>. This brings a purely functional programming language onto the platform, allowing for easy interoperability with other JVM languages and libraries.</p>\""
-  },
-  {
-    "name": "HyperResource",
-    "ring": "assess",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"<p><strong><a href=\"\"http://hyperresource.com/doc/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">HyperResource<span class=\"\"pop-out-icon\"\"></span></a></strong> is a Ruby framework for building a RESTful API client. The framework accepts JSON in <strong>HAL</strong> format and dynamically generates a model object complete with hypermedia links. Although the framework is still in its infancy, we like that it embraces <a href=\"\"http://martinfowler.com/articles/richardsonMaturityModel.html\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Richardson level 3 REST<span class=\"\"pop-out-icon\"\"></span></a> for better service discoverability and self-documenting protocols.</p>\""
-  },
-  {
-    "name": "Material UI",
-    "ring": "assess",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"<p><a href=\"\"http://material-ui.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Material UI</strong><span class=\"\"pop-out-icon\"\"></span></a> provides reusable components for use in <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/react-js\"\">React</a> applications that implement Google's Material Design language. Filling a similar space to <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/twitter-bootstrap\"\">Twitter Bootstrap</a>, it gets you up and running quickly but doesn't have the same drawbacks as your application grows. <a href=\"\"http://elemental-ui.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Elemental UI<span class=\"\"pop-out-icon\"\"></span></a> is worth investigating as an alternative.</p>\""
-  },
-  {
-    "name": "OkHttp",
-    "ring": "assess",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "React Native",
-    "ring": "assess",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"<p>Yet another entrant into the cross-platform mobile development world, Facebook’s <a href=\"\"https://facebook.github.io/react-native/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>React Native</strong><span class=\"\"pop-out-icon\"\"></span></a> brings the React.js programming model to iOS and Android developers. React Native programs are written in JavaScript, but unlike a hybrid framework such as Ionic, React Native gives developers access to native UI components on the target platform. This is an approach we’ve seen before (e.g., <a href=\"\"http://calatrava.github.io/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Calatrava<span class=\"\"pop-out-icon\"\"></span></a>), but React Native has already inspired a substantial developer community and builds on the momentum generated by React.js. This framework could play a significant role in the future of mobile app development.</p>\""
-  },
-  {
-    "name": "TLA+",
-    "ring": "assess",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"<p>Building systems using microservices requires us to think more deeply about failure isolation and testing. *<em><a href=\"\"https://lamport.azurewebsites.net/tla/tla.html\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">TLA+<span class=\"\"pop-out-icon\"\"></span></a> *</em>is a formal specification language that can be useful in both these scenarios. For failure isolation, TLA+ can be used to identify invariants in your system that can be monitored directly. An invariant can be the ratio of number of requests to one service to the number of requests to a second service, for example. Any change in this ratio would lead to an alert. TLA+ is also being used to identify subtle design flaws in distributed systems. Amazon, for example, used model-checking based on a formal specification written in TLA+ to identify subtle bugs in Dynamo DB before it was released to the public. For most systems, the investment required to create the formal specification and then perform model checking is probably too great; however, for critical systems - complex ones, or those with many users - we think it’s very valuable to have another tool in our toolbox.</p>\""
-  },
-  {
-    "name": "Traveling Ruby",
-    "ring": "assess",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"<p><a href=\"\"https://github.com/FooBarWidget/traveling-ruby\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Traveling Ruby</strong><span class=\"\"pop-out-icon\"\"></span></a> makes it possible to distribute portable, ready-to-run, platform-agnostic Ruby binaries without the need to install an interpreter, packages or additional gems. It decouples running Ruby applications from the development environment they run in.</p>\""
-  }
+  [
+    "Consumer-driven contract testing",
+    "adopt",
+    "techniques",
+    "FALSE",
+    "no change",
+    "\"<p>When two independently developed services are collaborating, changes to the supplier’s API can cause failures for all its consumers. Consuming services usually cannot test against live suppliers since such tests are slow and <a href=\"\"http://martinfowler.com/articles/nonDeterminism.html#RemoteServices\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">brittle<span class=\"\"pop-out-icon\"\"></span></a>, so it’s best to use <a href=\"\"http://martinfowler.com/bliki/TestDouble.html\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Test Doubles<span class=\"\"pop-out-icon\"\"></span></a>, leading to the danger that the test doubles get out of sync with the real supplier service. Consumer teams can protect themselves from these failures by using <a href=\"\"http://martinfowler.com/bliki/IntegrationContractTest.html\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">integration contract tests<span class=\"\"pop-out-icon\"\"></span></a> – tests that compare actual service responses with test values. While such contract tests are valuable, they are even more useful when consuming services provide these tests to the supplier, who can then run all their consumers’ contract tests to determine if their changes are likely to cause problems – adopting <a href=\"\"http://www.martinfowler.com/articles/consumerDrivenContracts.html\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">consumer-driven contracts<span class=\"\"pop-out-icon\"\"></span></a>. Such <strong>consumer-driven contract tests</strong> are an essential part of a mature <a href=\"\"http://martinfowler.com/articles/microservice-testing/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">microservice testing<span class=\"\"pop-out-icon\"\"></span></a> portfolio.</p>\""
+  ],
+  [
+    "Decoupling deployment from release",
+    "adopt",
+    "techniques",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Generated infrastructure diagrams",
+    "adopt",
+    "techniques",
+    "FALSE",
+    "no change",
+    "\"<p>When we need a diagram that describes the current infrastructure or physical architecture we usually take to our favorite technical diagramming tool. If you are using the cloud or virtualization technologies this no longer makes sense, we can use the provided APIs to interrogate the actual infrastructure and generate a live, <strong>automated infrastructure diagram</strong> using simple tools like <a href=\"\"http://www.graphviz.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">GraphViz<span class=\"\"pop-out-icon\"\"></span></a> or by outputting SVG.</p>\""
+  ],
+  [
+    "NoPSD",
+    "adopt",
+    "techniques",
+    "FALSE",
+    "moved in",
+    "\"<p>'Just In Time Design' is an important and useful concept for visual design that the <a href=\"\"https://www.thoughtworks.com/p2magazine/issue02/continuous-design/\"\"><strong>NoPSD</strong></a> movement attempts to capture. You don't need to design the whole application or every UI element up front. Design things as you need them with as lightweight tools as you can use. We have seen a corresponding growth in simpler tools with faster learning curves, such as <a href=\"\"http://www.sketchapp.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Sketch</strong><span class=\"\"pop-out-icon\"\"></span></a>, as well as an increasing return to pen-and-paper (especially when paired with an existing robust <a href=\"\"https://www.thoughtworks.com/radar/techniques/living-css-style-guides\"\"><strong>digital style guide</strong></a>). Because of the limitations of flat mock-ups when you’re designing for screens, creating prototypes of varying fidelity with tools such as <a href=\"\"http://www.invisionapp.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Invision</strong><span class=\"\"pop-out-icon\"\"></span></a>, <a href=\"\"http://framerjs.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>FramerJS</strong><span class=\"\"pop-out-icon\"\"></span></a> and <strong>Origami</strong> - or simply HTML/CSS and a bit of JavaScript - has also become increasingly common and valuable for communicating design intent.</p>\""
+  ],
+  [
+    "Products over projects",
+    "adopt",
+    "techniques",
+    "FALSE",
+    "moved in",
+    "\"\""
+  ],
+  [
+    "Threat modeling",
+    "adopt",
+    "techniques",
+    "FALSE",
+    "moved in",
+    "\"<p>With the number of high-profile security breaches in the past months, software development teams no longer need convincing that they must place an emphasis on writing secure software and dealing with their users’ data in a responsible way. The teams face a steep learning curve, though, and the vast number of potential threats - ranging from organized crime and government spying to teenagers who attack systems 'for the lulz' can be overwhelming. <a href=\"\"https://www.owasp.org/index.php/Category:Threat_Modeling\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Threat modeling</strong><span class=\"\"pop-out-icon\"\"></span></a> provides a set of techniques, mostly from a defensive perspective, that help you understand and classify potential threats. Turned into 'evil-user stories', threat models can give a team a manageable and effective approach to making their systems more secure.</p>\""
+  ],
+  [
+    "BEM",
+    "trial",
+    "techniques",
+    "TRUE",
+    "new",
+    "\"<p>Debugging CSS problems can be painful. How many times have you had to trawl through thousands of overridden styles to work out the source of your problem? This has led many of our teams to introduce various guidelines such as avoiding cascading and overrides, making styles opt-in and emphasizing thoughtful naming. <a href=\"\"http://getbem.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>BEM</strong><span class=\"\"pop-out-icon\"\"></span></a> is a simple CSS naming convention (standing for Block, Element, Modifier) that helps give semantic clarity and structure to your CSS. By using BEM, it becomes much easier to understand which CSS rules are influencing the appearance of an element and, more importantly, the intent of those rules. This approach can be seen as moving the OO lesson of favoring composition over inheritance to the world of CSS.</p>\""
+  ],
+  [
+    "BFF - Backend for frontends",
+    "trial",
+    "techniques",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Docker for builds",
+    "trial",
+    "techniques",
+    "TRUE",
+    "new",
+    "\"<p>One of the many innovative uses of <a href=\"\"https://www.docker.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Docker<span class=\"\"pop-out-icon\"\"></span></a> that we’ve seen on our projects is a technique to manage build-time dependencies. In the past, it was common to run build agents on an OS, augmented with dependencies needed for the target build. But with Docker it is possible to run the compilation step in an isolated environment complete with dependencies without contaminating the build agent. This technique of using <strong>Docker for builds</strong>  has proven particularly useful for compiling Golang binaries, and the <a href=\"\"https://github.com/CenturyLinkLabs/golang-builder\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">golang-builder<span class=\"\"pop-out-icon\"\"></span></a> container is available for this very purpose.</p>\""
+  ],
+  [
+    "Event Storming",
+    "trial",
+    "techniques",
+    "TRUE",
+    "new",
+    "\"<p><a href=\"\"http://ziobrando.blogspot.be/2013/11/introducing-event-storming.html\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Event Storming</strong><span class=\"\"pop-out-icon\"\"></span></a> is a useful way to do rapid “outside-in” domain modeling: starting with the events that occur in the domain rather than a static data model. Run as a facilitated workshop, it focuses on discovering key domain events, placing them along a timeline, identifying their triggers and then exploring their relationships. This approach is particularly useful for people taking a CQRS or <a href=\"\"https://www.thoughtworks.com/radar/techniques/event-sourcing\"\">Event Sourcing</a> approach. Getting the right people in the room is important - a blend of business and technical people who bring both the questions and the answers. Ensuring that you have enough wall space for modeling is the second key to success. Look to discover the big picture, with the goal of collectively understanding the domain in all of its complexity, before diving into solutions.</p>\""
+  ],
+  [
+    "Flux",
+    "trial",
+    "techniques",
+    "FALSE",
+    "moved in",
+    "\"\""
+  ],
+  [
+    "Idempotency filter",
+    "trial",
+    "techniques",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "iFrames for sandboxing",
+    "trial",
+    "techniques",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "NPM for all the things",
+    "trial",
+    "techniques",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Offline first web applications",
+    "trial",
+    "techniques",
+    "FALSE",
+    "no change",
+    "\"<p><strong>Offline first web applications</strong> provide the ability to design web applications for offline access by employing caching and updating mechanisms. The implementation requires a flag in the DOM to check whether the accessing device is offline or online, accessing local storage when offline, and synchronising data when online. All the major browsers now support an offline mode, which bootstraps the process of downloading and caching the resources such as HTML, CSS, JavaScript, images and other kinds of resources. There are some tools which help simplify offline first implementation such as <a href=\"\"http://hood.ie/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Hoodie</strong><span class=\"\"pop-out-icon\"\"></span></a>, and <a href=\"\"http://couchdb.apache.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>CouchDB</strong><span class=\"\"pop-out-icon\"\"></span></a> also offers ability to work with a locally deployed application on a local data storage.</p>\""
+  ],
+  [
+    "Phoenix Environments",
+    "trial",
+    "techniques",
+    "FALSE",
+    "moved in",
+    "\"\""
+  ],
+  [
+    "QA in production",
+    "trial",
+    "techniques",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Accumulate-only data",
+    "assess",
+    "techniques",
+    "FALSE",
+    "no change",
+    "\"<p>Immutable data structures are becoming more popular, with functional languages such as Clojure and Scala providing immutability by default. Immutability allows code to be more easily written, read and reasoned about. Using an <strong>accumulate-only data store</strong> can confer some of these benefits in the database layer, as well as make audit and historical querying simple. Implementation options vary, from specific accumulative data stores such as <a href=\"\"http://www.datomic.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Datomic<span class=\"\"pop-out-icon\"\"></span></a> to simply using an “append-don’t-update” approach with a traditional database. <strong>Accumulate-only</strong> is a design strategy whereby data is removed via retraction rather than update; <strong>append-only</strong> is an implementation technique.</p>\""
+  ],
+  [
+    "Bug bounties",
+    "assess",
+    "techniques",
+    "TRUE",
+    "new",
+    "\"<p>More and more organizations are starting to use <strong>bug bounties</strong> to encourage reporting of what are often security-related bugs, and in general help improve the quality of their software. To support these programs, companies like <a href=\"\"https://hackerone.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">HackerOne<span class=\"\"pop-out-icon\"\"></span></a> and <a href=\"\"https://bugcrowd.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">BugCrowd<span class=\"\"pop-out-icon\"\"></span></a> can help organizations manage this process more easily. We have limited experience with these offerings ourselves, but we like the idea of encouraging people to help come forward and highlight what can often be damaging vulnerabilities in an open and transparent way. It's worth noting that there might be some legal issues with encouraging users to find vulnerabilities in your software, so please do check that out first.</p>\""
+  ],
+  [
+    "Data Lake",
+    "assess",
+    "techniques",
+    "FALSE",
+    "no change",
+    "\"<p>A <a href=\"\"http://martinfowler.com/bliki/DataLake.html\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Data Lake</strong><span class=\"\"pop-out-icon\"\"></span></a> is an immutable data store of largely unprocessed 'raw' data, acting as a source for data analytics. Whereas the more familiar Data Warehouse filters and processes the data before storing it, the lake just captures the raw data, leaving it to the users of that data to carry out the particular analysis that they need. Examples include HDFS or HBase within a <a href=\"\"https://hadoop.apache.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Hadoop<span class=\"\"pop-out-icon\"\"></span></a>, <a href=\"\"http://spark.apache.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Spark<span class=\"\"pop-out-icon\"\"></span></a> or <a href=\"\"https://storm.apache.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Storm<span class=\"\"pop-out-icon\"\"></span></a> processing framework. Usually only a small group of data scientists work on the raw data, developing streams of processed data into lakeshore data marts for most users to query. A Data Lake should only be used for analytics and reporting. For collaboration between operational systems we prefer using services designed for that purpose.</p>\""
+  ],
+  [
+    "Hosted IDE's",
+    "assess",
+    "techniques",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Monitoring of invariants",
+    "assess",
+    "techniques",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Reactive architectures",
+    "assess",
+    "techniques",
+    "FALSE",
+    "no change",
+    "\"<p>The techniques of functional reactive programming have steadily gained in popularity over recent years, and we’re seeing increased interest in extending this concept to distributed systems architectures. Partly inspired by “<a href=\"\"http://www.reactivemanifesto.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">The Reactive Manifesto<span class=\"\"pop-out-icon\"\"></span></a>”, these <strong>reactive architectures</strong> are based on a one-way, asynchronous flow of immutable events through a network of independent processes (perhaps implemented as microservices). In the right setting, these systems are scalable and resilient and decrease the coupling between individual processing units. However, architectures based entirely on asynchronous message passing introduce complexity and often rely on proprietary frameworks. We recommend assessing the performance and scalability needs of your system before committing to this as a default architectural style.</p>\""
+  ],
+  [
+    "Gitflow",
+    "hold",
+    "techniques",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "High performance envy/web scale envy",
+    "hold",
+    "techniques",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Microservice envy",
+    "hold",
+    "techniques",
+    "FALSE",
+    "no change",
+    "\"<p>We remain convinced that microservices can offer significant advantages to organizations, in terms of improving team autonomy and faster frequency of change. The additional complexity that comes from distributed systems requires an additional level of maturity and investment. We are concerned that some teams are rushing in to adopting microservices without understanding the changes to development, test, and operations that are required to do them well. Our general advice remains simple. Avoid <strong>microservice envy</strong>  and start with one or two services before rushing headlong into developing more, to allow your teams time to adjust and understand the right level of granularity.</p>\""
+  ],
+  [
+    "Pace-layered Application Strategy",
+    "hold",
+    "techniques",
+    "FALSE",
+    "moved out",
+    "\"<p>Gartner's <strong>Pace-layered Application Strategy</strong> approach appears to be creating an unhelpful focus on the idea of layers within an architecture. We find thinking about the pace of change within different <strong>business capabilities</strong> (which can be made up of several architectural layers) to be a more useful concept. The danger in focusing on layers is that many types of change cut across multiple layers. For example, being able to add new class of stock to a website is not just about having an easy-to-change CMS; you also need to update the database, integration points, warehouse systems, etc. The recognition that some parts of an architecture need to be more maneuverable than others is useful. However, a focus on layers is proving unhelpful.</p>\""
+  ],
+  [
+    "Programming in your CI/CD tool",
+    "hold",
+    "techniques",
+    "FALSE",
+    "no change",
+    "\"<p>We still see teams configure their CI and CD tools by directly embedding complex multi-line commands directly into the configuration of the tool. Often these embedded commands also contains steps that would only ever take effect in the build environment including things such as CI specific environment variables, steps that would create/modify files and templates only in the CI environment etc. This makes the build environment a special beast - whose results cannot be duplicated locally on a developer's machine.</p><br><br><p>This is extremely problematic because the CI/CD tool, which is supposed to expose problems in your code, itself becomes a complex beast whose behavior is hard to debug and whose results are hard to replicate.</p><br><br><p>The way to avoid <strong>programming in your CI/CD tool</strong> is to extract the complexities of the build process from the guts of the tool and into a simple script which can be invoked by a single command. This script can then be executed on any developer workstation and therefore eliminates the privileged/singular status of the build environment.</p>\""
+  ],
+  [
+    "SAFe™",
+    "hold",
+    "techniques",
+    "FALSE",
+    "no change",
+    "\"\""
+  ],
+  [
+    "Separate DevOps team",
+    "hold",
+    "techniques",
+    "FALSE",
+    "no change",
+    "\"<p>In the last radar issue we advised against creating a <strong>separate DevOps team</strong> , as DevOps is about creating a culture of shared responsibility in delivery teams. We recommend embedding operations skills into delivery teams to reduce friction and deliver better outcomes. However where there is a need for significant investment in tooling and automation, we do see a role for a Delivery Engineering team.  Rather than being a helpdesk, these teams build tooling and enable teams to deploy, monitor, and maintain their own production environments.</p>\""
+  ],
+  [
+    "TOTP Two-Factor Authentication",
+    "adopt",
+    "platforms",
+    "FALSE",
+    "moved in",
+    "\"\""
+  ],
+  [
+    "Apache Mesos",
+    "trial",
+    "platforms",
+    "FALSE",
+    "moved in",
+    "\"\""
+  ],
+  [
+    "Apache Spark",
+    "trial",
+    "platforms",
+    "FALSE",
+    "no change",
+    "\"<p><a href=\"\"https://spark.apache.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Apache Spark</strong><span class=\"\"pop-out-icon\"\"></span></a> has been steadily gaining ground as a fast and general engine for large-scale data processing. The engine is written in Scala and is well suited for applications that reuse a working set of data across multiple parallel operations. It’s designed to work as a standalone cluster or as part of Hadoop YARN cluster. It can access data from sources such as HDFS, Cassandra, S3 etc. Spark also offers many higher level operators in order to ease the development of data parallel applications. As a generic data processing platform it has enabled development of many higher level tools such as interactive SQL (Spark SQL), real time streaming (Spark Streaming), machine learning library (MLib), R-on-Spark etc.</p>\""
+  ],
+  [
+    "AWS Lambda",
+    "trial",
+    "platforms",
+    "TRUE",
+    "new",
+    "\"<p>AWS releases a huge number of new features on what seems like a monthly basis, so it can sometimes be hard for any new service offering to rise above the noise, but <strong><a href=\"\"https://aws.amazon.com/lambda/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Lambda<span class=\"\"pop-out-icon\"\"></span></a></strong> certainly manages to attract notice. Initially just supporting JavaScript, but now adding support for JVM-based applications (with more no doubt to follow), Lambda allows you to fire up very short-lived processes either in reaction to an event, or via a call from the related <a href=\"\"https://aws.amazon.com/api-gateway/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">API Gateway<span class=\"\"pop-out-icon\"\"></span></a>. For stateless services, this means you don’t need to worry about running any long-lived machines, potentially reducing costs and improving security. Despite other forays into the PaaS space by AWS, Lambda looks the closest to getting this right.</p>\""
+  ],
+  [
+    "Cloudera Impala",
+    "trial",
+    "platforms",
+    "FALSE",
+    "no change",
+    "\"<p>For a while now the Hadoop community has been trying to bring low-latency, interactive SQL capability to the Hadoop platform (better known as SQL-on-Hadoop). This has led to a few open source systems such as Cloudera Impala, Apache Drill, Facebook’s Presto etc being developed actively through 2014. We think the SQL-on-Hadoop trend signals an important shift as it changes Hadoop's proposition from being a batch oriented technology that was complementary to databases into something that could compete with them.  <a href=\"\"http://www.cloudera.com/content/cloudera/en/products-and-services/cdh/impala.html\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Cloudera Impala</strong><span class=\"\"pop-out-icon\"\"></span></a> was one of the first SQL-on-Hadoop platforms. It is a distributed, massively-parallel, C++ based query engine. The core component of this platform is the Impala daemon that coordinates the execution of the SQL query across one or more nodes of the Impala cluster. Impala is designed to read data from files stored on HDFS in all popular file formats. It leverages Hive's metadata catalog, in order to share databases and tables between the two database platforms. Impala comes with a shell as well as JDBC and ODBC drivers for applications to use.</p>\""
+  ],
+  [
+    "Fastly",
+    "trial",
+    "platforms",
+    "TRUE",
+    "new",
+    "\"<p><strong><a href=\"\"https://www.fastly.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Fastly<span class=\"\"pop-out-icon\"\"></span></a></strong>, one of a number of CDNs on the market, has a large and growing following on ThoughtWorks projects and is used by many web-scale household names, such as GitHub and Twitter. Its feature set, speed and price point combine to make it a very attractive option when you’re looking for an edge caching solution. We have also seen significant cost savings on projects that move to this platform from another CDN. If you are in the market for a CDN, you could do worse than investigate this one.</p>\""
+  ],
+  [
+    "H2O",
+    "trial",
+    "platforms",
+    "FALSE",
+    "moved in",
+    "\"<p>Predictive analytics are used in more and more products, often directly in end user-facing functionality. <a href=\"\"http://h2o.ai/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>H2O</strong><span class=\"\"pop-out-icon\"\"></span></a> is an interesting open source package (with a startup behind it) that makes predictive analytics accessible to development teams, offering straightforward use of a wide variety of analytics, great performance and easy integration on JVM-based platforms. At the same time it integrates with the data scientists’ favorite tools, R and Python, as well as Hadoop and Spark.</p>\""
+  ],
+  [
+    "HSTS",
+    "trial",
+    "platforms",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    ".NET Core",
+    "assess",
+    "platforms",
+    "FALSE",
+    "no change",
+    "\"<p><strong><a href=\"\"https://github.com/dotnet/coreclr\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">CoreCLR<span class=\"\"pop-out-icon\"\"></span></a></strong> and** <a href=\"\"https://github.com/dotnet/corefx\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">CoreFX<span class=\"\"pop-out-icon\"\"></span></a>** is the core platform and framework for .NET. Although not new, they have recently been open sourced by Microsoft. A key change is that these dependencies are bin-deployable, they do not need to be installed on a machine in advance.  This eases side-by-side deployments, allowing applications to use different framework versions without conflicts. Something written in .NET is then an implementation detail, you can install a .NET dependency into any environment. A .NET tool is no different than something written in C from an external dependency perspective, making it a much more attractive option for general purpose applications and utilities. CoreFX is also being factored into individual NuGet dependencies, so that applications can pull what they need, keeping the footprint for .NET applications and libraries small and making it easier to replace part of the framework.</p>\""
+  ],
+  [
+    "Apache Kafka",
+    "assess",
+    "platforms",
+    "FALSE",
+    "no change",
+    "\"<p>Many recent developments in enterprise software revolve around asynchronous sequences of immutable event sequences as opposed to synchronous, point-to-point requests that modify state. <a href=\"\"http://kafka.apache.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Apache</strong>   <strong>Kafka</strong><span class=\"\"pop-out-icon\"\"></span></a> is an open-source messaging framework that supports this architectural style by publishing ordered message feeds to many independent, lightweight consumers. Kafka’s unique design allows the number of consumers to scale while maintaining strong ordering on the messages.</p>\""
+  ],
+  [
+    "Apache Kylin",
+    "assess",
+    "platforms",
+    "FALSE",
+    "no change",
+    "\"<p><a href=\"\"http://www.kylin.io/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Apache Kylin</strong><span class=\"\"pop-out-icon\"\"></span></a> is an open source analytics solution from eBay Inc. that enables SQL based multidimensional analysis (OLAP) on very large datasets. Kylin is intended to be a Hadoop based hybrid OLAP (HOLAP) solution that will eventually support both MOLAP and ROLAP style multidimensional analysis. With Kylin you can define cubes using a Cube Designer and initiate an offline process that builds these cubes. The offline process performs a pre-join step to join facts and dimension tables into a flattened out structure. This is followed by a pre-aggregation phase where individual cuboids are built using Map Reduce jobs. The results are stored in HDFS sequence files and are later loaded into HBase. The data requests can originate from SQL submitted using a SQL-based tool. The query engine (based on <strong>Apache Calcite</strong> ), determines if the target dataset exists in HBase. If so, the engine directly accesses the target data from HBase and returns the result with sub-second latency. If not, the engine routes the queries to <strong>Hive</strong> (or any other SQL on Hadoop solution enabled on the cluster).</p>\""
+  ],
+  [
+    "AWS ECS",
+    "assess",
+    "platforms",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Ceph",
+    "assess",
+    "platforms",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Deis",
+    "assess",
+    "platforms",
+    "FALSE",
+    "no change",
+    "\"<p>Heroku, with its 12-factor application model, has changed the way we think about building, deploying, and hosting web applications.  <a href=\"\"http://deis.io/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Deis</strong><span class=\"\"pop-out-icon\"\"></span></a> encapsulates the Heroku PaaS model in an open-source framework that deploys onto Docker containers hosted anywhere.  Deis is still evolving, but for applications that fit the 12-factor model it has the potential to greatly simplify deployment and hosting in the environment of your choice.  Deis is yet another example of the rich ecosystem of platforms and tools emerging around Docker.</p>\""
+  ],
+  [
+    "Kubernetes",
+    "assess",
+    "platforms",
+    "TRUE",
+    "new",
+    "\"<p><strong><a href=\"\"http://kubernetes.io/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Kubernetes<span class=\"\"pop-out-icon\"\"></span></a></strong> is Google's answer to the problem of deploying containers into a cluster of machines, which is becoming an increasingly common scenario. It is not the solution used by Google internally but an open source project that originated at Google and has seen a fair number of external contributions. <a href=\"\"https://www.docker.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Docker<span class=\"\"pop-out-icon\"\"></span></a> and <a href=\"\"https://coreos.com/rkt/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Rocket<span class=\"\"pop-out-icon\"\"></span></a> are supported as container formats, and services offered include health management, replication and discovery. A similar solution in this space is <a href=\"\"https://www.thoughtworks.com/radar/platforms/rancher\"\">Rancher</a>.</p>\""
+  ],
+  [
+    "Linux Security Modules",
+    "assess",
+    "platforms",
+    "FALSE",
+    "no change",
+    "\"<p>While server hardening is an old technique that is considered fairly commonplace by sysadmins who have had to manage production systems, it has not become commonplace among the developer community. However, the rise in the DevOps culture has resulted in renewed focus on tools like SELinux, AppArmor and Grsecurity that aim to make this simpler, at least on the Linux ecosystem. Each of these tools comes with their own strengths and weaknesses and it is currently hard to pick one as being the only one you will need. That said, we highly recommend that all teams at least assess which <strong>Linux security modules</strong> would be the right one for them and make security and server hardening a part of their development workflow.</p>\""
+  ],
+  [
+    "Mesosphere DCOS",
+    "assess",
+    "platforms",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Microsoft Nano Server",
+    "assess",
+    "platforms",
+    "TRUE",
+    "new",
+    "\"<p>In contrast to modern cloud and container solutions based on Linux, even Windows Server Core is large and unwieldy. Microsoft is reacting and has provided the <a href=\"\"http://www.theregister.co.uk/2015/05/15/wrestling_with_microsoft_nano_server_preview/?page=1\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">first previews<span class=\"\"pop-out-icon\"\"></span></a> of <a href=\"\"https://msdn.microsoft.com/en-us/library/mt126167.aspx\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Nano Server</strong><span class=\"\"pop-out-icon\"\"></span></a>, a further-stripped-down version of Windows Server that drops the GUI stack, 32-bit Win32 support, local logins and remote desktop support, resulting in an on-disk size of about 400MB. The early previews are difficult to work with, and the final solution will be restricted to using the CoreCLR, but for companies that are interested in running .NET-based solutions, Nano Server is definitely worth a look at this stage.</p>\""
+  ],
+  [
+    "Particle Photon/Particle Electron",
+    "assess",
+    "platforms",
+    "FALSE",
+    "no change",
+    "\"<p><strong><a href=\"\"https://www.particle.io/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Particle<span class=\"\"pop-out-icon\"\"></span></a></strong> (formally Spark.io) is a full stack solution for cloud connected devices. <strong>Particle Photon</strong> is a microcontroller with wifi module. <strong>Particle Electron</strong> is a variant that connects to a cellular network. Particle OS adds REST API to the devices. This simplifies the entry to IoT and building your own connected devices.</p>\""
+  ],
+  [
+    "Presto",
+    "assess",
+    "platforms",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Rancher",
+    "assess",
+    "platforms",
+    "TRUE",
+    "new",
+    "\"<p><strong><a href=\"\"http://rancher.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Rancher<span class=\"\"pop-out-icon\"\"></span></a></strong> is an open source solution that allows deployment of containers into a cluster of machines, which is becoming an increasingly common scenario. It provides services such lifecycle management, monitoring, health checks and discovery. Also included is a completely containerized operating system based on <a href=\"\"https://www.docker.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Docker<span class=\"\"pop-out-icon\"\"></span></a>. The broad focus on containerization and very small footprint are key advantages for Rancher. A similar solution in this space is <a href=\"\"https://www.thoughtworks.com/radar/platforms/kubernetes\"\">Kubernetes</a>.</p>\""
+  ],
+  [
+    "Time series databases",
+    "assess",
+    "platforms",
+    "FALSE",
+    "no change",
+    "\"<p>A <strong>time series database</strong> (TSDB) is a system that is optimized for handling time series data. It allows users to perform CRUD operations on various time series organized as database objects. It also provides the ability to perform statistical calculations on the series as a whole. Although TSDBs are not entirely a new technology we are seeing a renewed interest in the these databases primarily in the realm of IoT applications. This is being facilitated by many open source and commercial platforms (such as  <strong>OpenTSDB</strong> , <strong>InfluxDB</strong> , <strong>Druid</strong> , <strong>BlueFloodDB</strong> etc.) that have mushroomed recently. Its also worth mentioning that some of these systems use other distributed databases such <strong>Cassandra</strong> and <strong>HBase</strong> as their underlying storage engine.</p>\""
+  ],
+  [
+    "Application Servers",
+    "hold",
+    "platforms",
+    "FALSE",
+    "no change",
+    "\"\""
+  ],
+  [
+    "Overambitious API gateways",
+    "hold",
+    "platforms",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "SPDY",
+    "hold",
+    "platforms",
+    "FALSE",
+    "no change",
+    "\"<p>The <strong><a href=\"\"https://www.chromium.org/spdy/spdy-whitepaper\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">SPDY<span class=\"\"pop-out-icon\"\"></span></a></strong> protocol was developed by Google from 2009 as an experiment to provide an alternative protocol to address performance shortcomings of HTTP/1.1. The new HTTP/2 standard protocol includes many of the key performance features of SPDY, and Google has announced it will drop browser SPDY support in early 2016. If your application requires the features of SPDY, we recommend you look instead at HTTP/2.</p>\""
+  ],
+  [
+    "Superficial private cloud",
+    "hold",
+    "platforms",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Composer",
+    "adopt",
+    "tools",
+    "FALSE",
+    "no change",
+    "\"<p>Although the idea of dependency management is not new and considered to be a fundamental development practice, it is not widely adopted by the PHP community. <strong><a href=\"\"https://getcomposer.org\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Composer<span class=\"\"pop-out-icon\"\"></span></a></strong> is a tool for dependency management in PHP. It is strongly influenced by tools from other technology stacks like Node's npm and Ruby's Bundler. We are now seeing wide adoption across PHP projects and it is fairly mature. You can still have to do some shims for internal libraries, you can use it for most external libraries.</p>\""
+  ],
+  [
+    "Mountebank",
+    "adopt",
+    "tools",
+    "FALSE",
+    "no change",
+    "\"<p>Good testing of components in an enterprise system is critical and with increased emphasis on service-based separation and deployment automation—critical factors for success with microservices—better tooling in this space is needed. The industry term “service virtualization” refers to tools that can emulate specific components in such an environment. We have seen great success with <a href=\"\"http://www.mbtest.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Mountebank</strong><span class=\"\"pop-out-icon\"\"></span></a>, a lightweight tool for stubbing and mocking HTTP, HTTPS, SMTP and TCP.</p>\""
+  ],
+  [
+    "Postman",
+    "adopt",
+    "tools",
+    "FALSE",
+    "no change",
+    "\"<p><strong><a href=\"\"http://www.getpostman.com/features\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Postman<span class=\"\"pop-out-icon\"\"></span></a></strong> is a Chrome extension that acts as a REST client in your browser, allowing you to create requests and inspect responses.  It is a useful tool when developing an API or implementing a client to call an existing API. Postman supports OAuth1 and OAuth2 tokens allowing addition of them to requests where necessary. The response is available as a prettified JSON or XML. With Postman you are able to retrieve a history of requests performed to quickly edit and test the API response to different data. It offers a suite of extensions that allow you to use it as a full-blown test runner too, although we discourage the record and replay style of testing it promotes.</p>\""
+  ],
+  [
+    "Browsersync",
+    "trial",
+    "tools",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Carthage",
+    "trial",
+    "tools",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Consul",
+    "trial",
+    "tools",
+    "FALSE",
+    "no change",
+    "\"<p>We continue to be impressed with <strong><a href=\"\"http://consul.io\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Consul<span class=\"\"pop-out-icon\"\"></span></a></strong>, a service discovery tool supporting both DNS and HTTP-based discovery mechanisms. It goes beyond other discovery tools by providing customizable health-checks for registered services, ensuring that unhealthy instances are marked accordingly. More tools have emerged to work with Consul to make it even more powerful. <a href=\"\"https://github.com/hashicorp/consul-template\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Consul Template<span class=\"\"pop-out-icon\"\"></span></a> enables configuration files to be populated with information from Consul, making things like client-side load balancing using mod_proxy much easier. In the world of Docker, <a href=\"\"https://github.com/gliderlabs/registrator\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">registrator<span class=\"\"pop-out-icon\"\"></span></a> can automatically register docker containers as they appear with Consul with extremely little effort, making it much easier to manage container-based setups.</p>\""
+  ],
+  [
+    "Docker Toolbox",
+    "trial",
+    "tools",
+    "TRUE",
+    "new",
+    "\"<p>Previously, we recommended <a href=\"\"https://www.thoughtworks.com/radar/tools/boot2docker\"\">boot2docker</a> as a way of easily running Docker on your local Windows or OS X machine. <strong><a href=\"\"https://www.docker.com/toolbox\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Docker Toolbox<span class=\"\"pop-out-icon\"\"></span></a></strong> now replaces boot2docker, adding some tooling as well. Now included is <a href=\"\"https://kitematic.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Kitematic<span class=\"\"pop-out-icon\"\"></span></a> for managing your containers, as well as <a href=\"\"https://docs.docker.com/compose/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Docker Compose<span class=\"\"pop-out-icon\"\"></span></a> for managing multi-Docker setup (Mac only). It can be used safely as a drop-in replacement for boot2docker, and it will even handle the upgrade for you.</p>\""
+  ],
+  [
+    "Gitrob",
+    "trial",
+    "tools",
+    "TRUE",
+    "new",
+    "\"<p>Safely storing secrets such as passwords and access tokens in code repositories is now supported by a growing number of tools - for example, <a href=\"\"https://github.com/AGWA/git-crypt\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">git-crypt<span class=\"\"pop-out-icon\"\"></span></a> and <a href=\"\"https://www.thoughtworks.com/radar/tools/blackbox\"\">Blackbox</a>, which we mentioned in the previous Technology Radar. Despite the availability of these tools, it is still, unfortunately, all too common that secrets are stored unprotected. In fact, it is so common that automated exploit software is used to find AWS credentials and spin up EC2 instances to mine Bitcoins, leaving the attacker with the Bitcoins and the account owner with the bill. <a href=\"\"https://github.com/michenriksen/gitrob\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Gitrob</strong><span class=\"\"pop-out-icon\"\"></span></a> takes a similar approach and scans an organization’s GitHub repositories, flagging all files that might contain sensitive information that shouldn’t have been pushed to the repository. This is obviously a reactive approach. Gitrob can only alert teams when it is (almost) too late. For this reason, Gitrob can only ever be a complementary tool, to minimize damage.</p>\""
+  ],
+  [
+    "GitUp",
+    "trial",
+    "tools",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Hamms",
+    "trial",
+    "tools",
+    "FALSE",
+    "no change",
+    "\"<p>Many many wonderful stories of failure in our industry are caused by the assumption that networks are always reliable and servers respond quickly and correctly all the time. <a href=\"\"https://github.com/kevinburke/hamms\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Hamms</strong><span class=\"\"pop-out-icon\"\"></span></a> is an interesting open-source tool which acts as a badly behaved HTTP server, triggering a number of failures including connection failures or slow and/or malformed responses. It may be useful for testing that your software handles failures gracefully.</p>\""
+  ],
+  [
+    "IndexedDB",
+    "trial",
+    "tools",
+    "FALSE",
+    "no change",
+    "\"<p>As single page applications and offline-first become more viable and widespread there is a growing need to persist data in the web browser. Local Storage is very easy to use and well supported by the web browsers. For more complex use cases, there is IndexedDB. While it can be a good solution we recommend to only use it when absolutely necessary, due to the increase in complexity and a somewhat clumsy API. We have also had positive experience with the <a href=\"\"https://github.com/mozilla/localForage\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">localForage<span class=\"\"pop-out-icon\"\"></span></a> framework that provides an abstraction layer over the various persistence solutions.</p>\""
+  ],
+  [
+    "Polly",
+    "trial",
+    "tools",
+    "FALSE",
+    "no change",
+    "\"<p>Several of our teams working on .NET projects have recommended <strong><a href=\"\"https://github.com/michael-wolfenden/Polly\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Polly<span class=\"\"pop-out-icon\"\"></span></a></strong> as being useful in building microservice-based systems. It encourages the fluent expression of transient exception-handling policies and the Circuit Breaker pattern, including policies such as Retry, Retry Forever and Wait and Retry. Similar libraries already exist in other languages (Hystrix for Java for example), and Polly is a welcome addition from the .NET community. Integrating well with Polly is <strong><a href=\"\"https://www.thoughtworks.com/radar/tools/brighter\"\">Brighter</a></strong>. Brighter is another small open source .Net library that provides scaffolding to implement command invocation. Combining the two libraries provides useful circuit-breaking functionality especially in the context of the Ports and Adapters pattern and CQRS. Although they can be used separately, in the wild our teams find they work well together.</p>\""
+  ],
+  [
+    "REST-assured",
+    "trial",
+    "tools",
+    "FALSE",
+    "no change",
+    "\"<p><strong><a href=\"\"https://code.google.com/p/rest-assured/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">REST-assured<span class=\"\"pop-out-icon\"\"></span></a></strong> is a Java domain specific language for testing and validating RESTful services. It simplifies the testing of REST based services built on top of HTTP Builder. REST-assured supports the different REST requests and can be used to validate and verify the responses from the APIs. It also provides a JSON schema validation and can thus be used to verify that the endpoints are returning the right types of expected data.</p>\""
+  ],
+  [
+    "Sensu",
+    "trial",
+    "tools",
+    "FALSE",
+    "moved in",
+    "\"<p>Many monitoring tools are built around the concept of the machine or instance. The increasing use of patterns like <a href=\"\"http://martinfowler.com/bliki/PhoenixServer.html\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Phoenix Server<span class=\"\"pop-out-icon\"\"></span></a> and tools like <a href=\"\"https://www.docker.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Docker<span class=\"\"pop-out-icon\"\"></span></a> mean this is an increasingly unhelpful way to model infrastructure: Instances are becoming transient while services are the things that persist. <a href=\"\"https://sensu.io/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Sensu</strong><span class=\"\"pop-out-icon\"\"></span></a> allows an instance to register itself as playing a particular role, and Sensu then monitors it on that basis. Over time, different instances playing that role may come and go. Given these factors and the increasing maturity of the tool, we felt it was time to bring Sensu back on to the radar.</p>\""
+  ],
+  [
+    "SysDig",
+    "trial",
+    "tools",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "ZAP",
+    "trial",
+    "tools",
+    "FALSE",
+    "no change",
+    "\"<p>The <strong><a href=\"\"https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">ZED Attack Proxy (ZAP)<span class=\"\"pop-out-icon\"\"></span></a></strong> is a project from OWASP which allows you to probe an existing site for security vulnerabilities in an automated fashion. It can be used as part of periodic security testing, or else integrated into a CD pipeline to provide ongoing checks for common vulnerabilities. The use of a tool like ZAP doesn’t replace the need to think carefully about security and do other sorts of more thorough testing, but as another tool to help ensure our systems are more secure it’s a good addition to the toolbox.</p>\""
+  ],
+  [
+    "Concourse",
+    "assess",
+    "tools",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Espresso",
+    "assess",
+    "tools",
+    "TRUE",
+    "new",
+    "\"<p><strong><a href=\"\"https://developer.android.com/training/testing/espresso\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Espresso<span class=\"\"pop-out-icon\"\"></span></a></strong> is an Android functional-testing tool. Its small-core API hides the messy implementation details and helps in writing concise tests, with faster and reliable test execution.</p>\""
+  ],
+  [
+    "Gauge",
+    "assess",
+    "tools",
+    "TRUE",
+    "new",
+    "\"<p><strong><a href=\"\"https://gauge.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Gauge<span class=\"\"pop-out-icon\"\"></span></a></strong> is a lightweight cross-platform test-automation tool. Specifications are written in free-form Markdown, so test cases can be written in the business language and can be incorporated into any existing documentation format. Supported languages are implemented as plugins to a single core implementation, which ensures consistency across language implementations. This tool, open sourced by ThoughtWorks, also supports parallel execution out of the box for all supported platforms.</p>\""
+  ],
+  [
+    "Gor",
+    "assess",
+    "tools",
+    "FALSE",
+    "no change",
+    "\"<p><a href=\"\"https://github.com/buger/gor\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Gor</strong><span class=\"\"pop-out-icon\"\"></span></a> is an open-source tool for capturing and replaying live HTTP traffic into a test environment in order to continuously test your system with real data. It can be used to increase confidence in code deployments, configuration changes and infrastructure changes.</p>\""
+  ],
+  [
+    "ievms",
+    "assess",
+    "tools",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Let's Encrypt",
+    "assess",
+    "tools",
+    "TRUE",
+    "new",
+    "\"<p>Although more sites every day are implementing HTTPS to help protect their own users and improve the integrity of the web as a whole, there are many more sites to go. In addition, we see more and more people using HTTPS within their enterprises, to provide additional security guarantees. One of the main blockers to wider adoption has been the process of getting a certificate in the first place. Aside from the cost, the process itself is far from slick. <a href=\"\"https://letsencrypt.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Let’s Encrypt</strong><span class=\"\"pop-out-icon\"\"></span></a>, a new Certificate Authority, aims to solve all this. First, it provides certificates for free. Second, and arguably more important, it also provides an extremely easy-to-use command-line API, making it easy to fully automate the process of issuing, upgrading and installing certificates. We think that Let’s Encrypt, in beta at the moment, has the chance to be revolutionary in terms of helping more of the web get on to HTTPS, and at the same time showing what good, automatable tools for the security-conscious should look like.</p>\""
+  ],
+  [
+    "Pageify",
+    "assess",
+    "tools",
+    "TRUE",
+    "new",
+    "\"<p><strong><a href=\"\"https://github.com/paramadeep/pageify\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Pageify<span class=\"\"pop-out-icon\"\"></span></a></strong> is a Ruby library for building page objects for UI automation tests, focusing on faster test execution and code readability. It offers simple APIs to dynamically define, operate and assert on the page objects, allowing readable code even when handling elements with complex hierarchies in the DOM. It bundles integration for <strong>WebDriver</strong> and <strong>Capybara</strong>.</p>\""
+  ],
+  [
+    "Prometheus",
+    "assess",
+    "tools",
+    "FALSE",
+    "no change",
+    "\"\""
+  ],
+  [
+    "Quick",
+    "assess",
+    "tools",
+    "FALSE",
+    "no change",
+    "\"<p><strong><a href=\"\"https://github.com/Quick/Quick\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Quick<span class=\"\"pop-out-icon\"\"></span></a></strong> is a testing framework for Swift and Objective-C, which comes bundled with <strong>Nimble</strong> , a matcher framework for tests. Quick helps verify the behavior of Swift and Objective-C programs. Quick has the same syntactic flavour as <strong>RSpec</strong> and <strong>Jasmine</strong> and is easy to set up. It is very organized, allows for assertion of types and makes it easy to test asynchronous code.</p>\""
+  ],
+  [
+    "RAML",
+    "assess",
+    "tools",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Security Monkey",
+    "assess",
+    "tools",
+    "FALSE",
+    "no change",
+    "\"<p><strong><a href=\"\"https://github.com/Netflix/security_monkey\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Security Monkey<span class=\"\"pop-out-icon\"\"></span></a></strong> is another tool in Netflix’s Simian Army, which is a suite of tools designed to ensure that systems are being built in a resilient fashion. As well as providing a (configurable) assessment of any potential security vulnerabilities in your AWS setup, it can also be used to monitor changes on an ongoing basis, alerting different groups as required. It does overlap in some ways with AWS’ own <a href=\"\"https://aws.amazon.com/premiumsupport/trustedadvisor/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Trusted Advisor Report<span class=\"\"pop-out-icon\"\"></span></a> and <a href=\"\"http://aws.amazon.com/cloudtrail/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">CloudTrail<span class=\"\"pop-out-icon\"\"></span></a> service, as it was developed prior to both these services being made generally available, but its capabilities do go beyond these offerings. If either of those services don’t quite meet your requirements, Security Monkey is worth a look.</p>\""
+  ],
+  [
+    "Sleepy Puppy",
+    "assess",
+    "tools",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Visual Studio Code",
+    "assess",
+    "tools",
+    "TRUE",
+    "new",
+    "\"<p><strong><a href=\"\"https://code.visualstudio.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Visual Studio Code<span class=\"\"pop-out-icon\"\"></span></a></strong> is Microsoft’s free IDE editor, available across platforms. We find the version-control integration with Git very beneficial to promoting continuous integration practices. Visual Studio Code also provides a means of integrating with external tools via tasks, with autodetection of grunt/gulp tasks eliminating the need for running grunt/gulp tasks via terminals and simply using the editor. With the growth of the Docker ecosystem, this IDE offers support for the dockerfile with snippets and definitions of valid commands.</p>\""
+  ],
+  [
+    "Citrix for development",
+    "hold",
+    "tools",
+    "FALSE",
+    "no change",
+    "\"<p>Many organizations are still forcing distributed or offshore development teams to use <strong>Citrix remote desktop for development</strong>. Although this provides a simple security model – assets supposedly never leave the organization’s servers - using remote desktops for development absolutely cripples developer productivity. There’s not much point paying a cheaper hourly rate for developers if you’re going to impose both the distribution and remote-desktop burdens on them, and we wish more offshore vendors would admit these drawbacks to their clients. It’s much better to use either a 'clean room' secured offshore environment where local development can be done, or a <a href=\"\"https://www.thoughtworks.com/radar/techniques/hosted-ide-s\"\">Hosted IDE</a> (e.g. <a href=\"\"https://www.thoughtworks.com/radar/tools/ievms\"\">ievms</a>)</p>\""
+  ],
+  [
+    "ES6",
+    "adopt",
+    "languages-and-frameworks",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Nancy",
+    "adopt",
+    "languages-and-frameworks",
+    "FALSE",
+    "no change",
+    "\"<p>Since we last talked about <strong><a href=\"\"http://nancyfx.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Nancy<span class=\"\"pop-out-icon\"\"></span></a></strong> on the technology radar it has become the default choice on our .NET projects. Architectures centred around small, vertical slices and microservices simply require light-weight deployment options and low ceremony tooling.</p>\""
+  ],
+  [
+    "Swift",
+    "adopt",
+    "languages-and-frameworks",
+    "FALSE",
+    "moved in",
+    "\"<p>A year after its public debut, <a href=\"\"https://developer.apple.com/swift/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Swift</strong><span class=\"\"pop-out-icon\"\"></span></a> is now our default choice for development in the Apple ecosystem. With the recent release of Swift 2, the language approaches a level of maturity that provides the stability and performance required for most projects. Swift still has issues, especially around tool support, refactoring and testing. However, we feel that these are not substantial enough to warrant avoiding Swift. At the same time, porting large, existing Objective-C codebases is unlikely to pay off. The announcement that Swift will become open source software is a further positive sign. We are hopeful that this will not just be another dumping of internally developed code into a public repository, because Apple has clearly stated that community contributions are encouraged and will be accepted.</p>\""
+  ],
+  [
+    "Enlive",
+    "trial",
+    "languages-and-frameworks",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "React.js",
+    "trial",
+    "languages-and-frameworks",
+    "FALSE",
+    "no change",
+    "\"<p>One benefit of the ongoing avalanche of front-end JavaScript frameworks is that occasionally a new idea crops up that makes us think. <a href=\"\"http://facebook.github.io/react/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>React.js</strong><span class=\"\"pop-out-icon\"\"></span></a> is a UI/view framework in which JavaScript functions generate HTML in a reactive data flow. It differs significantly from frameworks like <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/angularjs\"\">AngularJS</a> in that it only allows one-way data bindings, greatly simplifying the rendering logic. We have seen several smaller projects achieve success with React.js, and developers are drawn to its clean, composable approach to componentization.</p>\""
+  ],
+  [
+    "SignalR",
+    "trial",
+    "languages-and-frameworks",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Spring Boot",
+    "trial",
+    "languages-and-frameworks",
+    "FALSE",
+    "no change",
+    "\"<p><a href=\"\"http://projects.spring.io/spring-boot\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Spring Boot</strong><span class=\"\"pop-out-icon\"\"></span></a> allows easy setup of standalone Spring-based applications. It's ideal for pulling up new microservices and easy to deploy. It also makes data access less of a pain, thanks to the JPA mappings through Spring Data. We like that Spring Boot simplifies Java services built with Spring but have learned to be cautious of the many dependencies. Spring still lurks just beneath the surface. If you’re writing microservices with Java, you might also consider using <strong>Dropwizard</strong> or a microframework like <a href=\"\"http://sparkjava.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Spark<span class=\"\"pop-out-icon\"\"></span></a> to get the benefits of Spring Boot without the enormous weight of Spring.</p>\""
+  ],
+  [
+    "Axon",
+    "assess",
+    "languages-and-frameworks",
+    "TRUE",
+    "new",
+    "\"<p>While we still have some reservations about <a href=\"\"http://martinfowler.com/bliki/CQRS.html\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">CQRS<span class=\"\"pop-out-icon\"\"></span></a> as a general pattern, the approach can work very well in specific places. In those specific situations, however, a lot of work is left to the developer to properly execute CQRS. <strong><a href=\"\"http://www.axonframework.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Axon<span class=\"\"pop-out-icon\"\"></span></a></strong> is a framework that can help with this on the JVM, and we’ve used it with some success. Although it certainly can’t be considered a perfect solution right now, it continues to evolve and may make much more sense than trying to write everything from scratch.</p>\""
+  ],
+  [
+    "Ember.js",
+    "assess",
+    "languages-and-frameworks",
+    "FALSE",
+    "no change",
+    "\"<p>Widespread usage of AngularJS continues on ThoughtWorks projects, although not every experience is positive. We continue to advise teams to assess whether the additional complexity of a single-page JavaScript application is necessary to meet their requirements.  We also recommend assessing alternative frameworks, and in this radar edition we highlight <a href=\"\"http://emberjs.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Ember.js</strong><span class=\"\"pop-out-icon\"\"></span></a> which is growing in popularity within ThoughtWorks.  Ember is praised for its approach of opinionated convention over configuration, responsive core team of committers, performance, and build tooling support via Ember CLI.</p>\""
+  ],
+  [
+    "Frege",
+    "assess",
+    "languages-and-frameworks",
+    "TRUE",
+    "new",
+    "\"<p>Following many other programming languages, one of the language geeks’ absolute favourites, <a href=\"\"https://www.haskell.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Haskell<span class=\"\"pop-out-icon\"\"></span></a>, is now also available on the JVM in the form of <a href=\"\"https://github.com/Frege/frege\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Frege</strong><span class=\"\"pop-out-icon\"\"></span></a>. This brings a purely functional programming language onto the platform, allowing for easy interoperability with other JVM languages and libraries.</p>\""
+  ],
+  [
+    "HyperResource",
+    "assess",
+    "languages-and-frameworks",
+    "TRUE",
+    "new",
+    "\"<p><strong><a href=\"\"http://hyperresource.com/doc/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">HyperResource<span class=\"\"pop-out-icon\"\"></span></a></strong> is a Ruby framework for building a RESTful API client. The framework accepts JSON in <strong>HAL</strong> format and dynamically generates a model object complete with hypermedia links. Although the framework is still in its infancy, we like that it embraces <a href=\"\"http://martinfowler.com/articles/richardsonMaturityModel.html\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Richardson level 3 REST<span class=\"\"pop-out-icon\"\"></span></a> for better service discoverability and self-documenting protocols.</p>\""
+  ],
+  [
+    "Material UI",
+    "assess",
+    "languages-and-frameworks",
+    "TRUE",
+    "new",
+    "\"<p><a href=\"\"http://material-ui.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Material UI</strong><span class=\"\"pop-out-icon\"\"></span></a> provides reusable components for use in <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/react-js\"\">React</a> applications that implement Google's Material Design language. Filling a similar space to <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/twitter-bootstrap\"\">Twitter Bootstrap</a>, it gets you up and running quickly but doesn't have the same drawbacks as your application grows. <a href=\"\"http://elemental-ui.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Elemental UI<span class=\"\"pop-out-icon\"\"></span></a> is worth investigating as an alternative.</p>\""
+  ],
+  [
+    "OkHttp",
+    "assess",
+    "languages-and-frameworks",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "React Native",
+    "assess",
+    "languages-and-frameworks",
+    "TRUE",
+    "new",
+    "\"<p>Yet another entrant into the cross-platform mobile development world, Facebook’s <a href=\"\"https://facebook.github.io/react-native/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>React Native</strong><span class=\"\"pop-out-icon\"\"></span></a> brings the React.js programming model to iOS and Android developers. React Native programs are written in JavaScript, but unlike a hybrid framework such as Ionic, React Native gives developers access to native UI components on the target platform. This is an approach we’ve seen before (e.g., <a href=\"\"http://calatrava.github.io/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Calatrava<span class=\"\"pop-out-icon\"\"></span></a>), but React Native has already inspired a substantial developer community and builds on the momentum generated by React.js. This framework could play a significant role in the future of mobile app development.</p>\""
+  ],
+  [
+    "TLA+",
+    "assess",
+    "languages-and-frameworks",
+    "TRUE",
+    "new",
+    "\"<p>Building systems using microservices requires us to think more deeply about failure isolation and testing. *<em><a href=\"\"https://lamport.azurewebsites.net/tla/tla.html\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">TLA+<span class=\"\"pop-out-icon\"\"></span></a> *</em>is a formal specification language that can be useful in both these scenarios. For failure isolation, TLA+ can be used to identify invariants in your system that can be monitored directly. An invariant can be the ratio of number of requests to one service to the number of requests to a second service, for example. Any change in this ratio would lead to an alert. TLA+ is also being used to identify subtle design flaws in distributed systems. Amazon, for example, used model-checking based on a formal specification written in TLA+ to identify subtle bugs in Dynamo DB before it was released to the public. For most systems, the investment required to create the formal specification and then perform model checking is probably too great; however, for critical systems - complex ones, or those with many users - we think it’s very valuable to have another tool in our toolbox.</p>\""
+  ],
+  [
+    "Traveling Ruby",
+    "assess",
+    "languages-and-frameworks",
+    "TRUE",
+    "new",
+    "\"<p><a href=\"\"https://github.com/FooBarWidget/traveling-ruby\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Traveling Ruby</strong><span class=\"\"pop-out-icon\"\"></span></a> makes it possible to distribute portable, ready-to-run, platform-agnostic Ruby binaries without the need to install an interpreter, packages or additional gems. It decouples running Ruby applications from the development environment they run in.</p>\""
+  ]
 ]

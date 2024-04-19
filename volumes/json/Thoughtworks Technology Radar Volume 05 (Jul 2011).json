@@ -1,674 +1,674 @@
 [
-  {
-    "name": "Automate database deployment",
-    "ring": "adopt",
-    "quadrant": "techniques",
-    "isNew": "FALSE",
-    "status": "moved in",
-    "description": "\"\""
-  },
-  {
-    "name": "Coding architects",
-    "ring": "adopt",
-    "quadrant": "techniques",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"This technique was included in this edition of the Radar for visibility. We felt that there wasn't anything substantial to add to the discourse around it, but that it was important to keep this in view.\""
-  },
-  {
-    "name": "Continuous Delivery (CD)",
-    "ring": "adopt",
-    "quadrant": "techniques",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "DevOps",
-    "ring": "adopt",
-    "quadrant": "techniques",
-    "isNew": "FALSE",
-    "status": "moved in",
-    "description": "\"\""
-  },
-  {
-    "name": "Emergent design",
-    "ring": "adopt",
-    "quadrant": "techniques",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"As Agile practices move further toward mainstream adoption, we see significant benefits from the adoption of Lean software development practices as well. These practices have their roots in the Toyota Production System and complement much of our understanding of Agile software development to date. One topic that Lean has also given us greater insight into is that of set-based design. Set-based design leads us to implement similar solutions at the same time while the cost of doing so is constrained. This leads us into the area of emergent design and the ability to let experience shape our design decisions and defer key decisions until the last responsible moment.\""
-  },
-  {
-    "name": "Evolutionary architecture",
-    "ring": "adopt",
-    "quadrant": "techniques",
-    "isNew": "FALSE",
-    "status": "moved in",
-    "description": "\"In contrast to traditional up-front, heavy-weight enterprise architectural designs, we recommend adopting evolutionary architecture. It provides the benefits of enterprise architecture without the problems caused by trying to accurately predict the future. Instead of guessing how components will be re-used, evolutionary architecture supports adaptability, using proper abstractions, database migrations, test suites, continuous integration and refactoring to harvest re-use as it occurs within a system. The driving technical requirements for a system should be identified early to ensure they are properly handled in subsequent designs and implementations. We advocate delaying decisions to the latest responsible moment, which might in fact be up-front for some decisions.\""
-  },
-  {
-    "name": "Evolutionary database",
-    "ring": "adopt",
-    "quadrant": "techniques",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"\""
-  },
-  {
-    "name": "Infrastructure as code",
-    "ring": "adopt",
-    "quadrant": "techniques",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"The DevOps movement continues to grow, with developers and operations staff working closely together to solve the “software last mile” problem. Infrastructure as code is a technique for treating infrastructure configuration in the same way as code; checking it into source control, then using it to push changes out to the data center. In addition to web server, application server and application configuration, we are seeing network configuration treated in the same way. Network switch, firewall and load balancer configuration can be infrastructure as code, and even changed at runtime.\""
-  },
-  {
-    "name": "Platform roadmaps",
-    "ring": "adopt",
-    "quadrant": "techniques",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"Almost every enterprise has “legacy systems” that are expensive to operate and upgrade. Often a system will become legacy over the course of several years, through neglect or atrophy. We recommend using platform roadmaps to maximize the value of a systems portfolio and plan for the upgrade and eventual retirement of systems.\""
-  },
-  {
-    "name": "Progressive Enhancement",
-    "ring": "adopt",
-    "quadrant": "techniques",
-    "isNew": "FALSE",
-    "status": "moved in",
-    "description": "\"Recent use of progressive enhancement with mobile applications has been very effective and demonstrates the universal nature of this web design strategy. We encourage people to adopt this strategy to keep their code clean and give each user the optimal experience for their device.\""
-  },
-  {
-    "name": "Simple performance trending",
-    "ring": "adopt",
-    "quadrant": "techniques",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Visualization and metrics",
-    "ring": "adopt",
-    "quadrant": "techniques",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"Data visualizations have been effective in business and IT decision making. Organizations are making effective use of real time data through visualizations. These visualizations include point in time data as well as trends plotted over time. We are seeing increased adoption of these techniques in optimizing operations and software development.\""
-  },
-  {
-    "name": "Acceptance test of journeys",
-    "ring": "trial",
-    "quadrant": "techniques",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"\""
-  },
-  {
-    "name": "Build your own radar",
-    "ring": "trial",
-    "quadrant": "techniques",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Capability modeling",
-    "ring": "trial",
-    "quadrant": "techniques",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"Initiatives that span multiple projects require shared understanding of the business context, operating model, and strategic goals of an organization, as well as any existing technical, organizational and process constraints impinging on planning and design activities. As part of our evolutionary approach to enterprise architecture, we use business capability modelling to create lightweight hierarchical models of the business functions that are an essential part of an organization’s needs and goals. Capabilities describe an organization’s operating model in terms of goals and competencies (what is to be done), rather than implementation specifics (how things are done). Whereas business architecture models based on people, process or technology are contingent, volatile and often short lived, and therefore ill-suited to the long-term planning needs of the organization, capability models provide a description of the business context that is stable enough to serve as a basis for identifying and prioritising technology and process initiatives.\""
-  },
-  {
-    "name": "Categorization & prioritization of technical debt",
-    "ring": "trial",
-    "quadrant": "techniques",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"\""
-  },
-  {
-    "name": "Concurrency abstractions and patterns",
-    "ring": "trial",
-    "quadrant": "techniques",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"Concurrency is a difficult problem and increasingly difficult to avoid. Hardware isn’t getting faster but multicore platforms are becoming the norm, with even mobile phones containing two or more processors. Concurrency abstractions and patterns -- which are not new, but less widely known -- are helping address many of the challenges seen in this space. In particular the models seen in Clojure, Erlang, Retlang and Event Patterns offer a more testable and reliable approach than the better known threads, locks and semaphores.\""
-  },
-  {
-    "name": "Continuous deployment",
-    "ring": "trial",
-    "quadrant": "techniques",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"If you are wondering “What comes after agile?,” you should look towards continuous delivery. While your development processes may be fully optimized, it still might take your organization weeks or months to get a single change into production. Continuous delivery focuses on maximizing automation including infrastructure as code, environment management and deployment automation to ensure your system is always ready for production. It is about tightening your feedback loops and not putting off anything until the end. Continuous delivery is not the same as continuous deployment, which means deploying every change to production. Continuous delivery is not a cowboy show. It puts you in charge of your production environment. The business can pick and choose what and when to deploy. If you think you’ve nailed agile development, but aren’t considering how to achieve continuous delivery, you really haven’t even started.\""
-  },
-  {
-    "name": "Event API’s",
-    "ring": "trial",
-    "quadrant": "techniques",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Iterative data warehousing",
-    "ring": "trial",
-    "quadrant": "techniques",
-    "isNew": "FALSE",
-    "status": "moved in",
-    "description": "\"Like iterative software development, there is lot of value to be gained by delivering data warehousing projects using iterative techniques. Iterative data warehousing techniques allow the end users of the data warehouse to determine what reports they want and the ETL developers and data modelers to deliver those features without wasting time with data modeling and ETL jobs that do not provide immediate value to the business.\""
-  },
-  {
-    "name": "Thoughtful caching",
-    "ring": "trial",
-    "quadrant": "techniques",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Decision driven BI",
-    "ring": "assess",
-    "quadrant": "techniques",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"Traditional approaches to implementing data warehouses and business intelligence work from the bottom up in horizontal tiers, assembling and cleansing data sources from across the enterprise then aggregating them into a comprehensive data mart before reports can be generated. Some people are now employing an alternative approach that starts with the real outcome--a business decision--and pulls work items through the process as needed to support that decision. Decision driven business intelligence allows a more incremental approach to BI and facilitates rapid feedback to the decision makers who are the ultimate consumers of business intelligence.\""
-  },
-  {
-    "name": "Event driven business intelligence",
-    "ring": "assess",
-    "quadrant": "techniques",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"This technique was included in this edition of the Radar for visibility. We felt that there wasn't anything substantial to add to the discourse around it, but that it was important to keep this in view.\""
-  },
-  {
-    "name": "Event Sourcing",
-    "ring": "assess",
-    "quadrant": "techniques",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Smart systems",
-    "ring": "assess",
-    "quadrant": "techniques",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"Smart Phones with a GPS, cameras and a screen are but one example of smart systems which are proliferating around us, fusing the real and the digital world. Augmented reality apps like Google Goggles, geolocation services &amp; smart grids are just some of the possible applications.\""
-  },
-  {
-    "name": "Database based integration",
-    "ring": "hold",
-    "quadrant": "techniques",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"\""
-  },
-  {
-    "name": "Feature branching",
-    "ring": "hold",
-    "quadrant": "techniques",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Manual infrastructure management",
-    "ring": "hold",
-    "quadrant": "techniques",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Procedure oriented integration",
-    "ring": "hold",
-    "quadrant": "techniques",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"One of the goals of SOA has been to decouple services by exchanging human-readable business documents instead of programming parameters. However, in implementing SOA, many businesses have simply used web services to expose the underlying programming models of back-end systems. Procedure oriented integration is nothing more than remote procedure calls implemented via a different protocol. The consequences of this are additional layers of complexity with no improvement in business flexibility. To avoid this, implementers of SOA should first understand the business meaning of their services, then implement human-readable contracts that are independent of legacy system implementation.\""
-  },
-  {
-    "name": "Scrum certification",
-    "ring": "hold",
-    "quadrant": "techniques",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"\""
-  },
-  {
-    "name": "ATOM",
-    "ring": "adopt",
-    "quadrant": "platforms",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"\""
-  },
-  {
-    "name": "AWS",
-    "ring": "adopt",
-    "quadrant": "platforms",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"Amazon continues to evolve the AWS cloud with services such as RDB, making it even easier to engineer and deploy cloud-based applications. Not every AWS feature is as mature as EC2 and S3, so you should carefully evaluate which AWS components to use. We feel comfortable recommending AWS where elasticity or on-demand computing are required.\""
-  },
-  {
-    "name": "JRuby",
-    "ring": "adopt",
-    "quadrant": "platforms",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"Charles Nutter and the JRuby team continue to improve JRuby at a frantic pace. It is fast and they place massive importance on keeping their ecosystem up-to-date, including DB adapters, gem management, and modern Rails deployment. Rails 3 + JRuby is an awesome platform. There really is no reason to not be using Ruby, one of our favorite languages, in the enterprise.\""
-  },
-  {
-    "name": "KVM",
-    "ring": "adopt",
-    "quadrant": "platforms",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"This platform was included in this edition of the Radar for visibility. We felt that there wasn't anything substantial to add to the discourse around it, but that it was important to keep this in view.\""
-  },
-  {
-    "name": "Mobile web",
-    "ring": "adopt",
-    "quadrant": "platforms",
-    "isNew": "FALSE",
-    "status": "moved in",
-    "description": "\"\""
-  },
-  {
-    "name": "Heroku",
-    "ring": "trial",
-    "quadrant": "platforms",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"\""
-  },
-  {
-    "name": "Tablet",
-    "ring": "trial",
-    "quadrant": "platforms",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"\""
-  },
-  {
-    "name": "Ubiquitous computing",
-    "ring": "trial",
-    "quadrant": "platforms",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Cloud Foundry",
-    "ring": "assess",
-    "quadrant": "platforms",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "GPGPU",
-    "ring": "assess",
-    "quadrant": "platforms",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"\""
-  },
-  {
-    "name": "Node.js",
-    "ring": "assess",
-    "quadrant": "platforms",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"\""
-  },
-  {
-    "name": "OAuth",
-    "ring": "assess",
-    "quadrant": "platforms",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"OAuth is a web-friendly, lightweight standard for authorization that allows a user to share private resources between internet services, e.g., allowing your favorite social networking site to access your photos from your favorite photo sharing site. OAuth is simple, avoids password proliferation, and allows a service to grant bare minimum privileges. If you are exposing your application’s data in a lightweight, web-friendly manner you should strongly consider using OAuth as your standard for authorization.\""
-  },
-  {
-    "name": "OpenStack",
-    "ring": "assess",
-    "quadrant": "platforms",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"OpenStack is a new cloud operating system that promises a complete open-source solution. OpenStack is a fabric cloud controller which leverages existing virtualization technologies such as KVM and will integrate with other virtualisation tools such as Xen and OpenVZ. Currently under heavy development, OpenStack is expected to provide a stable production-ready solution by the end of Q2 2011.\""
-  },
-  {
-    "name": "vFabric",
-    "ring": "assess",
-    "quadrant": "platforms",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"\""
-  },
-  {
-    "name": "GWT",
-    "ring": "hold",
-    "quadrant": "platforms",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"\""
-  },
-  {
-    "name": "Java portal servers",
-    "ring": "hold",
-    "quadrant": "platforms",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "WS-*",
-    "ring": "hold",
-    "quadrant": "platforms",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"Previously our advice has been to tread carefully when using the WS-* stack beyond the basic profile. Given the progress and acceptance of simpler web-as-platform techniques such as REST and OAuth and the known issues with the WS-*, it should only be used cautiously.\""
-  },
-  {
-    "name": "Caching reverse proxies",
-    "ring": "adopt",
-    "quadrant": "tools",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"Application designs that incorporate caching reverse proxies as first class design elements are simpler and more resilient to infrastructure failures. Placing a caching reverse proxy between an application and a web service it consumes reduces the risk of service failures affecting the application while improving overall system performance.\""
-  },
-  {
-    "name": "Git",
-    "ring": "adopt",
-    "quadrant": "tools",
-    "isNew": "FALSE",
-    "status": "moved in",
-    "description": "\"\""
-  },
-  {
-    "name": "GitHub",
-    "ring": "adopt",
-    "quadrant": "tools",
-    "isNew": "FALSE",
-    "status": "moved in",
-    "description": "\"\""
-  },
-  {
-    "name": "Subversion",
-    "ring": "adopt",
-    "quadrant": "tools",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"Subversion moves back into the Adopt section of the radar because it is a solid version control tool suitable for most teams. We consider Subversion’s features to be the basic standard for a modern version control tool. Thoughtworkers continue to embrace and recommend Distributed Version Control tools such as Git and Mercurial, but we caution that these systems often require deeper understanding to get the most out of them. New to the radar is GitHub, a “social coding” tool supporting both source code hosting and social networking. GitHub is arguably one of the main reasons Git has become the leading DVCS tool, and GitHub’s collaboration features are often used by enterprises that need to support distributed teams.\""
-  },
-  {
-    "name": "Mercurial",
-    "ring": "trial",
-    "quadrant": "tools",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"In previous radars we recommended Distributed Version Control (DVCS) tools in general while mentioning Git and Mercurial in particular. In this edition we narrow our recommendation to only Mercurial and Git as these two have become the clear front-runners. Due to its success and the associated network effect GitHub remains the recommended option for enterprises that want to interact with the open source community.\""
-  },
-  {
-    "name": "Message buses without smarts",
-    "ring": "trial",
-    "quadrant": "tools",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"\""
-  },
-  {
-    "name": "New Relic beyond Rails",
-    "ring": "trial",
-    "quadrant": "tools",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"We have regularly used New Relic hosted performance monitoring with Ruby on Rails systems in development and production. The combination of fast setup and comprehensive reporting has proven extremely valuable in troubleshooting performance. We are now seeing good results from the New Relic monitoring services for Java and .NET systems.\""
-  },
-  {
-    "name": "Next-generation test tools",
-    "ring": "trial",
-    "quadrant": "tools",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"The Ruby language community is responsible for a number of innovations in the area of testing. The next generation of testing tools such as rspec and Cucumber are two such tools that have come out of this community. These tools, along with Thoughtworks’ Twist, provide a way to express tests in a more natural language syntax that captures the intent of the system in a way that end users can quickly grasp.\""
-  },
-  {
-    "name": "NoSQL",
-    "ring": "trial",
-    "quadrant": "tools",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"NoSQL technologies are maturing daily, allowing for innovative solutions as businesses need to scale massively or ask intelligent questions of existing data. Technologies like MongoDB, Riak, Neo4J, Cassandra and many others are helping power the NoSQL space.\""
-  },
-  {
-    "name": "PowerShell",
-    "ring": "trial",
-    "quadrant": "tools",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Splunk",
-    "ring": "trial",
-    "quadrant": "tools",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"Application logs are both a blessing and a curse. They are comforting to have when a production issue arises, but actually digging out the data we need usually requires cobbling together scripts written in tools such as AWK and sed. Splunk is an elegant solution that quickly analyzes many standard log file formats like IIS, Log4J and syslog, and is extensible to custom formats. It indexes files, statically or in real time, to generate canned or custom reports. If the raw log fields do not provide what you need, simply use a regular expression, either inline or to define a new field, to get the desired level of detail. Splunk’s full power is difficult to describe, so we recommend downloading and trying it.\""
-  },
-  {
-    "name": "TLB",
-    "ring": "trial",
-    "quadrant": "tools",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"If your test suites are growing slower and you have already verified that it is not a serious problem with your application, first make your tests faster, then look at parallelization. The Test Load Balancer (TLB) project is a big development in the world of parallel test execution. It removes the inefficiencies of manual work distribution using smart algorithms and historical test execution data to optimize workload distribution and minimize elapsed time. Further, it orders the tests in intelligent ways like executing the test that failed in the previous execution first to get quicker feedback. Parallel execution can occur across a grid of machines or across multiple processes on a single machine. JUnit, RSpec, Test::Unit, Twist and Cucumber are currently supported and NUnit is under development.\""
-  },
-  {
-    "name": "API management services",
-    "ring": "assess",
-    "quadrant": "tools",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"Exposing APIs to a large developer community creates nonfunctional requirements that are often the same from one business to another. Key management, authentication, access control, traffic management, caching, tracking and reporting are often implemented as commodity functions that can be reused across applications and businesses without modification. Some service providers have spotted this trend and are offering API management via software as a service. Prominent vendors in this space include Mashery and Apigee, who both offer the option of hosting the service on a customer’s own infrastructure. API management services may also be interesting to enterprise customers who are using Web as platform techniques for their internal SOA, providing a lighter weight alternative to traditional SOA management tools.\""
-  },
-  {
-    "name": "Deltacloud",
-    "ring": "assess",
-    "quadrant": "tools",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"Every Infrastructure as a Service (IaaS) cloud offering provides their own API for performing common tasks. Deltacloud aims to abstract those APIs and provide a RESTful interface for performing common cloud management functions, making it possible to migrate virtual infrastructure between clouds.\""
-  },
-  {
-    "name": "Gradle",
-    "ring": "assess",
-    "quadrant": "tools",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"Gradle is an attempt to bring sanity to the enterprise build space by marrying best-of-breed tools with cutting edge techniques. Gradle allows you to interact with your existing Maven repositories, but adds scriptability to your builds with a clean domain specific language.\""
-  },
-  {
-    "name": "jQuery Mobile",
-    "ring": "assess",
-    "quadrant": "tools",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Open source BI/ETL tools",
-    "ring": "assess",
-    "quadrant": "tools",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Selenium 2 testing of mobile websites",
-    "ring": "assess",
-    "quadrant": "tools",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"When building mobile web applications we can now use Selenium 2 mobile tests to run the same acceptance tests on iOS, Android and Blackberry. This works on emulators, simulators and physical devices. We have successfully used this approach on production software for all 3 platforms. While the Blackberry driver is still in beta, we found it stable enough for use. The key challenge is the different ways to install the driver and start the browser, but this only needs to be solved once. We suggest that companies doing mobile web for these devices try this approach. We see no reason why this approach cannot be extended to Windows Phone in the future.\""
-  },
-  {
-    "name": "Sonar",
-    "ring": "assess",
-    "quadrant": "tools",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Vagrant",
-    "ring": "assess",
-    "quadrant": "tools",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"\""
-  },
-  {
-    "name": "Code in configuration",
-    "ring": "hold",
-    "quadrant": "tools",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Cross-platform mobile toolkits",
-    "ring": "hold",
-    "quadrant": "tools",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "ESB",
-    "ring": "hold",
-    "quadrant": "tools",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"\""
-  },
-  {
-    "name": "VCS with “implicit workflow”",
-    "ring": "hold",
-    "quadrant": "tools",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "HTML 5",
-    "ring": "adopt",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "FALSE",
-    "status": "moved in",
-    "description": "\"\""
-  },
-  {
-    "name": "JavaScript as a first class language",
-    "ring": "adopt",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"The maintainability, testability and readability of JavaScript is a very significant contributor to the productivity of teams producing Web-based applications and sites. Thoughtworks believes JavaScript deserves to be treated as a first class language, viewing it as second class citizen has become an excuse for a whole series of bad practice we would not tolerate in Java or C#. We need to use the same kind of tools (e.g. unit testing) and approaches (e.g. refactoring) as we’d use for any other production language. V8 and other JavaScript engines are raising the bar on performance, while Flash &amp; Silverlight seem to be losing momentum to HTML5 + JavaScript in areas where a rich client-like experience is required. This is good news for all interested in open standards on the Web.\""
-  },
-  {
-    "name": "CoffeeScript",
-    "ring": "trial",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Domain-Specific Languages",
-    "ring": "trial",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"\""
-  },
-  {
-    "name": "HAML",
-    "ring": "trial",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"HAML is a language that allows you to use indentation to lay out the structure of HTML. While not a general replacement for HTML, it is effective for focusing on the hierarchical structure of tags.\""
-  },
-  {
-    "name": "HTML5 for offline applications",
-    "ring": "trial",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "SASS, SCSS, LESS, and Stylus",
-    "ring": "trial",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"\""
-  },
-  {
-    "name": "Scala, the good parts",
-    "ring": "trial",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"\""
-  },
-  {
-    "name": "Backbone.js",
-    "ring": "assess",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"Even though JavaScript increasingly plays a more important role in today’s world of software development, it is still troublesome to organize in a clean structure. Backbone.js is a library which provides an MVC (model view controller) framework for JavaScript heavy applications. It allows developers to write JavaScript code in a more manageable and testable way.\""
-  },
-  {
-    "name": "Clojure",
-    "ring": "assess",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"The functional languages F#, Clojure and Scala still reside in the assess ring of the radar. Interest in functional languages continues to grow. Two characteristics of functional languages in particular are driving this interest, immutability with its implications for parallelism and functions as first class objects. While the introduction of closures to C# brings some of the latter capability, functional languages are almost synonymous with immutability. The placement of these languages within the assess ring indicates our view of their relative maturity and appropriateness. F#, based on OCaml, is fully supported within the Visual Studio toolset. F# includes support for objects and imperative constructs in addition to functional language constructs in a natural way. Scala, like F#, combines the object and functional paradigms, although the syntax of Scala is more Java-like. Clojure began as a JVM language and is now available on the .NET CLR. Clojure does allow for mutable state although it has an extensive set of immutable persistent data structures, all supporting multi-threaded applications. There are many similarities between these three languages, but at the moment we believe F# and Clojure to be better suited to most organizations for assessing than Scala. More work clearly needs to be done to validate this assertion.\""
-  },
-  {
-    "name": "F#",
-    "ring": "assess",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"The functional languages F#, Clojure and Scala still reside in the assess ring of the radar. Interest in functional languages continues to grow. Two characteristics of functional languages in particular are driving this interest, immutability with its implications for parallelism and functions as first class objects. While the introduction of closures to C# brings some of the latter capability, functional languages are almost synonymous with immutability. The placement of these languages within the assess ring indicates our view of their relative maturity and appropriateness. F#, based on OCaml, is fully supported within the Visual Studio toolset. F# includes support for objects and imperative constructs in addition to functional language constructs in a natural way. Scala, like F#, combines the object and functional paradigms, although the syntax of Scala is more Java-like. Clojure began as a JVM language and is now available on the .NET CLR. Clojure does allow for mutable state although it has an extensive set of immutable persistent data structures, all supporting multi-threaded applications. There are many similarities between these three languages, but at the moment we believe F# and Clojure to be better suited to most organizations for assessing than Scala. More work clearly needs to be done to validate this assertion.\""
-  },
-  {
-    "name": "Future of Java",
-    "ring": "assess",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"This language/framework was included in this edition of the Radar for visibility. We felt that there wasn't anything substantial to add to the discourse around it, but that it was important to keep this in view.\""
-  },
-  {
-    "name": "Logic in stored procedures",
-    "ring": "hold",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  }
+  [
+    "Automate database deployment",
+    "adopt",
+    "techniques",
+    "FALSE",
+    "moved in",
+    "\"\""
+  ],
+  [
+    "Coding architects",
+    "adopt",
+    "techniques",
+    "FALSE",
+    "no change",
+    "\"This technique was included in this edition of the Radar for visibility. We felt that there wasn't anything substantial to add to the discourse around it, but that it was important to keep this in view.\""
+  ],
+  [
+    "Continuous Delivery (CD)",
+    "adopt",
+    "techniques",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "DevOps",
+    "adopt",
+    "techniques",
+    "FALSE",
+    "moved in",
+    "\"\""
+  ],
+  [
+    "Emergent design",
+    "adopt",
+    "techniques",
+    "FALSE",
+    "no change",
+    "\"As Agile practices move further toward mainstream adoption, we see significant benefits from the adoption of Lean software development practices as well. These practices have their roots in the Toyota Production System and complement much of our understanding of Agile software development to date. One topic that Lean has also given us greater insight into is that of set-based design. Set-based design leads us to implement similar solutions at the same time while the cost of doing so is constrained. This leads us into the area of emergent design and the ability to let experience shape our design decisions and defer key decisions until the last responsible moment.\""
+  ],
+  [
+    "Evolutionary architecture",
+    "adopt",
+    "techniques",
+    "FALSE",
+    "moved in",
+    "\"In contrast to traditional up-front, heavy-weight enterprise architectural designs, we recommend adopting evolutionary architecture. It provides the benefits of enterprise architecture without the problems caused by trying to accurately predict the future. Instead of guessing how components will be re-used, evolutionary architecture supports adaptability, using proper abstractions, database migrations, test suites, continuous integration and refactoring to harvest re-use as it occurs within a system. The driving technical requirements for a system should be identified early to ensure they are properly handled in subsequent designs and implementations. We advocate delaying decisions to the latest responsible moment, which might in fact be up-front for some decisions.\""
+  ],
+  [
+    "Evolutionary database",
+    "adopt",
+    "techniques",
+    "FALSE",
+    "no change",
+    "\"\""
+  ],
+  [
+    "Infrastructure as code",
+    "adopt",
+    "techniques",
+    "FALSE",
+    "no change",
+    "\"The DevOps movement continues to grow, with developers and operations staff working closely together to solve the “software last mile” problem. Infrastructure as code is a technique for treating infrastructure configuration in the same way as code; checking it into source control, then using it to push changes out to the data center. In addition to web server, application server and application configuration, we are seeing network configuration treated in the same way. Network switch, firewall and load balancer configuration can be infrastructure as code, and even changed at runtime.\""
+  ],
+  [
+    "Platform roadmaps",
+    "adopt",
+    "techniques",
+    "FALSE",
+    "no change",
+    "\"Almost every enterprise has “legacy systems” that are expensive to operate and upgrade. Often a system will become legacy over the course of several years, through neglect or atrophy. We recommend using platform roadmaps to maximize the value of a systems portfolio and plan for the upgrade and eventual retirement of systems.\""
+  ],
+  [
+    "Progressive Enhancement",
+    "adopt",
+    "techniques",
+    "FALSE",
+    "moved in",
+    "\"Recent use of progressive enhancement with mobile applications has been very effective and demonstrates the universal nature of this web design strategy. We encourage people to adopt this strategy to keep their code clean and give each user the optimal experience for their device.\""
+  ],
+  [
+    "Simple performance trending",
+    "adopt",
+    "techniques",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Visualization and metrics",
+    "adopt",
+    "techniques",
+    "FALSE",
+    "no change",
+    "\"Data visualizations have been effective in business and IT decision making. Organizations are making effective use of real time data through visualizations. These visualizations include point in time data as well as trends plotted over time. We are seeing increased adoption of these techniques in optimizing operations and software development.\""
+  ],
+  [
+    "Acceptance test of journeys",
+    "trial",
+    "techniques",
+    "FALSE",
+    "no change",
+    "\"\""
+  ],
+  [
+    "Build your own radar",
+    "trial",
+    "techniques",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Capability modeling",
+    "trial",
+    "techniques",
+    "FALSE",
+    "no change",
+    "\"Initiatives that span multiple projects require shared understanding of the business context, operating model, and strategic goals of an organization, as well as any existing technical, organizational and process constraints impinging on planning and design activities. As part of our evolutionary approach to enterprise architecture, we use business capability modelling to create lightweight hierarchical models of the business functions that are an essential part of an organization’s needs and goals. Capabilities describe an organization’s operating model in terms of goals and competencies (what is to be done), rather than implementation specifics (how things are done). Whereas business architecture models based on people, process or technology are contingent, volatile and often short lived, and therefore ill-suited to the long-term planning needs of the organization, capability models provide a description of the business context that is stable enough to serve as a basis for identifying and prioritising technology and process initiatives.\""
+  ],
+  [
+    "Categorization & prioritization of technical debt",
+    "trial",
+    "techniques",
+    "FALSE",
+    "no change",
+    "\"\""
+  ],
+  [
+    "Concurrency abstractions and patterns",
+    "trial",
+    "techniques",
+    "FALSE",
+    "no change",
+    "\"Concurrency is a difficult problem and increasingly difficult to avoid. Hardware isn’t getting faster but multicore platforms are becoming the norm, with even mobile phones containing two or more processors. Concurrency abstractions and patterns -- which are not new, but less widely known -- are helping address many of the challenges seen in this space. In particular the models seen in Clojure, Erlang, Retlang and Event Patterns offer a more testable and reliable approach than the better known threads, locks and semaphores.\""
+  ],
+  [
+    "Continuous deployment",
+    "trial",
+    "techniques",
+    "FALSE",
+    "no change",
+    "\"If you are wondering “What comes after agile?,” you should look towards continuous delivery. While your development processes may be fully optimized, it still might take your organization weeks or months to get a single change into production. Continuous delivery focuses on maximizing automation including infrastructure as code, environment management and deployment automation to ensure your system is always ready for production. It is about tightening your feedback loops and not putting off anything until the end. Continuous delivery is not the same as continuous deployment, which means deploying every change to production. Continuous delivery is not a cowboy show. It puts you in charge of your production environment. The business can pick and choose what and when to deploy. If you think you’ve nailed agile development, but aren’t considering how to achieve continuous delivery, you really haven’t even started.\""
+  ],
+  [
+    "Event API’s",
+    "trial",
+    "techniques",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Iterative data warehousing",
+    "trial",
+    "techniques",
+    "FALSE",
+    "moved in",
+    "\"Like iterative software development, there is lot of value to be gained by delivering data warehousing projects using iterative techniques. Iterative data warehousing techniques allow the end users of the data warehouse to determine what reports they want and the ETL developers and data modelers to deliver those features without wasting time with data modeling and ETL jobs that do not provide immediate value to the business.\""
+  ],
+  [
+    "Thoughtful caching",
+    "trial",
+    "techniques",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Decision driven BI",
+    "assess",
+    "techniques",
+    "TRUE",
+    "new",
+    "\"Traditional approaches to implementing data warehouses and business intelligence work from the bottom up in horizontal tiers, assembling and cleansing data sources from across the enterprise then aggregating them into a comprehensive data mart before reports can be generated. Some people are now employing an alternative approach that starts with the real outcome--a business decision--and pulls work items through the process as needed to support that decision. Decision driven business intelligence allows a more incremental approach to BI and facilitates rapid feedback to the decision makers who are the ultimate consumers of business intelligence.\""
+  ],
+  [
+    "Event driven business intelligence",
+    "assess",
+    "techniques",
+    "TRUE",
+    "new",
+    "\"This technique was included in this edition of the Radar for visibility. We felt that there wasn't anything substantial to add to the discourse around it, but that it was important to keep this in view.\""
+  ],
+  [
+    "Event Sourcing",
+    "assess",
+    "techniques",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Smart systems",
+    "assess",
+    "techniques",
+    "FALSE",
+    "no change",
+    "\"Smart Phones with a GPS, cameras and a screen are but one example of smart systems which are proliferating around us, fusing the real and the digital world. Augmented reality apps like Google Goggles, geolocation services &amp; smart grids are just some of the possible applications.\""
+  ],
+  [
+    "Database based integration",
+    "hold",
+    "techniques",
+    "FALSE",
+    "no change",
+    "\"\""
+  ],
+  [
+    "Feature branching",
+    "hold",
+    "techniques",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Manual infrastructure management",
+    "hold",
+    "techniques",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Procedure oriented integration",
+    "hold",
+    "techniques",
+    "TRUE",
+    "new",
+    "\"One of the goals of SOA has been to decouple services by exchanging human-readable business documents instead of programming parameters. However, in implementing SOA, many businesses have simply used web services to expose the underlying programming models of back-end systems. Procedure oriented integration is nothing more than remote procedure calls implemented via a different protocol. The consequences of this are additional layers of complexity with no improvement in business flexibility. To avoid this, implementers of SOA should first understand the business meaning of their services, then implement human-readable contracts that are independent of legacy system implementation.\""
+  ],
+  [
+    "Scrum certification",
+    "hold",
+    "techniques",
+    "FALSE",
+    "no change",
+    "\"\""
+  ],
+  [
+    "ATOM",
+    "adopt",
+    "platforms",
+    "FALSE",
+    "no change",
+    "\"\""
+  ],
+  [
+    "AWS",
+    "adopt",
+    "platforms",
+    "TRUE",
+    "new",
+    "\"Amazon continues to evolve the AWS cloud with services such as RDB, making it even easier to engineer and deploy cloud-based applications. Not every AWS feature is as mature as EC2 and S3, so you should carefully evaluate which AWS components to use. We feel comfortable recommending AWS where elasticity or on-demand computing are required.\""
+  ],
+  [
+    "JRuby",
+    "adopt",
+    "platforms",
+    "FALSE",
+    "no change",
+    "\"Charles Nutter and the JRuby team continue to improve JRuby at a frantic pace. It is fast and they place massive importance on keeping their ecosystem up-to-date, including DB adapters, gem management, and modern Rails deployment. Rails 3 + JRuby is an awesome platform. There really is no reason to not be using Ruby, one of our favorite languages, in the enterprise.\""
+  ],
+  [
+    "KVM",
+    "adopt",
+    "platforms",
+    "FALSE",
+    "no change",
+    "\"This platform was included in this edition of the Radar for visibility. We felt that there wasn't anything substantial to add to the discourse around it, but that it was important to keep this in view.\""
+  ],
+  [
+    "Mobile web",
+    "adopt",
+    "platforms",
+    "FALSE",
+    "moved in",
+    "\"\""
+  ],
+  [
+    "Heroku",
+    "trial",
+    "platforms",
+    "FALSE",
+    "no change",
+    "\"\""
+  ],
+  [
+    "Tablet",
+    "trial",
+    "platforms",
+    "FALSE",
+    "no change",
+    "\"\""
+  ],
+  [
+    "Ubiquitous computing",
+    "trial",
+    "platforms",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Cloud Foundry",
+    "assess",
+    "platforms",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "GPGPU",
+    "assess",
+    "platforms",
+    "FALSE",
+    "no change",
+    "\"\""
+  ],
+  [
+    "Node.js",
+    "assess",
+    "platforms",
+    "FALSE",
+    "no change",
+    "\"\""
+  ],
+  [
+    "OAuth",
+    "assess",
+    "platforms",
+    "FALSE",
+    "no change",
+    "\"OAuth is a web-friendly, lightweight standard for authorization that allows a user to share private resources between internet services, e.g., allowing your favorite social networking site to access your photos from your favorite photo sharing site. OAuth is simple, avoids password proliferation, and allows a service to grant bare minimum privileges. If you are exposing your application’s data in a lightweight, web-friendly manner you should strongly consider using OAuth as your standard for authorization.\""
+  ],
+  [
+    "OpenStack",
+    "assess",
+    "platforms",
+    "FALSE",
+    "no change",
+    "\"OpenStack is a new cloud operating system that promises a complete open-source solution. OpenStack is a fabric cloud controller which leverages existing virtualization technologies such as KVM and will integrate with other virtualisation tools such as Xen and OpenVZ. Currently under heavy development, OpenStack is expected to provide a stable production-ready solution by the end of Q2 2011.\""
+  ],
+  [
+    "vFabric",
+    "assess",
+    "platforms",
+    "FALSE",
+    "no change",
+    "\"\""
+  ],
+  [
+    "GWT",
+    "hold",
+    "platforms",
+    "FALSE",
+    "no change",
+    "\"\""
+  ],
+  [
+    "Java portal servers",
+    "hold",
+    "platforms",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "WS-*",
+    "hold",
+    "platforms",
+    "FALSE",
+    "no change",
+    "\"Previously our advice has been to tread carefully when using the WS-* stack beyond the basic profile. Given the progress and acceptance of simpler web-as-platform techniques such as REST and OAuth and the known issues with the WS-*, it should only be used cautiously.\""
+  ],
+  [
+    "Caching reverse proxies",
+    "adopt",
+    "tools",
+    "TRUE",
+    "new",
+    "\"Application designs that incorporate caching reverse proxies as first class design elements are simpler and more resilient to infrastructure failures. Placing a caching reverse proxy between an application and a web service it consumes reduces the risk of service failures affecting the application while improving overall system performance.\""
+  ],
+  [
+    "Git",
+    "adopt",
+    "tools",
+    "FALSE",
+    "moved in",
+    "\"\""
+  ],
+  [
+    "GitHub",
+    "adopt",
+    "tools",
+    "FALSE",
+    "moved in",
+    "\"\""
+  ],
+  [
+    "Subversion",
+    "adopt",
+    "tools",
+    "FALSE",
+    "no change",
+    "\"Subversion moves back into the Adopt section of the radar because it is a solid version control tool suitable for most teams. We consider Subversion’s features to be the basic standard for a modern version control tool. Thoughtworkers continue to embrace and recommend Distributed Version Control tools such as Git and Mercurial, but we caution that these systems often require deeper understanding to get the most out of them. New to the radar is GitHub, a “social coding” tool supporting both source code hosting and social networking. GitHub is arguably one of the main reasons Git has become the leading DVCS tool, and GitHub’s collaboration features are often used by enterprises that need to support distributed teams.\""
+  ],
+  [
+    "Mercurial",
+    "trial",
+    "tools",
+    "FALSE",
+    "no change",
+    "\"In previous radars we recommended Distributed Version Control (DVCS) tools in general while mentioning Git and Mercurial in particular. In this edition we narrow our recommendation to only Mercurial and Git as these two have become the clear front-runners. Due to its success and the associated network effect GitHub remains the recommended option for enterprises that want to interact with the open source community.\""
+  ],
+  [
+    "Message buses without smarts",
+    "trial",
+    "tools",
+    "FALSE",
+    "no change",
+    "\"\""
+  ],
+  [
+    "New Relic beyond Rails",
+    "trial",
+    "tools",
+    "TRUE",
+    "new",
+    "\"We have regularly used New Relic hosted performance monitoring with Ruby on Rails systems in development and production. The combination of fast setup and comprehensive reporting has proven extremely valuable in troubleshooting performance. We are now seeing good results from the New Relic monitoring services for Java and .NET systems.\""
+  ],
+  [
+    "Next-generation test tools",
+    "trial",
+    "tools",
+    "FALSE",
+    "no change",
+    "\"The Ruby language community is responsible for a number of innovations in the area of testing. The next generation of testing tools such as rspec and Cucumber are two such tools that have come out of this community. These tools, along with Thoughtworks’ Twist, provide a way to express tests in a more natural language syntax that captures the intent of the system in a way that end users can quickly grasp.\""
+  ],
+  [
+    "NoSQL",
+    "trial",
+    "tools",
+    "FALSE",
+    "no change",
+    "\"NoSQL technologies are maturing daily, allowing for innovative solutions as businesses need to scale massively or ask intelligent questions of existing data. Technologies like MongoDB, Riak, Neo4J, Cassandra and many others are helping power the NoSQL space.\""
+  ],
+  [
+    "PowerShell",
+    "trial",
+    "tools",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Splunk",
+    "trial",
+    "tools",
+    "FALSE",
+    "no change",
+    "\"Application logs are both a blessing and a curse. They are comforting to have when a production issue arises, but actually digging out the data we need usually requires cobbling together scripts written in tools such as AWK and sed. Splunk is an elegant solution that quickly analyzes many standard log file formats like IIS, Log4J and syslog, and is extensible to custom formats. It indexes files, statically or in real time, to generate canned or custom reports. If the raw log fields do not provide what you need, simply use a regular expression, either inline or to define a new field, to get the desired level of detail. Splunk’s full power is difficult to describe, so we recommend downloading and trying it.\""
+  ],
+  [
+    "TLB",
+    "trial",
+    "tools",
+    "TRUE",
+    "new",
+    "\"If your test suites are growing slower and you have already verified that it is not a serious problem with your application, first make your tests faster, then look at parallelization. The Test Load Balancer (TLB) project is a big development in the world of parallel test execution. It removes the inefficiencies of manual work distribution using smart algorithms and historical test execution data to optimize workload distribution and minimize elapsed time. Further, it orders the tests in intelligent ways like executing the test that failed in the previous execution first to get quicker feedback. Parallel execution can occur across a grid of machines or across multiple processes on a single machine. JUnit, RSpec, Test::Unit, Twist and Cucumber are currently supported and NUnit is under development.\""
+  ],
+  [
+    "API management services",
+    "assess",
+    "tools",
+    "FALSE",
+    "no change",
+    "\"Exposing APIs to a large developer community creates nonfunctional requirements that are often the same from one business to another. Key management, authentication, access control, traffic management, caching, tracking and reporting are often implemented as commodity functions that can be reused across applications and businesses without modification. Some service providers have spotted this trend and are offering API management via software as a service. Prominent vendors in this space include Mashery and Apigee, who both offer the option of hosting the service on a customer’s own infrastructure. API management services may also be interesting to enterprise customers who are using Web as platform techniques for their internal SOA, providing a lighter weight alternative to traditional SOA management tools.\""
+  ],
+  [
+    "Deltacloud",
+    "assess",
+    "tools",
+    "FALSE",
+    "no change",
+    "\"Every Infrastructure as a Service (IaaS) cloud offering provides their own API for performing common tasks. Deltacloud aims to abstract those APIs and provide a RESTful interface for performing common cloud management functions, making it possible to migrate virtual infrastructure between clouds.\""
+  ],
+  [
+    "Gradle",
+    "assess",
+    "tools",
+    "TRUE",
+    "new",
+    "\"Gradle is an attempt to bring sanity to the enterprise build space by marrying best-of-breed tools with cutting edge techniques. Gradle allows you to interact with your existing Maven repositories, but adds scriptability to your builds with a clean domain specific language.\""
+  ],
+  [
+    "jQuery Mobile",
+    "assess",
+    "tools",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Open source BI/ETL tools",
+    "assess",
+    "tools",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Selenium 2 testing of mobile websites",
+    "assess",
+    "tools",
+    "TRUE",
+    "new",
+    "\"When building mobile web applications we can now use Selenium 2 mobile tests to run the same acceptance tests on iOS, Android and Blackberry. This works on emulators, simulators and physical devices. We have successfully used this approach on production software for all 3 platforms. While the Blackberry driver is still in beta, we found it stable enough for use. The key challenge is the different ways to install the driver and start the browser, but this only needs to be solved once. We suggest that companies doing mobile web for these devices try this approach. We see no reason why this approach cannot be extended to Windows Phone in the future.\""
+  ],
+  [
+    "Sonar",
+    "assess",
+    "tools",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Vagrant",
+    "assess",
+    "tools",
+    "FALSE",
+    "no change",
+    "\"\""
+  ],
+  [
+    "Code in configuration",
+    "hold",
+    "tools",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Cross-platform mobile toolkits",
+    "hold",
+    "tools",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "ESB",
+    "hold",
+    "tools",
+    "FALSE",
+    "no change",
+    "\"\""
+  ],
+  [
+    "VCS with “implicit workflow”",
+    "hold",
+    "tools",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "HTML 5",
+    "adopt",
+    "languages-and-frameworks",
+    "FALSE",
+    "moved in",
+    "\"\""
+  ],
+  [
+    "JavaScript as a first class language",
+    "adopt",
+    "languages-and-frameworks",
+    "FALSE",
+    "no change",
+    "\"The maintainability, testability and readability of JavaScript is a very significant contributor to the productivity of teams producing Web-based applications and sites. Thoughtworks believes JavaScript deserves to be treated as a first class language, viewing it as second class citizen has become an excuse for a whole series of bad practice we would not tolerate in Java or C#. We need to use the same kind of tools (e.g. unit testing) and approaches (e.g. refactoring) as we’d use for any other production language. V8 and other JavaScript engines are raising the bar on performance, while Flash &amp; Silverlight seem to be losing momentum to HTML5 + JavaScript in areas where a rich client-like experience is required. This is good news for all interested in open standards on the Web.\""
+  ],
+  [
+    "CoffeeScript",
+    "trial",
+    "languages-and-frameworks",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Domain-Specific Languages",
+    "trial",
+    "languages-and-frameworks",
+    "FALSE",
+    "no change",
+    "\"\""
+  ],
+  [
+    "HAML",
+    "trial",
+    "languages-and-frameworks",
+    "FALSE",
+    "no change",
+    "\"HAML is a language that allows you to use indentation to lay out the structure of HTML. While not a general replacement for HTML, it is effective for focusing on the hierarchical structure of tags.\""
+  ],
+  [
+    "HTML5 for offline applications",
+    "trial",
+    "languages-and-frameworks",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "SASS, SCSS, LESS, and Stylus",
+    "trial",
+    "languages-and-frameworks",
+    "FALSE",
+    "no change",
+    "\"\""
+  ],
+  [
+    "Scala, the good parts",
+    "trial",
+    "languages-and-frameworks",
+    "FALSE",
+    "no change",
+    "\"\""
+  ],
+  [
+    "Backbone.js",
+    "assess",
+    "languages-and-frameworks",
+    "TRUE",
+    "new",
+    "\"Even though JavaScript increasingly plays a more important role in today’s world of software development, it is still troublesome to organize in a clean structure. Backbone.js is a library which provides an MVC (model view controller) framework for JavaScript heavy applications. It allows developers to write JavaScript code in a more manageable and testable way.\""
+  ],
+  [
+    "Clojure",
+    "assess",
+    "languages-and-frameworks",
+    "FALSE",
+    "no change",
+    "\"The functional languages F#, Clojure and Scala still reside in the assess ring of the radar. Interest in functional languages continues to grow. Two characteristics of functional languages in particular are driving this interest, immutability with its implications for parallelism and functions as first class objects. While the introduction of closures to C# brings some of the latter capability, functional languages are almost synonymous with immutability. The placement of these languages within the assess ring indicates our view of their relative maturity and appropriateness. F#, based on OCaml, is fully supported within the Visual Studio toolset. F# includes support for objects and imperative constructs in addition to functional language constructs in a natural way. Scala, like F#, combines the object and functional paradigms, although the syntax of Scala is more Java-like. Clojure began as a JVM language and is now available on the .NET CLR. Clojure does allow for mutable state although it has an extensive set of immutable persistent data structures, all supporting multi-threaded applications. There are many similarities between these three languages, but at the moment we believe F# and Clojure to be better suited to most organizations for assessing than Scala. More work clearly needs to be done to validate this assertion.\""
+  ],
+  [
+    "F#",
+    "assess",
+    "languages-and-frameworks",
+    "FALSE",
+    "no change",
+    "\"The functional languages F#, Clojure and Scala still reside in the assess ring of the radar. Interest in functional languages continues to grow. Two characteristics of functional languages in particular are driving this interest, immutability with its implications for parallelism and functions as first class objects. While the introduction of closures to C# brings some of the latter capability, functional languages are almost synonymous with immutability. The placement of these languages within the assess ring indicates our view of their relative maturity and appropriateness. F#, based on OCaml, is fully supported within the Visual Studio toolset. F# includes support for objects and imperative constructs in addition to functional language constructs in a natural way. Scala, like F#, combines the object and functional paradigms, although the syntax of Scala is more Java-like. Clojure began as a JVM language and is now available on the .NET CLR. Clojure does allow for mutable state although it has an extensive set of immutable persistent data structures, all supporting multi-threaded applications. There are many similarities between these three languages, but at the moment we believe F# and Clojure to be better suited to most organizations for assessing than Scala. More work clearly needs to be done to validate this assertion.\""
+  ],
+  [
+    "Future of Java",
+    "assess",
+    "languages-and-frameworks",
+    "TRUE",
+    "new",
+    "\"This language/framework was included in this edition of the Radar for visibility. We felt that there wasn't anything substantial to add to the discourse around it, but that it was important to keep this in view.\""
+  ],
+  [
+    "Logic in stored procedures",
+    "hold",
+    "languages-and-frameworks",
+    "TRUE",
+    "new",
+    "\"\""
+  ]
 ]

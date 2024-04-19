@@ -1,306 +1,306 @@
 [
-  {
-    "name": "Build pipelines",
-    "ring": "adopt",
-    "quadrant": "techniques",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "User centered design",
-    "ring": "adopt",
-    "quadrant": "techniques",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"The benefits of user-centered design are often understated. Gaining a broader understanding of data flows and users’ goals simplify the overall architecture of a system while optimizing user interaction. In the past year we have seen a greater uptake of user-centered design in Agile software development practices as experts in both fields have established new ways of working together.\""
-  },
-  {
-    "name": "Emergent design",
-    "ring": "trial",
-    "quadrant": "techniques",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Evolutionary database",
-    "ring": "trial",
-    "quadrant": "techniques",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Lean software development",
-    "ring": "trial",
-    "quadrant": "techniques",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Visualization and metrics",
-    "ring": "trial",
-    "quadrant": "techniques",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Web as platform",
-    "ring": "trial",
-    "quadrant": "techniques",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"We assist many of our clients in adapting enterprise software architecture practices to fit within an Agile software delivery approach. In the past year we have seen increased interest in evolutionary enterprise architecture and how service oriented architectures shape the boundaries between enterprise units. The value of an evolutionary approach to enterprise architecture is the creation of lighter weight systems that ease integration between disparate parts. By embracing this approach and the notion of the web as an enterprise application platform, we have reduced overall complexity of application architectures, increased quality and scalability, and reduced development costs.\""
-  },
-  {
-    "name": "Continuous deployment",
-    "ring": "assess",
-    "quadrant": "techniques",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Evolutionary architecture",
-    "ring": "assess",
-    "quadrant": "techniques",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"We assist many of our clients in adapting enterprise software architecture practices to fit within an Agile software delivery approach. In the past year we have seen increased interest in evolutionary enterprise architecture and how service oriented architectures shape the boundaries between enterprise units. The value of an evolutionary approach to enterprise architecture is the creation of lighter weight systems that ease integration between disparate parts. By embracing this approach and the notion of the web as an enterprise application platform, we have reduced overall complexity of application architectures, increased quality and scalability, and reduced development costs.\""
-  },
-  {
-    "name": "Iterative data warehousing",
-    "ring": "assess",
-    "quadrant": "techniques",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Cloud",
-    "ring": "adopt",
-    "quadrant": "platforms",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Firefox",
-    "ring": "adopt",
-    "quadrant": "platforms",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"Web browsers continue to evolve as they strive to keep pace with new specifications in HTML, CSS and JavaScript. Alas, many enterprises have yet to embrace the end of life for IE6 and move to a newer and more standards compliant option. Of the browsers available today, Firefox and Opera provide support for the widest range of platforms. The Google browser, Chrome, brings new innovation to the browser space by splitting browser tabs into separate processes while providing a new implementation of JavaScript. These changes appear to give Chrome a significant performance boost over other browsers and have influenced the creation of a netbook OS called Chrome OS. While enterprises may look to move off IE6 and onto Microsoft’s IE8, we remain concerned about IE8’s current level of compliance to web standards.\""
-  },
-  {
-    "name": "IE6 End of Life",
-    "ring": "adopt",
-    "quadrant": "platforms",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"Web browsers continue to evolve as they strive to keep pace with new specifications in HTML, CSS and JavaScript. Alas, many enterprises have yet to embrace the end of life for IE6 and move to a newer and more standards compliant option. Of the browsers available today, Firefox and Opera provide support for the widest range of platforms. The Google browser, Chrome, brings new innovation to the browser space by splitting browser tabs into separate processes while providing a new implementation of JavaScript. These changes appear to give Chrome a significant performance boost over other browsers and have influenced the creation of a netbook OS called Chrome OS. While enterprises may look to move off IE6 and onto Microsoft’s IE8, we remain concerned about IE8’s current level of compliance to web standards.\""
-  },
-  {
-    "name": "iPhone",
-    "ring": "adopt",
-    "quadrant": "platforms",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "JVM as platform",
-    "ring": "adopt",
-    "quadrant": "platforms",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Android",
-    "ring": "trial",
-    "quadrant": "platforms",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Non-relational databases",
-    "ring": "trial",
-    "quadrant": "platforms",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"The semantic web and its underlying technologies, including RDF &amp; SPARQL, have been around for 8 years or more. Broader uptake of the Cloud and non-relational databases such Neo4j have helped move the semantic web into the reach of enterprise developers. Outside of the semantic web, nonrelational databases are being adopted as alternatives to relational databases in a number of situations. Leveraging these technologies will require new approaches to architecture and development that suggest widespread adoption will only occur over a number of years.\""
-  },
-  {
-    "name": "Chrome",
-    "ring": "assess",
-    "quadrant": "platforms",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"Web browsers continue to evolve as they strive to keep pace with new specifications in HTML, CSS and JavaScript. Alas, many enterprises have yet to embrace the end of life for IE6 and move to a newer and more standards compliant option. Of the browsers available today, Firefox and Opera provide support for the widest range of platforms. The Google browser, Chrome, brings new innovation to the browser space by splitting browser tabs into separate processes while providing a new implementation of JavaScript. These changes appear to give Chrome a significant performance boost over other browsers and have influenced the creation of a netbook OS called Chrome OS. While enterprises may look to move off IE6 and onto Microsoft’s IE8, we remain concerned about IE8’s current level of compliance to web standards.\""
-  },
-  {
-    "name": "Chrome OS",
-    "ring": "assess",
-    "quadrant": "platforms",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"Web browsers continue to evolve as they strive to keep pace with new specifications in HTML, CSS and JavaScript. Alas, many enterprises have yet to embrace the end of life for IE6 and move to a newer and more standards compliant option. Of the browsers available today, Firefox and Opera provide support for the widest range of platforms. The Google browser, Chrome, brings new innovation to the browser space by splitting browser tabs into separate processes while providing a new implementation of JavaScript. These changes appear to give Chrome a significant performance boost over other browsers and have influenced the creation of a netbook OS called Chrome OS. While enterprises may look to move off IE6 and onto Microsoft’s IE8, we remain concerned about IE8’s current level of compliance to web standards.\""
-  },
-  {
-    "name": "Google as corporate platform",
-    "ring": "assess",
-    "quadrant": "platforms",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Location based services",
-    "ring": "assess",
-    "quadrant": "platforms",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "RDFa",
-    "ring": "assess",
-    "quadrant": "platforms",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"The semantic web and its underlying technologies, including RDF &amp; SPARQL, have been around for 8 years or more. Broader uptake of the Cloud and non-relational databases such Neo4j have helped move the semantic web into the reach of enterprise developers. Outside of the semantic web, nonrelational databases are being adopted as alternatives to relational databases in a number of situations. Leveraging these technologies will require new approaches to architecture and development that suggest widespread adoption will only occur over a number of years.\""
-  },
-  {
-    "name": "RIA",
-    "ring": "assess",
-    "quadrant": "platforms",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"Our position on Rich Internet Applications has changed over the past year. Experience has shown that platforms such as Silverlight, Flex and JavaFX may be useful for rich visualizations of data but provide few benefits over simpler web applications. Given that these toolsets have limited support for automated testing, it would suggest that a more traditional web application stack provides greater value for enterprise development. We recommend only using RIA platforms for rich visualizations incorporated into web applications, not as comprehensive development targets.\""
-  },
-  {
-    "name": "IE8",
-    "ring": "hold",
-    "quadrant": "platforms",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"Web browsers continue to evolve as they strive to keep pace with new specifications in HTML, CSS and JavaScript. Alas, many enterprises have yet to embrace the end of life for IE6 and move to a newer and more standards compliant option. Of the browsers available today, Firefox and Opera provide support for the widest range of platforms. The Google browser, Chrome, brings new innovation to the browser space by splitting browser tabs into separate processes while providing a new implementation of JavaScript. These changes appear to give Chrome a significant performance boost over other browsers and have influenced the creation of a netbook OS called Chrome OS. While enterprises may look to move off IE6 and onto Microsoft’s IE8, we remain concerned about IE8’s current level of compliance to web standards.\""
-  },
-  {
-    "name": "ASP",
-    "ring": "adopt",
-    "quadrant": "tools",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Distributed version control",
-    "ring": "trial",
-    "quadrant": "tools",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"Distributed version control systems such as Git and Mercurial have had significant exposure in the past year or more as open source projects move to this toolset en masse. The social networking aspect that GitHub and Bitbucket have brought to distributed version control has helped to propel these tools forward and into enterprises looking for ways to develop across multiple geographies. The move for many to a distributed version control system has resulted in a move away from tools such as Subversion and other centralized version control systems. As organizations assess and choose between these two different toolsets, we suggest that you evaluate both in relation to your team’s specific needs. While we have seen widespread adoption of distributed version control tools within Thoughtworks and beyond, we still advocate the use of continuous integration and limits to the amount of time that code is spent outside of the main branch.\""
-  },
-  {
-    "name": "Subversion",
-    "ring": "trial",
-    "quadrant": "tools",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"Distributed version control systems such as Git and Mercurial have had significant exposure in the past year or more as open source projects move to this toolset en masse. The social networking aspect that GitHub and Bitbucket have brought to distributed version control has helped to propel these tools forward and into enterprises looking for ways to develop across multiple geographies. The move for many to a distributed version control system has resulted in a move away from tools such as Subversion and other centralized version control systems. As organizations assess and choose between these two different toolsets, we suggest that you evaluate both in relation to your team’s specific needs. While we have seen widespread adoption of distributed version control tools within Thoughtworks and beyond, we still advocate the use of continuous integration and limits to the amount of time that code is spent outside of the main branch.\""
-  },
-  {
-    "name": "Next-generation test tools",
-    "ring": "assess",
-    "quadrant": "tools",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Google Wave",
-    "ring": "hold",
-    "quadrant": "tools",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"Google Wave has sprung up over the past few months and looks to be a promising platform for collaboration over the Internet. The platform is still in early beta and suffers from some stability issues. Some early developers have integrated with the Google Wave platform but commercial releases of software that utilize Google Wave will likely wait until the beta tag has been lifted from the product.\""
-  },
-  {
-    "name": "Language workbenches",
-    "ring": "hold",
-    "quadrant": "tools",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Polyglot development environments",
-    "ring": "hold",
-    "quadrant": "tools",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"Polyglot programming continues to gain widespread acceptance across the industry reflecting the reality that software developers have many languages and tools at their disposal. One area that we have yet to see take off is the creation of polyglot development environments, capable of satisfying multiple language needs of development teams. While Eclipse, IntelliJ, Visual Studio and others have some cross-language capabilities, their support for a wide range of languages is limited at best.\""
-  },
-  {
-    "name": "JavaScript as a first class language",
-    "ring": "adopt",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "C# 4.0",
-    "ring": "trial",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Domain-Specific Languages",
-    "ring": "trial",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Concurrent languages",
-    "ring": "assess",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"The remaining two language types included on the radar are often grouped together. While functional and concurrent languages may be adopted in similar environments, their approaches are different. Functional programming focuses on expressing code in the form of mathematical functions that avoid maintaining state across multiple invocations. While functional languages such as Haskell have been around for a number of years, new functional (themed) languages such as Scala, F# and Clojure have sparked some interest in this paradigm. Due to the way in which functional languages manage state, interest in these languages has increased by many developers seeking to make the most out of multi-core processors. Many concurrent languages are also functional languages. The distinction lies in the emphasis on running operations in parallel. A number of such languages exist; Erlang is currently the most popular of these languages. Concurrent languages commonly provide some means for handling concurrency by using messages to communicate across multiple threads.\""
-  },
-  {
-    "name": "Functional languages",
-    "ring": "assess",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"The remaining two language types included on the radar are often grouped together. While functional and concurrent languages may be adopted in similar environments, their approaches are different. Functional programming focuses on expressing code in the form of mathematical functions that avoid maintaining state across multiple invocations. While functional languages such as Haskell have been around for a number of years, new functional (themed) languages such as Scala, F# and Clojure have sparked some interest in this paradigm. Due to the way in which functional languages manage state, interest in these languages has increased by many developers seeking to make the most out of multi-core processors. Many concurrent languages are also functional languages. The distinction lies in the emphasis on running operations in parallel. A number of such languages exist; Erlang is currently the most popular of these languages. Concurrent languages commonly provide some means for handling concurrency by using messages to communicate across multiple threads.\""
-  },
-  {
-    "name": "HTML 5",
-    "ring": "assess",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"This platform was included in this edition of the Radar for visibility. We felt that there wasn't anything substantial to add to the discourse around it, but that it was important to keep this in view.\""
-  },
-  {
-    "name": "Java language end of life",
-    "ring": "assess",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"As C# continues to surge ahead, the Java language appears to be moving slowly as the Java community waits for Java 7. Having waited for new language features to surface for almost 3 years, the Java community has begun to innovate in new languages that run on the Java Virtual Machine, languages such as Groovy, JRuby, Scala and Clojure. With the increase in number of languages available on the JVM, we expect enterprises to begin to assess the suitability of reducing the amount of Java specific code developed in their enterprise applications in favor of these newer languages.\""
-  }
+  [
+    "Build pipelines",
+    "adopt",
+    "techniques",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "User centered design",
+    "adopt",
+    "techniques",
+    "TRUE",
+    "new",
+    "\"The benefits of user-centered design are often understated. Gaining a broader understanding of data flows and users’ goals simplify the overall architecture of a system while optimizing user interaction. In the past year we have seen a greater uptake of user-centered design in Agile software development practices as experts in both fields have established new ways of working together.\""
+  ],
+  [
+    "Emergent design",
+    "trial",
+    "techniques",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Evolutionary database",
+    "trial",
+    "techniques",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Lean software development",
+    "trial",
+    "techniques",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Visualization and metrics",
+    "trial",
+    "techniques",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Web as platform",
+    "trial",
+    "techniques",
+    "TRUE",
+    "new",
+    "\"We assist many of our clients in adapting enterprise software architecture practices to fit within an Agile software delivery approach. In the past year we have seen increased interest in evolutionary enterprise architecture and how service oriented architectures shape the boundaries between enterprise units. The value of an evolutionary approach to enterprise architecture is the creation of lighter weight systems that ease integration between disparate parts. By embracing this approach and the notion of the web as an enterprise application platform, we have reduced overall complexity of application architectures, increased quality and scalability, and reduced development costs.\""
+  ],
+  [
+    "Continuous deployment",
+    "assess",
+    "techniques",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Evolutionary architecture",
+    "assess",
+    "techniques",
+    "TRUE",
+    "new",
+    "\"We assist many of our clients in adapting enterprise software architecture practices to fit within an Agile software delivery approach. In the past year we have seen increased interest in evolutionary enterprise architecture and how service oriented architectures shape the boundaries between enterprise units. The value of an evolutionary approach to enterprise architecture is the creation of lighter weight systems that ease integration between disparate parts. By embracing this approach and the notion of the web as an enterprise application platform, we have reduced overall complexity of application architectures, increased quality and scalability, and reduced development costs.\""
+  ],
+  [
+    "Iterative data warehousing",
+    "assess",
+    "techniques",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Cloud",
+    "adopt",
+    "platforms",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Firefox",
+    "adopt",
+    "platforms",
+    "TRUE",
+    "new",
+    "\"Web browsers continue to evolve as they strive to keep pace with new specifications in HTML, CSS and JavaScript. Alas, many enterprises have yet to embrace the end of life for IE6 and move to a newer and more standards compliant option. Of the browsers available today, Firefox and Opera provide support for the widest range of platforms. The Google browser, Chrome, brings new innovation to the browser space by splitting browser tabs into separate processes while providing a new implementation of JavaScript. These changes appear to give Chrome a significant performance boost over other browsers and have influenced the creation of a netbook OS called Chrome OS. While enterprises may look to move off IE6 and onto Microsoft’s IE8, we remain concerned about IE8’s current level of compliance to web standards.\""
+  ],
+  [
+    "IE6 End of Life",
+    "adopt",
+    "platforms",
+    "TRUE",
+    "new",
+    "\"Web browsers continue to evolve as they strive to keep pace with new specifications in HTML, CSS and JavaScript. Alas, many enterprises have yet to embrace the end of life for IE6 and move to a newer and more standards compliant option. Of the browsers available today, Firefox and Opera provide support for the widest range of platforms. The Google browser, Chrome, brings new innovation to the browser space by splitting browser tabs into separate processes while providing a new implementation of JavaScript. These changes appear to give Chrome a significant performance boost over other browsers and have influenced the creation of a netbook OS called Chrome OS. While enterprises may look to move off IE6 and onto Microsoft’s IE8, we remain concerned about IE8’s current level of compliance to web standards.\""
+  ],
+  [
+    "iPhone",
+    "adopt",
+    "platforms",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "JVM as platform",
+    "adopt",
+    "platforms",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Android",
+    "trial",
+    "platforms",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Non-relational databases",
+    "trial",
+    "platforms",
+    "TRUE",
+    "new",
+    "\"The semantic web and its underlying technologies, including RDF &amp; SPARQL, have been around for 8 years or more. Broader uptake of the Cloud and non-relational databases such Neo4j have helped move the semantic web into the reach of enterprise developers. Outside of the semantic web, nonrelational databases are being adopted as alternatives to relational databases in a number of situations. Leveraging these technologies will require new approaches to architecture and development that suggest widespread adoption will only occur over a number of years.\""
+  ],
+  [
+    "Chrome",
+    "assess",
+    "platforms",
+    "TRUE",
+    "new",
+    "\"Web browsers continue to evolve as they strive to keep pace with new specifications in HTML, CSS and JavaScript. Alas, many enterprises have yet to embrace the end of life for IE6 and move to a newer and more standards compliant option. Of the browsers available today, Firefox and Opera provide support for the widest range of platforms. The Google browser, Chrome, brings new innovation to the browser space by splitting browser tabs into separate processes while providing a new implementation of JavaScript. These changes appear to give Chrome a significant performance boost over other browsers and have influenced the creation of a netbook OS called Chrome OS. While enterprises may look to move off IE6 and onto Microsoft’s IE8, we remain concerned about IE8’s current level of compliance to web standards.\""
+  ],
+  [
+    "Chrome OS",
+    "assess",
+    "platforms",
+    "TRUE",
+    "new",
+    "\"Web browsers continue to evolve as they strive to keep pace with new specifications in HTML, CSS and JavaScript. Alas, many enterprises have yet to embrace the end of life for IE6 and move to a newer and more standards compliant option. Of the browsers available today, Firefox and Opera provide support for the widest range of platforms. The Google browser, Chrome, brings new innovation to the browser space by splitting browser tabs into separate processes while providing a new implementation of JavaScript. These changes appear to give Chrome a significant performance boost over other browsers and have influenced the creation of a netbook OS called Chrome OS. While enterprises may look to move off IE6 and onto Microsoft’s IE8, we remain concerned about IE8’s current level of compliance to web standards.\""
+  ],
+  [
+    "Google as corporate platform",
+    "assess",
+    "platforms",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Location based services",
+    "assess",
+    "platforms",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "RDFa",
+    "assess",
+    "platforms",
+    "TRUE",
+    "new",
+    "\"The semantic web and its underlying technologies, including RDF &amp; SPARQL, have been around for 8 years or more. Broader uptake of the Cloud and non-relational databases such Neo4j have helped move the semantic web into the reach of enterprise developers. Outside of the semantic web, nonrelational databases are being adopted as alternatives to relational databases in a number of situations. Leveraging these technologies will require new approaches to architecture and development that suggest widespread adoption will only occur over a number of years.\""
+  ],
+  [
+    "RIA",
+    "assess",
+    "platforms",
+    "TRUE",
+    "new",
+    "\"Our position on Rich Internet Applications has changed over the past year. Experience has shown that platforms such as Silverlight, Flex and JavaFX may be useful for rich visualizations of data but provide few benefits over simpler web applications. Given that these toolsets have limited support for automated testing, it would suggest that a more traditional web application stack provides greater value for enterprise development. We recommend only using RIA platforms for rich visualizations incorporated into web applications, not as comprehensive development targets.\""
+  ],
+  [
+    "IE8",
+    "hold",
+    "platforms",
+    "TRUE",
+    "new",
+    "\"Web browsers continue to evolve as they strive to keep pace with new specifications in HTML, CSS and JavaScript. Alas, many enterprises have yet to embrace the end of life for IE6 and move to a newer and more standards compliant option. Of the browsers available today, Firefox and Opera provide support for the widest range of platforms. The Google browser, Chrome, brings new innovation to the browser space by splitting browser tabs into separate processes while providing a new implementation of JavaScript. These changes appear to give Chrome a significant performance boost over other browsers and have influenced the creation of a netbook OS called Chrome OS. While enterprises may look to move off IE6 and onto Microsoft’s IE8, we remain concerned about IE8’s current level of compliance to web standards.\""
+  ],
+  [
+    "ASP",
+    "adopt",
+    "tools",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Distributed version control",
+    "trial",
+    "tools",
+    "TRUE",
+    "new",
+    "\"Distributed version control systems such as Git and Mercurial have had significant exposure in the past year or more as open source projects move to this toolset en masse. The social networking aspect that GitHub and Bitbucket have brought to distributed version control has helped to propel these tools forward and into enterprises looking for ways to develop across multiple geographies. The move for many to a distributed version control system has resulted in a move away from tools such as Subversion and other centralized version control systems. As organizations assess and choose between these two different toolsets, we suggest that you evaluate both in relation to your team’s specific needs. While we have seen widespread adoption of distributed version control tools within Thoughtworks and beyond, we still advocate the use of continuous integration and limits to the amount of time that code is spent outside of the main branch.\""
+  ],
+  [
+    "Subversion",
+    "trial",
+    "tools",
+    "TRUE",
+    "new",
+    "\"Distributed version control systems such as Git and Mercurial have had significant exposure in the past year or more as open source projects move to this toolset en masse. The social networking aspect that GitHub and Bitbucket have brought to distributed version control has helped to propel these tools forward and into enterprises looking for ways to develop across multiple geographies. The move for many to a distributed version control system has resulted in a move away from tools such as Subversion and other centralized version control systems. As organizations assess and choose between these two different toolsets, we suggest that you evaluate both in relation to your team’s specific needs. While we have seen widespread adoption of distributed version control tools within Thoughtworks and beyond, we still advocate the use of continuous integration and limits to the amount of time that code is spent outside of the main branch.\""
+  ],
+  [
+    "Next-generation test tools",
+    "assess",
+    "tools",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Google Wave",
+    "hold",
+    "tools",
+    "TRUE",
+    "new",
+    "\"Google Wave has sprung up over the past few months and looks to be a promising platform for collaboration over the Internet. The platform is still in early beta and suffers from some stability issues. Some early developers have integrated with the Google Wave platform but commercial releases of software that utilize Google Wave will likely wait until the beta tag has been lifted from the product.\""
+  ],
+  [
+    "Language workbenches",
+    "hold",
+    "tools",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Polyglot development environments",
+    "hold",
+    "tools",
+    "TRUE",
+    "new",
+    "\"Polyglot programming continues to gain widespread acceptance across the industry reflecting the reality that software developers have many languages and tools at their disposal. One area that we have yet to see take off is the creation of polyglot development environments, capable of satisfying multiple language needs of development teams. While Eclipse, IntelliJ, Visual Studio and others have some cross-language capabilities, their support for a wide range of languages is limited at best.\""
+  ],
+  [
+    "JavaScript as a first class language",
+    "adopt",
+    "languages-and-frameworks",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "C# 4.0",
+    "trial",
+    "languages-and-frameworks",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Domain-Specific Languages",
+    "trial",
+    "languages-and-frameworks",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Concurrent languages",
+    "assess",
+    "languages-and-frameworks",
+    "TRUE",
+    "new",
+    "\"The remaining two language types included on the radar are often grouped together. While functional and concurrent languages may be adopted in similar environments, their approaches are different. Functional programming focuses on expressing code in the form of mathematical functions that avoid maintaining state across multiple invocations. While functional languages such as Haskell have been around for a number of years, new functional (themed) languages such as Scala, F# and Clojure have sparked some interest in this paradigm. Due to the way in which functional languages manage state, interest in these languages has increased by many developers seeking to make the most out of multi-core processors. Many concurrent languages are also functional languages. The distinction lies in the emphasis on running operations in parallel. A number of such languages exist; Erlang is currently the most popular of these languages. Concurrent languages commonly provide some means for handling concurrency by using messages to communicate across multiple threads.\""
+  ],
+  [
+    "Functional languages",
+    "assess",
+    "languages-and-frameworks",
+    "TRUE",
+    "new",
+    "\"The remaining two language types included on the radar are often grouped together. While functional and concurrent languages may be adopted in similar environments, their approaches are different. Functional programming focuses on expressing code in the form of mathematical functions that avoid maintaining state across multiple invocations. While functional languages such as Haskell have been around for a number of years, new functional (themed) languages such as Scala, F# and Clojure have sparked some interest in this paradigm. Due to the way in which functional languages manage state, interest in these languages has increased by many developers seeking to make the most out of multi-core processors. Many concurrent languages are also functional languages. The distinction lies in the emphasis on running operations in parallel. A number of such languages exist; Erlang is currently the most popular of these languages. Concurrent languages commonly provide some means for handling concurrency by using messages to communicate across multiple threads.\""
+  ],
+  [
+    "HTML 5",
+    "assess",
+    "languages-and-frameworks",
+    "TRUE",
+    "new",
+    "\"This platform was included in this edition of the Radar for visibility. We felt that there wasn't anything substantial to add to the discourse around it, but that it was important to keep this in view.\""
+  ],
+  [
+    "Java language end of life",
+    "assess",
+    "languages-and-frameworks",
+    "TRUE",
+    "new",
+    "\"As C# continues to surge ahead, the Java language appears to be moving slowly as the Java community waits for Java 7. Having waited for new language features to surface for almost 3 years, the Java community has begun to innovate in new languages that run on the Java Virtual Machine, languages such as Groovy, JRuby, Scala and Clojure. With the increase in number of languages available on the JVM, we expect enterprises to begin to assess the suitability of reducing the amount of Java specific code developed in their enterprise applications in favor of these newer languages.\""
+  ]
 ]

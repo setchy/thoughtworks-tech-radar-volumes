@@ -1,850 +1,850 @@
 [
-  {
-    "name": "Decoupling deployment from release",
-    "ring": "adopt",
-    "quadrant": "techniques",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p>Implementing <a href=\"\"http://martinfowler.com/bliki/ContinuousDelivery.html\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Continuous Delivery<span class=\"\"pop-out-icon\"\"></span></a> continues to be a challenge for many organizations, and it remains important to highlight useful techniques such as <strong>decoupling deployment from release</strong>. We recommend strictly using the term <em>Deployment</em> when referring to the act of deploying a change to application components or infrastructure. The term <em>Release</em> should be used when a feature change is released to end users, with a business impact. Using techniques such as feature toggles and dark launches, we can deploy changes to production systems more frequently without releasing features. More-frequent deployments reduce the risk associated with change, while business stakeholders retain control over when features are released to end users.</p>\""
-  },
-  {
-    "name": "Products over projects",
-    "ring": "adopt",
-    "quadrant": "techniques",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p>We’ve long been championing the idea that thinking of software development as a project - something budgeted and delivered during a limited time slot - doesn’t fit the needs of the modern business. Important software efforts need to be an ongoing product that supports and rethinks the business process it is supporting. Such efforts are not complete until the business process, and its software, cease to be useful. Our observation of this <strong>products over projects</strong> approach, both with our own projects and outside, makes us determine that it is the approach to use for all but exceptional cases.</p>\""
-  },
-  {
-    "name": "Threat modeling",
-    "ring": "adopt",
-    "quadrant": "techniques",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"\""
-  },
-  {
-    "name": "BFF - Backend for frontends",
-    "ring": "trial",
-    "quadrant": "techniques",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p>Valuable services support many variations in clients, such as mobile versus web and different forms of web interface. It’s tempting to design a single back-end API to support all clients with a reusable API. But client needs vary, as do constraints such as bandwidth for mobile devices versus the desire for lots of data on fast web connections. Consequently it’s often best to <strong>define different back-end services for each kind of front-end</strong> client. These back ends should be developed by teams aligned with each front end to ensure that each back end properly meets the needs of its client.</p>\""
-  },
-  {
-    "name": "Bug bounties",
-    "ring": "trial",
-    "quadrant": "techniques",
-    "isNew": "FALSE",
-    "status": "moved in",
-    "description": "\"\""
-  },
-  {
-    "name": "Data Lake",
-    "ring": "trial",
-    "quadrant": "techniques",
-    "isNew": "FALSE",
-    "status": "moved in",
-    "description": "\"\""
-  },
-  {
-    "name": "Event Storming",
-    "ring": "trial",
-    "quadrant": "techniques",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p><a href=\"\"http://ziobrando.blogspot.be/2013/11/introducing-event-storming.html\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Event Storming</strong><span class=\"\"pop-out-icon\"\"></span></a> is a useful way to do rapid \"\"outside-in\"\" domain modeling: starting with the events that occur in the domain rather than a static data model. Run as a facilitated workshop, it focuses on discovering key domain events, placing them along a timeline, identifying their triggers and then exploring their relationships. This approach is particularly useful for people taking an <a href=\"\"https://www.thoughtworks.com/radar/techniques/event-sourcing\"\">Event Sourced</a> approach. Getting the right people in the room is important - a blend of business and technical people who bring both the questions and the answers. Ensuring that you have enough wall space for modeling is the second key to success. Look to discover the big picture, with the goal of collectively understanding the domain in all of its complexity, before diving into solutions.</p>\""
-  },
-  {
-    "name": "Flux",
-    "ring": "trial",
-    "quadrant": "techniques",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p><a href=\"\"https://facebook.github.io/flux/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Flux</strong><span class=\"\"pop-out-icon\"\"></span></a> is an application architecture introduced by Facebook. Usually mentioned in conjunction with <strong>React.js</strong> , Flux is based on a one-way flow of data up through the rendering pipeline. Flux embraces the modern web landscape of client-side JavaScript applications in a way that avoids the venerable MV* clichés. ThoughtWorks teams are now starting to gain some experience with this architectural style and find that it meshes well with service orientation and solves some of the problems inherent in two-way data binding.</p>\""
-  },
-  {
-    "name": "Idempotency filter",
-    "ring": "trial",
-    "quadrant": "techniques",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p>Many services, especially legacy services, are written with the assumption that any request will occur only once. Networks being what they are, this can be difficult to arrange. An <strong>idempotency filter</strong> is a simple component that merely checks for duplicate requests and ensures that they are sent to the supplier service only once. Such a filter should do only this one task and be used as a decorator over existing service calls.</p>\""
-  },
-  {
-    "name": "iFrames for sandboxing",
-    "ring": "trial",
-    "quadrant": "techniques",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p>Modern web pages tend to contain a plethora of JavaScript widgets and snippets coming from a variety of third-party sources. This can have a negative impact on both security and performance. While we are still waiting for fuller JavaScript isolation with web components, our teams have benefited from using HTML5 <a href=\"\"http://www.html5rocks.com/en/tutorials/security/sandboxed-iframes/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>iFrames for sandboxing</strong><span class=\"\"pop-out-icon\"\"></span></a> untrusted JavaScript.</p>\""
-  },
-  {
-    "name": "NPM for all the things",
-    "ring": "trial",
-    "quadrant": "techniques",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p>The JavaScript world has a plethora of dependency and package-management tools, all of which rely on the Node Package Manager (NPM). Teams are starting to see these extra tools as redundant and are recommending that if you can use solely NPM for package and dependency management, you should. The simplification of using <strong>NPM for all the things</strong> helps reduce some of the churn in the JavaScript tools space.</p>\""
-  },
-  {
-    "name": "Phoenix Environments",
-    "ring": "trial",
-    "quadrant": "techniques",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p>The time taken to provision and update environments continues to be a significant bottleneck on many software projects. Phoenix Environments can help with this delay by extending the idea of <a href=\"\"http://martinfowler.com/bliki/PhoenixServer.html\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Phoenix Servers<span class=\"\"pop-out-icon\"\"></span></a> to cover entire environments. We feel this is such a valuable and time-saving technique that you should consider trialing this approach. Using automation, we can create whole environments - including network configuration, load balancing and firewall ports - for example by using <a href=\"\"https://aws.amazon.com/cloudformation/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>CloudFormation</strong><span class=\"\"pop-out-icon\"\"></span></a> in AWS. We can then prove that the process works by tearing the environments down and recreating them from scratch on a regular basis. <strong>Phoenix Environments</strong> can support provisioning new environments for testing, development, UAT and disaster recovery. As with Phoenix Servers, this pattern is not always applicable, and we need to think carefully about things like state and dependencies. Treating the whole environment as a <a href=\"\"http://martinfowler.com/bliki/BlueGreenDeployment.html\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">blue/green deployment<span class=\"\"pop-out-icon\"\"></span></a> can be one approach when environment reconfiguration needs to be done.</p>\""
-  },
-  {
-    "name": "QA in production",
-    "ring": "trial",
-    "quadrant": "techniques",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p>Traditionally, QA roles have focused on assessing the quality of a software product in a pre-production environment. With the rise of Continuous Delivery, the QA role is shifting to include analyzing software product quality in production. This involves monitoring of the production systems, coming up with alert conditions to detect urgent errors, determining ongoing quality issues and figuring out what measurements you can use in the production environment to make this work. While there is a danger that some organizations will go too far and neglect pre-production QA, our experience shows that <strong>QA in production</strong> is a valuable tool for organizations that have already progressed to a reasonable degree of Continuous Delivery.</p>\""
-  },
-  {
-    "name": "Reactive architectures",
-    "ring": "trial",
-    "quadrant": "techniques",
-    "isNew": "FALSE",
-    "status": "moved in",
-    "description": "\"\""
-  },
-  {
-    "name": "Content Security Policies",
-    "ring": "assess",
-    "quadrant": "techniques",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Hosted IDE's",
-    "ring": "assess",
-    "quadrant": "techniques",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p>Many organizations want to leverage distributed or offshore development but have security concerns with their code and other intellectual property sitting outside their control. The result is often to use high-latency remote-desktop solutions for development, adhering to an organization’s security controls but crippling developer productivity. An alternative is to use a <strong>Hosted IDE</strong> delivered to a browser via VPN. The IDE, code and build environment are hosted within the organization's private cloud, easing security concerns, and the developer experience is significantly improved. Tools in this space include <a href=\"\"https://orionhub.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Orion<span class=\"\"pop-out-icon\"\"></span></a> and <a href=\"\"http://www.eclipse.org/che/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Che<span class=\"\"pop-out-icon\"\"></span></a> from the Eclipse Foundation, <a href=\"\"https://c9.io/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Cloud9<span class=\"\"pop-out-icon\"\"></span></a> and <a href=\"\"https://codenvy.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Code Envy<span class=\"\"pop-out-icon\"\"></span></a>.</p>\""
-  },
-  {
-    "name": "Hosting PII data in the EU",
-    "ring": "assess",
-    "quadrant": "techniques",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"<p>In a number of countries around the world, we see government agencies seeking broad access to private, personally identifiable information (PII). In the EU, the highest court has invalidated the Safe Harbor framework, and Privacy Shield, its successor, is expected to be challenged too. At the same time, the use of cloud computing is increasing, and all the major cloud providers—Amazon, Google and Microsoft—offer multiple data centers and regions within the European Union. Therefore, we recommend that companies, especially those with a global user base, assess the feasibility of a safe haven for their users' data, protected by the most progressive privacy laws, by <strong>Hosting PII in the EU</strong>.</p>\""
-  },
-  {
-    "name": "Monitoring of invariants",
-    "ring": "assess",
-    "quadrant": "techniques",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p>In monitoring, the common approach is to conceive of erroneous conditions and set alerts when these appear. But it’s often difficult to enumerate the myriad failure modes in a software system. <strong>Monitoring of invariants</strong> is a complementary approach to setting expected normal ranges, often by examining historical behavior, and alerting whenever a system goes outside those bounds.</p>\""
-  },
-  {
-    "name": "OWASP ASVS",
-    "ring": "assess",
-    "quadrant": "techniques",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Serverless architecture",
-    "ring": "assess",
-    "quadrant": "techniques",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"<p><strong>Serverless architecture</strong> replaces long-running virtual machines with ephemeral compute power that comes into existence on request and disappears immediately after use. Examples include <a href=\"\"https://www.firebase.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Firebase<span class=\"\"pop-out-icon\"\"></span></a> and <a href=\"\"https://www.thoughtworks.com/radar/platforms/aws-lambda\"\">AWS Lambda</a>. Use of this architecture can mitigate some security concerns such as security patching and SSH access control, and can make much more efficient use of compute resources. These systems cost very little to operate and can have inbuilt scaling features (this is especially true for AWS Lambda). An example architecture could be a JavaScript app with static assets served by a CDN or S3 coupled with AJAX calls served by the API Gateway and Lambda. While serverless architectures have significant benefits, there are drawbacks too: Deploying, managing and sharing code across services is more complex, and local or offline testing is more difficult if not impossible.</p>\""
-  },
-  {
-    "name": "Unikernels",
-    "ring": "assess",
-    "quadrant": "techniques",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "VR beyond gaming",
-    "ring": "assess",
-    "quadrant": "techniques",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "A single CI instance for all teams",
-    "ring": "hold",
-    "quadrant": "techniques",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Big Data envy",
-    "ring": "hold",
-    "quadrant": "techniques",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"<p>While we've long understood the value of Big Data to better understand how people interact with us, we've noticed an alarming trend of <strong>Big Data envy</strong> : organizations using complex tools to handle \"\"not-really-that-big” Data. Distributed map-reduce algorithms are a handy technique for large data sets, but many data sets we see could easily fit in a single-node relational or graph database. Even if you do have more data than that, usually the best thing to do is to first pick out the data you need, which can often then be processed on such a single node. So we urge that before you spin up your clusters, take a realistic assessment of what you need to process, and if it fits—maybe in RAM—use the simple option.</p>\""
-  },
-  {
-    "name": "Gitflow",
-    "ring": "hold",
-    "quadrant": "techniques",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p>We firmly believe that long-lived version-control branches harm valuable engineering practices such as continuous integration, and this belief underlies our dislike for <strong>Gitflow</strong>. We love the flexibility of <a href=\"\"https://git-scm.com\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Git<span class=\"\"pop-out-icon\"\"></span></a> underneath but abhor tools that encourage bad engineering practices. Very short-lived branches hurt less, but most teams we see using Gitflow feel empowered to abuse its branch-heavy workflow, which encourages late integration (therefore discouraging true continuous integration).</p>\""
-  },
-  {
-    "name": "High performance envy/web scale envy",
-    "ring": "hold",
-    "quadrant": "techniques",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p>We see many teams run into trouble because they have chosen complex tools, frameworks or architectures because they \"\"might need to scale\"\". Companies such as Twitter and Netflix need to be able to support extreme loads and so need these architectures, but they also have extremely skilled development teams able to handle the complexity. Most situations do not require these kinds of engineering feats; teams should keep their  <strong>web scale envy</strong> in check in favor of simpler solutions that still get the job done.</p>\""
-  },
-  {
-    "name": "SAFe™",
-    "ring": "hold",
-    "quadrant": "techniques",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p>The <a href=\"\"http://www.scaledagileframework.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Scaled Agile Framework®<span class=\"\"pop-out-icon\"\"></span></a> (aka  <strong>SAFe™</strong> ) continues to gain mindshare in many organizations at scale. In addition, tools and certification are becoming a significant aspect of the adoption of SAFe™. We continue to be concerned that actual adoptions are prone to over-standardization and are tending towards large release practices, resulting in practices that hinder agile adoption. In its place, we continue to recommend lean approaches that include experimentation and incorporate continuous improvement practices like the Improvement Katas offer organizations a better model for scaling agile.</p><br><br><p>Scaled Agile Framework® and SAFe™ are trademarks of Scaled Agile, Inc.</p>\""
-  },
-  {
-    "name": "Docker",
-    "ring": "adopt",
-    "quadrant": "platforms",
-    "isNew": "FALSE",
-    "status": "moved in",
-    "description": "\"\""
-  },
-  {
-    "name": "TOTP Two-Factor Authentication",
-    "ring": "adopt",
-    "quadrant": "platforms",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p>Password security is still a hotly debated topic with the <a href=\"\"https://www.gov.uk/government/publications/password-policy-simplifying-your-approach/password-policy-executive-summary\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">UK government advocating technical controls<span class=\"\"pop-out-icon\"\"></span></a> that let users remember simpler passwords and <a href=\"\"https://www.youtube.com/watch?v=yzGzB-yYKcc\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Edward Snowden’s password advice<span class=\"\"pop-out-icon\"\"></span></a> being described as only \"\"<a href=\"\"http://www.wired.com/2015/04/snowden-sexy-margaret-thatcher-password-isnt-so-sexy/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">borderline secure<span class=\"\"pop-out-icon\"\"></span></a>\"\". Passwords are generally one of the weakest links in the security chain, so we recommend employing <strong>two-factor authentication</strong> , which can significantly improve security. <a href=\"\"http://en.wikipedia.org/wiki/Time-based_One-time_Password_Algorithm\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Time-based One-Time Password<span class=\"\"pop-out-icon\"\"></span></a> ( <strong>TOTP</strong> ) is the standard algorithm in this space, with straightforward server-side implementations and free smartphone authenticator apps from <a href=\"\"https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Google<span class=\"\"pop-out-icon\"\"></span></a> and <a href=\"\"http://www.windowsphone.com/en-us/store/app/authenticator/e7994dbc-2336-4950-91ba-ca22d653759b\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Microsoft<span class=\"\"pop-out-icon\"\"></span></a>.</p>\""
-  },
-  {
-    "name": "Apache Kafka",
-    "ring": "trial",
-    "quadrant": "platforms",
-    "isNew": "FALSE",
-    "status": "moved in",
-    "description": "\"\""
-  },
-  {
-    "name": "Apache Mesos",
-    "ring": "trial",
-    "quadrant": "platforms",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p><strong><a href=\"\"http://mesos.apache.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Mesos<span class=\"\"pop-out-icon\"\"></span></a></strong> is a platform that abstracts out underlying computing resources to make it easier to build massively scalable distributed systems. It can be used to provide a scheduling layer for <a href=\"\"https://www.docker.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Docker<span class=\"\"pop-out-icon\"\"></span></a>, or to act as an abstraction layer to things like AWS. Twitter has used it to great effect to help it scale its infrastructure. Tools built on top of Mesos are starting to appear, such as <a href=\"\"http://nerds.airbnb.com/introducing-chronos/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Chronos<span class=\"\"pop-out-icon\"\"></span></a>, which is a distributed, fault-tolerant cron replacement. Prominent success stories are appearing, such as <a href=\"\"https://mesosphere.com/blog/2015/04/23/apple-details-j-a-r-v-i-s-the-mesos-framework-that-runs-siri/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Apple's Siri<span class=\"\"pop-out-icon\"\"></span></a> rearchitecting to use Mesos.</p>\""
-  },
-  {
-    "name": "AWS Lambda",
-    "ring": "trial",
-    "quadrant": "platforms",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p>Our teams continue to enjoy using <strong><a href=\"\"https://aws.amazon.com/lambda/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">AWS Lambda<span class=\"\"pop-out-icon\"\"></span></a></strong> and are beginning to use it to experiment with <a href=\"\"https://www.thoughtworks.com/radar/techniques/serverless-architecture\"\">Serverless architectures</a>, combining Lambda with the <a href=\"\"https://aws.amazon.com/api-gateway/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">API Gateway<span class=\"\"pop-out-icon\"\"></span></a> to produce highly scalable systems with invisible infrastructure. We have run into significant problems using Java for Lambda functions, with erratic latencies up to several seconds as the Lambda container is started. We recommend sticking with JavaScript or Python for the time being.</p>\""
-  },
-  {
-    "name": "H2O",
-    "ring": "trial",
-    "quadrant": "platforms",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p>Predictive analytics are used in more and more products, often directly in end user-facing functionality. <a href=\"\"http://h2o.ai/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>H2O</strong><span class=\"\"pop-out-icon\"\"></span></a> is an interesting open source package (with a startup behind it) that makes predictive analytics accessible to development teams, offering straightforward use of a wide variety of analytics, great performance and easy integration on JVM-based platforms. At the same time it integrates with the data scientists’ favorite tools, R and Python, as well as Hadoop and Spark.</p>\""
-  },
-  {
-    "name": "HSTS",
-    "ring": "trial",
-    "quadrant": "platforms",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p><a href=\"\"https://www.owasp.org/index.php/HTTP_Strict_Transport_Security\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">HTTP Strict Transport Security<span class=\"\"pop-out-icon\"\"></span></a> ( <strong>HSTS</strong> ) is a now widely supported policy that allows websites to protect themselves from downgrade attacks. A downgrade attack in the context of HTTPS is one that can cause users of your site to fall back to HTTP rather than HTTPS, allowing for further attacks such as man-in-the-middle attacks. By using the server header, you inform browsers that they should only use HTTPS to access your website, and should ignore downgrade attempts to contact the site via HTTP. Browser support is now widespread enough that this easy-to-implement feature should be considered for any site using HTTPS.</p>\""
-  },
-  {
-    "name": "Kubernetes",
-    "ring": "trial",
-    "quadrant": "platforms",
-    "isNew": "FALSE",
-    "status": "moved in",
-    "description": "\"\""
-  },
-  {
-    "name": "Linux Security Modules",
-    "ring": "trial",
-    "quadrant": "platforms",
-    "isNew": "FALSE",
-    "status": "moved in",
-    "description": "\"<p>In earlier versions of the Radar, we have highlighted the value of <strong>Linux security modules</strong> , talking about how they enable people to think about server hardening as a part of their development workflow. More recently, with <a href=\"\"https://linuxcontainers.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">LXC<span class=\"\"pop-out-icon\"\"></span></a> and <a href=\"\"https://www.thoughtworks.com/radar/platforms/docker\"\">Docker</a> containers now shipping with default <a href=\"\"https://wiki.ubuntu.com/AppArmor\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">AppArmor<span class=\"\"pop-out-icon\"\"></span></a> profiles on certain Linux distributions, it has forced the hand of many teams to understand how these tools work. In the event that teams use container images to run any process that they did not themselves create, these tools help them assess questions about who has access to what resources on the shared host and the capabilities that these contained services have, and be conservative in managing levels of access.</p>\""
-  },
-  {
-    "name": "Pivotal Cloud Foundry",
-    "ring": "trial",
-    "quadrant": "platforms",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Rancher",
-    "ring": "trial",
-    "quadrant": "platforms",
-    "isNew": "FALSE",
-    "status": "moved in",
-    "description": "\"\""
-  },
-  {
-    "name": "Amazon API Gateway",
-    "ring": "assess",
-    "quadrant": "platforms",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"<p><a href=\"\"https://aws.amazon.com/api-gateway/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Amazon API Gateway</strong><span class=\"\"pop-out-icon\"\"></span></a> is Amazon's offering enabling developers to expose API services to Internet clients, offering the usual API gateway features like traffic management, monitoring, authentication and authorization. Our teams have been using this service to front other AWS capabilities like AWS Lambda as part of <a href=\"\"https://www.thoughtworks.com/radar/techniques/serverless-architecture\"\">serverless architectures</a>. We continue to monitor for the challenges presented by <a href=\"\"https://www.thoughtworks.com/radar/platforms/overambitious-api-gateways\"\">overambitious API gateways</a>, but at this stage Amazon's offering appears to be lightweight enough to avoid those problems.</p>\""
-  },
-  {
-    "name": "Apache Flink",
-    "ring": "assess",
-    "quadrant": "platforms",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"<p><strong><a href=\"\"http://flink.apache.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Apache Flink<span class=\"\"pop-out-icon\"\"></span></a></strong> is a new-generation platform for scalable distributed batch and stream processing. At its core is a streaming data-flow engine. It also supports tabular (SQL-like), graph-processing and machine-learning operations. Apache Flink stands out with feature-rich capabilities for stream processing: event time, rich streaming window operations, fault tolerance and exactly-once semantics. While it hasn't reached version 1.0, it has raised significant community interest due to innovations in stream processing, memory handling, state management and simplicity of configuration.</p>\""
-  },
-  {
-    "name": "AWS ECS",
-    "ring": "assess",
-    "quadrant": "platforms",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p>The <strong><a href=\"\"http://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Elastic Container Service (ECS)<span class=\"\"pop-out-icon\"\"></span></a></strong> is AWS’ entry into the multihost Docker space. Although there is a lot of competition in this area, there aren’t many off-premises managed solutions out there yet. Although ECS seems like a good first step, we are worried that it is overly complicated at the moment and lacks a good abstraction layer. If you want to run <a href=\"\"https://www.docker.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Docker<span class=\"\"pop-out-icon\"\"></span></a> on AWS, though, this tool should certainly be high on your list. Just don’t expect it to be easy to get started with.</p>\""
-  },
-  {
-    "name": "Bluetooth Mesh",
-    "ring": "assess",
-    "quadrant": "platforms",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"<p>While many deployments of smart devices rely on Wi-Fi connectivity, we have been seeing success with <strong>Bluetooth Mesh</strong> networks that don't necessitate a hub or gateway. With better energy usage than Wi-Fi and better smartphone adoption than ZigBee, Bluetooth LE deployed as a self-healing mesh provides interesting new approaches for connecting local device-area networks. We are still waiting for the formal approach to emerge from the Bluetooth SIG but have already had successful deployments. We particularly like the lack of infrastructure required to stand up a decentralized network but still retain the option to \"\"progressively enhance\"\" the system with the addition of a gateway and cloud services.</p>\""
-  },
-  {
-    "name": "Ceph",
-    "ring": "assess",
-    "quadrant": "platforms",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p><strong><a href=\"\"http://ceph.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Ceph<span class=\"\"pop-out-icon\"\"></span></a></strong> is a storage platform that can be used as object storage, as block storage, and as a file system, typically running on a cluster of commodity servers. With its first major release having been in July 2012, Ceph is certainly not a new product. We do want to highlight it on this Technology Radar as an important building block for private clouds. It is particularly attractive because its RADOS Gateway component can expose the object store through a RESTful interface that is compatible with <a href=\"\"https://aws.amazon.com/s3/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Amazon S3<span class=\"\"pop-out-icon\"\"></span></a> and the <a href=\"\"https://wiki.openstack.org/wiki/Swift\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">OpenStack Swift APIs<span class=\"\"pop-out-icon\"\"></span></a>.</p>\""
-  },
-  {
-    "name": "Deflect",
-    "ring": "assess",
-    "quadrant": "platforms",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"<p><a href=\"\"https://deflect.ca/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Deflect</strong><span class=\"\"pop-out-icon\"\"></span></a> is an open source service protecting NGOs, activist and independent media companies from DDoS attacks. Similar to a commercial CDN, it uses distributed reverse-proxy caching and also hides your server IP addresses and blocks public access to admin URLs. Particular effort is put in to combat the botnets typically used for extrajudicial censoring of independent voices.</p>\""
-  },
-  {
-    "name": "ESP8266",
-    "ring": "assess",
-    "quadrant": "platforms",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"<p>Our growing ranks of hardware hackers have been excited by the <strong><a href=\"\"http://esp8266.net/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">ESP8266<span class=\"\"pop-out-icon\"\"></span></a></strong> Wi-Fi microcontroller. Rather than a specific technology innovation, it is the combination of low price point and small form factor that has sparked an inflection point in people's thinking about what is now feasible to achieve with custom hardware devices. Its main characteristics are: Wi-Fi capabilities (it can act as station, access point or a combination of both), low power, open hardware, Arduino SDK programmability, Lua programmability, huge community support and low cost compared with other IoT modules.</p>\""
-  },
-  {
-    "name": "MemSQL",
-    "ring": "assess",
-    "quadrant": "platforms",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"<p>As Moore's Law predicts, we continue to increase the capacity of computer systems and reduce their cost, and so new processing techniques become possible that only a few years ago would have seemed out of reach. One of these techniques is the in-memory database: Instead of using slow disks or relatively slow SSDs to store data, we can keep it in memory for high performance. One such in-memory database, <a href=\"\"http://www.memsql.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>MemSQL</strong><span class=\"\"pop-out-icon\"\"></span></a>, is making waves because it is horizontally scalable across a cluster and provides a familiar SQL-based query language. MemSQL also connects to Spark for analytics against real-time data, rather than stale data in a warehouse.</p>\""
-  },
-  {
-    "name": "Mesosphere DCOS",
-    "ring": "assess",
-    "quadrant": "platforms",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p><strong><a href=\"\"https://mesosphere.com/product/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Mesosphere DCOS<span class=\"\"pop-out-icon\"\"></span></a></strong> is a platform built on top of <a href=\"\"http://mesos.apache.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Mesos<span class=\"\"pop-out-icon\"\"></span></a>. It provides an abstraction over underling machines, giving you a pool of storage and compute that allows services built for DCOS to operate at massive scale (Support is already there for Hadoop, Spark and Cassandra, among others). This is probably overkill for more modest workloads at the moment (where plain old Mesos could still be a good fit), but it will be interesting to see if Mesosphere starts trying to position DCOS as a general-purpose system.</p>\""
-  },
-  {
-    "name": "Nomad",
-    "ring": "assess",
-    "quadrant": "platforms",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Presto",
-    "ring": "assess",
-    "quadrant": "platforms",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p><strong><a href=\"\"https://prestodb.io/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Presto<span class=\"\"pop-out-icon\"\"></span></a></strong> is an open source distributed SQL query engine designed and optimized for running interactive analytics workloads. Presto's massively parallel processing architecture - combined with advanced code-generation techniques and in-memory processing pipelines - makes it highly scalable. It supports a large subset of ANSI SQL including complex queries, joins, aggregations and window functions. Presto comes with support for a wide range of data sources including <strong>Hive</strong> , <strong>Cassandra</strong> , <strong>MySQL</strong> and <strong>PostgreSQL</strong> , thereby unifying the interactive analytics interface across data stores of an organization. Applications can connect to Presto using its JDBC interface.</p>\""
-  },
-  {
-    "name": "Realm",
-    "ring": "assess",
-    "quadrant": "platforms",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"<p><strong><a href=\"\"https://realm.io/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Realm<span class=\"\"pop-out-icon\"\"></span></a></strong> is a database designed for use on mobile devices, with its own persistence engine to achieve high performance. Realm is marketed as a replacement for SQLite and Core Data, and our teams have enjoyed using it. Note that migrations are not quite as straightforward as the Realm documentation would have you believe. Still, Realm has us excited, and we suggest you take a look.</p>\""
-  },
-  {
-    "name": "Sandstorm",
-    "ring": "assess",
-    "quadrant": "platforms",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"<p>For people who want the benefit of cloud-based collaboration tools but don't want to inadvertently \"\"become the product\"\" of a major cloud provider, <a href=\"\"https://sandstorm.io/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Sandstorm</strong><span class=\"\"pop-out-icon\"\"></span></a> provides an interesting open source alternative with the potential for self-hosting. Of particular interest is the isolation approach, whereby containerization is applied per document rather than per application, and syscall whitelisting is added to further <a href=\"\"http://docs.sandstorm.io/en/latest/using/security-practices/#server-sandboxing\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">secure the sandbox<span class=\"\"pop-out-icon\"\"></span></a>.</p>\""
-  },
-  {
-    "name": "Application Servers",
-    "ring": "hold",
-    "quadrant": "platforms",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p>The rise of containers, phoenix servers and continuous delivery has seen a move away from the usual approach to deploying web applications. Traditionally we have built an artifact and then installed that artifact into an application server. The result was long feedback loops for changes, increased build times and the not insignificant overhead of managing these application servers in production. Many of them are a pain to automate too. Most teams we work with favor bundling an embedded http server within your web application. There are plenty of options available: Jetty, SimpleWeb, Webbit and Owin Self-Host amongst others. Easier automation, easier deployment and a reduction in the amount of infrastructure you have to manage lead us to recommend embedded servers over <strong>application servers</strong> for future projects.</p>\""
-  },
-  {
-    "name": "Overambitious API gateways",
-    "ring": "hold",
-    "quadrant": "platforms",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p>One of our common complaints is the pushing of business smarts into middleware, resulting in application servers and enterprise service buses with ambitions to run critical application logic. These require complex programming in environments not well suited to the purpose. We're seeing a worrying re-emergence of this disease with <strong>overambitious API Gateway</strong> products. API Gateways can provide utility in dealing with some generic concerns - for example, authentication and rate-limiting - but any domain smarts such as data transformation or rule processing should live in applications or services where they can be controlled by product teams working closely with the domains they support.</p>\""
-  },
-  {
-    "name": "Superficial private cloud",
-    "ring": "hold",
-    "quadrant": "platforms",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"\""
-  },
-  {
-    "name": "Consul",
-    "ring": "adopt",
-    "quadrant": "tools",
-    "isNew": "FALSE",
-    "status": "moved in",
-    "description": "\"\""
-  },
-  {
-    "name": "Browsersync",
-    "ring": "trial",
-    "quadrant": "tools",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p>We've had rave reviews from a number of ThoughtWorks teams using <a href=\"\"http://www.browsersync.io/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Browsersync</strong><span class=\"\"pop-out-icon\"\"></span></a>. As the number of devices we deliver web applications to grows, so does the amount of effort that must be devoted to testing across these different devices. Browsersync is a free, open source tool that can dramatically reduce this effort by synchronizing manual browser testing across multiple mobile or desktop browsers. Providing both a CLI and a UI option, the tool is build-pipeline friendly and automates repetitive tasks such as form filling.</p>\""
-  },
-  {
-    "name": "Carthage",
-    "ring": "trial",
-    "quadrant": "tools",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p>Dependency management in iOS and OS X projects used to be either completely manual or completely automatic as part of using <a href=\"\"https://cocoapods.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">CocoaPods<span class=\"\"pop-out-icon\"\"></span></a>. With <strong><a href=\"\"https://github.com/Carthage/Carthage\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Carthage<span class=\"\"pop-out-icon\"\"></span></a></strong> , a new middle ground has become available. Carthage manages dependencies - it downloads, builds and updates frameworks - but it leaves the integration of the frameworks into the build of the project to the project. This is in contrast to CocoaPods, which basically takes over the project structure and build setup. It should be noted that Carthage can only deal with dynamic frameworks, which are not available on iOS 7 and below.</p>\""
-  },
-  {
-    "name": "Gauge",
-    "ring": "trial",
-    "quadrant": "tools",
-    "isNew": "FALSE",
-    "status": "moved in",
-    "description": "\"<p><strong><a href=\"\"https://gauge.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Gauge<span class=\"\"pop-out-icon\"\"></span></a></strong> is a lightweight cross-platform test-automation tool. Specifications are written in free-form Markdown so test cases can be written in the business language, as opposed to using the more common but restrictive \"\"given-when-then\"\" format. Language and IDE support are implemented as plugins to a single core implementation, allowing testers to use the same IDEs as the rest of the team, with powerful capabilities such as autocompletion and refactoring. This tool, open sourced by ThoughtWorks, also supports parallel execution out of the box for all supported platforms.</p>\""
-  },
-  {
-    "name": "GitUp",
-    "ring": "trial",
-    "quadrant": "tools",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p>Git can be confusing. Really confusing. And even when it’s used in a simple trunk-based development process, there are still enough nuances to how it works that people can tie themselves in knots from time to time. When this happens, having an understanding of how Git works under the hood is very useful, and <strong><a href=\"\"http://gitup.co/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">GitUp<span class=\"\"pop-out-icon\"\"></span></a></strong> is a Mac-based tool that gives you exactly that. GitUp provides a graphical representation of what is happening as you type normal Git commands into the terminal. You can learn the various Git commands while also understanding what each one does as you use it. GitUp is a useful tool for both people new to Git and those with more Git experience.</p>\""
-  },
-  {
-    "name": "Let's Encrypt",
-    "ring": "trial",
-    "quadrant": "tools",
-    "isNew": "FALSE",
-    "status": "moved in",
-    "description": "\"\""
-  },
-  {
-    "name": "Load Impact",
-    "ring": "trial",
-    "quadrant": "tools",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "OWASP Dependency-Check",
-    "ring": "trial",
-    "quadrant": "tools",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Serverspec",
-    "ring": "trial",
-    "quadrant": "tools",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "SysDig",
-    "ring": "trial",
-    "quadrant": "tools",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p>Although <strong><a href=\"\"http://www.sysdig.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">SysDig<span class=\"\"pop-out-icon\"\"></span></a></strong> isn’t the newest tool on the Technology Radar, we’re still surprised by how many people haven’t heard of it. A pluggable open source CLI for Linux system troubleshooting, SysDig has some pretty powerful features. One of the key things we like is the ability to generate a system trace on a machine that is experiencing difficulties, which you can then interrogate afterward to find out what was happening. SysDig also contains support for working with containers, something that makes a previously useful tool even more powerful.</p>\""
-  },
-  {
-    "name": "Webpack",
-    "ring": "trial",
-    "quadrant": "tools",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Zipkin",
-    "ring": "trial",
-    "quadrant": "tools",
-    "isNew": "FALSE",
-    "status": "moved in",
-    "description": "\"\""
-  },
-  {
-    "name": "Concourse",
-    "ring": "assess",
-    "quadrant": "tools",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p>Many development teams are making the move from simple continuous integration servers to Continuous Delivery pipelines, often spanning multiple environments, reaching into production. To implement such a pipeline successfully and operate it in a sustainable way requires a CI/CD tool that treats build pipelines and artifacts as first-class citizens; and unfortunately there aren’t many. <a href=\"\"http://concourse.ci/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Concourse CI</strong><span class=\"\"pop-out-icon\"\"></span></a> is a promising new entrant in this field, and our teams that have tried it are excited about its setup, which enables builds that run in containers, has a clean, usable UI and discourages snowflake build servers.</p>\""
-  },
-  {
-    "name": "Gitrob",
-    "ring": "assess",
-    "quadrant": "tools",
-    "isNew": "FALSE",
-    "status": "moved out",
-    "description": "\"<p>Attackers continue to use automated software to crawl public GitHub repositories to find AWS credentials and spin up EC2 instances to mine Bitcoins or for other nefarious purposes. Although adoption of tools like <a href=\"\"https://github.com/AGWA/git-crypt\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">git-crypt<span class=\"\"pop-out-icon\"\"></span></a> and <a href=\"\"https://www.thoughtworks.com/radar/tools/blackbox\"\">Blackbox</a> to safely store secrets such as passwords and access tokens in code repositories is increasing, it is still all too common that secrets are stored unprotected. It is also not uncommon to see project secrets accidentally checked in to developers' personal repositories. <a href=\"\"https://github.com/michenriksen/gitrob\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Gitrob</strong><span class=\"\"pop-out-icon\"\"></span></a> can help minimize the damage of exposing secrets. It scans an organization's GitHub repositories, flagging all files that might contain sensitive information that shouldn't have been pushed to the repository. The current release of the tool has some limitations: It can only be used to scan public GitHub organizations and their members, it doesn't inspect the contents of files, it doesn't review the entire commit history, and it fully scans all repositories each time it is run. Despite these limitations, it can be a helpful reactive tool to help alert teams before it is too late. It should be considered a complementary approach to a proactive tool such as <a href=\"\"https://github.com/thoughtworks/talisman\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Talisman<span class=\"\"pop-out-icon\"\"></span></a>.</p>\""
-  },
-  {
-    "name": "Grasp",
-    "ring": "assess",
-    "quadrant": "tools",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "HashiCorp Vault",
-    "ring": "assess",
-    "quadrant": "tools",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"<p>Having a way to securely manage secrets is increasingly becoming a huge project issue. The old idea of just having a file with secrets or environment variables is becoming hard to manage, especially in environments with multiple applications like <a href=\"\"https://www.thoughtworks.com/radar/techniques/microservices\"\">microservices</a> or microcontainer environments, where the applications need to access a multitude of secrets. <a href=\"\"https://github.com/hashicorp/vault\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>HashiCorp Vault</strong><span class=\"\"pop-out-icon\"\"></span></a> is a promising tool that tries to solve the problem by providing mechanisms for securely accessing secrets through an unified interface. It has some features that make life easier, such as encryption and automatically generating secrets for known tools, among others.</p>\""
-  },
-  {
-    "name": "ievms",
-    "ring": "assess",
-    "quadrant": "tools",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p>Despite the shrinking usage of Internet Explorer, for many products the IE user base is not an insignificant share of the market, and browser compatibility needs to be tested. This is particularly troublesome if you prefer the joys of a UNIX-based system for development. To aid in this dilemma, <a href=\"\"https://github.com/xdissent/ievms\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>ievms</strong><span class=\"\"pop-out-icon\"\"></span></a> provides a utility script that brings together Windows-distributed VM images and VirtualBox to automate the setup and testability of various IE versions, from 6 up to Edge.</p>\""
-  },
-  {
-    "name": "LambdaCD",
-    "ring": "assess",
-    "quadrant": "tools",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Pinpoint",
-    "ring": "assess",
-    "quadrant": "tools",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Pitest",
-    "ring": "assess",
-    "quadrant": "tools",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Prometheus",
-    "ring": "assess",
-    "quadrant": "tools",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p>SoundCloud has recently open sourced its monitoring and alerting toolkit, <a href=\"\"http://prometheus.io/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Prometheus</strong><span class=\"\"pop-out-icon\"\"></span></a>. Developed in reaction to difficulties with <a href=\"\"http://graphite.readthedocs.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Graphite<span class=\"\"pop-out-icon\"\"></span></a> in its production systems, Prometheus primarily supports a pull-based HTTP model (although a more Graphite-like push model is also supported). It also goes further by supporting alerts, making it an active part of your operational toolset. As of this writing, Prometheus is still only in release 0.15.1 but is evolving rapidly. We’re glad to see the recent product focus on core time-series DB and multidimensional indexing capabilities while allowing for export to a wider variety of front-end graphing tools.</p>\""
-  },
-  {
-    "name": "RAML",
-    "ring": "assess",
-    "quadrant": "tools",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p>With a growing landscape of services providing RESTful APIs, it is becoming increasingly important to document them. We have previously mentioned <a href=\"\"https://www.thoughtworks.com/radar/tools/swagger\"\">Swagger</a>, and in this Technology Radar we’d like to highlight the RESTful API modeling language (<a href=\"\"http://raml.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>RAML</strong><span class=\"\"pop-out-icon\"\"></span></a>). Our teams feel that in comparison to Swagger it is more lightweight and moves the focus from adding documentation to existing APIs to designing APIs.</p>\""
-  },
-  {
-    "name": "Repsheet",
-    "ring": "assess",
-    "quadrant": "tools",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Sleepy Puppy",
-    "ring": "assess",
-    "quadrant": "tools",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p><strong><a href=\"\"https://github.com/Netflix/sleepy-puppy\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Sleepy Puppy<span class=\"\"pop-out-icon\"\"></span></a></strong> is a delayed cross-site scripting (XSS) payload-management framework recently open sourced by Netflix. It enables you to test vulnerabilities for XSS past the target application when the perpetrator intends to attack a secondary underlying system. With XSS being one of the OWASP Top10, we see this framework assisting with automated security checks for several applications. It simplifies the capturing, managing and tracking of XSS propagation over long periods of time, with customizable payloads. Sleepy puppy also exposes an API that can be integrated with vulnerability tools like <a href=\"\"https://www.thoughtworks.com/radar/tools/zap\"\">ZAP</a>, for automated security checks.</p>\""
-  },
-  {
-    "name": "Jenkins as a deployment pipeline",
-    "ring": "hold",
-    "quadrant": "tools",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "ES6",
-    "ring": "adopt",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p>Over many years, JavaScript has grown to become probably the most widely used programming language in the world. Nevertheless, the language itself has a few problems that many have attempted to address by using libraries or even by implementing their own languages that run on top of JavaScript (of which we’ve mentioned both <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/coffeescript\"\">CoffeeScript</a> and <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/clojurescript\"\">ClojureScript</a> before). <strong><a href=\"\"http://es6-features.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">ES6<span class=\"\"pop-out-icon\"\"></span></a></strong> (aka ECMAScript 6 or ECMAScript 2015), the new version of JavaScript, addresses many of the concerns of the older versions currently in use. Although browser support is scarce, support from mature transpilers like <a href=\"\"http://babeljs.io\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Babel<span class=\"\"pop-out-icon\"\"></span></a> allows you to write ES6 and have it supported in older browsers. For new projects, we strongly suggest starting with ES6 from day one.</p>\""
-  },
-  {
-    "name": "React.js",
-    "ring": "adopt",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "FALSE",
-    "status": "moved in",
-    "description": "\"\""
-  },
-  {
-    "name": "Spring Boot",
-    "ring": "adopt",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "FALSE",
-    "status": "moved in",
-    "description": "\"\""
-  },
-  {
-    "name": "Swift",
-    "ring": "adopt",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p><a href=\"\"https://developer.apple.com/swift/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Swift</strong><span class=\"\"pop-out-icon\"\"></span></a> is now our default choice for development in the Apple ecosystem. With the release of Swift 2, the language approached a level of maturity that provides the stability and performance required for most projects. A good number of libraries that support iOS development—<a href=\"\"https://github.com/SwiftyJSON/SwiftyJSON\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">SwiftyJSON<span class=\"\"pop-out-icon\"\"></span></a>, <a href=\"\"https://github.com/Quick/Quick\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Quick<span class=\"\"pop-out-icon\"\"></span></a>, etc.—are now migrated over to Swift, which is where the rest of the applications should follow. Swift has now been open sourced, and we are seeing a community of developers dedicated to continuously improving development in iOS.</p>\""
-  },
-  {
-    "name": "Butterknife",
-    "ring": "trial",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Dagger",
-    "ring": "trial",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Dapper",
-    "ring": "trial",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Ember.js",
-    "ring": "trial",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "FALSE",
-    "status": "moved in",
-    "description": "\"<p><a href=\"\"http://emberjs.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Ember.js</strong><span class=\"\"pop-out-icon\"\"></span></a> has developed further support based on project experiences and is clearly a strong contender in the field of JavaScript application frameworks. Ember is praised for its developer experience, with far fewer surprises than other frameworks such as <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/angularjs\"\">AngularJS</a>. The Ember CLI build tooling, convention-over-configuration approach and <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/es6\"\">ES6</a> support also gain positive feedback.</p>\""
-  },
-  {
-    "name": "Enlive",
-    "ring": "trial",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p>Most templating frameworks like <a href=\"\"https://mustache.github.io/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Mustache<span class=\"\"pop-out-icon\"\"></span></a> or <a href=\"\"http://freemarker.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">FreeMarker<span class=\"\"pop-out-icon\"\"></span></a> mix code with markup in a single file to implement complex, dynamic content. <a href=\"\"https://github.com/cgrand/enlive/wiki\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Enlive</strong><span class=\"\"pop-out-icon\"\"></span></a> is a Clojure-based templating framework that completely separates programming language from HTML markup and employs CSS selectors to find and replace parts of the document. Enlive demonstrates the power of functional programming to implement complex behavior through a series of simple, composable functions acting on a common abstraction. Our teams working in Clojure have found it to be a very useful and straightforward tool.</p>\""
-  },
-  {
-    "name": "Fetch",
-    "ring": "trial",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"<p>Our teams are moving away from JQuery or raw XHR for remote JavaScript calls and instead are using the new <a href=\"\"https://fetch.spec.whatwg.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Fetch<span class=\"\"pop-out-icon\"\"></span></a> API and the <strong><a href=\"\"https://github.com/github/fetch\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Fetch<span class=\"\"pop-out-icon\"\"></span></a></strong> polyfill in particular. The semantics remain similar but have cleaner support for promises and CORS support. We are seeing this as the new de-facto approach.</p>\""
-  },
-  {
-    "name": "React Native",
-    "ring": "trial",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "FALSE",
-    "status": "moved in",
-    "description": "\"\""
-  },
-  {
-    "name": "Redux",
-    "ring": "trial",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"<p><a href=\"\"http://redux.js.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Redux</strong><span class=\"\"pop-out-icon\"\"></span></a> is a great, mature tool that has helped many of our teams reframe how they think about managing state in client-side apps. Using a <a href=\"\"https://www.thoughtworks.com/radar/techniques/flux\"\">Flux</a>-style approach, it enables a loosely coupled state-machine architecture that's easy to reason about. We've found it a good companion to some of our favored JavaScript frameworks, such as <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/ember-js\"\">Ember</a> and <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/react-js\"\">React</a>.</p>\""
-  },
-  {
-    "name": "Robolectric",
-    "ring": "trial",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "SignalR",
-    "ring": "trial",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p>We have a number of reservations about the use of HTML5 WebSockets. By allowing the server to initiate actions on the browser, WebSockets departs from the connectionless, request/response model that underpins the World Wide Web today. Security is another big risk with WebSockets. For example, the standard does not impose any cross-origin request policy. However, we do recognize that in certain monitoring or alerting applications, WebSockets can be very useful. If you need to build a .NET WebSockets server, <a href=\"\"http://signalr.net/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>SignalR</strong><span class=\"\"pop-out-icon\"\"></span></a> conveniently implements much of the additional code you need for a robust production application. This includes some recommended security practices such as validating connection tokens and activating SSL when encryption is needed. Although ThoughtWorks teams have been very happy with SignalR, there are still fundamental issues with WebSockets that you should consider before diving in.</p>\""
-  },
-  {
-    "name": "Alamofire",
-    "ring": "assess",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"<p>Networking and decoding in iOS applications have been a difficult endeavor for many years. There have been many libraries and attempts to solve this ongoing problem. It looks as though <a href=\"\"https://github.com/Alamofire/Alamofire\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Alamofire</strong><span class=\"\"pop-out-icon\"\"></span></a> is the most robust and developer-friendly library to handle decoding JSON. It was written by the same creator as its Objective-C counterpart (AFNetworking), which was used at great length during the Objective-C days.</p>\""
-  },
-  {
-    "name": "AngularJS",
-    "ring": "assess",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "FALSE",
-    "status": "moved out",
-    "description": "\"<p>While we have delivered many successful projects using <a href=\"\"https://angularjs.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>AngularJS</strong><span class=\"\"pop-out-icon\"\"></span></a> and are seeing an acceleration of adoption in corporate settings, we have decided to move Angular back to Assess on this edition of the Radar. This move is intended as a note of caution: <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/react-js\"\">React.js</a> and <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/ember-js\"\">Ember</a> offer strong alternatives; the migration path from Angular version 1 to version 2 is causing uncertainty; and we see some organizations adopting the framework without really thinking through whether a single-page application fits their needs. We have passionate internal debates about this topic but have certainly seen codebases become overly complex from a combination of two-way binding and inconsistent state-management patterns. We believe that rather than requiring that a solid framework be jettisoned, these issues can be solved through careful design and use of Redux or Flux from the outset.</p>\""
-  },
-  {
-    "name": "Aurelia",
-    "ring": "assess",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Cylon.js",
-    "ring": "assess",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"<p>The intersection between IoT devices and the JavaScript ecosystem offers interesting possibilities. <strong><a href=\"\"https://cylonjs.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Cylon.js<span class=\"\"pop-out-icon\"\"></span></a></strong> is a JavaScript library for building interfaces for robotics and the Internet of Things, which has excited our technical community. It offers support for 50+ platform devices, as well as general-purpose input/output support with a shared set of drivers provided by the cylon-gpio module. Control of the devices is then possible through a web browser interface.</p>\""
-  },
-  {
-    "name": "Elixir",
-    "ring": "assess",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p>We continue to see a lot of excitement from people using the <a href=\"\"http://elixir-lang.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Elixir</strong><span class=\"\"pop-out-icon\"\"></span></a> programming language. Elixir, which is built on top of the Erlang virtual machine, is showing promise for creating highly concurrent and fault-tolerant systems. Elixir has distinctive features such as the Pipe operator, which allows developers to build a pipeline of functions as you would in the UNIX command shell. The shared byte code allows Elixir to interoperate with Erlang and leverage existing libraries while supporting tools such as the Mix build tool, the Iex interactive shell and the ExUnit unit testing framework.</p>\""
-  },
-  {
-    "name": "Elm",
-    "ring": "assess",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"\""
-  },
-  {
-    "name": "GraphQL",
-    "ring": "assess",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Immutable.js",
-    "ring": "assess",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"<p>Immutability is often emphasized in the functional programming paradigm, and most languages have the ability to create immutable objects, which cannot be changed once created. <strong><a href=\"\"https://facebook.github.io/immutable-js/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Immutable.js<span class=\"\"pop-out-icon\"\"></span></a></strong> is a library for JavaScript that provides many persistent immutable data structures, which are highly efficient on modern JavaScript virtual machines. Immutable.js objects are, however, not normal JavaScript objects, so references to JavaScript objects from immutable objects should be avoided. Our teams have had value using this library for tracking mutation and maintaining state, and it is a library we encourage developers to investigate, especially when it's combined with the rest of the Facebook stack.</p>\""
-  },
-  {
-    "name": "Jepsen",
-    "ring": "assess",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"<p>With the growth in usage of NoSQL data stores, and the growth in popularity of polyglot approaches to persistence, teams now have many choices when it comes to storing their data. While this has brought many advantages, product behavior with flaky networks can introduce subtle (and not so subtle) issues that are often not well understood, even in some cases by the product developers themselves. The <a href=\"\"https://github.com/aphyr/jepsen\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Jepsen</strong><span class=\"\"pop-out-icon\"\"></span></a> toolkit and accompanying <a href=\"\"https://aphyr.com/tags/Jepsen\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">blog<span class=\"\"pop-out-icon\"\"></span></a> have become the de-facto reference for anyone looking to understand how different database and queuing technologies react under adverse conditions. Crucially, the approach to testing, which includes clients in the transactions, shines a spotlight on possible failure modes for many teams building microservices.</p>\""
-  },
-  {
-    "name": "OkHttp",
-    "ring": "assess",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p><strong><a href=\"\"http://square.github.io/okhttp/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">OkHttp<span class=\"\"pop-out-icon\"\"></span></a></strong> is a Java HTTP connection library from Square that provides a fluent interface for creating connections, as well as support for the faster HTTP/2 protocol. Even when using HTTP/1.1, OkHttp can provide performance improvements via connection pooling and transparent gzip compression. Supporting both blocking synchronous and nonblocking asynchronous calls, it can also be used as a drop-in replacement for the widely used Apache HttpClient.</p>\""
-  },
-  {
-    "name": "Recharts",
-    "ring": "assess",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "TensorFlow",
-    "ring": "assess",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "JSPatch",
-    "ring": "hold",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  }
+  [
+    "Decoupling deployment from release",
+    "adopt",
+    "techniques",
+    "FALSE",
+    "no change",
+    "\"<p>Implementing <a href=\"\"http://martinfowler.com/bliki/ContinuousDelivery.html\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Continuous Delivery<span class=\"\"pop-out-icon\"\"></span></a> continues to be a challenge for many organizations, and it remains important to highlight useful techniques such as <strong>decoupling deployment from release</strong>. We recommend strictly using the term <em>Deployment</em> when referring to the act of deploying a change to application components or infrastructure. The term <em>Release</em> should be used when a feature change is released to end users, with a business impact. Using techniques such as feature toggles and dark launches, we can deploy changes to production systems more frequently without releasing features. More-frequent deployments reduce the risk associated with change, while business stakeholders retain control over when features are released to end users.</p>\""
+  ],
+  [
+    "Products over projects",
+    "adopt",
+    "techniques",
+    "FALSE",
+    "no change",
+    "\"<p>We’ve long been championing the idea that thinking of software development as a project - something budgeted and delivered during a limited time slot - doesn’t fit the needs of the modern business. Important software efforts need to be an ongoing product that supports and rethinks the business process it is supporting. Such efforts are not complete until the business process, and its software, cease to be useful. Our observation of this <strong>products over projects</strong> approach, both with our own projects and outside, makes us determine that it is the approach to use for all but exceptional cases.</p>\""
+  ],
+  [
+    "Threat modeling",
+    "adopt",
+    "techniques",
+    "FALSE",
+    "no change",
+    "\"\""
+  ],
+  [
+    "BFF - Backend for frontends",
+    "trial",
+    "techniques",
+    "FALSE",
+    "no change",
+    "\"<p>Valuable services support many variations in clients, such as mobile versus web and different forms of web interface. It’s tempting to design a single back-end API to support all clients with a reusable API. But client needs vary, as do constraints such as bandwidth for mobile devices versus the desire for lots of data on fast web connections. Consequently it’s often best to <strong>define different back-end services for each kind of front-end</strong> client. These back ends should be developed by teams aligned with each front end to ensure that each back end properly meets the needs of its client.</p>\""
+  ],
+  [
+    "Bug bounties",
+    "trial",
+    "techniques",
+    "FALSE",
+    "moved in",
+    "\"\""
+  ],
+  [
+    "Data Lake",
+    "trial",
+    "techniques",
+    "FALSE",
+    "moved in",
+    "\"\""
+  ],
+  [
+    "Event Storming",
+    "trial",
+    "techniques",
+    "FALSE",
+    "no change",
+    "\"<p><a href=\"\"http://ziobrando.blogspot.be/2013/11/introducing-event-storming.html\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Event Storming</strong><span class=\"\"pop-out-icon\"\"></span></a> is a useful way to do rapid \"\"outside-in\"\" domain modeling: starting with the events that occur in the domain rather than a static data model. Run as a facilitated workshop, it focuses on discovering key domain events, placing them along a timeline, identifying their triggers and then exploring their relationships. This approach is particularly useful for people taking an <a href=\"\"https://www.thoughtworks.com/radar/techniques/event-sourcing\"\">Event Sourced</a> approach. Getting the right people in the room is important - a blend of business and technical people who bring both the questions and the answers. Ensuring that you have enough wall space for modeling is the second key to success. Look to discover the big picture, with the goal of collectively understanding the domain in all of its complexity, before diving into solutions.</p>\""
+  ],
+  [
+    "Flux",
+    "trial",
+    "techniques",
+    "FALSE",
+    "no change",
+    "\"<p><a href=\"\"https://facebook.github.io/flux/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Flux</strong><span class=\"\"pop-out-icon\"\"></span></a> is an application architecture introduced by Facebook. Usually mentioned in conjunction with <strong>React.js</strong> , Flux is based on a one-way flow of data up through the rendering pipeline. Flux embraces the modern web landscape of client-side JavaScript applications in a way that avoids the venerable MV* clichés. ThoughtWorks teams are now starting to gain some experience with this architectural style and find that it meshes well with service orientation and solves some of the problems inherent in two-way data binding.</p>\""
+  ],
+  [
+    "Idempotency filter",
+    "trial",
+    "techniques",
+    "FALSE",
+    "no change",
+    "\"<p>Many services, especially legacy services, are written with the assumption that any request will occur only once. Networks being what they are, this can be difficult to arrange. An <strong>idempotency filter</strong> is a simple component that merely checks for duplicate requests and ensures that they are sent to the supplier service only once. Such a filter should do only this one task and be used as a decorator over existing service calls.</p>\""
+  ],
+  [
+    "iFrames for sandboxing",
+    "trial",
+    "techniques",
+    "FALSE",
+    "no change",
+    "\"<p>Modern web pages tend to contain a plethora of JavaScript widgets and snippets coming from a variety of third-party sources. This can have a negative impact on both security and performance. While we are still waiting for fuller JavaScript isolation with web components, our teams have benefited from using HTML5 <a href=\"\"http://www.html5rocks.com/en/tutorials/security/sandboxed-iframes/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>iFrames for sandboxing</strong><span class=\"\"pop-out-icon\"\"></span></a> untrusted JavaScript.</p>\""
+  ],
+  [
+    "NPM for all the things",
+    "trial",
+    "techniques",
+    "FALSE",
+    "no change",
+    "\"<p>The JavaScript world has a plethora of dependency and package-management tools, all of which rely on the Node Package Manager (NPM). Teams are starting to see these extra tools as redundant and are recommending that if you can use solely NPM for package and dependency management, you should. The simplification of using <strong>NPM for all the things</strong> helps reduce some of the churn in the JavaScript tools space.</p>\""
+  ],
+  [
+    "Phoenix Environments",
+    "trial",
+    "techniques",
+    "FALSE",
+    "no change",
+    "\"<p>The time taken to provision and update environments continues to be a significant bottleneck on many software projects. Phoenix Environments can help with this delay by extending the idea of <a href=\"\"http://martinfowler.com/bliki/PhoenixServer.html\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Phoenix Servers<span class=\"\"pop-out-icon\"\"></span></a> to cover entire environments. We feel this is such a valuable and time-saving technique that you should consider trialing this approach. Using automation, we can create whole environments - including network configuration, load balancing and firewall ports - for example by using <a href=\"\"https://aws.amazon.com/cloudformation/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>CloudFormation</strong><span class=\"\"pop-out-icon\"\"></span></a> in AWS. We can then prove that the process works by tearing the environments down and recreating them from scratch on a regular basis. <strong>Phoenix Environments</strong> can support provisioning new environments for testing, development, UAT and disaster recovery. As with Phoenix Servers, this pattern is not always applicable, and we need to think carefully about things like state and dependencies. Treating the whole environment as a <a href=\"\"http://martinfowler.com/bliki/BlueGreenDeployment.html\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">blue/green deployment<span class=\"\"pop-out-icon\"\"></span></a> can be one approach when environment reconfiguration needs to be done.</p>\""
+  ],
+  [
+    "QA in production",
+    "trial",
+    "techniques",
+    "FALSE",
+    "no change",
+    "\"<p>Traditionally, QA roles have focused on assessing the quality of a software product in a pre-production environment. With the rise of Continuous Delivery, the QA role is shifting to include analyzing software product quality in production. This involves monitoring of the production systems, coming up with alert conditions to detect urgent errors, determining ongoing quality issues and figuring out what measurements you can use in the production environment to make this work. While there is a danger that some organizations will go too far and neglect pre-production QA, our experience shows that <strong>QA in production</strong> is a valuable tool for organizations that have already progressed to a reasonable degree of Continuous Delivery.</p>\""
+  ],
+  [
+    "Reactive architectures",
+    "trial",
+    "techniques",
+    "FALSE",
+    "moved in",
+    "\"\""
+  ],
+  [
+    "Content Security Policies",
+    "assess",
+    "techniques",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Hosted IDE's",
+    "assess",
+    "techniques",
+    "FALSE",
+    "no change",
+    "\"<p>Many organizations want to leverage distributed or offshore development but have security concerns with their code and other intellectual property sitting outside their control. The result is often to use high-latency remote-desktop solutions for development, adhering to an organization’s security controls but crippling developer productivity. An alternative is to use a <strong>Hosted IDE</strong> delivered to a browser via VPN. The IDE, code and build environment are hosted within the organization's private cloud, easing security concerns, and the developer experience is significantly improved. Tools in this space include <a href=\"\"https://orionhub.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Orion<span class=\"\"pop-out-icon\"\"></span></a> and <a href=\"\"http://www.eclipse.org/che/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Che<span class=\"\"pop-out-icon\"\"></span></a> from the Eclipse Foundation, <a href=\"\"https://c9.io/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Cloud9<span class=\"\"pop-out-icon\"\"></span></a> and <a href=\"\"https://codenvy.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Code Envy<span class=\"\"pop-out-icon\"\"></span></a>.</p>\""
+  ],
+  [
+    "Hosting PII data in the EU",
+    "assess",
+    "techniques",
+    "TRUE",
+    "new",
+    "\"<p>In a number of countries around the world, we see government agencies seeking broad access to private, personally identifiable information (PII). In the EU, the highest court has invalidated the Safe Harbor framework, and Privacy Shield, its successor, is expected to be challenged too. At the same time, the use of cloud computing is increasing, and all the major cloud providers—Amazon, Google and Microsoft—offer multiple data centers and regions within the European Union. Therefore, we recommend that companies, especially those with a global user base, assess the feasibility of a safe haven for their users' data, protected by the most progressive privacy laws, by <strong>Hosting PII in the EU</strong>.</p>\""
+  ],
+  [
+    "Monitoring of invariants",
+    "assess",
+    "techniques",
+    "FALSE",
+    "no change",
+    "\"<p>In monitoring, the common approach is to conceive of erroneous conditions and set alerts when these appear. But it’s often difficult to enumerate the myriad failure modes in a software system. <strong>Monitoring of invariants</strong> is a complementary approach to setting expected normal ranges, often by examining historical behavior, and alerting whenever a system goes outside those bounds.</p>\""
+  ],
+  [
+    "OWASP ASVS",
+    "assess",
+    "techniques",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Serverless architecture",
+    "assess",
+    "techniques",
+    "TRUE",
+    "new",
+    "\"<p><strong>Serverless architecture</strong> replaces long-running virtual machines with ephemeral compute power that comes into existence on request and disappears immediately after use. Examples include <a href=\"\"https://www.firebase.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Firebase<span class=\"\"pop-out-icon\"\"></span></a> and <a href=\"\"https://www.thoughtworks.com/radar/platforms/aws-lambda\"\">AWS Lambda</a>. Use of this architecture can mitigate some security concerns such as security patching and SSH access control, and can make much more efficient use of compute resources. These systems cost very little to operate and can have inbuilt scaling features (this is especially true for AWS Lambda). An example architecture could be a JavaScript app with static assets served by a CDN or S3 coupled with AJAX calls served by the API Gateway and Lambda. While serverless architectures have significant benefits, there are drawbacks too: Deploying, managing and sharing code across services is more complex, and local or offline testing is more difficult if not impossible.</p>\""
+  ],
+  [
+    "Unikernels",
+    "assess",
+    "techniques",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "VR beyond gaming",
+    "assess",
+    "techniques",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "A single CI instance for all teams",
+    "hold",
+    "techniques",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Big Data envy",
+    "hold",
+    "techniques",
+    "TRUE",
+    "new",
+    "\"<p>While we've long understood the value of Big Data to better understand how people interact with us, we've noticed an alarming trend of <strong>Big Data envy</strong> : organizations using complex tools to handle \"\"not-really-that-big” Data. Distributed map-reduce algorithms are a handy technique for large data sets, but many data sets we see could easily fit in a single-node relational or graph database. Even if you do have more data than that, usually the best thing to do is to first pick out the data you need, which can often then be processed on such a single node. So we urge that before you spin up your clusters, take a realistic assessment of what you need to process, and if it fits—maybe in RAM—use the simple option.</p>\""
+  ],
+  [
+    "Gitflow",
+    "hold",
+    "techniques",
+    "FALSE",
+    "no change",
+    "\"<p>We firmly believe that long-lived version-control branches harm valuable engineering practices such as continuous integration, and this belief underlies our dislike for <strong>Gitflow</strong>. We love the flexibility of <a href=\"\"https://git-scm.com\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Git<span class=\"\"pop-out-icon\"\"></span></a> underneath but abhor tools that encourage bad engineering practices. Very short-lived branches hurt less, but most teams we see using Gitflow feel empowered to abuse its branch-heavy workflow, which encourages late integration (therefore discouraging true continuous integration).</p>\""
+  ],
+  [
+    "High performance envy/web scale envy",
+    "hold",
+    "techniques",
+    "FALSE",
+    "no change",
+    "\"<p>We see many teams run into trouble because they have chosen complex tools, frameworks or architectures because they \"\"might need to scale\"\". Companies such as Twitter and Netflix need to be able to support extreme loads and so need these architectures, but they also have extremely skilled development teams able to handle the complexity. Most situations do not require these kinds of engineering feats; teams should keep their  <strong>web scale envy</strong> in check in favor of simpler solutions that still get the job done.</p>\""
+  ],
+  [
+    "SAFe™",
+    "hold",
+    "techniques",
+    "FALSE",
+    "no change",
+    "\"<p>The <a href=\"\"http://www.scaledagileframework.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Scaled Agile Framework®<span class=\"\"pop-out-icon\"\"></span></a> (aka  <strong>SAFe™</strong> ) continues to gain mindshare in many organizations at scale. In addition, tools and certification are becoming a significant aspect of the adoption of SAFe™. We continue to be concerned that actual adoptions are prone to over-standardization and are tending towards large release practices, resulting in practices that hinder agile adoption. In its place, we continue to recommend lean approaches that include experimentation and incorporate continuous improvement practices like the Improvement Katas offer organizations a better model for scaling agile.</p><br><br><p>Scaled Agile Framework® and SAFe™ are trademarks of Scaled Agile, Inc.</p>\""
+  ],
+  [
+    "Docker",
+    "adopt",
+    "platforms",
+    "FALSE",
+    "moved in",
+    "\"\""
+  ],
+  [
+    "TOTP Two-Factor Authentication",
+    "adopt",
+    "platforms",
+    "FALSE",
+    "no change",
+    "\"<p>Password security is still a hotly debated topic with the <a href=\"\"https://www.gov.uk/government/publications/password-policy-simplifying-your-approach/password-policy-executive-summary\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">UK government advocating technical controls<span class=\"\"pop-out-icon\"\"></span></a> that let users remember simpler passwords and <a href=\"\"https://www.youtube.com/watch?v=yzGzB-yYKcc\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Edward Snowden’s password advice<span class=\"\"pop-out-icon\"\"></span></a> being described as only \"\"<a href=\"\"http://www.wired.com/2015/04/snowden-sexy-margaret-thatcher-password-isnt-so-sexy/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">borderline secure<span class=\"\"pop-out-icon\"\"></span></a>\"\". Passwords are generally one of the weakest links in the security chain, so we recommend employing <strong>two-factor authentication</strong> , which can significantly improve security. <a href=\"\"http://en.wikipedia.org/wiki/Time-based_One-time_Password_Algorithm\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Time-based One-Time Password<span class=\"\"pop-out-icon\"\"></span></a> ( <strong>TOTP</strong> ) is the standard algorithm in this space, with straightforward server-side implementations and free smartphone authenticator apps from <a href=\"\"https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Google<span class=\"\"pop-out-icon\"\"></span></a> and <a href=\"\"http://www.windowsphone.com/en-us/store/app/authenticator/e7994dbc-2336-4950-91ba-ca22d653759b\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Microsoft<span class=\"\"pop-out-icon\"\"></span></a>.</p>\""
+  ],
+  [
+    "Apache Kafka",
+    "trial",
+    "platforms",
+    "FALSE",
+    "moved in",
+    "\"\""
+  ],
+  [
+    "Apache Mesos",
+    "trial",
+    "platforms",
+    "FALSE",
+    "no change",
+    "\"<p><strong><a href=\"\"http://mesos.apache.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Mesos<span class=\"\"pop-out-icon\"\"></span></a></strong> is a platform that abstracts out underlying computing resources to make it easier to build massively scalable distributed systems. It can be used to provide a scheduling layer for <a href=\"\"https://www.docker.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Docker<span class=\"\"pop-out-icon\"\"></span></a>, or to act as an abstraction layer to things like AWS. Twitter has used it to great effect to help it scale its infrastructure. Tools built on top of Mesos are starting to appear, such as <a href=\"\"http://nerds.airbnb.com/introducing-chronos/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Chronos<span class=\"\"pop-out-icon\"\"></span></a>, which is a distributed, fault-tolerant cron replacement. Prominent success stories are appearing, such as <a href=\"\"https://mesosphere.com/blog/2015/04/23/apple-details-j-a-r-v-i-s-the-mesos-framework-that-runs-siri/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Apple's Siri<span class=\"\"pop-out-icon\"\"></span></a> rearchitecting to use Mesos.</p>\""
+  ],
+  [
+    "AWS Lambda",
+    "trial",
+    "platforms",
+    "FALSE",
+    "no change",
+    "\"<p>Our teams continue to enjoy using <strong><a href=\"\"https://aws.amazon.com/lambda/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">AWS Lambda<span class=\"\"pop-out-icon\"\"></span></a></strong> and are beginning to use it to experiment with <a href=\"\"https://www.thoughtworks.com/radar/techniques/serverless-architecture\"\">Serverless architectures</a>, combining Lambda with the <a href=\"\"https://aws.amazon.com/api-gateway/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">API Gateway<span class=\"\"pop-out-icon\"\"></span></a> to produce highly scalable systems with invisible infrastructure. We have run into significant problems using Java for Lambda functions, with erratic latencies up to several seconds as the Lambda container is started. We recommend sticking with JavaScript or Python for the time being.</p>\""
+  ],
+  [
+    "H2O",
+    "trial",
+    "platforms",
+    "FALSE",
+    "no change",
+    "\"<p>Predictive analytics are used in more and more products, often directly in end user-facing functionality. <a href=\"\"http://h2o.ai/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>H2O</strong><span class=\"\"pop-out-icon\"\"></span></a> is an interesting open source package (with a startup behind it) that makes predictive analytics accessible to development teams, offering straightforward use of a wide variety of analytics, great performance and easy integration on JVM-based platforms. At the same time it integrates with the data scientists’ favorite tools, R and Python, as well as Hadoop and Spark.</p>\""
+  ],
+  [
+    "HSTS",
+    "trial",
+    "platforms",
+    "FALSE",
+    "no change",
+    "\"<p><a href=\"\"https://www.owasp.org/index.php/HTTP_Strict_Transport_Security\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">HTTP Strict Transport Security<span class=\"\"pop-out-icon\"\"></span></a> ( <strong>HSTS</strong> ) is a now widely supported policy that allows websites to protect themselves from downgrade attacks. A downgrade attack in the context of HTTPS is one that can cause users of your site to fall back to HTTP rather than HTTPS, allowing for further attacks such as man-in-the-middle attacks. By using the server header, you inform browsers that they should only use HTTPS to access your website, and should ignore downgrade attempts to contact the site via HTTP. Browser support is now widespread enough that this easy-to-implement feature should be considered for any site using HTTPS.</p>\""
+  ],
+  [
+    "Kubernetes",
+    "trial",
+    "platforms",
+    "FALSE",
+    "moved in",
+    "\"\""
+  ],
+  [
+    "Linux Security Modules",
+    "trial",
+    "platforms",
+    "FALSE",
+    "moved in",
+    "\"<p>In earlier versions of the Radar, we have highlighted the value of <strong>Linux security modules</strong> , talking about how they enable people to think about server hardening as a part of their development workflow. More recently, with <a href=\"\"https://linuxcontainers.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">LXC<span class=\"\"pop-out-icon\"\"></span></a> and <a href=\"\"https://www.thoughtworks.com/radar/platforms/docker\"\">Docker</a> containers now shipping with default <a href=\"\"https://wiki.ubuntu.com/AppArmor\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">AppArmor<span class=\"\"pop-out-icon\"\"></span></a> profiles on certain Linux distributions, it has forced the hand of many teams to understand how these tools work. In the event that teams use container images to run any process that they did not themselves create, these tools help them assess questions about who has access to what resources on the shared host and the capabilities that these contained services have, and be conservative in managing levels of access.</p>\""
+  ],
+  [
+    "Pivotal Cloud Foundry",
+    "trial",
+    "platforms",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Rancher",
+    "trial",
+    "platforms",
+    "FALSE",
+    "moved in",
+    "\"\""
+  ],
+  [
+    "Amazon API Gateway",
+    "assess",
+    "platforms",
+    "TRUE",
+    "new",
+    "\"<p><a href=\"\"https://aws.amazon.com/api-gateway/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Amazon API Gateway</strong><span class=\"\"pop-out-icon\"\"></span></a> is Amazon's offering enabling developers to expose API services to Internet clients, offering the usual API gateway features like traffic management, monitoring, authentication and authorization. Our teams have been using this service to front other AWS capabilities like AWS Lambda as part of <a href=\"\"https://www.thoughtworks.com/radar/techniques/serverless-architecture\"\">serverless architectures</a>. We continue to monitor for the challenges presented by <a href=\"\"https://www.thoughtworks.com/radar/platforms/overambitious-api-gateways\"\">overambitious API gateways</a>, but at this stage Amazon's offering appears to be lightweight enough to avoid those problems.</p>\""
+  ],
+  [
+    "Apache Flink",
+    "assess",
+    "platforms",
+    "TRUE",
+    "new",
+    "\"<p><strong><a href=\"\"http://flink.apache.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Apache Flink<span class=\"\"pop-out-icon\"\"></span></a></strong> is a new-generation platform for scalable distributed batch and stream processing. At its core is a streaming data-flow engine. It also supports tabular (SQL-like), graph-processing and machine-learning operations. Apache Flink stands out with feature-rich capabilities for stream processing: event time, rich streaming window operations, fault tolerance and exactly-once semantics. While it hasn't reached version 1.0, it has raised significant community interest due to innovations in stream processing, memory handling, state management and simplicity of configuration.</p>\""
+  ],
+  [
+    "AWS ECS",
+    "assess",
+    "platforms",
+    "FALSE",
+    "no change",
+    "\"<p>The <strong><a href=\"\"http://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Elastic Container Service (ECS)<span class=\"\"pop-out-icon\"\"></span></a></strong> is AWS’ entry into the multihost Docker space. Although there is a lot of competition in this area, there aren’t many off-premises managed solutions out there yet. Although ECS seems like a good first step, we are worried that it is overly complicated at the moment and lacks a good abstraction layer. If you want to run <a href=\"\"https://www.docker.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Docker<span class=\"\"pop-out-icon\"\"></span></a> on AWS, though, this tool should certainly be high on your list. Just don’t expect it to be easy to get started with.</p>\""
+  ],
+  [
+    "Bluetooth Mesh",
+    "assess",
+    "platforms",
+    "TRUE",
+    "new",
+    "\"<p>While many deployments of smart devices rely on Wi-Fi connectivity, we have been seeing success with <strong>Bluetooth Mesh</strong> networks that don't necessitate a hub or gateway. With better energy usage than Wi-Fi and better smartphone adoption than ZigBee, Bluetooth LE deployed as a self-healing mesh provides interesting new approaches for connecting local device-area networks. We are still waiting for the formal approach to emerge from the Bluetooth SIG but have already had successful deployments. We particularly like the lack of infrastructure required to stand up a decentralized network but still retain the option to \"\"progressively enhance\"\" the system with the addition of a gateway and cloud services.</p>\""
+  ],
+  [
+    "Ceph",
+    "assess",
+    "platforms",
+    "FALSE",
+    "no change",
+    "\"<p><strong><a href=\"\"http://ceph.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Ceph<span class=\"\"pop-out-icon\"\"></span></a></strong> is a storage platform that can be used as object storage, as block storage, and as a file system, typically running on a cluster of commodity servers. With its first major release having been in July 2012, Ceph is certainly not a new product. We do want to highlight it on this Technology Radar as an important building block for private clouds. It is particularly attractive because its RADOS Gateway component can expose the object store through a RESTful interface that is compatible with <a href=\"\"https://aws.amazon.com/s3/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Amazon S3<span class=\"\"pop-out-icon\"\"></span></a> and the <a href=\"\"https://wiki.openstack.org/wiki/Swift\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">OpenStack Swift APIs<span class=\"\"pop-out-icon\"\"></span></a>.</p>\""
+  ],
+  [
+    "Deflect",
+    "assess",
+    "platforms",
+    "TRUE",
+    "new",
+    "\"<p><a href=\"\"https://deflect.ca/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Deflect</strong><span class=\"\"pop-out-icon\"\"></span></a> is an open source service protecting NGOs, activist and independent media companies from DDoS attacks. Similar to a commercial CDN, it uses distributed reverse-proxy caching and also hides your server IP addresses and blocks public access to admin URLs. Particular effort is put in to combat the botnets typically used for extrajudicial censoring of independent voices.</p>\""
+  ],
+  [
+    "ESP8266",
+    "assess",
+    "platforms",
+    "TRUE",
+    "new",
+    "\"<p>Our growing ranks of hardware hackers have been excited by the <strong><a href=\"\"http://esp8266.net/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">ESP8266<span class=\"\"pop-out-icon\"\"></span></a></strong> Wi-Fi microcontroller. Rather than a specific technology innovation, it is the combination of low price point and small form factor that has sparked an inflection point in people's thinking about what is now feasible to achieve with custom hardware devices. Its main characteristics are: Wi-Fi capabilities (it can act as station, access point or a combination of both), low power, open hardware, Arduino SDK programmability, Lua programmability, huge community support and low cost compared with other IoT modules.</p>\""
+  ],
+  [
+    "MemSQL",
+    "assess",
+    "platforms",
+    "TRUE",
+    "new",
+    "\"<p>As Moore's Law predicts, we continue to increase the capacity of computer systems and reduce their cost, and so new processing techniques become possible that only a few years ago would have seemed out of reach. One of these techniques is the in-memory database: Instead of using slow disks or relatively slow SSDs to store data, we can keep it in memory for high performance. One such in-memory database, <a href=\"\"http://www.memsql.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>MemSQL</strong><span class=\"\"pop-out-icon\"\"></span></a>, is making waves because it is horizontally scalable across a cluster and provides a familiar SQL-based query language. MemSQL also connects to Spark for analytics against real-time data, rather than stale data in a warehouse.</p>\""
+  ],
+  [
+    "Mesosphere DCOS",
+    "assess",
+    "platforms",
+    "FALSE",
+    "no change",
+    "\"<p><strong><a href=\"\"https://mesosphere.com/product/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Mesosphere DCOS<span class=\"\"pop-out-icon\"\"></span></a></strong> is a platform built on top of <a href=\"\"http://mesos.apache.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Mesos<span class=\"\"pop-out-icon\"\"></span></a>. It provides an abstraction over underling machines, giving you a pool of storage and compute that allows services built for DCOS to operate at massive scale (Support is already there for Hadoop, Spark and Cassandra, among others). This is probably overkill for more modest workloads at the moment (where plain old Mesos could still be a good fit), but it will be interesting to see if Mesosphere starts trying to position DCOS as a general-purpose system.</p>\""
+  ],
+  [
+    "Nomad",
+    "assess",
+    "platforms",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Presto",
+    "assess",
+    "platforms",
+    "FALSE",
+    "no change",
+    "\"<p><strong><a href=\"\"https://prestodb.io/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Presto<span class=\"\"pop-out-icon\"\"></span></a></strong> is an open source distributed SQL query engine designed and optimized for running interactive analytics workloads. Presto's massively parallel processing architecture - combined with advanced code-generation techniques and in-memory processing pipelines - makes it highly scalable. It supports a large subset of ANSI SQL including complex queries, joins, aggregations and window functions. Presto comes with support for a wide range of data sources including <strong>Hive</strong> , <strong>Cassandra</strong> , <strong>MySQL</strong> and <strong>PostgreSQL</strong> , thereby unifying the interactive analytics interface across data stores of an organization. Applications can connect to Presto using its JDBC interface.</p>\""
+  ],
+  [
+    "Realm",
+    "assess",
+    "platforms",
+    "TRUE",
+    "new",
+    "\"<p><strong><a href=\"\"https://realm.io/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Realm<span class=\"\"pop-out-icon\"\"></span></a></strong> is a database designed for use on mobile devices, with its own persistence engine to achieve high performance. Realm is marketed as a replacement for SQLite and Core Data, and our teams have enjoyed using it. Note that migrations are not quite as straightforward as the Realm documentation would have you believe. Still, Realm has us excited, and we suggest you take a look.</p>\""
+  ],
+  [
+    "Sandstorm",
+    "assess",
+    "platforms",
+    "TRUE",
+    "new",
+    "\"<p>For people who want the benefit of cloud-based collaboration tools but don't want to inadvertently \"\"become the product\"\" of a major cloud provider, <a href=\"\"https://sandstorm.io/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Sandstorm</strong><span class=\"\"pop-out-icon\"\"></span></a> provides an interesting open source alternative with the potential for self-hosting. Of particular interest is the isolation approach, whereby containerization is applied per document rather than per application, and syscall whitelisting is added to further <a href=\"\"http://docs.sandstorm.io/en/latest/using/security-practices/#server-sandboxing\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">secure the sandbox<span class=\"\"pop-out-icon\"\"></span></a>.</p>\""
+  ],
+  [
+    "Application Servers",
+    "hold",
+    "platforms",
+    "FALSE",
+    "no change",
+    "\"<p>The rise of containers, phoenix servers and continuous delivery has seen a move away from the usual approach to deploying web applications. Traditionally we have built an artifact and then installed that artifact into an application server. The result was long feedback loops for changes, increased build times and the not insignificant overhead of managing these application servers in production. Many of them are a pain to automate too. Most teams we work with favor bundling an embedded http server within your web application. There are plenty of options available: Jetty, SimpleWeb, Webbit and Owin Self-Host amongst others. Easier automation, easier deployment and a reduction in the amount of infrastructure you have to manage lead us to recommend embedded servers over <strong>application servers</strong> for future projects.</p>\""
+  ],
+  [
+    "Overambitious API gateways",
+    "hold",
+    "platforms",
+    "FALSE",
+    "no change",
+    "\"<p>One of our common complaints is the pushing of business smarts into middleware, resulting in application servers and enterprise service buses with ambitions to run critical application logic. These require complex programming in environments not well suited to the purpose. We're seeing a worrying re-emergence of this disease with <strong>overambitious API Gateway</strong> products. API Gateways can provide utility in dealing with some generic concerns - for example, authentication and rate-limiting - but any domain smarts such as data transformation or rule processing should live in applications or services where they can be controlled by product teams working closely with the domains they support.</p>\""
+  ],
+  [
+    "Superficial private cloud",
+    "hold",
+    "platforms",
+    "FALSE",
+    "no change",
+    "\"\""
+  ],
+  [
+    "Consul",
+    "adopt",
+    "tools",
+    "FALSE",
+    "moved in",
+    "\"\""
+  ],
+  [
+    "Browsersync",
+    "trial",
+    "tools",
+    "FALSE",
+    "no change",
+    "\"<p>We've had rave reviews from a number of ThoughtWorks teams using <a href=\"\"http://www.browsersync.io/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Browsersync</strong><span class=\"\"pop-out-icon\"\"></span></a>. As the number of devices we deliver web applications to grows, so does the amount of effort that must be devoted to testing across these different devices. Browsersync is a free, open source tool that can dramatically reduce this effort by synchronizing manual browser testing across multiple mobile or desktop browsers. Providing both a CLI and a UI option, the tool is build-pipeline friendly and automates repetitive tasks such as form filling.</p>\""
+  ],
+  [
+    "Carthage",
+    "trial",
+    "tools",
+    "FALSE",
+    "no change",
+    "\"<p>Dependency management in iOS and OS X projects used to be either completely manual or completely automatic as part of using <a href=\"\"https://cocoapods.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">CocoaPods<span class=\"\"pop-out-icon\"\"></span></a>. With <strong><a href=\"\"https://github.com/Carthage/Carthage\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Carthage<span class=\"\"pop-out-icon\"\"></span></a></strong> , a new middle ground has become available. Carthage manages dependencies - it downloads, builds and updates frameworks - but it leaves the integration of the frameworks into the build of the project to the project. This is in contrast to CocoaPods, which basically takes over the project structure and build setup. It should be noted that Carthage can only deal with dynamic frameworks, which are not available on iOS 7 and below.</p>\""
+  ],
+  [
+    "Gauge",
+    "trial",
+    "tools",
+    "FALSE",
+    "moved in",
+    "\"<p><strong><a href=\"\"https://gauge.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Gauge<span class=\"\"pop-out-icon\"\"></span></a></strong> is a lightweight cross-platform test-automation tool. Specifications are written in free-form Markdown so test cases can be written in the business language, as opposed to using the more common but restrictive \"\"given-when-then\"\" format. Language and IDE support are implemented as plugins to a single core implementation, allowing testers to use the same IDEs as the rest of the team, with powerful capabilities such as autocompletion and refactoring. This tool, open sourced by ThoughtWorks, also supports parallel execution out of the box for all supported platforms.</p>\""
+  ],
+  [
+    "GitUp",
+    "trial",
+    "tools",
+    "FALSE",
+    "no change",
+    "\"<p>Git can be confusing. Really confusing. And even when it’s used in a simple trunk-based development process, there are still enough nuances to how it works that people can tie themselves in knots from time to time. When this happens, having an understanding of how Git works under the hood is very useful, and <strong><a href=\"\"http://gitup.co/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">GitUp<span class=\"\"pop-out-icon\"\"></span></a></strong> is a Mac-based tool that gives you exactly that. GitUp provides a graphical representation of what is happening as you type normal Git commands into the terminal. You can learn the various Git commands while also understanding what each one does as you use it. GitUp is a useful tool for both people new to Git and those with more Git experience.</p>\""
+  ],
+  [
+    "Let's Encrypt",
+    "trial",
+    "tools",
+    "FALSE",
+    "moved in",
+    "\"\""
+  ],
+  [
+    "Load Impact",
+    "trial",
+    "tools",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "OWASP Dependency-Check",
+    "trial",
+    "tools",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Serverspec",
+    "trial",
+    "tools",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "SysDig",
+    "trial",
+    "tools",
+    "FALSE",
+    "no change",
+    "\"<p>Although <strong><a href=\"\"http://www.sysdig.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">SysDig<span class=\"\"pop-out-icon\"\"></span></a></strong> isn’t the newest tool on the Technology Radar, we’re still surprised by how many people haven’t heard of it. A pluggable open source CLI for Linux system troubleshooting, SysDig has some pretty powerful features. One of the key things we like is the ability to generate a system trace on a machine that is experiencing difficulties, which you can then interrogate afterward to find out what was happening. SysDig also contains support for working with containers, something that makes a previously useful tool even more powerful.</p>\""
+  ],
+  [
+    "Webpack",
+    "trial",
+    "tools",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Zipkin",
+    "trial",
+    "tools",
+    "FALSE",
+    "moved in",
+    "\"\""
+  ],
+  [
+    "Concourse",
+    "assess",
+    "tools",
+    "FALSE",
+    "no change",
+    "\"<p>Many development teams are making the move from simple continuous integration servers to Continuous Delivery pipelines, often spanning multiple environments, reaching into production. To implement such a pipeline successfully and operate it in a sustainable way requires a CI/CD tool that treats build pipelines and artifacts as first-class citizens; and unfortunately there aren’t many. <a href=\"\"http://concourse.ci/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Concourse CI</strong><span class=\"\"pop-out-icon\"\"></span></a> is a promising new entrant in this field, and our teams that have tried it are excited about its setup, which enables builds that run in containers, has a clean, usable UI and discourages snowflake build servers.</p>\""
+  ],
+  [
+    "Gitrob",
+    "assess",
+    "tools",
+    "FALSE",
+    "moved out",
+    "\"<p>Attackers continue to use automated software to crawl public GitHub repositories to find AWS credentials and spin up EC2 instances to mine Bitcoins or for other nefarious purposes. Although adoption of tools like <a href=\"\"https://github.com/AGWA/git-crypt\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">git-crypt<span class=\"\"pop-out-icon\"\"></span></a> and <a href=\"\"https://www.thoughtworks.com/radar/tools/blackbox\"\">Blackbox</a> to safely store secrets such as passwords and access tokens in code repositories is increasing, it is still all too common that secrets are stored unprotected. It is also not uncommon to see project secrets accidentally checked in to developers' personal repositories. <a href=\"\"https://github.com/michenriksen/gitrob\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Gitrob</strong><span class=\"\"pop-out-icon\"\"></span></a> can help minimize the damage of exposing secrets. It scans an organization's GitHub repositories, flagging all files that might contain sensitive information that shouldn't have been pushed to the repository. The current release of the tool has some limitations: It can only be used to scan public GitHub organizations and their members, it doesn't inspect the contents of files, it doesn't review the entire commit history, and it fully scans all repositories each time it is run. Despite these limitations, it can be a helpful reactive tool to help alert teams before it is too late. It should be considered a complementary approach to a proactive tool such as <a href=\"\"https://github.com/thoughtworks/talisman\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Talisman<span class=\"\"pop-out-icon\"\"></span></a>.</p>\""
+  ],
+  [
+    "Grasp",
+    "assess",
+    "tools",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "HashiCorp Vault",
+    "assess",
+    "tools",
+    "TRUE",
+    "new",
+    "\"<p>Having a way to securely manage secrets is increasingly becoming a huge project issue. The old idea of just having a file with secrets or environment variables is becoming hard to manage, especially in environments with multiple applications like <a href=\"\"https://www.thoughtworks.com/radar/techniques/microservices\"\">microservices</a> or microcontainer environments, where the applications need to access a multitude of secrets. <a href=\"\"https://github.com/hashicorp/vault\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>HashiCorp Vault</strong><span class=\"\"pop-out-icon\"\"></span></a> is a promising tool that tries to solve the problem by providing mechanisms for securely accessing secrets through an unified interface. It has some features that make life easier, such as encryption and automatically generating secrets for known tools, among others.</p>\""
+  ],
+  [
+    "ievms",
+    "assess",
+    "tools",
+    "FALSE",
+    "no change",
+    "\"<p>Despite the shrinking usage of Internet Explorer, for many products the IE user base is not an insignificant share of the market, and browser compatibility needs to be tested. This is particularly troublesome if you prefer the joys of a UNIX-based system for development. To aid in this dilemma, <a href=\"\"https://github.com/xdissent/ievms\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>ievms</strong><span class=\"\"pop-out-icon\"\"></span></a> provides a utility script that brings together Windows-distributed VM images and VirtualBox to automate the setup and testability of various IE versions, from 6 up to Edge.</p>\""
+  ],
+  [
+    "LambdaCD",
+    "assess",
+    "tools",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Pinpoint",
+    "assess",
+    "tools",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Pitest",
+    "assess",
+    "tools",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Prometheus",
+    "assess",
+    "tools",
+    "FALSE",
+    "no change",
+    "\"<p>SoundCloud has recently open sourced its monitoring and alerting toolkit, <a href=\"\"http://prometheus.io/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Prometheus</strong><span class=\"\"pop-out-icon\"\"></span></a>. Developed in reaction to difficulties with <a href=\"\"http://graphite.readthedocs.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Graphite<span class=\"\"pop-out-icon\"\"></span></a> in its production systems, Prometheus primarily supports a pull-based HTTP model (although a more Graphite-like push model is also supported). It also goes further by supporting alerts, making it an active part of your operational toolset. As of this writing, Prometheus is still only in release 0.15.1 but is evolving rapidly. We’re glad to see the recent product focus on core time-series DB and multidimensional indexing capabilities while allowing for export to a wider variety of front-end graphing tools.</p>\""
+  ],
+  [
+    "RAML",
+    "assess",
+    "tools",
+    "FALSE",
+    "no change",
+    "\"<p>With a growing landscape of services providing RESTful APIs, it is becoming increasingly important to document them. We have previously mentioned <a href=\"\"https://www.thoughtworks.com/radar/tools/swagger\"\">Swagger</a>, and in this Technology Radar we’d like to highlight the RESTful API modeling language (<a href=\"\"http://raml.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>RAML</strong><span class=\"\"pop-out-icon\"\"></span></a>). Our teams feel that in comparison to Swagger it is more lightweight and moves the focus from adding documentation to existing APIs to designing APIs.</p>\""
+  ],
+  [
+    "Repsheet",
+    "assess",
+    "tools",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Sleepy Puppy",
+    "assess",
+    "tools",
+    "FALSE",
+    "no change",
+    "\"<p><strong><a href=\"\"https://github.com/Netflix/sleepy-puppy\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Sleepy Puppy<span class=\"\"pop-out-icon\"\"></span></a></strong> is a delayed cross-site scripting (XSS) payload-management framework recently open sourced by Netflix. It enables you to test vulnerabilities for XSS past the target application when the perpetrator intends to attack a secondary underlying system. With XSS being one of the OWASP Top10, we see this framework assisting with automated security checks for several applications. It simplifies the capturing, managing and tracking of XSS propagation over long periods of time, with customizable payloads. Sleepy puppy also exposes an API that can be integrated with vulnerability tools like <a href=\"\"https://www.thoughtworks.com/radar/tools/zap\"\">ZAP</a>, for automated security checks.</p>\""
+  ],
+  [
+    "Jenkins as a deployment pipeline",
+    "hold",
+    "tools",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "ES6",
+    "adopt",
+    "languages-and-frameworks",
+    "FALSE",
+    "no change",
+    "\"<p>Over many years, JavaScript has grown to become probably the most widely used programming language in the world. Nevertheless, the language itself has a few problems that many have attempted to address by using libraries or even by implementing their own languages that run on top of JavaScript (of which we’ve mentioned both <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/coffeescript\"\">CoffeeScript</a> and <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/clojurescript\"\">ClojureScript</a> before). <strong><a href=\"\"http://es6-features.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">ES6<span class=\"\"pop-out-icon\"\"></span></a></strong> (aka ECMAScript 6 or ECMAScript 2015), the new version of JavaScript, addresses many of the concerns of the older versions currently in use. Although browser support is scarce, support from mature transpilers like <a href=\"\"http://babeljs.io\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Babel<span class=\"\"pop-out-icon\"\"></span></a> allows you to write ES6 and have it supported in older browsers. For new projects, we strongly suggest starting with ES6 from day one.</p>\""
+  ],
+  [
+    "React.js",
+    "adopt",
+    "languages-and-frameworks",
+    "FALSE",
+    "moved in",
+    "\"\""
+  ],
+  [
+    "Spring Boot",
+    "adopt",
+    "languages-and-frameworks",
+    "FALSE",
+    "moved in",
+    "\"\""
+  ],
+  [
+    "Swift",
+    "adopt",
+    "languages-and-frameworks",
+    "FALSE",
+    "no change",
+    "\"<p><a href=\"\"https://developer.apple.com/swift/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Swift</strong><span class=\"\"pop-out-icon\"\"></span></a> is now our default choice for development in the Apple ecosystem. With the release of Swift 2, the language approached a level of maturity that provides the stability and performance required for most projects. A good number of libraries that support iOS development—<a href=\"\"https://github.com/SwiftyJSON/SwiftyJSON\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">SwiftyJSON<span class=\"\"pop-out-icon\"\"></span></a>, <a href=\"\"https://github.com/Quick/Quick\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Quick<span class=\"\"pop-out-icon\"\"></span></a>, etc.—are now migrated over to Swift, which is where the rest of the applications should follow. Swift has now been open sourced, and we are seeing a community of developers dedicated to continuously improving development in iOS.</p>\""
+  ],
+  [
+    "Butterknife",
+    "trial",
+    "languages-and-frameworks",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Dagger",
+    "trial",
+    "languages-and-frameworks",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Dapper",
+    "trial",
+    "languages-and-frameworks",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Ember.js",
+    "trial",
+    "languages-and-frameworks",
+    "FALSE",
+    "moved in",
+    "\"<p><a href=\"\"http://emberjs.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Ember.js</strong><span class=\"\"pop-out-icon\"\"></span></a> has developed further support based on project experiences and is clearly a strong contender in the field of JavaScript application frameworks. Ember is praised for its developer experience, with far fewer surprises than other frameworks such as <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/angularjs\"\">AngularJS</a>. The Ember CLI build tooling, convention-over-configuration approach and <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/es6\"\">ES6</a> support also gain positive feedback.</p>\""
+  ],
+  [
+    "Enlive",
+    "trial",
+    "languages-and-frameworks",
+    "FALSE",
+    "no change",
+    "\"<p>Most templating frameworks like <a href=\"\"https://mustache.github.io/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Mustache<span class=\"\"pop-out-icon\"\"></span></a> or <a href=\"\"http://freemarker.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">FreeMarker<span class=\"\"pop-out-icon\"\"></span></a> mix code with markup in a single file to implement complex, dynamic content. <a href=\"\"https://github.com/cgrand/enlive/wiki\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Enlive</strong><span class=\"\"pop-out-icon\"\"></span></a> is a Clojure-based templating framework that completely separates programming language from HTML markup and employs CSS selectors to find and replace parts of the document. Enlive demonstrates the power of functional programming to implement complex behavior through a series of simple, composable functions acting on a common abstraction. Our teams working in Clojure have found it to be a very useful and straightforward tool.</p>\""
+  ],
+  [
+    "Fetch",
+    "trial",
+    "languages-and-frameworks",
+    "TRUE",
+    "new",
+    "\"<p>Our teams are moving away from JQuery or raw XHR for remote JavaScript calls and instead are using the new <a href=\"\"https://fetch.spec.whatwg.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Fetch<span class=\"\"pop-out-icon\"\"></span></a> API and the <strong><a href=\"\"https://github.com/github/fetch\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Fetch<span class=\"\"pop-out-icon\"\"></span></a></strong> polyfill in particular. The semantics remain similar but have cleaner support for promises and CORS support. We are seeing this as the new de-facto approach.</p>\""
+  ],
+  [
+    "React Native",
+    "trial",
+    "languages-and-frameworks",
+    "FALSE",
+    "moved in",
+    "\"\""
+  ],
+  [
+    "Redux",
+    "trial",
+    "languages-and-frameworks",
+    "TRUE",
+    "new",
+    "\"<p><a href=\"\"http://redux.js.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Redux</strong><span class=\"\"pop-out-icon\"\"></span></a> is a great, mature tool that has helped many of our teams reframe how they think about managing state in client-side apps. Using a <a href=\"\"https://www.thoughtworks.com/radar/techniques/flux\"\">Flux</a>-style approach, it enables a loosely coupled state-machine architecture that's easy to reason about. We've found it a good companion to some of our favored JavaScript frameworks, such as <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/ember-js\"\">Ember</a> and <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/react-js\"\">React</a>.</p>\""
+  ],
+  [
+    "Robolectric",
+    "trial",
+    "languages-and-frameworks",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "SignalR",
+    "trial",
+    "languages-and-frameworks",
+    "FALSE",
+    "no change",
+    "\"<p>We have a number of reservations about the use of HTML5 WebSockets. By allowing the server to initiate actions on the browser, WebSockets departs from the connectionless, request/response model that underpins the World Wide Web today. Security is another big risk with WebSockets. For example, the standard does not impose any cross-origin request policy. However, we do recognize that in certain monitoring or alerting applications, WebSockets can be very useful. If you need to build a .NET WebSockets server, <a href=\"\"http://signalr.net/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>SignalR</strong><span class=\"\"pop-out-icon\"\"></span></a> conveniently implements much of the additional code you need for a robust production application. This includes some recommended security practices such as validating connection tokens and activating SSL when encryption is needed. Although ThoughtWorks teams have been very happy with SignalR, there are still fundamental issues with WebSockets that you should consider before diving in.</p>\""
+  ],
+  [
+    "Alamofire",
+    "assess",
+    "languages-and-frameworks",
+    "TRUE",
+    "new",
+    "\"<p>Networking and decoding in iOS applications have been a difficult endeavor for many years. There have been many libraries and attempts to solve this ongoing problem. It looks as though <a href=\"\"https://github.com/Alamofire/Alamofire\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Alamofire</strong><span class=\"\"pop-out-icon\"\"></span></a> is the most robust and developer-friendly library to handle decoding JSON. It was written by the same creator as its Objective-C counterpart (AFNetworking), which was used at great length during the Objective-C days.</p>\""
+  ],
+  [
+    "AngularJS",
+    "assess",
+    "languages-and-frameworks",
+    "FALSE",
+    "moved out",
+    "\"<p>While we have delivered many successful projects using <a href=\"\"https://angularjs.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>AngularJS</strong><span class=\"\"pop-out-icon\"\"></span></a> and are seeing an acceleration of adoption in corporate settings, we have decided to move Angular back to Assess on this edition of the Radar. This move is intended as a note of caution: <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/react-js\"\">React.js</a> and <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/ember-js\"\">Ember</a> offer strong alternatives; the migration path from Angular version 1 to version 2 is causing uncertainty; and we see some organizations adopting the framework without really thinking through whether a single-page application fits their needs. We have passionate internal debates about this topic but have certainly seen codebases become overly complex from a combination of two-way binding and inconsistent state-management patterns. We believe that rather than requiring that a solid framework be jettisoned, these issues can be solved through careful design and use of Redux or Flux from the outset.</p>\""
+  ],
+  [
+    "Aurelia",
+    "assess",
+    "languages-and-frameworks",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Cylon.js",
+    "assess",
+    "languages-and-frameworks",
+    "TRUE",
+    "new",
+    "\"<p>The intersection between IoT devices and the JavaScript ecosystem offers interesting possibilities. <strong><a href=\"\"https://cylonjs.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Cylon.js<span class=\"\"pop-out-icon\"\"></span></a></strong> is a JavaScript library for building interfaces for robotics and the Internet of Things, which has excited our technical community. It offers support for 50+ platform devices, as well as general-purpose input/output support with a shared set of drivers provided by the cylon-gpio module. Control of the devices is then possible through a web browser interface.</p>\""
+  ],
+  [
+    "Elixir",
+    "assess",
+    "languages-and-frameworks",
+    "FALSE",
+    "no change",
+    "\"<p>We continue to see a lot of excitement from people using the <a href=\"\"http://elixir-lang.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Elixir</strong><span class=\"\"pop-out-icon\"\"></span></a> programming language. Elixir, which is built on top of the Erlang virtual machine, is showing promise for creating highly concurrent and fault-tolerant systems. Elixir has distinctive features such as the Pipe operator, which allows developers to build a pipeline of functions as you would in the UNIX command shell. The shared byte code allows Elixir to interoperate with Erlang and leverage existing libraries while supporting tools such as the Mix build tool, the Iex interactive shell and the ExUnit unit testing framework.</p>\""
+  ],
+  [
+    "Elm",
+    "assess",
+    "languages-and-frameworks",
+    "FALSE",
+    "no change",
+    "\"\""
+  ],
+  [
+    "GraphQL",
+    "assess",
+    "languages-and-frameworks",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Immutable.js",
+    "assess",
+    "languages-and-frameworks",
+    "TRUE",
+    "new",
+    "\"<p>Immutability is often emphasized in the functional programming paradigm, and most languages have the ability to create immutable objects, which cannot be changed once created. <strong><a href=\"\"https://facebook.github.io/immutable-js/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Immutable.js<span class=\"\"pop-out-icon\"\"></span></a></strong> is a library for JavaScript that provides many persistent immutable data structures, which are highly efficient on modern JavaScript virtual machines. Immutable.js objects are, however, not normal JavaScript objects, so references to JavaScript objects from immutable objects should be avoided. Our teams have had value using this library for tracking mutation and maintaining state, and it is a library we encourage developers to investigate, especially when it's combined with the rest of the Facebook stack.</p>\""
+  ],
+  [
+    "Jepsen",
+    "assess",
+    "languages-and-frameworks",
+    "TRUE",
+    "new",
+    "\"<p>With the growth in usage of NoSQL data stores, and the growth in popularity of polyglot approaches to persistence, teams now have many choices when it comes to storing their data. While this has brought many advantages, product behavior with flaky networks can introduce subtle (and not so subtle) issues that are often not well understood, even in some cases by the product developers themselves. The <a href=\"\"https://github.com/aphyr/jepsen\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Jepsen</strong><span class=\"\"pop-out-icon\"\"></span></a> toolkit and accompanying <a href=\"\"https://aphyr.com/tags/Jepsen\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">blog<span class=\"\"pop-out-icon\"\"></span></a> have become the de-facto reference for anyone looking to understand how different database and queuing technologies react under adverse conditions. Crucially, the approach to testing, which includes clients in the transactions, shines a spotlight on possible failure modes for many teams building microservices.</p>\""
+  ],
+  [
+    "OkHttp",
+    "assess",
+    "languages-and-frameworks",
+    "FALSE",
+    "no change",
+    "\"<p><strong><a href=\"\"http://square.github.io/okhttp/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">OkHttp<span class=\"\"pop-out-icon\"\"></span></a></strong> is a Java HTTP connection library from Square that provides a fluent interface for creating connections, as well as support for the faster HTTP/2 protocol. Even when using HTTP/1.1, OkHttp can provide performance improvements via connection pooling and transparent gzip compression. Supporting both blocking synchronous and nonblocking asynchronous calls, it can also be used as a drop-in replacement for the widely used Apache HttpClient.</p>\""
+  ],
+  [
+    "Recharts",
+    "assess",
+    "languages-and-frameworks",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "TensorFlow",
+    "assess",
+    "languages-and-frameworks",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "JSPatch",
+    "hold",
+    "languages-and-frameworks",
+    "TRUE",
+    "new",
+    "\"\""
+  ]
 ]

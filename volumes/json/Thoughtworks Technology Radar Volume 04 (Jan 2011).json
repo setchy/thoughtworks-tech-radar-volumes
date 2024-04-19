@@ -1,594 +1,594 @@
 [
-  {
-    "name": "Build pipelines",
-    "ring": "adopt",
-    "quadrant": "techniques",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"The past 2 years or more has seen a proliferation of continuous integration tools and platforms leading to substantial innovation in the build and release space. Distribution of builds is one such innovation and yet another is the way in which builds are now structured to make greater use of automation in various stages of the build. Build pipelines help to provide greater insight into the quality of each build and the environments to which they have been deployed. A natural expansion of the build pipeline meme is the adoption of continuous deployment techniques, where the intention is to extend the build pipeline into the production environment. This relies on automated deployment techniques and authorization mechanisms built into the continuous integration toolset. One of the key benefits is the ability to move new functionality into production rapidly and reliably.\""
-  },
-  {
-    "name": "Coding architects",
-    "ring": "adopt",
-    "quadrant": "techniques",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"This technique was included in this edition of the Radar for visibility. We felt that there wasn't anything substantial to add to the discourse around it, but that it was important to keep this in view.\""
-  },
-  {
-    "name": "Emergent design",
-    "ring": "adopt",
-    "quadrant": "techniques",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"\""
-  },
-  {
-    "name": "Evolutionary database",
-    "ring": "adopt",
-    "quadrant": "techniques",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"The industry has seen significant changes to the way we use and store data over the past few years. Agile development practices have lead to greater emphasis on evolutionary database design, requiring new tools that support migration of schemas in line with changes to the domain model of an application. As storage space consistently becomes cheaper and data access speeds increase, many organizations are investigating the use of multiple schemas to hold data for different purposes, e.g. transactional and analysis schemas. Incremental data warehousing is becoming increasingly popular as the cost of moving data between a transactional data store and an analysis environment is less than the value of having access to near real-time reporting of critical business data.\""
-  },
-  {
-    "name": "Infrastructure as code",
-    "ring": "adopt",
-    "quadrant": "techniques",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"The large number of hosts and devices in a modern datacenter or cloud deployment have made manually installing and configuring infrastructure unwise. Infrastructure as code is an approach whereby infrastructure configuration is scripted or described by files that are stored in version control, and changes are pushed out to the datacenter in a controlled manner. This parallels the discipline of source control and build promotion used in software development, hence ‘as code’. The two front-running open source tools for infrastructure automation are Chef and Puppet. They both use a textual DSL to script automation. Using this approach provides consistent and repeatable environment changes, reducing the manual effort involved, especially in troubleshooting environmental differences.\""
-  },
-  {
-    "name": "Platform roadmaps",
-    "ring": "adopt",
-    "quadrant": "techniques",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"\""
-  },
-  {
-    "name": "Visualization and metrics",
-    "ring": "adopt",
-    "quadrant": "techniques",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"Evolutionary and emergent design of enterprise systems requires significant vigilance by development and architecture teams. Collecting metrics to capture development trends is a key part of understanding the stress points for a system under development. Assessing this information in its raw form is even more difficult than taking stock of a system at the source code level. To address this concern we have found a number of visualization tools and techniques to get what we refer to as the 1000ft view of the system and its internal quality. This 1000ft view allows us to identify visual patterns that help find and address issues more quickly.\""
-  },
-  {
-    "name": "Web as platform",
-    "ring": "adopt",
-    "quadrant": "techniques",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"Our understanding of the Web has matured to the point where we believe it is a viable platform for building distributed systems. RESTful techniques have advanced past pretty URIs + JSON towards hypermedia systems that project business protocols over the Internet and support seamless business process and service composition. The Web provides a powerful capability for scale, resiliency, and ease of implementation with commodity infrastructure like caches and Web servers with commodity protocols (like HTTP, AtomPub, and OAuth). Moving from trial to adopt is indicative of our position that the Web is ready for primetime, not just for Internet-facing systems but as a practical base for enterprise systems delivery.\""
-  },
-  {
-    "name": "Acceptance test of journeys",
-    "ring": "trial",
-    "quadrant": "techniques",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Automate database deployment",
-    "ring": "trial",
-    "quadrant": "techniques",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"When moving to continuous delivery, deployment of database changes should also be automated so that the application release that relies on those changes does not have to wait for manual deployment of the database changes. Automated database deployment ensures that the full cycle of deploying application and database changes is automated.\""
-  },
-  {
-    "name": "Automation of technical tests",
-    "ring": "trial",
-    "quadrant": "techniques",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"We strongly believe that all software delivery organizations need to be making use of automated technical tests. This sort of test spans failover testing, performance testing and soak testing among others; these activities can start early in a project’s life-cycle and continue through to maintenance. The common practice of waiting until near the end of a project is fraught with risk with little time available to find and fix problems. For example the requirement for a comprehensive production-like environment before the start of performance testing is a dangerous fallacy, we can discover bottlenecks, track performance trends and test our performance tests, without waiting for a perfect environment.\""
-  },
-  {
-    "name": "Capability modeling",
-    "ring": "trial",
-    "quadrant": "techniques",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"\""
-  },
-  {
-    "name": "Categorization & prioritization of technical debt",
-    "ring": "trial",
-    "quadrant": "techniques",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Concurrency abstractions and patterns",
-    "ring": "trial",
-    "quadrant": "techniques",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Continuous deployment",
-    "ring": "trial",
-    "quadrant": "techniques",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"The past 2 years or more has seen a proliferation of continuous integration tools and platforms leading to substantial innovation in the build and release space. Distribution of builds is one such innovation and yet another is the way in which builds are now structured to make greater use of automation in various stages of the build. Build pipelines help to provide greater insight into the quality of each build and the environments to which they have been deployed. A natural expansion of the build pipeline meme is the adoption of continuous deployment techniques, where the intention is to extend the build pipeline into the production environment. This relies on automated deployment techniques and authorization mechanisms built into the continuous integration toolset. One of the key benefits is the ability to move new functionality into production rapidly and reliably.\""
-  },
-  {
-    "name": "DevOps",
-    "ring": "trial",
-    "quadrant": "techniques",
-    "isNew": "FALSE",
-    "status": "moved in",
-    "description": "\"The DevOps movement continues to gain traction as people pay more attention to the often-broken relationship between development and operations. DevOps promotes closer collaboration and joint responsibility between development and operations. DevOps applies agile practices to operations processes such as provisioning, change management and production monitoring and also brings productionlike thinking, tools and environments to development. DevOps is a key underpinning for organizations wanting to achieve continuous delivery of application releases into production.\""
-  },
-  {
-    "name": "Evolutionary architecture",
-    "ring": "trial",
-    "quadrant": "techniques",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"One principle of agile software development is the notion of the last responsible moment. This notion applied to architectural considerations is controversial among traditional architects. We believe that, given properly articulated principles and appropriate test suites, architectures can evolve to meet the changing needs of a system, allowing for architectural decisions to be made at the last responsible moment without compromising the integrity of the system. We call this approach evolutionary architecture, in that we allow the architecture to evolve over time, always respecting the architectural guiding principles.\""
-  },
-  {
-    "name": "Progressive Enhancement",
-    "ring": "trial",
-    "quadrant": "techniques",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Service choreography",
-    "ring": "trial",
-    "quadrant": "techniques",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"Integrated business processes now routinely span multiple systems and even enterprises. This raises the question of how these processes should be coordinated. In our experience centralized orchestration solutions often fail to deliver the promised benefits. They are costly to implement, and because they maintain application state on behalf of many consumers, they are often difficult to scale. This has lead us to prefer service choreography, where independently distributed participants collaborate according to an application protocol. Using the Web as platform, hypermedia-driven application protocols allow us to implement integrated business processes that are easy to evolve and easy to scale.\""
-  },
-  {
-    "name": "Real-time business intelligence",
-    "ring": "assess",
-    "quadrant": "techniques",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"Business are running 24x7, but the information needed to make business decisions is being provided by outdated methods using ETL jobs in batch mode. The batch window is shrinking as businesses move to global markets and are open for longer durations. The data provided by these jobs is out of date by the time the business needs to make a decision. There is substantial value in taking the event as it happens in the transactional system and feeding it to the data warehouse so that the business can get near real-time business intelligence.\""
-  },
-  {
-    "name": "Smart systems",
-    "ring": "assess",
-    "quadrant": "techniques",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Database based integration",
-    "ring": "hold",
-    "quadrant": "techniques",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"\""
-  },
-  {
-    "name": "Scrum certification",
-    "ring": "hold",
-    "quadrant": "techniques",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"\""
-  },
-  {
-    "name": "Android",
-    "ring": "adopt",
-    "quadrant": "platforms",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"The iPhone and android operating systems have rapidly become key players in the mobile platform marketplace. Apple’s app store and Google’s open source operating system have helped both companies leapfrog the competition in capturing developer mindshare.\""
-  },
-  {
-    "name": "ATOM",
-    "ring": "adopt",
-    "quadrant": "platforms",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"\""
-  },
-  {
-    "name": "JRuby",
-    "ring": "adopt",
-    "quadrant": "platforms",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"Functional languages have a wide range of practical uses, including simulation, computational fi nance, computational science, large scale data processing and parsing. These fields benefit from functional programming techniques that simplify concurrent execution and the expression of complex mathematical functions concisely. Functional programming requires a shift in thinking for enterprise developers experienced in object oriented development. Moving to an often terse syntax for solving complex problems may initially be intimidating to many. As with all forms of programming languages, syntax is just one aspect of the language itself. In functional programming another significant aspect is the use of common idioms. These idioms speed code comprehension and increase overall maintainability. This might not be news to all, but it is worth noting that dynamic languages are long ready for adoption and trial. Ruby, particularly when deployed on JRuby, is ready for adoption. Thoughtworks uses Ruby and JRuby extensively in both its Services and Product work. Groovy is ready for trial and could prove more accessible than Ruby/JRuby in a Java shop. For the right type of applications, Ruby, JRuby, and Groovy prove far more effective, expressive, and productive than Java and C#.\""
-  },
-  {
-    "name": "KVM",
-    "ring": "adopt",
-    "quadrant": "platforms",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"This platform was included in this edition of the Radar for visibility. We felt that there wasn't anything substantial to add to the discourse around it, but that it was important to keep this in view.\""
-  },
-  {
-    "name": "EC2 & S3",
-    "ring": "trial",
-    "quadrant": "platforms",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"AWS is the most mature and broadest of the current cloud offerings providing scalable services for computation (EC2), storage (S3 &amp; SBS), databases (SimpleDB &amp; RDS), messaging (SQS &amp; SNS), etc. The list of services provided by AWS continues to expand rapidly with new services being added on an almost monthly basis, (http://bit.ly/90887v). While existing applications can be deployed on AWS through the use of Amazon Machine Images the full benefits of this platform will come from applications that are developed to take advantage of AWS. The usage based billing model adopted by AWS allows organizations to scale applications without large upfront investment and avoid the overhead cost of under utilized hardware.\""
-  },
-  {
-    "name": "Facebook as business platform",
-    "ring": "trial",
-    "quadrant": "platforms",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"Facebook has become popular in part due to its rich API and explosion of third-party applications. Thoughtworks is now starting to see our clients consider Facebook as a business platform. In addition to having a Facebook presence, businesses are building Facebook applications that are tightly integrated with their own services and offer useful functionality to Facebook users.\""
-  },
-  {
-    "name": "Heroku",
-    "ring": "trial",
-    "quadrant": "platforms",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"Heroku is a beautifully simple Platform as a Service (PaaS) for Rack-compatible frameworks such as Ruby on Rails. In contrast to similar offerings for other languages, which often limit development to a programming model specific to the service platform, Heroku uses the standard Rails stack and even allows deployment with a plain Git push. Heroku was recently acquired by Salesforce.com and so has significant backing behind their service.\""
-  },
-  {
-    "name": "Mobile web",
-    "ring": "trial",
-    "quadrant": "platforms",
-    "isNew": "FALSE",
-    "status": "moved in",
-    "description": "\"Mobile Web was in our Assess category on previous radars, but we’ve moved it into Trial in recognition of the fact that the Web is increasingly consumed through iPhone, Android and tablet devices. Many devices can render a fair approximation of a desktop browser experience, but to present the user with a truly optimal experience we recommend adapting a site to the screen size, display and control behaviors particular to the device. Techniques such as progressive enhancement can allow a single site to adapt to both desktop and mobile browsers. Large format mobile devices, such as the Apple iPad and Amazon Kindle, provide a new model of ubiquitous computing. Their long battery life, simple interfaces and easy connectivity have the potential to change the way we interact with computers. Apple’s new user interfaces discard the familiar desktop metaphors of files and folders that have been standard since the introduction of the Macintosh in 1984.\""
-  },
-  {
-    "name": "Tablet",
-    "ring": "trial",
-    "quadrant": "platforms",
-    "isNew": "FALSE",
-    "status": "moved in",
-    "description": "\"The iPhone changed the face of the mobile phone. The iPad has the potential to radically alter the way users interact with and consume Web-based resources and applications and will spawn a plethora of similar tablet devices. The addition of wireless application distribution in IOS4 allows organizations to securely host and distribute in-house applications without using the App Store, overcoming one of the main barriers to corporate adoption. IOS4’s introduction of multitasking with applications running in the background has opened up new possibilities for enterprise applications, at the cost of extra battery usage.\""
-  },
-  {
-    "name": "App containers",
-    "ring": "assess",
-    "quadrant": "platforms",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"This platform was included in this edition of the Radar for visibility. We felt that there wasn't anything substantial to add to the discourse around it, but that it was important to keep this in view.\""
-  },
-  {
-    "name": "Application appliances",
-    "ring": "assess",
-    "quadrant": "platforms",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"This platform was included in this edition of the Radar for visibility. We felt that there wasn't anything substantial to add to the discourse around it, but that it was important to keep this in view.\""
-  },
-  {
-    "name": "Azure",
-    "ring": "assess",
-    "quadrant": "platforms",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"The Cloud continues to be of interest to us, with Software as a Service the most mature cloud component. Platform and Infrastructure as service offerings have reached different levels of maturity, and we reflect that in our placement of EC2, Google App Engine and Azure.\""
-  },
-  {
-    "name": "GPGPU",
-    "ring": "assess",
-    "quadrant": "platforms",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"\""
-  },
-  {
-    "name": "Node.js",
-    "ring": "assess",
-    "quadrant": "platforms",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "OAuth",
-    "ring": "assess",
-    "quadrant": "platforms",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"OAuth is a Web-based authorization protocol that allows applications to access a user’s secured resources in another application without the user having to share their private security credentials. Now an RFC, OAuth represents a significant standards-based attempt to improve privacy and security for Web browser and machine-based access to distributed Web resources. Library support is patchy and adopters can expect to spend some time wrangling their code to achieve true interoperability. OAuth 2.0 is due towards the end of 2010, with specific flows for Web applications, desktop applications, mobile phones, and household devices. Because OAuth 2.0 is not backwardly compatible with version 1 and the implementation challenges around the current version, OAuth is still in the assess ring.\""
-  },
-  {
-    "name": "OpenStack",
-    "ring": "assess",
-    "quadrant": "platforms",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "RDFa",
-    "ring": "assess",
-    "quadrant": "platforms",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"RDFa, a mechanism for attaching meaningful vocabularies to HTML content that is being quickly and widely adopted by content providers, is the first mainstream success to arise from the Semantic Web stack. RDFa enables tools ranging from custom point integrations to Google spiders to more richly understand your Web content. If you would like to quickly open up your content to a multitude of integration possibilities in a simple, cheap, standards-based fashion, we recommend you try RDFa.\""
-  },
-  {
-    "name": "vFabric",
-    "ring": "assess",
-    "quadrant": "platforms",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "GWT",
-    "ring": "hold",
-    "quadrant": "platforms",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"In the last radar we placed the Google Web Toolkit (GWT) on hold and tried to provide a few reasons for that decision. As it turned out the conciseness of the text didn’t allow us to adequately make our points so that they were not misunderstood. We are interested in a discussion but our opinion about the suitability and usability of GWT has still not changed.\""
-  },
-  {
-    "name": "RIA",
-    "ring": "hold",
-    "quadrant": "platforms",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"\""
-  },
-  {
-    "name": "WS-*",
-    "ring": "hold",
-    "quadrant": "platforms",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"Web services are now widely used as an enabler for service oriented architectures as well as for the integration of existing applications. We see mature tools and largely interoperable implementations for web service standards covered by WS-I Basic Profile, but we remain skeptical about the proliferation and value of WS-* standards beyond Basic Profile.\""
-  },
-  {
-    "name": "Squid",
-    "ring": "adopt",
-    "quadrant": "tools",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"This tool was included in this edition of the Radar for visibility. We felt that there wasn't anything substantial to add to the discourse around it, but that it was important to keep this in view.\""
-  },
-  {
-    "name": "Subversion",
-    "ring": "adopt",
-    "quadrant": "tools",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"\""
-  },
-  {
-    "name": "Apache camel",
-    "ring": "trial",
-    "quadrant": "tools",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"In today’s connected systems environments almost all new development needs to integrate with existing applications and services. In conjunction with our adoption of simple message buses and integration techniques at the edges of a system, we have successfully used small libraries such as Apache Camel to perform the protocol bridging, message transformation and message routing tasks common to such integrations. Camel’s fluent Java interface, unit testing support and connectors for many different transports and message formats provide for an effective anti-corruption layer when implementing distributed applications.\""
-  },
-  {
-    "name": "Git",
-    "ring": "trial",
-    "quadrant": "tools",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"In previous radars we recommended Distributed Version Control (DVCS) tools in general while mentioning Git and Mercurial in particular. In this edition we narrow our recommendation to only Mercurial and Git as these two have become the clear front-runners. Due to its success and the associated network effect GitHub remains the recommended option for enterprises that want to interact with the open source community.\""
-  },
-  {
-    "name": "Mercurial",
-    "ring": "trial",
-    "quadrant": "tools",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"\""
-  },
-  {
-    "name": "Message buses without smarts",
-    "ring": "trial",
-    "quadrant": "tools",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"\""
-  },
-  {
-    "name": "Next-generation test tools",
-    "ring": "trial",
-    "quadrant": "tools",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"\""
-  },
-  {
-    "name": "NoSQL",
-    "ring": "trial",
-    "quadrant": "tools",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"NoSQL is about scale, massive datasets, cloud data, social network data, data in buckets, data in graphs i.e. a range of use cases for which “traditional” SQL databases may not be the optimal choice. Unravelling NoSQL and trying to explain what it is and why you should or should not be interested in it is difficult as the term covers a wide range of technologies, data architectures and priorities and represents as much a movement or a school of thought as it does any particular technology. Types of NoSQL technologies include key-value, column and object stores as well as document, graph and XML databases.\""
-  },
-  {
-    "name": "Splunk",
-    "ring": "trial",
-    "quadrant": "tools",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "API management services",
-    "ring": "assess",
-    "quadrant": "tools",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Cross mobile platforms",
-    "ring": "assess",
-    "quadrant": "tools",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"While there has been much publicity around Apple’s squashing cross-platform development options for the iPhone and iPad, there are still perfectly valid options. PhoneGap and Appcelerator Titanium’s approach is to provide a native compatibility layer for all the major mobile platforms to your Web standard HTML+CSS+JS application.\""
-  },
-  {
-    "name": "Deltacloud",
-    "ring": "assess",
-    "quadrant": "tools",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "GitHub",
-    "ring": "assess",
-    "quadrant": "tools",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"Subversion moves back into the Adopt section of the radar because it is a solid version control tool suitable for most teams. We consider Subversion’s features to be the basic standard for a modern version control tool. Thoughtworkers continue to embrace and recommend Distributed Version Control tools such as Git and Mercurial, but we caution that these systems often require deeper understanding to get the most out of them. New to the radar is GitHub, a “social coding” tool supporting both source code hosting and social networking. GitHub is arguably one of the main reasons Git has become the leading DVCS tool, and GitHub’s collaboration features are often used by enterprises that need to support distributed teams.\""
-  },
-  {
-    "name": "RDF triple stores",
-    "ring": "assess",
-    "quadrant": "tools",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"While we are bullish on RDFa, we remain highly guarded on native RDF triple stores as a persistence mechanism. The leading available triple stores vary greatly in their capabilities, capacity, and performance characteristics. If you are exploring the use of a triple store, you must do extensive testing to make sure the triple store fits your needs.\""
-  },
-  {
-    "name": "Restfulie",
-    "ring": "assess",
-    "quadrant": "tools",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"The hypermedia constraint from REST is now understood as critical in sharing business protocols over the Web. Unfortunately many frameworks for building computer to- computer systems on the Web are ignorant of this constraint and tend towards simple CRUD systems. Restfulie is the first of a new generation of frameworks that natively support hypermedia, for Ruby, Java, and .NET. In Restfulie, business protocols are implemented using DSLs and exposed across the Web through hypermedia representations; clients drive those protocols through a similar declarative mechanism, consuming server-generated representations as they work towards a business goal. As the fi rst framework of its kind, Restfulie is opinionated and provides strict “training wheels” in order to bootstrap newcomers. However, it is an empirical proof that the Web and hypermedia can be used to orchestrate complex business activities.\""
-  },
-  {
-    "name": "Vagrant",
-    "ring": "assess",
-    "quadrant": "tools",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "WCF HTTP",
-    "ring": "assess",
-    "quadrant": "tools",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"Microsoft’s WCF HTTP API, though currently in the early stages of development, is evolving rapidly, and we’re already impressed by its support for HTTP primitives as well as idioms such as content negotiation and conditional requests. The API encourages the development of highly testable solutions with a clear separation of concerns. What is of particular interest to us is the way in which the project is being developed in Codeplex’s open source community. The ability for the community to steer the development of this part of the .NET platform merits this project’s early inclusion in the radar. While the license does allow for using the library in production today, given the current volatility of the API, we caution against taking a dependency at this early stage; many of the features we’ve admired in recent releases, such as its use of an attributelight programming model based on convention over configuration, may not make it into the first version.\""
-  },
-  {
-    "name": "ESB",
-    "ring": "hold",
-    "quadrant": "tools",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"\""
-  },
-  {
-    "name": "C# 4.0",
-    "ring": "adopt",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"When C# first appeared, many saw it as a direct competitor to the Java language’s dominance in enterprise application development. This was often attributed to the syntactical similarities that the two languages shared. Since its introduction, however, C# has continued to move forward with the adoption of language features such as lambda expressions, extension methods, object initializers and automatic property setters and getters, all of which are available in the 3.5 release of the language. With the 4.0 release of C#, we will see the introduction of a dynamic keyword and named and optional parameters, which will continue to bring C# more in line with languages such as Ruby and well ahead of the Java language.\""
-  },
-  {
-    "name": "JavaScript as a first class language",
-    "ring": "adopt",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"\""
-  },
-  {
-    "name": "Ruby",
-    "ring": "adopt",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"This language/framework was included in this edition of the Radar for visibility. We felt that there wasn't anything substantial to add to the discourse around it, but that it was important to keep this in view.\""
-  },
-  {
-    "name": "Domain-Specific Languages",
-    "ring": "trial",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"\""
-  },
-  {
-    "name": "Groovy",
-    "ring": "trial",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"Functional languages have a wide range of practical uses, including simulation, computational fi nance, computational science, large scale data processing and parsing. These fields benefit from functional programming techniques that simplify concurrent execution and the expression of complex mathematical functions concisely. Functional programming requires a shift in thinking for enterprise developers experienced in object oriented development. Moving to an often terse syntax for solving complex problems may initially be intimidating to many. As with all forms of programming languages, syntax is just one aspect of the language itself. In functional programming another significant aspect is the use of common idioms. These idioms speed code comprehension and increase overall maintainability. This might not be news to all, but it is worth noting that dynamic languages are long ready for adoption and trial. Ruby, particularly when deployed on JRuby, is ready for adoption. Thoughtworks uses Ruby and JRuby extensively in both its Services and Product work. Groovy is ready for trial and could prove more accessible than Ruby/JRuby in a Java shop. For the right type of applications, Ruby, JRuby, and Groovy prove far more effective, expressive, and productive than Java and C#.\""
-  },
-  {
-    "name": "HAML",
-    "ring": "trial",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "HTML 5",
-    "ring": "trial",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "FALSE",
-    "status": "moved in",
-    "description": "\"HTML 5 continues to be the preferred choice for developing complex Web-based applications, with features including improved integration of rich audio and video content, clientside storage, better document structure, Web sockets and offline use. Safari, Chrome, Firefox and Opera each support significant subsets of the proposed standards, with support coming in Internet Explorer 9. HTML 5 is likely to remain in draft for some time to come, however; early adopters may wish to reflect on the bleakly comedic saga of two separate groups attempting to drive its evolution.\""
-  },
-  {
-    "name": "SASS, SCSS, LESS, and Stylus",
-    "ring": "trial",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"\""
-  },
-  {
-    "name": "Scala, the good parts",
-    "ring": "trial",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "FALSE",
-    "status": "moved in",
-    "description": "\"\""
-  },
-  {
-    "name": "Clojure",
-    "ring": "assess",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"\""
-  },
-  {
-    "name": "F#",
-    "ring": "assess",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"\""
-  },
-  {
-    "name": "Java language end of life",
-    "ring": "assess",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"The purchase of Sun, and thus their Java assets, by Oracle introduced uncertainty regarding the future of Java. This uncertainty continues despite the recent announcements of Oracle’s Java roadmap, which had both encouraging and worrying aspects. As a result we continue to highlight the issue. We recommend monitoring the situation rather than any immediate actions to move off the platform.\""
-  }
+  [
+    "Build pipelines",
+    "adopt",
+    "techniques",
+    "FALSE",
+    "no change",
+    "\"The past 2 years or more has seen a proliferation of continuous integration tools and platforms leading to substantial innovation in the build and release space. Distribution of builds is one such innovation and yet another is the way in which builds are now structured to make greater use of automation in various stages of the build. Build pipelines help to provide greater insight into the quality of each build and the environments to which they have been deployed. A natural expansion of the build pipeline meme is the adoption of continuous deployment techniques, where the intention is to extend the build pipeline into the production environment. This relies on automated deployment techniques and authorization mechanisms built into the continuous integration toolset. One of the key benefits is the ability to move new functionality into production rapidly and reliably.\""
+  ],
+  [
+    "Coding architects",
+    "adopt",
+    "techniques",
+    "FALSE",
+    "no change",
+    "\"This technique was included in this edition of the Radar for visibility. We felt that there wasn't anything substantial to add to the discourse around it, but that it was important to keep this in view.\""
+  ],
+  [
+    "Emergent design",
+    "adopt",
+    "techniques",
+    "FALSE",
+    "no change",
+    "\"\""
+  ],
+  [
+    "Evolutionary database",
+    "adopt",
+    "techniques",
+    "FALSE",
+    "no change",
+    "\"The industry has seen significant changes to the way we use and store data over the past few years. Agile development practices have lead to greater emphasis on evolutionary database design, requiring new tools that support migration of schemas in line with changes to the domain model of an application. As storage space consistently becomes cheaper and data access speeds increase, many organizations are investigating the use of multiple schemas to hold data for different purposes, e.g. transactional and analysis schemas. Incremental data warehousing is becoming increasingly popular as the cost of moving data between a transactional data store and an analysis environment is less than the value of having access to near real-time reporting of critical business data.\""
+  ],
+  [
+    "Infrastructure as code",
+    "adopt",
+    "techniques",
+    "TRUE",
+    "new",
+    "\"The large number of hosts and devices in a modern datacenter or cloud deployment have made manually installing and configuring infrastructure unwise. Infrastructure as code is an approach whereby infrastructure configuration is scripted or described by files that are stored in version control, and changes are pushed out to the datacenter in a controlled manner. This parallels the discipline of source control and build promotion used in software development, hence ‘as code’. The two front-running open source tools for infrastructure automation are Chef and Puppet. They both use a textual DSL to script automation. Using this approach provides consistent and repeatable environment changes, reducing the manual effort involved, especially in troubleshooting environmental differences.\""
+  ],
+  [
+    "Platform roadmaps",
+    "adopt",
+    "techniques",
+    "FALSE",
+    "no change",
+    "\"\""
+  ],
+  [
+    "Visualization and metrics",
+    "adopt",
+    "techniques",
+    "FALSE",
+    "no change",
+    "\"Evolutionary and emergent design of enterprise systems requires significant vigilance by development and architecture teams. Collecting metrics to capture development trends is a key part of understanding the stress points for a system under development. Assessing this information in its raw form is even more difficult than taking stock of a system at the source code level. To address this concern we have found a number of visualization tools and techniques to get what we refer to as the 1000ft view of the system and its internal quality. This 1000ft view allows us to identify visual patterns that help find and address issues more quickly.\""
+  ],
+  [
+    "Web as platform",
+    "adopt",
+    "techniques",
+    "FALSE",
+    "no change",
+    "\"Our understanding of the Web has matured to the point where we believe it is a viable platform for building distributed systems. RESTful techniques have advanced past pretty URIs + JSON towards hypermedia systems that project business protocols over the Internet and support seamless business process and service composition. The Web provides a powerful capability for scale, resiliency, and ease of implementation with commodity infrastructure like caches and Web servers with commodity protocols (like HTTP, AtomPub, and OAuth). Moving from trial to adopt is indicative of our position that the Web is ready for primetime, not just for Internet-facing systems but as a practical base for enterprise systems delivery.\""
+  ],
+  [
+    "Acceptance test of journeys",
+    "trial",
+    "techniques",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Automate database deployment",
+    "trial",
+    "techniques",
+    "TRUE",
+    "new",
+    "\"When moving to continuous delivery, deployment of database changes should also be automated so that the application release that relies on those changes does not have to wait for manual deployment of the database changes. Automated database deployment ensures that the full cycle of deploying application and database changes is automated.\""
+  ],
+  [
+    "Automation of technical tests",
+    "trial",
+    "techniques",
+    "FALSE",
+    "no change",
+    "\"We strongly believe that all software delivery organizations need to be making use of automated technical tests. This sort of test spans failover testing, performance testing and soak testing among others; these activities can start early in a project’s life-cycle and continue through to maintenance. The common practice of waiting until near the end of a project is fraught with risk with little time available to find and fix problems. For example the requirement for a comprehensive production-like environment before the start of performance testing is a dangerous fallacy, we can discover bottlenecks, track performance trends and test our performance tests, without waiting for a perfect environment.\""
+  ],
+  [
+    "Capability modeling",
+    "trial",
+    "techniques",
+    "FALSE",
+    "no change",
+    "\"\""
+  ],
+  [
+    "Categorization & prioritization of technical debt",
+    "trial",
+    "techniques",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Concurrency abstractions and patterns",
+    "trial",
+    "techniques",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Continuous deployment",
+    "trial",
+    "techniques",
+    "FALSE",
+    "no change",
+    "\"The past 2 years or more has seen a proliferation of continuous integration tools and platforms leading to substantial innovation in the build and release space. Distribution of builds is one such innovation and yet another is the way in which builds are now structured to make greater use of automation in various stages of the build. Build pipelines help to provide greater insight into the quality of each build and the environments to which they have been deployed. A natural expansion of the build pipeline meme is the adoption of continuous deployment techniques, where the intention is to extend the build pipeline into the production environment. This relies on automated deployment techniques and authorization mechanisms built into the continuous integration toolset. One of the key benefits is the ability to move new functionality into production rapidly and reliably.\""
+  ],
+  [
+    "DevOps",
+    "trial",
+    "techniques",
+    "FALSE",
+    "moved in",
+    "\"The DevOps movement continues to gain traction as people pay more attention to the often-broken relationship between development and operations. DevOps promotes closer collaboration and joint responsibility between development and operations. DevOps applies agile practices to operations processes such as provisioning, change management and production monitoring and also brings productionlike thinking, tools and environments to development. DevOps is a key underpinning for organizations wanting to achieve continuous delivery of application releases into production.\""
+  ],
+  [
+    "Evolutionary architecture",
+    "trial",
+    "techniques",
+    "FALSE",
+    "no change",
+    "\"One principle of agile software development is the notion of the last responsible moment. This notion applied to architectural considerations is controversial among traditional architects. We believe that, given properly articulated principles and appropriate test suites, architectures can evolve to meet the changing needs of a system, allowing for architectural decisions to be made at the last responsible moment without compromising the integrity of the system. We call this approach evolutionary architecture, in that we allow the architecture to evolve over time, always respecting the architectural guiding principles.\""
+  ],
+  [
+    "Progressive Enhancement",
+    "trial",
+    "techniques",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Service choreography",
+    "trial",
+    "techniques",
+    "FALSE",
+    "no change",
+    "\"Integrated business processes now routinely span multiple systems and even enterprises. This raises the question of how these processes should be coordinated. In our experience centralized orchestration solutions often fail to deliver the promised benefits. They are costly to implement, and because they maintain application state on behalf of many consumers, they are often difficult to scale. This has lead us to prefer service choreography, where independently distributed participants collaborate according to an application protocol. Using the Web as platform, hypermedia-driven application protocols allow us to implement integrated business processes that are easy to evolve and easy to scale.\""
+  ],
+  [
+    "Real-time business intelligence",
+    "assess",
+    "techniques",
+    "TRUE",
+    "new",
+    "\"Business are running 24x7, but the information needed to make business decisions is being provided by outdated methods using ETL jobs in batch mode. The batch window is shrinking as businesses move to global markets and are open for longer durations. The data provided by these jobs is out of date by the time the business needs to make a decision. There is substantial value in taking the event as it happens in the transactional system and feeding it to the data warehouse so that the business can get near real-time business intelligence.\""
+  ],
+  [
+    "Smart systems",
+    "assess",
+    "techniques",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Database based integration",
+    "hold",
+    "techniques",
+    "FALSE",
+    "no change",
+    "\"\""
+  ],
+  [
+    "Scrum certification",
+    "hold",
+    "techniques",
+    "FALSE",
+    "no change",
+    "\"\""
+  ],
+  [
+    "Android",
+    "adopt",
+    "platforms",
+    "FALSE",
+    "no change",
+    "\"The iPhone and android operating systems have rapidly become key players in the mobile platform marketplace. Apple’s app store and Google’s open source operating system have helped both companies leapfrog the competition in capturing developer mindshare.\""
+  ],
+  [
+    "ATOM",
+    "adopt",
+    "platforms",
+    "FALSE",
+    "no change",
+    "\"\""
+  ],
+  [
+    "JRuby",
+    "adopt",
+    "platforms",
+    "FALSE",
+    "no change",
+    "\"Functional languages have a wide range of practical uses, including simulation, computational fi nance, computational science, large scale data processing and parsing. These fields benefit from functional programming techniques that simplify concurrent execution and the expression of complex mathematical functions concisely. Functional programming requires a shift in thinking for enterprise developers experienced in object oriented development. Moving to an often terse syntax for solving complex problems may initially be intimidating to many. As with all forms of programming languages, syntax is just one aspect of the language itself. In functional programming another significant aspect is the use of common idioms. These idioms speed code comprehension and increase overall maintainability. This might not be news to all, but it is worth noting that dynamic languages are long ready for adoption and trial. Ruby, particularly when deployed on JRuby, is ready for adoption. Thoughtworks uses Ruby and JRuby extensively in both its Services and Product work. Groovy is ready for trial and could prove more accessible than Ruby/JRuby in a Java shop. For the right type of applications, Ruby, JRuby, and Groovy prove far more effective, expressive, and productive than Java and C#.\""
+  ],
+  [
+    "KVM",
+    "adopt",
+    "platforms",
+    "FALSE",
+    "no change",
+    "\"This platform was included in this edition of the Radar for visibility. We felt that there wasn't anything substantial to add to the discourse around it, but that it was important to keep this in view.\""
+  ],
+  [
+    "EC2 & S3",
+    "trial",
+    "platforms",
+    "FALSE",
+    "no change",
+    "\"AWS is the most mature and broadest of the current cloud offerings providing scalable services for computation (EC2), storage (S3 &amp; SBS), databases (SimpleDB &amp; RDS), messaging (SQS &amp; SNS), etc. The list of services provided by AWS continues to expand rapidly with new services being added on an almost monthly basis, (http://bit.ly/90887v). While existing applications can be deployed on AWS through the use of Amazon Machine Images the full benefits of this platform will come from applications that are developed to take advantage of AWS. The usage based billing model adopted by AWS allows organizations to scale applications without large upfront investment and avoid the overhead cost of under utilized hardware.\""
+  ],
+  [
+    "Facebook as business platform",
+    "trial",
+    "platforms",
+    "FALSE",
+    "no change",
+    "\"Facebook has become popular in part due to its rich API and explosion of third-party applications. Thoughtworks is now starting to see our clients consider Facebook as a business platform. In addition to having a Facebook presence, businesses are building Facebook applications that are tightly integrated with their own services and offer useful functionality to Facebook users.\""
+  ],
+  [
+    "Heroku",
+    "trial",
+    "platforms",
+    "TRUE",
+    "new",
+    "\"Heroku is a beautifully simple Platform as a Service (PaaS) for Rack-compatible frameworks such as Ruby on Rails. In contrast to similar offerings for other languages, which often limit development to a programming model specific to the service platform, Heroku uses the standard Rails stack and even allows deployment with a plain Git push. Heroku was recently acquired by Salesforce.com and so has significant backing behind their service.\""
+  ],
+  [
+    "Mobile web",
+    "trial",
+    "platforms",
+    "FALSE",
+    "moved in",
+    "\"Mobile Web was in our Assess category on previous radars, but we’ve moved it into Trial in recognition of the fact that the Web is increasingly consumed through iPhone, Android and tablet devices. Many devices can render a fair approximation of a desktop browser experience, but to present the user with a truly optimal experience we recommend adapting a site to the screen size, display and control behaviors particular to the device. Techniques such as progressive enhancement can allow a single site to adapt to both desktop and mobile browsers. Large format mobile devices, such as the Apple iPad and Amazon Kindle, provide a new model of ubiquitous computing. Their long battery life, simple interfaces and easy connectivity have the potential to change the way we interact with computers. Apple’s new user interfaces discard the familiar desktop metaphors of files and folders that have been standard since the introduction of the Macintosh in 1984.\""
+  ],
+  [
+    "Tablet",
+    "trial",
+    "platforms",
+    "FALSE",
+    "moved in",
+    "\"The iPhone changed the face of the mobile phone. The iPad has the potential to radically alter the way users interact with and consume Web-based resources and applications and will spawn a plethora of similar tablet devices. The addition of wireless application distribution in IOS4 allows organizations to securely host and distribute in-house applications without using the App Store, overcoming one of the main barriers to corporate adoption. IOS4’s introduction of multitasking with applications running in the background has opened up new possibilities for enterprise applications, at the cost of extra battery usage.\""
+  ],
+  [
+    "App containers",
+    "assess",
+    "platforms",
+    "FALSE",
+    "no change",
+    "\"This platform was included in this edition of the Radar for visibility. We felt that there wasn't anything substantial to add to the discourse around it, but that it was important to keep this in view.\""
+  ],
+  [
+    "Application appliances",
+    "assess",
+    "platforms",
+    "FALSE",
+    "no change",
+    "\"This platform was included in this edition of the Radar for visibility. We felt that there wasn't anything substantial to add to the discourse around it, but that it was important to keep this in view.\""
+  ],
+  [
+    "Azure",
+    "assess",
+    "platforms",
+    "FALSE",
+    "no change",
+    "\"The Cloud continues to be of interest to us, with Software as a Service the most mature cloud component. Platform and Infrastructure as service offerings have reached different levels of maturity, and we reflect that in our placement of EC2, Google App Engine and Azure.\""
+  ],
+  [
+    "GPGPU",
+    "assess",
+    "platforms",
+    "FALSE",
+    "no change",
+    "\"\""
+  ],
+  [
+    "Node.js",
+    "assess",
+    "platforms",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "OAuth",
+    "assess",
+    "platforms",
+    "FALSE",
+    "no change",
+    "\"OAuth is a Web-based authorization protocol that allows applications to access a user’s secured resources in another application without the user having to share their private security credentials. Now an RFC, OAuth represents a significant standards-based attempt to improve privacy and security for Web browser and machine-based access to distributed Web resources. Library support is patchy and adopters can expect to spend some time wrangling their code to achieve true interoperability. OAuth 2.0 is due towards the end of 2010, with specific flows for Web applications, desktop applications, mobile phones, and household devices. Because OAuth 2.0 is not backwardly compatible with version 1 and the implementation challenges around the current version, OAuth is still in the assess ring.\""
+  ],
+  [
+    "OpenStack",
+    "assess",
+    "platforms",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "RDFa",
+    "assess",
+    "platforms",
+    "FALSE",
+    "no change",
+    "\"RDFa, a mechanism for attaching meaningful vocabularies to HTML content that is being quickly and widely adopted by content providers, is the first mainstream success to arise from the Semantic Web stack. RDFa enables tools ranging from custom point integrations to Google spiders to more richly understand your Web content. If you would like to quickly open up your content to a multitude of integration possibilities in a simple, cheap, standards-based fashion, we recommend you try RDFa.\""
+  ],
+  [
+    "vFabric",
+    "assess",
+    "platforms",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "GWT",
+    "hold",
+    "platforms",
+    "FALSE",
+    "no change",
+    "\"In the last radar we placed the Google Web Toolkit (GWT) on hold and tried to provide a few reasons for that decision. As it turned out the conciseness of the text didn’t allow us to adequately make our points so that they were not misunderstood. We are interested in a discussion but our opinion about the suitability and usability of GWT has still not changed.\""
+  ],
+  [
+    "RIA",
+    "hold",
+    "platforms",
+    "FALSE",
+    "no change",
+    "\"\""
+  ],
+  [
+    "WS-*",
+    "hold",
+    "platforms",
+    "FALSE",
+    "no change",
+    "\"Web services are now widely used as an enabler for service oriented architectures as well as for the integration of existing applications. We see mature tools and largely interoperable implementations for web service standards covered by WS-I Basic Profile, but we remain skeptical about the proliferation and value of WS-* standards beyond Basic Profile.\""
+  ],
+  [
+    "Squid",
+    "adopt",
+    "tools",
+    "FALSE",
+    "no change",
+    "\"This tool was included in this edition of the Radar for visibility. We felt that there wasn't anything substantial to add to the discourse around it, but that it was important to keep this in view.\""
+  ],
+  [
+    "Subversion",
+    "adopt",
+    "tools",
+    "FALSE",
+    "no change",
+    "\"\""
+  ],
+  [
+    "Apache camel",
+    "trial",
+    "tools",
+    "FALSE",
+    "no change",
+    "\"In today’s connected systems environments almost all new development needs to integrate with existing applications and services. In conjunction with our adoption of simple message buses and integration techniques at the edges of a system, we have successfully used small libraries such as Apache Camel to perform the protocol bridging, message transformation and message routing tasks common to such integrations. Camel’s fluent Java interface, unit testing support and connectors for many different transports and message formats provide for an effective anti-corruption layer when implementing distributed applications.\""
+  ],
+  [
+    "Git",
+    "trial",
+    "tools",
+    "FALSE",
+    "no change",
+    "\"In previous radars we recommended Distributed Version Control (DVCS) tools in general while mentioning Git and Mercurial in particular. In this edition we narrow our recommendation to only Mercurial and Git as these two have become the clear front-runners. Due to its success and the associated network effect GitHub remains the recommended option for enterprises that want to interact with the open source community.\""
+  ],
+  [
+    "Mercurial",
+    "trial",
+    "tools",
+    "FALSE",
+    "no change",
+    "\"\""
+  ],
+  [
+    "Message buses without smarts",
+    "trial",
+    "tools",
+    "FALSE",
+    "no change",
+    "\"\""
+  ],
+  [
+    "Next-generation test tools",
+    "trial",
+    "tools",
+    "FALSE",
+    "no change",
+    "\"\""
+  ],
+  [
+    "NoSQL",
+    "trial",
+    "tools",
+    "FALSE",
+    "no change",
+    "\"NoSQL is about scale, massive datasets, cloud data, social network data, data in buckets, data in graphs i.e. a range of use cases for which “traditional” SQL databases may not be the optimal choice. Unravelling NoSQL and trying to explain what it is and why you should or should not be interested in it is difficult as the term covers a wide range of technologies, data architectures and priorities and represents as much a movement or a school of thought as it does any particular technology. Types of NoSQL technologies include key-value, column and object stores as well as document, graph and XML databases.\""
+  ],
+  [
+    "Splunk",
+    "trial",
+    "tools",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "API management services",
+    "assess",
+    "tools",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Cross mobile platforms",
+    "assess",
+    "tools",
+    "FALSE",
+    "no change",
+    "\"While there has been much publicity around Apple’s squashing cross-platform development options for the iPhone and iPad, there are still perfectly valid options. PhoneGap and Appcelerator Titanium’s approach is to provide a native compatibility layer for all the major mobile platforms to your Web standard HTML+CSS+JS application.\""
+  ],
+  [
+    "Deltacloud",
+    "assess",
+    "tools",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "GitHub",
+    "assess",
+    "tools",
+    "FALSE",
+    "no change",
+    "\"Subversion moves back into the Adopt section of the radar because it is a solid version control tool suitable for most teams. We consider Subversion’s features to be the basic standard for a modern version control tool. Thoughtworkers continue to embrace and recommend Distributed Version Control tools such as Git and Mercurial, but we caution that these systems often require deeper understanding to get the most out of them. New to the radar is GitHub, a “social coding” tool supporting both source code hosting and social networking. GitHub is arguably one of the main reasons Git has become the leading DVCS tool, and GitHub’s collaboration features are often used by enterprises that need to support distributed teams.\""
+  ],
+  [
+    "RDF triple stores",
+    "assess",
+    "tools",
+    "FALSE",
+    "no change",
+    "\"While we are bullish on RDFa, we remain highly guarded on native RDF triple stores as a persistence mechanism. The leading available triple stores vary greatly in their capabilities, capacity, and performance characteristics. If you are exploring the use of a triple store, you must do extensive testing to make sure the triple store fits your needs.\""
+  ],
+  [
+    "Restfulie",
+    "assess",
+    "tools",
+    "FALSE",
+    "no change",
+    "\"The hypermedia constraint from REST is now understood as critical in sharing business protocols over the Web. Unfortunately many frameworks for building computer to- computer systems on the Web are ignorant of this constraint and tend towards simple CRUD systems. Restfulie is the first of a new generation of frameworks that natively support hypermedia, for Ruby, Java, and .NET. In Restfulie, business protocols are implemented using DSLs and exposed across the Web through hypermedia representations; clients drive those protocols through a similar declarative mechanism, consuming server-generated representations as they work towards a business goal. As the fi rst framework of its kind, Restfulie is opinionated and provides strict “training wheels” in order to bootstrap newcomers. However, it is an empirical proof that the Web and hypermedia can be used to orchestrate complex business activities.\""
+  ],
+  [
+    "Vagrant",
+    "assess",
+    "tools",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "WCF HTTP",
+    "assess",
+    "tools",
+    "TRUE",
+    "new",
+    "\"Microsoft’s WCF HTTP API, though currently in the early stages of development, is evolving rapidly, and we’re already impressed by its support for HTTP primitives as well as idioms such as content negotiation and conditional requests. The API encourages the development of highly testable solutions with a clear separation of concerns. What is of particular interest to us is the way in which the project is being developed in Codeplex’s open source community. The ability for the community to steer the development of this part of the .NET platform merits this project’s early inclusion in the radar. While the license does allow for using the library in production today, given the current volatility of the API, we caution against taking a dependency at this early stage; many of the features we’ve admired in recent releases, such as its use of an attributelight programming model based on convention over configuration, may not make it into the first version.\""
+  ],
+  [
+    "ESB",
+    "hold",
+    "tools",
+    "FALSE",
+    "no change",
+    "\"\""
+  ],
+  [
+    "C# 4.0",
+    "adopt",
+    "languages-and-frameworks",
+    "FALSE",
+    "no change",
+    "\"When C# first appeared, many saw it as a direct competitor to the Java language’s dominance in enterprise application development. This was often attributed to the syntactical similarities that the two languages shared. Since its introduction, however, C# has continued to move forward with the adoption of language features such as lambda expressions, extension methods, object initializers and automatic property setters and getters, all of which are available in the 3.5 release of the language. With the 4.0 release of C#, we will see the introduction of a dynamic keyword and named and optional parameters, which will continue to bring C# more in line with languages such as Ruby and well ahead of the Java language.\""
+  ],
+  [
+    "JavaScript as a first class language",
+    "adopt",
+    "languages-and-frameworks",
+    "FALSE",
+    "no change",
+    "\"\""
+  ],
+  [
+    "Ruby",
+    "adopt",
+    "languages-and-frameworks",
+    "FALSE",
+    "no change",
+    "\"This language/framework was included in this edition of the Radar for visibility. We felt that there wasn't anything substantial to add to the discourse around it, but that it was important to keep this in view.\""
+  ],
+  [
+    "Domain-Specific Languages",
+    "trial",
+    "languages-and-frameworks",
+    "FALSE",
+    "no change",
+    "\"\""
+  ],
+  [
+    "Groovy",
+    "trial",
+    "languages-and-frameworks",
+    "FALSE",
+    "no change",
+    "\"Functional languages have a wide range of practical uses, including simulation, computational fi nance, computational science, large scale data processing and parsing. These fields benefit from functional programming techniques that simplify concurrent execution and the expression of complex mathematical functions concisely. Functional programming requires a shift in thinking for enterprise developers experienced in object oriented development. Moving to an often terse syntax for solving complex problems may initially be intimidating to many. As with all forms of programming languages, syntax is just one aspect of the language itself. In functional programming another significant aspect is the use of common idioms. These idioms speed code comprehension and increase overall maintainability. This might not be news to all, but it is worth noting that dynamic languages are long ready for adoption and trial. Ruby, particularly when deployed on JRuby, is ready for adoption. Thoughtworks uses Ruby and JRuby extensively in both its Services and Product work. Groovy is ready for trial and could prove more accessible than Ruby/JRuby in a Java shop. For the right type of applications, Ruby, JRuby, and Groovy prove far more effective, expressive, and productive than Java and C#.\""
+  ],
+  [
+    "HAML",
+    "trial",
+    "languages-and-frameworks",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "HTML 5",
+    "trial",
+    "languages-and-frameworks",
+    "FALSE",
+    "moved in",
+    "\"HTML 5 continues to be the preferred choice for developing complex Web-based applications, with features including improved integration of rich audio and video content, clientside storage, better document structure, Web sockets and offline use. Safari, Chrome, Firefox and Opera each support significant subsets of the proposed standards, with support coming in Internet Explorer 9. HTML 5 is likely to remain in draft for some time to come, however; early adopters may wish to reflect on the bleakly comedic saga of two separate groups attempting to drive its evolution.\""
+  ],
+  [
+    "SASS, SCSS, LESS, and Stylus",
+    "trial",
+    "languages-and-frameworks",
+    "TRUE",
+    "new",
+    "\"\""
+  ],
+  [
+    "Scala, the good parts",
+    "trial",
+    "languages-and-frameworks",
+    "FALSE",
+    "moved in",
+    "\"\""
+  ],
+  [
+    "Clojure",
+    "assess",
+    "languages-and-frameworks",
+    "FALSE",
+    "no change",
+    "\"\""
+  ],
+  [
+    "F#",
+    "assess",
+    "languages-and-frameworks",
+    "FALSE",
+    "no change",
+    "\"\""
+  ],
+  [
+    "Java language end of life",
+    "assess",
+    "languages-and-frameworks",
+    "FALSE",
+    "no change",
+    "\"The purchase of Sun, and thus their Java assets, by Oracle introduced uncertainty regarding the future of Java. This uncertainty continues despite the recent announcements of Oracle’s Java roadmap, which had both encouraging and worrying aspects. As a result we continue to highlight the issue. We recommend monitoring the situation rather than any immediate actions to move off the platform.\""
+  ]
 ]
