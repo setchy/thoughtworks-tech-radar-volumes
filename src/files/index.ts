@@ -45,19 +45,8 @@ export function generateVolumes(reportType: ReportType) {
   });
 }
 
-function formatDataset(data: BlipTimelineEntry[]) {
-  return data.map((blip) => [
-    blip.name,
-    blip.ring,
-    blip.quadrant,
-    blip.isNew.toString().toUpperCase(),
-    getStatus(blip),
-    escapeDescriptionHTML(blip.descriptionHtml),
-  ]);
-}
-
 function generateCSV(volume: string, volumeData: BlipTimelineEntry[]) {
-  const data = formatDataset(volumeData);
+  const data = formatCSVDataset(volumeData);
 
   const csvData = data.map((row) => row.join(','));
   csvData.unshift(CSV_HEADERS.join(','));
@@ -72,7 +61,14 @@ function generateCSV(volume: string, volumeData: BlipTimelineEntry[]) {
 }
 
 function generateJSON(volume: string, volumeData: BlipTimelineEntry[]) {
-  const data = formatDataset(volumeData);
+  const data = volumeData.map((row) => ({
+    name: row.name,
+    ring: row.ring,
+    quadrant: row.quadrant,
+    isNew: row.isNew.toString().toUpperCase(),
+    status: getStatus(row),
+    description: escapeDescriptionHTML(row.descriptionHtml),
+  }));
 
   const filename = `${FILES.VOLUMES.FOLDER}/json/${getVolumeFileName(
     volume,
@@ -85,7 +81,7 @@ async function updateGoogleSheets(
   volume: string,
   volumeData: BlipTimelineEntry[],
 ) {
-  const data = formatDataset(volumeData);
+  const data = formatCSVDataset(volumeData);
   data.unshift(CSV_HEADERS);
 
   const sheetName = `Vol ${volume} (${getVolumePublicationDate(volume)})`;
@@ -156,4 +152,15 @@ async function updateGoogleSheets(
   console.log(
     `Google Sheet ${sheetName} has been updated: ${URLS.GOOGLE_SHEET}${sheetId}&sheetName=${sheetName}`,
   );
+}
+
+function formatCSVDataset(data: BlipTimelineEntry[]) {
+  return data.map((blip) => [
+    blip.name,
+    blip.ring,
+    blip.quadrant,
+    blip.isNew.toString().toUpperCase(),
+    getStatus(blip),
+    escapeDescriptionHTML(blip.descriptionHtml),
+  ]);
 }
