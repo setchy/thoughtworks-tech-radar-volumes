@@ -30,8 +30,8 @@ importers:
         specifier: 16.4.5
         version: 16.4.5
       googleapis:
-        specifier: 136.0.0
-        version: 136.0.0
+        specifier: 137.0.0
+        version: 137.0.0
       jsdom:
         specifier: 24.0.0
         version: 24.0.0
@@ -451,8 +451,8 @@ packages:
     resolution: {integrity: sha512-p3KHiWDBBWJEXk6SYauBEvxw5+UmRy7k2scxGtsNv9eHsTbpopJ3/7If4OrNnzJ9XMLg3IlyQXpVp8YPQsStiw==}
     engines: {node: '>=14.0.0'}
 
-  googleapis@136.0.0:
-    resolution: {integrity: sha512-W2Z1NtFS8ie5SzN74+lnTzLS9d0tS01dybibqXjWKSfdvTkQr9DYsKYNMRpzMAcBva1ZWCAgTiX4fgGz2Cwbaw==}
+  googleapis@137.0.0:
+    resolution: {integrity: sha512-LtHGoFPMJJ8GAPLWbu0p1R1fORSEZemq+cCMNUj7KJXWqDAjy3uYPAbxWM8EoCpnyWBj2qDkliBBDGTTAdqRNg==}
     engines: {node: '>=14.0.0'}
 
   gopd@1.0.1:
@@ -1321,7 +1321,7 @@ snapshots:
       - encoding
       - supports-color
 
-  googleapis@136.0.0:
+  googleapis@137.0.0:
     dependencies:
       google-auth-library: 9.7.0
       googleapis-common: 7.1.0
