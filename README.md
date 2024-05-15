@@ -64,14 +64,18 @@ Using the contents of `data/links.json`, fetch each of the publication entries a
 
 Using the contents of `data/master.json`, generate CSV and JSON files for each publication/volume and place into `volumes/*`
 
+<!-- LINK LABELS -->
+<!-- Web -->
 [setchy-radar]: https://radar.setchy.io
 [setchy-radars]: https://setchy.io/radars
 
+<!-- Volumes -->
 [latest-csv]: https://raw.githubusercontent.com/setchy/thoughtworks-tech-radar-volumes/main/volumes/csv/Thoughtworks%20Technology%20Radar%20Volume%2029%20(Sep%202023).csv
 [volumes-csv]: https://github.com/setchy/thoughtworks-tech-radar-volumes/tree/main/volumes/csv
 [volumes-json]: https://github.com/setchy/thoughtworks-tech-radar-volumes/tree/main/volumes/json
 [volumes-google-sheets]: https://docs.google.com/spreadsheets/d/1VRXOw7EUGBIeM8Khd5GFocxOWT59HRJtqs9-WbB61FI/edit?usp=sharing
 
+<!-- Thoughtworks -->
 [tw-archive]: https://www.thoughtworks.com/radar/archive
 [tw-byor]: https://radar.thoughtworks.com/
 [tw-radar]: https://www.thoughtworks.com/radar
