@@ -32,7 +32,8 @@ The technology radar datasets are provided in three formats; CSV, JSON and a com
 
 The CSV and JSON datasets are automatically checked for any updates weekly.  For Google Sheets, this is currently manual.
 
-_Note: Thoughtworks typically publish a new technology radar volume twice per year.
+> [!NOTE]
+> Thoughtworks typically publish a new technology radar volume twice per year.
 
 ## Command Line Interface (CLI)
 
