@@ -13,12 +13,21 @@ const program = new Command();
 program
   .name('tech-radar-volumes')
   .description('A CLI tool to fetch and process ThoughtWorks Tech Radar data')
-  .option('-l, --links', 'fetch all radar blip page links from archive')
-  .option('-d, --data', 'fetch detailed blip history from archive')
+  .option(
+    '-l, --links',
+    'Links: fetch all radar blip page links from web.\nOutput: blip links will be saved in `data/links.json`.',
+  )
+  .option(
+    '-d, --data',
+    'Data: fetch detailed blip history from web.\nInputs: requires `data/links.json`.\nOutput: detailed history will be saved in `data/master.json`.',
+  )
   .addOption(
-    new Option('-v, --volumes <type>', 'generate CSV and JSON volumes').choices(
-      reportTypes,
-    ),
+    new Option(
+      '-v, --volumes <type>',
+      'Volumes: generate publication volumes in specified format(s).\nInputs: requires `data/master.json`.\nOutput: generated volumes will be saved in `volumes/*`.',
+    )
+      .choices(reportTypes)
+      .default('all'),
   );
 
 program.parse(process.argv);
