@@ -5,29 +5,6 @@
 
 A CLI and complete collection of datasets for the popular [Thoughtworks Technology Radar][tw-radar], including all [archived volumes][tw-archive]
 
-## Command Line Interface (CLI)
-
-The CLI has three main functions to assist with the dataset automation.
-
-```
-Usage: tech-radar-volumes [options]
-
-A CLI tool to fetch and process ThoughtWorks Tech Radar data
-
-Options:
-  -l, --links           Links: fetch all radar blip page links from web.
-                        Output: blip links will be saved in `data/links.json`.
-  -d, --data            Data: fetch detailed blip history from web.
-                        Inputs: requires `data/links.json`.
-                        Output: detailed history will be saved in `data/master.json`.
-  -v, --volumes <type>  Volumes: generate publication volumes in specified format(s).
-                        Inputs: requires `data/master.json`.
-                        Output: generated volumes will be saved in `volumes/*`. (choices: "all", "csv", "json", "google-sheets", default: "all")
-  -h, --help            display help for command
-```
-
-You can run this CLI via `pnpm start --help`
-
 ## Datasets
 
 ### How to use
@@ -57,6 +34,46 @@ The CSV and JSON datasets are automatically checked for any updates weekly.  For
 
 > [!NOTE]
 > _Thoughtworks typically publish a new technology radar volume twice per year._
+
+## Command Line Interface (CLI)
+
+### Getting Started
+
+```
+pnpm i && pnpm start help
+```
+
+### Usage
+
+```
+Usage: tech-radar-volumes [options] [command]
+
+A CLI tool to fetch and process ThoughtWorks Tech Radar data
+
+Options:
+  -V, --version   output the version number
+  -h, --help      display help for command
+
+Commands:
+  all             fetch detailed history for all blips and generate publication volumes
+  links           fetch all radar blip page links from web.
+                  Output: blip links will be saved in `data/links.json`.
+  data            fetch detailed blip history from web.
+                  Inputs: requires `data/links.json`.
+                  Output: detailed history will be saved in `data/master.json`.
+  volumes [type]  generate publication volumes in specified format(s).
+                  Inputs: requires `data/master.json`.
+                  Output: generated volumes will be saved in `volumes/*`.
+  help [command]  display help for command
+
+Examples:
+  $ tech-radar-volumes
+  $ tech-radar-volumes links
+  $ tech-radar-volumes data
+  $ tech-radar-volumes volumes csv
+  $ tech-radar-volumes help volumes
+  $ tech-radar-volumes help
+```
 
 <!-- LINK LABELS -->
 <!-- Web -->
