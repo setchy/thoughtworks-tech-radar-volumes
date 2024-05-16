@@ -21,7 +21,7 @@ There are a few ways you can use to view the interactive technology radar
 The technology radar datasets are provided in three formats; CSV, JSON and a combined Google Sheets document.
 
 > [!IMPORTANT]
-> _When using either the CSV or JSON data formats, please make sure to use the the GitHub RAW file URL (eg: [Volume 29][latest-csv])_
+> _When using either the CSV or JSON data formats, please make sure to use the the GitHub RAW file URL (eg: [Volume 30][latest-csv])_
 
 -   <img src="./assets/icons/csv.png" width="26" height="26" alt="CSV"></img> [GitHub - Thoughtworks Volumes (CSV)][volumes-csv]
 -   <img src="./assets/icons/json.png" width="26" height="26" alt="JSON"></img> [GitHub - Thoughtworks Volumes (JSON)][volumes-json]
@@ -70,7 +70,7 @@ Using the contents of `data/master.json`, generate CSV and JSON files for each p
 [setchy-radars]: https://setchy.io/radars
 
 <!-- Volumes -->
-[latest-csv]: https://raw.githubusercontent.com/setchy/thoughtworks-tech-radar-volumes/main/volumes/csv/Thoughtworks%20Technology%20Radar%20Volume%2029%20(Sep%202023).csv
+[latest-csv]: https://raw.githubusercontent.com/setchy/thoughtworks-tech-radar-volumes/main/volumes/csv/Thoughtworks%20Technology%20Radar%20Volume%2030%20(Apr%202024).csv
 [volumes-csv]: https://github.com/setchy/thoughtworks-tech-radar-volumes/tree/main/volumes/csv
 [volumes-json]: https://github.com/setchy/thoughtworks-tech-radar-volumes/tree/main/volumes/json
 [volumes-google-sheets]: https://docs.google.com/spreadsheets/d/1VRXOw7EUGBIeM8Khd5GFocxOWT59HRJtqs9-WbB61FI/edit?usp=sharing
