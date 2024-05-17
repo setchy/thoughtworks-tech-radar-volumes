@@ -18,8 +18,8 @@ importers:
         specifier: 21.1.6
         version: 21.1.6
       '@types/lodash':
-        specifier: 4.17.3
-        version: 4.17.3
+        specifier: 4.17.4
+        version: 4.17.4
       '@types/node':
         specifier: 20.12.12
         version: 20.12.12
@@ -155,8 +155,8 @@ packages:
   '@types/jsdom@21.1.6':
     resolution: {integrity: sha512-/7kkMsC+/kMs7gAYmmBR9P0vGTnOoLhQhyhQJSlXGI5bzTHp6xdo0TtKWQAsz6pmSAeVqKSbqeyP6hytqr9FDw==}
 
-  '@types/lodash@4.17.3':
-    resolution: {integrity: sha512-zmNrEJaBvNskZXQWaUQq6bktF4IDGVfDS78M+YEk5aCn9M/b94/mB/6WCyfH2/MjwBdc6QuOor95CIlKWYRL3A==}
+  '@types/lodash@4.17.4':
+    resolution: {integrity: sha512-wYCP26ZLxaT3R39kiN2+HcJ4kTd3U1waI/cY7ivWYqFP6pW3ZNpvi6Wd6PHZx7T/t8z0vlkXMg3QYLa7DZ/IJQ==}
 
   '@types/node@20.12.12':
     resolution: {integrity: sha512-eWLDGF/FOSPtAvEqeRAQ4C8LSA7M1I7i0ky1I8U7kD1J5ITyW3AsRhQrKVoWf5pFKZ2kILsEGJhsI9r93PYnOw==}
@@ -1007,7 +1007,7 @@ snapshots:
       '@types/tough-cookie': 4.0.5
       parse5: 7.1.2
 
-  '@types/lodash@4.17.3': {}
+  '@types/lodash@4.17.4': {}
 
   '@types/node@20.12.12':
     dependencies:
