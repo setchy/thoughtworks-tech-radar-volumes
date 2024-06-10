@@ -1,4 +1,6 @@
 # Thoughtworks Technology Radar Volumes
+[![Refresh Workflow][refresh-workflow-badge]][github-actions] 
+[![Renovate enabled][renovate-badge]][renovate]
 
 > [!NOTE]  
 > _This repository is a personal project and is not officially affiliated with Thoughtworks_
@@ -79,6 +81,12 @@ Examples:
 <!-- Web -->
 [setchy-radar]: https://radar.setchy.io
 [setchy-radars]: https://setchy.io/radars
+
+<!-- Badges -->
+[github-actions]: https://github.com/setchy/thoughtworks-tech-radar-volumes/actions
+[refresh-workflow-badge]: https://github.com/setchy/thoughtworks-tech-radar-volumes/actions/workflows/data-refresh.yml/badge.svg
+[renovate]: https://renovatebot.com/
+[renovate-badge]: https://img.shields.io/badge/renovate-enabled-brightgreen.svg
 
 <!-- Volumes -->
 [volumes-latest-csv]: https://raw.githubusercontent.com/setchy/thoughtworks-tech-radar-volumes/main/volumes/csv/Thoughtworks%20Technology%20Radar%20Volume%2030%20(Apr%202024).csv
