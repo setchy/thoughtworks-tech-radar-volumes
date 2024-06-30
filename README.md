@@ -86,7 +86,7 @@ Examples:
 [github-actions]: https://github.com/setchy/thoughtworks-tech-radar-volumes/actions
 [refresh-workflow-badge]: https://github.com/setchy/thoughtworks-tech-radar-volumes/actions/workflows/data-refresh.yml/badge.svg
 [renovate]: https://renovatebot.com/
-[renovate-badge]: https://img.shields.io/badge/renovate-enabled-brightgreen.svg
+[renovate-badge]: https://img.shields.io/badge/renovate-enabled-brightgreen.svg?logo=renovatebot
 
 <!-- Volumes -->
 [volumes-latest-csv]: https://raw.githubusercontent.com/setchy/thoughtworks-tech-radar-volumes/main/volumes/csv/Thoughtworks%20Technology%20Radar%20Volume%2030%20(Apr%202024).csv
