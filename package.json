@@ -35,7 +35,7 @@
         "lodash": "4.17.21",
         "puppeteer": "22.12.1",
         "ts-node": "10.9.2",
-        "typescript": "5.5.2"
+        "typescript": "5.5.3"
     },
     "engines": {
         "node": "20"
