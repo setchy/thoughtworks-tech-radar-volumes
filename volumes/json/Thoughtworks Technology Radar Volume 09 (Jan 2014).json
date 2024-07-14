@@ -389,7 +389,7 @@
     "quadrant": "tools",
     "isNew": "FALSE",
     "status": "no change",
-    "description": "\"<a href=\"\"http://d3js.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">D3<span class=\"\"pop-out-icon\"\"></span></a> continues to gain traction as a library for creating rich visualisations in the browser. Previously, it was somewhat low-level, requiring more work for the creation of commonly used visualisations than less sophisticated, more targeted libraries. Since the last radar, libraries like Rickshaw for charting and Crossfilter for in-browser dataset exploration have helped make D3 even more accessible than before.\""
+    "description": "\"<a href=\"\"http://d3js.org/\"\" target=\"\"_blank\"\" aria-label=\"\"D3. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">D3<span class=\"\"pop-out-icon\"\"></span></a> continues to gain traction as a library for creating rich visualisations in the browser. Previously, it was somewhat low-level, requiring more work for the creation of commonly used visualisations than less sophisticated, more targeted libraries. Since the last radar, libraries like Rickshaw for charting and Crossfilter for in-browser dataset exploration have helped make D3 even more accessible than before.\""
   },
   {
     "name": "Dependency management for JavaScript",
