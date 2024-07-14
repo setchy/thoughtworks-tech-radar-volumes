@@ -61,7 +61,7 @@
     "quadrant": "techniques",
     "isNew": "FALSE",
     "status": "no change",
-    "description": "\"<p>A Microservice architecture by its very nature increases significantly the number of applications, services, and interactions in your deployed environments. Our projects are showing renewed focus on building <a href=\"\"http://martinfowler.com/bliki/HumaneRegistry.html\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><b>Humane Registries</b><span class=\"\"pop-out-icon\"\"></span></a> which aggregate information about running services from the live environment and present it in a form for humans to comprehend. These registries favor up-to-date information from running services instead of human-curated documentation.</p>\""
+    "description": "\"<p>A Microservice architecture by its very nature increases significantly the number of applications, services, and interactions in your deployed environments. Our projects are showing renewed focus on building <a href=\"\"http://martinfowler.com/bliki/HumaneRegistry.html\"\" target=\"\"_blank\"\" aria-label=\"\"Humane Registries. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\"><b>Humane Registries</b><span class=\"\"pop-out-icon\"\"></span></a> which aggregate information about running services from the live environment and present it in a form for humans to comprehend. These registries favor up-to-date information from running services instead of human-curated documentation.</p>\""
   },
   {
     "name": "Inverse Conway Maneuver",
@@ -253,7 +253,7 @@
     "quadrant": "platforms",
     "isNew": "FALSE",
     "status": "no change",
-    "description": "\"<p>Since our last radar, <a href=\"\"https://www.docker.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Docker</strong><span class=\"\"pop-out-icon\"\"></span></a> has hit 1.0 and has been declared production ready by the authors. During this same period we have seen an explosion of tools based on Docker. We now have PAAS solutions in the form of <a href=\"\"http://deis.io/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Deis<span class=\"\"pop-out-icon\"\"></span></a>, cluster management in <a href=\"\"https://coreos.com/using-coreos/clustering/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">CoreOS<span class=\"\"pop-out-icon\"\"></span></a> and&nbsp;<a href=\"\"https://github.com/googlecloudplatform/kubernetes\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Kubernetes<span class=\"\"pop-out-icon\"\"></span></a>, and <a href=\"\"http://msopentech.com/blog/2014/08/28/docker-containers-on-microsoft-azure-with-kubernetes-visualizer/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Microsoft<span class=\"\"pop-out-icon\"\"></span></a>, <a href=\"\"https://cloud.google.com/compute/docs/containers\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Google<span class=\"\"pop-out-icon\"\"></span></a>,&nbsp;<a href=\"\"http://aws.amazon.com/blogs/aws/cloud-container-management/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">AWS<span class=\"\"pop-out-icon\"\"></span></a>&nbsp;and&nbsp;a host of smaller players&nbsp;are offering or will shortly offer&nbsp;Docker hosting. Microsoft is even <a href=\"\"http://www.zdnet.com/docker-container-support-coming-to-microsofts-next-windows-server-release-7000034708/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">looking to support Docker<span class=\"\"pop-out-icon\"\"></span></a> in their next version of Windows Server.&nbsp;Aside from all this change, Docker is being used in anger now by many people, for dev &amp; test and for production loads.&nbsp;We fully expect to see a large pace of change in the Docker ecosystem over&nbsp;the next year, and strongly suggest you take a look at what Docker could offer your own organisation.</p>\""
+    "description": "\"<p>Since our last radar, <a href=\"\"https://www.docker.com/\"\" target=\"\"_blank\"\" aria-label=\"\"Docker. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\"><strong>Docker</strong><span class=\"\"pop-out-icon\"\"></span></a> has hit 1.0 and has been declared production ready by the authors. During this same period we have seen an explosion of tools based on Docker. We now have PAAS solutions in the form of <a href=\"\"http://deis.io/\"\" target=\"\"_blank\"\" aria-label=\"\"Deis. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Deis<span class=\"\"pop-out-icon\"\"></span></a>, cluster management in <a href=\"\"https://coreos.com/using-coreos/clustering/\"\" target=\"\"_blank\"\" aria-label=\"\"CoreOS. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">CoreOS<span class=\"\"pop-out-icon\"\"></span></a> and&nbsp;<a href=\"\"https://github.com/googlecloudplatform/kubernetes\"\" target=\"\"_blank\"\" aria-label=\"\"Kubernetes. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Kubernetes<span class=\"\"pop-out-icon\"\"></span></a>, and <a href=\"\"http://msopentech.com/blog/2014/08/28/docker-containers-on-microsoft-azure-with-kubernetes-visualizer/\"\" target=\"\"_blank\"\" aria-label=\"\"Microsoft. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Microsoft<span class=\"\"pop-out-icon\"\"></span></a>, <a href=\"\"https://cloud.google.com/compute/docs/containers\"\" target=\"\"_blank\"\" aria-label=\"\"Google. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Google<span class=\"\"pop-out-icon\"\"></span></a>,&nbsp;<a href=\"\"http://aws.amazon.com/blogs/aws/cloud-container-management/\"\" target=\"\"_blank\"\" aria-label=\"\"AWS. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">AWS<span class=\"\"pop-out-icon\"\"></span></a>&nbsp;and&nbsp;a host of smaller players&nbsp;are offering or will shortly offer&nbsp;Docker hosting. Microsoft is even <a href=\"\"http://www.zdnet.com/docker-container-support-coming-to-microsofts-next-windows-server-release-7000034708/\"\" target=\"\"_blank\"\" aria-label=\"\"looking to support Docker. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">looking to support Docker<span class=\"\"pop-out-icon\"\"></span></a> in their next version of Windows Server.&nbsp;Aside from all this change, Docker is being used in anger now by many people, for dev &amp; test and for production loads.&nbsp;We fully expect to see a large pace of change in the Docker ecosystem over&nbsp;the next year, and strongly suggest you take a look at what Docker could offer your own organisation.</p>\""
   },
   {
     "name": "iBeacon",
@@ -285,7 +285,7 @@
     "quadrant": "platforms",
     "isNew": "FALSE",
     "status": "no change",
-    "description": "\"<p>AMD recently released an <a href=\"\"http://www.anandtech.com/show/7989/amd-announces-project-skybridge-pincompatible-arm-and-x86-socs-in-2015\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">8-core <b>ARM SoC</b> (System on a Chip)<span class=\"\"pop-out-icon\"\"></span></a> designed for servers and has committed to releasing an ARM SoC with integrated graphics in 2015. ARM-based servers are an interesting alternative to x86 because they are significantly more energy efficient. For some workloads, building an ARM-powered Cloud is preferable.</p>\""
+    "description": "\"<p>AMD recently released an <a href=\"\"http://www.anandtech.com/show/7989/amd-announces-project-skybridge-pincompatible-arm-and-x86-socs-in-2015\"\" target=\"\"_blank\"\" aria-label=\"\"8-core ARM SoC (System on a Chip). This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">8-core <b>ARM SoC</b> (System on a Chip)<span class=\"\"pop-out-icon\"\"></span></a> designed for servers and has committed to releasing an ARM SoC with integrated graphics in 2015. ARM-based servers are an interesting alternative to x86 because they are significantly more energy efficient. For some workloads, building an ARM-powered Cloud is preferable.</p>\""
   },
   {
     "name": "CoAP",
@@ -293,7 +293,7 @@
     "quadrant": "platforms",
     "isNew": "FALSE",
     "status": "no change",
-    "description": "\"<p><a href=\"\"http://coap.technology/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><b>CoAP</b><span class=\"\"pop-out-icon\"\"></span></a> is an open standards communication protocol for the Internet of Things (IoT). While there is currently a proliferation of competing standards in the IoT space, we particularly like CoAP. It is specifically designed for resource-constrained devices and local radio networks. It uses UDP for transport, but is semantically compatible with HTTP. CoAP uses a web-based model of devices with their own URLs and a request-response paradigm that supports RESTful and decentralized approaches.</p>\""
+    "description": "\"<p><a href=\"\"http://coap.technology/\"\" target=\"\"_blank\"\" aria-label=\"\"CoAP. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\"><b>CoAP</b><span class=\"\"pop-out-icon\"\"></span></a> is an open standards communication protocol for the Internet of Things (IoT). While there is currently a proliferation of competing standards in the IoT space, we particularly like CoAP. It is specifically designed for resource-constrained devices and local radio networks. It uses UDP for transport, but is semantically compatible with HTTP. CoAP uses a web-based model of devices with their own URLs and a request-response paradigm that supports RESTful and decentralized approaches.</p>\""
   },
   {
     "name": "CoreOS",
@@ -309,7 +309,7 @@
     "quadrant": "platforms",
     "isNew": "FALSE",
     "status": "no change",
-    "description": "\"<p>Given the popularity of event sourcing, it is no surprise that tools in this space are maturing. <a href=\"\"http://geteventstore.com\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><b>EventStore</b><span class=\"\"pop-out-icon\"\"></span></a> is an open source functional database for storing immutable events and performing complex event processing on the event streams. Unlike other tools in this space, EventStore exposes event streams as Atom collections which therefore require no special infrastructure such as message buses or highly specialized clients to use.&nbsp;</p>\""
+    "description": "\"<p>Given the popularity of event sourcing, it is no surprise that tools in this space are maturing. <a href=\"\"http://geteventstore.com\"\" target=\"\"_blank\"\" aria-label=\"\"EventStore. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\"><b>EventStore</b><span class=\"\"pop-out-icon\"\"></span></a> is an open source functional database for storing immutable events and performing complex event processing on the event streams. Unlike other tools in this space, EventStore exposes event streams as Atom collections which therefore require no special infrastructure such as message buses or highly specialized clients to use.&nbsp;</p>\""
   },
   {
     "name": "Jackrabbit Oak",
@@ -333,7 +333,7 @@
     "quadrant": "platforms",
     "isNew": "FALSE",
     "status": "no change",
-    "description": "\"<p><a href=\"\"http://mapbox.com\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><b>Mapbox</b><span class=\"\"pop-out-icon\"\"></span></a> is an open mapping platform we have used on several projects. It allows a developer to quickly add a map to an application and to style the map. Mapbox can serve as an alternative to conventional mapping platforms, and it also allows for mobile friendly maps.</p>\""
+    "description": "\"<p><a href=\"\"http://mapbox.com\"\" target=\"\"_blank\"\" aria-label=\"\"Mapbox. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\"><b>Mapbox</b><span class=\"\"pop-out-icon\"\"></span></a> is an open mapping platform we have used on several projects. It allows a developer to quickly add a map to an application and to style the map. Mapbox can serve as an alternative to conventional mapping platforms, and it also allows for mobile friendly maps.</p>\""
   },
   {
     "name": "MariaDB",
@@ -357,7 +357,7 @@
     "quadrant": "platforms",
     "isNew": "TRUE",
     "status": "new",
-    "description": "\"<p>When Oracle ceased&nbsp;development on&nbsp;Sun’s OpenSSO—an open source access management platform—It was picked up by ForgeRock and integrated into their Open Identity Suite. &nbsp;Now named <strong><a href=\"\"http://forgerock.com/products/open-identity-stack/openam/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">OpenAM<span class=\"\"pop-out-icon\"\"></span></a></strong>, it fills the niche for a scalable, open-source platform that supports a variety of federated identity&nbsp;standards, including OpenID Connect and SAML 2.0. &nbsp;These standards are a necessary enabler for secure microservice implementations.</p>\""
+    "description": "\"<p>When Oracle ceased&nbsp;development on&nbsp;Sun’s OpenSSO—an open source access management platform—It was picked up by ForgeRock and integrated into their Open Identity Suite. &nbsp;Now named <strong><a href=\"\"http://forgerock.com/products/open-identity-stack/openam/\"\" target=\"\"_blank\"\" aria-label=\"\"OpenAM. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">OpenAM<span class=\"\"pop-out-icon\"\"></span></a></strong>, it fills the niche for a scalable, open-source platform that supports a variety of federated identity&nbsp;standards, including OpenID Connect and SAML 2.0. &nbsp;These standards are a necessary enabler for secure microservice implementations.</p>\""
   },
   {
     "name": "OpenID Connect",
@@ -389,7 +389,7 @@
     "quadrant": "platforms",
     "isNew": "FALSE",
     "status": "no change",
-    "description": "\"<p><b>Two-factor authentication</b> significantly improves security over simple password-based systems. <a href=\"\"http://tools.ietf.org/html/rfc6238\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">RFC 6238<span class=\"\"pop-out-icon\"\"></span></a> -- <a href=\"\"http://en.wikipedia.org/wiki/Time-based_One-time_Password_Algorithm\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Time-based One-Time Password<span class=\"\"pop-out-icon\"\"></span></a> Algorithm -- is a standard for two-factor authentication. 'Standard' authenticator apps from <a href=\"\"https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Google<span class=\"\"pop-out-icon\"\"></span></a> and <a href=\"\"http://www.windowsphone.com/en-us/store/app/authenticator/e7994dbc-2336-4950-91ba-ca22d653759b\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Microsoft<span class=\"\"pop-out-icon\"\"></span></a> provide tokens to smartphone users, and there are a number of other client and server implementations readily available. With providers such as Google, Facebook, Dropbox and Evernote using <b>TOTP</b>, there really is no excuse to continue using simple password-based authentication where stronger security would be appropriate.</p>\""
+    "description": "\"<p><b>Two-factor authentication</b> significantly improves security over simple password-based systems. <a href=\"\"http://tools.ietf.org/html/rfc6238\"\" target=\"\"_blank\"\" aria-label=\"\"RFC 6238. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">RFC 6238<span class=\"\"pop-out-icon\"\"></span></a> -- <a href=\"\"http://en.wikipedia.org/wiki/Time-based_One-time_Password_Algorithm\"\" target=\"\"_blank\"\" aria-label=\"\"Time-based One-Time Password. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Time-based One-Time Password<span class=\"\"pop-out-icon\"\"></span></a> Algorithm -- is a standard for two-factor authentication. 'Standard' authenticator apps from <a href=\"\"https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2\"\" target=\"\"_blank\"\" aria-label=\"\"Google. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Google<span class=\"\"pop-out-icon\"\"></span></a> and <a href=\"\"http://www.windowsphone.com/en-us/store/app/authenticator/e7994dbc-2336-4950-91ba-ca22d653759b\"\" target=\"\"_blank\"\" aria-label=\"\"Microsoft. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Microsoft<span class=\"\"pop-out-icon\"\"></span></a> provide tokens to smartphone users, and there are a number of other client and server implementations readily available. With providers such as Google, Facebook, Dropbox and Evernote using <b>TOTP</b>, there really is no excuse to continue using simple password-based authentication where stronger security would be appropriate.</p>\""
   },
   {
     "name": "U2F",
@@ -405,7 +405,7 @@
     "quadrant": "platforms",
     "isNew": "FALSE",
     "status": "no change",
-    "description": "\"<p>In previous editions of the radar, we have written about the pitfalls of trying to use a <strong>CMS as a platform</strong>&nbsp;and we continue to see this problematic approach “in the wild.” CMS as an editing, collaboration and&nbsp;workflow&nbsp;platform can work well, and we certainly do not discount these features.&nbsp;We have had success using <a href=\"\"http://martinfowler.com/articles/two-stack-cms/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Two Stack CMS<span class=\"\"pop-out-icon\"\"></span></a>,&nbsp;an approach that <a href=\"\"http://martinfowler.com/bliki/EditingPublishingSeparation.html\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">separates the concerns of <em>editing</em> and <em>publishing</em><span class=\"\"pop-out-icon\"\"></span></a> content.</p>\""
+    "description": "\"<p>In previous editions of the radar, we have written about the pitfalls of trying to use a <strong>CMS as a platform</strong>&nbsp;and we continue to see this problematic approach “in the wild.” CMS as an editing, collaboration and&nbsp;workflow&nbsp;platform can work well, and we certainly do not discount these features.&nbsp;We have had success using <a href=\"\"http://martinfowler.com/articles/two-stack-cms/\"\" target=\"\"_blank\"\" aria-label=\"\"Two Stack CMS. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Two Stack CMS<span class=\"\"pop-out-icon\"\"></span></a>,&nbsp;an approach that <a href=\"\"http://martinfowler.com/bliki/EditingPublishingSeparation.html\"\" target=\"\"_blank\"\" aria-label=\"\"separates the concerns of editing and publishing. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">separates the concerns of <em>editing</em> and <em>publishing</em><span class=\"\"pop-out-icon\"\"></span></a> content.</p>\""
   },
   {
     "name": "OSGi",
@@ -437,7 +437,7 @@
     "quadrant": "tools",
     "isNew": "FALSE",
     "status": "moved in",
-    "description": "\"<p>Mobile test automation is becoming increasingly important. <a href=\"\"http://appium.io\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><b>Appium</b><span class=\"\"pop-out-icon\"\"></span></a> is a test automation framework that can test mobile web, mobile native and mobile hybrid applications on iOS and Android. We have used this in multiple projects and have seen significant gains.&nbsp;At the core, Appium is a webserver that exposes a REST API, receiving connections from a client, listening for commands, executing those commands on a mobile device and responding with an HTTP response representing the result of the command execution. It allows tests to be written against iOS and Android&nbsp;using the same API. Appium is open source with easy setup using npm.</p>\""
+    "description": "\"<p>Mobile test automation is becoming increasingly important. <a href=\"\"http://appium.io\"\" target=\"\"_blank\"\" aria-label=\"\"Appium. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\"><b>Appium</b><span class=\"\"pop-out-icon\"\"></span></a> is a test automation framework that can test mobile web, mobile native and mobile hybrid applications on iOS and Android. We have used this in multiple projects and have seen significant gains.&nbsp;At the core, Appium is a webserver that exposes a REST API, receiving connections from a client, listening for commands, executing those commands on a mobile device and responding with an HTTP response representing the result of the command execution. It allows tests to be written against iOS and Android&nbsp;using the same API. Appium is open source with easy setup using npm.</p>\""
   },
   {
     "name": "Boot2docker",
@@ -453,7 +453,7 @@
     "quadrant": "tools",
     "isNew": "TRUE",
     "status": "new",
-    "description": "\"<p>Although the idea of dependency management is not new and considered to be a fundamental development practice, it is not widely adopted by the PHP community. <a href=\"\"https://getcomposer.org\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Composer<span class=\"\"pop-out-icon\"\"></span></a> is a tool for dependency management in PHP. It is strongly influenced by tools from other technology&nbsp;stacks like Node's npm and Ruby's Bundler.&nbsp;</p>\""
+    "description": "\"<p>Although the idea of dependency management is not new and considered to be a fundamental development practice, it is not widely adopted by the PHP community. <a href=\"\"https://getcomposer.org\"\" target=\"\"_blank\"\" aria-label=\"\"Composer. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Composer<span class=\"\"pop-out-icon\"\"></span></a> is a tool for dependency management in PHP. It is strongly influenced by tools from other technology&nbsp;stacks like Node's npm and Ruby's Bundler.&nbsp;</p>\""
   },
   {
     "name": "Cursive",
@@ -469,7 +469,7 @@
     "quadrant": "tools",
     "isNew": "FALSE",
     "status": "no change",
-    "description": "\"<p>The big Cloud providers have clearly raised the bar for provisioning, monitoring, and configuration, simplifying these tasks dramatically through powerful tools. Organizations that want to keep their compute and storage resources in-house are looking for similar solutions that work within their organizational context. <a href=\"\"http://theforeman.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><b>Foreman</b><span class=\"\"pop-out-icon\"\"></span></a> has worked really well for us, and it is open-source software, too.</p>\""
+    "description": "\"<p>The big Cloud providers have clearly raised the bar for provisioning, monitoring, and configuration, simplifying these tasks dramatically through powerful tools. Organizations that want to keep their compute and storage resources in-house are looking for similar solutions that work within their organizational context. <a href=\"\"http://theforeman.org/\"\" target=\"\"_blank\"\" aria-label=\"\"Foreman. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\"><b>Foreman</b><span class=\"\"pop-out-icon\"\"></span></a> has worked really well for us, and it is open-source software, too.</p>\""
   },
   {
     "name": "GenyMotion",
@@ -477,7 +477,7 @@
     "quadrant": "tools",
     "isNew": "FALSE",
     "status": "no change",
-    "description": "\"<p>Device fragmentation in the Android world is often cited as a problem because it can be difficult to understand how your applications will behave on a large number of disparate platforms. <a href=\"\"http://genymotion.com\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><b>GenyMotion</b><span class=\"\"pop-out-icon\"\"></span></a> is an emulator which can mimic the characteristics of a number of different Android devices. Our teams have found this very effective in giving fast feedback for our Android applications.</p>\""
+    "description": "\"<p>Device fragmentation in the Android world is often cited as a problem because it can be difficult to understand how your applications will behave on a large number of disparate platforms. <a href=\"\"http://genymotion.com\"\" target=\"\"_blank\"\" aria-label=\"\"GenyMotion. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\"><b>GenyMotion</b><span class=\"\"pop-out-icon\"\"></span></a> is an emulator which can mimic the characteristics of a number of different Android devices. Our teams have found this very effective in giving fast feedback for our Android applications.</p>\""
   },
   {
     "name": "GitLab",
@@ -509,7 +509,7 @@
     "quadrant": "tools",
     "isNew": "FALSE",
     "status": "no change",
-    "description": "\"<p>We featured 'Machine image as a build artifact' in the last Radar, as an excellent way to implement fast spin-up, immutable servers. The thing holding this technique back was the difficulty in building images, especially when targeting more than one platform. <a href=\"\"http://packer.io\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><b>Packer</b><span class=\"\"pop-out-icon\"\"></span></a>&nbsp;solves this, using your configuration management tool of choice to create images for a number of platforms including AWS, Rackspace, DigitalOcean and even Docker and Vagrant, although we have found the VMWare support to be problematic.</p>\""
+    "description": "\"<p>We featured 'Machine image as a build artifact' in the last Radar, as an excellent way to implement fast spin-up, immutable servers. The thing holding this technique back was the difficulty in building images, especially when targeting more than one platform. <a href=\"\"http://packer.io\"\" target=\"\"_blank\"\" aria-label=\"\"Packer. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\"><b>Packer</b><span class=\"\"pop-out-icon\"\"></span></a>&nbsp;solves this, using your configuration management tool of choice to create images for a number of platforms including AWS, Rackspace, DigitalOcean and even Docker and Vagrant, although we have found the VMWare support to be problematic.</p>\""
   },
   {
     "name": "Pact & Pacto",
@@ -517,7 +517,7 @@
     "quadrant": "tools",
     "isNew": "FALSE",
     "status": "no change",
-    "description": "\"<p>Consumer-Driven Contracts are a testing approach to help service interfaces evolve with confidence without unknowingly breaking consumers. The similarly named <a href=\"\"https://github.com/realestate-com-au/pact\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><b>Pact</b><span class=\"\"pop-out-icon\"\"></span></a> and <a href=\"\"http://thoughtworks.github.io/pacto\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><b>Pacto</b><span class=\"\"pop-out-icon\"\"></span></a> are two new open-source tools which allow testing interactions between service providers and consumers in isolation against a contract. Both have grown out of projects which are building RESTful microservices and show great promise.</p>\""
+    "description": "\"<p>Consumer-Driven Contracts are a testing approach to help service interfaces evolve with confidence without unknowingly breaking consumers. The similarly named <a href=\"\"https://github.com/realestate-com-au/pact\"\" target=\"\"_blank\"\" aria-label=\"\"Pact. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\"><b>Pact</b><span class=\"\"pop-out-icon\"\"></span></a> and <a href=\"\"http://thoughtworks.github.io/pacto\"\" target=\"\"_blank\"\" aria-label=\"\"Pacto. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\"><b>Pacto</b><span class=\"\"pop-out-icon\"\"></span></a> are two new open-source tools which allow testing interactions between service providers and consumers in isolation against a contract. Both have grown out of projects which are building RESTful microservices and show great promise.</p>\""
   },
   {
     "name": "Papertrail",
@@ -533,7 +533,7 @@
     "quadrant": "tools",
     "isNew": "TRUE",
     "status": "new",
-    "description": "\"<p><a href=\"\"http://www.getpostman.com/features\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Postman<span class=\"\"pop-out-icon\"\"></span></a> is a Chrome extension that acts as a REST client in your browser, allowing you to create requests and inspect responses. &nbsp;It is a useful tool when developing an API&nbsp;or implementing a client to call an existing API. It offers a suite of extensions that allow you to use it as a full-blown test runner too, although we discourage&nbsp;the record and replay style of testing it promotes.</p>\""
+    "description": "\"<p><a href=\"\"http://www.getpostman.com/features\"\" target=\"\"_blank\"\" aria-label=\"\"Postman. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Postman<span class=\"\"pop-out-icon\"\"></span></a> is a Chrome extension that acts as a REST client in your browser, allowing you to create requests and inspect responses. &nbsp;It is a useful tool when developing an API&nbsp;or implementing a client to call an existing API. It offers a suite of extensions that allow you to use it as a full-blown test runner too, although we discourage&nbsp;the record and replay style of testing it promotes.</p>\""
   },
   {
     "name": "SnapCI",
@@ -573,7 +573,7 @@
     "quadrant": "tools",
     "isNew": "TRUE",
     "status": "new",
-    "description": "\"<p><a href=\"\"https://github.com/StackExchange/blackbox\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Blackbox</strong><span class=\"\"pop-out-icon\"\"></span></a> is a simple tool for encrypting specific files while at rest in your source repository. This is particularly useful if you need to store passwords or private keys. Blackbox works with Git, Mercurial and Subversion and uses GPG for the encryption. &nbsp;Each user has their own key, which&nbsp;makes&nbsp;it easy to revoke access on a granular level.</p>\""
+    "description": "\"<p><a href=\"\"https://github.com/StackExchange/blackbox\"\" target=\"\"_blank\"\" aria-label=\"\"Blackbox. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\"><strong>Blackbox</strong><span class=\"\"pop-out-icon\"\"></span></a> is a simple tool for encrypting specific files while at rest in your source repository. This is particularly useful if you need to store passwords or private keys. Blackbox works with Git, Mercurial and Subversion and uses GPG for the encryption. &nbsp;Each user has their own key, which&nbsp;makes&nbsp;it easy to revoke access on a granular level.</p>\""
   },
   {
     "name": "Consul",
@@ -581,7 +581,7 @@
     "quadrant": "tools",
     "isNew": "FALSE",
     "status": "no change",
-    "description": "\"<p><a href=\"\"http://consul.io\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><b>Consul</b><span class=\"\"pop-out-icon\"\"></span></a> makes it simple for services to register themselves and discover other services via DNS or HTTP. It scales automatically, with service look up locally or across data centers. Consul also provides a flexible key/value store for dynamic configuration, with notification of configuration changes. The internal gossip protocol used by Consul is powered by the <a href=\"\"http://serfdom.io\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Serf<span class=\"\"pop-out-icon\"\"></span></a> library, leveraging and building upon the membership and failure detection features.</p>\""
+    "description": "\"<p><a href=\"\"http://consul.io\"\" target=\"\"_blank\"\" aria-label=\"\"Consul. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\"><b>Consul</b><span class=\"\"pop-out-icon\"\"></span></a> makes it simple for services to register themselves and discover other services via DNS or HTTP. It scales automatically, with service look up locally or across data centers. Consul also provides a flexible key/value store for dynamic configuration, with notification of configuration changes. The internal gossip protocol used by Consul is powered by the <a href=\"\"http://serfdom.io\"\" target=\"\"_blank\"\" aria-label=\"\"Serf. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Serf<span class=\"\"pop-out-icon\"\"></span></a> library, leveraging and building upon the membership and failure detection features.</p>\""
   },
   {
     "name": "Dc.js",
@@ -589,7 +589,7 @@
     "quadrant": "tools",
     "isNew": "TRUE",
     "status": "new",
-    "description": "\"<p>We have recommended D3.js before and in this radar we want to extend our recommendation to <a href=\"\"http://dc-js.github.io/dc.js/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Dc.js</strong><span class=\"\"pop-out-icon\"\"></span></a>, a charting library based on D3 for exploring large multi-dimensional datasets. With D3, it shares the ease with which beautiful interactive graphs can be created. It is different in that it trades the flexibility to create almost any kind of data visualization for a simpler programming model to create common chart types.</p>\""
+    "description": "\"<p>We have recommended D3.js before and in this radar we want to extend our recommendation to <a href=\"\"http://dc-js.github.io/dc.js/\"\" target=\"\"_blank\"\" aria-label=\"\"Dc.js. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\"><strong>Dc.js</strong><span class=\"\"pop-out-icon\"\"></span></a>, a charting library based on D3 for exploring large multi-dimensional datasets. With D3, it shares the ease with which beautiful interactive graphs can be created. It is different in that it trades the flexibility to create almost any kind of data visualization for a simpler programming model to create common chart types.</p>\""
   },
   {
     "name": "Gorilla REPL",
@@ -597,7 +597,7 @@
     "quadrant": "tools",
     "isNew": "TRUE",
     "status": "new",
-    "description": "\"<p><strong><a href=\"\"http://gorilla-repl.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">GorillaREPL<span class=\"\"pop-out-icon\"\"></span></a></strong> is a tool for creating nicely-rendered documents consisting of text,&nbsp;live Clojure code, and plots. &nbsp;In some ways similar to iPython notebooks, GorillaREPL should be particularly useful for data analysts or code&nbsp;tutorials. &nbsp;But beyond that, GorillaREPL is fun!. &nbsp;It is a creative way to&nbsp;demonstrate&nbsp;the power&nbsp;of Clojure’s simple abstractions over immutable values.&nbsp;</p>\""
+    "description": "\"<p><strong><a href=\"\"http://gorilla-repl.org/\"\" target=\"\"_blank\"\" aria-label=\"\"GorillaREPL. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">GorillaREPL<span class=\"\"pop-out-icon\"\"></span></a></strong> is a tool for creating nicely-rendered documents consisting of text,&nbsp;live Clojure code, and plots. &nbsp;In some ways similar to iPython notebooks, GorillaREPL should be particularly useful for data analysts or code&nbsp;tutorials. &nbsp;But beyond that, GorillaREPL is fun!. &nbsp;It is a creative way to&nbsp;demonstrate&nbsp;the power&nbsp;of Clojure’s simple abstractions over immutable values.&nbsp;</p>\""
   },
   {
     "name": "Gulp",
@@ -613,7 +613,7 @@
     "quadrant": "tools",
     "isNew": "FALSE",
     "status": "no change",
-    "description": "\"<p><a href=\"\"http://leafletjs.com\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><b>Leaflet.js</b><span class=\"\"pop-out-icon\"\"></span></a> is a JavaScript library for mobile-friendly interactive maps. The library places a huge emphasis on performance, usability and simplicity, and as such works efficiently across mobile platforms and desktop browsers. It is a viable library to consider when building interactive maps for mobiles.</p>\""
+    "description": "\"<p><a href=\"\"http://leafletjs.com\"\" target=\"\"_blank\"\" aria-label=\"\"Leaflet.js. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\"><b>Leaflet.js</b><span class=\"\"pop-out-icon\"\"></span></a> is a JavaScript library for mobile-friendly interactive maps. The library places a huge emphasis on performance, usability and simplicity, and as such works efficiently across mobile platforms and desktop browsers. It is a viable library to consider when building interactive maps for mobiles.</p>\""
   },
   {
     "name": "Mountebank",
@@ -621,7 +621,7 @@
     "quadrant": "tools",
     "isNew": "FALSE",
     "status": "no change",
-    "description": "\"<p>When testing services, we commonly need to stub out downstream collaborating services. Written by a Thoughtworker, <a href=\"\"http://www.mbtest.org\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><b>Mountebank</b><span class=\"\"pop-out-icon\"\"></span></a> is a lightweight service which you can configure via HTTP that is capable of stubbing and mocking HTTP, HTTPS, SMTP and TCP.</p>\""
+    "description": "\"<p>When testing services, we commonly need to stub out downstream collaborating services. Written by a Thoughtworker, <a href=\"\"http://www.mbtest.org\"\" target=\"\"_blank\"\" aria-label=\"\"Mountebank. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\"><b>Mountebank</b><span class=\"\"pop-out-icon\"\"></span></a> is a lightweight service which you can configure via HTTP that is capable of stubbing and mocking HTTP, HTTPS, SMTP and TCP.</p>\""
   },
   {
     "name": "Packetbeat",
@@ -661,7 +661,7 @@
     "quadrant": "languages-and-frameworks",
     "isNew": "FALSE",
     "status": "no change",
-    "description": "\"<p>The <a href=\"\"https://golang.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><b>Go language</b><span class=\"\"pop-out-icon\"\"></span></a> gradually changed status from \"\"Just Another Language\"\" to a valuable tool in many projects. While steadfastly single paradigm in a world of increasingly complex languages, it seems to keep a nice balance between expressiveness, power, and simplicity.</p>\""
+    "description": "\"<p>The <a href=\"\"https://golang.org/\"\" target=\"\"_blank\"\" aria-label=\"\"Go language. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\"><b>Go language</b><span class=\"\"pop-out-icon\"\"></span></a> gradually changed status from \"\"Just Another Language\"\" to a valuable tool in many projects. While steadfastly single paradigm in a world of increasingly complex languages, it seems to keep a nice balance between expressiveness, power, and simplicity.</p>\""
   },
   {
     "name": "Java 8",
@@ -709,7 +709,7 @@
     "quadrant": "languages-and-frameworks",
     "isNew": "FALSE",
     "status": "no change",
-    "description": "\"<p>We see lots of teams creating RESTful interfaces without paying any attention to hypermedia. <a href=\"\"http://stateless.co/hal_specification.html\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><b>HAL</b><span class=\"\"pop-out-icon\"\"></span></a> is a simple format for incorporating hyperlinks into JSON representations which is easy to implement and consume. HAL is well supported by libraries for parsing and representing JSON, and there are HAL-aware REST client libraries such as <a href=\"\"https://github.com/codegram/hyperclient\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Hyperclient<span class=\"\"pop-out-icon\"\"></span></a> which make it easy to navigate resources by following links.</p>\""
+    "description": "\"<p>We see lots of teams creating RESTful interfaces without paying any attention to hypermedia. <a href=\"\"http://stateless.co/hal_specification.html\"\" target=\"\"_blank\"\" aria-label=\"\"HAL. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\"><b>HAL</b><span class=\"\"pop-out-icon\"\"></span></a> is a simple format for incorporating hyperlinks into JSON representations which is easy to implement and consume. HAL is well supported by libraries for parsing and representing JSON, and there are HAL-aware REST client libraries such as <a href=\"\"https://github.com/codegram/hyperclient\"\" target=\"\"_blank\"\" aria-label=\"\"Hyperclient. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Hyperclient<span class=\"\"pop-out-icon\"\"></span></a> which make it easy to navigate resources by following links.</p>\""
   },
   {
     "name": "Ionic Framework",
@@ -741,7 +741,7 @@
     "quadrant": "languages-and-frameworks",
     "isNew": "FALSE",
     "status": "no change",
-    "description": "\"<p><a href=\"\"https://github.com/kriskowal/q\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><b>Q</b><span class=\"\"pop-out-icon\"\"></span></a> is a fully Promises/A+ compliant implementation in JavaScript that lets users compose promises arbitrarily deeply without the need for the deeply nested callbacks that obscure control flow. Q takes care of threading fulfilled values and rejected promises through the appropriate code paths. The space of Promises/A+ compliant libraries is currently very active with alternatives like <a href=\"\"https://github.com/petkaantonov/bluebird\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><b>Bluebird</b><span class=\"\"pop-out-icon\"\"></span></a> also rapidly gaining mindshare.</p>\""
+    "description": "\"<p><a href=\"\"https://github.com/kriskowal/q\"\" target=\"\"_blank\"\" aria-label=\"\"Q. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\"><b>Q</b><span class=\"\"pop-out-icon\"\"></span></a> is a fully Promises/A+ compliant implementation in JavaScript that lets users compose promises arbitrarily deeply without the need for the deeply nested callbacks that obscure control flow. Q takes care of threading fulfilled values and rejected promises through the appropriate code paths. The space of Promises/A+ compliant libraries is currently very active with alternatives like <a href=\"\"https://github.com/petkaantonov/bluebird\"\" target=\"\"_blank\"\" aria-label=\"\"Bluebird. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\"><b>Bluebird</b><span class=\"\"pop-out-icon\"\"></span></a> also rapidly gaining mindshare.</p>\""
   },
   {
     "name": "R as Compute Platform",
@@ -765,7 +765,7 @@
     "quadrant": "languages-and-frameworks",
     "isNew": "TRUE",
     "status": "new",
-    "description": "\"<p>In the crowded space of JavaScript frameworks, we want to highlight <a href=\"\"https://flightjs.github.io/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><strong>Flight.js</strong><span class=\"\"pop-out-icon\"\"></span></a> as an alternative to consider. Flight is extremely lightweight and gets by without much magic when adding behavior to DOM nodes. Its event-driven and component-based nature promotes writing decoupled code. This makes testing individual components comparatively easy. Care must be taken, however, when components need to interact with each other. &nbsp;There is little support for testing and a real danger to get into <em>event hell</em>. We do like that it uses functional mixins for behaviour, like composition instead of inheritance.</p>\""
+    "description": "\"<p>In the crowded space of JavaScript frameworks, we want to highlight <a href=\"\"https://flightjs.github.io/\"\" target=\"\"_blank\"\" aria-label=\"\"Flight.js. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\"><strong>Flight.js</strong><span class=\"\"pop-out-icon\"\"></span></a> as an alternative to consider. Flight is extremely lightweight and gets by without much magic when adding behavior to DOM nodes. Its event-driven and component-based nature promotes writing decoupled code. This makes testing individual components comparatively easy. Care must be taken, however, when components need to interact with each other. &nbsp;There is little support for testing and a real danger to get into <em>event hell</em>. We do like that it uses functional mixins for behaviour, like composition instead of inheritance.</p>\""
   },
   {
     "name": "Haskell Hadoop library",
@@ -805,7 +805,7 @@
     "quadrant": "languages-and-frameworks",
     "isNew": "FALSE",
     "status": "no change",
-    "description": "\"<p><a href=\"\"http://www.rust-lang.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><b>Rust</b><span class=\"\"pop-out-icon\"\"></span></a> is a system programming language with modern affordances. It features a rich typing system, safe memory model and task-based concurrency. Compared to the Go language, Rust is more friendly to people who would like to write code in a functional style.</p>\""
+    "description": "\"<p><a href=\"\"http://www.rust-lang.org/\"\" target=\"\"_blank\"\" aria-label=\"\"Rust. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\"><b>Rust</b><span class=\"\"pop-out-icon\"\"></span></a> is a system programming language with modern affordances. It features a rich typing system, safe memory model and task-based concurrency. Compared to the Go language, Rust is more friendly to people who would like to write code in a functional style.</p>\""
   },
   {
     "name": "Spring Boot",
@@ -813,7 +813,7 @@
     "quadrant": "languages-and-frameworks",
     "isNew": "FALSE",
     "status": "no change",
-    "description": "\"<p><a href=\"\"http://projects.spring.io/spring-boot\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\"><b>Spring boot</b><span class=\"\"pop-out-icon\"\"></span></a> allows easy set up of standalone Spring-based applications. It's ideal for pulling up new microservices and easy to deploy. It also makes data access less of a pain due to the hibernate mappings with much less boilerplate code.</p>\""
+    "description": "\"<p><a href=\"\"http://projects.spring.io/spring-boot\"\" target=\"\"_blank\"\" aria-label=\"\"Spring boot. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\"><b>Spring boot</b><span class=\"\"pop-out-icon\"\"></span></a> allows easy set up of standalone Spring-based applications. It's ideal for pulling up new microservices and easy to deploy. It also makes data access less of a pain due to the hibernate mappings with much less boilerplate code.</p>\""
   },
   {
     "name": "Swift",
@@ -821,7 +821,7 @@
     "quadrant": "languages-and-frameworks",
     "isNew": "TRUE",
     "status": "new",
-    "description": "\"<p><a href=\"\"http://www.apple.com/swift/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new window\"\" class=\"\"pop-out\"\">Swift,<span class=\"\"pop-out-icon\"\"></span></a> Apple’s new development language, contains many improvements over the perennial Objective-C, including emphasis on functional programming and modern syntax. In most ways, this is an upgrade if you are coding on the Apple platform.</p>\""
+    "description": "\"<p><a href=\"\"http://www.apple.com/swift/\"\" target=\"\"_blank\"\" aria-label=\"\"Swift,. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Swift,<span class=\"\"pop-out-icon\"\"></span></a> Apple’s new development language, contains many improvements over the perennial Objective-C, including emphasis on functional programming and modern syntax. In most ways, this is an upgrade if you are coding on the Apple platform.</p>\""
   },
   {
     "name": "JSF",
