@@ -1,44 +1,45 @@
 {
-    "name": "thoughtworks-tech-radar-volumes",
-    "version": "1.0.0",
-    "description": "CLI and complete volume dataset for Thoughtworks Technology Radars",
-    "author": "Adam Setch @setchy",
-    "homepage": "https://github.com/setchy/thoughtworks-tech-radar-volumes",
-    "license": "ISC",
-    "main": "dist/index.js",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/setchy/thoughtworks-tech-radar-volumes"
-    },
-    "bugs": {
-        "url": "https://github.com/setchy/thoughtworks-tech-radar-volumes/issues"
-    },
-    "keywords": [
-        "tech-radar"
-    ],
-    "scripts": {
-        "start": "ts-node src/index.ts",
-        "lint": "biome check --fix",
-        "lint:check": "biome check",
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "devDependencies": {
-        "@biomejs/biome": "1.8.3",
-        "@tsconfig/node20": "20.1.4",
-        "@types/jsdom": "21.1.7",
-        "@types/lodash": "4.17.7",
-        "@types/node": "20.14.14",
-        "commander": "12.1.0",
-        "dotenv": "16.4.5",
-        "googleapis": "140.0.1",
-        "jsdom": "24.1.1",
-        "lodash": "4.17.21",
-        "puppeteer": "22.15.0",
-        "ts-node": "10.9.2",
-        "typescript": "5.5.4"
-    },
-    "engines": {
-        "node": "20"
-    },
-    "packageManager": "pnpm@9.6.0"
+  "name": "thoughtworks-tech-radar-volumes",
+  "version": "1.0.0",
+  "description": "CLI and complete volume dataset for Thoughtworks Technology Radars",
+  "author": "Adam Setch @setchy",
+  "homepage": "https://github.com/setchy/thoughtworks-tech-radar-volumes",
+  "license": "ISC",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/setchy/thoughtworks-tech-radar-volumes"
+  },
+  "bugs": {
+    "url": "https://github.com/setchy/thoughtworks-tech-radar-volumes/issues"
+  },
+  "keywords": ["tech-radar"],
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "lint": "biome check --fix",
+    "lint:check": "biome check",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.8.3",
+    "@tsconfig/node20": "20.1.4",
+    "@types/jsdom": "21.1.7",
+    "@types/lodash": "4.17.7",
+    "@types/node": "20.14.14",
+    "commander": "12.1.0",
+    "dotenv": "16.4.5",
+    "googleapis": "140.0.1",
+    "jsdom": "24.1.1",
+    "lodash": "4.17.21",
+    "puppeteer": "22.15.0",
+    "ts-node": "10.9.2",
+    "typescript": "5.5.4"
+  },
+  "engines": {
+    "node": "20"
+  },
+  "packageManager": "pnpm@9.6.0",
+  "lint-staged": {
+    "*": "biome check --fix --no-errors-on-unmatched"
+  }
 }
