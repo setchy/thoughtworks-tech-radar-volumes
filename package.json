@@ -28,7 +28,7 @@
     "@types/node": "20.16.3",
     "commander": "12.1.0",
     "dotenv": "16.4.5",
-    "googleapis": "143.0.0",
+    "googleapis": "144.0.0",
     "jsdom": "25.0.0",
     "lodash": "4.17.21",
     "puppeteer": "23.2.2",
