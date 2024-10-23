@@ -432,14 +432,6 @@
     "description": "\"<p>Making the web inclusive requires serious attention to ensure accessibility is considered <em>and</em> validated at all stages of software delivery. Many of the popular accessibility testing tools are designed for testing after a web application is complete; as a result, issues are detected late and often are harder to fix, accumulating as debt. In our recent internal work on ThoughtWorks websites, we included the open-source accessibility (a11y) testing engine <strong><a href=\"\"https://github.com/dequelabs/axe-core\"\" target=\"\"_blank\"\" aria-label=\"\"axe-core. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">axe-core<span class=\"\"pop-out-icon\"\"></span></a></strong> as part of our build processes. It provided team members with early feedback on adherence to accessibility rules, even during early increments. Not every issue can be found through automated inspection, though. Extending the functionality of axe-core is the commercially available <a href=\"\"https://www.deque.com/axe/devtools/\"\" target=\"\"_blank\"\" aria-label=\"\"axe DevTools. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">axe DevTools<span class=\"\"pop-out-icon\"\"></span></a>, including functionality that guides team members through exploratory testing for a majority of accessibility issues.</p>\""
   },
   {
-    "name": "dbt",
-    "ring": "trial",
-    "quadrant": "tools",
-    "isNew": "FALSE",
-    "status": "moved in",
-    "description": "\"<p>Since we last wrote about <strong><a href=\"\"https://www.getdbt.com/\"\" target=\"\"_blank\"\" aria-label=\"\"dbt. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">dbt<span class=\"\"pop-out-icon\"\"></span></a></strong>, we've used it in a few projects and like what we've seen. For example, we like that dbt makes the transformation part of ELT pipelines more accessible to consumers of the data as opposed to just the data engineers building the pipelines. It does this while encouraging good engineering practices such as versioning, automated testing and deployment. SQL continues to be the lingua franca of the data world (including databases, warehouses, query engines, data lakes and analytical platforms) and most of these systems support it to some extent. This allows dbt to be used against these systems for transformations by just building adaptors. The number of native connectors has grown to include <a href=\"\"https://www.thoughtworks.com/radar/platforms/snowflake\"\">Snowflake</a>, <a href=\"\"https://www.thoughtworks.com/radar/platforms/bigquery\"\">BigQuery</a>, Redshift and Postgres, as has the range of <a href=\"\"https://docs.getdbt.com/docs/available-adapters\"\" target=\"\"_blank\"\" aria-label=\"\"community plugins. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">community plugins<span class=\"\"pop-out-icon\"\"></span></a>. We see tools like dbt helping data platforms become more \"\"self service\"\" capable.</p>\""
-  },
-  {
     "name": "esbuild",
     "ring": "trial",
     "quadrant": "tools",
@@ -670,6 +662,14 @@
     "isNew": "FALSE",
     "status": "moved in",
     "description": "\"<p>Although JavaScript and its ecosystem is dominant in the web UI development space, new opportunities are opening up with the emergence of <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/webassembly\"\">WebAssembly</a>. <strong><a href=\"\"https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor\"\" target=\"\"_blank\"\" aria-label=\"\"Blazor. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Blazor<span class=\"\"pop-out-icon\"\"></span></a></strong> continues to demand our attention; it's producing good results with our teams building interactive rich user interfaces using C# on top of WebAssembly. The fact that our teams can use C# on the frontend too allows them to share code and reuse existing libraries. That, along with the existing tooling for debugging and testing, such as <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/bunit\"\">bUnit</a>, make this open-source framework worth trying.</p>\""
+  },
+  {
+    "name": "dbt",
+    "ring": "trial",
+    "quadrant": "languages-and-frameworks",
+    "isNew": "FALSE",
+    "status": "moved in",
+    "description": "\"<p>Since we last wrote about <strong><a href=\"\"https://www.getdbt.com/\"\" target=\"\"_blank\"\" aria-label=\"\"dbt. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">dbt<span class=\"\"pop-out-icon\"\"></span></a></strong>, we've used it in a few projects and like what we've seen. For example, we like that dbt makes the transformation part of ELT pipelines more accessible to consumers of the data as opposed to just the data engineers building the pipelines. It does this while encouraging good engineering practices such as versioning, automated testing and deployment. SQL continues to be the lingua franca of the data world (including databases, warehouses, query engines, data lakes and analytical platforms) and most of these systems support it to some extent. This allows dbt to be used against these systems for transformations by just building adaptors. The number of native connectors has grown to include <a href=\"\"https://www.thoughtworks.com/radar/platforms/snowflake\"\">Snowflake</a>, <a href=\"\"https://www.thoughtworks.com/radar/platforms/bigquery\"\">BigQuery</a>, Redshift and Postgres, as has the range of <a href=\"\"https://docs.getdbt.com/docs/available-adapters\"\" target=\"\"_blank\"\" aria-label=\"\"community plugins. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">community plugins<span class=\"\"pop-out-icon\"\"></span></a>. We see tools like dbt helping data platforms become more \"\"self service\"\" capable.</p>\""
   },
   {
     "name": "FastAPI",
