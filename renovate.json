@@ -3,5 +3,12 @@
   "extends": [
     "config:recommended",
     "customManagers:biomeVersions"
+  ],
+  "packageRules": [
+    {
+      "description": "Remove word `dependency` from commit messages and PR titles",
+      "matchDatasources": ["npm"],
+      "commitMessageTopic": "{{depName}}"
+    }
   ]
 }
