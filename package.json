@@ -29,7 +29,7 @@
     "commander": "13.0.0",
     "dotenv": "16.4.7",
     "googleapis": "144.0.0",
-    "jsdom": "25.0.1",
+    "jsdom": "26.0.0",
     "lodash": "4.17.21",
     "puppeteer": "23.11.1",
     "ts-node": "10.9.2",
