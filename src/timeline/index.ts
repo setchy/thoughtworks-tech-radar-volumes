@@ -24,6 +24,7 @@ export async function generateMasterData() {
   const browser = await puppeteer.launch({
     headless: true,
     slowMo: 45, // To reduce chance of CloudFront rate limiting
+    args: ['--no-sandbox', '--disable-setuid-sandbox'], // FIXME: workaround
   });
   page = await browser.newPage();
 
