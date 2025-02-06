@@ -38,7 +38,7 @@
   "engines": {
     "node": "22"
   },
-  "packageManager": "pnpm@10.2.0",
+  "packageManager": "pnpm@10.2.1",
   "lint-staged": {
     "*": "biome check --fix --no-errors-on-unmatched"
   }
