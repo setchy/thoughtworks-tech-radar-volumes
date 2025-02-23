@@ -23,9 +23,6 @@ jobs:
               with:
                   run_install: true
 
-            - name: Install Chrome for Puppeteer
-              run: npx puppeteer browsers install chrome
-
             - name: Refresh Radar Datasets
               env:
                 GOOGLE_SHEET_ID: ${{ vars.GOOGLE_SHEET_ID }}
