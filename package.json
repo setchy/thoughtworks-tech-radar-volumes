@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
-    "@tsconfig/node20": "20.1.4",
+    "@tsconfig/node22": "22.0.1",
     "@types/jsdom": "21.1.7",
     "@types/lodash": "4.17.16",
     "@types/node": "22.13.12",
