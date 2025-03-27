@@ -3,7 +3,7 @@ dotenv.config({
   path: './config/.env',
 });
 
-import { Argument, Command, Option } from 'commander';
+import { Argument, Command } from 'commander';
 import { generateVolumes } from './files';
 import { parseRadarSitemap } from './links';
 import { generateMasterData } from './timeline';
