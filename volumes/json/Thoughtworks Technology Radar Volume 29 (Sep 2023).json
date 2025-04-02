@@ -40,7 +40,7 @@
     "description": "\"<p>The complexity of the software supply chain is a major risk, and we've covered it extensively, for example, in our write-ups on <a href=\"\"https://www.thoughtworks.com/radar/techniques/software-bill-of-materials\"\">SBOM</a> and <a href=\"\"https://www.thoughtworks.com/radar/techniques/slsa\"\">SLSA</a>. The Achilles heel for most teams is still the presence of vulnerabilities in dependencies, often indirect dependencies several levels down. Tools such as <a href=\"\"https://www.thoughtworks.com/radar/tools/dependabot\"\">Dependabot</a> help by creating pull requests (PRs) to update dependencies. It requires engineering discipline, though, to look after these PRs promptly, especially when they are for applications or services that are not under active development.</p><br><br><p>Under the right circumstances we now advocate for <strong>automatic merging of dependency update PRs</strong>. This requires that the system has extensive test coverage — not only unit tests but also functional and performance tests. The build pipeline must run all of these tests, and it must include security scanning. In short, the team must have full confidence that when the pipeline runs successfully the software is ready to go into production. In such cases, dependency update PRs, even when they include major version updates in indirect dependencies, should be merged automatically.</p>\""
   },
   {
-    "name": "Data product thinking for FAIR data",
+    "name": "Data product thinking",
     "ring": "trial",
     "quadrant": "techniques",
     "isNew": "TRUE",

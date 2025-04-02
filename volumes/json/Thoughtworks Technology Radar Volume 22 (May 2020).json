@@ -376,14 +376,6 @@
     "description": "\"<p><strong><a href=\"\"https://github.com/google/trillian\"\" target=\"\"_blank\"\" aria-label=\"\"Trillian. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Trillian<span class=\"\"pop-out-icon\"\"></span></a></strong> is a cryptographically verifiable, centralized data store. For trustless, decentralized environments, you can use blockchain-based distributed ledgers. For enterprise environments, however, where the cost of CPU-heavy consensus protocols is unwarranted, we recommend you give Trillian a try.</p>\""
   },
   {
-    "name": "Node overload",
-    "ring": "hold",
-    "quadrant": "platforms",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"<p>Technologies, especially wildly popular ones, have a tendency to be overused. What we're seeing at the moment is <strong>Node overload</strong>, a tendency to use Node.js indiscriminately or for the wrong reasons. Among these, two stand out in our opinion. Firstly, we frequently hear that Node should be used so that all programming can be done in one programming language. Our view remains that <a href=\"\"https://www.thoughtworks.com/radar/techniques/polyglot-programming\"\">polyglot programming</a> is a better approach, and this still goes <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/javascript-as-a-first-class-language\"\">both ways</a>. Secondly, we often hear teams cite performance as a reason to choose Node.js. Although there are myriads of more or less sensible benchmarks, this perception is rooted in history. When Node.js became popular, it was the first major framework to embrace a nonblocking programming model which made it very efficient for IO-heavy tasks. (We mentioned this in our write-up of Node.js in 2012.) Due to its single-threaded nature, Node.js was never a good choice for compute-heavy workloads, though, and now that capable nonblocking frameworks also exist on other platforms — some with elegant, modern APIs — performance is no longer a reason to choose Node.js.</p>\""
-  },
-  {
     "name": "Cypress",
     "ring": "adopt",
     "quadrant": "tools",
@@ -782,5 +774,13 @@
     "isNew": "FALSE",
     "status": "no change",
     "description": "\"<p>We don't always move deprecated tools to Hold in the Radar, but our teams feel strongly that <strong><a href=\"\"http://airbnb.io/enzyme/\"\" target=\"\"_blank\"\" aria-label=\"\"Enzyme. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Enzyme<span class=\"\"pop-out-icon\"\"></span></a></strong> has been replaced for unit testing <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/react-js\"\">React</a> UI components by <a href=\"\"https://testing-library.com/docs/intro\"\" target=\"\"_blank\"\" aria-label=\"\"React Testing Library. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">React Testing Library<span class=\"\"pop-out-icon\"\"></span></a>. Teams using Enzyme have found that its focus on testing component internals leads to brittle, unmaintainable tests.</p>\""
+  },
+  {
+    "name": "Node overload",
+    "ring": "hold",
+    "quadrant": "languages-and-frameworks",
+    "isNew": "TRUE",
+    "status": "new",
+    "description": "\"<p>Technologies, especially wildly popular ones, have a tendency to be overused. What we're seeing at the moment is <strong>Node overload</strong>, a tendency to use Node.js indiscriminately or for the wrong reasons. Among these, two stand out in our opinion. Firstly, we frequently hear that Node should be used so that all programming can be done in one programming language. Our view remains that <a href=\"\"https://www.thoughtworks.com/radar/techniques/polyglot-programming\"\">polyglot programming</a> is a better approach, and this still goes <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/javascript-as-a-first-class-language\"\">both ways</a>. Secondly, we often hear teams cite performance as a reason to choose Node.js. Although there are myriads of more or less sensible benchmarks, this perception is rooted in history. When Node.js became popular, it was the first major framework to embrace a nonblocking programming model which made it very efficient for IO-heavy tasks. (We mentioned this in our write-up of Node.js in 2012.) Due to its single-threaded nature, Node.js was never a good choice for compute-heavy workloads, though, and now that capable nonblocking frameworks also exist on other platforms — some with elegant, modern APIs — performance is no longer a reason to choose Node.js.</p>\""
   }
 ]
