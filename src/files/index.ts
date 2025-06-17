@@ -113,11 +113,11 @@ async function updateGoogleSheets(
   });
 
   try {
-    const response = await sheets.spreadsheets.values.get({
+    const _response = await sheets.spreadsheets.values.get({
       spreadsheetId: sheetId,
       range: sheetName,
     });
-  } catch (error) {
+  } catch (_error) {
     console.warn(`Sheet ${sheetName} not found.  Creating new sheet...`);
 
     await sheets.spreadsheets.batchUpdate({
