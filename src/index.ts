@@ -5,6 +5,7 @@ dotenv.config({
 });
 
 import { Argument, Command } from 'commander';
+
 import { generateVolumes } from './files';
 import { parseRadarSitemap } from './links';
 import { generateMasterData } from './timeline';

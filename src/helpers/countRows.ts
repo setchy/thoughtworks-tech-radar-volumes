@@ -1,4 +1,5 @@
 import fs from 'node:fs';
+
 import { CSV_HEADERS, FILES } from '../common/constants';
 
 function countRows() {

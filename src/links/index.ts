@@ -1,4 +1,5 @@
 import _ from 'lodash';
+
 import { FILES, URLS } from '../common/constants';
 import { writeJSONFile } from '../utils';
 

@@ -1,5 +1,7 @@
 import fs from 'node:fs';
+
 import _ from 'lodash';
+
 import { FILES } from '../common/constants';
 import type { MasterData } from '../types';
 

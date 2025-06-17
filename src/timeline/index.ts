@@ -1,4 +1,5 @@
 import { exit } from 'node:process';
+
 import { JSDOM } from 'jsdom';
 import _ from 'lodash';
 import puppeteer, { type Page } from 'puppeteer';
