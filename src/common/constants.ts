@@ -58,7 +58,7 @@ export const VOLUME_PUBLICATION_DATES = [
   'Sep 2023',
   'Apr 2024',
   'Oct 2024',
-  'Apr 2025'
+  'Apr 2025',
 ];
 
 export const NOT_FOUND_VOLUME_NUMBER = 100;

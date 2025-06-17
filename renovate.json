@@ -1,9 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:recommended",
-    "customManagers:biomeVersions"
-  ],
+  "extends": ["config:recommended", "customManagers:biomeVersions"],
   "packageRules": [
     {
       "description": "Remove word `dependency` from commit messages and PR titles",

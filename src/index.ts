@@ -1,4 +1,5 @@
 import * as dotenv from 'dotenv';
+
 dotenv.config({
   path: './config/.env',
 });
@@ -8,6 +9,7 @@ import { generateVolumes } from './files';
 import { parseRadarSitemap } from './links';
 import { generateMasterData } from './timeline';
 import { type ReportType, reportTypes } from './types';
+
 const program = new Command();
 
 program
