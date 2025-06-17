@@ -1,4 +1,5 @@
 # Thoughtworks Technology Radar Volumes
+[![CI Workflow][ci-badge]][github-actions] 
 [![Refresh Workflow][refresh-workflow-badge]][github-actions] 
 [![Renovate enabled][renovate-badge]][renovate]
 
@@ -84,6 +85,7 @@ Examples:
 
 <!-- Badges -->
 [github-actions]: https://github.com/setchy/thoughtworks-tech-radar-volumes/actions
+[ci-workflow-badge]: https://github.com/setchy/thoughtworks-tech-radar-volumes/actions/workflows/ci.yml/badge.svg
 [refresh-workflow-badge]: https://github.com/setchy/thoughtworks-tech-radar-volumes/actions/workflows/data-refresh.yml/badge.svg
 [renovate]: https://renovatebot.com/
 [renovate-badge]: https://img.shields.io/badge/renovate-enabled-brightgreen.svg?logo=renovate
