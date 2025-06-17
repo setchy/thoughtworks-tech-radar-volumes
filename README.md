@@ -1,5 +1,5 @@
 # Thoughtworks Technology Radar Volumes
-[![CI Workflow][ci-badge]][github-actions] 
+[![CI Workflow][ci-workflow-badge]][github-actions] 
 [![Refresh Workflow][refresh-workflow-badge]][github-actions] 
 [![Renovate enabled][renovate-badge]][renovate]
 
