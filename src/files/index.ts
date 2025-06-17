@@ -1,4 +1,7 @@
+import { exit } from 'node:process';
+import { google } from 'googleapis';
 import _ from 'lodash';
+
 import {
   CSV_HEADERS,
   FILES,
@@ -8,11 +11,12 @@ import {
 } from '../common/constants';
 import type { BlipTimelineEntry, ReportType } from '../types';
 import { readJSONFile, writeCSVFile, writeJSONFile } from '../utils';
-import { escapeDescriptionHTML, getVolumePublicationDate } from './utils';
-import { getStatus, getVolumeFileName } from './utils';
-
-import { exit } from 'node:process';
-import { google } from 'googleapis';
+import {
+  escapeDescriptionHTML,
+  getStatus,
+  getVolumeFileName,
+  getVolumePublicationDate,
+} from './utils';
 
 export function generateVolumes(reportType: ReportType) {
   const data = readJSONFile<BlipTimelineEntry[]>(FILES.DATA.MASTER);

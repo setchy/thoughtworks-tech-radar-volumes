@@ -1,12 +1,15 @@
+import { exit } from 'node:process';
 import { JSDOM } from 'jsdom';
 import _ from 'lodash';
 import puppeteer, { type Page } from 'puppeteer';
+
 import {
   FILES,
   QUADRANT_SORT_ORDER,
   RING_SORT_ORDER,
 } from '../common/constants';
 import type { BlipTimelineEntry, MasterData } from '../types';
+import { readJSONFile, writeJSONFile } from '../utils';
 import {
   getDescriptionHTMLFromBlipDOM,
   getPublishedDateFromBlipDOM,
@@ -14,9 +17,6 @@ import {
   getRingNameFromBlipDOM,
   getVolumeNameFromDate,
 } from './utils';
-
-import { exit } from 'node:process';
-import { readJSONFile, writeJSONFile } from '../utils';
 
 let page: Page;
 
