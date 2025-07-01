@@ -29,7 +29,7 @@
     "@types/lodash": "4.17.19",
     "@types/node": "22.15.34",
     "commander": "14.0.0",
-    "dotenv": "17.0.0",
+    "dotenv": "17.0.1",
     "googleapis": "150.0.1",
     "jsdom": "26.1.0",
     "lodash": "4.17.21",
