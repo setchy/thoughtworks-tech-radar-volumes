@@ -27,7 +27,7 @@
     "@tsconfig/node22": "22.0.2",
     "@types/jsdom": "21.1.7",
     "@types/lodash": "4.17.20",
-    "@types/node": "22.16.1",
+    "@types/node": "22.16.2",
     "commander": "14.0.0",
     "dotenv": "17.1.0",
     "googleapis": "150.0.1",
