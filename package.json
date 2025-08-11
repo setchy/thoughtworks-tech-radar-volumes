@@ -33,7 +33,7 @@
     "googleapis": "155.0.1",
     "jsdom": "26.1.0",
     "lodash": "4.17.21",
-    "puppeteer": "24.16.0",
+    "puppeteer": "24.16.1",
     "ts-node": "10.9.2",
     "typescript": "5.9.2"
   },
