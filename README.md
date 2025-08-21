@@ -85,10 +85,10 @@ Examples:
 
 <!-- Badges -->
 [github-actions]: https://github.com/setchy/thoughtworks-tech-radar-volumes/actions
-[ci-workflow-badge]: https://github.com/setchy/thoughtworks-tech-radar-volumes/actions/workflows/ci.yml/badge.svg
-[refresh-workflow-badge]: https://github.com/setchy/thoughtworks-tech-radar-volumes/actions/workflows/data-refresh.yml/badge.svg
+[ci-workflow-badge]: https://img.shields.io/github/actions/workflow/status/setchy/thoughtworks-tech-radar-volumes/ci.yml?logo=github&label=CI
+[refresh-workflow-badge]: https://img.shields.io/github/actions/workflow/status/setchy/thoughtworks-tech-radar-volumes/ci.yml?logo=github&label=CI
 [renovate]: https://renovatebot.com/
-[renovate-badge]: https://img.shields.io/badge/renovate-enabled-brightgreen.svg?logo=renovate
+[renovate-badge]: https://img.shields.io/badge/renovate-enabled-brightgreen.svg?logo=renovate&logoColor=white
 
 <!-- Volumes -->
 [volumes-latest-csv]: https://raw.githubusercontent.com/setchy/thoughtworks-tech-radar-volumes/main/volumes/csv/Thoughtworks%20Technology%20Radar%20Volume%2032%20(Apr%202025).csv
