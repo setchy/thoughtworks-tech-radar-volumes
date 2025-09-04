@@ -45,9 +45,7 @@ export function getDescriptionHTMLFromBlipDOM(dom: JSDOM): string {
 }
 
 export function getVolumeNameFromDate(publishedDate: string): number {
-  const index = VOLUME_PUBLICATION_DATES.findIndex(
-    (volumePublicationDate) => volumePublicationDate === publishedDate,
-  );
+  const index = VOLUME_PUBLICATION_DATES.indexOf(publishedDate);
 
   if (index < 0) {
     console.error(

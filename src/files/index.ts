@@ -139,7 +139,7 @@ async function updateGoogleSheets(
   // Massage the description field (remove quotes) prior to updating the sheet
   const descriptionIndex = 5;
   for (const index in data) {
-    const i = Number.parseInt(index);
+    const i = Number.parseInt(index, 10);
     data[i][descriptionIndex] = data[i][descriptionIndex]
       .replace(/^"|"$/g, '')
       .replace(/""/g, '"');
