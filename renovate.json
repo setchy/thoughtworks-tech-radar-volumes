@@ -1,11 +1,17 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:recommended", "customManagers:biomeVersions"],
-  "packageRules": [
-    {
-      "description": "Remove word `dependency` from commit messages and PR titles",
-      "matchDatasources": ["npm"],
-      "commitMessageTopic": "{{depName}}"
-    }
-  ]
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "extends": [
+        "config:recommended",
+        "customManagers:biomeVersions",
+        "helpers:pinGitHubActionDigestsToSemver"
+    ],
+    "packageRules": [
+        {
+            "description": "Remove word `dependency` from commit messages and PR titles",
+            "matchDatasources": [
+                "npm"
+            ],
+            "commitMessageTopic": "{{depName}}"
+        }
+    ]
 }
