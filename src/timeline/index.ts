@@ -6,6 +6,7 @@ import puppeteer, { type Page } from 'puppeteer';
 
 import {
   FILES,
+  PUPPETEER_SPEED_MS,
   QUADRANT_SORT_ORDER,
   RING_SORT_ORDER,
 } from '../common/constants';
@@ -24,7 +25,7 @@ let page: Page;
 export async function generateMasterData() {
   const browser = await puppeteer.launch({
     headless: true,
-    slowMo: 45, // To reduce chance of CloudFront rate limiting
+    slowMo: PUPPETEER_SPEED_MS, // To reduce chance of CloudFront rate limiting
     args: ['--no-sandbox', '--disable-setuid-sandbox'], // FIXME: workaround
   });
   page = await browser.newPage();

@@ -6,6 +6,8 @@ export const URLS = {
   GOOGLE_SHEET: 'https://docs.google.com/spreadsheets/d/',
 };
 
+export const PUPPETEER_SPEED_MS = 45;
+
 export const FILES = {
   DATA: {
     LINKS: 'data/search-links.json',
