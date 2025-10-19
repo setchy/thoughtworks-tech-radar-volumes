@@ -45,7 +45,7 @@
     "quadrant": "techniques",
     "isNew": "FALSE",
     "status": "no change",
-    "description": "\"<p>A <strong><a href=\"\"http://martinfowler.com/bliki/DataLake.html\"\" target=\"\"_blank\"\" aria-label=\"\"Data Lake. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\" data-faitracker-click-bind=\"\"true\"\">Data Lake<span class=\"\"pop-out-icon\"\"></span></a></strong> is an immutable data store of largely unprocessed \"\"raw\"\" data, acting as a source for data analytics. While the technique can clearly be misused, we have used it successfully at clients, hence motivating its move to trial. We continue to recommend other approaches for operational collaborations, limiting the use of the data lake to reporting, analytics and feeding data into data marts.</p>\""
+    "description": "\"<p>A <strong><a href=\"\"http://martinfowler.com/bliki/DataLake.html\"\" target=\"\"_blank\"\" aria-label=\"\"Data Lake. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Data Lake<span class=\"\"pop-out-icon\"\"></span></a></strong> is an immutable data store of largely unprocessed \"\"raw\"\" data, acting as a source for data analytics. While the technique can clearly be misused, we have used it successfully at clients, hence motivating its move to trial. We continue to recommend other approaches for operational collaborations, limiting the use of the data lake to reporting, analytics and feeding data into data marts.</p>\""
   },
   {
     "name": "Hosting PII data in the EU",
@@ -765,7 +765,7 @@
     "quadrant": "languages-and-frameworks",
     "isNew": "FALSE",
     "status": "no change",
-    "description": "\"<p>In the Android application-development world, <strong><a href=\"\"http://robolectric.org/\"\" target=\"\"_blank\"\" aria-label=\"\"Robolectric. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Robolectric<span class=\"\"pop-out-icon\"\"></span></a></strong> is a unit-testing framework that has been used by multiple teams within our technical community. It offers the best option among those available for writing real unit tests that extend or interact directly with Android components and support JUnit tests. We caution, though, that because it is an implementation of the Android SDK, there might be device-specific issues for some tests that pass in Robolectric. To manually mock all the Android dependencies, ensuring only test of the system-in-test will require a lot of complex code, and this framework addresses this effectively.</p>\""
+    "description": "\"<p>In the Android application-development world, <strong><a href=\"\"http://robolectric.org/\"\" target=\"\"_blank\"\" aria-label=\"\"Robolectric. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\" data-faitracker-click-bind=\"\"true\"\">Robolectric<span class=\"\"pop-out-icon\"\"></span></a></strong> is a unit-testing framework that has been used by multiple teams within our technical community. It offers the best option among those available for writing real unit tests that extend or interact directly with Android components and support JUnit tests. We caution, though, that because it is an implementation of the Android SDK, there might be device-specific issues for some tests that pass in Robolectric. To manually mock all the Android dependencies, ensuring only test of the system-in-test will require a lot of complex code, and this framework addresses this effectively.</p>\""
   },
   {
     "name": "Aurelia",
