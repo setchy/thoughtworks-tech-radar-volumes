@@ -31,7 +31,7 @@
     "commander": "14.0.2",
     "dotenv": "17.2.3",
     "googleapis": "164.1.0",
-    "jsdom": "27.0.1",
+    "jsdom": "27.1.0",
     "lodash": "4.17.21",
     "puppeteer": "24.27.0",
     "ts-node": "10.9.2",
