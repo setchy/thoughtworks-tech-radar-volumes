@@ -1,5 +1,8 @@
 {
   "$schema": "https://biomejs.dev/schemas/2.3.3/schema.json",
+  "files": {
+    "maxSize": 5242880
+  },
   "assist": {
     "actions": {
       "source": {
@@ -36,11 +39,6 @@
       }
     }
   },
-  "vcs": {
-    "enabled": true,
-    "clientKind": "git",
-    "useIgnoreFile": true
-  },
   "formatter": {
     "enabled": true,
     "indentStyle": "space",
@@ -56,7 +54,9 @@
       "allowComments": true
     }
   },
-  "files": {
-    "maxSize": 5242880
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "useIgnoreFile": true
   }
 }
