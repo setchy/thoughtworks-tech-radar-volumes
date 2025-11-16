@@ -213,7 +213,7 @@
     "quadrant": "platforms",
     "isNew": "FALSE",
     "status": "no change",
-    "description": "\"<p>We have been using <a href=\"\"http://digitalocean.com\"\" target=\"\"_blank\"\" aria-label=\"\"DigitalOcean. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\"><strong>DigitalOcean</strong><span class=\"\"pop-out-icon\"\"></span></a> for basic compute infrastructure, and the service continues to impress us. If you need developer-friendly cloud infrastructure, it is worth a look.</p>\""
+    "description": "\"<p>We have been using <a href=\"\"http://digitalocean.com\"\" target=\"\"_blank\"\" aria-label=\"\"DigitalOcean. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\" data-faitracker-click-bind=\"\"true\"\"><strong>DigitalOcean</strong><span class=\"\"pop-out-icon\"\"></span></a> for basic compute infrastructure, and the service continues to impress us. If you need developer-friendly cloud infrastructure, it is worth a look.</p>\""
   },
   {
     "name": "TOTP Two-Factor Authentication",
