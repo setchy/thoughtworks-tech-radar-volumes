@@ -301,7 +301,7 @@
     "quadrant": "platforms",
     "isNew": "TRUE",
     "status": "new",
-    "description": "\"Although the IaaS space is crowded, there is room for new competitors to enter the market. <a href=\"\"http://digitalocean.com\"\" target=\"\"_blank\"\" aria-label=\"\"DigitalOcean. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\" data-faitracker-click-bind=\"\"true\"\"><b>DigitalOcean</b><span class=\"\"pop-out-icon\"\"></span></a> has impressed us recently with its cost, speed and simplicity. If all you need is basic compute infrastructure, it is well worth a look.\""
+    "description": "\"Although the IaaS space is crowded, there is room for new competitors to enter the market. <a href=\"\"http://digitalocean.com\"\" target=\"\"_blank\"\" aria-label=\"\"DigitalOcean. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\"><b>DigitalOcean</b><span class=\"\"pop-out-icon\"\"></span></a> has impressed us recently with its cost, speed and simplicity. If all you need is basic compute infrastructure, it is well worth a look.\""
   },
   {
     "name": "Espruino",
