@@ -213,7 +213,7 @@
     "quadrant": "platforms",
     "isNew": "TRUE",
     "status": "new",
-    "description": "\"<p><strong><a href=\"\"https://ankadoc.bitbucket.io/\"\" target=\"\"_blank\"\" aria-label=\"\"Anka. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Anka<span class=\"\"pop-out-icon\"\"></span></a></strong> is a set of tools to create, manage and distribute build and test macOS reproducible virtual environments for iOS and macOS development. It brings Docker-like experience to macOS environments: instant start, CLI to manage virtual machines and registry to version and tag virtual machines for distribution. We discovered Anka when we proposed a macOS private cloud solution to a client. This tool is worth considering when applying DevOps workflow to iOS and macOS environments.</p>\""
+    "description": "\"<p><strong><a href=\"\"https://ankadoc.bitbucket.io/\"\" target=\"\"_blank\"\" aria-label=\"\"Anka. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\" data-faitracker-click-bind=\"\"true\"\">Anka<span class=\"\"pop-out-icon\"\"></span></a></strong> is a set of tools to create, manage and distribute build and test macOS reproducible virtual environments for iOS and macOS development. It brings Docker-like experience to macOS environments: instant start, CLI to manage virtual machines and registry to version and tag virtual machines for distribution. We discovered Anka when we proposed a macOS private cloud solution to a client. This tool is worth considering when applying DevOps workflow to iOS and macOS environments.</p>\""
   },
   {
     "name": "CloudEvents",
