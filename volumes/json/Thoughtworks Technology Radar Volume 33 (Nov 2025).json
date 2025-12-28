@@ -149,7 +149,7 @@
     "quadrant": "techniques",
     "isNew": "TRUE",
     "status": "new",
-    "description": "\"<p><strong><a href=\"\"https://saif.google/\"\" target=\"\"_blank\"\" aria-label=\"\"SAIF. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">SAIF<span class=\"\"pop-out-icon\"\"></span></a></strong> (Secure AI Framework) is a framework developed by Google to provide a practical guide for managing AI security risks. IIt systematically addresses common threats such as data poisoning and prompt injection through a clear risk map, component analysis and practical mitigation strategies. We find its focus on the evolving risks of building agentic systems especially timely and valuable. SAIF offers a concise, actionable playbook that teams can use to strengthen security practices for LLM usage and AI-driven applications.</p>\""
+    "description": "\"<p><strong><a href=\"\"https://saif.google/\"\" target=\"\"_blank\"\" aria-label=\"\"SAIF. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">SAIF<span class=\"\"pop-out-icon\"\"></span></a></strong> (Secure AI Framework) is a framework developed by Google to provide a practical guide for managing AI security risks. It systematically addresses common threats such as data poisoning and prompt injection through a clear risk map, component analysis and practical mitigation strategies. We find its focus on the evolving risks of building agentic systems especially timely and valuable. SAIF offers a concise, actionable playbook that teams can use to strengthen security practices for LLM usage and AI-driven applications.</p>\""
   },
   {
     "name": "Service mesh without sidecar",
