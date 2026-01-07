@@ -87,7 +87,7 @@ Examples:
 [github-actions]: https://github.com/setchy/thoughtworks-tech-radar-volumes/actions
 [ci-workflow-badge]: https://img.shields.io/github/actions/workflow/status/setchy/thoughtworks-tech-radar-volumes/ci.yml?logo=github&label=CI
 [refresh-workflow-badge]: https://img.shields.io/github/actions/workflow/status/setchy/thoughtworks-tech-radar-volumes/data-refresh.yml?logo=github&label=Data+Refresh
-[renovate]: https://renovatebot.com/
+[renovate]: https://github.com/setchy/thoughtworks-tech-radar-volumes/issues/3
 [renovate-badge]: https://img.shields.io/badge/renovate-enabled-brightgreen.svg?logo=renovate&logoColor=white
 
 <!-- Volumes -->
