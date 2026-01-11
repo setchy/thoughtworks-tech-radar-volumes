@@ -533,7 +533,7 @@
     "quadrant": "tools",
     "isNew": "TRUE",
     "status": "new",
-    "description": "\"<p><a href=\"\"http://www.getpostman.com/features\"\" target=\"\"_blank\"\" aria-label=\"\"Postman. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Postman<span class=\"\"pop-out-icon\"\"></span></a> is a Chrome extension that acts as a REST client in your browser, allowing you to create requests and inspect responses. &nbsp;It is a useful tool when developing an API&nbsp;or implementing a client to call an existing API. It offers a suite of extensions that allow you to use it as a full-blown test runner too, although we discourage&nbsp;the record and replay style of testing it promotes.</p>\""
+    "description": "\"<p><a href=\"\"http://www.getpostman.com/features\"\" target=\"\"_blank\"\" aria-label=\"\"Postman. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\" data-faitracker-click-bind=\"\"true\"\">Postman<span class=\"\"pop-out-icon\"\"></span></a> is a Chrome extension that acts as a REST client in your browser, allowing you to create requests and inspect responses. &nbsp;It is a useful tool when developing an API&nbsp;or implementing a client to call an existing API. It offers a suite of extensions that allow you to use it as a full-blown test runner too, although we discourage&nbsp;the record and replay style of testing it promotes.</p>\""
   },
   {
     "name": "SnapCI",
