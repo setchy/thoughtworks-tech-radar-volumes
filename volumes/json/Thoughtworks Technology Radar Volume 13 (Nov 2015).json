@@ -469,7 +469,7 @@
     "quadrant": "tools",
     "isNew": "FALSE",
     "status": "no change",
-    "description": "\"<p><strong><a href=\"\"http://www.getpostman.com/features\"\" target=\"\"_blank\"\" aria-label=\"\"Postman. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\" data-faitracker-click-bind=\"\"true\"\">Postman<span class=\"\"pop-out-icon\"\"></span></a></strong> is a Chrome extension that acts as a REST client in your browser, allowing you to create requests and inspect responses.  It is a useful tool when developing an API or implementing a client to call an existing API. Postman supports OAuth1 and OAuth2 tokens allowing addition of them to requests where necessary. The response is available as a prettified JSON or XML. With Postman you are able to retrieve a history of requests performed to quickly edit and test the API response to different data. It offers a suite of extensions that allow you to use it as a full-blown test runner too, although we discourage the record and replay style of testing it promotes.</p>\""
+    "description": "\"<p><strong><a href=\"\"http://www.getpostman.com/features\"\" target=\"\"_blank\"\" aria-label=\"\"Postman. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Postman<span class=\"\"pop-out-icon\"\"></span></a></strong> is a Chrome extension that acts as a REST client in your browser, allowing you to create requests and inspect responses.  It is a useful tool when developing an API or implementing a client to call an existing API. Postman supports OAuth1 and OAuth2 tokens allowing addition of them to requests where necessary. The response is available as a prettified JSON or XML. With Postman you are able to retrieve a history of requests performed to quickly edit and test the API response to different data. It offers a suite of extensions that allow you to use it as a full-blown test runner too, although we discourage the record and replay style of testing it promotes.</p>\""
   },
   {
     "name": "Browsersync",
@@ -589,7 +589,7 @@
     "quadrant": "tools",
     "isNew": "TRUE",
     "status": "new",
-    "description": "\"<p><strong><a href=\"\"https://developer.android.com/training/testing/espresso\"\" target=\"\"_blank\"\" aria-label=\"\"Espresso. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\" data-faitracker-click-bind=\"\"true\"\">Espresso<span class=\"\"pop-out-icon\"\"></span></a></strong> is an Android functional-testing tool. Its small-core API hides the messy implementation details and helps in writing concise tests, with faster and reliable test execution.</p>\""
+    "description": "\"<p><strong><a href=\"\"https://developer.android.com/training/testing/espresso\"\" target=\"\"_blank\"\" aria-label=\"\"Espresso. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Espresso<span class=\"\"pop-out-icon\"\"></span></a></strong> is an Android functional-testing tool. Its small-core API hides the messy implementation details and helps in writing concise tests, with faster and reliable test execution.</p>\""
   },
   {
     "name": "Gauge",

@@ -445,7 +445,7 @@
     "quadrant": "tools",
     "isNew": "FALSE",
     "status": "moved in",
-    "description": "\"<p>At the top of the testing pyramid for Android application development, our teams are increasingly using <strong><a href=\"\"https://developer.android.com/training/testing/espresso\"\" target=\"\"_blank\"\" aria-label=\"\"Espresso. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\" data-faitracker-click-bind=\"\"true\"\">Espresso<span class=\"\"pop-out-icon\"\"></span></a></strong> as the functional-testing tool. Its small-core API hides the messy implementation details and helps in writing concise tests, with faster and reliable test execution. With Espresso, you can run automated UI tests simulating user interactions within a single target app on both emulators and real devices across different Android versions.</p>\""
+    "description": "\"<p>At the top of the testing pyramid for Android application development, our teams are increasingly using <strong><a href=\"\"https://developer.android.com/training/testing/espresso\"\" target=\"\"_blank\"\" aria-label=\"\"Espresso. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Espresso<span class=\"\"pop-out-icon\"\"></span></a></strong> as the functional-testing tool. Its small-core API hides the messy implementation details and helps in writing concise tests, with faster and reliable test execution. With Espresso, you can run automated UI tests simulating user interactions within a single target app on both emulators and real devices across different Android versions.</p>\""
   },
   {
     "name": "fastlane",
