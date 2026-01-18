@@ -77,7 +77,7 @@
     "quadrant": "techniques",
     "isNew": "FALSE",
     "status": "no change",
-    "description": "\"<p>Modern web pages tend to contain a plethora of JavaScript widgets and snippets coming from a variety of third-party sources. This can have a negative impact on both security and performance. While we are still waiting for fuller JavaScript isolation with web components, our teams have benefited from using HTML5 <a href=\"\"http://www.html5rocks.com/en/tutorials/security/sandboxed-iframes/\"\" target=\"\"_blank\"\" aria-label=\"\"iFrames for sandboxing. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\" data-faitracker-click-bind=\"\"true\"\"><strong>iFrames for sandboxing</strong><span class=\"\"pop-out-icon\"\"></span></a> untrusted JavaScript.</p>\""
+    "description": "\"<p>Modern web pages tend to contain a plethora of JavaScript widgets and snippets coming from a variety of third-party sources. This can have a negative impact on both security and performance. While we are still waiting for fuller JavaScript isolation with web components, our teams have benefited from using HTML5 <a href=\"\"http://www.html5rocks.com/en/tutorials/security/sandboxed-iframes/\"\" target=\"\"_blank\"\" aria-label=\"\"iFrames for sandboxing. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\"><strong>iFrames for sandboxing</strong><span class=\"\"pop-out-icon\"\"></span></a> untrusted JavaScript.</p>\""
   },
   {
     "name": "NPM for all the things",
