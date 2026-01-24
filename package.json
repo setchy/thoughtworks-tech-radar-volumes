@@ -32,7 +32,7 @@
     "dotenv": "17.2.3",
     "googleapis": "170.1.0",
     "jsdom": "27.4.0",
-    "lodash": "4.17.21",
+    "lodash": "4.17.23",
     "puppeteer": "24.35.0",
     "ts-node": "10.9.2",
     "typescript": "5.9.3"
