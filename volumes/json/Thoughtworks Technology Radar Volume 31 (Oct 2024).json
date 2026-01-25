@@ -437,7 +437,7 @@
     "quadrant": "tools",
     "isNew": "TRUE",
     "status": "new",
-    "description": "\"<p><strong><a href=\"\"https://github.com/lukeautry/tsoa\"\" target=\"\"_blank\"\" aria-label=\"\"TypeScript OpenAPI. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">TypeScript OpenAPI<span class=\"\"pop-out-icon\"\"></span></a></strong> (or tsoa) is an alternative to Swagger for generating OpenAPI specs from your code. It’s code-first, with TypeScript controllers and models as the single source of truth and uses TypeScript annotations or decorators rather than requiring more complex files and configurations when using OpenAPI tooling for TypeScript. It generates both 2.0 and 3.0 API specifications and routes can be generated for Express, Hapi and Koa. If you're writing APIs in TypeScript, this project is worth taking a look at.</p>\""
+    "description": "\"<p><strong><a href=\"\"https://github.com/lukeautry/tsoa\"\" target=\"\"_blank\"\" aria-label=\"\"TypeScript OpenAPI. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\" data-faitracker-click-bind=\"\"true\"\">TypeScript OpenAPI<span class=\"\"pop-out-icon\"\"></span></a></strong> (or tsoa) is an alternative to Swagger for generating OpenAPI specs from your code. It’s code-first, with TypeScript controllers and models as the single source of truth and uses TypeScript annotations or decorators rather than requiring more complex files and configurations when using OpenAPI tooling for TypeScript. It generates both 2.0 and 3.0 API specifications and routes can be generated for Express, Hapi and Koa. If you're writing APIs in TypeScript, this project is worth taking a look at.</p>\""
   },
   {
     "name": "Unleash",
