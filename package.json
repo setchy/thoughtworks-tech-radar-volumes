@@ -30,7 +30,7 @@
     "@types/node": "24.10.9",
     "commander": "14.0.2",
     "dotenv": "17.2.3",
-    "googleapis": "170.1.0",
+    "googleapis": "171.0.0",
     "jsdom": "27.4.0",
     "lodash": "4.17.23",
     "puppeteer": "24.36.1",
