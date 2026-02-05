@@ -30,8 +30,8 @@ importers:
         specifier: 17.2.3
         version: 17.2.3
       googleapis:
-        specifier: 171.0.0
-        version: 171.0.0
+        specifier: 171.1.0
+        version: 171.1.0
       jsdom:
         specifier: 28.0.0
         version: 28.0.0
@@ -525,8 +525,8 @@ packages:
     resolution: {integrity: sha512-66if47It7y+Sab3HMkwEXx1kCq9qUC9px8ZXoj1CMrmLmUw81GpbnsNlXnlyZyGbGPGcj+tDD9XsZ23m7GLaJQ==}
     engines: {node: '>=18.0.0'}
 
-  googleapis@171.0.0:
-    resolution: {integrity: sha512-z+wpYZ9wfO/v58b/7fM0JqwDR6dx6yE3UdQZ9vWrzmzNVHFd85Uud8QewFfm8ht/3Hx2ISLbCs8RfnbrqR8X4A==}
+  googleapis@171.1.0:
+    resolution: {integrity: sha512-2f3O75VjbKRnvwN5Pwi6ZZEcnOiO10ZfPSX19oE2ehxC8689NxWZLMPKsap7qgT48adu2NEA8tlUQZK2nt0EDA==}
     engines: {node: '>=18'}
 
   gopd@1.0.1:
@@ -1391,7 +1391,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  googleapis@171.0.0:
+  googleapis@171.1.0:
     dependencies:
       google-auth-library: 10.2.1
       googleapis-common: 8.0.0
