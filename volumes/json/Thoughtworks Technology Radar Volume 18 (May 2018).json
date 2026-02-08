@@ -149,7 +149,7 @@
     "quadrant": "techniques",
     "isNew": "TRUE",
     "status": "new",
-    "description": "\"<p>We’ve previously talked about the technique of <a href=\"\"https://www.thoughtworks.com/radar/techniques/chaos-engineering\"\">Chaos Engineering</a> in the Radar and the Simian Army suite of tools from Netflix that we’ve used to run experiments to test the resilience of production infrastructure. <strong>Security Chaos Engineering</strong> broadens the scope of this technique to the realm of security. We deliberately introduce false positives into production networks and other infrastructure — build-time dependencies, for example — to check whether procedures in place are capable of identifying security failures under controlled conditions. Although useful, this technique should be used with care to avoid desensitizing teams to security problems.</p>\""
+    "description": "\"<p>We’ve previously talked about the technique of <a href=\"\"https://www.thoughtworks.com/radar/techniques/chaos-engineering\"\" data-faitracker-click-bind=\"\"true\"\">Chaos Engineering</a> in the Radar and the Simian Army suite of tools from Netflix that we’ve used to run experiments to test the resilience of production infrastructure. <strong>Security Chaos Engineering</strong> broadens the scope of this technique to the realm of security. We deliberately introduce false positives into production networks and other infrastructure — build-time dependencies, for example — to check whether procedures in place are capable of identifying security failures under controlled conditions. Although useful, this technique should be used with care to avoid desensitizing teams to security problems.</p>\""
   },
   {
     "name": "Service mesh",

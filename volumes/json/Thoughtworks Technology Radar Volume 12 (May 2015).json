@@ -549,7 +549,7 @@
     "quadrant": "tools",
     "isNew": "TRUE",
     "status": "new",
-    "description": "\"<p><strong><a href=\"\"https://facebook.github.io/origami/\"\" target=\"\"_blank\"\" aria-label=\"\"Origami. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\" data-faitracker-click-bind=\"\"true\"\">Origami<span class=\"\"pop-out-icon\"\"></span></a></strong> is a free tool for designing user prototypes with a variety of keyboard shortcuts for common functions. It provides the possibility of exporting the prototypes as code snippets to Objective-C for iOS, Java for Android and JavaScript for Web. This tool can be used to rapidly build interactive user facing prototypes and testing user flows. We recommend investigating this tool if the use case fits from the experience we have gathered from several of our teams.</p>\""
+    "description": "\"<p><strong><a href=\"\"https://facebook.github.io/origami/\"\" target=\"\"_blank\"\" aria-label=\"\"Origami. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Origami<span class=\"\"pop-out-icon\"\"></span></a></strong> is a free tool for designing user prototypes with a variety of keyboard shortcuts for common functions. It provides the possibility of exporting the prototypes as code snippets to Objective-C for iOS, Java for Android and JavaScript for Web. This tool can be used to rapidly build interactive user facing prototypes and testing user flows. We recommend investigating this tool if the use case fits from the experience we have gathered from several of our teams.</p>\""
   },
   {
     "name": "Packetbeat",
