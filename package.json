@@ -27,7 +27,7 @@
     "@tsconfig/node24": "24.0.4",
     "@types/jsdom": "27.0.0",
     "@types/lodash": "4.17.23",
-    "@types/node": "24.10.12",
+    "@types/node": "24.10.13",
     "commander": "14.0.3",
     "dotenv": "17.2.4",
     "googleapis": "171.4.0",
