@@ -40,7 +40,10 @@ export function getDescriptionHTMLFromBlipDOM(dom: JSDOM): string {
   const cssClass = 'blip-timeline-description';
 
   return (
-    dom.window.document.querySelector(`div.${cssClass}`)?.innerHTML.trim() || ''
+    dom.window.document
+      .querySelector(`div.${cssClass}`)
+      ?.innerHTML.trim()
+      .replaceAll('data-failtracker-click-bind="true"', '') || ''
   );
 }
 
