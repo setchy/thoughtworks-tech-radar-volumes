@@ -557,7 +557,7 @@
     "quadrant": "tools",
     "isNew": "FALSE",
     "status": "no change",
-    "description": "\"<p>Development on <a href=\"\"https://github.com/openzipkin/zipkin\"\" target=\"\"_blank\"\" aria-label=\"\"Zipkin. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\"><strong>Zipkin</strong><span class=\"\"pop-out-icon\"\"></span></a> has continued apace, and since the middle of 2015 it has moved to the <em>openzipkin/zipkin</em> organization at GitHub. There are now bindings for Python, Go, Java, Ruby, Scala and C#; and there are Docker images available for those wanting to get started quickly. We still like this tool. There is an active and growing community around usage of it, and implementation is getting easier. If you need a way of measuring the end-to-end latency of many logical requests, Zipkin continues to be a strong choice.</p>\""
+    "description": "\"<p>Development on <a href=\"\"https://github.com/openzipkin/zipkin\"\" target=\"\"_blank\"\" aria-label=\"\"Zipkin. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\" data-faitracker-click-bind=\"\"true\"\"><strong>Zipkin</strong><span class=\"\"pop-out-icon\"\"></span></a> has continued apace, and since the middle of 2015 it has moved to the <em>openzipkin/zipkin</em> organization at GitHub. There are now bindings for Python, Go, Java, Ruby, Scala and C#; and there are Docker images available for those wanting to get started quickly. We still like this tool. There is an active and growing community around usage of it, and implementation is getting easier. If you need a way of measuring the end-to-end latency of many logical requests, Zipkin continues to be a strong choice.</p>\""
   },
   {
     "name": "Android-x86",
