@@ -437,7 +437,7 @@
     "quadrant": "tools",
     "isNew": "TRUE",
     "status": "new",
-    "description": "\"<p><strong><a href=\"\"https://stryker-mutator.io/\"\" target=\"\"_blank\"\" aria-label=\"\"Stryker. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Stryker<span class=\"\"pop-out-icon\"\"></span></a></strong> is a relatively new entry in the mutation testing space. Similar to <a href=\"\"https://www.thoughtworks.com/radar/tools/pitest\"\">Pitest</a>, Stryker lets you evaluate the quality of your tests. We've been using it quite successfully in JavaScript projects, but it also supports C# and Scala projects. Stryker is very user friendly and highly customizable, and we've been able to increase code coverage as well as confidence in the applications we're delivering for our clients.</p>\""
+    "description": "\"<p><strong><a href=\"\"https://stryker-mutator.io/\"\" target=\"\"_blank\"\" aria-label=\"\"Stryker. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\" data-faitracker-click-bind=\"\"true\"\">Stryker<span class=\"\"pop-out-icon\"\"></span></a></strong> is a relatively new entry in the mutation testing space. Similar to <a href=\"\"https://www.thoughtworks.com/radar/tools/pitest\"\" data-faitracker-click-bind=\"\"true\"\">Pitest</a>, Stryker lets you evaluate the quality of your tests. We've been using it quite successfully in JavaScript projects, but it also supports C# and Scala projects. Stryker is very user friendly and highly customizable, and we've been able to increase code coverage as well as confidence in the applications we're delivering for our clients.</p>\""
   },
   {
     "name": "Terragrunt",
