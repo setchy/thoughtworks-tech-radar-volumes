@@ -70,6 +70,38 @@ program
     generateVolumes(type);
   });
 
+const fetchCmd = program.command('fetch').description('group commands for fetching/ingesting data');
+
+fetchCmd
+  .command('links')
+  .description('fetch blip page links from sitemap (alias: links)')
+  .action(() => {
+    console.log('fetching all radar blip page links from sitemap');
+    parseRadarSitemap();
+  });
+
+fetchCmd
+  .command('data')
+  .description('fetch detailed blip history and write data/master.json (alias: data)')
+  .action(() => {
+    console.log('fetching detailed blip history from archive');
+    generateMasterData();
+  });
+
+fetchCmd
+  .command('all')
+  .description('run links, data and generate volumes (alias: all, refresh)')
+  .action(() => {
+    console.log('fetching all radar blip page links from sitemap');
+    parseRadarSitemap().then(() => {
+      console.log('fetching detailed blip history from archive');
+      generateMasterData().then(() => {
+        console.log('generating all volumes');
+        generateVolumes('all');
+      });
+    });
+  });
+
 program
   .command('search')
   .description(
