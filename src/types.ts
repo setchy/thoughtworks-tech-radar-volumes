@@ -1,3 +1,5 @@
+import type { BLIP_STATUSES, REPORT_TYPES } from './common/constants';
+
 export interface MasterData {
   blipEntries: BlipTimelineEntry[];
 }
@@ -18,7 +20,6 @@ export interface EnrichedBlip extends BlipTimelineEntry {
   status: BlipStatus;
 }
 
-export type BlipStatus = 'new' | 'moved in' | 'moved out' | 'no change';
+export type BlipStatus = (typeof BLIP_STATUSES)[number];
 
-export const reportTypes = ['all', 'csv', 'json', 'google-sheets'] as const;
-export type ReportType = (typeof reportTypes)[number];
+export type ReportType = (typeof REPORT_TYPES)[number];

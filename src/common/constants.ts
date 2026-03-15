@@ -72,3 +72,12 @@ export const QUADRANT_SORT_ORDER = [
 ];
 
 export const RING_SORT_ORDER = ['adopt', 'trial', 'assess', 'hold'];
+
+export const BLIP_STATUSES = [
+  'new',
+  'moved in',
+  'moved out',
+  'no change',
+] as const;
+
+export const REPORT_TYPES = ['all', 'csv', 'json', 'google-sheets'] as const;

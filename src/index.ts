@@ -6,16 +6,12 @@ dotenv.config({
 
 import { Argument, Command } from 'commander';
 
+import { BLIP_STATUSES, REPORT_TYPES } from './common/constants';
 import { generateVolumes } from './files';
 import { filterData, searchData, summarizeStats } from './files/search';
 import { parseRadarSitemap } from './links';
 import { generateMasterData } from './timeline';
-import {
-  type BlipStatus,
-  type EnrichedBlip,
-  type ReportType,
-  reportTypes,
-} from './types';
+import type { BlipStatus, EnrichedBlip, ReportType } from './types';
 
 const program = new Command();
 
@@ -64,7 +60,7 @@ program
   .command('volumes')
   .addArgument(
     new Argument('[type]', 'type of report to generate')
-      .choices(reportTypes)
+      .choices(REPORT_TYPES)
       .default('all'),
   )
   .description(
@@ -193,9 +189,10 @@ program
       status?: string;
       output?: string;
     }) => {
-      const allowedStatuses = ['new', 'moved in', 'moved out', 'no change'];
-      const status = opts.status ? String(opts.status).toLowerCase() : null;
-      if (status && !allowedStatuses.includes(status)) {
+      const status = opts.status
+        ? (String(opts.status).toLowerCase() as BlipStatus)
+        : null;
+      if (status && !BLIP_STATUSES.includes(status)) {
         console.error(
           'ERROR: --status must be one of new|moved in|moved out|no change',
         );
@@ -206,7 +203,7 @@ program
         volume: opts.volume,
         quadrant: opts.quadrant,
         ring: opts.ring,
-        status: status as unknown as BlipStatus | null,
+        status: status,
       });
 
       const out = String(opts.output || 'text').toLowerCase();
