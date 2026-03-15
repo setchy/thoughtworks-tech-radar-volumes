@@ -77,9 +77,14 @@ Examples:
   $ tech-radar-volumes help
 ```
 
-#### volumes
+#### Subcommands
+
+> [!NOTE]
+> Commands that operate on existing data (`search`, `filter`, `stats`, `volumes`) require a populated `data/master.json` file. 
+> Generate it with `tech-radar-volumes fetch data`.
+
 <details>
-<summary>Usage</summary>
+<summary>volumes</summary>
 
 ```text
 Usage: tech-radar-volumes volumes [options] [type]
@@ -97,9 +102,8 @@ Options:
 ```
 </details>
 
-#### fetch
 <details>
-<summary>Usage</summary>
+<summary>fetch</summary>
 
 ```text
 Usage: tech-radar-volumes fetch [options] [command]
@@ -117,9 +121,8 @@ Commands:
 ```
 </details>
 
-#### search
 <details>
-<summary>Usage</summary>
+<summary>search</summary>
 
 ```text
 Usage: tech-radar-volumes search [options]
@@ -137,9 +140,8 @@ Options:
 ```
 </details>
 
-#### filter
 <details>
-<summary>Usage</summary>
+<summary>filter</summary>
 
 ```text
 Usage: tech-radar-volumes filter [options]
@@ -157,9 +159,8 @@ Options:
 ```
 </details>
 
-#### stats
 <details>
-<summary>Usage</summary>
+<summary>stats</summary>
 
 ```text
 Usage: tech-radar-volumes stats [options]
@@ -175,22 +176,12 @@ Options:
 ```
 </details>
 
-Notes:
 
-- Commands that operate on existing data (`search`, `filter`, `stats`, `volumes`) require a populated `data/master.json` file. Generate it with `tech-radar-volumes data`.
-- Output formats (used with `-o`/`--output`): `text` (default), `json`, `jsonl`, `csv`, `table`.
-  search          search master dataset for a keyword. Requires `--keyword`.
-                  Options: `-k/--keyword`, `-f/--field`, `-v/--volume`, `-o/--output` (text|json|jsonl|csv|table).
-  filter          filter master dataset by volume, quadrant, ring or status.
-                  Options: `-v/--volume`, `-q/--quadrant`, `-r/--ring`, `-s/--status` (new|moved in|moved out|no change), `-o/--output` (text|json|jsonl|csv|table).
-  stats           show dataset statistics grouped by volume, quadrant, ring.
-                  Options: `-b/--by` (volume|quadrant|ring|all), `-o/--output` (text|json|jsonl|csv|table).
-  help [command]  display help for command
-
-Examples:
+#### Examples
+```
   $ tech-radar-volumes
-  $ tech-radar-volumes links
-  $ tech-radar-volumes data
+  $ tech-radar-volumes fetch links
+  $ tech-radar-volumes fetch data
   $ tech-radar-volumes volumes csv
   $ tech-radar-volumes search -k react
   $ tech-radar-volumes search -k "test cafe" -o json
@@ -198,6 +189,7 @@ Examples:
   $ tech-radar-volumes stats --by=volume -o table
   $ tech-radar-volumes help volumes
   $ tech-radar-volumes help
+```
 
 <!-- LINK LABELS -->
 <!-- Web -->

@@ -139,7 +139,7 @@ program
                 escapeCSV(rr.quadrant),
                 escapeCSV(rr.isNew),
                 escapeCSV(rr.status),
-                escapeCSV(rr.description),
+                escapeCSV(rr.descriptionHtml),
               ].join(','),
             );
           });
@@ -156,13 +156,13 @@ program
               quadrant: string;
               ring: string;
               name: string;
-              description?: string;
+              descriptionHtml?: string;
             };
             console.log(
               `${rr.volume} • ${rr.quadrant} • ${rr.ring} • ${rr.name}`,
             );
             console.log(
-              `  ${rr.description?.slice(0, 200).replace(/\n/g, ' ')}${rr.description && rr.description.length > 200 ? '…' : ''}`,
+              `  ${rr.descriptionHtml?.slice(0, 200).replace(/\n/g, ' ')}${rr.descriptionHtml && rr.descriptionHtml.length > 200 ? '…' : ''}`,
             );
           });
           break;
@@ -240,7 +240,7 @@ program
                 escapeCSV(rr.quadrant),
                 escapeCSV(rr.isNew),
                 escapeCSV(rr.status),
-                escapeCSV(rr.description),
+                escapeCSV(rr.descriptionHtml),
               ].join(','),
             );
           });
@@ -373,8 +373,8 @@ program.on('--help', () => {
   console.log('');
   console.log('Examples:');
   console.log('  $ tech-radar-volumes');
-  console.log('  $ tech-radar-volumes links');
-  console.log('  $ tech-radar-volumes data');
+  console.log('  $ tech-radar-volumes fetch links');
+  console.log('  $ tech-radar-volumes fetch data');
   console.log('  $ tech-radar-volumes volumes csv');
   console.log('  $ tech-radar-volumes help volumes');
   console.log('  $ tech-radar-volumes help');
