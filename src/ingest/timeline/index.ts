@@ -3,13 +3,13 @@ import { exit } from 'node:process';
 import { load } from 'cheerio';
 import _ from 'lodash';
 
+import { readJSONFile, writeJSONFile } from '../../data/repository';
 import {
   FILES,
   QUADRANT_SORT_ORDER,
   RING_SORT_ORDER,
-} from '../common/constants';
-import type { BlipTimelineEntry, MasterData } from '../types';
-import { readJSONFile, writeJSONFile } from '../utils';
+} from '../../shared/constants';
+import type { BlipTimelineEntry, MasterData } from '../../shared/types';
 import {
   getDescriptionHTMLFromBlipDOM,
   getPublishedDateFromBlipDOM,

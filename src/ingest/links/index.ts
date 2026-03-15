@@ -1,7 +1,7 @@
 import _ from 'lodash';
 
-import { FILES, URLS } from '../common/constants';
-import { writeJSONFile } from '../utils';
+import { writeJSONFile } from '../../data/repository';
+import { FILES, URLS } from '../../shared/constants';
 
 export async function parseRadarSitemap(): Promise<string[]> {
   const sitemap = await (await fetch(URLS.SITEMAP)).text();

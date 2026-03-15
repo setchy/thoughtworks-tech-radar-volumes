@@ -2,7 +2,7 @@ import type {
   BLIP_STATUSES,
   REPORT_TYPES,
   SEARCHABLE_FIELDS,
-} from './common/constants';
+} from './constants';
 
 export interface MasterData {
   blipEntries: BlipTimelineEntry[];

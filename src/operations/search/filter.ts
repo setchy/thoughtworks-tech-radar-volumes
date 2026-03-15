@@ -1,6 +1,10 @@
-import { FILES } from '../../common/constants';
-import type { BlipStatus, BlipTimelineEntry, EnrichedBlip } from '../../types';
-import { readJSONFile } from '../../utils';
+import { readJSONFile } from '../../data/repository';
+import { FILES } from '../../shared/constants';
+import type {
+  BlipStatus,
+  BlipTimelineEntry,
+  EnrichedBlip,
+} from '../../shared/types';
 import { getStatus } from '../utils';
 
 type FilterOpts = {

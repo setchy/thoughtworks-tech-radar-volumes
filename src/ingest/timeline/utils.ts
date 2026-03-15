@@ -3,7 +3,7 @@ import { load } from 'cheerio';
 import {
   NOT_FOUND_VOLUME_NUMBER,
   VOLUME_PUBLICATION_DATES,
-} from '../common/constants';
+} from '../../shared/constants';
 
 export function getRingNameFromBlipDOM(html: string): string {
   const cssClass = 'cmp-blip-timeline__item--ring';

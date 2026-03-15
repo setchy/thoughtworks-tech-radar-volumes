@@ -1,10 +1,10 @@
-import { FILES, SEARCHABLE_FIELDS } from '../../common/constants';
+import { readJSONFile } from '../../data/repository';
+import { FILES, SEARCHABLE_FIELDS } from '../../shared/constants';
 import type {
   BlipTimelineEntry,
   EnrichedBlip,
   SearchableField,
-} from '../../types';
-import { readJSONFile } from '../../utils';
+} from '../../shared/types';
 import { getStatus } from '../utils';
 
 type SearchOpts = {

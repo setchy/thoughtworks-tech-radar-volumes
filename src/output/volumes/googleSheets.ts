@@ -2,9 +2,9 @@ import { exit } from 'node:process';
 
 import { google } from 'googleapis';
 
-import { CSV_HEADERS, URLS } from '../../common/constants';
-import type { BlipTimelineEntry } from '../../types';
-import { getVolumePublicationDate } from '../utils';
+import { getVolumePublicationDate } from '../../operations/utils';
+import { CSV_HEADERS, URLS } from '../../shared/constants';
+import type { BlipTimelineEntry } from '../../shared/types';
 
 export async function updateGoogleSheets(
   volume: string,

@@ -1,5 +1,5 @@
-import type { StatsOutput } from '../files/search/stats';
-import type { EnrichedBlip } from '../types';
+import type { StatsOutput } from '../operations/search/stats';
+import type { EnrichedBlip } from '../shared/types';
 
 export const OUTPUT_FORMATS = [
   'text',

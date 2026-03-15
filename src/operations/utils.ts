@@ -1,5 +1,5 @@
-import { FILES, VOLUME_PUBLICATION_DATES } from '../common/constants';
-import type { BlipStatus, BlipTimelineEntry } from '../types';
+import { FILES, VOLUME_PUBLICATION_DATES } from '../shared/constants';
+import type { BlipStatus, BlipTimelineEntry } from '../shared/types';
 
 export function escapeDescriptionHTML(description: string): string {
   const escapedDescription = description
