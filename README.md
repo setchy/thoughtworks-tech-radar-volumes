@@ -58,20 +58,10 @@ Options:
   -h, --help        display help for command
 
 Commands:
-  all               fetch detailed history for all blips and generate
-                    publication volumes
-  links             fetch all radar blip page links from web.
-                    Output: blip links will be saved in `data/links.json`.
-  data              fetch detailed blip history from web.
-                    Inputs: requires `data/links.json`.
-                    Output: detailed history will be saved in
-                    `data/master.json`.
-                    
+  fetch             group commands for fetching/ingesting data
   volumes [type]    generate publication volumes in specified format(s).
                     Inputs: requires `data/master.json`.
                     Output: generated volumes will be saved in `volumes/*`.
-                    
-  fetch             group commands for fetching/ingesting data
   search [options]  search master dataset for a keyword (defaults to name and
                     description)
   filter [options]  filter master dataset by volume, quadrant, ring or status

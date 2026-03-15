@@ -24,25 +24,11 @@ program
   .description('A CLI tool to fetch and process ThoughtWorks Tech Radar data')
   .version('latest');
 
-
-program
-  .command('volumes')
-  .addArgument(
-    new Argument('[type]', 'type of report to generate')
-      .choices(reportTypes)
-      .default('all'),
-  )
-  .description(
-    'generate publication volumes in specified format(s).\nInputs: requires `data/master.json`.\nOutput: generated volumes will be saved in `volumes/*`.\n',
-  )
-  .action((type: ReportType) => {
-    console.log(`generating ${type} volumes`);
-    generateVolumes(type);
-  });
-
 const fetchCmd = program
   .command('fetch')
-  .description('group commands for fetching/ingesting data');
+  .description(
+    'fetch blip links and data (group commands for fetching/ingesting data)',
+  );
 
 fetchCmd
   .command('links')
@@ -72,6 +58,21 @@ fetchCmd
         generateVolumes('all');
       });
     });
+  });
+
+program
+  .command('volumes')
+  .addArgument(
+    new Argument('[type]', 'type of report to generate')
+      .choices(reportTypes)
+      .default('all'),
+  )
+  .description(
+    'generate publication volumes in specified format(s).\nInputs: requires `data/master.json`.\nOutput: generated volumes will be saved in `volumes/*`.\n',
+  )
+  .action((type: ReportType) => {
+    console.log(`generating ${type} volumes`);
+    generateVolumes(type);
   });
 
 program
