@@ -1,4 +1,4 @@
-import type { StatsOutput } from '../operations/search/stats';
+import type { StatsOutput } from '../operations/stats';
 import type { EnrichedBlip } from '../shared/types';
 
 export const OUTPUT_FORMATS = [

@@ -1,6 +1,6 @@
 import type { Command } from 'commander';
 
-import { filterData } from '../../operations/search';
+import { filterData } from '../../operations';
 import { BLIP_STATUSES } from '../../shared/constants';
 import type { BlipStatus } from '../../shared/types';
 import { formatEnrichedBlip, validateOutputFormat } from '../formatters';

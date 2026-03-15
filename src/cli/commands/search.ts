@@ -1,6 +1,6 @@
 import type { Command } from 'commander';
 
-import { searchData } from '../../operations/search';
+import { searchData } from '../../operations';
 import { formatEnrichedBlip, validateOutputFormat } from '../formatters';
 
 export function searchCommand(program: Command) {

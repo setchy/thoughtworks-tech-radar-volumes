@@ -1,11 +1,11 @@
-import { writeCSVFile } from '../../data/repository';
+import { writeCSVFile } from '../data/repository';
 import {
   escapeDescriptionHTML,
   getStatus,
   getVolumeFileName,
-} from '../../operations/utils';
-import { CSV_HEADERS, FILES } from '../../shared/constants';
-import type { BlipTimelineEntry } from '../../shared/types';
+} from '../operations/utils';
+import { CSV_HEADERS, FILES } from '../shared/constants';
+import type { BlipTimelineEntry } from '../shared/types';
 
 export function formatCSVDataset(data: BlipTimelineEntry[]) {
   return data.map((blip) => [

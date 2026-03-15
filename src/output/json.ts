@@ -1,11 +1,11 @@
-import { writeJSONFile } from '../../data/repository';
+import { writeJSONFile } from '../data/repository';
 import {
   escapeDescriptionHTML,
   getStatus,
   getVolumeFileName,
-} from '../../operations/utils';
-import { FILES } from '../../shared/constants';
-import type { BlipTimelineEntry } from '../../shared/types';
+} from '../operations/utils';
+import { FILES } from '../shared/constants';
+import type { BlipTimelineEntry } from '../shared/types';
 
 export function generateJSON(volume: string, volumeData: BlipTimelineEntry[]) {
   const data = volumeData.map((row) => ({

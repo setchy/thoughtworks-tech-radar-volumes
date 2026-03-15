@@ -1,6 +1,6 @@
 import type { Command } from 'commander';
 
-import { summarizeStats } from '../../operations/search';
+import { summarizeStats } from '../../operations';
 import { formatStats, validateOutputFormat } from '../formatters';
 
 export function statsCommand(program: Command) {
