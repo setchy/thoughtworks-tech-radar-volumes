@@ -14,7 +14,7 @@ jobs:
             - name: Setup Node.js
               uses: actions/setup-node@53b83947a5a98c8d113130e565377fae1a50d02f # v6.3.0
               with:
-                node-version-file: '.nvmrc'
+                  node-version-file: ".nvmrc"
 
             - name: Setup pnpm
               uses: pnpm/action-setup@fc06bc1257f339d1d5d8b3a19a8cae5388b55320 # v4.4.0
@@ -23,11 +23,11 @@ jobs:
 
             - name: Update Google Sheets
               env:
-                GOOGLE_SHEET_ID: ${{ vars.GOOGLE_SHEET_ID }}
-                GOOGLE_CLIENT_EMAIL: ${{ secrets.GOOGLE_CLIENT_EMAIL }}
-                GOOGLE_PRIVATE_KEY: ${{ secrets.GOOGLE_PRIVATE_KEY }}
+                  GOOGLE_SHEET_ID: ${{ vars.GOOGLE_SHEET_ID }}
+                  GOOGLE_CLIENT_EMAIL: ${{ secrets.GOOGLE_CLIENT_EMAIL }}
+                  GOOGLE_PRIVATE_KEY: ${{ secrets.GOOGLE_PRIVATE_KEY }}
               run: |
                   export GOOGLE_SHEET_ID=$GOOGLE_SHEET_ID
                   export GOOGLE_CLIENT_EMAIL=$GOOGLE_CLIENT_EMAIL
                   export GOOGLE_PRIVATE_KEY=$GOOGLE_PRIVATE_KEY
-                  pnpm start -v google-sheets
+                  pnpm start volumes google-sheets

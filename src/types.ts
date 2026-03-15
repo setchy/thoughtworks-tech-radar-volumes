@@ -14,6 +14,10 @@ export interface BlipTimelineEntry {
   hasMovedOut: boolean;
 }
 
+export interface EnrichedBlip extends BlipTimelineEntry {
+  status: BlipStatus;
+}
+
 export type BlipStatus = 'new' | 'moved in' | 'moved out' | 'no change';
 
 export const reportTypes = ['all', 'csv', 'json', 'google-sheets'] as const;
