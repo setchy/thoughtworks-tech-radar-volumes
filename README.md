@@ -67,6 +67,12 @@ Commands:
   volumes [type]  generate publication volumes in specified format(s).
                   Inputs: requires `data/master.json`.
                   Output: generated volumes will be saved in `volumes/*`.
+  search          search master dataset for a keyword. Requires `--keyword`.
+                  Options: `--field`, `--volume`, `--output` (text|json|jsonl|csv|table).
+  filter          filter master dataset by volume, quadrant, ring or status.
+                  Options: `--volume`, `--quadrant`, `--ring`, `--status`, `--new`, `--movement`, `--output` (text|json|jsonl|csv|table).
+  stats           show dataset statistics grouped by volume, quadrant, ring.
+                  Options: `--by` (volume|quadrant|ring|all), `--output` (text|json|jsonl|csv|table).
   help [command]  display help for command
 
 Examples:
@@ -74,8 +80,31 @@ Examples:
   $ tech-radar-volumes links
   $ tech-radar-volumes data
   $ tech-radar-volumes volumes csv
+  $ tech-radar-volumes search -k react
+  $ tech-radar-volumes search -k "test cafe" --output=json
+  $ tech-radar-volumes filter -v 10 -q "languages-and-frameworks" --output=csv
+  $ tech-radar-volumes stats --by=volume --output=table
   $ tech-radar-volumes help volumes
   $ tech-radar-volumes help
+
+Notes:
+- Commands that operate on existing data (`search`, `filter`, `stats`, `volumes`) require a populated `data/master.json` file. Generate it with:
+
+```
+tech-radar-volumes data
+```
+
+-- Output format: by default the commands print human-readable summaries (`text`). Use `--output=<format>` to change the format. Supported formats:
+  - `text` — human readable (default)
+  - `json` — pretty-printed JSON
+  - `jsonl` — newline-delimited JSON (one object per line)
+  - `csv` — CSV rows suitable for piping or saving
+  - `table` — formatted table output (console.table)
+
+- Common flags:
+  - `--keyword` / `-k`: keyword to search for (required for `search`).
+  - `--field` / `-f`: restrict search to a specific field (`name`, `quadrant`, `ring`, `description`).
+  - `--by` / `-b`: group stats by `volume`, `quadrant`, `ring`, or `all`.
 ```
 
 <!-- LINK LABELS -->
