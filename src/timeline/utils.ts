@@ -42,8 +42,9 @@ export function getDescriptionHTMLFromBlipDOM(dom: JSDOM): string {
   return (
     dom.window.document
       .querySelector(`div.${cssClass}`)
-      ?.innerHTML.trim()
-      .replaceAll('data-faitracker-click-bind="true"', '') || ''
+        ?.innerHTML.trim()
+        // Remove the 'data-faitracker-click-bind' attribute for consistent description extraction
+        .replace(/data-faitracker-click-bind="true"\s*/g, '') || ''
   );
 }
 
