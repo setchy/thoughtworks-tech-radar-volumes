@@ -8,7 +8,16 @@ type StatsOpts = {
   by?: 'volume' | 'quadrant' | 'ring' | 'all';
 };
 
-export async function summarizeStats(opts: StatsOpts = {}) {
+export type StatsOutput = {
+  total: number;
+  byVolume?: Record<string, number>;
+  byQuadrant?: Record<string, number>;
+  byRing?: Record<string, number>;
+};
+
+export async function summarizeStats(
+  opts: StatsOpts = {},
+): Promise<StatsOutput> {
   const data = readJSONFile<BlipTimelineEntry[]>(FILES.DATA.MASTER);
 
   const byVolume = _.countBy(data, (d) => String(d.volume));

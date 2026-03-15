@@ -1,7 +1,5 @@
-import _ from 'lodash';
-
 import { FILES } from '../../common/constants';
-import type { BlipTimelineEntry } from '../../types';
+import type { BlipTimelineEntry, EnrichedBlip } from '../../types';
 import { readJSONFile } from '../../utils';
 import { getStatus } from '../utils';
 
@@ -11,7 +9,7 @@ type SearchOpts = {
   volume?: string | null;
 };
 
-export async function searchData(opts: SearchOpts) {
+export async function searchData(opts: SearchOpts): Promise<EnrichedBlip[]> {
   const data = readJSONFile<BlipTimelineEntry[]>(FILES.DATA.MASTER);
   const keyword = opts.keyword.toLowerCase();
 
@@ -41,11 +39,7 @@ export async function searchData(opts: SearchOpts) {
   });
 
   return filtered.map((e) => ({
-    name: e.name,
-    quadrant: e.quadrant,
-    ring: e.ring,
-    volume: e.volume,
-    description: e.descriptionHtml,
+    ...e,
     status: getStatus(e),
   }));
 }

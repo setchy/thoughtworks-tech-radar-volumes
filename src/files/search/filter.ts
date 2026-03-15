@@ -1,5 +1,5 @@
 import { FILES } from '../../common/constants';
-import type { BlipTimelineEntry } from '../../types';
+import type { BlipTimelineEntry, EnrichedBlip } from '../../types';
 import { readJSONFile } from '../../utils';
 import { getStatus } from '../utils';
 
@@ -11,8 +11,7 @@ type FilterOpts = {
   isNew?: boolean | null;
   movement?: 'in' | 'out' | 'none' | null;
 };
-
-export async function filterData(opts: FilterOpts) {
+export async function filterData(opts: FilterOpts): Promise<EnrichedBlip[]> {
   const data = readJSONFile<BlipTimelineEntry[]>(FILES.DATA.MASTER);
 
   const filtered = data.filter((entry) => {
@@ -49,14 +48,7 @@ export async function filterData(opts: FilterOpts) {
   });
 
   return filtered.map((e) => ({
-    name: e.name,
-    quadrant: e.quadrant,
-    ring: e.ring,
-    volume: e.volume,
-    description: e.descriptionHtml,
+    ...e,
     status: getStatus(e),
-    isNew: e.isNew,
-    hasMovedIn: e.hasMovedIn,
-    hasMovedOut: e.hasMovedOut,
   }));
 }
