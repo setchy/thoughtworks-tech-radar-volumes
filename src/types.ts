@@ -1,4 +1,8 @@
-import type { BLIP_STATUSES, REPORT_TYPES } from './common/constants';
+import type {
+  BLIP_STATUSES,
+  REPORT_TYPES,
+  SEARCHABLE_FIELDS,
+} from './common/constants';
 
 export interface MasterData {
   blipEntries: BlipTimelineEntry[];
@@ -23,3 +27,5 @@ export interface EnrichedBlip extends BlipTimelineEntry {
 export type BlipStatus = (typeof BLIP_STATUSES)[number];
 
 export type ReportType = (typeof REPORT_TYPES)[number];
+
+export type SearchableField = (typeof SEARCHABLE_FIELDS)[number];

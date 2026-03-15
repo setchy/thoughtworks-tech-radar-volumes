@@ -81,3 +81,15 @@ export const BLIP_STATUSES = [
 ] as const;
 
 export const REPORT_TYPES = ['all', 'csv', 'json', 'google-sheets'] as const;
+
+export const SEARCHABLE_FIELDS = [
+  'name',
+  'quadrant',
+  'ring',
+  'volume',
+  'publishedDate',
+  'descriptionHtml',
+  'isNew',
+  'hasMovedIn',
+  'hasMovedOut',
+] as const;

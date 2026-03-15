@@ -6,12 +6,17 @@ dotenv.config({
 
 import { Argument, Command } from 'commander';
 
+import {
+  formatEnrichedBlip,
+  formatStats,
+  validateOutputFormat,
+} from './cli/formatters';
 import { BLIP_STATUSES, REPORT_TYPES } from './common/constants';
 import { generateVolumes } from './files';
 import { filterData, searchData, summarizeStats } from './files/search';
 import { parseRadarSitemap } from './links';
 import { generateMasterData } from './timeline';
-import type { BlipStatus, EnrichedBlip, ReportType } from './types';
+import type { BlipStatus, ReportType } from './types';
 
 const program = new Command();
 
@@ -104,65 +109,8 @@ program
         volume: opts.volume,
       });
 
-      const out = String(opts.output || 'text').toLowerCase();
-      if (!['text', 'json', 'jsonl', 'csv', 'table'].includes(out)) {
-        console.error(
-          'ERROR: --output must be one of text|json|jsonl|csv|table',
-        );
-        process.exit(1);
-      }
-
-      const escapeCSV = (s: unknown) =>
-        `"${String(s ?? '').replace(/"/g, '""')}"`;
-
-      switch (out) {
-        case 'json':
-          console.log(JSON.stringify(results, null, 2));
-          break;
-        case 'jsonl':
-          results.forEach((r) => {
-            console.log(JSON.stringify(r));
-          });
-          break;
-        case 'csv':
-          console.log('name,ring,quadrant,isNew,status,description');
-          results.forEach((r) => {
-            const rr = r as EnrichedBlip;
-            console.log(
-              [
-                escapeCSV(rr.name),
-                escapeCSV(rr.ring),
-                escapeCSV(rr.quadrant),
-                escapeCSV(rr.isNew),
-                escapeCSV(rr.status),
-                escapeCSV(rr.descriptionHtml),
-              ].join(','),
-            );
-          });
-          break;
-        case 'table':
-          // eslint-disable-next-line no-console
-          console.table(results);
-          break;
-        default:
-          results.forEach((r) => {
-            // r is EnrichedBlip
-            const rr = r as unknown as {
-              volume: number;
-              quadrant: string;
-              ring: string;
-              name: string;
-              descriptionHtml?: string;
-            };
-            console.log(
-              `${rr.volume} • ${rr.quadrant} • ${rr.ring} • ${rr.name}`,
-            );
-            console.log(
-              `  ${rr.descriptionHtml?.slice(0, 200).replace(/\n/g, ' ')}${rr.descriptionHtml && rr.descriptionHtml.length > 200 ? '…' : ''}`,
-            );
-          });
-          break;
-      }
+      const format = validateOutputFormat(opts.output || 'text');
+      formatEnrichedBlip(results, format);
     },
   );
 
@@ -206,60 +154,8 @@ program
         status: status,
       });
 
-      const out = String(opts.output || 'text').toLowerCase();
-      if (!['text', 'json', 'jsonl', 'csv', 'table'].includes(out)) {
-        console.error(
-          'ERROR: --output must be one of text|json|jsonl|csv|table',
-        );
-        process.exit(1);
-      }
-
-      const escapeCSV = (s: unknown) =>
-        `"${String(s ?? '').replace(/"/g, '""')}"`;
-
-      switch (out) {
-        case 'json':
-          console.log(JSON.stringify(results, null, 2));
-          break;
-        case 'jsonl':
-          results.forEach((r) => {
-            console.log(JSON.stringify(r));
-          });
-          break;
-        case 'csv':
-          console.log('name,ring,quadrant,isNew,status,description');
-          results.forEach((r) => {
-            const rr = r as EnrichedBlip;
-            console.log(
-              [
-                escapeCSV(rr.name),
-                escapeCSV(rr.ring),
-                escapeCSV(rr.quadrant),
-                escapeCSV(rr.isNew),
-                escapeCSV(rr.status),
-                escapeCSV(rr.descriptionHtml),
-              ].join(','),
-            );
-          });
-          break;
-        case 'table':
-          // eslint-disable-next-line no-console
-          console.table(results);
-          break;
-        default:
-          results.forEach((r) => {
-            const rr = r as unknown as {
-              volume: number;
-              quadrant: string;
-              ring: string;
-              name: string;
-            };
-            console.log(
-              `${rr.volume} • ${rr.quadrant} • ${rr.ring} • ${rr.name}`,
-            );
-          });
-          break;
-      }
+      const format = validateOutputFormat(opts.output || 'text');
+      formatEnrichedBlip(results, format);
     },
   );
 
@@ -274,96 +170,14 @@ program
   )
   .action(async (opts: { by?: string; output?: string }) => {
     const stats = await summarizeStats({
-      by: opts.by as unknown as 'volume' | 'quadrant' | 'ring' | 'all',
+      by: opts.by as 'volume' | 'quadrant' | 'ring' | 'all',
     });
-    const out = String(opts.output || 'text').toLowerCase();
-    if (!['text', 'json', 'jsonl', 'csv', 'table'].includes(out)) {
-      console.error('ERROR: --output must be one of text|json|jsonl|csv|table');
-      process.exit(1);
-    }
-
-    if (out === 'json') {
-      console.log(JSON.stringify(stats, null, 2));
-      return;
-    }
-
-    if (out === 'jsonl') {
-      // print each top-level grouping as a JSON line
-      if (stats.byVolume)
-        console.log(JSON.stringify({ by: 'volume', data: stats.byVolume }));
-      if (stats.byQuadrant)
-        console.log(JSON.stringify({ by: 'quadrant', data: stats.byQuadrant }));
-      if (stats.byRing)
-        console.log(JSON.stringify({ by: 'ring', data: stats.byRing }));
-      return;
-    }
-
-    if (out === 'csv') {
-      const printCSV = (
-        obj: Record<string, number> | undefined,
-        header: string,
-      ) => {
-        console.log(`${header},count`);
-        Object.entries(obj || {}).forEach(([k, v]) => {
-          console.log(`${k},${v}`);
-        });
-      };
-
-      if (opts.by === 'volume' || opts.by === 'all')
-        printCSV(stats.byVolume, 'volume');
-      if (opts.by === 'quadrant' || opts.by === 'all') {
-        if (opts.by === 'all') console.log('');
-        printCSV(stats.byQuadrant, 'quadrant');
-      }
-      if (opts.by === 'ring' || opts.by === 'all') {
-        if (opts.by === 'all') console.log('');
-        printCSV(stats.byRing, 'ring');
-      }
-
-      return;
-    }
-
-    if (out === 'table') {
-      if (opts.by === 'volume' || opts.by === 'all') {
-        console.log('\nBy volume:');
-        // eslint-disable-next-line no-console
-        console.table(stats.byVolume);
-      }
-      if (opts.by === 'quadrant' || opts.by === 'all') {
-        console.log('\nBy quadrant:');
-        // eslint-disable-next-line no-console
-        console.table(stats.byQuadrant);
-      }
-      if (opts.by === 'ring' || opts.by === 'all') {
-        console.log('\nBy ring:');
-        // eslint-disable-next-line no-console
-        console.table(stats.byRing);
-      }
-      console.log(`\nTotal blips: ${stats.total}`);
-      return;
-    }
-
-    // default: text
-    console.log('Statistics:');
-    if (opts.by === 'volume' || opts.by === 'all') {
-      console.log('\nBy volume:');
-      Object.entries(stats.byVolume || {}).forEach(([k, v]) => {
-        console.log(`  ${k}: ${v}`);
-      });
-    }
-    if (opts.by === 'quadrant' || opts.by === 'all') {
-      console.log('\nBy quadrant:');
-      Object.entries(stats.byQuadrant || {}).forEach(([k, v]) => {
-        console.log(`  ${k}: ${v}`);
-      });
-    }
-    if (opts.by === 'ring' || opts.by === 'all') {
-      console.log('\nBy ring:');
-      Object.entries(stats.byRing || {}).forEach(([k, v]) => {
-        console.log(`  ${k}: ${v}`);
-      });
-    }
-    console.log(`\nTotal blips: ${stats.total}`);
+    const format = validateOutputFormat(opts.output || 'text');
+    formatStats(
+      stats,
+      format,
+      opts.by as 'volume' | 'quadrant' | 'ring' | 'all',
+    );
   });
 
 program.on('--help', () => {
