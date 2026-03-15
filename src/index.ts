@@ -149,40 +149,62 @@ program
   .option('-v, --volume <volume>', 'filter by volume number or name')
   .option('-q, --quadrant <quadrant>', 'filter by quadrant')
   .option('-r, --ring <ring>', 'filter by ring')
-  .option('--status <status>', 'filter by status (e.g. ADOPT, TRIAL)')
-  .option(
-    '--new <new>',
-    'filter to blips marked as new in that volume (true|false)',
-  )
-  .option('--movement <movement>', 'filter by movement: in|out|none')
-  .option('--json', 'output raw JSON')
+  .option('-s, --status <status>', 'filter by status (new|moved in|moved out|no change)')
+  .option('-o, --output <format>', 'output format: text|json|jsonl|csv|table', 'text')
   .action(async (opts: any) => {
-    // Validate and parse the `--new` flag value if provided
-    let isNewValue: boolean | null = null;
-    if (opts.new !== undefined) {
-      const v = String(opts.new).toLowerCase();
-      if (v !== 'true' && v !== 'false') {
-        console.error('ERROR: --new must be "true" or "false"');
-        process.exit(1);
-      }
-      isNewValue = v === 'true';
+    const allowedStatuses = ['new', 'moved in', 'moved out', 'no change'];
+    const status = opts.status ? String(opts.status).toLowerCase() : null;
+    if (status && !allowedStatuses.includes(status)) {
+      console.error('ERROR: --status must be one of new|moved in|moved out|no change');
+      process.exit(1);
     }
 
     const results = await filterData({
       volume: opts.volume,
       quadrant: opts.quadrant,
       ring: opts.ring,
-      status: opts.status,
-      isNew: isNewValue,
-      movement: opts.movement,
+      status: status as any,
     });
 
-    if (opts.json) {
-      console.log(JSON.stringify(results, null, 2));
-    } else {
-      results.forEach((r: any) => {
-        console.log(`${r.volume} • ${r.quadrant} • ${r.ring} • ${r.name}`);
-      });
+    const out = String(opts.output || 'text').toLowerCase();
+    if (!['text', 'json', 'jsonl', 'csv', 'table'].includes(out)) {
+      console.error('ERROR: --output must be one of text|json|jsonl|csv|table');
+      process.exit(1);
+    }
+
+    const escapeCSV = (s: any) => '"' + String(s || '').replace(/"/g, '""') + '"';
+
+    switch (out) {
+      case 'json':
+        console.log(JSON.stringify(results, null, 2));
+        break;
+      case 'jsonl':
+        results.forEach((r: any) => console.log(JSON.stringify(r)));
+        break;
+      case 'csv':
+        console.log('name,ring,quadrant,isNew,status,description');
+        results.forEach((r: any) =>
+          console.log(
+            [
+              escapeCSV(r.name),
+              escapeCSV(r.ring),
+              escapeCSV(r.quadrant),
+              escapeCSV(r.isNew),
+              escapeCSV(r.status),
+              escapeCSV(r.description),
+            ].join(','),
+          ),
+        );
+        break;
+      case 'table':
+        // eslint-disable-next-line no-console
+        console.table(results);
+        break;
+      default:
+        results.forEach((r: any) => {
+          console.log(`${r.volume} • ${r.quadrant} • ${r.ring} • ${r.name}`);
+        });
+        break;
     }
   });
 

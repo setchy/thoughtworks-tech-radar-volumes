@@ -70,7 +70,7 @@ Commands:
   search          search master dataset for a keyword. Requires `--keyword`.
                   Options: `--field`, `--volume`, `--output` (text|json|jsonl|csv|table).
   filter          filter master dataset by volume, quadrant, ring or status.
-                  Options: `--volume`, `--quadrant`, `--ring`, `--status`, `--new`, `--movement`, `--output` (text|json|jsonl|csv|table).
+                  Options: `--volume`, `--quadrant`, `--ring`, `--status`, `-s/--status` (new|moved in|moved out|no change), `-o/--output` (text|json|jsonl|csv|table).
   stats           show dataset statistics grouped by volume, quadrant, ring.
                   Options: `--by` (volume|quadrant|ring|all), `--output` (text|json|jsonl|csv|table).
   help [command]  display help for command
@@ -83,7 +83,7 @@ Examples:
   $ tech-radar-volumes search -k react
   $ tech-radar-volumes search -k "test cafe" --output=json
   $ tech-radar-volumes filter -v 10 -q "languages-and-frameworks" --output=csv
-  $ tech-radar-volumes stats --by=volume --output=table
+  $ tech-radar-volumes stats --by=volume -o table
   $ tech-radar-volumes help volumes
   $ tech-radar-volumes help
 
@@ -94,7 +94,7 @@ Notes:
 tech-radar-volumes data
 ```
 
--- Output format: by default the commands print human-readable summaries (`text`). Use `--output=<format>` to change the format. Supported formats:
+- Output format: by default the commands print human-readable summaries (`text`). Use `-o` or `--output=<format>` to change the format. Supported formats:
   - `text` — human readable (default)
   - `json` — pretty-printed JSON
   - `jsonl` — newline-delimited JSON (one object per line)
