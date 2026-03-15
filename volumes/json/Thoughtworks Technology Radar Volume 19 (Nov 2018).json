@@ -581,7 +581,7 @@
     "quadrant": "tools",
     "isNew": "TRUE",
     "status": "new",
-    "description": "\"<p>Our teams are reporting good success with <strong><a href=\"\"https://devexpress.github.io/testcafe/\"\" target=\"\"_blank\"\" aria-label=\"\"TestCafe. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\" >TestCafe<span class=\"\"pop-out-icon\"\"></span></a></strong>, a JavaScript-based browser test automation tool. TestCafe allows you to write tests in JavaScript or <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/typescript\"\" >TypeScript</a> and runs tests in any browser that supports JavaScript. TestCafe has several useful features including out-of-the-box parallel execution and HTTP request mocking. TestCafe uses an asynchronous execution model with no explicit wait times, which results in much more stable test suites.</p>\""
+    "description": "\"<p>Our teams are reporting good success with <strong><a href=\"\"https://devexpress.github.io/testcafe/\"\" target=\"\"_blank\"\" aria-label=\"\"TestCafe. This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">TestCafe<span class=\"\"pop-out-icon\"\"></span></a></strong>, a JavaScript-based browser test automation tool. TestCafe allows you to write tests in JavaScript or <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/typescript\"\">TypeScript</a> and runs tests in any browser that supports JavaScript. TestCafe has several useful features including out-of-the-box parallel execution and HTTP request mocking. TestCafe uses an asynchronous execution model with no explicit wait times, which results in much more stable test suites.</p>\""
   },
   {
     "name": "Traefik",
