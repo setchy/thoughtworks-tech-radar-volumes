@@ -23,15 +23,15 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.4.6",
+    "@biomejs/biome": "2.4.7",
     "@tsconfig/node24": "24.0.4",
     "@types/lodash": "4.17.24",
-    "@types/node": "24.12.0",
+    "@types/node": "25.5.0",
     "commander": "14.0.3",
     "dotenv": "17.3.1",
     "googleapis": "171.4.0",
     "lodash": "4.17.23",
-    "cheerio": "1.0.0-rc.12",
+    "cheerio": "1.2.0",
     "ts-node": "10.9.2",
     "typescript": "5.9.3"
   },

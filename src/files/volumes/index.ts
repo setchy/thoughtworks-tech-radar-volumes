@@ -42,7 +42,4 @@ export function generateVolumes(reportType: ReportType) {
   });
 }
 
-export { generateCSV };
-export { generateJSON };
-export { updateGoogleSheets };
-export { formatCSVDataset };
+export { formatCSVDataset, generateCSV, generateJSON, updateGoogleSheets };
