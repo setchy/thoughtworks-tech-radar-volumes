@@ -26,7 +26,7 @@ export async function summarizeStats(
 
   const total = data.length;
 
-  const out: any = { total };
+  const out: StatsOutput = { total };
   if (opts.by === 'volume' || opts.by === 'all' || !opts.by)
     out.byVolume = byVolume;
   if (opts.by === 'quadrant' || opts.by === 'all' || !opts.by)

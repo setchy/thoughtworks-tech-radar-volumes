@@ -32,7 +32,7 @@ jobs:
                   export GOOGLE_SHEET_ID=$GOOGLE_SHEET_ID
                   export GOOGLE_CLIENT_EMAIL=$GOOGLE_CLIENT_EMAIL
                   export GOOGLE_PRIVATE_KEY=$GOOGLE_PRIVATE_KEY
-                  pnpm start
+                  pnpm start fetch all
 
             - name: Create Pull Request
               uses: peter-evans/create-pull-request@c0f553fe549906ede9cf27b5156039d195d2ece0 # v8.1.0

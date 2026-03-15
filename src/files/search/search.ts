@@ -23,7 +23,9 @@ export async function searchData(opts: SearchOpts): Promise<EnrichedBlip[]> {
     }
 
     if (opts.field) {
-      const val = String((entry as any)[opts.field] || '').toLowerCase();
+      const val = String(
+        (entry as unknown as Record<string, unknown>)[opts.field] || '',
+      ).toLowerCase();
       return val.includes(keyword);
     }
 

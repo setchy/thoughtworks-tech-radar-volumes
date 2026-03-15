@@ -1,5 +1,5 @@
 import { FILES } from '../../common/constants';
-import type { BlipTimelineEntry, EnrichedBlip, BlipStatus } from '../../types';
+import type { BlipStatus, BlipTimelineEntry, EnrichedBlip } from '../../types';
 import { readJSONFile } from '../../utils';
 import { getStatus } from '../utils';
 

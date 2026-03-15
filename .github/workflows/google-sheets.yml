@@ -30,4 +30,4 @@ jobs:
                   export GOOGLE_SHEET_ID=$GOOGLE_SHEET_ID
                   export GOOGLE_CLIENT_EMAIL=$GOOGLE_CLIENT_EMAIL
                   export GOOGLE_PRIVATE_KEY=$GOOGLE_PRIVATE_KEY
-                  pnpm start -v google-sheets
+                  pnpm start volumes google-sheets

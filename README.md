@@ -48,31 +48,153 @@ pnpm i && pnpm start help
 
 ### Usage
 
-```
+```text
 Usage: tech-radar-volumes [options] [command]
 
 A CLI tool to fetch and process ThoughtWorks Tech Radar data
 
 Options:
-  -V, --version   output the version number
+  -V, --version     output the version number
+  -h, --help        display help for command
+
+Commands:
+  all               fetch detailed history for all blips and generate
+                    publication volumes
+  links             fetch all radar blip page links from web.
+                    Output: blip links will be saved in `data/links.json`.
+  data              fetch detailed blip history from web.
+                    Inputs: requires `data/links.json`.
+                    Output: detailed history will be saved in
+                    `data/master.json`.
+                    
+  volumes [type]    generate publication volumes in specified format(s).
+                    Inputs: requires `data/master.json`.
+                    Output: generated volumes will be saved in `volumes/*`.
+                    
+  fetch             group commands for fetching/ingesting data
+  search [options]  search master dataset for a keyword (defaults to name and
+                    description)
+  filter [options]  filter master dataset by volume, quadrant, ring or status
+  stats [options]   show statistics for the master dataset
+  help [command]    display help for command
+
+Examples:
+  $ tech-radar-volumes
+  $ tech-radar-volumes fetch links
+  $ tech-radar-volumes fetch data
+  $ tech-radar-volumes volumes csv
+  $ tech-radar-volumes help volumes
+  $ tech-radar-volumes help
+```
+
+#### volumes
+<details>
+<summary>Usage</summary>
+
+```text
+Usage: tech-radar-volumes volumes [options] [type]
+
+generate publication volumes in specified format(s).
+Inputs: requires `data/master.json`.
+Output: generated volumes will be saved in `volumes/*`.
+
+Arguments:
+  type        type of report to generate (choices: "all", "csv", "json",
+              "google-sheets", default: "all")
+
+Options:
+  -h, --help  display help for command
+```
+</details>
+
+#### fetch
+<details>
+<summary>Usage</summary>
+
+```text
+Usage: tech-radar-volumes fetch [options] [command]
+
+group commands for fetching/ingesting data
+
+Options:
   -h, --help      display help for command
 
 Commands:
-  all             fetch detailed history for all blips and generate publication volumes
-  links           fetch all radar blip page links from web.
-                  Output: blip links will be saved in `data/links.json`.
-  data            fetch detailed blip history from web.
-                  Inputs: requires `data/links.json`.
-                  Output: detailed history will be saved in `data/master.json`.
-  volumes [type]  generate publication volumes in specified format(s).
-                  Inputs: requires `data/master.json`.
-                  Output: generated volumes will be saved in `volumes/*`.
+  links           fetch blip page links from sitemap
+  data            fetch detailed blip history and write data/master.json
+  all             run links, data and generate volumes
+  help [command]  display help for command
+```
+</details>
+
+#### search
+<details>
+<summary>Usage</summary>
+
+```text
+Usage: tech-radar-volumes search [options]
+
+search master dataset for a keyword (defaults to name and description)
+
+Options:
+  -k, --keyword <keyword>  keyword to search for
+  -f, --field <field>      specific field to search (name, quadrant, ring,
+                           description)
+  -v, --volume <volume>    filter by volume number or name
+  -o, --output <format>    output format: text|json|jsonl|csv|table (default:
+                           "text")
+  -h, --help               display help for command
+```
+</details>
+
+#### filter
+<details>
+<summary>Usage</summary>
+
+```text
+Usage: tech-radar-volumes filter [options]
+
+filter master dataset by volume, quadrant, ring or status
+
+Options:
+  -v, --volume <volume>      filter by volume number or name
+  -q, --quadrant <quadrant>  filter by quadrant
+  -r, --ring <ring>          filter by ring
+  -s, --status <status>      filter by status (new|moved in|moved out|no change)
+  -o, --output <format>      output format: text|json|jsonl|csv|table (default:
+                             "text")
+  -h, --help                 display help for command
+```
+</details>
+
+#### stats
+<details>
+<summary>Usage</summary>
+
+```text
+Usage: tech-radar-volumes stats [options]
+
+show statistics for the master dataset
+
+Options:
+  -b, --by <group>       group stats by: volume|quadrant|ring|all (default:
+                         "all")
+  -o, --output <format>  output format: text|json|jsonl|csv|table (default:
+                         "text")
+  -h, --help             display help for command
+```
+</details>
+
+Notes:
+
+- Commands that operate on existing data (`search`, `filter`, `stats`, `volumes`) require a populated `data/master.json` file. Generate it with `tech-radar-volumes data`.
+- Output formats (used with `-o`/`--output`): `text` (default), `json`, `jsonl`, `csv`, `table`.
   search          search master dataset for a keyword. Requires `--keyword`.
-                  Options: `--field`, `--volume`, `--output` (text|json|jsonl|csv|table).
+                  Options: `-k/--keyword`, `-f/--field`, `-v/--volume`, `-o/--output` (text|json|jsonl|csv|table).
   filter          filter master dataset by volume, quadrant, ring or status.
-                  Options: `--volume`, `--quadrant`, `--ring`, `--status`, `-s/--status` (new|moved in|moved out|no change), `-o/--output` (text|json|jsonl|csv|table).
+                  Options: `-v/--volume`, `-q/--quadrant`, `-r/--ring`, `-s/--status` (new|moved in|moved out|no change), `-o/--output` (text|json|jsonl|csv|table).
   stats           show dataset statistics grouped by volume, quadrant, ring.
-                  Options: `--by` (volume|quadrant|ring|all), `--output` (text|json|jsonl|csv|table).
+                  Options: `-b/--by` (volume|quadrant|ring|all), `-o/--output` (text|json|jsonl|csv|table).
   help [command]  display help for command
 
 Examples:
@@ -81,31 +203,11 @@ Examples:
   $ tech-radar-volumes data
   $ tech-radar-volumes volumes csv
   $ tech-radar-volumes search -k react
-  $ tech-radar-volumes search -k "test cafe" --output=json
-  $ tech-radar-volumes filter -v 10 -q "languages-and-frameworks" --output=csv
+  $ tech-radar-volumes search -k "test cafe" -o json
+  $ tech-radar-volumes filter -v 10 -q "languages-and-frameworks" -o csv
   $ tech-radar-volumes stats --by=volume -o table
   $ tech-radar-volumes help volumes
   $ tech-radar-volumes help
-
-Notes:
-- Commands that operate on existing data (`search`, `filter`, `stats`, `volumes`) require a populated `data/master.json` file. Generate it with:
-
-```
-tech-radar-volumes data
-```
-
-- Output format: by default the commands print human-readable summaries (`text`). Use `-o` or `--output=<format>` to change the format. Supported formats:
-  - `text` — human readable (default)
-  - `json` — pretty-printed JSON
-  - `jsonl` — newline-delimited JSON (one object per line)
-  - `csv` — CSV rows suitable for piping or saving
-  - `table` — formatted table output (console.table)
-
-- Common flags:
-  - `--keyword` / `-k`: keyword to search for (required for `search`).
-  - `--field` / `-f`: restrict search to a specific field (`name`, `quadrant`, `ring`, `description`).
-  - `--by` / `-b`: group stats by `volume`, `quadrant`, `ring`, or `all`.
-```
 
 <!-- LINK LABELS -->
 <!-- Web -->
