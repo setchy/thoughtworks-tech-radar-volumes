@@ -376,6 +376,13 @@ program.on('--help', () => {
   console.log('  $ tech-radar-volumes fetch links');
   console.log('  $ tech-radar-volumes fetch data');
   console.log('  $ tech-radar-volumes volumes csv');
+  console.log('  $ tech-radar-volumes stats --by=quadrant -o json');
+  console.log('  $ tech-radar-volumes search -k react');
+  console.log('  $ tech-radar-volumes search -k "test cafe" -o json');
+  console.log(
+    '  $ tech-radar-volumes filter -v 10 -q "languages-and-frameworks" -o csv',
+  );
+  console.log('  $ tech-radar-volumes stats --by=volume -o table');
   console.log('  $ tech-radar-volumes help volumes');
   console.log('  $ tech-radar-volumes help');
   console.log('');
