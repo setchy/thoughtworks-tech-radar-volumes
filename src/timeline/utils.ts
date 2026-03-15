@@ -1,22 +1,18 @@
-import { JSDOM } from 'jsdom';
+import { load } from 'cheerio';
 
 import {
   NOT_FOUND_VOLUME_NUMBER,
   VOLUME_PUBLICATION_DATES,
 } from '../common/constants';
 
-export function getRingNameFromBlipDOM(dom: JSDOM): string {
+export function getRingNameFromBlipDOM(html: string): string {
   const cssClass = 'cmp-blip-timeline__item--ring';
 
-  const quadrantDiv = dom.window.document.querySelector(`div.${cssClass}`);
-  const quadrantDOM = new JSDOM(quadrantDiv?.innerHTML || '');
+  const $ = load(html);
+  const quadrantDiv = $(`div.${cssClass}`).first();
+  const spanText = quadrantDiv.find('span').first().text() || '';
 
-  return (
-    quadrantDOM.window.document
-      .querySelector('span')
-      ?.innerHTML.trim()
-      .toLowerCase() || ''
-  );
+  return spanText.trim().toLowerCase();
 }
 
 // Format is: /radar/quadrant-name/blip-name
@@ -28,24 +24,19 @@ export function getQuadrantNameFromPath(path: string | null): string {
   return 'unknown';
 }
 
-export function getPublishedDateFromBlipDOM(dom: JSDOM): string {
+export function getPublishedDateFromBlipDOM(html: string): string {
   const cssClass = 'cmp-blip-timeline__item--time';
+  const $ = load(html);
 
-  return (
-    dom.window.document.querySelector(`div.${cssClass}`)?.innerHTML.trim() || ''
-  );
+  return ($(`div.${cssClass}`).first().text() || '').trim();
 }
 
-export function getDescriptionHTMLFromBlipDOM(dom: JSDOM): string {
+export function getDescriptionHTMLFromBlipDOM(html: string): string {
   const cssClass = 'blip-timeline-description';
+  const $ = load(html);
 
-  return (
-    dom.window.document
-      .querySelector(`div.${cssClass}`)
-      ?.innerHTML.trim()
-      // Remove the 'data-faitracker-click-bind' attribute for consistent description extraction
-      .replace(/data-faitracker-click-bind="true"\s*/g, '') || ''
-  );
+  const inner = $(`div.${cssClass}`).first().html() || '';
+  return inner.trim().replace(/data-faitracker-click-bind="true"\s*/g, '');
 }
 
 export function getVolumeNameFromDate(publishedDate: string): number {
