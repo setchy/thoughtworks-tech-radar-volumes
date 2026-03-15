@@ -1,12 +1,10 @@
 import { exit } from 'node:process';
 
-import { JSDOM } from 'jsdom';
+import { load } from 'cheerio';
 import _ from 'lodash';
-import puppeteer, { type Page } from 'puppeteer';
 
 import {
   FILES,
-  PUPPETEER_SPEED_MS,
   QUADRANT_SORT_ORDER,
   RING_SORT_ORDER,
 } from '../common/constants';
@@ -20,16 +18,7 @@ import {
   getVolumeNameFromDate,
 } from './utils';
 
-let page: Page;
-
 export async function generateMasterData() {
-  const browser = await puppeteer.launch({
-    headless: true,
-    slowMo: PUPPETEER_SPEED_MS, // To reduce chance of CloudFront rate limiting
-    args: ['--no-sandbox', '--disable-setuid-sandbox'], // FIXME: workaround
-  });
-  page = await browser.newPage();
-
   const masterData: MasterData = {
     blipEntries: [],
   };
@@ -42,16 +31,12 @@ export async function generateMasterData() {
 
   for (const [index, link] of radarLinks.entries()) {
     console.log(
-      `${index + 1} of ${
-        radarLinks.length
-      }: Extracting blip timeline from ${link}`,
+      `${index + 1} of ${radarLinks.length}: Extracting blip timeline from ${link}`,
     );
 
     const blipMasterData: MasterData = await extractBlipTimeline(link);
     masterData.blipEntries.push(...blipMasterData.blipEntries);
   }
-
-  browser.close();
 
   const sortedMasterData = _.orderBy(masterData.blipEntries, [
     'volume',
@@ -68,33 +53,29 @@ export async function extractBlipTimeline(
 ): Promise<MasterData> {
   const { pathname } = new URL(blipURL);
 
-  const response = await page.goto(blipURL);
+  const response = await fetch(blipURL);
 
-  if (response?.status() === 403) {
+  if (response.status === 403) {
     console.error(
       'Encountered HTTP 403 Forbidden: Cloudflare has rate limited us...',
     );
     exit(1);
   }
 
-  const blipMasterData: MasterData = {
-    blipEntries: [],
-  };
+  const html = await response.text();
 
-  await page.waitForSelector('div[blip="blip"]');
+  const $ = load(html);
 
-  const timelineEntries = await page.$$eval(
-    'div[blip="blip"]',
-    (publications) => publications.map((publication) => publication.innerHTML),
-  );
+  const blipMasterData: MasterData = { blipEntries: [] };
 
-  const blipNameElement = await page.$(
-    '.hero-banner__overlay__container__title',
-  );
-  const blipName =
-    (await blipNameElement?.evaluate((element) =>
-      element.textContent?.trim(),
-    )) || '';
+  const timelineNodes = $('div[blip="blip"]');
+  const timelineEntries: string[] = timelineNodes
+    .toArray()
+    .map((el) => $(el).html() || '');
+
+  const blipName = (
+    $('.hero-banner__overlay__container__title').text() || ''
+  ).trim();
 
   for (const blipPublicationHtml of timelineEntries) {
     const blipTimelineEntry: BlipTimelineEntry =
@@ -120,13 +101,11 @@ function createBlipTimelineEntryFromPublication(
   blipPublicationHtml: string,
   path: string | null,
 ) {
-  const blipUpdateDOM = new JSDOM(blipPublicationHtml);
-
-  const publishedDate = getPublishedDateFromBlipDOM(blipUpdateDOM);
+  const publishedDate = getPublishedDateFromBlipDOM(blipPublicationHtml);
   const volume = getVolumeNameFromDate(publishedDate);
   const quadrant = getQuadrantNameFromPath(path);
-  const ring = getRingNameFromBlipDOM(blipUpdateDOM);
-  const descriptionHtml = getDescriptionHTMLFromBlipDOM(blipUpdateDOM);
+  const ring = getRingNameFromBlipDOM(blipPublicationHtml);
+  const descriptionHtml = getDescriptionHTMLFromBlipDOM(blipPublicationHtml);
 
   const blipTimelineEntry: BlipTimelineEntry = {
     name: blipName,
