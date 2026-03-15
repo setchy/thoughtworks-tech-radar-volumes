@@ -82,7 +82,7 @@ program
   )
   .option('-v, --volume <volume>', 'filter by volume number or name')
   .option(
-    '--output <format>',
+    '-o, --output <format>',
     'output format: text|json|jsonl|csv|table',
     'text',
   )
@@ -191,7 +191,7 @@ program
   .description('show statistics for the master dataset')
   .option('-b, --by <group>', 'group stats by: volume|quadrant|ring|all', 'all')
   .option(
-    '--output <format>',
+    '-o, --output <format>',
     'output format: text|json|jsonl|csv|table',
     'text',
   )
