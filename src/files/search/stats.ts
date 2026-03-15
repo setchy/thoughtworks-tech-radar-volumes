@@ -18,8 +18,10 @@ export async function summarizeStats(opts: StatsOpts = {}) {
   const total = data.length;
 
   const out: any = { total };
-  if (opts.by === 'volume' || opts.by === 'all' || !opts.by) out.byVolume = byVolume;
-  if (opts.by === 'quadrant' || opts.by === 'all' || !opts.by) out.byQuadrant = byQuadrant;
+  if (opts.by === 'volume' || opts.by === 'all' || !opts.by)
+    out.byVolume = byVolume;
+  if (opts.by === 'quadrant' || opts.by === 'all' || !opts.by)
+    out.byQuadrant = byQuadrant;
   if (opts.by === 'ring' || opts.by === 'all' || !opts.by) out.byRing = byRing;
 
   return out;

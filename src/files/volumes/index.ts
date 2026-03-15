@@ -1,8 +1,15 @@
 import _ from 'lodash';
+
+import {
+  FILES,
+  QUADRANT_SORT_ORDER,
+  RING_SORT_ORDER,
+} from '../../common/constants';
 import type { BlipTimelineEntry, ReportType } from '../../types';
-import { QUADRANT_SORT_ORDER, RING_SORT_ORDER, FILES } from '../../common/constants';
 import { readJSONFile } from '../../utils';
-import { generateCSV, generateJSON, updateGoogleSheets, formatCSVDataset } from './csv';
+import { formatCSVDataset, generateCSV } from './csv';
+import { updateGoogleSheets } from './googleSheets';
+import { generateJSON } from './json';
 
 export function generateVolumes(reportType: ReportType) {
   const data = readJSONFile<BlipTimelineEntry[]>(FILES.DATA.MASTER);

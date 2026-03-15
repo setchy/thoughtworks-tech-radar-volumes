@@ -1,10 +1,15 @@
 import { exit } from 'node:process';
+
 import { google } from 'googleapis';
+
 import { CSV_HEADERS, URLS } from '../../common/constants';
 import type { BlipTimelineEntry } from '../../types';
 import { getVolumePublicationDate } from '../utils';
 
-export async function updateGoogleSheets(volume: string, volumeData: BlipTimelineEntry[]) {
+export async function updateGoogleSheets(
+  volume: string,
+  volumeData: BlipTimelineEntry[],
+) {
   const data = volumeData.map((blip) => [
     blip.name,
     blip.ring,

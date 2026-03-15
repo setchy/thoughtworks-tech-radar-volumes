@@ -3,6 +3,7 @@ import _ from 'lodash';
 import { FILES } from '../../common/constants';
 import type { BlipTimelineEntry } from '../../types';
 import { readJSONFile } from '../../utils';
+import { getStatus } from '../utils';
 
 type SearchOpts = {
   keyword: string;
@@ -16,7 +17,9 @@ export async function searchData(opts: SearchOpts) {
 
   const filtered = data.filter((entry) => {
     if (opts.volume) {
-      if (!String(entry.volume).toLowerCase().includes(opts.volume.toLowerCase())) {
+      if (
+        !String(entry.volume).toLowerCase().includes(opts.volume.toLowerCase())
+      ) {
         return false;
       }
     }
@@ -27,8 +30,12 @@ export async function searchData(opts: SearchOpts) {
     }
 
     // Default: search name and descriptionHtml
-    const nameMatch = String(entry.name || '').toLowerCase().includes(keyword);
-    const descMatch = String(entry.descriptionHtml || '').toLowerCase().includes(keyword);
+    const nameMatch = String(entry.name || '')
+      .toLowerCase()
+      .includes(keyword);
+    const descMatch = String(entry.descriptionHtml || '')
+      .toLowerCase()
+      .includes(keyword);
 
     return nameMatch || descMatch;
   });
@@ -39,6 +46,6 @@ export async function searchData(opts: SearchOpts) {
     ring: e.ring,
     volume: e.volume,
     description: e.descriptionHtml,
-    status: e.status,
+    status: getStatus(e),
   }));
 }
