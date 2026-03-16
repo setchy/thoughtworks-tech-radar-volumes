@@ -15,6 +15,7 @@ export function generateJSON(volume: string, volumeData: BlipTimelineEntry[]) {
     isNew: row.isNew.toString().toUpperCase(),
     status: getStatus(row),
     description: escapeDescriptionHTML(row.descriptionHtml),
+    relatedBlips: row.relatedBlips,
   }));
 
   const filename = `${FILES.VOLUMES.FOLDER}/json/${getVolumeFileName(volume)}.json`;

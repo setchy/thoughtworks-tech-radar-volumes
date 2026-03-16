@@ -15,6 +15,7 @@ export function formatCSVDataset(data: BlipTimelineEntry[]) {
     blip.isNew.toString().toUpperCase(),
     getStatus(blip),
     escapeDescriptionHTML(blip.descriptionHtml),
+    blip.relatedBlips.join(';'),
   ]);
 }
 
