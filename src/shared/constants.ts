@@ -24,6 +24,7 @@ export const CSV_HEADERS = [
   'isNew',
   'status',
   'description',
+  'relatedBlips',
 ];
 
 export const VOLUME_PUBLICATION_DATES = [
@@ -92,4 +93,5 @@ export const SEARCHABLE_FIELDS = [
   'isNew',
   'hasMovedIn',
   'hasMovedOut',
+  'relatedBlips',
 ] as const;

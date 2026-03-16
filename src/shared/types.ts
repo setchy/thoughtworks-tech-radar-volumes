@@ -18,6 +18,7 @@ export interface BlipTimelineEntry {
   isNew: boolean;
   hasMovedIn: boolean;
   hasMovedOut: boolean;
+  relatedBlips: string[];
 }
 
 export interface EnrichedBlip extends BlipTimelineEntry {

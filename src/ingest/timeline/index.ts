@@ -10,10 +10,12 @@ import {
   RING_SORT_ORDER,
 } from '../../shared/constants';
 import type { BlipTimelineEntry, MasterData } from '../../shared/types';
+import { SELECTORS } from './selectors';
 import {
   getDescriptionHTMLFromBlipDOM,
   getPublishedDateFromBlipDOM,
   getQuadrantNameFromPath,
+  getRelatedBlipsFromBlipDOM,
   getRingNameFromBlipDOM,
   getVolumeNameFromDate,
 } from './utils';
@@ -68,14 +70,14 @@ export async function extractBlipTimeline(
 
   const blipMasterData: MasterData = { blipEntries: [] };
 
-  const timelineNodes = $('div[blip="blip"]');
+  const timelineNodes = $(SELECTORS.TIMELINE_NODES);
   const timelineEntries: string[] = timelineNodes
     .toArray()
     .map((el) => $(el).html() || '');
 
-  const blipName = (
-    $('.hero-banner__overlay__container__title').text() || ''
-  ).trim();
+  const blipName = ($(SELECTORS.BLIP_NAME).text() || '').trim();
+
+  const relatedBlips = getRelatedBlipsFromBlipDOM(html);
 
   for (const blipPublicationHtml of timelineEntries) {
     const blipTimelineEntry: BlipTimelineEntry =
@@ -83,6 +85,7 @@ export async function extractBlipTimeline(
         blipName,
         blipPublicationHtml,
         pathname,
+        relatedBlips,
       );
 
     blipMasterData.blipEntries.push(blipTimelineEntry);
@@ -100,6 +103,7 @@ function createBlipTimelineEntryFromPublication(
   blipName: string,
   blipPublicationHtml: string,
   path: string | null,
+  relatedBlips: string[],
 ) {
   const publishedDate = getPublishedDateFromBlipDOM(blipPublicationHtml);
   const volume = getVolumeNameFromDate(publishedDate);
@@ -114,6 +118,7 @@ function createBlipTimelineEntryFromPublication(
     volume: volume,
     publishedDate: publishedDate,
     descriptionHtml: descriptionHtml,
+    relatedBlips: relatedBlips,
 
     // Default these to false - will be reset after calculating movements
     isNew: false,
@@ -135,6 +140,7 @@ function calculateBlipMovements(blipMasterData: MasterData) {
         RING_SORT_ORDER,
         blipMasterData.blipEntries[i].ring,
       );
+
       const previousRingIndex = _.indexOf(
         RING_SORT_ORDER,
         blipMasterData.blipEntries[i - 1].ring,
