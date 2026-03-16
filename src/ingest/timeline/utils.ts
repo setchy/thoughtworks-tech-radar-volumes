@@ -8,7 +8,8 @@ import { SELECTORS } from './selectors';
 
 export function getRingNameFromBlipDOM(html: string): string {
   const $ = load(html);
-  const quadrantDiv = $(`div.${SELECTORS.TIMELINE_ENTRY.RING}`).first();
+
+  const quadrantDiv = $(SELECTORS.TIMELINE_ENTRY.RING).first();
   const spanText = quadrantDiv.find('span').first().text() || '';
 
   return spanText.trim().toLowerCase();
@@ -26,17 +27,13 @@ export function getQuadrantNameFromPath(path: string | null): string {
 export function getPublishedDateFromBlipDOM(html: string): string {
   const $ = load(html);
 
-  return (
-    $(`div.${SELECTORS.TIMELINE_ENTRY.TIME}`).first().text() || ''
-  ).trim();
+  return ($(SELECTORS.TIMELINE_ENTRY.TIME).first().text() || '').trim();
 }
 
 export function getDescriptionHTMLFromBlipDOM(html: string): string {
   const $ = load(html);
 
-  return (
-    $(`div.${SELECTORS.TIMELINE_ENTRY.DESCRIPTION}`).first().html() || ''
-  ).trim();
+  return ($(SELECTORS.TIMELINE_ENTRY.DESCRIPTION).first().html() || '').trim();
 }
 
 export function getVolumeNameFromDate(publishedDate: string): number {
@@ -61,6 +58,7 @@ export function getRelatedBlipsFromBlipDOM(html: string): string[] {
   ).each((_, el) => {
     const ariaLabel = $(el).attr('aria-label') || '';
     const blipName = ariaLabel.split(',')[0]?.trim();
+
     if (blipName) {
       relatedBlips.push(blipName);
     }
