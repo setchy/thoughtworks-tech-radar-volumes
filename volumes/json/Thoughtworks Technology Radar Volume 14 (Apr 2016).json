@@ -24,9 +24,7 @@
     "isNew": "FALSE",
     "status": "no change",
     "description": "\"\"",
-    "relatedBlips": [
-      "Security sandwich"
-    ]
+    "relatedBlips": ["Security sandwich"]
   },
   {
     "name": "BFF - Backend for frontends",

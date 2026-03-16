@@ -249,9 +249,7 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p>Outside the function code itself, applications written as serverless functions are tightly coupled to the cloud platform on which they're hosted. Although events are a common FaaS-triggering mechanism, and every cloud provider supports them in some form, the current proprietary specifications prevent interoperability across clouds. The <strong><a href=\"\"https://cloudevents.io/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">CloudEvents</a></strong> specification is a burgeoning standard that has been accepted into the <a href=\"\"https://www.cncf.io/sandbox-projects/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">CNCF Sandbox</a>. The standard is still in active development but several language bindings exist and Microsoft has announced first-class support in <a href=\"\"https://www.thoughtworks.com/radar/platforms/azure\"\">Azure</a>. We're hoping other cloud providers will follow suit.</p>\"",
-    "relatedBlips": [
-      "Serverless architecture"
-    ]
+    "relatedBlips": ["Serverless architecture"]
   },
   {
     "name": "Cloudflare Workers",
@@ -269,10 +267,7 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p>As a group we have mixed feelings about programming in JavaScript on the server side, especially when the rationale for doing so is simply to avoid <a href=\"\"https://www.thoughtworks.com/radar/techniques/polyglot-programming\"\">polyglot programming</a>. That said, if you decide to use JavaScript or TypeScript on the server, have a look at <strong><a href=\"\"https://deno.land/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Deno</a></strong>. Written by Ryan Dahl, the inventor of Node.js, Deno aims to avoid what Ryan considers mistakes that were made in Node.js. It brings a strict sandbox system and built-in dependency and package management, and it supports <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/typescript\"\">TypeScript</a> out of the box. Deno is built using <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/rust\"\">Rust</a> and V8.</p>\"",
-    "relatedBlips": [
-      "Node.js",
-      "Polyglot programming"
-    ]
+    "relatedBlips": ["Node.js", "Polyglot programming"]
   },
   {
     "name": "Honeycomb",

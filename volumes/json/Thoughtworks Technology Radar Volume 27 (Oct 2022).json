@@ -24,9 +24,7 @@
     "isNew": "FALSE",
     "status": "no change",
     "description": "\"<p>We continue to recommend that teams carry out <strong><a href=\"\"https://www.owasp.org/index.php/Category:Threat_Modeling\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">threat modeling</a></strong> — a set of techniques to help you identify and classify potential threats during the development process — but we want to emphasize that this is not a one-off activity only done at the start of projects; teams need to avoid the <a href=\"\"https://www.thoughtworks.com/radar/techniques/security-sandwich\"\">security sandwich</a>. This is because throughout the lifetime of any software, new threats will emerge and existing ones will continue to evolve thanks to external events and ongoing changes to requirements and architecture. This means that threat modeling needs to be repeated periodically — the frequency of repetition will depend on the circumstances and will need to consider factors such as the cost of running the exercise and the potential risk to the business. When used in conjunction with other techniques, such as establishing cross-functional security requirements to address common risks in the project's technologies and using automated security scanners, threat modeling can be a powerful asset.</p>\"",
-    "relatedBlips": [
-      "Security sandwich"
-    ]
+    "relatedBlips": ["Security sandwich"]
   },
   {
     "name": "BERT",
@@ -116,14 +114,7 @@
     "isNew": "FALSE",
     "status": "no change",
     "description": "\"<p>With continued pressure to keep systems secure and no reduction in the general threat landscape, a machine-readable <strong>Software Bill of Materials</strong> (SBOM) may help teams stay on top of security problems in the libraries that they rely on. Since the original <a href=\"\"https://www.whitehouse.gov/briefing-room/presidential-actions/2021/05/12/executive-order-on-improving-the-nations-cybersecurity/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Executive Order</a> was published, the industry has gained clarity and understanding of what an SBOM is and how to create one; the National Institute of Standards and Technology (NIST), for example, now has more <a href=\"\"https://www.nist.gov/itl/executive-order-14028-improving-nations-cybersecurity/software-security-supply-chains-software-1\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">specific advice</a> on how to comply with the order. We've had production experience using SBOMs on projects ranging from small companies to large multinationals and even government departments, and we're convinced they provide a benefit. More organizations and governments should consider requiring SBOMs for the software they use. The technique will be strengthened by the new tools that continue to emerge, such as the <a href=\"\"https://firebase.google.com/docs/android/learn-more#bom\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Firebase Android BOM</a> that automatically aligns an application's library dependencies to those listed in the BOM.</p>\"",
-    "relatedBlips": [
-      "Syft",
-      "Trivy",
-      "Snyk",
-      "FOSSA",
-      "Chainloop",
-      "CycloneDX"
-    ]
+    "relatedBlips": ["Syft", "Trivy", "Snyk", "FOSSA", "Chainloop", "CycloneDX"]
   },
   {
     "name": "Carbon efficiency as an architectural characteristic",
@@ -294,9 +285,7 @@
     "isNew": "FALSE",
     "status": "moved in",
     "description": "\"<p>Since we first mentioned <a href=\"\"https://www.thoughtworks.com/radar/techniques/data-discoverability\"\">data discoverability</a> in the Radar, LinkedIn has evolved <a href=\"\"https://engineering.linkedin.com/blog/2016/03/open-sourcing-wherehows--a-data-discovery-and-lineage-portal\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">WhereHows</a> to <strong><a href=\"\"https://github.com/linkedin/datahub\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">DataHub</a></strong>, the next generation platform that addresses data discoverability via an extensible metadata system. Instead of crawling and pulling metadata, DataHub adopts a push-based model where individual components of the data ecosystem publish metadata via an API or a stream to the central platform. This push-based integration shifts ownership from the central entity to individual teams, making them accountable for their metadata. As a result, we've used DataHub successfully as an organization-wide metadata repository and entry point for multiple autonomously maintained data products. When taking this approach, be sure to keep it lightweight and avoid the slippery slope leading to centralized control over a shared resource.</p>\"",
-    "relatedBlips": [
-      "Data product thinking"
-    ]
+    "relatedBlips": ["Data product thinking"]
   },
   {
     "name": "DataOps.live",
@@ -377,12 +366,7 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p><strong><a href=\"\"https://github.com/oven-sh/bun\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Bun</a></strong> is a new JavaScript runtime, similar to <a href=\"\"https://www.thoughtworks.com/radar/platforms/node-js\"\">Node.js</a> or <a href=\"\"https://www.thoughtworks.com/radar/platforms/deno\"\">Deno</a>. Unlike Node.js or Deno, however, Bun is built using WebKit's JavaScriptCore instead of Chrome's V8 engine. Designed as a drop-in replacement for Node.js, Bun is a single binary (written in <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/zig\"\">Zig</a>) that acts as a bundler, transpiler and package manager for JavaScript and <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/typescript\"\">TypeScript</a> applications. Bun is currently in beta, so expect bugs or compatibility issues with a few Node.js libraries. However, it’s been built from the ground up with several optimizations, including fast startup and improved server-side rendering, and we believe it’s worthwhile to assess.</p>\"",
-    "relatedBlips": [
-      "Node.js",
-      "Deno",
-      "Zig",
-      "TypeScript"
-    ]
+    "relatedBlips": ["Node.js", "Deno", "Zig", "TypeScript"]
   },
   {
     "name": "Databricks Unity Catalog",
@@ -508,10 +492,7 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p>Multi-team account management is a challenge in AWS, especially in setup and governance; <a href=\"\"https://aws.amazon.com/controltower\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\"><strong>AWS Control Tower</strong></a> is an attempt to address this challenge. Our team has reported good results using it to manage accounts and access control for multiple teams in the organization through a single, centralized place.</p>\"",
-    "relatedBlips": [
-      "Infrastructure as code",
-      "GitHub Actions"
-    ]
+    "relatedBlips": ["Infrastructure as code", "GitHub Actions"]
   },
   {
     "name": "Clumio Protect",
@@ -655,11 +636,7 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p>One of the fundamental capabilities of <a href=\"\"https://www.thoughtworks.com/radar/platforms/kubernetes\"\">Kubernetes</a> is its ability to automatically launch new pods when additional capacity is needed and shut them down when loads decrease. This horizontal autoscaling is a useful feature, but it can only work if the nodes needed to host the pods already exist. While <a href=\"\"https://github.com/kubernetes/autoscaler/tree/master/cluster-autoscaler\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Cluster Autoscaler</a> can do some rudimentary cluster expansion triggered by pod failures, it has limited flexibility; <strong><a href=\"\"https://karpenter.sh/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Karpenter</a></strong>, however, is an open-source <a href=\"\"https://www.thoughtworks.com/radar/tools/kubernetes-operators\"\">Kubernetes Operator</a> autoscaler with more smarts built in: it analyzes the current workloads and the pod scheduling constraints to automatically select an appropriate instance type and then start or stop it as needed. Karpenter is an operator in the spirit of tools like <a href=\"\"https://www.thoughtworks.com/radar/tools/crossplane\"\">Crossplane</a> that can provision cloud resources outside the cluster. Karpenter is an attractive companion to the autoscaling services cloud vendors provide natively with their managed Kubernetes clusters. For example, AWS now supports Karpenter as a first-class alternative in their EKS Cluster Autoscaler service.</p>\"",
-    "relatedBlips": [
-      "Kubernetes",
-      "Kubernetes Operators",
-      "Crossplane"
-    ]
+    "relatedBlips": ["Kubernetes", "Kubernetes Operators", "Crossplane"]
   },
   {
     "name": "Kubeshark",

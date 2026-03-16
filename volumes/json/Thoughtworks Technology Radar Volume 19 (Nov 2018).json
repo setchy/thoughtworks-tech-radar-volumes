@@ -375,9 +375,7 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p>We're quite interested in <a href=\"\"https://pulumi.io/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\"><strong>Pulumi</strong></a>, a promising entrant in cloud infrastructure automation. Pulumi distinguishes itself by allowing configurations to be written in <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/typescript\"\">TypeScript</a>/JavaScript, <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/python-3\"\">Python</a>, and Go—no YAML required. Pulumi is tightly focused on cloud-native architectures—including containers, serverless functions and data services—and provides good support for Kubernetes.</p>\"",
-    "relatedBlips": [
-      "Terraform"
-    ]
+    "relatedBlips": ["Terraform"]
   },
   {
     "name": "Quorum",

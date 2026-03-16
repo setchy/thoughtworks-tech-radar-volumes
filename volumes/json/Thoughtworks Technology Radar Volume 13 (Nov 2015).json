@@ -51,9 +51,7 @@
     "isNew": "FALSE",
     "status": "moved in",
     "description": "\"<p>With the number of high-profile security breaches in the past months, software development teams no longer need convincing that they must place an emphasis on writing secure software and dealing with their users’ data in a responsible way. The teams face a steep learning curve, though, and the vast number of potential threats - ranging from organized crime and government spying to teenagers who attack systems 'for the lulz' can be overwhelming. <a href=\"\"https://www.owasp.org/index.php/Category:Threat_Modeling\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\"><strong>Threat modeling</strong></a> provides a set of techniques, mostly from a defensive perspective, that help you understand and classify potential threats. Turned into 'evil-user stories', threat models can give a team a manageable and effective approach to making their systems more secure.</p>\"",
-    "relatedBlips": [
-      "Security sandwich"
-    ]
+    "relatedBlips": ["Security sandwich"]
   },
   {
     "name": "BEM",
