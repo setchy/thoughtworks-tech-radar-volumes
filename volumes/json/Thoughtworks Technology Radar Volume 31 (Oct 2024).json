@@ -15,7 +15,9 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p>Automated testing remains a cornerstone of effective software development. For front-end tests we can argue whether the distribution of different test types should be the classic <a href=\"\"https://martinfowler.com/articles/practical-test-pyramid.html\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">test pyramid</a> or whether it should be a <a href=\"\"https://kentcdodds.com/blog/static-vs-unit-vs-integration-vs-e2e-tests\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">trophy</a> shape. In either case, though, teams should focus on <strong>component testing</strong> because test suites should be stable and run quickly. Instead, what we're seeing is that teams forgo mastering component testing in favor of end-to-end browser-based testing as well as very narrowly defined unit tests. Unit tests have a tendency to force components to expose what should be purely internal functionality, while browser-based tests are slow, more flaky and harder to debug. Our recommendation is to have a significant amount of component tests and use a library like <a href=\"\"https://www.npmjs.com/package/jsdom\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">jsdom</a> to run the component tests <em>in memory</em>. Browser tools like <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/playwright\"\">Playwright</a> of course still have a place in end-to-end tests, but they shouldn't be used for component testing.</p>\"",
-    "relatedBlips": ["Playwright"]
+    "relatedBlips": [
+      "Playwright"
+    ]
   },
   {
     "name": "Continuous deployment",
@@ -45,7 +47,9 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p>Domain-driven design (DDD) has become a foundational approach to the way we develop software. We use it to model events, to guide software designs, to establish context boundaries around microservices and to elaborate nuanced business requirements. DDD establishes a ubiquitous language that both nontechnical stakeholders and software developers can use to communicate effectively about the business. Once established, domain models evolve, but many teams find it hard to get started with DDD. There’s no one-size-fits-all approach to building an initial domain model. One promising technique we've encountered recently is <strong><a href=\"\"https://domainstorytelling.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">domain storytelling</a></strong>. Domain storytelling is a facilitation technique where business experts are prompted to describe activities in the business. As the experts are guided through their narration, a facilitator uses a pictographic language to capture the relationships and actions between entities and actors. The process of making these stories visible helps to clarify and develop a shared understanding among participants. Since there is no single best approach to developing a domain model, domain storytelling offers a noteworthy alternative or, for a more comprehensive approach to DDD, companion to <a href=\"\"https://www.thoughtworks.com/radar/techniques/event-storming\"\">Event Storming</a>, another technique we often use to get started with DDD.</p>\"",
-    "relatedBlips": ["Event Storming"]
+    "relatedBlips": [
+      "Event Storming"
+    ]
   },
   {
     "name": "Fine-tuning embedding models",
@@ -66,7 +70,9 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p><strong>Function calling with LLMs</strong> refers to the ability to integrate LLMs with external functions, APIs or tools by determining and invoking the appropriate function based on a given query and associated documentation. This extends the utility of LLMs beyond text generation, allowing them to perform specific tasks such as information retrieval, code execution and API interaction. By triggering external functions or APIs, LLMs can perform actions that were previously outside their standalone capabilities. This technique enables LLMs to act on their outputs, effectively bridging the gap between thought and action — similar to how humans use tools to accomplish various tasks. By introducing function calling, LLMs add determinism and factuality to the generation process, striking a balance between creativity and logic. This method allows LLMs to connect to internal systems and databases or even perform internet searches via connected browsers. Models like OpenAI's GPT series support function calling and fine-tuned models like Gorilla are specifically designed to enhance the accuracy and consistency of generating executable API calls from natural language instructions. As a technique, function calling fits within <a href=\"\"https://www.thoughtworks.com/radar/techniques/retrieval-augmented-generation-rag\"\">retrieval-augmented generation (RAG)</a> and agent architectures. It should be viewed as an abstract pattern of use, emphasizing its potential as a foundational tool in diverse implementations rather than a specific solution.</p>\"",
-    "relatedBlips": ["Retrieval-augmented generation (RAG)"]
+    "relatedBlips": [
+      "Retrieval-augmented generation (RAG)"
+    ]
   },
   {
     "name": "LLM as a judge",
@@ -128,7 +134,9 @@
     "isNew": "FALSE",
     "status": "no change",
     "description": "\"<p>AI coding assistance tools are mostly talked about in the context of assisting and enhancing an individual contributor's work. However, software delivery is and will remain team work, so you should be looking for ways to create <strong>AI team assistants</strong> that help create the 10x team, as opposed to a bunch of siloed AI-assisted <a href=\"\"https://www.thoughtworks.com/radar/techniques/10x-engineers\"\">10x engineers</a>. Fortunately, recent developments in the tools market are moving us closer to making this a reality. <a href=\"\"https://www.thoughtworks.com/radar/platforms/unblocked\"\">Unblocked</a> is a platform that pulls together all of a team's knowledge sources and integrates them intelligently into team members' tools. And <a href=\"\"https://www.atlassian.com/software/rovo\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Atlassian's Rovo</a> brings AI into the most widely used team collaboration platform, giving teams new types of search and access to their documentation, in addition to unlocking new ways of automation and software practice support with Rovo agents. While we wait for the market to further evolve in this space, we've been exploring the potential of AI for knowledge amplification and team practice support ourselves: We open-sourced our <a href=\"\"https://github.com/tw-haiven/haiven\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Haiven team assistant</a> and started gathering learnings with <a href=\"\"https://www.thoughtworks.com/insights/blog/generative-ai/using-ai-requirements-analysis-case-study\"\">AI assistance for noncoding tasks like requirements analysis</a>.</p>\"",
-    "relatedBlips": ["Unblocked"]
+    "relatedBlips": [
+      "Unblocked"
+    ]
   },
   {
     "name": "Dynamic few-shot prompting",
@@ -146,7 +154,9 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p><strong>GraphQL for data products</strong> is the technique of using GraphQL as an output port for data products for clients to consume the product. We've talked about <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/graphql\"\">GraphQL</a> as an API protocol and how it enables developers to create a unified API layer that abstracts away the underlying data complexity, providing a more cohesive and manageable interface for clients. GraphQL for data products makes it seamless for consumers to discover the data format and relationships with GraphQL schema and use familiar client tools. Our teams are exploring this technique in specific use cases like talk-to-data to explore and discover big data insights with the help of large language models, where the GraphQL queries are constructed by LLMs based on the user prompt and the GraphQL schema is used in the LLM prompts for reference.</p>\"",
-    "relatedBlips": ["GraphQL"]
+    "relatedBlips": [
+      "GraphQL"
+    ]
   },
   {
     "name": "LLM-powered autonomous agents",
@@ -173,7 +183,9 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p>Large language models (LLMs) can now run in web browsers and on edge devices like smartphones and laptops, enabling on-device AI applications. This allows for secure handling of sensitive data without cloud transfer, extremely low latency for tasks like edge computing and real-time image or video processing, reduced costs by performing computations locally and functionality even when internet connectivity is unreliable or unavailable. This is an active area of research and development. Previously, we highlighted <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/mlx\"\">MLX</a>, an open-source framework for efficient machine learning on Apple silicon. Other emerging tools include <a href=\"\"https://github.com/xenova/transformers.js\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Transformers.js</a> and <a href=\"\"https://github.com/addyosmani/chatty\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Chatty</a>. Transformers.js lets you run transformers in the browser using ONNX Runtime, supporting models converted from PyTorch, TensorFlow and JAX. Chatty leverages WebGPU to run LLMs natively and privately in the browser, offering a feature-rich in-browser AI experience.</p>\"",
-    "relatedBlips": ["MLX"]
+    "relatedBlips": [
+      "MLX"
+    ]
   },
   {
     "name": "Structured output from LLMs",
@@ -191,7 +203,9 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p>AI coding assistants like <a href=\"\"https://www.thoughtworks.com/radar/tools/github-copilot\"\">GitHub Copilot</a> and <a href=\"\"https://www.thoughtworks.com/radar/tools/tabnine\"\">Tabnine</a> have become very popular. According to <a href=\"\"https://survey.stackoverflow.co/2024/ai#sentiment-and-usage-ai-select\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">StackOverflow's 2024 developer survey</a>, \"\"72% of all respondents are favorable or very favorable of AI tools for development\"\". While we also see their benefits, we're wary about the medium- to long-term impact this will have on code quality and caution developers about <strong>complacency with AI-generated code</strong>. It’s all too tempting to be less vigilant when reviewing AI suggestions after a few positive experiences with an assistant. Studies like <a href=\"\"https://gitclear-public.s3.us-west-2.amazonaws.com/Coding-on-Copilot-2024-Developer-Research.pdf\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">this one by GitClear</a> show a trend of faster growing codebases, which we suspect coincide with larger pull requests. And <a href=\"\"https://github.blog/2024-05-13-research-quantifying-github-copilots-impact-in-the-enterprise-with-accenture/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">this study by GitHub</a> has us wondering whether the mentioned 15% increase of the pull request merge rate is actually a good thing or whether people are merging larger pull requests faster because they trust the AI results too much. We're still using the basic <a href=\"\"https://www.thoughtworks.com/insights/blog/generative-ai/getting-started-with-github-copilot\"\">\"\"getting started\"\" advice we gave over a year ago</a>, which is to beware of automation bias, sunk cost fallacy, anchoring bias and review fatigue. We also recommend that programmers develop a good <a href=\"\"https://martinfowler.com/articles/exploring-gen-ai.html#memo-08\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">mental framework about where and when not to use and trust AI</a>.</p>\"",
-    "relatedBlips": ["Curated shared instructions for software teams"]
+    "relatedBlips": [
+      "Curated shared instructions for software teams"
+    ]
   },
   {
     "name": "Enterprise-wide integration test environments",
@@ -223,7 +237,9 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p>When people talk about coding assistants, the topic of <a href=\"\"https://martinfowler.com/articles/on-pair-programming.html\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">pair programming</a> inevitably comes up. Our profession has a love-hate relationship with it: some swear by it, others can't stand it. Coding assistants now beg the question, can a human pair with the AI, instead of another human, and get the same results for the team? <a href=\"\"https://www.thoughtworks.com/radar/tools/github-copilot\"\">GitHub Copilot</a> even calls itself \"\"your AI pair programmer.\"\" While we do think a coding assistant can bring some of the benefits of pair programming, we advise against fully <strong><a href=\"\"https://martinfowler.com/articles/exploring-gen-ai.html#memo-05\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">replacing pair programming with AI</a></strong>. Framing coding assistants as pair programmers ignores one of the key benefits of pairing: to make the team, not just the individual contributors, better. Coding assistants can offer benefits for getting unstuck, learning about a new technology, onboarding or making tactical work faster so that we can focus on the strategic design. But they don't help with any of the team collaboration benefits, like keeping the work-in-progress low, reducing handoffs and relearning, making continuous integration possible or improving collective code ownership.</p>\"",
-    "relatedBlips": ["GitHub Copilot"]
+    "relatedBlips": [
+      "GitHub Copilot"
+    ]
   },
   {
     "name": "Databricks Unity Catalog",
@@ -241,7 +257,12 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p><strong><a href=\"\"https://github.com/lm-sys/FastChat\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">FastChat</a></strong> is an open platform for training, serving and evaluating large language models. Our teams use its model-serving capabilities to host multiple models — <a href=\"\"https://huggingface.co/blog/llama31\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Llama 3.1 (8B and 70B)</a>, <a href=\"\"https://huggingface.co/mistralai/Mistral-7B-Instruct-v0.3\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Mistral 7B</a> and <a href=\"\"https://huggingface.co/defog/llama-3-sqlcoder-8b\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Llama-SQL</a> — for different purposes, all in a consistent OpenAI API format. FastChat operates on a controller-worker architecture, allowing multiple workers to host different models. It supports worker types such as <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/vllm\"\">vLLM</a>, <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/litellm\"\">LiteLLM</a> and <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/mlx\"\">MLX</a>. We use <a href=\"\"https://github.com/lm-sys/FastChat/blob/main/docs/vllm_integration.md\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">vLLM model workers</a> for their high throughput capabilities. Depending on the use case — latency or throughput — different types of FastChat model workers can be created and scaled. For example, the model used for code suggestions in developer IDEs requires low latency and can be scaled with multiple FastChat workers to handle concurrent requests efficiently. In contrast, the model used for <a href=\"\"https://www.thoughtworks.com/radar/techniques/text-to-sql\"\">Text-to-SQL</a> doesn't need multiple workers due to lower demand or different performance requirements. Our teams leverage FastChat's scaling capabilities for A/B testing. We configure FastChat workers with the same model but different hyperparameter values and pose identical questions to each, identifying optimal hyperparameter values. When transitioning models in live services, we conduct A/B tests to ensure seamless migration. For example, we recently migrated from <a href=\"\"https://huggingface.co/codellama/CodeLlama-70b-hf\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">CodeLlama 70B</a> to <a href=\"\"https://huggingface.co/meta-llama/Meta-Llama-3.1-70B\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Llama 3.1 70B</a> for code suggestions. By running both models concurrently and comparing outputs, we verified the new model met or exceeded the previous model's performance without disrupting the developer experience.</p>\"",
-    "relatedBlips": ["vLLM", "LiteLLM", "MLX", "Text to SQL"]
+    "relatedBlips": [
+      "vLLM",
+      "LiteLLM",
+      "MLX",
+      "Text to SQL"
+    ]
   },
   {
     "name": "GCP Vertex AI Agent Builder",
@@ -271,7 +292,9 @@
     "isNew": "FALSE",
     "status": "moved in",
     "description": "\"<p><strong><a href=\"\"https://github.com/qdrant/qdrant\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Qdrant</a></strong> is an open-source vector similarity search engine and database written in <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/rust\"\">Rust</a>. It supports a wide range of text and multimodal dense <a href=\"\"https://qdrant.tech/documentation/embeddings/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">vector embedding models</a>. Our teams have used open-source embeddings like <a href=\"\"https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">MiniLM-v6</a> and <a href=\"\"https://huggingface.co/BAAI/bge-large-en-v1.5\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">BGE</a> for multiple product knowledge bases. We use Qdrant as an enterprise vector store with <a href=\"\"https://qdrant.tech/documentation/concepts/collections/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">multi-tenancy</a> to store vector embeddings as separate collections, isolating each product's knowledge base in storage. User access policies are managed in the application layer.</p>\"",
-    "relatedBlips": ["Rust"]
+    "relatedBlips": [
+      "Rust"
+    ]
   },
   {
     "name": "Vespa",
@@ -319,7 +342,10 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p>Durable computing, a recent movement in distributed computing, uses an architecture style of explicit state machine to persist the memory of serverless servers for better fault tolerance and recovery. <strong><a href=\"\"https://github.com/golemcloud/golem\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Golem</a></strong> is one of the promoters of this movement. The concept can work in some scenarios, such as long-running microservices sagas or long-running workflows in AI agent orchestration. We've evaluated <a href=\"\"https://www.thoughtworks.com/radar/platforms/temporal\"\">Temporal</a> previously for similar purposes and Golem is another choice. With Golem you can write <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/webassembly\"\">WebAssembly</a> components in any supported language besides Golem being deterministic and supporting fast startup times. We think Golem is an exciting platform worth evaluating.</p>\"",
-    "relatedBlips": ["Temporal", "WebAssembly"]
+    "relatedBlips": [
+      "Temporal",
+      "WebAssembly"
+    ]
   },
   {
     "name": "Iggy",
@@ -328,7 +354,9 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p><strong><a href=\"\"https://github.com/iggy-rs/iggy\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Iggy</a></strong>, a persistent message streaming platform written in Rust, is a relatively new project with impressive features. It already supports multiple streams, topics and partitions, at-most-once delivery, message expiry and TLS support over QUIC, TCP and HTTP protocols. Running as a single server, Iggy currently achieves high throughput for both read and write operations. With upcoming clustering and io_uring support, Iggy can be a potential alternative to <a href=\"\"https://www.thoughtworks.com/radar/platforms/apache-kafka\"\">Kafka</a>.</p>\"",
-    "relatedBlips": ["Apache Kafka"]
+    "relatedBlips": [
+      "Apache Kafka"
+    ]
   },
   {
     "name": "Iroh",
@@ -337,7 +365,9 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p><strong><a href=\"\"https://www.iroh.computer/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Iroh</a></strong> is a relatively new distributed file storage and content delivery system that’s designed as an evolution of existing decentralized systems like <a href=\"\"https://www.thoughtworks.com/radar/platforms/ipfs\"\">IPFS (InterPlanetary File System)</a>. Both Iroh and IPFS can be used to create decentralized networks for storing, sharing and accessing content addressed using opaque content identifiers. However, <a href=\"\"https://www.iroh.computer/docs/ipfs#comparison-table\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Iroh removes some of the limitations of IPFS implementations</a> such as having no maximum block size and providing a syncing mechanism for data via <a href=\"\"https://arxiv.org/abs/2212.13567\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">range-based set reconciliation</a> over documents. The project's roadmap includes bringing the technology to the browser via WASM, which raises some intriguing possibilities for building decentralization into web applications. If you don't want to host your own Iroh nodes, you can use its cloud service, <a href=\"\"https://iroh.network/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">iroh.network</a>. There are already several SDKs available in a variety of languages, and one goal is to be more user-friendly and easier to use than alternative IPFS systems. Even though Iroh is still in its very early days, it's worth keeping an eye on it, as it could become a significant player in the decentralized storage space.</p>\"",
-    "relatedBlips": ["IPFS"]
+    "relatedBlips": [
+      "IPFS"
+    ]
   },
   {
     "name": "Large vision model (LVM) platforms",
@@ -355,7 +385,9 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p>There is <a href=\"\"https://www.nature.com/articles/d41591-024-00031-3.epdf\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">growing interest</a> in the use of brain-computer interfaces (BCIs) and their potential application to assistive technologies. Non-invasive technologies using electroencephalography (EEG) and other electrophysical signals offer a lower risk alternative to brain implants for those recovering from injuries. Platforms are now emerging on which researchers and entrepreneurs can build innovative applications without having to worry about the low-level signal processing and integration challenges. Examples of such platforms are <a href=\"\"https://www.emotiv.com\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Emotive</a> and <a href=\"\"https://openbci.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">OpenBCI</a> which offer open-source hardware and software for building BCI applications. OpenBCI's latest product, the <strong><a href=\"\"https://galea.co/#home\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">OpenBCI Galea</a></strong>, combines BCI with the capabilities of a VR headset. It gives developers access to an array of time-locked physiological data streams along with spatial positioning sensors and eye tracking. This wide range of sensor data can then be used to control a variety of physical and digital devices. The SDK supports a range of languages and makes the sensor data available in <a href=\"\"https://www.thoughtworks.com/radar/platforms/unity-beyond-gaming\"\">Unity</a> or Unreal. We're excited to see this capability offered in an open-source platform so researchers have access to the tools and data they need to innovate in this space.</p>\"",
-    "relatedBlips": ["Unity beyond gaming"]
+    "relatedBlips": [
+      "Unity beyond gaming"
+    ]
   },
   {
     "name": "PGLite",
@@ -378,7 +410,10 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p><strong><a href=\"\"https://www.spinkube.dev/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">SpinKube</a></strong> is an open-source serverless run time for <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/webassembly\"\">WebAssembly</a> on Kubernetes. While Kubernetes offers robust auto-scaling capabilities, the cold start time of containers can still necessitate pre-provisioning for peak loads. We believe WebAssembly's millisecond startup time provides a more dynamic and flexible serverless solution for on-demand workloads. Since our previous discussion of <a href=\"\"https://www.thoughtworks.com/radar/platforms/spin\"\">Spin</a>, the WebAssembly ecosystem has made significant advancements. We're excited to highlight SpinKube, a platform that simplifies the development and deployment of WebAssembly-based workloads on Kubernetes.</p>\"",
-    "relatedBlips": ["WebAssembly", "Spinnaker"]
+    "relatedBlips": [
+      "WebAssembly",
+      "Spinnaker"
+    ]
   },
   {
     "name": "Unblocked",
@@ -387,7 +422,9 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p><strong><a href=\"\"https://getunblocked.com\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Unblocked</a></strong> provides software development lifecycle (SDLC) asset and artifact discovery. It integrates with common application lifecycle management (ALM) and collaboration tools to help teams understand codebases and related resources. It improves code comprehension by delivering immediate, relevant context about the code, making it easier to navigate and understand complex systems. Engineering teams can securely and compliantly access discussions, assets and documents related to their work. Unblocked also captures and shares local knowledge that often resides with experienced team members, making valuable insights accessible to everyone, regardless of experience level.</p>\"",
-    "relatedBlips": ["Software engineering agents"]
+    "relatedBlips": [
+      "Software engineering agents"
+    ]
   },
   {
     "name": "Bruno",
@@ -396,7 +433,10 @@
     "isNew": "FALSE",
     "status": "moved in",
     "description": "\"<p><strong><a href=\"\"https://github.com/usebruno/bruno\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Bruno</a></strong> is an open-source desktop alternative to <a href=\"\"https://www.thoughtworks.com/radar/tools/postman\"\">Postman</a> and <a href=\"\"https://www.thoughtworks.com/radar/tools/insomnia\"\">Insomnia</a> for API testing, development and debugging. It aims to provide superior collaboration, privacy and security with its simple offline-only design. Collections are stored directly in your filesystem — written in a custom plain text markup language, Bru Lang, and can be shared with Git or a version control tool of your choice to collaborate. Bruno is available both as a desktop app and a <a href=\"\"https://docs.usebruno.com/bru-cli/overview\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">CLI tool</a>. It also offers an official VS Code extension, with plans for additional IDE support. Bruno has become the default choice for several Thoughtworks teams, but we also advise teams to be on guard when working under VPN and proxy environments, since requests made in such conditions <a href=\"\"https://github.com/usebruno/bruno/issues/224\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">have been reported to fail unexpectedly</a>.</p>\"",
-    "relatedBlips": ["Postman", "Insomnia"]
+    "relatedBlips": [
+      "Postman",
+      "Insomnia"
+    ]
   },
   {
     "name": "K9s",
@@ -426,7 +466,9 @@
     "isNew": "FALSE",
     "status": "moved in",
     "description": "\"<p>We've highlighted <strong>visual regression testing tools</strong> before and have observed their algorithms evolve from primitive pixel-level comparison to sophisticated pattern-matching and optical character recognition (OCR). Early visual regression tools generated many false positives and were only useful in later stages of development when the interface became stable. <a href=\"\"https://www.thoughtworks.com/radar/tools/backstopjs\"\">BackstopJS</a> avoids this problem by configuring selectors and viewports to pinpoint visual tests to specific elements on the page. But machine learning has made it easier to detect and compare visual elements more accurately, even if they happen to have moved or contain dynamic content. These tools have become steadily more useful and are well-positioned to take advantage of the latest developments in AI and machine learning. Several commercial tools such as <a href=\"\"https://applitools.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Applitools</a> and <a href=\"\"https://percy.io/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Percy</a> now claim to use AI in their visual regression tests. One of our teams has been using Applitools Eyes extensively and have been happy with the results. Although visual regression tests are no substitute for well-written end-to-end functional tests, they're a valuable addition to the testing toolbox. We're moving them to adopt because they have become a safe default option as one element in a comprehensive UI test strategy.</p>\"",
-    "relatedBlips": ["BackstopJS"]
+    "relatedBlips": [
+      "BackstopJS"
+    ]
   },
   {
     "name": "Wiz",
@@ -444,7 +486,10 @@
     "isNew": "FALSE",
     "status": "no change",
     "description": "\"<p><strong><a href=\"\"https://aws.amazon.com/controltower\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">AWS Control Tower</a></strong> continues to be our go-to choice for managing AWS accounts in a multi-team environment. It provides a convenient mechanism to preconfigure security and compliance controls that will be automatically applied to new landing zones. This is an example of <a href=\"\"https://martinfowler.com/articles/devops-compliance.html#change-compliance\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">\"\"compliance at the point of change\"\"</a> because the controls are applied and verified whenever new infrastructure is created, eliminating the need for manual compliance checks later on. <a href=\"\"https://github.com/aws-ia/terraform-aws-control_tower_account_factory\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">AWS Control Tower Account Factory for Terraform (AFT)</a> has continued to evolve since our last volume and is now available in more AWS regions. AFT allows Control Tower accounts to be provisioned by an <a href=\"\"https://www.thoughtworks.com/radar/techniques/infrastructure-as-code\"\">infrastructure-as-code</a> pipeline. We like that AFT can be customized to send webhooks or take specific actions to integrate safely and securely with external tools like <a href=\"\"https://www.thoughtworks.com/radar/platforms/github-actions\"\">GitHub Actions</a>. Our teams have reported great results using AWS Control Tower to manage accounts, but we do wish AWS would accept community contributions to the project when there are opportunities for enhancement.</p>\"",
-    "relatedBlips": ["Infrastructure as code", "GitHub Actions"]
+    "relatedBlips": [
+      "Infrastructure as code",
+      "GitHub Actions"
+    ]
   },
   {
     "name": "CCMenu",
@@ -453,7 +498,9 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p>For teams practicing continuous integration it's important to be aware of the state of the central build on the continuous integration (CI) system. Before the pandemic, <a href=\"\"https://github.com/build-canaries/nevergreen\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">dashboards</a> on large TV screens in the team rooms provided this information at a glance. With remote working here to stay, a solution is needed that works on individual developer workstations. For the Mac that niche is covered by <strong><a href=\"\"https://ccmenu.org\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">CCMenu</a></strong>, a small app written by a Thoughtworker. Originally part of <a href=\"\"https://en.wikipedia.org/wiki/CruiseControl\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">CruiseControl</a>, it works with all servers that can provide information in <a href=\"\"https://cctray.org/v1/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">cctray</a> format, including Jenkins and TeamCity. A recent rewrite has added support for <a href=\"\"https://www.thoughtworks.com/radar/platforms/github-actions\"\">GitHub Actions</a> and paved the way for deeper integration with more CI servers and authentication styles.</p>\"",
-    "relatedBlips": ["GitHub Actions"]
+    "relatedBlips": [
+      "GitHub Actions"
+    ]
   },
   {
     "name": "ClickHouse",
@@ -462,7 +509,9 @@
     "isNew": "FALSE",
     "status": "no change",
     "description": "\"<p><strong><a href=\"\"https://clickhouse.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">ClickHouse</a></strong> is an open-source, columnar online analytical processing (OLAP) database for real-time analytics. It started as an experimental project in 2009 and has since matured into a highly performant and linearly scalable analytical database. Its efficient query processing engine together with data compression makes it suitable to run interactive queries without pre-aggregation. ClickHouse is also a great storage choice for <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/opentelemetry\"\">OpenTelemetry</a> data. Its integration with <a href=\"\"https://github.com/jaegertracing/jaeger-clickhouse\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Jaeger</a> allows you to store massive volumes of traces and analyze them efficiently.</p>\"",
-    "relatedBlips": ["Sentry"]
+    "relatedBlips": [
+      "Sentry"
+    ]
   },
   {
     "name": "Devbox",
@@ -489,7 +538,9 @@
     "isNew": "FALSE",
     "status": "moved in",
     "description": "\"<p><strong><a href=\"\"https://www.linearb.io\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">LinearB</a></strong>, a software engineering intelligence platform, has empowered our engineering leaders with data-driven insights to support continuous improvement. It aligns key areas such as benchmarking, workflow automation and targeted investments in enhancing developer experience and productivity. Our experience with LinearB highlights its ability to foster a culture of improvement and efficiency within engineering teams. Our teams have used the platform to track key engineering metrics, identify areas for enhancement and implement evidence-based actions. These capabilities align well with LinearB’s core value proposition: benchmarking, automating metric collection and enabling data-driven improvements. LinearB integrates with source code, application lifecycle, CI/CD and communication tools and uses both preconfigured and custom engineering metrics to provide comprehensive quantitative insights into developer experience, productivity and team performance. As advocates of <a href=\"\"https://www.thoughtworks.com/radar/techniques/four-key-metrics\"\">DORA</a>, we appreciate LinearB’s strong emphasis on these specific metrics and its ability to measure key aspects of software delivery performance, which are essential for improving efficiency. Historically, teams have faced challenges in gathering DORA-specific metrics, often relying on complex custom dashboards or manual processes. LinearB continues to offer a compelling solution that automates the tracking of these metrics and delivers real-time data that supports proactive decision-making around developer experience, productivity and predictability.</p>\"",
-    "relatedBlips": ["Four key metrics"]
+    "relatedBlips": [
+      "Four key metrics"
+    ]
   },
   {
     "name": "pgvector",
@@ -534,7 +585,9 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p>Although using the <a href=\"\"https://www.thoughtworks.com/radar/techniques/simplest-possible-feature-toggle\"\">simplest feature toggle possible</a> remains our recommended approach, scaling teams and faster development make managing hand-crafted toggles more complex. <strong><a href=\"\"https://www.getunleash.io/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Unleash</a></strong> is an option widely used by our teams to address this complexity and enable CI/CD. It can be used either as a service or self-hosted. It provides SDKs in several languages with a good developer experience and friendly UI for administration. Although there’s no official support for the <a href=\"\"https://openfeature.dev/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">OpenFeature specification</a> yet, you can find community-maintained <a href=\"\"https://openfeature.dev/ecosystem?instant_search%5BrefinementList%5D%5Bvendor%5D%5B0%5D=Unleash\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">providers</a> for Go and Java. Unleash can be used for simple feature toggles as well as segmentation and gradual rollouts, making it a suitable option for feature management at scale.</p>\"",
-    "relatedBlips": ["Simplest possible feature toggle"]
+    "relatedBlips": [
+      "Simplest possible feature toggle"
+    ]
   },
   {
     "name": "Astronomer Cosmos",
@@ -543,7 +596,10 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p><strong><a href=\"\"https://astronomer.github.io/astronomer-cosmos/index.html\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Astronomer Cosmos</a></strong> is an <a href=\"\"https://www.thoughtworks.com/radar/tools/airflow\"\">Airflow</a> plugin designed to provide more native support for <a href=\"\"https://www.thoughtworks.com/radar/tools/dbt\"\">dbt</a> core workflows in Airflow. With the plugin installed, when <code>DbtDag</code> is used to wrap a dbt workflow, it turns dbt nodes into Airflow tasks/task groups, allowing engineers to visualize dbt dependency graphs and their execution progress directly in the Airflow UI. It also supports using Airflow connections instead of dbt profiles, potentially reducing configuration sprawl. We're experimenting with the tool for its potential to make working with dbt in Airflow more seamless.</p>\"",
-    "relatedBlips": ["Airflow", "dbt"]
+    "relatedBlips": [
+      "Airflow",
+      "dbt"
+    ]
   },
   {
     "name": "ColPali",
@@ -552,7 +608,9 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p><strong><a href=\"\"https://github.com/illuin-tech/colpali\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">ColPali</a></strong> is an emerging tool for PDF document retrieval using <a href=\"\"https://huggingface.co/blog/vlms\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">vision language models</a>, addressing the challenges of building a strong <a href=\"\"https://www.thoughtworks.com/radar/techniques/retrieval-augmented-generation-rag\"\">retrieval-augmented generation (RAG)</a> application that can extract data from multimedia documents containing images, diagrams and tables. Unlike traditional methods that rely on text-based embedding or optical character recognition (OCR) techniques, ColPali processes entire PDF pages, leveraging a visual transformer to create embeddings that account for both text and visual content. This holistic approach enables better retrieval as well as reasoning for why certain documents are retrieved, and significantly enhances RAG performance against data-rich PDFs. We've tested ColPali with several clients where it has shown promising results, but the technology is still in the early stages. It's worth assessing, particularly for organizations with complex visual document data.</p>\"",
-    "relatedBlips": ["Retrieval-augmented generation (RAG)"]
+    "relatedBlips": [
+      "Retrieval-augmented generation (RAG)"
+    ]
   },
   {
     "name": "Cursor",
@@ -561,7 +619,11 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p>The arms race for AI-assisted programming tools is ongoing, and the most eye-catching one is <strong><a href=\"\"https://www.cursor.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Cursor</a></strong>. Cursor is an AI-first code editor designed to enhance developer productivity by deeply integrating AI into the coding workflow. We've paid attention to it in previous Radar assessments, but it's clear that the recent continuous improvement of Cursor has ushered in a qualitative change. In our use, Cursor has demonstrated strong contextual reasoning capabilities based on the existing codebase. While other AI code tools like <a href=\"\"https://www.thoughtworks.com/radar/tools/gitHub-copilot\"\">GitHub Copilot</a> tend to generate and collaborate around code snippets, Cursor's multi-line and multi-file editing operations make it stand out. Cursor is forked from <a href=\"\"https://www.thoughtworks.com/radar/tools/visual-studio-code\"\">VSCode</a> and developed based on it, providing a fast and intuitive interaction method that conforms to the developer's intuition. Powerful operations can be completed with <code>ctrl/cmd+K</code> and <code>ctrl/cmd+L</code>. Cursor is leading a new round of competition in AI programming tools, especially regarding developer interaction and understanding of codebases.</p>\"",
-    "relatedBlips": ["Model Context Protocol (MCP)", "Cline", "Windsurf"]
+    "relatedBlips": [
+      "Model Context Protocol (MCP)",
+      "Cline",
+      "Windsurf"
+    ]
   },
   {
     "name": "Data Mesh Manager",
@@ -570,7 +632,9 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p><strong><a href=\"\"https://www.datamesh-manager.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Data Mesh Manager</a></strong> provides the metadata layer of a typical <a href=\"\"https://www.thoughtworks.com/radar/techniques/data-mesh\"\">data mesh</a> platform. In particular, it focuses on the definition of data products and the specification of data contracts using the <a href=\"\"https://bitol-io.github.io/open-data-contract-standard/latest/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">OpenContract</a> initiative and can be integrated into build pipelines using the associated <a href=\"\"https://cli.datacontract.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">DataContract CLI</a>. The application also provides a data catalog to discover and explore data products and their metadata and allows for federated governance, including the definition of data quality metrics and the management of data quality rules. It’s one of the first native tools in this space, which means it isn’t just trying to retrofit existing platforms to the data mesh paradigm.</p>\"",
-    "relatedBlips": ["Data mesh"]
+    "relatedBlips": [
+      "Data mesh"
+    ]
   },
   {
     "name": "Databricks Delta Live Tables",
@@ -588,7 +652,9 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p>Despite its power and utility <a href=\"\"https://www.thoughtworks.com/radar/tools/git\"\">Git's</a> command line interface is notoriously complex when it comes to managing multiple branches and staging commits within them. <strong><a href=\"\"https://gitbutler.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">GitButler</a></strong> is a Git client that provides a graphical interface that aims to simplify this process. It does this by tracking uncommitted file changes independently of Git and then staging those changes into virtual branches. One might argue that this is a solution to a problem that shouldn't exist in the first place; if you make small changes and push to trunk frequently, there’s no need for multiple branches. However, when your workflow involves pull requests, the branching structure can become complex, particularly if there is a long review cycle before a PR can be merged. To address this, GitButler also integrates with GitHub so you can selectively group changes into pull requests and issue them directly from the tool. GitButler is another entry into the growing category of blips aimed at managing the complexity inherent in the PR process.</p>\"",
-    "relatedBlips": ["GitHub"]
+    "relatedBlips": [
+      "GitHub"
+    ]
   },
   {
     "name": "JetBrains AI Assistant",
@@ -606,7 +672,9 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p>Developers working in a polyglot environment often find themselves having to manage multiple versions of different languages and tools. <strong><a href=\"\"https://mise.jdx.dev/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">mise</a></strong> aims to solve that problem by providing one tool to replace <a href=\"\"https://github.com/nvm-sh/nvm\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">nvm</a>, <a href=\"\"https://github.com/pyenv/pyenv\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">pyenv</a>, <a href=\"\"https://github.com/rbenv/rbenv\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">rbenv</a> and <a href=\"\"https://rustup.rs/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">rustup</a>, among others, and is a drop-in replacement for <strong><a href=\"\"https://www.thoughtworks.com/radar/tools/asdf-vm\"\">asdf</a></strong>. Mise is written in Rust for shell interaction speed, and unlike asdf which uses shell-based shims, mise modifies the <em>PATH</em> environment variable ahead of time, so the tool run times are called directly. This is partly why mise is faster than asdf. For those developers already familiar with asdf, it provides the same functionality but with a few key differences. Being written in Rust, it's faster and has a few features that asdf doesn't, such as the ability to install multiple versions of the same tool at the same time and more forgiving commands, including fuzzy matching. It also provides an integrated task runner, useful for things like running linters, tests, builders, servers and other tasks that are specific to a project. If you're a bit fed up with having to use multiple tools to manage your development environment as well as the at times clunky syntax of other tools, mise is definitely worth a look.</p>\"",
-    "relatedBlips": ["asdf-vm"]
+    "relatedBlips": [
+      "asdf-vm"
+    ]
   },
   {
     "name": "Mockoon",
@@ -642,7 +710,10 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p>Many of our teams working on web-based frontends have switched from older bundling tools — <a href=\"\"https://www.thoughtworks.com/radar/tools/webpack\"\">Webpack</a> comes to mind — to <a href=\"\"https://www.thoughtworks.com/radar/tools/vite\"\">Vite</a>. A new entrant in this field is <strong><a href=\"\"https://rspack.dev/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Rspack</a></strong>, which after 18 months in development has just seen its <a href=\"\"https://rspack.dev/blog/announcing-1-0\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">1.0 release</a>. Designed as a drop-in replacement for Webpack, it’s compatible with plug-ins and loaders in the Webpack ecosystem. This can be an advantage over Vite when migrating complex Webpack setups. The main reason why our teams are migrating to newer tools like Vite and Rspack is developer experience and, in particular, speed. Nothing breaks the flow of development more than having to wait a minute or two before getting feedback on the last code change. Written in Rust, Rspack delivers significantly faster performance than Webpack, and in many cases, it's even faster than Vite.</p>\"",
-    "relatedBlips": ["Webpack", "Vite"]
+    "relatedBlips": [
+      "Webpack",
+      "Vite"
+    ]
   },
   {
     "name": "Semantic Router",
@@ -677,7 +748,9 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p><a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/rust\"\">Rust</a> is well suited for writing command-line tools due to its fast startup performance, and we see people rewriting some toolchains in it. We mentioned <a href=\"\"https://www.thoughtworks.com/radar/tools/ruff\"\">Ruff</a>, a Python linter written in Rust in the previous Radar. For this volume, we evaluated <strong><a href=\"\"https://github.com/astral-sh/uv\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">uv</a></strong>, a Python package management tool written in Rust. The value proposition of uv is \"\"blazing fast\"\" and it beats other Python package management tools by a large margin in their benchmarks. However, during our Radar evaluation, we discussed whether optimizing within seconds for build tools is a marginal improvement. Compared with performance, what’s more important for a package management system is the ecosystem, mature community and long-term support. That being said, feedback from the project team has shown us that this marginal speed improvement could be a big plus for improving feedback cycles and overall developer experience — we tend to manually make CI/CD caching very complex to achieve this little performance improvement; uv simplifies our Python environment management. Considering there is still much room for improvement in package and env management for Python development, we think uv is an option worth assessing.</p>\"",
-    "relatedBlips": ["Rust"]
+    "relatedBlips": [
+      "Rust"
+    ]
   },
   {
     "name": "Warp",
@@ -695,7 +768,9 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p>After the shutdown of the <a href=\"\"https://en.wikipedia.org/wiki/Atom_(text_editor)#History\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Atom</a> text editor project, its creators built a new editor named <strong><a href=\"\"https://zed.dev/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Zed</a></strong>. Written in Rust and optimized to leverage modern hardware, Zed feels fast. It has all the features we expect from a modern editor: support for many programming languages, a built-in terminal and multibuffer editing to name a few. AI-assisted coding is available through integration with several LLM providers. As ardent pair programmers we're intrigued by the remote <a href=\"\"https://zed.dev/docs/collaboration\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">collaboration feature</a> built into Zed. Developers find each other via their GitHub IDs and can then collaborate on the same workspace in real time. It's too early to tell whether development teams can and want to escape the pull of the <a href=\"\"https://www.thoughtworks.com/radar/tools/visual-studio-code\"\">Visual Studio Code</a> ecosystem, but Zed is an alternative to explore.</p>\"",
-    "relatedBlips": ["Visual Studio Code"]
+    "relatedBlips": [
+      "Visual Studio Code"
+    ]
   },
   {
     "name": "CocoaPods",
@@ -704,7 +779,9 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p><strong><a href=\"\"https://cocoapods.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">CocoaPods</a></strong> has been a popular dependency management tool for Swift and Objective-C Cocoa projects. However, the CocoaPods team <a href=\"\"https://blog.cocoapods.org/CocoaPods-Support-Plans/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">announced</a> that the project is in maintenance mode after more than a decade of being a key tool for iOS and macOS developers. While the tool and its resources will remain available, active development will cease. Developers are encouraged to transition to <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/swift-package-manager\"\">Swift Package Manager</a>, which offers native integration with Xcode and better long-term support from Apple.</p>\"",
-    "relatedBlips": ["Swift Package Manager"]
+    "relatedBlips": [
+      "Swift Package Manager"
+    ]
   },
   {
     "name": "dbt",
@@ -713,7 +790,10 @@
     "isNew": "FALSE",
     "status": "no change",
     "description": "\"<p>We continue to see <strong><a href=\"\"https://www.getdbt.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">dbt</a></strong> as a strong, sensible option for implementing data transformations in ELT pipelines. We like that it lends itself to engineering rigor and enables practices like modularity, testability and reusability of SQL-based transformations. dbt <a href=\"\"https://docs.getdbt.com/docs/supported-data-platforms\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">integrates</a> well with many cloud data warehouses, lakehouses and databases — including <a href=\"\"https://www.thoughtworks.com/radar/platforms/snowflake\"\">Snowflake</a>, <a href=\"\"https://www.thoughtworks.com/radar/platforms/bigquery\"\">BigQuery</a>, Redshift, Databricks and Postgres — and has a healthy ecosystem of community packages surrounding it. The native support it recently introduced (in dbt core 1.8+ and the recently introduced dbt Cloud \"\"versionless\"\" experience) for unit testing further strengthens its position in our toolbox. Our teams appreciate that the new unit testing feature allows them to easily define static test data, set up output expectations and test both incremental and full-refresh modes of their pipelines. In many cases, this has allowed them to retire homegrown scripts while maintaining the same level of quality.</p>\"",
-    "relatedBlips": ["Snowflake", "BigQuery"]
+    "relatedBlips": [
+      "Snowflake",
+      "BigQuery"
+    ]
   },
   {
     "name": "Testcontainers",
@@ -749,7 +829,10 @@
     "isNew": "FALSE",
     "status": "moved in",
     "description": "\"<p><strong><a href=\"\"https://docs.databricks.com/en/dev-tools/bundles/index.html\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Databricks Asset Bundles</a></strong> (DABs), which <a href=\"\"https://www.databricks.com/blog/announcing-general-availability-databricks-asset-bundles\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">reached general availability</a> in April 2024, is becoming the go-to tool for packaging and deploying Databricks assets that facilitates the adoption of software engineering practices in our data teams. DABs supports packaging the configuration of workflows and tasks, as well as the code to be executed in those tasks, as a bundle that can be deployed to multiple environments through CI/CD pipelines. It comes with templates for common types of assets and supports custom templates, which allows for the creation of <a href=\"\"https://www.thoughtworks.com/radar/techniques/tailored-service-templates\"\">tailored service templates</a> for data engineering and ML projects. Our teams have increasingly adopted it as a key part of their engineering workflows. Even though DABs includes templates for notebooks and supports deploying them to production, we don't recommend <a href=\"\"https://www.thoughtworks.com/radar/techniques/productionizing-notebooks\"\">productionizing notebooks</a> and instead encourage intentionally writing production code with the engineering practices that support the maintainability, resiliency and scalability needs of such workloads.</p>\"",
-    "relatedBlips": ["Tailored service templates", "Productionizing notebooks"]
+    "relatedBlips": [
+      "Tailored service templates",
+      "Productionizing notebooks"
+    ]
   },
   {
     "name": "Instructor",
@@ -758,7 +841,9 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p>When we use large language model (LLM) chatbots as end users, they usually come back to us with an unstructured natural language answer. When building GenAI applications that are more than chatbots, it can be useful to ask the LLM for a structured answer in JSON, YAML or other formats, and then parse and use that response in the application. However, as LLMs are nondeterministic, they might not always do what we ask them to do. <strong><a href=\"\"https://github.com/jxnl/instructor\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Instructor</a></strong> is a library that can be used to help us request <a href=\"\"https://www.thoughtworks.com/radar/techniques/structured-output-from-llms\"\">structured output from LLMs</a>. You can define the intended output structure and configure retries if the LLM doesn't return the structure you asked for. As the best end user experience for working with LLMs is often to stream the results to them instead of waiting for the full response, Instructor also takes care of parsing partial structures from a stream.</p>\"",
-    "relatedBlips": ["Structured output from LLMs"]
+    "relatedBlips": [
+      "Structured output from LLMs"
+    ]
   },
   {
     "name": "Kedro",
@@ -785,7 +870,9 @@
     "isNew": "FALSE",
     "status": "moved in",
     "description": "\"<p><strong><a href=\"\"https://github.com/run-llama/llama_index\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">LLamaIndex</a></strong> includes engines that enable you to design domain-specific, context-augmented LLM applications and support tasks like data ingestion, vector indexing and natural language question-answering on documents, to name a few. Our teams used LlamaIndex to build a <a href=\"\"https://www.thoughtworks.com/radar/techniques/retrieval-augmented-generation-rag\"\">retrieval-augmented generation (RAG)</a> pipeline that automates document ingestion, indexes document embeddings and queries these embeddings based on user input. Using <a href=\"\"https://llamahub.ai/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">LlamaHub</a>, you can extend or customize LlamaIndex modules to suit your needs and build, for example, LLM applications with your preferred LLMs, embeddings and vector store providers.</p>\"",
-    "relatedBlips": ["Retrieval-augmented generation (RAG)"]
+    "relatedBlips": [
+      "Retrieval-augmented generation (RAG)"
+    ]
   },
   {
     "name": "LLM Guardrails",
@@ -794,7 +881,9 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p><strong>LLM Guardrails</strong> is a set of guidelines, policies or filters designed to prevent large language models (LLMs) from generating harmful, misleading or irrelevant content. The guardrails can also be used to safeguard LLM applications from malicious users attempting to misuse the system with techniques like input manipulation. They act as a safety net by setting boundaries for the model to process and generate content. There are some emerging frameworks in this space like <a href=\"\"https://www.thoughtworks.com/radar/tools/nemo-guardrails\"\">NeMo Guardrails</a>, <a href=\"\"https://github.com/guardrails-ai/guardrails\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Guardrails AI</a> and <a href=\"\"https://www.aporia.com/ai-security/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Aporia Guardrails</a> our teams have been finding useful. We recommend every LLM application have guardrails in place and that its rules and policies be continuously improved. Guardrails are crucial for building responsible and trustworthy LLM chat apps.</p>\"",
-    "relatedBlips": ["NeMo Guardrails"]
+    "relatedBlips": [
+      "NeMo Guardrails"
+    ]
   },
   {
     "name": "Medusa",
@@ -803,7 +892,9 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p>In our experience, most e-commerce solutions for building shopping websites usually fall into the 80/20 trap — we can easily build 80% of what we want but can't do anything about the remaining 20%. <strong><a href=\"\"https://medusajs.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Medusa</a></strong> offers a good balance. It's a highly customizable open-source commerce platform that allows developers to create unique and tailored shopping experiences that can be self-hosted or run on Medusa’s platform. Built on <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/next-js\"\">Next.js</a> and PostgreSQL, Medusa accelerates the development process with its comprehensive range of modules — from basic shopping cart and order management to advanced features like gift card modules and tax calculation for different regions. We've found Medusa to be a valuable framework and applied it to a few projects.</p>\"",
-    "relatedBlips": ["Next.js"]
+    "relatedBlips": [
+      "Next.js"
+    ]
   },
   {
     "name": "Pkl",
@@ -821,7 +912,9 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p><strong><a href=\"\"https://github.com/ros2\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">ROS 2</a></strong> is an open-source framework designed for the development of robotic systems. It provides a set of libraries and tools that enable the modular implementation of applications, covering functions like inter-process communication, multithreaded execution and quality of service. ROS 2 builds on its <a href=\"\"https://www.thoughtworks.com/radar/platforms/ros\"\">predecessor</a> by providing improved real-time capabilities, better modularity, increased support for diverse platforms and sensible defaults. ROS 2 is gaining traction in the automotive industry; its node-based architecture and topic-based communication model are especially attractive for manufacturers with complex, evolving in-vehicle applications, such as autonomous driving functionality.</p>\"",
-    "relatedBlips": ["Cross mobile platforms"]
+    "relatedBlips": [
+      "Cross mobile platforms"
+    ]
   },
   {
     "name": "seL4",
@@ -871,7 +964,9 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p>Preparing test data for data engineering is a significant challenge. Transferring data from production to test environments can be risky, so teams often rely on fake or synthetic data instead. In this Radar, we explored novel approaches like <a href=\"\"https://www.thoughtworks.com/radar/techniques/synthetic-data-for-testing-and-training-models\"\">synthetic data for testing and training models</a>. But most of the time, lower-cost procedural generation is enough. <strong><a href=\"\"https://github.com/databrickslabs/dbldatagen\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">dbldatagen (Databricks Labs Data Generator)</a></strong> is such a tool; it’s a Python library for generating synthetic data within the Databricks environment for testing, benchmarking, demoing and many other uses. dbldatagen can generate synthetic data at scale, up to billions of rows within minutes, supporting various scenarios such as multiple tables, change data capture and merge/join operations. It can handle Spark SQL primitive types well, generate ranges and discrete values and apply specified distributions. When creating synthetic data using the Databricks ecosystem, dbldatagen is an option worth evaluating.</p>\"",
-    "relatedBlips": ["Synthetic data for testing and training models"]
+    "relatedBlips": [
+      "Synthetic data for testing and training models"
+    ]
   },
   {
     "name": "DeepEval",
@@ -894,7 +989,9 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p>Most language model-based applications today rely on prompt templates hand-tuned for specific tasks. <strong><a href=\"\"https://github.com/stanfordnlp/dspy\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">DSPy</a></strong>, a framework for developing such applications, takes a different approach that does away with direct prompt engineering. Instead, it introduces higher-level abstractions oriented around program flow (through <code>modules</code> that can be layered on top of each other), metrics to optimize towards and data to train or test with. It then optimizes the prompts or weights of the underlying language model based on those defined metrics. The resulting codebase looks much like the training of neural networks with <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/pytorch\"\">PyTorch</a>. We find the approach it takes refreshing for its different take and think it's worth experimenting with.</p>\"",
-    "relatedBlips": ["PyTorch"]
+    "relatedBlips": [
+      "PyTorch"
+    ]
   },
   {
     "name": "Flutter for Web",
@@ -903,7 +1000,11 @@
     "isNew": "FALSE",
     "status": "no change",
     "description": "\"<p><a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/flutter\"\">Flutter</a> is known for its cross-platform support for iOS and Android applications. Now, it has expanded to more platforms. We've evaluated <strong>Flutter for Web</strong> previously — it allows us to build apps for iOS, Android and the browser from the same codebase. Not every web application makes sense in Flutter, but we think Flutter is particularly suited for cases like <a href=\"\"https://www.thoughtworks.com/radar/techniques/progressive-web-applications\"\">progressive web apps</a>, <a href=\"\"https://en.wikipedia.org/wiki/Single-page_application\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">single-page apps</a> and converting existing Flutter mobile apps to the web. Flutter had already supported <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/webassembly\"\">WebAssembly (WASM)</a> as a compilation target in its experimental channel, which means it was under active development with potential bugs and performance issues. The most recent releases have made it stable. The performance of a Flutter web application compiled to its WASM target is far superior to its JavaScript compilation target. The near-native performance on different platforms is also why many developers initially choose Flutter.</p>\"",
-    "relatedBlips": ["Flutter", "Progressive Web Applications", "WebAssembly"]
+    "relatedBlips": [
+      "Flutter",
+      "Progressive Web Applications",
+      "WebAssembly"
+    ]
   },
   {
     "name": "kotaemon",
@@ -912,7 +1013,9 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p><strong><a href=\"\"https://github.com/Cinnamon/kotaemon\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">kotaemon</a></strong> is an open-source RAG-based tool and framework for building Q&amp;A apps for knowledge base documents. It can understand multiple document types, including PDF and DOC formats, and provides a web UI, based on <a href=\"\"https://www.thoughtworks.com/radar/tools/gradio\"\">Gradio</a>, which allows users to organize and interact with a knowledge base via a chat interface. It has built-in RAG pipelines with a vector store and can be extended with SDKs. kotaemon also cites the source documents in its responses, along with web-based inline previews and a relevance score. For anyone wanting to do a RAG-based document Q&amp;A application, this customizable framework is a very good starting point.</p>\"",
-    "relatedBlips": ["Gradio"]
+    "relatedBlips": [
+      "Gradio"
+    ]
   },
   {
     "name": "Lenis",
@@ -930,7 +1033,9 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p><strong><a href=\"\"https://github.com/microsoft/LLMLingua\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">LLMLingua</a></strong> enhances LLM efficiency by compressing prompts using a small language model to remove nonessential tokens with minimal performance loss. This <a href=\"\"https://arxiv.org/pdf/2310.05736\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">approach</a> allows LLMs to maintain reasoning and in-context learning while efficiently processing longer prompts, which addresses challenges like cost efficiency, inference latency and context handling. Compatible with various LLMs without additional training and supporting frameworks like <a href=\"\"https://www.thoughtworks.com/radar/languages-frameworks/blip.llamaindex\"\">LLamaIndex</a>, LLMLingua is great for optimizing LLM inference performance.</p>\"",
-    "relatedBlips": ["LlamaIndex"]
+    "relatedBlips": [
+      "LlamaIndex"
+    ]
   },
   {
     "name": "Microsoft Autogen",
@@ -939,7 +1044,9 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p><strong><a href=\"\"https://github.com/microsoft/autogen\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Microsoft Autogen</a></strong> is an open-source framework that simplifies the creation and orchestration of AI agents, enabling multi-agent collaboration to solve complex tasks. It supports both autonomous and human-in-the-loop workflows, while offering compatibility with a range of LLMs and tools for agent interaction. One of our teams used Autogen for a client to build an AI-powered platform where each agent represented a specific skill, such as code generation, code review or summarizing documentation. The framework enabled the team to create new agents seamlessly and consistently by defining the right model and workflow. They leveraged <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/llamaindex\"\">LlamaIndex</a> to orchestrate workflows, allowing agents to manage tasks like product search and code suggestions efficiently. While Autogen has shown promise, particularly in production environments, concerns about scalability and managing complexity as more agents are added remain. Further assessment is needed to evaluate its long-term viability in scaling agent-based systems.</p>\"",
-    "relatedBlips": ["LlamaIndex"]
+    "relatedBlips": [
+      "LlamaIndex"
+    ]
   },
   {
     "name": "Pingora",
@@ -957,7 +1064,9 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p><strong><a href=\"\"https://docs.ragas.io/en/stable/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Ragas</a></strong> is a framework designed to evaluate the performance of <a href=\"\"https://www.thoughtworks.com/radar/techniques/retrieval-augmented-generation-rag\"\">retrieval-augmented generation (RAG)</a> pipelines, addressing the challenge of assessing both retrieval and generation components in these systems. It provides structured metrics such as faithfulness, answer relevance and context utilization which help evaluate the effectiveness of RAG-based systems. Our developers found it useful for running periodic evaluations to fine-tune parameters like top-k retrievals and embedding models. Some teams have integrated Ragas into pipelines that run daily, whenever the prompt template or the model changes. While its metrics offer solid insights, we’re concerned that the framework may not capture all the nuances and intricate interactions of complex RAG pipelines, and we recommend considering additional evaluation frameworks. Nevertheless, Ragas stands out for its ability to streamline RAG assessment in production environments, offering valuable data-driven improvements.</p>\"",
-    "relatedBlips": ["Retrieval-augmented generation (RAG)"]
+    "relatedBlips": [
+      "Retrieval-augmented generation (RAG)"
+    ]
   },
   {
     "name": "Score",
@@ -966,7 +1075,10 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p>Many organizations that implement their own internal development platforms tend to create their own <a href=\"\"https://www.thoughtworks.com/radar/techniques/platform-orchestration\"\">platform orchestration</a> systems to enforce organizational standards among developers and their platform hosting teams. However, the basic features of a paved-road deployment platform for hosting container workloads in a safe, consistent and compliant manner are similar from one organization to another. Wouldn't it be nice if we had a shared language for specifying those requirements? <strong><a href=\"\"https://score.dev/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Score</a></strong> is showing some promise of becoming a standard in this space. It’s a declarative language in the form of YAML that describes how a containerized workload should be deployed and which specific services and parameters it will need to run. Score was originally developed by Humanitec as the configuration language for their <a href=\"\"https://humanitec.com/products/platform-orchestrator\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Platform Orchestrator</a> product, but it is now under custodianship of the <a href=\"\"https://www.cncf.io/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Cloud Native Computing Foundation (CNCF)</a> as an open-source project. With the backing of the CNCF, Score has the potential to be more widely used beyond the Humanitec product. It has been released with two reference implementations: Kubernetes and Docker Compose. The extensibility of Score will hopefully lead to community contributions for other platforms. Score certainly bears a resemblance to the <a href=\"\"https://www.thoughtworks.com/radar/techniques/open-application-model\"\">Open Application Model (OAM)</a> specification for Kubevela, but it's more focused on the deployment of container workloads than the entire application. There is also some overlap with <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/sst-dev\"\">SST</a>, but SSI is more concerned with deployment directly into a cloud infrastructure rather than onto an internal engineering platform. We're watching Score with interest as it evolves.</p>\"",
-    "relatedBlips": ["Platform orchestration", "Open Application Model (OAM)"]
+    "relatedBlips": [
+      "Platform orchestration",
+      "Open Application Model (OAM)"
+    ]
   },
   {
     "name": "shadcn",
@@ -975,7 +1087,10 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p><strong><a href=\"\"https://ui.shadcn.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">shadcn</a></strong> challenges the traditional concept of component libraries by offering reusable, copy-and-paste components that become part of your codebase. This approach gives teams full ownership and control, enabling easier customization and extension — areas where more popular conventional libraries like <a href=\"\"https://mui.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">MUI</a> and <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/chakra-ui\"\">Chakra UI</a> often fall short. Built with <a href=\"\"https://www.radix-ui.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Radix UI</a> and <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/tailwind-css\"\">Tailwind CSS</a>, shadcn integrates seamlessly into any React-based application, which makes it a good fit for projects prioritizing control and extensibility. It includes a <a href=\"\"https://ui.shadcn.com/docs/cli\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">CLI</a> to help in the process of copying and pasting the components into your project. Its benefits also include reducing hidden dependencies and avoiding tightly coupled implementations, which is why shadcn is gaining traction as a compelling alternative for teams seeking a more hands-on, adaptable approach to front-end development.</p>\"",
-    "relatedBlips": ["Chakra UI", "Tailwind CSS"]
+    "relatedBlips": [
+      "Chakra UI",
+      "Tailwind CSS"
+    ]
   },
   {
     "name": "Slint",

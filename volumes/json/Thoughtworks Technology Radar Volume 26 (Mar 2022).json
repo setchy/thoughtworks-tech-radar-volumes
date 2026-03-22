@@ -69,7 +69,14 @@
     "isNew": "FALSE",
     "status": "moved in",
     "description": "\"<p>With continued pressure to keep systems secure and no reduction in the general threat landscape, a machine-readable <strong>Software Bill of Materials</strong> (SBOM) may help teams stay on top of security problems in the libraries that they rely on. The recent <a href=\"\"https://en.wikipedia.org/wiki/Log4Shell\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Log4Shell</a> zero-day remote exploit was critical and widespread, and if teams had had an SBOM ready, it could have been scanned for and fixed quickly. We've now had production experience using SBOMs on projects ranging from small companies to large multinationals and even government departments, and we're convinced they provide a benefit. Tools such as <a href=\"\"https://www.thoughtworks.com/radar/tools/syft\"\">Syft</a> make it easy to use an SBOM for vulnerability detection.</p>\"",
-    "relatedBlips": ["Syft", "Trivy", "Snyk", "FOSSA", "Chainloop", "CycloneDX"]
+    "relatedBlips": [
+      "Syft",
+      "Trivy",
+      "Snyk",
+      "FOSSA",
+      "Chainloop",
+      "CycloneDX"
+    ]
   },
   {
     "name": "Tactical forking",
@@ -132,7 +139,9 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p><a href=\"\"https://www.thoughtworks.com/radar/techniques/service-mesh\"\">Service mesh</a> is usually implemented as a reverse-proxy process, aka sidecar, deployed alongside each service instance. Although these sidecars are lightweight processes, the overall cost and operational complexity of adopting service mesh increases with every new instance of the service requiring another sidecar. However, with the advancements in <a href=\"\"https://www.thoughtworks.com/radar/platforms/ebpf\"\">eBPF</a>, we're observing a new <a href=\"\"https://isovalent.com/blog/post/2021-12-08-ebpf-servicemesh\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\"><strong>service mesh without sidecar</strong></a> approach where the functionalities of the mesh are safely pushed down to the OS kernel, thereby enabling services in the same node to communicate transparently via sockets without the need of additional proxies. You can try this with <a href=\"\"https://github.com/cilium/cilium-service-mesh-beta\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Cilium service mesh</a> and simplify the deployment from one proxy-per-service to one proxy-per-node. We're intrigued by the capabilities of eBPF and find this evolution of service mesh to be important to assess.</p>\"",
-    "relatedBlips": ["Istio"]
+    "relatedBlips": [
+      "Istio"
+    ]
   },
   {
     "name": "SLSA",
@@ -528,7 +537,9 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p><strong><a href=\"\"https://github.com/actions-runner-controller/actions-runner-controller\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">actions-runner-controller</a></strong> is a Kubernetes <a href=\"\"https://kubernetes.io/docs/concepts/architecture/controller/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">controller</a> that operates <a href=\"\"https://docs.github.com/en/actions/hosting-your-own-runners\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">self-hosted runners</a> for <a href=\"\"https://www.thoughtworks.com/radar/platforms/github-actions\"\">GitHub Actions</a> on your Kubernetes cluster. With this tool you create a runner resource on Kubernetes, and it will run and operate the self-hosted runner. Self-hosted runners are helpful in scenarios where the job that your GitHub Actions runs needs to access resources that are either not accessible to GitHub cloud runners or have specific operating system and environmental requirements that are different from what GitHub provides. In those cases where you have a Kubernetes cluster, you can run your self-hosted runners as a Kubernetes pod, with the ability to scale up or down hooking into GitHub webhook events. actions-controller-runner is lightweight and scalable.</p>\"",
-    "relatedBlips": ["GitHub Actions"]
+    "relatedBlips": [
+      "GitHub Actions"
+    ]
   },
   {
     "name": "CDKTF",
