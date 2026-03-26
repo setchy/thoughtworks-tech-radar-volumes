@@ -33,7 +33,7 @@
     "lodash": "4.17.23",
     "cheerio": "1.2.0",
     "ts-node": "10.9.2",
-    "typescript": "5.9.3"
+    "typescript": "6.0.2"
   },
   "engines": {
     "node": "24"
