@@ -12,8 +12,6 @@ jobs:
         steps:
             - name: Checkout code
               uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
-              with:
-                persist-credentials: false
 
             - name: Setup Node.js
               uses: actions/setup-node@53b83947a5a98c8d113130e565377fae1a50d02f # v6.3.0
@@ -38,16 +36,20 @@ jobs:
                   pnpm lint
 
             - name: Create Pull Request
-              uses: peter-evans/create-pull-request@c0f553fe549906ede9cf27b5156039d195d2ece0 # v8.1.0
-              with:
-                  token: ${{ secrets.GITHUB_TOKEN }}
-                  commit-message: |
-                      Automated dataset refresh
-                  branch: automated/volume-updates
-                  delete-branch: true
-                  title: "Radar Volumes Refresh"
-                  body: |
-                      Refresh technology radar datasets from latest sources.
-                  labels: |
-                      data-refresh
-                  reviewers: setchy
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              run: |
+                  git config user.name "github-actions[bot]"
+                  git config user.email "github-actions[bot]@users.noreply.github.com"
+                  git checkout -B automated/volume-updates
+                  git add -A
+                  git diff --staged --quiet && echo "No changes to commit" && exit 0
+                  git commit -m "Automated dataset refresh"
+                  git push origin automated/volume-updates --force
+                  gh pr create \
+                      --title "Radar Volumes Refresh" \
+                      --body "Refresh technology radar datasets from latest sources." \
+                      --label "data-refresh" \
+                      --reviewer setchy \
+                      --base main \
+                  || echo "PR already exists, skipping creation"
