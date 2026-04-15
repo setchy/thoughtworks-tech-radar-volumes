@@ -114,7 +114,9 @@
     "isNew": "FALSE",
     "status": "no change",
     "description": "\"<p>While the fabric of computing and data continues to shift in enterprises — from monolithic applications to <a href=\"\"https://www.thoughtworks.com/radar/techniques/microservices\"\">microservices</a>, from centralized data lakes to <a href=\"\"https://www.thoughtworks.com/radar/techniques/data-mesh\"\">data mesh</a>, from on-prem hosting to polycloud, with an increasing proliferation of connected devices — the approach to securing enterprise assets for the most part remains unchanged, with heavy reliance and trust in the network perimeter: Organizations continue to make heavy investments to secure their assets by hardening the virtual walls of their enterprises, using private links and firewall configurations and replacing static and cumbersome security processes that no longer serve the reality of today. This continuing trend compelled us to highlight <strong>zero trust architecture</strong> (ZTA) again.</p><br><br><p>ZTA is a paradigm shift in security architecture and strategy. It’s based on the assumption that a network perimeter is no longer representative of a secure boundary and no implicit trust should be granted to users or services based solely on their physical or network location. The number of resources, tools and platforms available to implement aspects of ZTA keeps growing and includes: enforcing <a href=\"\"https://www.thoughtworks.com/radar/techniques/security-policy-as-code\"\">policies as code</a> based on the least privilege and as granular as possible principles and continuous monitoring and automated mitigation of threats; using <a href=\"\"https://www.thoughtworks.com/radar/techniques/service-mesh\"\">service mesh</a> to enforce security control application-to-service and service-to-service; implementing <a href=\"\"https://www.thoughtworks.com/radar/techniques/binary-attestation\"\">binary attestation</a> to verify the origin of the binaries; and including <a href=\"\"https://www.thoughtworks.com/radar/techniques/secure-enclaves\"\">secure enclaves</a> in addition to traditional encryption to enforce the three pillars of data security: in transit, at rest and in memory. For introductions to the topic, consult the <a href=\"\"https://csrc.nist.gov/publications/detail/sp/800-207/final\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">NIST ZTA</a> publication and Google's white paper on <a href=\"\"https://cloud.google.com/security/beyondprod\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">BeyondProd</a>.</p>\"",
-    "relatedBlips": []
+    "relatedBlips": [
+      "Zero trust security for CI/CD"
+    ]
   },
   {
     "name": "Bounded low-code platforms",
@@ -339,7 +341,9 @@
     "isNew": "FALSE",
     "status": "no change",
     "description": "\"<p>We've seen interest in <strong><a href=\"\"https://pulumi.io/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Pulumi</a></strong> slowly but steadily rising. Pulumi fills a gaping hole in the infrastructure coding world where <a href=\"\"https://www.thoughtworks.com/radar/tools/terraform\"\">Terraform</a> maintains a firm hold. While Terraform is a tried-and-true standby, its declarative nature suffers from inadequate abstraction facilities and limited testability. Terraform is adequate when the infrastructure is entirely static, but dynamic infrastructure definitions call for a real programming language. Pulumi distinguishes itself by allowing configurations to be written in <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/typescript\"\">TypeScript</a>/JavaScript, <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/python-3\"\">Python</a> and <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/go-language\"\">Go</a> — no markup language or templating required. Pulumi is tightly focused on cloud-native architectures — including containers, serverless functions and data services — and provides good support for <a href=\"\"https://www.thoughtworks.com/radar/platforms/kubernetes\"\">Kubernetes</a>. Recently, <a href=\"\"https://www.thoughtworks.com/radar/platforms/aws-cloud-development-kit\"\">AWS CDK</a> has mounted a challenge, but Pulumi remains the only cloud-neutral tool in this area. We're anticipating wider Pulumi adoption in the future and looking forward to a viable tool and knowledge ecosystem emerging to support it.</p>\"",
-    "relatedBlips": ["Terraform"]
+    "relatedBlips": [
+      "Terraform"
+    ]
   },
   {
     "name": "Tekton",
@@ -636,7 +640,9 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p><strong><a href=\"\"https://pnpm.js.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">pnpm</a></strong> is an up-and-coming package manager for <a href=\"\"https://www.thoughtworks.com/radar/platforms/node-js\"\">Node.js</a> that we're looking at closely because of its higher speed and greater efficiency compared to other package managers. Dependencies are saved in a single place on the disk and are linked into the respective <code>node_modules</code> directories. pnpm also supports incremental optimization on file level, provides a solid API foundation to allow extension/customization and supports store server mode, which speeds up dependency download even more. If your organization has a large number of projects with the same dependencies, you may want to take a closer look at pnpm.</p>\"",
-    "relatedBlips": ["Node.js"]
+    "relatedBlips": [
+      "Node.js"
+    ]
   },
   {
     "name": "Sensei",
@@ -681,7 +687,9 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p>In the case where implementation in <a href=\"\"https://www.thoughtworks.com/radar/platforms/node-js\"\">Node.js</a> is necessary, we see that <a href=\"\"https://www.fastify.io/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\"><strong>Fastify</strong></a> is an option that our teams are very happy with. This web framework offers ease in handling request-response validations, support for <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/typescript\"\">TypeScript</a> and a plugin ecosystem giving our teams an easier experience developing software. Although it's a good option in the Node.js ecosystem, we stand by our previous advice: don't fall into <a href=\"\"https://www.thoughtworks.com/radar/platforms/node-overload\"\">Node overload</a> scenarios.</p>\"",
-    "relatedBlips": ["Node.js"]
+    "relatedBlips": [
+      "Node.js"
+    ]
   },
   {
     "name": "Immer",
@@ -888,6 +896,8 @@
     "isNew": "FALSE",
     "status": "no change",
     "description": "\"<p>Technologies, especially wildly popular ones, have a tendency to be overused. What we're seeing at the moment is <strong>Node overload</strong>, a tendency to use Node.js indiscriminately or for the wrong reasons. Among these, two stand out in our opinion. Firstly, we frequently hear that Node.js should be used so that all programming can be done in one programming language. Our view remains that <a href=\"\"https://www.thoughtworks.com/radar/techniques/polyglot-programming\"\">polyglot programming</a> is a better approach, and this still goes <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/javascript-as-a-first-class-language\"\">both ways</a>. Secondly, we often hear teams cite performance as a reason to choose Node.js. Although there are myriads of more or less sensible benchmarks, this perception is rooted in history. When Node.js became popular, it was the first major framework to embrace a nonblocking programming model which made it very efficient for IO-heavy tasks. (We mentioned this in our write-up of Node.js in 2012.) Due to its single-threaded nature, Node.js was never a good choice for compute-heavy workloads, though, and now that capable nonblocking frameworks also exist on other platforms — some with elegant, modern APIs — performance is no longer a reason to choose Node.js.</p>\"",
-    "relatedBlips": ["Polyglot programming"]
+    "relatedBlips": [
+      "Polyglot programming"
+    ]
   }
 ]

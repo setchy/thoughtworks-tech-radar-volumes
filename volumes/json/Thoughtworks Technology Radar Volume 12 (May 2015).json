@@ -96,7 +96,9 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p>At this point the vast majority of development teams are aware of the importance of writing secure software and dealing with their users’ data in a responsible way. They do face a steep learning curve and a vast number of potential threats, ranging from organized crime and government spying to teenagers who attack systems 'for the lulz'. <a href=\"\"https://www.owasp.org/index.php/Category:Threat_Modeling\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\"><strong>Threat modeling</strong></a>is a set of techniques, mostly from a defensive perspective, that help understand and classify potential threats. When turned into 'evil user stories' this can give a team a manageable and effective approach to making their systems more secure.</p>\"",
-    "relatedBlips": ["Security sandwich"]
+    "relatedBlips": [
+      "Security sandwich"
+    ]
   },
   {
     "name": "Accumulate-only data",
@@ -738,13 +740,16 @@
     "relatedBlips": []
   },
   {
-    "name": "React.js",
+    "name": "React JS",
     "ring": "trial",
     "quadrant": "languages-and-frameworks",
     "isNew": "FALSE",
     "status": "moved in",
     "description": "\"<p>One benefit to the ongoing avalanche of front-end JavaScript frameworks is that occasionally, a new idea crops up that makes us think. <a href=\"\"http://facebook.github.io/react/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\"><strong>React.js</strong></a> is a UI/View framework in which JavaScript functions generate HTML in a reactive data flow. We have seen several smaller projects achieve success with React.js and developers are drawn to its clean, composeable approach to componentization.</p>\"",
-    "relatedBlips": []
+    "relatedBlips": [
+      "Vite",
+      "Next.js"
+    ]
   },
   {
     "name": "Retrofit",

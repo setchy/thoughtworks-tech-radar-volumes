@@ -1,12 +1,14 @@
 [
   {
-    "name": "Four key metrics",
+    "name": "DORA metrics",
     "ring": "adopt",
     "quadrant": "techniques",
     "isNew": "FALSE",
     "status": "no change",
     "description": "\"<p>To measure software delivery performance, more and more organizations are defaulting to the <strong>four key metrics</strong> as defined by the <a href=\"\"https://www.devops-research.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">DORA research</a> program: change lead time, deployment frequency, mean time to restore (MTTR) and change fail percentage. This research and its statistical analysis have shown a clear link between high-delivery performance and these metrics; they provide a great leading indicator for how a delivery organization as a whole is doing.</p><br><br><p>We're still big proponents of these metrics, but we've also learned some lessons. We're still observing misguided approaches with tools that help teams measure these metrics based purely on their continuous delivery (CD) pipelines. In particular when it comes to the stability metrics (MTTR and change fail percentage), CD pipeline data alone doesn't provide enough information to determine what a deployment failure with real user impact is. Stability metrics only make sense if they include data about real incidents that degrade service for the users.</p><br><br><p>We recommend always to keep in mind the ultimate intention behind a measurement and use it to reflect and learn. For example, before spending weeks building up sophisticated dashboard tooling, consider just regularly taking the <a href=\"\"https://www.devops-research.com/quickcheck.html\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">DORA quick check</a> in team retrospectives. This gives the team the opportunity to reflect on which <a href=\"\"https://www.devops-research.com/research.html#capabilities\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">capabilities</a> they could work on to improve their metrics, which can be much more effective than overdetailed out-of-the-box tooling. Keep in mind that these four key metrics originated out of the organization-level research of high-performing teams, and the use of these metrics at a team level should be a way to reflect on their own behaviors, not just another set of metrics to add to the dashboard.</p>\"",
-    "relatedBlips": []
+    "relatedBlips": [
+      "Coding throughput as a measure of productivity"
+    ]
   },
   {
     "name": "Single team remote wall",
@@ -69,7 +71,14 @@
     "isNew": "FALSE",
     "status": "moved in",
     "description": "\"<p>With continued pressure to keep systems secure and no reduction in the general threat landscape, a machine-readable <strong>Software Bill of Materials</strong> (SBOM) may help teams stay on top of security problems in the libraries that they rely on. The recent <a href=\"\"https://en.wikipedia.org/wiki/Log4Shell\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Log4Shell</a> zero-day remote exploit was critical and widespread, and if teams had had an SBOM ready, it could have been scanned for and fixed quickly. We've now had production experience using SBOMs on projects ranging from small companies to large multinationals and even government departments, and we're convinced they provide a benefit. Tools such as <a href=\"\"https://www.thoughtworks.com/radar/tools/syft\"\">Syft</a> make it easy to use an SBOM for vulnerability detection.</p>\"",
-    "relatedBlips": ["Syft", "Trivy", "Snyk", "FOSSA", "Chainloop", "CycloneDX"]
+    "relatedBlips": [
+      "Syft",
+      "Trivy",
+      "Snyk",
+      "FOSSA",
+      "Chainloop",
+      "CycloneDX"
+    ]
   },
   {
     "name": "Tactical forking",
@@ -132,7 +141,9 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p><a href=\"\"https://www.thoughtworks.com/radar/techniques/service-mesh\"\">Service mesh</a> is usually implemented as a reverse-proxy process, aka sidecar, deployed alongside each service instance. Although these sidecars are lightweight processes, the overall cost and operational complexity of adopting service mesh increases with every new instance of the service requiring another sidecar. However, with the advancements in <a href=\"\"https://www.thoughtworks.com/radar/platforms/ebpf\"\">eBPF</a>, we're observing a new <a href=\"\"https://isovalent.com/blog/post/2021-12-08-ebpf-servicemesh\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\"><strong>service mesh without sidecar</strong></a> approach where the functionalities of the mesh are safely pushed down to the OS kernel, thereby enabling services in the same node to communicate transparently via sockets without the need of additional proxies. You can try this with <a href=\"\"https://github.com/cilium/cilium-service-mesh-beta\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Cilium service mesh</a> and simplify the deployment from one proxy-per-service to one proxy-per-node. We're intrigued by the capabilities of eBPF and find this evolution of service mesh to be important to assess.</p>\"",
-    "relatedBlips": ["Istio"]
+    "relatedBlips": [
+      "Istio"
+    ]
   },
   {
     "name": "SLSA",
@@ -303,15 +314,6 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p><strong><a href=\"\"https://github.com/vernemq/vernemq\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">VerneMQ</a></strong> is an open-source, high-performance, distributed MQTT broker. We've blipped other MQTT brokers in the past like <a href=\"\"https://www.thoughtworks.com/radar/platforms/mosquitto\"\">Mosquitto</a> and <a href=\"\"https://www.thoughtworks.com/radar/platforms/emq\"\">EMQ</a>. Like EMQ and RabbitMQ, VerneMQ is also based on Erlang/OTP which makes it highly scalable. It scales horizontally and vertically on commodity hardware to support a high number of concurrent publishers and consumers while maintaining low latency and fault tolerance. In our internal benchmarks, we've been able to achieve a few million concurrent connections in a single cluster. While it's not new, we've used it in production for some time now, and it has worked well for us.</p>\"",
-    "relatedBlips": []
-  },
-  {
-    "name": "Apache Iceberg",
-    "ring": "assess",
-    "quadrant": "platforms",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"<p><strong><a href=\"\"https://iceberg.apache.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Apache Iceberg</a></strong> is an open table format for very large analytic data sets. Iceberg supports modern analytical data operations such as record-level insert, update, delete, <a href=\"\"https://iceberg.apache.org/docs/latest/spark-queries/#time-travel\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">time-travel queries</a>, ACID transactions, <a href=\"\"https://iceberg.apache.org/docs/latest/partitioning/#icebergs-hidden-partitioning\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">hidden partitioning</a> and <a href=\"\"https://iceberg.apache.org/docs/latest/evolution/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">full schema evolution</a>. It supports multiple underlying file storage formats such as <a href=\"\"https://parquet.apache.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Apache Parquet</a>, <a href=\"\"https://orc.apache.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Apache ORC</a> and <a href=\"\"https://avro.apache.org/docs/1.2.0/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Apache Avro</a>. Many data-processing engines support Apache Iceberg, including SQL engines such as <a href=\"\"https://www.dremio.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Dremio</a> and <a href=\"\"https://trino.io/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Trino</a> as well as (structured) streaming engines such as <a href=\"\"https://spark.apache.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Apache Spark</a> and <a href=\"\"https://flink.apache.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Apache Flink</a>.</p><br><br><p>Apache Iceberg falls in the same category as <a href=\"\"https://delta.io/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Delta Lake</a> and <a href=\"\"https://hudi.apache.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Apache Hudi</a>. They all more or less support similar features, but each differs in the underlying implementations and detailed feature lists. Iceberg is an independent format and is not native to any specific processing engine, hence it's supported by an increasing number of platforms, including <a href=\"\"https://docs.aws.amazon.com/athena/latest/ug/querying-iceberg.html\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">AWS Athena</a> and <a href=\"\"https://www.snowflake.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Snowflake</a>. For the same reason, Apache Iceberg, unlike native formats such as Delta Lake, may not benefit from optimizations when used with Spark.</p>\"",
     "relatedBlips": []
   },
   {
@@ -528,7 +530,9 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p><strong><a href=\"\"https://github.com/actions-runner-controller/actions-runner-controller\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">actions-runner-controller</a></strong> is a Kubernetes <a href=\"\"https://kubernetes.io/docs/concepts/architecture/controller/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">controller</a> that operates <a href=\"\"https://docs.github.com/en/actions/hosting-your-own-runners\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">self-hosted runners</a> for <a href=\"\"https://www.thoughtworks.com/radar/platforms/github-actions\"\">GitHub Actions</a> on your Kubernetes cluster. With this tool you create a runner resource on Kubernetes, and it will run and operate the self-hosted runner. Self-hosted runners are helpful in scenarios where the job that your GitHub Actions runs needs to access resources that are either not accessible to GitHub cloud runners or have specific operating system and environmental requirements that are different from what GitHub provides. In those cases where you have a Kubernetes cluster, you can run your self-hosted runners as a Kubernetes pod, with the ability to scale up or down hooking into GitHub webhook events. actions-controller-runner is lightweight and scalable.</p>\"",
-    "relatedBlips": ["GitHub Actions"]
+    "relatedBlips": [
+      "GitHub Actions"
+    ]
   },
   {
     "name": "CDKTF",
@@ -700,6 +704,17 @@
     "status": "no change",
     "description": "\"<p><strong><a href=\"\"https://vowpalwabbit.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Vowpal Wabbit</a></strong> is a general-purpose machine-learning library. Originally created at Yahoo! Research over a decade ago, Vowpal Wabbit continues to implement new algorithms in reinforcement learning. We want to highlight <a href=\"\"https://vowpalwabbit.org/blog/vowpalwabbit-9.0.0.html\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Vowpal Wabbit 9.0</a>, a major release after six years, and encourage you to plan the <a href=\"\"https://vowpalwabbit.org/docs/vowpal_wabbit/python/latest/reference/python_8110_900_migration_guide.html\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">migration</a> as it has several usability improvements, new reductions and bug fixes.</p>\"",
     "relatedBlips": []
+  },
+  {
+    "name": "Apache Iceberg",
+    "ring": "assess",
+    "quadrant": "languages-and-frameworks",
+    "isNew": "TRUE",
+    "status": "new",
+    "description": "\"<p><strong><a href=\"\"https://iceberg.apache.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Apache Iceberg</a></strong> is an open table format for very large analytic data sets. Iceberg supports modern analytical data operations such as record-level insert, update, delete, <a href=\"\"https://iceberg.apache.org/docs/latest/spark-queries/#time-travel\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">time-travel queries</a>, ACID transactions, <a href=\"\"https://iceberg.apache.org/docs/latest/partitioning/#icebergs-hidden-partitioning\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">hidden partitioning</a> and <a href=\"\"https://iceberg.apache.org/docs/latest/evolution/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">full schema evolution</a>. It supports multiple underlying file storage formats such as <a href=\"\"https://parquet.apache.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Apache Parquet</a>, <a href=\"\"https://orc.apache.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Apache ORC</a> and <a href=\"\"https://avro.apache.org/docs/1.2.0/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Apache Avro</a>. Many data-processing engines support Apache Iceberg, including SQL engines such as <a href=\"\"https://www.dremio.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Dremio</a> and <a href=\"\"https://trino.io/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Trino</a> as well as (structured) streaming engines such as <a href=\"\"https://spark.apache.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Apache Spark</a> and <a href=\"\"https://flink.apache.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Apache Flink</a>.</p><br><br><p>Apache Iceberg falls in the same category as <a href=\"\"https://delta.io/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Delta Lake</a> and <a href=\"\"https://hudi.apache.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Apache Hudi</a>. They all more or less support similar features, but each differs in the underlying implementations and detailed feature lists. Iceberg is an independent format and is not native to any specific processing engine, hence it's supported by an increasing number of platforms, including <a href=\"\"https://docs.aws.amazon.com/athena/latest/ug/querying-iceberg.html\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">AWS Athena</a> and <a href=\"\"https://www.snowflake.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Snowflake</a>. For the same reason, Apache Iceberg, unlike native formats such as Delta Lake, may not benefit from optimizations when used with Spark.</p>\"",
+    "relatedBlips": [
+      "Trino"
+    ]
   },
   {
     "name": "Azure Bicep",
