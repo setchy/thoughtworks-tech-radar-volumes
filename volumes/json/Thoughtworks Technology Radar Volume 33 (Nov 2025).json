@@ -21,7 +21,7 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p>For teams actively using AI in software delivery, the next step is moving beyond individual prompting toward <strong>curated instructions for software teams</strong>. This practice helps you apply AI effectively across all delivery tasks — not just coding — by sharing proven, high-quality instructions. The most straightforward way to implement this is by committing instruction files, such as an <a href=\"\"https://www.thoughtworks.com/radar/techniques/agents-md\"\">AGENTS.md</a>, directly to your project repository. Most AI-coding tools — including <a href=\"\"https://www.thoughtworks.com/radar/tools/cursor\"\">Cursor</a>, <a href=\"\"https://www.thoughtworks.com/radar/tools/windsurf\"\">Windsurf</a> and <a href=\"\"https://www.thoughtworks.com/radar/tools/claude-code\"\">Claude Code</a> — support sharing instructions through custom slash commands or workflows. For noncoding tasks, you can set up organization-wide prompt libraries ready to use. This systematic approach allows for continuous improvement: As soon as a prompt is refined, the entire team benefits, ensuring consistent access to the best AI instructions.</p>\"",
-    "relatedBlips": ["Windsurf", "Claude Code", "Cursor", "AGENTS.md"]
+    "relatedBlips": ["AGENTS.md"]
   },
   {
     "name": "Pre-commit hooks",
@@ -92,7 +92,7 @@
     "isNew": "FALSE",
     "status": "moved in",
     "description": "\"<p><strong>Structured output from LLMs</strong> is the practice of constraining a large language model to produce responses in a predefined format — such as JSON or a specific programming class. This technique is essential for building reliable, production-grade applications, transforming the LLM's typically unpredictable text into a machine-readable, deterministic data contract. Based on successful production use, we’re moving this technique from Assess to Trial.</p><br><p>Approaches range from simple prompt-based formatting and <a href=\"\"https://platform.openai.com/docs/guides/structured-outputs\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">model-native structured outputs</a> to more robust constrained decoding methods using tools like <a href=\"\"https://github.com/dottxt-ai/outlines\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Outlines</a> and <a href=\"\"https://github.com/567-labs/instructor\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Instructor</a>, which apply finite-state machines to guarantee valid output. We’ve successfully used this technique to extract complex, unstructured data from diverse document types and convert it into structured JSON for downstream business logic.</p>\"",
-    "relatedBlips": []
+    "relatedBlips": ["Pydantic AI", "Instructor"]
   },
   {
     "name": "TCR (Test && Commit || Revert)",
@@ -128,7 +128,7 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p><strong>Context engineering</strong> is the systematic design and optimization of the information provided to a large language model during inference to reliably produce the desired output. It involves structuring, selecting and sequencing contextual elements — such as prompts, retrieved data, memory, instructions and environmental signals — so the model’s internal layers operate in an optimal state. Unlike prompt engineering, which focuses only on the wording of prompts, context engineering considers the entire configuration of context: how relevant knowledge, instructions and prior context are organized and delivered to achieve the most effective results.</p><br><p>Today, engineers use a range of discrete techniques that can be grouped into three areas: <em>Context setup</em> covers curation tactics such as using minimal <a href=\"\"https://www.promptingguide.ai/introduction/tips\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">system prompts</a>, canonical <a href=\"\"https://www.promptingguide.ai/techniques/fewshot\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">few-shot examples</a> and token-efficient <a href=\"\"https://www.anthropic.com/engineering/writing-tools-for-agents\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">tools</a> for decisive action. <em>Context management for long-horizon tasks</em> addresses finite context windows through <a href=\"\"https://blog.langchain.com/context-engineering-for-agents/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">context summarization</a> , <a href=\"\"https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">structured note-taking</a> to persist external memories and <a href=\"\"https://docs.claude.com/en/docs/claude-code/sub-agents\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">sub-agent architectures</a> to isolate and summarize complex sub-tasks. <em>Dynamic information retrieval</em> relies on <a href=\"\"https://jentic.com/blog/just-in-time-tooling\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">just-in-time (JIT) context retrieval</a>, where agents autonomously load external data only when immediately relevant, maximizing efficiency and precision.</p>\"",
-    "relatedBlips": []
+    "relatedBlips": ["Progressive context disclosure", "Context graph"]
   },
   {
     "name": "GenAI for forward engineering",
@@ -203,7 +203,7 @@
     "isNew": "FALSE",
     "status": "moved out",
     "description": "\"<p>We’ve observed steady progress in the development of <strong>small language models </strong>(SLMs) across several volumes of the Technology Radar. With growing interest in building agentic solutions, we’re seeing increasing evidence that SLMs can power agentic AI efficiently. Most current agentic workflows are focused on narrow, repetitive tasks that don’t require advanced reasoning, making them a good match for SLMs. Continued advancements in SLMs such as Phi-3, SmolLM2 and DeepSeek suggest that SLMs offer sufficient capability for these tasks — with the added benefits of lower cost, reduced latency and lower resource consumption compared to LLMs. It’s worth considering SLMs as the default choice for agentic workflows, reserving larger, more resource-intensive LLMs only when necessary.</p>\"",
-    "relatedBlips": []
+    "relatedBlips": ["Model distillation"]
   },
   {
     "name": "Spec-driven development",
@@ -221,7 +221,7 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p><strong>Team of coding agents</strong> refers to a technique in which a developer orchestrates multiple AI coding agents, each with a distinct role — for example, architect, back-end specialist, tester — to collaborate on a development task. This practice is supported by tools such as <a href=\"\"https://www.thoughtworks.com/radar/tools/claude-code\"\">Claude Code</a>, <a href=\"\"https://github.com/RooCodeInc/Roo-Code\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Roo Code</a> and <a href=\"\"https://kilocode.ai/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Kilo Code</a> which enable subagents and multiple operating modes. Building on the proven principle that assigning LLMs specific roles and personas improves output quality, the idea is to achieve better results by coordinating multiple role-specific agents rather than relying on a single general-purpose one. The optimal level of agent is still being explored, but it can extend beyond simple one-to-one mappings with traditional team roles. This approach marks a shift toward orchestrated, multi-step AI-assisted development pipelines.</p>\"",
-    "relatedBlips": ["Claude Code"]
+    "relatedBlips": ["Coding agent swarms"]
   },
   {
     "name": "Topology-aware scheduling",
@@ -239,7 +239,7 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p>The now-familiar joke that the S in MCP stands for “security” hides a very real problem. When agents communicate with one another — through tool invocation or API calls — they can quickly encounter what's become known as the <a href=\"\"https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">lethal trifecta</a>: access to private data, exposure to untrusted content and the ability to communicate externally. Agents with all three are highly vulnerable. Because LLMs tend to follow instructions in their input, content that includes a directive to exfiltrate data to an untrusted source can easily lead to data leaks. One emerging technique to mitigate this risk is <strong><a href=\"\"https://invariantlabs.ai/blog/toxic-flow-analysis\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">toxic flow analysis</a></strong>, which examines the flow graph of an agentic system to identify potentially unsafe data paths for further investigation. While still in its early stages, toxic flow analysis represents one of several promising approaches to detecting the new attack vectors that agentic systems and MCP servers are increasingly exposed to.</p>\"",
-    "relatedBlips": ["Agent-to-Agent (A2A) Protocol"]
+    "relatedBlips": ["OpenClaw", "Agent Skills", "Agent Scan"]
   },
   {
     "name": "AI-accelerated shadow IT",
@@ -402,7 +402,7 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p><strong><a href=\"\"https://github.com/ag-ui-protocol/ag-ui\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">AG-UI</a></strong> is an open protocol and library designed to standardize communication between rich user interfaces and agents. Focused on direct user-facing agents, it uses middleware and client integrations to generalize across any frontend and backend. The protocol defines a consistent way for back-end agents to communicate with front-end applications, enabling real-time, stateful collaboration between AI and human users. It supports multiple transport protocols, including SSE and WebSockets, and provides standardized event types to represent different states of agent execution. Built-in support is available for popular agentic frameworks such as <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/langgraph\"\">LangGraph</a> and <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/pydantic-ai\"\">Pydantic AI</a>, with community integrations for others.</p>\"",
-    "relatedBlips": ["LangGraph", "Pydantic AI"]
+    "relatedBlips": ["Model Context Protocol (MCP)", "HTML Tools", "MCP Apps"]
   },
   {
     "name": "Agent-to-Agent (A2A) Protocol",
@@ -447,7 +447,7 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p><strong><a href=\"\"https://coder.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Coder</a></strong> is a platform for quickly provisioning standardized coding environments, following the <a href=\"\"https://www.thoughtworks.com/radar/techniques/development-environments-in-the-cloud\"\">development environments in the cloud</a> practice we've described before. Compared with similar tools such as <a href=\"\"https://www.thoughtworks.com/radar/tools/gitpod\"\">Gitpod</a> (now rebranded as <a href=\"\"https://ona.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Ona</a>) and <a href=\"\"https://www.thoughtworks.com/radar/tools/github-codespaces\"\">GitHub Codespaces</a>, Coder offers greater control over workstation customization through Terraform. It hosts workstations on your own infrastructure, whether in the cloud or in a data center, rather than on a vendor's servers. This approach provides more flexibility, including the ability to run AI coding agents and access internal organizational systems. However, this flexibility comes with tradeoffs: More effort to set up and maintain workstation templates and greater responsibility for managing data security risks in agentic workflows.</p>\"",
-    "relatedBlips": ["GitHub Codespaces"]
+    "relatedBlips": ["Pixel-streamed development environments"]
   },
   {
     "name": "Graft",
@@ -592,10 +592,13 @@
     "status": "new",
     "description": "\"<p>Anthropic's <strong><a href=\"\"https://claude.com/product/claude-code\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Claude Code</a></strong> is an agentic AI coding tool that provides a natural language interface and agentic execution model for planning and implementing complex, multi-step workflows. Released less than a year ago, it has already been widely adopted by developers inside and outside Thoughtworks, leading us to place it in Trial. Console-based coding agents such as OpenAI's <a href=\"\"https://developers.openai.com/codex/cli/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Codex CLI</a>, Google's <a href=\"\"https://developers.google.com/gemini-code-assist/docs/gemini-cli\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Gemini CLI</a> and the open-source <a href=\"\"https://apidog.com/blog/opencode/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">OpenCode</a> have been released, while IDE-based assistants like <a href=\"\"https://www.thoughtworks.com/radar/tools/cursor\"\">Cursor</a>, <a href=\"\"https://www.thoughtworks.com/radar/tools/windsurf\"\">Windsurf</a> and <a href=\"\"https://www.thoughtworks.com/radar/tools/github-copilot\"\">GitHub Copilot</a> now include agent modes. Even so, Claude Code remains a favorite. We see teams using it not only to write and modify code but also as a general-purpose AI agent for managing specifications, stories, configuration, infrastructure and documentation.</p><br><p>Agentic coding shifts the developer's focus from writing code to specifying intent and delegating implementation. While this can accelerate development cycles, it can also lead to <a href=\"\"https://www.thoughtworks.com/radar/techniques/complacency-with-ai-generated-code\"\">complacency with AI-generated code</a>, which in turn may result in code that is harder to maintain and evolve — for both humans and AI agents. It’s therefore essential for teams to rigorously manage how Claude Code works, using techniques such as <a href=\"\"https://www.thoughtworks.com/radar/techniques/context-engineering\"\">context engineering</a>, <a href=\"\"https://www.thoughtworks.com/radar/techniques/curated-shared-instructions-for-software-teams\"\">curated shared instructions</a> and potentially <a href=\"\"https://www.thoughtworks.com/radar/techniques/team-of-coding-agents\"\">teams of coding agents</a>.</p>\"",
     "relatedBlips": [
+      "OpenAI Codex",
+      "OpenCode",
+      "Pi",
+      "Coding agent swarms",
       "Complacency with AI-generated code",
-      "Cursor",
-      "GitHub Copilot",
-      "Windsurf",
+      "Context engineering",
+      "Progressive context disclosure",
       "Curated shared instructions for software teams"
     ]
   },
@@ -703,22 +706,6 @@
     "relatedBlips": ["Docling"]
   },
   {
-    "name": "Docling",
-    "ring": "assess",
-    "quadrant": "tools",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"<p><strong><a href=\"\"https://docling-project.github.io/docling/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Docling</a></strong> is an open-source Python and TypeScript library for advanced document processing of unstructured data. It addresses the often overlooked \"\"last mile\"\" problem of converting real-world documents — like PDFs and PowerPoints — into clean, machine-readable formats. Unlike traditional extractors, Docling uses a computer vision–based approach to interpret document layout and semantic structure, which makes its output particularly valuable for <a href=\"\"https://www.thoughtworks.com/radar/techniques/retrieval-augmented-generation-rag\"\">retrieval-augmented generation (RAG)</a> pipelines. It converts complex documents into structured formats such as JSON or Markdown, supporting techniques like <a href=\"\"https://www.thoughtworks.com/radar/techniques/structured-output-from-llms\"\">structured output from LLMs</a>. This contrasts with <a href=\"\"https://www.thoughtworks.com/radar/tools/colpali\"\">ColPali</a>, which feeds page images directly to a vision-language model for retrieval.</p><br><p>Docling's open-source nature and Python core, built on a custom <a href=\"\"https://www.thoughtworks.com/radar/tools/pydantic\"\">Pydantic</a>-based data model, provide a flexible, self-hosted alternative to proprietary cloud tools such as <a href=\"\"https://www.thoughtworks.com/radar/tools/azure-document-intelligence\"\">Azure Document Intelligence</a>, <a href=\"\"https://aws.amazon.com/textract/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Amazon Textract</a> and <a href=\"\"https://cloud.google.com/document-ai\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Google Document AI</a>. Backed by IBM Research, the project’s rapid development and plug-and-play architecture for integrating with other frameworks like <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/langgraph\"\">LangGraph</a> make it well worth assessing for teams building production-grade AI-ready data pipelines.</p>\"",
-    "relatedBlips": [
-      "Retrieval-augmented generation (RAG)",
-      "Structured output from LLMs",
-      "Pydantic",
-      "ColPali",
-      "LangGraph",
-      "Azure AI Document Intelligence"
-    ]
-  },
-  {
     "name": "E2B",
     "ring": "assess",
     "quadrant": "tools",
@@ -818,7 +805,7 @@
     "isNew": "FALSE",
     "status": "moved in",
     "description": "\"<p><strong><a href=\"\"https://github.com/langchain-ai/langgraph\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">LangGraph</a></strong> is an orchestration framework for building stateful <a href=\"\"https://www.thoughtworks.com/radar/techniques/llm-powered-autonomous-agents\"\">multi-agent applications</a> using LLMs. It provides low-level primitives such as nodes and edges, along with built-in features that give developers granular control over agent workflows, memory management and state persistence. This means developers can start with a simple pre-built graph and scale to complex, evolving agent architectures. With support for streaming, advanced context management and resilience patterns like model fallbacks and tool error handling, LangGraph enables you to build robust, production-grade agentic applications. Its graph-based approach ensures predictable, customizable workflows and simplifies debugging and scaling. Our teams have had strong results using LangGraph to build multi-agent systems thanks to its lightweight and modular design.</p>\"",
-    "relatedBlips": ["LLM-powered autonomous agents"]
+    "relatedBlips": ["Pydantic AI"]
   },
   {
     "name": "vLLM",
@@ -847,9 +834,8 @@
     "description": "\"<p><strong><a href=\"\"https://github.com/confident-ai/deepeval\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">DeepEval</a></strong> is an open-source, Python-based evaluation framework for assessing LLM performance. It can be used to evaluate <a href=\"\"https://www.thoughtworks.com/radar/techniques/retrieval-augmented-generation-rag\"\">retrieval-augmented generation (RAG)</a> and other applications built with frameworks such as <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/llamaindex\"\">LlamaIndex</a> or <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/langchain\"\">LangChain</a>, as well as to baseline and benchmark models. DeepEval goes beyond word-matching scores, assessing accuracy, relevance and consistency to provide more reliable evaluation in real-world scenarios. It includes metrics such as hallucination detection, answer relevancy and hyperparameter optimization and supports <a href=\"\"https://github.com/confident-ai/deepeval?tab=readme-ov-file#geval\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">GEval</a> for creating custom, use case–specific metrics. Our teams are using DeepEval to fine-tune agentic outputs using the <a href=\"\"https://www.thoughtworks.com/radar/techniques/llm-as-a-judge\"\">LLM as a judge</a> technique. It integrates with pytest and CI/CD pipelines, making it easy to adopt and valuable for continuous evaluation. For teams building LLM-based applications in regulated environments, <a href=\"\"https://github.com/UKGovernmentBEIS/inspect_ai\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Inspect AI</a>, developed by the UK AI Safety Institute, offers an alternative with stronger focus on auditing and compliance.</p>\"",
     "relatedBlips": [
       "Retrieval-augmented generation (RAG)",
-      "LLM as a judge",
-      "LangChain",
-      "LlamaIndex"
+      "LlamaIndex",
+      "LangChain"
     ]
   },
   {
@@ -895,7 +881,7 @@
     "isNew": "FALSE",
     "status": "no change",
     "description": "\"<p>We continue to have positive experiences with <strong><a href=\"\"https://www.phoenixframework.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Phoenix</a></strong>, a server-side web MVC framework written in <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/elixir\"\">Elixir</a>. Phoenix builds on the rapid application development and developer experience learnings of Ruby on Rails, while also advancing into functional programming paradigms.</p><br><p>In this volume, we’re highlighting the release of <a href=\"\"https://phoenixframework.org/blog/phoenix-liveview-1.0-released\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Phoenix LiveView 1.0</a>. LiveView is an HTML-over-the-wire solution — similar to <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/htmx\"\">HTMX</a> or <a href=\"\"https://www.thoughtworks.com/radar/techniques/hotwire\"\">Hotwire</a> — that enables developers to build rich, real-time user experiences entirely with server-rendered HTML. While similar technologies usually handle partial updates through HTML switching, LiveView provides a full component-based architecture via <a href=\"\"https://hexdocs.pm/phoenix_live_view/Phoenix.LiveComponent.html\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">LiveComponents</a>, offering composition, props passing, state management and lifecycle hooks akin to <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/react-js\"\">React</a> or <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/vue-js\"\">Vue.js</a>. LiveView combines the productivity and scalability of Phoenix with robust complexity management, making it well-suited for building highly interactive frontends without the need for a full JavaScript framework.</p>\"",
-    "relatedBlips": ["Vue.js", "Elixir", "htmx", "Hotwire", "React.js"]
+    "relatedBlips": ["Vue.js", "Elixir", "htmx", "Hotwire", "React JS"]
   },
   {
     "name": "Presidio",
@@ -936,7 +922,7 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p><strong><a href=\"\"https://google.github.io/adk-docs/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Agent Development Kit</a> (ADK)</strong> is a framework for developing and deploying AI agents that applies modern software engineering discipline rather than relying solely on prompting. It introduces familiar abstractions such as classes, methods, workflow patterns and CLI support. Compared to frameworks like <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/langgraph\"\">LangGraph</a> or <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/crewai\"\">CrewAI</a>, ADK’s strength lies in its deep integration with Google’s AI infrastructure, providing enterprise-ready grounding, data access and monitoring. It’s also designed for interoperability, supporting tool wrappers and the <a href=\"\"https://www.thoughtworks.com/radar/platforms/agent-to-agent-a2a-protocol\"\">A2A protocol</a> for agent-to-agent communication. For organizations already invested in GCP, ADK presents a promising foundation for building scalable, secure and manageable agentic architecture. Though still early in its evolution, it signals Google’s direction toward a native, full-stack agent development environment. We recommend keeping a close eye on its maturity and ecosystem growth.</p>\"",
-    "relatedBlips": ["LangGraph", "CrewAI", "Agent-to-Agent (A2A) Protocol"]
+    "relatedBlips": ["LangGraph", "CrewAI"]
   },
   {
     "name": "Agno",
@@ -984,6 +970,21 @@
     "relatedBlips": []
   },
   {
+    "name": "Docling",
+    "ring": "assess",
+    "quadrant": "languages-and-frameworks",
+    "isNew": "TRUE",
+    "status": "new",
+    "description": "\"<p><strong><a href=\"\"https://docling-project.github.io/docling/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Docling</a></strong> is an open-source Python and TypeScript library for advanced document processing of unstructured data. It addresses the often overlooked \"\"last mile\"\" problem of converting real-world documents — like PDFs and PowerPoints — into clean, machine-readable formats. Unlike traditional extractors, Docling uses a computer vision–based approach to interpret document layout and semantic structure, which makes its output particularly valuable for <a href=\"\"https://www.thoughtworks.com/radar/techniques/retrieval-augmented-generation-rag\"\">retrieval-augmented generation (RAG)</a> pipelines. It converts complex documents into structured formats such as JSON or Markdown, supporting techniques like <a href=\"\"https://www.thoughtworks.com/radar/techniques/structured-output-from-llms\"\">structured output from LLMs</a>. This contrasts with <a href=\"\"https://www.thoughtworks.com/radar/tools/colpali\"\">ColPali</a>, which feeds page images directly to a vision-language model for retrieval.</p><br><p>Docling's open-source nature and Python core, built on a custom <a href=\"\"https://www.thoughtworks.com/radar/tools/pydantic\"\">Pydantic</a>-based data model, provide a flexible, self-hosted alternative to proprietary cloud tools such as <a href=\"\"https://www.thoughtworks.com/radar/tools/azure-document-intelligence\"\">Azure Document Intelligence</a>, <a href=\"\"https://aws.amazon.com/textract/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Amazon Textract</a> and <a href=\"\"https://cloud.google.com/document-ai\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Google Document AI</a>. Backed by IBM Research, the project’s rapid development and plug-and-play architecture for integrating with other frameworks like <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/langgraph\"\">LangGraph</a> make it well worth assessing for teams building production-grade AI-ready data pipelines.</p>\"",
+    "relatedBlips": [
+      "Retrieval-augmented generation (RAG)",
+      "Structured output from LLMs",
+      "ColPali",
+      "Azure AI Document Intelligence",
+      "LangGraph"
+    ]
+  },
+  {
     "name": "Drizzle",
     "ring": "assess",
     "quadrant": "languages-and-frameworks",
@@ -1017,7 +1018,7 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p><strong><a href=\"\"https://github.com/google/langextract\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">LangExtract</a></strong> is a Python library that uses LLMs to extract structured information from unstructured text based on user-defined instructions. It processes domain-specific materials — such as clinical notes and reports — identifying and organizing key details while keeping each extracted data point traceable to its source. The extracted entities can be exported as a <code>.jsonl</code> file, a standard format for language model data and visualized through an interactive HTML interface for contextual review. Our teams evaluated LangExtract for extracting entities to populate a domain knowledge graph and found it effective for transforming complex documents into structured, machine-readable representations.</p>\"",
-    "relatedBlips": []
+    "relatedBlips": ["Structured output from LLMs", "Pydantic AI"]
   },
   {
     "name": "Langflow",

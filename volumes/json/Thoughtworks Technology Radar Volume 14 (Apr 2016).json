@@ -720,13 +720,13 @@
     "relatedBlips": []
   },
   {
-    "name": "React.js",
+    "name": "React JS",
     "ring": "adopt",
     "quadrant": "languages-and-frameworks",
     "isNew": "FALSE",
     "status": "moved in",
     "description": "\"\"",
-    "relatedBlips": []
+    "relatedBlips": ["Vite", "Next.js"]
   },
   {
     "name": "Spring Boot",

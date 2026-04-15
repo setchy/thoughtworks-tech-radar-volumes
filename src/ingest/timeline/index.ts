@@ -6,6 +6,8 @@ import _ from 'lodash';
 import { readJSONFile, writeJSONFile } from '../../data/repository';
 import {
   FILES,
+  getRingNameForVolume,
+  normalizeRingName,
   QUADRANT_SORT_ORDER,
   RING_SORT_ORDER,
 } from '../../shared/constants';
@@ -43,7 +45,7 @@ export async function generateMasterData() {
   const sortedMasterData = _.orderBy(masterData.blipEntries, [
     'volume',
     (entry) => _.indexOf(QUADRANT_SORT_ORDER, entry.quadrant),
-    (entry) => _.indexOf(RING_SORT_ORDER, entry.ring),
+    (entry) => _.indexOf(RING_SORT_ORDER, normalizeRingName(entry.ring)),
     'name',
   ]);
 
@@ -108,7 +110,10 @@ function createBlipTimelineEntryFromPublication(
   const publishedDate = getPublishedDateFromBlipDOM(blipPublicationHtml);
   const volume = getVolumeNameFromDate(publishedDate);
   const quadrant = getQuadrantNameFromPath(path);
-  const ring = getRingNameFromBlipDOM(blipPublicationHtml);
+  const ring = getRingNameForVolume(
+    getRingNameFromBlipDOM(blipPublicationHtml),
+    volume,
+  );
   const descriptionHtml = getDescriptionHTMLFromBlipDOM(blipPublicationHtml);
 
   const blipTimelineEntry: BlipTimelineEntry = {
@@ -138,12 +143,12 @@ function calculateBlipMovements(blipMasterData: MasterData) {
     if (i > 0) {
       const currentRingIndex = _.indexOf(
         RING_SORT_ORDER,
-        blipMasterData.blipEntries[i].ring,
+        normalizeRingName(blipMasterData.blipEntries[i].ring),
       );
 
       const previousRingIndex = _.indexOf(
         RING_SORT_ORDER,
-        blipMasterData.blipEntries[i - 1].ring,
+        normalizeRingName(blipMasterData.blipEntries[i - 1].ring),
       );
 
       if (currentRingIndex > previousRingIndex) {

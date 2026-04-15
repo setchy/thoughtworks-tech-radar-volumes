@@ -93,7 +93,7 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p>Large language models (LLMs) have proven useful in many areas of applications, but the fact that they are large can be a source of problems: responding to a prompt requires a lot of compute resources, making queries slow and expensive; the models are proprietary and so large that they must be hosted in a cloud by a third party, which can be problematic for sensitive data; and training a model is prohibitively expensive in most cases. The last issue can be addressed with the <a href=\"\"https://www.thoughtworks.com/radar/techniques/retrieval-augmented-generation-rag\"\">RAG</a> pattern, which side-steps the need to train and fine-tune foundational models, but cost and privacy concerns often remain. In response, we’re now seeing growing interest in <strong>small language models (SLMs)</strong>. In comparison to their more popular siblings, they have fewer weights and less precision, usually between 3.5 billion and 10 billion parameters. <a href=\"\"https://arxiv.org/html/2406.11402v2\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Recent research</a> suggests that, in the right context, when set up correctly, SLMs can perform as well as or even outperform LLMs. And their size makes it possible to run them on <a href=\"\"https://www.thoughtworks.com/radar/techniques/on-device-llm-inference\"\">edge devices</a>. We've previously mentioned Google's <a href=\"\"https://www.thoughtworks.com/radar/platforms/gemini-nano\"\">Gemini Nano</a>, but the landscape is evolving quickly, with Microsoft introducing its <a href=\"\"https://news.microsoft.com/source/features/ai/the-phi-3-small-language-models-with-big-potential/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Phi-3</a> series, for example.</p>\"",
-    "relatedBlips": []
+    "relatedBlips": ["Model distillation"]
   },
   {
     "name": "Synthetic data for testing and training models",
@@ -182,7 +182,7 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p><strong>Structured output from LLMs</strong> refers to the practice of constraining a language model's response into a defined schema. This can be achieved either through instructing a generalized model to respond in a particular format or by fine-tuning a model so it \"\"natively\"\" outputs, for example, JSON. OpenAI now supports structured output, allowing developers to supply a JSON Schema, <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/pydantic\"\">pydantic</a> or Zod object to constrain model responses. This capability is particularly valuable for enabling function calling, API interactions and external integrations, where accuracy and adherence to a format are critical. Structured output not only enhances the way LLMs can interface with code but also supports broader use cases like generating markup for rendering charts. Additionally, structured output has been shown to reduce the chance of hallucinations within model output.</p>\"",
-    "relatedBlips": []
+    "relatedBlips": ["Pydantic AI", "Instructor"]
   },
   {
     "name": "Complacency with AI-generated code",
@@ -260,8 +260,11 @@
     "status": "moved in",
     "description": "\"<p>LLMs function as black boxes, making it difficult to determine their behavior. Observability is crucial for opening this black box and understanding how LLM applications operate in production. Our teams have had positive experiences with <a href=\"\"https://github.com/langfuse/langfuse\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Langfuse</a> for observing, monitoring and evaluating LLM-based applications. Its tracing, analytics and evaluation capabilities allow us to analyze completion performance and accuracy, manage costs and latency and understand production usage patterns, thus facilitating continuous, data-driven improvements. Instrumentation data provides complete traceability of the request-response flow and intermediate steps, which can be used as test data to validate the application before deploying new changes. We've utilized Langfuse with <a href=\"\"https://www.thoughtworks.com/radar/techniques/retrieval-augmented-generation-rag\"\">RAG</a> (retrieval-augmented generation), among other LLM architectures, and <a href=\"\"https://www.thoughtworks.com/radar/techniques/llm-powered-autonomous-agents\"\">LLM-powered autonomous agents</a>. In a RAG-based application, for example, analyzing low-scoring conversation traces helps identify which parts of the architecture — pre-retrieval, retrieval or generation — need refinement. Another option worth considering in this space is <a href=\"\"https://www.langchain.com/langsmith\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Langsmith</a>.</p>\"",
     "relatedBlips": [
-      "Retrieval-augmented generation (RAG)",
-      "LLM-powered autonomous agents"
+      "ClickHouse",
+      "Helicone",
+      "LangSmith",
+      "OpenTelemetry",
+      "Pydantic AI"
     ]
   },
   {
@@ -489,7 +492,7 @@
     "isNew": "FALSE",
     "status": "moved in",
     "description": "\"<p><strong><a href=\"\"https://www.linearb.io\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">LinearB</a></strong>, a software engineering intelligence platform, has empowered our engineering leaders with data-driven insights to support continuous improvement. It aligns key areas such as benchmarking, workflow automation and targeted investments in enhancing developer experience and productivity. Our experience with LinearB highlights its ability to foster a culture of improvement and efficiency within engineering teams. Our teams have used the platform to track key engineering metrics, identify areas for enhancement and implement evidence-based actions. These capabilities align well with LinearB’s core value proposition: benchmarking, automating metric collection and enabling data-driven improvements. LinearB integrates with source code, application lifecycle, CI/CD and communication tools and uses both preconfigured and custom engineering metrics to provide comprehensive quantitative insights into developer experience, productivity and team performance. As advocates of <a href=\"\"https://www.thoughtworks.com/radar/techniques/four-key-metrics\"\">DORA</a>, we appreciate LinearB’s strong emphasis on these specific metrics and its ability to measure key aspects of software delivery performance, which are essential for improving efficiency. Historically, teams have faced challenges in gathering DORA-specific metrics, often relying on complex custom dashboards or manual processes. LinearB continues to offer a compelling solution that automates the tracking of these metrics and delivers real-time data that supports proactive decision-making around developer experience, productivity and predictability.</p>\"",
-    "relatedBlips": ["Four key metrics"]
+    "relatedBlips": ["DORA metrics"]
   },
   {
     "name": "pgvector",
@@ -561,7 +564,7 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p>The arms race for AI-assisted programming tools is ongoing, and the most eye-catching one is <strong><a href=\"\"https://www.cursor.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Cursor</a></strong>. Cursor is an AI-first code editor designed to enhance developer productivity by deeply integrating AI into the coding workflow. We've paid attention to it in previous Radar assessments, but it's clear that the recent continuous improvement of Cursor has ushered in a qualitative change. In our use, Cursor has demonstrated strong contextual reasoning capabilities based on the existing codebase. While other AI code tools like <a href=\"\"https://www.thoughtworks.com/radar/tools/gitHub-copilot\"\">GitHub Copilot</a> tend to generate and collaborate around code snippets, Cursor's multi-line and multi-file editing operations make it stand out. Cursor is forked from <a href=\"\"https://www.thoughtworks.com/radar/tools/visual-studio-code\"\">VSCode</a> and developed based on it, providing a fast and intuitive interaction method that conforms to the developer's intuition. Powerful operations can be completed with <code>ctrl/cmd+K</code> and <code>ctrl/cmd+L</code>. Cursor is leading a new round of competition in AI programming tools, especially regarding developer interaction and understanding of codebases.</p>\"",
-    "relatedBlips": ["Model Context Protocol (MCP)", "Cline", "Windsurf"]
+    "relatedBlips": ["Agent Skills", "Claude Code"]
   },
   {
     "name": "Data Mesh Manager",
@@ -600,7 +603,7 @@
     "relatedBlips": []
   },
   {
-    "name": "Mise",
+    "name": "mise",
     "ring": "assess",
     "quadrant": "tools",
     "isNew": "TRUE",
@@ -686,7 +689,7 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p><strong><a href=\"\"https://www.warp.dev/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Warp</a></strong> is a terminal for macOS and Linux. It splits command outputs into blocks to improve readability. Warp features <a href=\"\"https://www.warp.dev/warp-ai\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">AI-driven capabilities</a> such as intelligent command suggestions and natural language processing. It also includes notebook features that allow users to organize commands and outputs and to add annotations and documentation. You can leverage these features to create README files or onboarding materials and provide a structured and interactive way to present and manage terminal workflows. Warp easily integrates with <a href=\"\"https://starship.rs/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Starship</a>, a flexible cross-shell prompt, allowing you to customize the terminal experience and retrieve information about running processes, the specific version of a tool you’re using, Git details or the current Git user, among other details.</p>\"",
-    "relatedBlips": []
+    "relatedBlips": ["Claude Code"]
   },
   {
     "name": "Zed",
@@ -743,13 +746,13 @@
     "relatedBlips": []
   },
   {
-    "name": "Databricks Asset Bundles",
+    "name": "Declarative Automation Bundles",
     "ring": "trial",
     "quadrant": "languages-and-frameworks",
     "isNew": "FALSE",
     "status": "moved in",
     "description": "\"<p><strong><a href=\"\"https://docs.databricks.com/en/dev-tools/bundles/index.html\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Databricks Asset Bundles</a></strong> (DABs), which <a href=\"\"https://www.databricks.com/blog/announcing-general-availability-databricks-asset-bundles\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">reached general availability</a> in April 2024, is becoming the go-to tool for packaging and deploying Databricks assets that facilitates the adoption of software engineering practices in our data teams. DABs supports packaging the configuration of workflows and tasks, as well as the code to be executed in those tasks, as a bundle that can be deployed to multiple environments through CI/CD pipelines. It comes with templates for common types of assets and supports custom templates, which allows for the creation of <a href=\"\"https://www.thoughtworks.com/radar/techniques/tailored-service-templates\"\">tailored service templates</a> for data engineering and ML projects. Our teams have increasingly adopted it as a key part of their engineering workflows. Even though DABs includes templates for notebooks and supports deploying them to production, we don't recommend <a href=\"\"https://www.thoughtworks.com/radar/techniques/productionizing-notebooks\"\">productionizing notebooks</a> and instead encourage intentionally writing production code with the engineering practices that support the maintainability, resiliency and scalability needs of such workloads.</p>\"",
-    "relatedBlips": ["Tailored service templates", "Productionizing notebooks"]
+    "relatedBlips": []
   },
   {
     "name": "Instructor",
@@ -882,9 +885,8 @@
     "description": "\"<p><strong><a href=\"\"https://github.com/confident-ai/deepeval\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">DeepEval</a></strong> is an open-source python-based evaluation framework, for evaluating LLM performance. You can use it to evaluate retrieval-augmented generation (RAG) and other kinds of apps built with popular frameworks like <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/llamaindex\"\">LlamaIndex</a> or <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/langchain\"\">LangChain</a>, as well as to baseline and benchmark when you're comparing different models for your needs. DeepEval provides a comprehensive suite of metrics and features to assess LLM performance, including hallucination detection, answer relevancy and hyperparameter optimization. It offers integration with pytest and, along with its assertions, you can easily integrate the test suite in a continuous integration (CI) pipeline. If you're working with LLMs, consider trying DeepEval to improve your testing process and ensure the reliability of your applications.</p>\"",
     "relatedBlips": [
       "Retrieval-augmented generation (RAG)",
-      "LLM as a judge",
-      "LangChain",
-      "LlamaIndex"
+      "LlamaIndex",
+      "LangChain"
     ]
   },
   {

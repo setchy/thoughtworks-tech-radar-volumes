@@ -111,7 +111,7 @@
     "isNew": "FALSE",
     "status": "no change",
     "description": "\"<p>The recent announcement of <a href=\"\"https://www.thoughtworks.com/radar/platforms/deepseek-r1\"\">DeepSeek R1</a> is a great example of why <strong>small language models</strong> (SLMs) continue to be interesting. The full-size R1 has 671 billion parameters and requires about 1,342 GB of VRAM in order to run, only achievable using a \"\"mini cluster\"\" of eight state-of-the-art NVIDIA GPUs. But <a href=\"\"https://www.thoughtworks.com/en-ca/insights/blog/generative-ai/demystifying-deepseek\"\">DeepSeek</a> is also available <a href=\"\"https://venturebeat.com/ai/deepseeks-r1-and-openais-deep-research-just-redefined-ai-rag-distillation-and-custom-models-will-never-be-the-same/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">\"\"distilled\"\"</a> into Qwen and Llama — smaller, open-weight models — effectively transferring its abilities and allowing it to be run on much more modest hardware. Though the model gives up some performance at those smaller sizes, it still allows a huge leap in performance over previous SLMs. The SLM space continues to innovate elsewhere, too. Since the last Radar, Meta introduced <a href=\"\"https://ai.meta.com/blog/llama-3-2-connect-2024-vision-edge-mobile-devices/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Llama 3.2</a> at 1B and 3B sizes, Microsoft released <a href=\"\"https://techcommunity.microsoft.com/blog/aiplatformblog/introducing-phi-4-microsoft%E2%80%99s-newest-small-language-model-specializing-in-comple/4357090\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Phi-4</a>, offering high-quality results with a 14B model, and Google released <a href=\"\"https://developers.googleblog.com/en/introducing-paligemma-2-mix/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">PaliGemma 2</a>, a vision-language model at 3B, 10B and 28B sizes. These are just a few of the models currently being released at smaller sizes and definitely an important trend to continue to watch.</p>\"",
-    "relatedBlips": []
+    "relatedBlips": ["Model distillation"]
   },
   {
     "name": "Using GenAI to understand legacy codebases",
@@ -167,7 +167,7 @@
     "isNew": "FALSE",
     "status": "no change",
     "description": "\"<p><strong>Structured output from LLMs</strong> refers to the practice of constraining a language model's response into a defined schema. This can be achieved either by instructing a generalized model to respond in a particular format or by fine-tuning a model so it \"\"natively\"\" outputs, for example, JSON. OpenAI now supports structured output, allowing developers to supply a JSON Schema, <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/pydantic\"\">pydantic</a> or Zod object to constrain model responses. This capability is particularly valuable for enabling function calling, API interactions and external integrations, where accuracy and adherence to a format are critical. Structured output not only enhances the way LLMs can interface with code but also supports broader use cases like generating markup for rendering charts. Additionally, structured output has been shown to reduce the chance of hallucinations in model outputs.</p>\"",
-    "relatedBlips": []
+    "relatedBlips": ["Pydantic AI", "Instructor"]
   },
   {
     "name": "AI-accelerated shadow IT",
@@ -366,9 +366,9 @@
     "status": "new",
     "description": "\"<p><strong><a href=\"\"https://github.com/getzep/graphiti\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Graphiti</a></strong> builds dynamic, temporally-aware knowledge graphs that capture evolving facts and relationships. Our teams use <a href=\"\"https://www.thoughtworks.com/radar/techniques/graphrag\"\">GraphRAG</a> to uncover data relationships, which enhances retrieval and response accuracy. As data sets constantly evolve, Graphiti maintains temporal metadata on graph edges to record relationship lifecycles. It ingests both structured and unstructured data as discrete <a href=\"\"https://help.getzep.com/graphiti/graphiti/adding-episodes\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">episodes</a> and supports queries using a fusion of time-based, full-text, semantic and graph algorithms. For LLM-based applications — whether <a href=\"\"https://www.thoughtworks.com/radar/techniques/retrieval-augmented-generation-rag\"\">RAG</a> or <a href=\"\"https://www.thoughtworks.com/radar/techniques/llm-powered-autonomous-agents\"\">agentic</a> — Graphiti enables long-term recall and state-based reasoning.</p>\"",
     "relatedBlips": [
-      "FastGraphRAG",
       "Retrieval-augmented generation (RAG)",
-      "LLM-powered autonomous agents"
+      "GraphRAG",
+      "Model Context Protocol (MCP)"
     ]
   },
   {
@@ -545,7 +545,7 @@
     "isNew": "FALSE",
     "status": "moved in",
     "description": "\"<p>We continue to be impressed by the AI-first code editor <strong><a href=\"\"https://www.cursor.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Cursor</a></strong>, which remains a leader in the competitive AI coding assistance space. Its code context orchestration is very effective, and it supports a wide range of models, including the option to use a custom API key. The Cursor team often comes up with innovative user experience features before the other vendors, and they include an extensive list of context providers in their chat, such as the referencing of git diffs, previous AI conversations, web search, library documentation and <a href=\"\"https://www.thoughtworks.com/radar/platforms/model-context-protocol-mcp\"\">MCP</a> integration. Alongside tools like <a href=\"\"https://www.thoughtworks.com/radar/tools/cline\"\">Cline</a> and <a href=\"\"https://www.thoughtworks.com/radar/tools/windsurf\"\">Windsurf</a>, Cursor also stands out for its strong agentic coding mode. This mode allows developers to guide their implementation directly from an AI chat interface, with the tool autonomously reading and modifying files, as well as executing commands. Additionally, we appreciate Cursor's ability to detect linting and compilation errors in generated code and proactively correct them.</p>\"",
-    "relatedBlips": ["Model Context Protocol (MCP)", "Cline", "Windsurf"]
+    "relatedBlips": ["Agent Skills", "Claude Code"]
   },
   {
     "name": "D2",
@@ -840,7 +840,7 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p><strong><a href=\"\"https://github.com/langchain-ai/langgraph\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">LangGraph</a></strong> is an orchestration framework designed to build stateful <a href=\"\"https://www.thoughtworks.com/radar/techniques/llm-powered-autonomous-agents\"\">multi-agent applications</a> using LLMs. It provides a lower-level set of primitives like edges and nodes compared to <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/langchain\"\">LangChain</a>’s higher-level abstractions, offering developers fine-grained control over agent workflows, memory management and state persistence. This graph-based approach ensures predictable and customizable workflows, making debugging, scaling and maintaining production applications easier. Although it has a steeper learning curve, LangGraph's lightweight design and modularity make it a powerful framework for creating agentic applications.</p>\"",
-    "relatedBlips": ["LLM-powered autonomous agents"]
+    "relatedBlips": ["Pydantic AI"]
   },
   {
     "name": "MarkItDown",

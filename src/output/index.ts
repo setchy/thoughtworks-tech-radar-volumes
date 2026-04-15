@@ -3,6 +3,7 @@ import _ from 'lodash';
 import { readJSONFile } from '../data/repository';
 import {
   FILES,
+  normalizeRingName,
   QUADRANT_SORT_ORDER,
   RING_SORT_ORDER,
 } from '../shared/constants';
@@ -19,7 +20,7 @@ export function generateVolumes(reportType: ReportType) {
   _.forEach(groupedByVolumes, (dataChunk, volume) => {
     const sortedData = _.orderBy(dataChunk, [
       (entry) => _.indexOf(QUADRANT_SORT_ORDER, entry.quadrant),
-      (entry) => _.indexOf(RING_SORT_ORDER, entry.ring),
+      (entry) => _.indexOf(RING_SORT_ORDER, normalizeRingName(entry.ring)),
       (entry) => entry.name.toLowerCase(),
     ]);
 

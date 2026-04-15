@@ -348,8 +348,11 @@
     "status": "new",
     "description": "\"<p><strong><a href=\"\"https://langfuse.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Langfuse</a></strong> is an engineering platform for observability, testing and monitoring large language model (LLM) applications. Its SDKs support Python, JavaScript and TypeScript, OpenAI, <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/langchain\"\">LangChain</a> and <a href=\"\"https://www.thoughtworks.com/radar/tools/litellm\"\">LiteLLM</a> among other languages and frameworks. You can self-host the open-source version or use it as a paid cloud service. Our teams have had a positive experience, particularly in debugging complex LLM chains, analyzing completions and monitoring key metrics such as cost and latency across users, sessions, geographies, features and model versions. If you’re looking to build data-driven LLM applications, Langfuse is a good option to consider.</p>\"",
     "relatedBlips": [
-      "Retrieval-augmented generation (RAG)",
-      "LLM-powered autonomous agents"
+      "ClickHouse",
+      "Helicone",
+      "LangSmith",
+      "OpenTelemetry",
+      "Pydantic AI"
     ]
   },
   {
@@ -679,7 +682,7 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p><strong><a href=\"\"https://linearb.io/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">LinearB</a></strong> is a platform designed to empower engineering leaders with data-driven insights for continuous improvement. It tackles three key areas: benchmarking, workflow automation and investment. Our experience with LinearB's metrics tooling highlights its potential to support a culture of continuous improvement. One of our teams leveraged the platform to track engineering metrics, identify and discuss improvement opportunities and define actionable steps based on data, leading to measurable progress. We're happy to see that this aligns with LinearB's core value proposition: benchmark, automate and improve. LinearB integrates with GitHub, GitLab, Bitbucket and Jira. It offers a comprehensive suite of preconfigured engineering metrics, with a strong focus on <a href=\"\"https://www.thoughtworks.com/radar/techniques/four-key-metrics\"\">DORA metrics</a> (deployment frequency, lead time, change failure rate and time to restore). As strong advocates of the four key metrics as defined by the DORA research, we appreciate LinearB's emphasis on measuring what truly matters for software delivery performance. Historically, gathering DORA-specific metrics has been a challenge. Teams have resorted to complex CD pipeline instrumentation, custom-built dashboards or rely on manual processes. Although our experience is limited to one team, LinearB seems to be a compelling alternative for gathering and tracking engineering metrics as well as fostering a data-driven approach to continuous improvement.</p>\"",
-    "relatedBlips": ["Four key metrics"]
+    "relatedBlips": ["DORA metrics"]
   },
   {
     "name": "LLaVA",
@@ -849,19 +852,19 @@
     "relatedBlips": [
       "SwiftUI",
       "Jetpack Compose",
-      "React.js",
+      "React JS",
       "Vue.js",
       "WebAssembly"
     ]
   },
   {
-    "name": "Databricks Asset Bundles",
+    "name": "Declarative Automation Bundles",
     "ring": "assess",
     "quadrant": "languages-and-frameworks",
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p>The recent <a href=\"\"https://www.databricks.com/blog/announcing-public-preview-databricks-asset-bundles-apply-software-development-best-practices\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">public preview release</a> of <a href=\"\"https://docs.databricks.com/en/dev-tools/bundles/index.html\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Databricks Asset Bundles</a> (DABs), included with <a href=\"\"https://docs.databricks.com/en/dev-tools/cli/install.html\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Databricks CLI version 0.205 and above</a>, is becoming the officially recommended way to package Databricks assets for source control, testing and deployment. It has started to replace <a href=\"\"https://dbx.readthedocs.io/en/latest/intro/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">dbx</a> among our teams. DABs supports packaging the configuration of workflows, jobs and tasks, as well as the code to be executed in those tasks, as a bundle that can be deployed to multiple environments. It comes with templates for common types of assets and supports custom templates. While DABs includes templates for notebooks and supports deploying them to production, we continue to recommend against <a href=\"\"https://www.thoughtworks.com/radar/techniques/productionizing-notebooks\"\">productionizing notebooks</a> and instead encourage intentionally writing production code with the engineering practices that support the maintainability, resiliency and scalability needs of such workloads.</p>\"",
-    "relatedBlips": ["Tailored service templates", "Productionizing notebooks"]
+    "relatedBlips": []
   },
   {
     "name": "Electric",

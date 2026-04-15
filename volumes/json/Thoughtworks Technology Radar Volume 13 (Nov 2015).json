@@ -810,13 +810,13 @@
     "relatedBlips": []
   },
   {
-    "name": "React.js",
+    "name": "React JS",
     "ring": "trial",
     "quadrant": "languages-and-frameworks",
     "isNew": "FALSE",
     "status": "no change",
     "description": "\"<p>One benefit of the ongoing avalanche of front-end JavaScript frameworks is that occasionally a new idea crops up that makes us think. <a href=\"\"http://facebook.github.io/react/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\"><strong>React.js</strong></a> is a UI/view framework in which JavaScript functions generate HTML in a reactive data flow. It differs significantly from frameworks like <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/angularjs\"\">AngularJS</a> in that it only allows one-way data bindings, greatly simplifying the rendering logic. We have seen several smaller projects achieve success with React.js, and developers are drawn to its clean, composable approach to componentization.</p>\"",
-    "relatedBlips": []
+    "relatedBlips": ["Vite", "Next.js"]
   },
   {
     "name": "SignalR",

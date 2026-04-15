@@ -785,7 +785,7 @@
     "isNew": "FALSE",
     "status": "no change",
     "description": "\"<p>Some of our ThoughtWorks teams have had very positive experiences with <strong>Phoenix</strong> , a server-side web MVC framework written in <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/elixir\"\">Elixir</a>. In addition to being streamlined and easy to use, Phoenix takes advantage of Elixir to be extremely fast. For some developers, Phoenix evokes the joy they experienced when first discovering Ruby and Rails. Although the ecosystem of libraries for Phoenix is not as extensive as for some more mature frameworks, it should benefit from the continuing success and growth of support for Elixir.</p>\"",
-    "relatedBlips": ["Vue.js", "Elixir", "htmx", "Hotwire", "React.js"]
+    "relatedBlips": ["Vue.js", "Elixir", "htmx", "Hotwire", "React JS"]
   },
   {
     "name": "Quick and Nimble",

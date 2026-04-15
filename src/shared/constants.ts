@@ -61,6 +61,7 @@ export const VOLUME_PUBLICATION_DATES = [
   'Oct 2024',
   'Apr 2025',
   'Nov 2025',
+  'Apr 2026',
 ];
 
 export const NOT_FOUND_VOLUME_NUMBER = 100;
@@ -72,7 +73,26 @@ export const QUADRANT_SORT_ORDER = [
   'languages-and-frameworks',
 ];
 
-export const RING_SORT_ORDER = ['adopt', 'trial', 'assess', 'hold'];
+// From Apr 2026 (Volume 34), Thoughtworks renamed "Hold" to "Caution". Both are treated as equivalent.
+export const CAUTION_RENAME_VOLUME = 34;
+
+export const RING_SORT_ORDER = ['adopt', 'trial', 'assess', 'caution'];
+
+// Returns the canonical ring name for a given volume: 'caution' for vol 34+, 'hold' for earlier.
+export function getRingNameForVolume(ring: string, volume: number): string {
+  const isHoldOrCaution = ring === 'hold' || ring === 'caution';
+
+  if (!isHoldOrCaution) {
+    return ring;
+  }
+
+  return volume >= CAUTION_RENAME_VOLUME ? 'caution' : 'hold';
+}
+
+// Normalizes ring name for comparison/movement calculation — maps legacy 'hold' to canonical 'caution'.
+export function normalizeRingName(ring: string): string {
+  return ring === 'hold' ? 'caution' : ring;
+}
 
 export const BLIP_STATUSES = [
   'new',
