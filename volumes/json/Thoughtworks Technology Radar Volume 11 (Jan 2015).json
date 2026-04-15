@@ -888,10 +888,7 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p>One benefit to the ongoing&nbsp;avalanche of front-end JavaScript frameworks is that occasionally, a new&nbsp;idea crops up that makes us think. &nbsp;<strong>React.js</strong> is a UI/View framework in which&nbsp;JavaScript functions&nbsp;generate HTML in a reactive data flow. &nbsp;Although we are wary of mixing code and markup, it results in UI components that are nicely encapsulated and composable. &nbsp;React.js is getting a lot of developer attention and will benefit&nbsp;from more tools and examples<strong><strong><strong><strong>&nbsp;</strong></strong></strong></strong>becoming available.</p>\"",
-    "relatedBlips": [
-      "Vite",
-      "Next.js"
-    ]
+    "relatedBlips": ["Vite", "Next.js"]
   },
   {
     "name": "Reagent",

@@ -6,9 +6,7 @@
     "isNew": "FALSE",
     "status": "no change",
     "description": "\"<p>To measure software delivery performance, more and more organizations are turning to the <strong>four key metrics</strong> as defined by the <a href=\"\"https://www.devops-research.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">DORA research</a> program: change lead time, deployment frequency, mean time to restore (MTTR) and change fail percentage. This research and its statistical analysis have shown a clear link between high delivery performance and these metrics; they provide a great leading indicator for how a team, or even a whole delivery organization, is doing.</p><br><br><p>We're still big proponents of these metrics, but we've also learned some lessons since we first started monitoring them. And we're increasingly seeing misguided measurement approaches with tools that help teams measure these metrics based purely on their continuous delivery (CD) pipelines. In particular when it comes to the stability metrics (MTTR and change fail percentage), CD pipeline data alone doesn't provide enough information to determine what a deployment failure with real user impact is. Stability metrics only make sense if they include data about real incidents that degrade service for the users.</p><br><br><p>And as with all metrics, we recommend to always keep in mind the ultimate intention behind a measurement and use them to reflect and learn. For example, before spending weeks to build up sophisticated dashboard tooling, consider just regularly taking the <a href=\"\"https://www.devops-research.com/quickcheck.html\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">DORA quick check</a> in team retrospectives. This gives the team the opportunity to reflect on which <a href=\"\"https://www.devops-research.com/research.html#capabilities\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">capabilities</a> they could work on to improve their metrics, which can be much more effective than overdetailed out-of-the-box tooling.</p>\"",
-    "relatedBlips": [
-      "Coding throughput as a measure of productivity"
-    ]
+    "relatedBlips": ["Coding throughput as a measure of productivity"]
   },
   {
     "name": "Platform engineering product teams",
@@ -26,9 +24,7 @@
     "isNew": "FALSE",
     "status": "moved in",
     "description": "\"<p>We keep hearing about enterprises finding their security badly compromised due to an overreliance on the \"\"secure\"\" network perimeter. Once this external perimeter is breached, internal systems prove to be poorly protected with attackers quickly and easily able to deploy automated data extraction tools and ransomware attacks that all too often remain undetected for long periods. This leads us to recommend <strong>zero trust architecture</strong> (ZTA) as a now sensible default.</p><br><br><p>ZTA is a paradigm shift in security architecture and strategy. It’s based on the assumption that a network perimeter is no longer representative of a secure boundary and no implicit trust should be granted to users or services based solely on their physical or network location. The number of resources, tools and platforms available to implement aspects of ZTA keeps growing and includes enforcing <a href=\"\"https://www.thoughtworks.com/radar/techniques/security-policy-as-code\"\">policies as code</a> based on the least privilege and as-granular-as-possible principles and continuous monitoring and automated mitigation of threats; using <a href=\"\"https://www.thoughtworks.com/radar/techniques/service-mesh\"\">service mesh</a> to enforce security control application-to-service and service-to-service; implementing <a href=\"\"https://www.thoughtworks.com/radar/techniques/binary-attestation\"\">binary attestation</a> to verify the origin of the binaries; and including <a href=\"\"https://www.thoughtworks.com/radar/techniques/secure-enclaves\"\">secure enclaves</a> in addition to traditional encryption to enforce the three pillars of data security: in transit, at rest and in memory. For introductions to the topic, consult the <a href=\"\"https://csrc.nist.gov/publications/detail/sp/800-207/final\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">NIST ZTA</a> publication and Google's white paper on <a href=\"\"https://cloud.google.com/security/beyondprod\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">BeyondProd</a>.</p>\"",
-    "relatedBlips": [
-      "Zero trust security for CI/CD"
-    ]
+    "relatedBlips": ["Zero trust security for CI/CD"]
   },
   {
     "name": "CBOR/JSON bilingual protocols",
@@ -136,14 +132,7 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p>In May 2021, the U.S. White House published its <a href=\"\"https://www.whitehouse.gov/briefing-room/presidential-actions/2021/05/12/executive-order-on-improving-the-nations-cybersecurity/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Executive Order on Improving the Nation's Cybersecurity</a>. The document puts forward several technical mandates that relate to items we've featured in past Radars, such as <a href=\"\"https://www.thoughtworks.com/radar/techniques/zero-trust-architecture\"\">zero trust architecture</a> and automated compliance scanning using <a href=\"\"https://www.thoughtworks.com/radar/techniques/security-policy-as-code\"\">security policy as code</a>. Much of the document is devoted to improving the security of the software supply chain. One item in particular that caught our attention was the requirement that government software should contain a machine-readable <strong>Software Bill of Materials (SBOM)</strong>, defined as \"\"a formal record containing the details and supply chain relationships of various components used in building software.\"\" In other words, it should detail not just the components shipped but also the tools and frameworks used to deliver the software. This order has the potential to usher in a new era of transparency and openness in software development. This will undoubtedly have an impact on those of us who produce software for a living. Many, if not all software products produced today contain open-source components or employ them in the build process. Often, the consumer has no way of knowing which version of which package might have an impact on the security of their product. Instead they must rely on the security alerts and patches provided by the retail vendor. This executive order will ensure that an explicit description of all components is made available to consumers, empowering them to implement their own security controls. And since the SBOM is machine-readable, those controls can be automated. We sense that this move also represents a shift toward embracing open-source software and practically addressing both the security risks and benefits that it provides.</p>\"",
-    "relatedBlips": [
-      "Syft",
-      "Trivy",
-      "Snyk",
-      "FOSSA",
-      "Chainloop",
-      "CycloneDX"
-    ]
+    "relatedBlips": ["Syft", "Trivy", "Snyk", "FOSSA", "Chainloop", "CycloneDX"]
   },
   {
     "name": "Peer review equals pull request",
@@ -233,9 +222,7 @@
     "isNew": "FALSE",
     "status": "moved in",
     "description": "\"<p>We've been seeing an increase in teams using <strong><a href=\"\"https://pulumi.io/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Pulumi</a></strong> in various organizations. Pulumi fills a gaping hole in the infrastructure coding world where <a href=\"\"https://www.thoughtworks.com/radar/tools/terraform\"\">Terraform</a> maintains a firm hold. While Terraform is a tried-and-true standby, its declarative nature suffers from inadequate abstraction facilities and limited testability. Terraform is adequate when the infrastructure is entirely static, but dynamic infrastructure definitions call for a real programming language. Pulumi distinguishes itself by allowing configurations to be written in <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/typescript\"\">TypeScript</a>/JavaScript, <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/python-3\"\">Python</a> and <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/go-language\"\">Go</a> — no markup language or templating required. Pulumi is tightly focused on cloud-native architectures — including containers, serverless functions and data services — and provides good support for <a href=\"\"https://www.thoughtworks.com/radar/platforms/kubernetes\"\">Kubernetes</a>. Recently, <a href=\"\"https://www.thoughtworks.com/radar/platforms/aws-cloud-development-kit\"\">AWS CDK</a> has mounted a challenge, but Pulumi remains the only cloud-neutral tool in this area.</p>\"",
-    "relatedBlips": [
-      "Terraform"
-    ]
+    "relatedBlips": ["Terraform"]
   },
   {
     "name": "Sealed Secrets",
@@ -370,9 +357,7 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p><strong><a href=\"\"https://clickhouse.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">ClickHouse</a></strong> is an open-source, columnar online analytical processing (OLAP) database for real-time analytics. It started as an experimental project in 2009 and since has matured into a highly performant and linearly scalable analytical database. It's efficient query processing engine together with data compression makes it suitable to run interactive queries without pre-aggregation. We've used ClickHouse and are quite impressed with its performance.</p>\"",
-    "relatedBlips": [
-      "Sentry"
-    ]
+    "relatedBlips": ["Sentry"]
   },
   {
     "name": "Contrast Security",
@@ -417,11 +402,7 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p>Originally type annotations were added to Python to support static analysis. However, considering how widely type annotations, and annotations in general, are used in other programming languages, it was only a matter of time before developers would begin to use Python's type annotations for other purposes. <strong><a href=\"\"https://pydantic-docs.helpmanual.io/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">pydantic</a></strong> falls into this category. It allows you to use type annotations for data validation and settings management at run time. When data arrives as, say, a JSON document and needs to be parsed into a complex Python structure, pydantic ensures that the incoming data matches the expected types or reports an error if it doesn't. Although you can use pydantic directly, many developers have used it as part of <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/fastapi\"\">FastAPI</a>, one of the most popular Python web frameworks. In fact, using pydantic in FastAPI is considered so indispensable that a recently proposed change to Python, aimed at reducing the cost of loading annotated code into memory, was <a href=\"\"https://mail.python.org/archives/list/python-dev@python.org/thread/CLVXXPQ2T2LQ5MP2Y53VVQFCXYWQJHKZ/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">reconsidered</a> because it would have broken the use of type annotations at run time.</p>\"",
-    "relatedBlips": [
-      "Structured output from LLMs",
-      "LangChain",
-      "Pydantic AI"
-    ]
+    "relatedBlips": ["Structured output from LLMs", "LangChain", "Pydantic AI"]
   },
   {
     "name": "Wav2Vec 2.0",
@@ -874,9 +855,7 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p><a href=\"\"https://github.com/tauri-apps/tauri\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\"><strong>Tauri</strong></a> is an <a href=\"\"https://www.electronjs.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Electron</a> alternative for building desktop applications using a combination of <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/rust\"\">Rust</a> tools and HTML, CSS, and JavaScript rendered in System's WebView. Unlike Electron which bundles Chromium, the applications built with Tauri leverage the underlying WebView, that is, WebKit on macOS, WebView2 on Windows and WebKitGTK on Linux. This approach has interesting trade-offs — on one hand you get small and fast application binaries; on the other hand, you need to verify compatibility quirks across WebViews of different systems.</p>\"",
-    "relatedBlips": [
-      "Rust"
-    ]
+    "relatedBlips": ["Rust"]
   },
   {
     "name": "Transloco",

@@ -6,9 +6,7 @@
     "isNew": "FALSE",
     "status": "moved in",
     "description": "\"<p>The thorough <a href=\"\"https://devops-research.com/research.html\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">State of DevOps</a> reports have focused on data-driven and statistical analysis of high-performing organizations. The result of this multiyear research, published in <a href=\"\"https://itrevolution.com/book/accelerate/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Accelerate</a>, demonstrates a direct link between organizational performance and software delivery performance. The researchers have determined that only <strong>four key metrics</strong> differentiate between low, medium and high performers: lead time, deployment frequency, mean time to restore (MTTR) and change fail percentage. Indeed, we've found that these four key metrics are a simple and yet powerful tool to help leaders and teams focus on measuring and improving what matters. A good place to start is to instrument the build pipelines so you can capture the four key metrics and make the software delivery value stream visible. <a href=\"\"https://www.gocd.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">GoCD pipelines,</a> for example, provide the ability to measure these four key metrics as a first-class citizen of the <a href=\"\"https://www.gocd.org/analytics.html\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">GoCD analytics</a>.</p>\"",
-    "relatedBlips": [
-      "Coding throughput as a measure of productivity"
-    ]
+    "relatedBlips": ["Coding throughput as a measure of productivity"]
   },
   {
     "name": "Micro frontends",
@@ -251,9 +249,7 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p>Outside the function code itself, applications written as serverless functions are tightly coupled to the cloud platform on which they're hosted. Although events are a common FaaS-triggering mechanism, and every cloud provider supports them in some form, the current proprietary specifications prevent interoperability across clouds. The <strong><a href=\"\"https://cloudevents.io/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">CloudEvents</a></strong> specification is a burgeoning standard that has been accepted into the <a href=\"\"https://www.cncf.io/sandbox-projects/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">CNCF Sandbox</a>. The standard is still in active development but several language bindings exist and Microsoft has announced first-class support in <a href=\"\"https://www.thoughtworks.com/radar/platforms/azure\"\">Azure</a>. We're hoping other cloud providers will follow suit.</p>\"",
-    "relatedBlips": [
-      "Serverless architecture"
-    ]
+    "relatedBlips": ["Serverless architecture"]
   },
   {
     "name": "Cloudflare Workers",
@@ -271,10 +267,7 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p>As a group we have mixed feelings about programming in JavaScript on the server side, especially when the rationale for doing so is simply to avoid <a href=\"\"https://www.thoughtworks.com/radar/techniques/polyglot-programming\"\">polyglot programming</a>. That said, if you decide to use JavaScript or TypeScript on the server, have a look at <strong><a href=\"\"https://deno.land/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Deno</a></strong>. Written by Ryan Dahl, the inventor of Node.js, Deno aims to avoid what Ryan considers mistakes that were made in Node.js. It brings a strict sandbox system and built-in dependency and package management, and it supports <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/typescript\"\">TypeScript</a> out of the box. Deno is built using <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/rust\"\">Rust</a> and V8.</p>\"",
-    "relatedBlips": [
-      "Node.js",
-      "Polyglot programming"
-    ]
+    "relatedBlips": ["Node.js", "Polyglot programming"]
   },
   {
     "name": "Honeycomb",

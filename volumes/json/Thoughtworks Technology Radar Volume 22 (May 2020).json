@@ -141,9 +141,7 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p>The technology landscape of organizations today is increasingly more complex with assets — data, functions, infrastructure and users — spread across security boundaries, such as local hosts, multiple cloud providers and a variety of SaaS vendors. This demands a paradigm shift in enterprise security planning and systems architecture, moving from static and slow-changing security policy management, based on trust zones and network configurations, to dynamic, fine-grained security policy enforcement based on temporal access privileges.</p><br><br><p><strong>Zero trust architecture (ZTA)</strong> is an organization's strategy and journey to implement zero-trust security principles for all of their assets — such as devices, infrastructure, services, data and users — and includes implementing practices such as securing all access and communications regardless of the network location, enforcing policies as code based on the least privilege and as granular as possible, and continuous monitoring and automated mitigation of threats. Our Radar reflects many of the enabling techniques such as <a href=\"\"https://www.thoughtworks.com/radar/techniques/security-policy-as-code\"\">security policy as code</a>, <a href=\"\"https://www.thoughtworks.com/radar/techniques/sidecars-for-endpoint-security\"\">sidecars for endpoint security</a> and <a href=\"\"https://www.thoughtworks.com/radar/techniques/beyondcorp\"\">BeyondCorp</a>. If you're on your journey toward ZTA, refer to the <a href=\"\"https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-207-draft2.pdf\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">NIST ZTA publication</a> to learn more about principles, enabling technology components and migration patterns as well as Google's publication on <a href=\"\"https://cloud.google.com/security/beyondprod\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">BeyondProd</a>.</p>\"",
-    "relatedBlips": [
-      "Zero trust security for CI/CD"
-    ]
+    "relatedBlips": ["Zero trust security for CI/CD"]
   },
   {
     "name": "Data mesh",
@@ -530,10 +528,7 @@
     "isNew": "FALSE",
     "status": "moved in",
     "description": "\"<p><strong><a href=\"\"https://www.openpolicyagent.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Open Policy Agent (OPA)</a></strong> has rapidly become a favorable component of many distributed cloud-native solutions that we build for our clients. OPA provides a uniform framework and <a href=\"\"https://www.openpolicyagent.org/docs/latest/#rego\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">language</a> for declaring, enforcing and controlling policies for various components of a cloud-native solution. It's a great example of a tool that implements <a href=\"\"https://www.thoughtworks.com/radar/techniques/security-policy-as-code\"\">security policy as code</a>. We've had a smooth experience using OPA in multiple scenarios, including deploying resources to K8s clusters, enforcing access control across services in a <a href=\"\"https://www.thoughtworks.com/radar/techniques/service-mesh\"\">service mesh</a> and fine-grained security controls as code for accessing application resources. A recent commercial offering, <a href=\"\"https://www.styra.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Styra's Declarative Authorization Service (DAS)</a>, eases the adoption of OPA for enterprises by adding a management tool, or control plane, to OPA for K8s with a prebuilt policy library, impact analysis of the policies and logging capabilities. We look forward to maturity and extension of OPA beyond operational services to (big) data-centric solutions.</p>\"",
-    "relatedBlips": [
-      "Service mesh",
-      "Security policy as code"
-    ]
+    "relatedBlips": ["Service mesh", "Security policy as code"]
   },
   {
     "name": "Optimal Workshop",
@@ -569,9 +564,7 @@
     "isNew": "FALSE",
     "status": "no change",
     "description": "\"<p>Since we first mentioned <strong>visual regression testing tools</strong> in 2014, the use of the technique has spread and the tools landscape has evolved. <a href=\"\"https://www.thoughtworks.com/radar/tools/backstopjs\"\">BackstopJS</a> remains an excellent choice with new features being added regularly, including support for running inside Docker containers. <a href=\"\"https://www.thoughtworks.com/radar/tools/loki\"\">Loki</a> was featured in our previous Radar. <a href=\"\"https://applitools.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Applitools</a>, <a href=\"\"https://crossbrowsertesting.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">CrossBrowserTesting</a> and <a href=\"\"https://percy.io/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Percy</a> are SaaS solutions. Another notable mention is <a href=\"\"https://github.com/rsmbl\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Resemble.js</a>, an image diffing library. Although most teams use it indirectly as part of BackstopJS, some of our teams have been using it to analyze and compare images of web pages directly. In general, our experience shows that visual regression tools are less useful in the early stages when the interface goes through significant changes, but they certainly prove their worth as the product matures and the interface stabilizes.</p>\"",
-    "relatedBlips": [
-      "BackstopJS"
-    ]
+    "relatedBlips": ["BackstopJS"]
   },
   {
     "name": "Visual Studio Live Share",
@@ -886,8 +879,6 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p>Technologies, especially wildly popular ones, have a tendency to be overused. What we're seeing at the moment is <strong>Node overload</strong>, a tendency to use Node.js indiscriminately or for the wrong reasons. Among these, two stand out in our opinion. Firstly, we frequently hear that Node should be used so that all programming can be done in one programming language. Our view remains that <a href=\"\"https://www.thoughtworks.com/radar/techniques/polyglot-programming\"\">polyglot programming</a> is a better approach, and this still goes <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/javascript-as-a-first-class-language\"\">both ways</a>. Secondly, we often hear teams cite performance as a reason to choose Node.js. Although there are myriads of more or less sensible benchmarks, this perception is rooted in history. When Node.js became popular, it was the first major framework to embrace a nonblocking programming model which made it very efficient for IO-heavy tasks. (We mentioned this in our write-up of Node.js in 2012.) Due to its single-threaded nature, Node.js was never a good choice for compute-heavy workloads, though, and now that capable nonblocking frameworks also exist on other platforms — some with elegant, modern APIs — performance is no longer a reason to choose Node.js.</p>\"",
-    "relatedBlips": [
-      "Polyglot programming"
-    ]
+    "relatedBlips": ["Polyglot programming"]
   }
 ]

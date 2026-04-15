@@ -24,9 +24,7 @@
     "isNew": "FALSE",
     "status": "no change",
     "description": "\"<p>With the number of high-profile security breaches in the past months, software development teams no longer need convincing that they must place an emphasis on writing secure software and dealing with their users' data in a responsible way. The teams face a steep learning curve, though, and the vast number of potential threats—ranging from organized crime and government spying to teenagers who attack systems \"\"for the lulz\"\"—can be overwhelming. <a href=\"\"https://www.owasp.org/index.php/Category:Threat_Modeling\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\"><strong>Threat modeling</strong></a> provides a set of techniques that help you identify and classify potential threats early in the development process. It is important to understand that it is only part of a strategy to stay ahead of threats. When used in conjunction with techniques such as establishing cross-functional security requirements to address common risks in the technologies a project uses and using automated security scanners, threat modeling can be a powerful asset.</p>\"",
-    "relatedBlips": [
-      "Security sandwich"
-    ]
+    "relatedBlips": ["Security sandwich"]
   },
   {
     "name": "APIs as a product",
@@ -755,10 +753,7 @@
     "isNew": "FALSE",
     "status": "no change",
     "description": "\"<p>In the avalanche of front-end JavaScript frameworks, <a href=\"\"http://facebook.github.io/react/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\"><strong>React.js</strong></a> stands out due to its design around a reactive data flow. Allowing only one-way data binding greatly simplifies the rendering logic and avoids many of the issues that commonly plague applications written with other frameworks. We're seeing the benefits of React.js on a growing number of projects, large and small, while at the same time we continue to be concerned about the state and the future of other popular frameworks like <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/angularjs\"\">AngularJS</a>. This has led to React.js becoming our default choice for JavaScript frameworks.</p>\"",
-    "relatedBlips": [
-      "Vite",
-      "Next.js"
-    ]
+    "relatedBlips": ["Vite", "Next.js"]
   },
   {
     "name": "Redux",
@@ -839,13 +834,7 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p>Some of our ThoughtWorks teams have had very positive experiences with <strong>Phoenix</strong> , a server-side web MVC framework written in <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/elixir\"\">Elixir</a>. In addition to being streamlined and easy to use, Phoenix takes advantage of Elixir to be extremely fast. For some developers, Phoenix evokes the joy they experienced when first discovering Ruby and Rails. Although the ecosystem of libraries for Phoenix is not as extensive as for some more mature frameworks, it should benefit from the continuing success and growth of support for Elixir.</p>\"",
-    "relatedBlips": [
-      "Vue.js",
-      "Elixir",
-      "htmx",
-      "Hotwire",
-      "React JS"
-    ]
+    "relatedBlips": ["Vue.js", "Elixir", "htmx", "Hotwire", "React JS"]
   },
   {
     "name": "Quick and Nimble",

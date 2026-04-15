@@ -618,9 +618,7 @@
     "isNew": "FALSE",
     "status": "moved in",
     "description": "\"Growing complexity in web applications has increased the awareness that appearance should be tested in addition to functionality. This has given rise to a variety of <b>visual regression testing tools</b>, including CSS Critic, dpxdt, Huxley, PhantomCSS, and Wraith. Techniques range from straightforward assertions of CSS values to actual screenshot comparison. While this is a field still in active development we believe that testing for visual regressions should be added to Continuous Delivery pipelines.\"",
-    "relatedBlips": [
-      "BackstopJS"
-    ]
+    "relatedBlips": ["BackstopJS"]
   },
   {
     "name": "Appium",

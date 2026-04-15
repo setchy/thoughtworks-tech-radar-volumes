@@ -141,10 +141,7 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p><strong>Prompt engineering</strong> refers to the process of designing and refining prompts for generative AI models to obtain high-quality responses from the model. This involves carefully crafting prompts that are specific, clear and relevant to the desired task or application in order to elicit useful outputs from the model. Prompt engineering aims to enhance large language model (LLM) capabilities in tasks like question answering and arithmetic reasoning or in domain-specific contexts. For software creation, you might use prompt engineering to get an LLM to write a story, an API or a test suite based on a brief conversation with a stakeholder or some notes. Developing effective prompting techniques is becoming a valuable skill in working with AI systems. There is debate over whether prompt engineering is an art or science, and potential security risks, such as “prompt injection attacks,” should be considered.</p>\"",
-    "relatedBlips": [
-      "Reasoning models",
-      "LLM-powered autonomous agents"
-    ]
+    "relatedBlips": ["Reasoning models", "LLM-powered autonomous agents"]
   },
   {
     "name": "Reachability analysis when testing infrastructure",
@@ -714,10 +711,7 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p>While <a href=\"\"https://www.thoughtworks.com/radar/platforms/github-actions\"\">GitHub Actions</a> runners cover a wide range of the most common runtimes, sometimes you need something that is more specific to your particular use case, such as a less common language runtime or a particular hardware configuration. That's when you need a self-hosted runner. <strong>Philips's <a href=\"\"https://github.com/philips-labs/terraform-aws-github-runner\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">self-hosted GitHub runner</a></strong> is a Terraform module that lets you spin up custom runners on AWS EC2 spot instances. The module also creates a set of Lambdas to make up for the fact that you lose some of GitHub Actions' lifecycle management when you self-host runners. They do the heavy lifting for scaling runners up and down as needed. That helps manage costs and allows you to make runners ephemeral, which helps improve repeatability and security. When you do need to self-host runners, you might miss a lot of things when building custom runners from scratch. Look for tools like this one instead.</p>\"",
-    "relatedBlips": [
-      "GitHub Actions",
-      "actions-runner-controller"
-    ]
+    "relatedBlips": ["GitHub Actions", "actions-runner-controller"]
   },
   {
     "name": "Turborepo",
@@ -726,9 +720,7 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p>One of the topics that seems to perennially draw interest in our discussions is the issue of monorepos. Some places have embraced them for the whole organization, while others have applied the concept in certain narrow applications such as mobile applications or combined UI/BFF development. Regardless of whether or where monorepos are appropriate, the industry seems to be revisiting tools that can effectively manage large codebases and build them efficiently into deployable units. <strong><a href=\"\"https://turbo.build/repo\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Turborepo</a></strong> is a relatively new tool in this category that offers an alternative to <a href=\"\"https://www.thoughtworks.com/radar/tools/nx\"\">Nx</a> or <a href=\"\"https://lerna.js.org/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Lerna</a> for large JavaScript or TypeScript codebases. One of the challenges with large repos is executing builds quickly enough that they don't interrupt developer flow or reduce efficiency. Turborepo is written in <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/rust\"\">Rust</a> which makes it highly performant; it also builds incrementally and caches intermediate steps to speed things up further. However, it does require changes to the developer workflow that take time to learn and is probably best suited to large codebases with multiple independent builds where a different approach is warranted. We've found that the documentation is sparse, leading some teams to stick with more established tools for now. However, it's worth assessing and seeing if Turborepo and its newer companion, <a href=\"\"https://turbo.build/pack\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Turbopack</a> (currently in beta), continue to evolve.</p>\"",
-    "relatedBlips": [
-      "ONNX"
-    ]
+    "relatedBlips": ["ONNX"]
   },
   {
     "name": "Gradle Kotlin DSL",
@@ -917,10 +909,7 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p><strong><a href=\"\"https://github.com/hwchase17/langchain\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">LangChain</a></strong> is a framework for building applications with large language models (LLMs). These models have triggered a race to incorporate generative AI in several use cases. However, using these LLMs in isolation may not be enough — you have to combine them with your differentiated assets to build an impactful product. LangChain fills this niche with some neat features, including prompt management, chaining, <a href=\"\"https://python.langchain.com/docs/use_cases/question_answering/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">data augmented generation</a> and a rich set of <a href=\"\"https://python.langchain.com/docs/modules/agents/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">agents</a> to determine which actions to take and in what order. We expect more tooling and frameworks to evolve with LLMs, and we recommend assessing LangChain.</p>\"",
-    "relatedBlips": [
-      "Semantic Kernel",
-      "LiteLLM"
-    ]
+    "relatedBlips": ["Semantic Kernel", "LiteLLM"]
   },
   {
     "name": "mljar-supervised",
