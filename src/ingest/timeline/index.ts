@@ -6,10 +6,10 @@ import _ from 'lodash';
 import { readJSONFile, writeJSONFile } from '../../data/repository';
 import {
   FILES,
-  QUADRANT_SORT_ORDER,
-  RING_SORT_ORDER,
   getRingNameForVolume,
   normalizeRingName,
+  QUADRANT_SORT_ORDER,
+  RING_SORT_ORDER,
 } from '../../shared/constants';
 import type { BlipTimelineEntry, MasterData } from '../../shared/types';
 import { SELECTORS } from './selectors';
@@ -110,7 +110,10 @@ function createBlipTimelineEntryFromPublication(
   const publishedDate = getPublishedDateFromBlipDOM(blipPublicationHtml);
   const volume = getVolumeNameFromDate(publishedDate);
   const quadrant = getQuadrantNameFromPath(path);
-  const ring = getRingNameForVolume(getRingNameFromBlipDOM(blipPublicationHtml), volume);
+  const ring = getRingNameForVolume(
+    getRingNameFromBlipDOM(blipPublicationHtml),
+    volume,
+  );
   const descriptionHtml = getDescriptionHTMLFromBlipDOM(blipPublicationHtml);
 
   const blipTimelineEntry: BlipTimelineEntry = {

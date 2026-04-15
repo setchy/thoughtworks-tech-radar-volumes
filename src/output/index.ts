@@ -3,9 +3,9 @@ import _ from 'lodash';
 import { readJSONFile } from '../data/repository';
 import {
   FILES,
+  normalizeRingName,
   QUADRANT_SORT_ORDER,
   RING_SORT_ORDER,
-  normalizeRingName,
 } from '../shared/constants';
 import type { BlipTimelineEntry, ReportType } from '../shared/types';
 import { formatCSVDataset, generateCSV } from './csv';
