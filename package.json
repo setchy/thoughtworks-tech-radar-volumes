@@ -38,7 +38,7 @@
   "engines": {
     "node": "24"
   },
-  "packageManager": "pnpm@10.33.0",
+  "packageManager": "pnpm@10.33.1",
   "pnpm": {
     "onlyBuiltDependencies": [
       "@biomejs/biome"
