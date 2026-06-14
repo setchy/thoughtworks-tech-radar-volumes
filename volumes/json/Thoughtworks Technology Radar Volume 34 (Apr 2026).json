@@ -419,6 +419,15 @@
     "relatedBlips": ["Model Context Protocol (MCP)", "HTML Tools", "MCP Apps"]
   },
   {
+    "name": "Amazon Bedrock AgentCore",
+    "ring": "trial",
+    "quadrant": "platforms",
+    "isNew": "TRUE",
+    "status": "new",
+    "description": "\"<p><strong><a href=\"\"https://aws.amazon.com/bedrock/agentcore/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Amazon Bedrock AgentCore</a></strong> is the agentic platform for building, running and operating agents at scale, securely without the overhead of infrastructure management, similar to <a href=\"\"https://www.thoughtworks.com/radar/platforms/gcp-vertex-ai-agent-builder\"\">GCP Vertex AI Agent Builder</a> and <a href=\"\"https://azure.microsoft.com/en-us/products/ai-foundry/agent-service\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Azure AI Foundry Agent Service</a>. While it’s tempting to adopt the platform as a monolithic black box, we’ve seen more success with a nuanced, decoupled architecture: using the AgentCore runtime for production concerns such as session isolation, security and observability, while retaining orchestration logic in external frameworks like <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/langgraph\"\">LangGraph</a>. This separation of concerns allows teams to benefit from managed infrastructure while maintaining the flexibility to adapt as the LLM landscape evolves. By focusing on the runtime first, organizations can incrementally move agentic workloads into production without ceding control of their core logic to a vendor-specific orchestration layer.</p>\"",
+    "relatedBlips": ["GCP Vertex AI Agent Builder", "LangGraph"]
+  },
+  {
     "name": "Apache APISIX",
     "ring": "trial",
     "quadrant": "platforms",
@@ -426,15 +435,6 @@
     "status": "new",
     "description": "\"<p><strong><a href=\"\"https://github.com/apache/apisix\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Apache APISIX</a></strong> is an open-source, high-performance, cloud-native gateway that addresses the limitations of legacy Nginx-based solutions. Built on Nginx and LuaJIT via OpenResty, it uses etcd for configuration storage to eliminate reload-induced latency, making it well-suited for dynamic microservices and serverless architectures. Its primary strength is its fully dynamic, pluggable architecture, which allows teams to customize traffic management, security and observability through APIs and a multi-language plugin ecosystem, including WASM. By supporting the Kubernetes Gateway API, Apache APISIX can be used as a <a href=\"\"https://www.thoughtworks.com/radar/platforms/kubernetes\"\">Kubernetes</a> gateway and is a strong candidate for replacing legacy Nginx ingress controllers. Some of our teams are adopting Apache APISIX and find its performance and feature set compelling.</p>\"",
     "relatedBlips": ["Kubernetes"]
-  },
-  {
-    "name": "AWS Bedrock AgentCore",
-    "ring": "trial",
-    "quadrant": "platforms",
-    "isNew": "TRUE",
-    "status": "new",
-    "description": "\"<p><strong><a href=\"\"https://aws.amazon.com/bedrock/agentcore/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">AWS Bedrock AgentCore</a></strong> is the agentic platform for building, running and operating agents at scale, securely without the overhead of infrastructure management, similar to <a href=\"\"https://www.thoughtworks.com/radar/platforms/gcp-vertex-ai-agent-builder\"\">GCP Vertex AI Agent Builder</a> and <a href=\"\"https://azure.microsoft.com/en-us/products/ai-foundry/agent-service\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Azure AI Foundry Agent Service</a>. While it’s tempting to adopt the platform as a monolithic black box, we’ve seen more success with a nuanced, decoupled architecture: using the AgentCore runtime for production concerns such as session isolation, security and observability, while retaining orchestration logic in external frameworks like <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/langgraph\"\">LangGraph</a>. This separation of concerns allows teams to benefit from managed infrastructure while maintaining the flexibility to adapt as the LLM landscape evolves. By focusing on the runtime first, organizations can incrementally move agentic workloads into production without ceding control of their core logic to a vendor-specific orchestration layer.</p>\"",
-    "relatedBlips": ["GCP Vertex AI Agent Builder", "LangGraph"]
   },
   {
     "name": "Graphiti",
@@ -600,12 +600,12 @@
     "relatedBlips": []
   },
   {
-    "name": "RunPod",
+    "name": "Runpod",
     "ring": "assess",
     "quadrant": "platforms",
     "isNew": "TRUE",
     "status": "new",
-    "description": "\"<p>As organizations increasingly experiment with training and fine-tuning LLMs, hyperscalers such as AWS and Google Cloud can introduce high costs and limited hardware availability. <strong><a href=\"\"https://www.runpod.io/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">RunPod</a></strong> provides a cost-effective alternative for compute-intensive AI workloads. Operating as a globally distributed GPU marketplace, it offers on-demand access to a wide range of hardware, from enterprise-grade H100 clusters to consumer-grade RTX 4090s, often at significantly lower cost than traditional cloud providers. For teams needing flexible, budget-friendly infrastructure to develop, train or deploy AI models without long-term commitments or vendor lock-in, RunPod is a practical option worth evaluating.</p>\"",
+    "description": "\"<p>As organizations increasingly experiment with training and fine-tuning LLMs, hyperscalers such as AWS and Google Cloud can introduce high costs and limited hardware availability. <strong><a href=\"\"https://www.runpod.io/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Runpod</a></strong> provides a cost-effective alternative for compute-intensive AI workloads. Operating as a globally distributed GPU marketplace, it offers on-demand access to a wide range of hardware, from enterprise-grade H100 clusters to consumer-grade RTX 4090s, often at significantly lower cost than traditional cloud providers. For teams needing flexible, budget-friendly infrastructure to develop, train or deploy AI models without long-term commitments or vendor lock-in, RunPod is a practical option worth evaluating.</p>\"",
     "relatedBlips": []
   },
   {
