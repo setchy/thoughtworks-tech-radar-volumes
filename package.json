@@ -39,11 +39,6 @@
     "node": "24"
   },
   "packageManager": "pnpm@11.6.0",
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "@biomejs/biome"
-    ]
-  },
   "lint-staged": {
     "*": "biome check --fix --no-errors-on-unmatched"
   }
