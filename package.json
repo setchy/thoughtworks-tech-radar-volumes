@@ -26,7 +26,7 @@
     "@biomejs/biome": "2.5.3",
     "@tsconfig/node24": "24.0.4",
     "@types/lodash": "4.17.24",
-    "@types/node": "24.13.2",
+    "@types/node": "24.13.3",
     "commander": "15.0.0",
     "dotenv": "17.4.2",
     "googleapis": "173.0.0",
