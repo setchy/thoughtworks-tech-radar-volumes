@@ -1,0 +1,27 @@
+name: typescript-compat
+
+on:
+  pull_request:
+    paths:
+      - package.json
+      - pnpm-lock.yaml
+  push:
+    branches:
+      - main
+    paths:
+      - package.json
+      - pnpm-lock.yaml
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - name: Verify ts-node works with installed TypeScript
+        run: pnpm exec ts-node --transpile-only -e "console.log('ts-node + typescript compatible')"
