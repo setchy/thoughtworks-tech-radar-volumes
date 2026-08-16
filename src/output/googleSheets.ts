@@ -49,23 +49,42 @@ export async function updateGoogleSheets(
       spreadsheetId: sheetId,
       range: sheetName,
     });
-  } catch (_error) {
+  } catch (error) {
+    const status = (error as { status?: number }).status;
+
+    // Only treat a 400 as a missing sheet. Transient errors (e.g. rate
+    // limits or server errors) must not be mistaken for a missing sheet,
+    // otherwise we'd attempt to create a sheet that already exists.
+    if (status !== 400) {
+      throw error;
+    }
+
     console.warn(`Sheet ${sheetName} not found.  Creating new sheet...`);
 
-    await sheets.spreadsheets.batchUpdate({
-      spreadsheetId: sheetId,
-      requestBody: {
-        requests: [
-          {
-            addSheet: {
-              properties: {
-                title: sheetName,
+    try {
+      await sheets.spreadsheets.batchUpdate({
+        spreadsheetId: sheetId,
+        requestBody: {
+          requests: [
+            {
+              addSheet: {
+                properties: {
+                  title: sheetName,
+                },
               },
             },
-          },
-        ],
-      },
-    });
+          ],
+        },
+      });
+    } catch (addError) {
+      const message = (addError as { message?: string }).message ?? '';
+
+      if (!message.includes('already exists')) {
+        throw addError;
+      }
+
+      console.warn(`Sheet ${sheetName} already exists.  Skipping creation.`);
+    }
   }
 
   // Massage the description field (remove quotes) prior to updating the sheet
