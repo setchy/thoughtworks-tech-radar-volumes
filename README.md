@@ -33,7 +33,7 @@ The technology radar datasets are provided in three formats; CSV, JSON and a com
 
 ### How are the datasets updated?
 
-The CSV, JSON and Google Sheets datasets are automatically checked for any updates weekly.
+The CSV, JSON and Google Sheets datasets are automatically checked for any updates weekly. See the [Data Pipeline](#data-pipeline) section for how they are generated.
 
 > [!NOTE]
 > _Thoughtworks typically publish a new technology radar volume twice per year._
@@ -180,6 +180,44 @@ Options:
   -h, --help             display help for command
 ```
 </details>
+
+## Data Pipeline
+
+The datasets are produced by a single TypeScript CLI that fetches the radar sitemap, scrapes each blip's timeline, and regenerates every volume from the combined dataset:
+
+```
+┌──────────────────────────────────────────────────────────────────────┐
+│                         DATA PIPELINE OVERVIEW                       │
+│                                                                      │
+│                        thoughtworks.com/radar                        │
+│                              │                                       │
+│                              ▼   fetch sitemap                       │
+│  ┌──────────────────┐  (regex + sort)  ┌──────────────────┐          │
+│  │    Radar Sitemap │ ─────────────────▶│   search-links   │          │
+│  │       .xml       │                   │      .json       │ ~1,938   │
+│  └──────────────────┘                   └────────┬─────────┘  links  │
+│                                                  │                  │
+│                                                  ▼  per blip        │
+│                                     ┌───────────────────────┐        │
+│                                     │  extractBlipTimeline  │        │
+│                                     │  fetch + parse        │        │
+│                                     │  (cheerio DOM scrape) │        │
+│                                     └───────────┬───────────┘        │
+│                                                 ▼                   │
+│                              ┌────────────────────────┐  ~3,309     │
+│                              │     search-data.json   │   rows      │
+│                              │  (combined master set) │  34 volumes │
+│                              └───────────┬────────────┘             │
+│                                          ▼                          │
+│                      ┌───────────────────┼───────────────────┐      │
+│                      ▼                   ▼                   ▼      │
+│               ┌──────────────┐   ┌──────────────┐   ┌──────────────┐│
+│               │  CSV × 34    │   │  JSON × 34   │   │Google Sheets ││
+│               └──────────────┘   └──────────────┘   └──────────────┘│
+│                                                                      │
+│   Weekly GitHub Action → fetch all → lint → automated PR             │
+└──────────────────────────────────────────────────────────────────────┘
+```
 
 
 
