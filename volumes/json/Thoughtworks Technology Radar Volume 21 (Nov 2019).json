@@ -208,7 +208,7 @@
   },
   {
     "name": "10x engineers",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "TRUE",
     "status": "new",
@@ -217,7 +217,7 @@
   },
   {
     "name": "Azure Data Factory for orchestration",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "TRUE",
     "status": "new",
@@ -226,7 +226,7 @@
   },
   {
     "name": "Front-end integration via artifact",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "TRUE",
     "status": "new",
@@ -235,7 +235,7 @@
   },
   {
     "name": "Lambda pinball",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "TRUE",
     "status": "new",
@@ -244,7 +244,7 @@
   },
   {
     "name": "Legacy migration feature parity",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "TRUE",
     "status": "new",
@@ -856,7 +856,7 @@
   },
   {
     "name": "Enzyme",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "languages-and-frameworks",
     "isNew": "FALSE",
     "status": "moved out",

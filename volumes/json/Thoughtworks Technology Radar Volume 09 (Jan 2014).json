@@ -190,7 +190,7 @@
   },
   {
     "name": "Cloud lift and shift",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "TRUE",
     "status": "new",
@@ -199,7 +199,7 @@
   },
   {
     "name": "Ignoring OWASP Top 10",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "TRUE",
     "status": "new",
@@ -208,7 +208,7 @@
   },
   {
     "name": "Siloed metrics",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "TRUE",
     "status": "new",
@@ -217,7 +217,7 @@
   },
   {
     "name": "Velocity as productivity",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "TRUE",
     "status": "new",
@@ -406,7 +406,7 @@
   },
   {
     "name": "Big enterprise solutions",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "platforms",
     "isNew": "FALSE",
     "status": "no change",
@@ -415,7 +415,7 @@
   },
   {
     "name": "CMS as a platform",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "platforms",
     "isNew": "TRUE",
     "status": "new",
@@ -424,7 +424,7 @@
   },
   {
     "name": "Enterprise Data Warehouse",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "platforms",
     "isNew": "TRUE",
     "status": "new",
@@ -631,7 +631,7 @@
   },
   {
     "name": "Ant",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "tools",
     "isNew": "TRUE",
     "status": "new",
@@ -640,7 +640,7 @@
   },
   {
     "name": "Heavyweight test tools",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "tools",
     "isNew": "FALSE",
     "status": "no change",
@@ -649,7 +649,7 @@
   },
   {
     "name": "TFS",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "tools",
     "isNew": "FALSE",
     "status": "no change",
@@ -829,7 +829,7 @@
   },
   {
     "name": "Handwritten CSS",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "languages-and-frameworks",
     "isNew": "FALSE",
     "status": "no change",
@@ -838,7 +838,7 @@
   },
   {
     "name": "JSF",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "languages-and-frameworks",
     "isNew": "TRUE",
     "status": "new",

@@ -199,7 +199,7 @@
   },
   {
     "name": "Cloud lift and shift",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "FALSE",
     "status": "no change",
@@ -208,7 +208,7 @@
   },
   {
     "name": "Legacy migration feature parity",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "FALSE",
     "status": "no change",
@@ -217,7 +217,7 @@
   },
   {
     "name": "Log aggregation for business analytics",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "TRUE",
     "status": "new",
@@ -226,7 +226,7 @@
   },
   {
     "name": "Long-lived branches with Gitflow",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "FALSE",
     "status": "no change",
@@ -235,7 +235,7 @@
   },
   {
     "name": "Snapshot testing only",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "TRUE",
     "status": "new",
@@ -865,7 +865,7 @@
   },
   {
     "name": "Enzyme",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "languages-and-frameworks",
     "isNew": "FALSE",
     "status": "no change",
@@ -874,7 +874,7 @@
   },
   {
     "name": "Node overload",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "languages-and-frameworks",
     "isNew": "TRUE",
     "status": "new",

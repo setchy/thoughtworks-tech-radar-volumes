@@ -89,9 +89,14 @@ export function getRingNameForVolume(ring: string, volume: number): string {
   return volume >= CAUTION_RENAME_VOLUME ? 'caution' : 'hold';
 }
 
+// Returns the canonical ring name used in outputs: maps legacy 'hold' to 'caution'.
+export function canonicalizeRingName(ring: string): string {
+  return ring === 'hold' ? 'caution' : ring;
+}
+
 // Normalizes ring name for comparison/movement calculation — maps legacy 'hold' to canonical 'caution'.
 export function normalizeRingName(ring: string): string {
-  return ring === 'hold' ? 'caution' : ring;
+  return canonicalizeRingName(ring);
 }
 
 export const BLIP_STATUSES = [

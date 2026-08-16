@@ -163,7 +163,7 @@
   },
   {
     "name": "A single CI instance for all teams",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "FALSE",
     "status": "no change",
@@ -172,7 +172,7 @@
   },
   {
     "name": "Anemic REST",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "TRUE",
     "status": "new",
@@ -181,7 +181,7 @@
   },
   {
     "name": "Big Data envy",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "FALSE",
     "status": "no change",
@@ -190,7 +190,7 @@
   },
   {
     "name": "Cloud lift and shift",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "FALSE",
     "status": "no change",
@@ -433,7 +433,7 @@
   },
   {
     "name": "CMS as a platform",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "platforms",
     "isNew": "FALSE",
     "status": "no change",
@@ -442,7 +442,7 @@
   },
   {
     "name": "Overambitious API gateways",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "platforms",
     "isNew": "FALSE",
     "status": "no change",
@@ -451,7 +451,7 @@
   },
   {
     "name": "Superficial private cloud",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "platforms",
     "isNew": "FALSE",
     "status": "no change",
@@ -730,7 +730,7 @@
   },
   {
     "name": "Jenkins as a deployment pipeline",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "tools",
     "isNew": "FALSE",
     "status": "no change",
@@ -982,7 +982,7 @@
   },
   {
     "name": "AngularJS",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "languages-and-frameworks",
     "isNew": "FALSE",
     "status": "moved out",
@@ -991,7 +991,7 @@
   },
   {
     "name": "JSPatch",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "languages-and-frameworks",
     "isNew": "FALSE",
     "status": "no change",

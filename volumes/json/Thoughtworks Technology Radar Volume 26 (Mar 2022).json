@@ -163,7 +163,7 @@
   },
   {
     "name": "Azure Data Factory for orchestration",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "FALSE",
     "status": "no change",
@@ -172,7 +172,7 @@
   },
   {
     "name": "Miscellaneous platform teams",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "TRUE",
     "status": "new",
@@ -181,7 +181,7 @@
   },
   {
     "name": "Production data in test environments",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "FALSE",
     "status": "no change",
@@ -190,7 +190,7 @@
   },
   {
     "name": "SPA by default",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "TRUE",
     "status": "new",

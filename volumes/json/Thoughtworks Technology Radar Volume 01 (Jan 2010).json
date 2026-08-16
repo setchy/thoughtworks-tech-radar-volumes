@@ -208,7 +208,7 @@
   },
   {
     "name": "IE8",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "platforms",
     "isNew": "TRUE",
     "status": "new",
@@ -253,7 +253,7 @@
   },
   {
     "name": "Google Wave",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "tools",
     "isNew": "TRUE",
     "status": "new",
@@ -262,7 +262,7 @@
   },
   {
     "name": "Language workbenches",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "tools",
     "isNew": "TRUE",
     "status": "new",
@@ -271,7 +271,7 @@
   },
   {
     "name": "Polyglot development environments",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "tools",
     "isNew": "TRUE",
     "status": "new",

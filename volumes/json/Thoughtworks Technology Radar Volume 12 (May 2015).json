@@ -163,7 +163,7 @@
   },
   {
     "name": "Long-lived branches with Gitflow",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "FALSE",
     "status": "no change",
@@ -172,7 +172,7 @@
   },
   {
     "name": "Microservice envy",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "FALSE",
     "status": "no change",
@@ -181,7 +181,7 @@
   },
   {
     "name": "Programming in your CI/CD tool",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "FALSE",
     "status": "no change",
@@ -190,7 +190,7 @@
   },
   {
     "name": "SAFe™",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "FALSE",
     "status": "no change",
@@ -199,7 +199,7 @@
   },
   {
     "name": "Security sandwich",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "FALSE",
     "status": "no change",
@@ -208,7 +208,7 @@
   },
   {
     "name": "Separate DevOps team",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "FALSE",
     "status": "no change",
@@ -406,7 +406,7 @@
   },
   {
     "name": "Application Servers",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "platforms",
     "isNew": "TRUE",
     "status": "new",
@@ -415,7 +415,7 @@
   },
   {
     "name": "OSGi",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "platforms",
     "isNew": "FALSE",
     "status": "no change",
@@ -424,7 +424,7 @@
   },
   {
     "name": "SPDY",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "platforms",
     "isNew": "FALSE",
     "status": "moved out",
@@ -676,7 +676,7 @@
   },
   {
     "name": "Citrix for development",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "tools",
     "isNew": "FALSE",
     "status": "no change",
@@ -820,7 +820,7 @@
   },
   {
     "name": "JSF",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "languages-and-frameworks",
     "isNew": "FALSE",
     "status": "no change",

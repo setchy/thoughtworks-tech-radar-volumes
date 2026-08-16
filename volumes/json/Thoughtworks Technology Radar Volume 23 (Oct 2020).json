@@ -190,7 +190,7 @@
   },
   {
     "name": "Apollo Federation",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "TRUE",
     "status": "new",
@@ -199,7 +199,7 @@
   },
   {
     "name": "ESBs in API Gateway's clothing",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "TRUE",
     "status": "new",
@@ -208,7 +208,7 @@
   },
   {
     "name": "Log aggregation for business analytics",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "FALSE",
     "status": "no change",
@@ -217,7 +217,7 @@
   },
   {
     "name": "Micro frontend anarchy",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "TRUE",
     "status": "new",
@@ -226,7 +226,7 @@
   },
   {
     "name": "Productionizing notebooks",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "FALSE",
     "status": "no change",
@@ -883,7 +883,7 @@
   },
   {
     "name": "Node overload",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "languages-and-frameworks",
     "isNew": "FALSE",
     "status": "no change",

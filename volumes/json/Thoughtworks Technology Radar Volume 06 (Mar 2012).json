@@ -262,7 +262,7 @@
   },
   {
     "name": "Database based integration",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "FALSE",
     "status": "no change",
@@ -271,7 +271,7 @@
   },
   {
     "name": "Feature branching",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "FALSE",
     "status": "no change",
@@ -280,7 +280,7 @@
   },
   {
     "name": "Manual infrastructure management",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "FALSE",
     "status": "no change",
@@ -289,7 +289,7 @@
   },
   {
     "name": "Scrum certification",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "FALSE",
     "status": "no change",
@@ -298,7 +298,7 @@
   },
   {
     "name": "Server / application container end-of-life",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "TRUE",
     "status": "new",
@@ -307,7 +307,7 @@
   },
   {
     "name": "Test recorders",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "TRUE",
     "status": "new",
@@ -514,7 +514,7 @@
   },
   {
     "name": "Buying solutions you can only afford one of",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "platforms",
     "isNew": "TRUE",
     "status": "new",
@@ -523,7 +523,7 @@
   },
   {
     "name": "GWT",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "platforms",
     "isNew": "FALSE",
     "status": "no change",
@@ -532,7 +532,7 @@
   },
   {
     "name": "Java portal servers",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "platforms",
     "isNew": "FALSE",
     "status": "no change",
@@ -541,7 +541,7 @@
   },
   {
     "name": "RIA",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "platforms",
     "isNew": "FALSE",
     "status": "no change",
@@ -550,7 +550,7 @@
   },
   {
     "name": "Treating VMs like physical infrastructure",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "platforms",
     "isNew": "TRUE",
     "status": "new",
@@ -559,7 +559,7 @@
   },
   {
     "name": "WS-*",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "platforms",
     "isNew": "FALSE",
     "status": "no change",
@@ -568,7 +568,7 @@
   },
   {
     "name": "Zero-code packages",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "platforms",
     "isNew": "TRUE",
     "status": "new",
@@ -757,7 +757,7 @@
   },
   {
     "name": "Code in configuration",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "tools",
     "isNew": "FALSE",
     "status": "no change",
@@ -766,7 +766,7 @@
   },
   {
     "name": "Cross-platform mobile toolkits",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "tools",
     "isNew": "FALSE",
     "status": "no change",
@@ -775,7 +775,7 @@
   },
   {
     "name": "ESB",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "tools",
     "isNew": "FALSE",
     "status": "no change",
@@ -784,7 +784,7 @@
   },
   {
     "name": "Maven",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "tools",
     "isNew": "TRUE",
     "status": "new",
@@ -793,7 +793,7 @@
   },
   {
     "name": "VCS with “implicit workflow”",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "tools",
     "isNew": "FALSE",
     "status": "no change",
@@ -919,7 +919,7 @@
   },
   {
     "name": "Dart",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "languages-and-frameworks",
     "isNew": "TRUE",
     "status": "new",
@@ -928,7 +928,7 @@
   },
   {
     "name": "Logic in stored procedures",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "languages-and-frameworks",
     "isNew": "FALSE",
     "status": "no change",

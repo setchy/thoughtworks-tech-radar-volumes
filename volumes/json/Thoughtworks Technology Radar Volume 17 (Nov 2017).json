@@ -181,7 +181,7 @@
   },
   {
     "name": "A single CI instance for all teams",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "FALSE",
     "status": "no change",
@@ -190,7 +190,7 @@
   },
   {
     "name": "CI theatre",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "FALSE",
     "status": "no change",
@@ -199,7 +199,7 @@
   },
   {
     "name": "Enterprise-wide integration test environments",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "FALSE",
     "status": "no change",
@@ -213,7 +213,7 @@
   },
   {
     "name": "Recreating ESB antipatterns with Kafka",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "TRUE",
     "status": "new",
@@ -222,7 +222,7 @@
   },
   {
     "name": "Spec-based codegen",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "FALSE",
     "status": "no change",
@@ -474,7 +474,7 @@
   },
   {
     "name": "Overambitious API gateways",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "platforms",
     "isNew": "FALSE",
     "status": "no change",

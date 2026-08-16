@@ -243,7 +243,7 @@
   },
   {
     "name": "AI-accelerated shadow IT",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "FALSE",
     "status": "no change",
@@ -252,7 +252,7 @@
   },
   {
     "name": "Capacity-driven development",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "TRUE",
     "status": "new",
@@ -261,7 +261,7 @@
   },
   {
     "name": "Complacency with AI-generated code",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "FALSE",
     "status": "no change",
@@ -270,7 +270,7 @@
   },
   {
     "name": "Naive API-to-MCP conversion",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "TRUE",
     "status": "new",
@@ -279,7 +279,7 @@
   },
   {
     "name": "Standalone data engineering teams",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "TRUE",
     "status": "new",
@@ -293,7 +293,7 @@
   },
   {
     "name": "Text to SQL",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "FALSE",
     "status": "moved out",

@@ -190,7 +190,7 @@
   },
   {
     "name": "Cloud lift and shift",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "FALSE",
     "status": "no change",
@@ -199,7 +199,7 @@
   },
   {
     "name": "Long-lived branches with Gitflow",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "TRUE",
     "status": "new",
@@ -208,7 +208,7 @@
   },
   {
     "name": "Microservice envy",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "TRUE",
     "status": "new",
@@ -217,7 +217,7 @@
   },
   {
     "name": "Programming in your CI/CD tool",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "TRUE",
     "status": "new",
@@ -226,7 +226,7 @@
   },
   {
     "name": "SAFe™",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "TRUE",
     "status": "new",
@@ -235,7 +235,7 @@
   },
   {
     "name": "Security sandwich",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "TRUE",
     "status": "new",
@@ -244,7 +244,7 @@
   },
   {
     "name": "Separate DevOps team",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "FALSE",
     "status": "no change",
@@ -253,7 +253,7 @@
   },
   {
     "name": "Testing as a separate organization",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "FALSE",
     "status": "no change",
@@ -262,7 +262,7 @@
   },
   {
     "name": "Velocity as productivity",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "FALSE",
     "status": "no change",
@@ -451,7 +451,7 @@
   },
   {
     "name": "CMS as a platform",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "platforms",
     "isNew": "FALSE",
     "status": "no change",
@@ -460,7 +460,7 @@
   },
   {
     "name": "OSGi",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "platforms",
     "isNew": "FALSE",
     "status": "no change",
@@ -730,7 +730,7 @@
   },
   {
     "name": "Citrix for development",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "tools",
     "isNew": "TRUE",
     "status": "new",
@@ -928,7 +928,7 @@
   },
   {
     "name": "JSF",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "languages-and-frameworks",
     "isNew": "FALSE",
     "status": "no change",

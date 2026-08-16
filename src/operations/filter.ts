@@ -1,4 +1,5 @@
-import { FILES } from '../shared/constants.ts';
+import { canonicalizeRingName, FILES } from '../shared/constants.ts';
+import { blipTimelineEntryListSchema } from '../shared/schemas.ts';
 import type {
   BlipStatus,
   BlipTimelineEntry,
@@ -15,7 +16,10 @@ type FilterOpts = {
   status?: BlipStatus | null;
 };
 export async function filterData(opts: FilterOpts): Promise<EnrichedBlip[]> {
-  const data = readJSONFile<BlipTimelineEntry[]>(FILES.DATA.MASTER);
+  const data = readJSONFile<BlipTimelineEntry[]>(
+    FILES.DATA.MASTER,
+    blipTimelineEntryListSchema,
+  );
 
   const filtered = data.filter((entry) => {
     if (
@@ -28,7 +32,10 @@ export async function filterData(opts: FilterOpts): Promise<EnrichedBlip[]> {
       entry.quadrant.toLowerCase() !== opts.quadrant.toLowerCase()
     )
       return false;
-    if (opts.ring && entry.ring.toLowerCase() !== opts.ring.toLowerCase())
+    if (
+      opts.ring &&
+      canonicalizeRingName(entry.ring) !== canonicalizeRingName(opts.ring)
+    )
       return false;
     if (opts.status && getStatus(entry) !== opts.status) return false;
 

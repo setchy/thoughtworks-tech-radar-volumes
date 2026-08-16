@@ -235,7 +235,7 @@
   },
   {
     "name": "GitOps",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "TRUE",
     "status": "new",
@@ -244,7 +244,7 @@
   },
   {
     "name": "Layered platform teams",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "TRUE",
     "status": "new",
@@ -253,7 +253,7 @@
   },
   {
     "name": "Naive password complexity requirements",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "TRUE",
     "status": "new",
@@ -262,7 +262,7 @@
   },
   {
     "name": "Peer review equals pull request",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "TRUE",
     "status": "new",
@@ -271,7 +271,7 @@
   },
   {
     "name": "SAFe™",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "FALSE",
     "status": "no change",
@@ -280,7 +280,7 @@
   },
   {
     "name": "Separate code and pipeline ownership",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "TRUE",
     "status": "new",
@@ -289,7 +289,7 @@
   },
   {
     "name": "Ticket-driven platform operating models",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "TRUE",
     "status": "new",
@@ -451,7 +451,7 @@
   },
   {
     "name": "Azure Machine Learning",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "platforms",
     "isNew": "TRUE",
     "status": "new",
@@ -460,7 +460,7 @@
   },
   {
     "name": "Homemade infrastructure-as-code (IaC) products",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "platforms",
     "isNew": "TRUE",
     "status": "new",
@@ -694,7 +694,7 @@
   },
   {
     "name": "AWS CodePipeline",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "tools",
     "isNew": "TRUE",
     "status": "new",

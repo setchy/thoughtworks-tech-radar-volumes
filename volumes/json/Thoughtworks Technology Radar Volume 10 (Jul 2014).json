@@ -208,7 +208,7 @@
   },
   {
     "name": "Cloud lift and shift",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "FALSE",
     "status": "no change",
@@ -217,7 +217,7 @@
   },
   {
     "name": "Ignoring OWASP Top 10",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "FALSE",
     "status": "no change",
@@ -226,7 +226,7 @@
   },
   {
     "name": "Separate DevOps team",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "TRUE",
     "status": "new",
@@ -235,7 +235,7 @@
   },
   {
     "name": "Testing as a separate organization",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "TRUE",
     "status": "new",
@@ -244,7 +244,7 @@
   },
   {
     "name": "Velocity as productivity",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "FALSE",
     "status": "no change",
@@ -424,7 +424,7 @@
   },
   {
     "name": "Big enterprise solutions",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "platforms",
     "isNew": "FALSE",
     "status": "no change",
@@ -433,7 +433,7 @@
   },
   {
     "name": "CMS as a platform",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "platforms",
     "isNew": "FALSE",
     "status": "no change",
@@ -442,7 +442,7 @@
   },
   {
     "name": "Enterprise Data Warehouse",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "platforms",
     "isNew": "FALSE",
     "status": "no change",
@@ -451,7 +451,7 @@
   },
   {
     "name": "OSGi",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "platforms",
     "isNew": "TRUE",
     "status": "new",
@@ -712,7 +712,7 @@
   },
   {
     "name": "Ant",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "tools",
     "isNew": "FALSE",
     "status": "no change",
@@ -721,7 +721,7 @@
   },
   {
     "name": "TFS",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "tools",
     "isNew": "FALSE",
     "status": "no change",
@@ -946,7 +946,7 @@
   },
   {
     "name": "Handwritten CSS",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "languages-and-frameworks",
     "isNew": "FALSE",
     "status": "no change",
@@ -955,7 +955,7 @@
   },
   {
     "name": "JSF",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "languages-and-frameworks",
     "isNew": "FALSE",
     "status": "no change",

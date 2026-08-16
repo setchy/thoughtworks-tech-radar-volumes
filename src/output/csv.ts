@@ -1,4 +1,8 @@
-import { CSV_HEADERS, FILES } from '../shared/constants.ts';
+import {
+  CSV_HEADERS,
+  canonicalizeRingName,
+  FILES,
+} from '../shared/constants.ts';
 import { logger } from '../shared/logger.ts';
 import type { BlipTimelineEntry } from '../shared/types.ts';
 
@@ -12,7 +16,7 @@ import {
 export function formatCSVDataset(data: BlipTimelineEntry[]) {
   return data.map((blip) => [
     blip.name,
-    blip.ring,
+    canonicalizeRingName(blip.ring),
     blip.quadrant,
     blip.isNew.toString().toUpperCase(),
     getStatus(blip),

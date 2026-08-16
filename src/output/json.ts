@@ -1,4 +1,4 @@
-import { FILES } from '../shared/constants.ts';
+import { canonicalizeRingName, FILES } from '../shared/constants.ts';
 import { logger } from '../shared/logger.ts';
 import type { BlipTimelineEntry } from '../shared/types.ts';
 
@@ -12,7 +12,7 @@ import {
 export function generateJSON(volume: string, volumeData: BlipTimelineEntry[]) {
   const data = volumeData.map((row) => ({
     name: row.name,
-    ring: row.ring,
+    ring: canonicalizeRingName(row.ring),
     quadrant: row.quadrant,
     isNew: row.isNew.toString().toUpperCase(),
     status: getStatus(row),

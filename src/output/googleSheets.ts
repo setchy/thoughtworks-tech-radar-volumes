@@ -2,7 +2,11 @@ import { exit } from 'node:process';
 
 import { google } from 'googleapis';
 
-import { CSV_HEADERS, URLS } from '../shared/constants.ts';
+import {
+  CSV_HEADERS,
+  canonicalizeRingName,
+  URLS,
+} from '../shared/constants.ts';
 import { logger } from '../shared/logger.ts';
 import type { BlipTimelineEntry } from '../shared/types.ts';
 
@@ -14,7 +18,7 @@ export async function updateGoogleSheets(
 ) {
   const data = volumeData.map((blip) => [
     blip.name,
-    blip.ring,
+    canonicalizeRingName(blip.ring),
     blip.quadrant,
     blip.isNew.toString().toUpperCase(),
     // getStatus omitted here; CSV dataset previously prepended headers elsewhere

@@ -136,7 +136,7 @@
   },
   {
     "name": "Peer review equals pull request",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "FALSE",
     "status": "no change",
@@ -145,7 +145,7 @@
   },
   {
     "name": "Production data in test environments",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "TRUE",
     "status": "new",

@@ -208,7 +208,7 @@
   },
   {
     "name": "Satellite workers without \"remote native\"",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "TRUE",
     "status": "new",
@@ -217,7 +217,7 @@
   },
   {
     "name": "SPA by default",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "FALSE",
     "status": "no change",
@@ -226,7 +226,7 @@
   },
   {
     "name": "Superficial cloud native",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "TRUE",
     "status": "new",
@@ -676,7 +676,7 @@
   },
   {
     "name": "Online services for formatting or parsing code",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "tools",
     "isNew": "TRUE",
     "status": "new",
@@ -919,7 +919,7 @@
   },
   {
     "name": "Carbon",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "languages-and-frameworks",
     "isNew": "TRUE",
     "status": "new",

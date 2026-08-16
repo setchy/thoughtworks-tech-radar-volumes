@@ -198,7 +198,7 @@
   },
   {
     "name": "Ignoring OWASP Top 10 lists",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "TRUE",
     "status": "new",
@@ -207,7 +207,7 @@
   },
   {
     "name": "Web components for SSR web apps",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "TRUE",
     "status": "new",

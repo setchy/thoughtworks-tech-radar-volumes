@@ -109,7 +109,7 @@
   },
   {
     "name": "Scrum certification",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "TRUE",
     "status": "new",
@@ -289,7 +289,7 @@
   },
   {
     "name": "Azure",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "platforms",
     "isNew": "TRUE",
     "status": "new",
@@ -298,7 +298,7 @@
   },
   {
     "name": "GWT",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "platforms",
     "isNew": "TRUE",
     "status": "new",
@@ -307,7 +307,7 @@
   },
   {
     "name": "IE8",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "platforms",
     "isNew": "FALSE",
     "status": "no change",
@@ -316,7 +316,7 @@
   },
   {
     "name": "RIA",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "platforms",
     "isNew": "FALSE",
     "status": "moved out",
@@ -325,7 +325,7 @@
   },
   {
     "name": "WS-*",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "platforms",
     "isNew": "TRUE",
     "status": "new",
@@ -433,7 +433,7 @@
   },
   {
     "name": "ESB",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "tools",
     "isNew": "TRUE",
     "status": "new",
@@ -442,7 +442,7 @@
   },
   {
     "name": "Language workbenches",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "tools",
     "isNew": "FALSE",
     "status": "no change",

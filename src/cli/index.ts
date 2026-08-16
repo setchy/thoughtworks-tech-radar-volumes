@@ -7,6 +7,7 @@ import {
   filterCommand,
   searchCommand,
   statsCommand,
+  validateCommand,
   volumesCommand,
 } from './commands/index.ts';
 import { CLI_EXAMPLES } from './examples.ts';
@@ -24,6 +25,7 @@ export function createCLI() {
   searchCommand(program);
   filterCommand(program);
   statsCommand(program);
+  validateCommand(program);
 
   program.on('--help', () => {
     logger.info('');

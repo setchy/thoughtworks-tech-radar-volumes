@@ -1,6 +1,7 @@
 import _ from 'lodash';
 
-import { FILES } from '../shared/constants.ts';
+import { canonicalizeRingName, FILES } from '../shared/constants.ts';
+import { blipTimelineEntryListSchema } from '../shared/schemas.ts';
 import type { BlipTimelineEntry } from '../shared/types.ts';
 
 import { readJSONFile } from '../data/repository.ts';
@@ -19,11 +20,14 @@ export type StatsOutput = {
 export async function summarizeStats(
   opts: StatsOpts = {},
 ): Promise<StatsOutput> {
-  const data = readJSONFile<BlipTimelineEntry[]>(FILES.DATA.MASTER);
+  const data = readJSONFile<BlipTimelineEntry[]>(
+    FILES.DATA.MASTER,
+    blipTimelineEntryListSchema,
+  );
 
   const byVolume = _.countBy(data, (d) => String(d.volume));
   const byQuadrant = _.countBy(data, (d) => String(d.quadrant));
-  const byRing = _.countBy(data, (d) => String(d.ring));
+  const byRing = _.countBy(data, (d) => canonicalizeRingName(d.ring));
 
   const total = data.length;
 

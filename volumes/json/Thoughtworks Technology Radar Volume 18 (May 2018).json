@@ -199,7 +199,7 @@
   },
   {
     "name": "Generic cloud usage",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "TRUE",
     "status": "new",
@@ -208,7 +208,7 @@
   },
   {
     "name": "Recreating ESB antipatterns with Kafka",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "FALSE",
     "status": "no change",
@@ -469,7 +469,7 @@
   },
   {
     "name": "Overambitious API gateways",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "platforms",
     "isNew": "FALSE",
     "status": "no change",

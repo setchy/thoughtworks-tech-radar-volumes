@@ -199,7 +199,7 @@
   },
   {
     "name": "A single CI instance for all teams",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "TRUE",
     "status": "new",
@@ -208,7 +208,7 @@
   },
   {
     "name": "Big Data envy",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "TRUE",
     "status": "new",
@@ -217,7 +217,7 @@
   },
   {
     "name": "Gitflow",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "FALSE",
     "status": "no change",
@@ -226,7 +226,7 @@
   },
   {
     "name": "High performance envy/web scale envy",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "FALSE",
     "status": "no change",
@@ -235,7 +235,7 @@
   },
   {
     "name": "SAFe™",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "FALSE",
     "status": "no change",
@@ -460,7 +460,7 @@
   },
   {
     "name": "Application Servers",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "platforms",
     "isNew": "FALSE",
     "status": "no change",
@@ -469,7 +469,7 @@
   },
   {
     "name": "Overambitious API gateways",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "platforms",
     "isNew": "FALSE",
     "status": "no change",
@@ -478,7 +478,7 @@
   },
   {
     "name": "Superficial private cloud",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "platforms",
     "isNew": "FALSE",
     "status": "no change",
@@ -703,7 +703,7 @@
   },
   {
     "name": "Jenkins as a deployment pipeline",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "tools",
     "isNew": "TRUE",
     "status": "new",
@@ -946,7 +946,7 @@
   },
   {
     "name": "JSPatch",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "languages-and-frameworks",
     "isNew": "TRUE",
     "status": "new",

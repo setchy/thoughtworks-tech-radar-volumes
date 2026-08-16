@@ -226,7 +226,7 @@
   },
   {
     "name": "Database based integration",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "FALSE",
     "status": "no change",
@@ -235,7 +235,7 @@
   },
   {
     "name": "Feature branching",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "TRUE",
     "status": "new",
@@ -244,7 +244,7 @@
   },
   {
     "name": "Manual infrastructure management",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "TRUE",
     "status": "new",
@@ -253,7 +253,7 @@
   },
   {
     "name": "Procedure oriented integration",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "TRUE",
     "status": "new",
@@ -262,7 +262,7 @@
   },
   {
     "name": "Scrum certification",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "FALSE",
     "status": "no change",
@@ -397,7 +397,7 @@
   },
   {
     "name": "GWT",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "platforms",
     "isNew": "FALSE",
     "status": "no change",
@@ -406,7 +406,7 @@
   },
   {
     "name": "Java portal servers",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "platforms",
     "isNew": "TRUE",
     "status": "new",
@@ -415,7 +415,7 @@
   },
   {
     "name": "WS-*",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "platforms",
     "isNew": "FALSE",
     "status": "no change",
@@ -604,7 +604,7 @@
   },
   {
     "name": "Code in configuration",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "tools",
     "isNew": "TRUE",
     "status": "new",
@@ -613,7 +613,7 @@
   },
   {
     "name": "Cross-platform mobile toolkits",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "tools",
     "isNew": "TRUE",
     "status": "new",
@@ -622,7 +622,7 @@
   },
   {
     "name": "ESB",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "tools",
     "isNew": "FALSE",
     "status": "no change",
@@ -631,7 +631,7 @@
   },
   {
     "name": "VCS with “implicit workflow”",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "tools",
     "isNew": "TRUE",
     "status": "new",
@@ -748,7 +748,7 @@
   },
   {
     "name": "Logic in stored procedures",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "languages-and-frameworks",
     "isNew": "TRUE",
     "status": "new",

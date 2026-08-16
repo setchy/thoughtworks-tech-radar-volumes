@@ -244,7 +244,7 @@
   },
   {
     "name": "Exhaustive browser based testing",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "FALSE",
     "status": "no change",
@@ -433,7 +433,7 @@
   },
   {
     "name": "Big enterprise solutions",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "platforms",
     "isNew": "TRUE",
     "status": "new",
@@ -442,7 +442,7 @@
   },
   {
     "name": "Singleton infrastructure",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "platforms",
     "isNew": "FALSE",
     "status": "no change",
@@ -451,7 +451,7 @@
   },
   {
     "name": "WS-*",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "platforms",
     "isNew": "FALSE",
     "status": "no change",
@@ -694,7 +694,7 @@
   },
   {
     "name": "Heavyweight test tools",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "tools",
     "isNew": "TRUE",
     "status": "new",
@@ -703,7 +703,7 @@
   },
   {
     "name": "Maven",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "tools",
     "isNew": "FALSE",
     "status": "no change",
@@ -712,7 +712,7 @@
   },
   {
     "name": "TFS",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "tools",
     "isNew": "TRUE",
     "status": "new",
@@ -901,7 +901,7 @@
   },
   {
     "name": "Backbone.js",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "languages-and-frameworks",
     "isNew": "FALSE",
     "status": "no change",
@@ -910,7 +910,7 @@
   },
   {
     "name": "Component-based frameworks",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "languages-and-frameworks",
     "isNew": "FALSE",
     "status": "no change",
@@ -919,7 +919,7 @@
   },
   {
     "name": "Handwritten CSS",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "languages-and-frameworks",
     "isNew": "TRUE",
     "status": "new",
@@ -928,7 +928,7 @@
   },
   {
     "name": "Logic in stored procedures",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "languages-and-frameworks",
     "isNew": "FALSE",
     "status": "no change",

@@ -171,7 +171,7 @@
   },
   {
     "name": "AI-accelerated shadow IT",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "TRUE",
     "status": "new",
@@ -180,7 +180,7 @@
   },
   {
     "name": "Complacency with AI-generated code",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "FALSE",
     "status": "no change",
@@ -189,7 +189,7 @@
   },
   {
     "name": "Local coding assistants",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "TRUE",
     "status": "new",
@@ -198,7 +198,7 @@
   },
   {
     "name": "Replacing pair programming with AI",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "FALSE",
     "status": "no change",
@@ -207,7 +207,7 @@
   },
   {
     "name": "Reverse ETL",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "TRUE",
     "status": "new",
@@ -216,7 +216,7 @@
   },
   {
     "name": "SAFe™",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "FALSE",
     "status": "no change",
@@ -482,7 +482,7 @@
   },
   {
     "name": "Tyk hybrid API management",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "platforms",
     "isNew": "TRUE",
     "status": "new",
@@ -1002,7 +1002,7 @@
   },
   {
     "name": "Node overload",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "languages-and-frameworks",
     "isNew": "FALSE",
     "status": "no change",

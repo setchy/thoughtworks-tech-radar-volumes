@@ -6,6 +6,7 @@ import {
   QUADRANT_SORT_ORDER,
   RING_SORT_ORDER,
 } from '../shared/constants.ts';
+import { blipTimelineEntryListSchema } from '../shared/schemas.ts';
 import type { BlipTimelineEntry, ReportType } from '../shared/types.ts';
 
 import { readJSONFile } from '../data/repository.ts';
@@ -14,7 +15,10 @@ import { updateGoogleSheets } from './googleSheets.ts';
 import { generateJSON } from './json.ts';
 
 export function generateVolumes(reportType: ReportType) {
-  const data = readJSONFile<BlipTimelineEntry[]>(FILES.DATA.MASTER);
+  const data = readJSONFile<BlipTimelineEntry[]>(
+    FILES.DATA.MASTER,
+    blipTimelineEntryListSchema,
+  );
 
   const groupedByVolumes = _.groupBy(data, 'volume');
 

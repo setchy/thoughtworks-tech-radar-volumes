@@ -144,7 +144,7 @@
   },
   {
     "name": "Broad integration tests",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "TRUE",
     "status": "new",
@@ -153,7 +153,7 @@
   },
   {
     "name": "Overenthusiastic LLM use",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "TRUE",
     "status": "new",
@@ -162,7 +162,7 @@
   },
   {
     "name": "Rush to fine-tune LLMs",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "TRUE",
     "status": "new",
@@ -171,7 +171,7 @@
   },
   {
     "name": "Web components for SSR web apps",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "FALSE",
     "status": "no change",
@@ -976,7 +976,7 @@
   },
   {
     "name": "LangChain",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "languages-and-frameworks",
     "isNew": "FALSE",
     "status": "moved out",

@@ -217,7 +217,7 @@
   },
   {
     "name": "Database based integration",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "FALSE",
     "status": "no change",
@@ -226,7 +226,7 @@
   },
   {
     "name": "Exhaustive browser based testing",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "TRUE",
     "status": "new",
@@ -235,7 +235,7 @@
   },
   {
     "name": "Feature branching",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "FALSE",
     "status": "no change",
@@ -244,7 +244,7 @@
   },
   {
     "name": "Test recorders",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "FALSE",
     "status": "no change",
@@ -442,7 +442,7 @@
   },
   {
     "name": "Java portal servers",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "platforms",
     "isNew": "FALSE",
     "status": "no change",
@@ -451,7 +451,7 @@
   },
   {
     "name": "Meteor.js",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "platforms",
     "isNew": "TRUE",
     "status": "new",
@@ -460,7 +460,7 @@
   },
   {
     "name": "Singleton infrastructure",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "platforms",
     "isNew": "TRUE",
     "status": "new",
@@ -469,7 +469,7 @@
   },
   {
     "name": "WS-*",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "platforms",
     "isNew": "FALSE",
     "status": "no change",
@@ -478,7 +478,7 @@
   },
   {
     "name": "Zero-code packages",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "platforms",
     "isNew": "FALSE",
     "status": "no change",
@@ -730,7 +730,7 @@
   },
   {
     "name": "ESB",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "tools",
     "isNew": "FALSE",
     "status": "no change",
@@ -739,7 +739,7 @@
   },
   {
     "name": "Maven",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "tools",
     "isNew": "FALSE",
     "status": "no change",
@@ -748,7 +748,7 @@
   },
   {
     "name": "VCS with “implicit workflow”",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "tools",
     "isNew": "FALSE",
     "status": "no change",
@@ -928,7 +928,7 @@
   },
   {
     "name": "Backbone.js",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "languages-and-frameworks",
     "isNew": "FALSE",
     "status": "moved out",
@@ -937,7 +937,7 @@
   },
   {
     "name": "Component-based frameworks",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "languages-and-frameworks",
     "isNew": "TRUE",
     "status": "new",
@@ -946,7 +946,7 @@
   },
   {
     "name": "Dart",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "languages-and-frameworks",
     "isNew": "FALSE",
     "status": "no change",
@@ -955,7 +955,7 @@
   },
   {
     "name": "Logic in stored procedures",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "languages-and-frameworks",
     "isNew": "FALSE",
     "status": "no change",

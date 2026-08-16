@@ -181,7 +181,7 @@
   },
   {
     "name": "Casual management of webhooks",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "TRUE",
     "status": "new",
@@ -190,7 +190,7 @@
   },
   {
     "name": "Lambda pinball",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "FALSE",
     "status": "no change",
@@ -199,7 +199,7 @@
   },
   {
     "name": "Planning for full utilization",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "TRUE",
     "status": "new",
@@ -388,7 +388,7 @@
   },
   {
     "name": "Denodo as primary data transformation tool",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "platforms",
     "isNew": "TRUE",
     "status": "new",

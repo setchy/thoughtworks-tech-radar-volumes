@@ -136,7 +136,7 @@
   },
   {
     "name": "Productionizing notebooks",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "TRUE",
     "status": "new",
@@ -145,7 +145,7 @@
   },
   {
     "name": "Puncturing encapsulation with change data capture",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "TRUE",
     "status": "new",
@@ -154,7 +154,7 @@
   },
   {
     "name": "Release train",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "TRUE",
     "status": "new",
@@ -163,7 +163,7 @@
   },
   {
     "name": "Templating in YAML",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "TRUE",
     "status": "new",
@@ -595,7 +595,7 @@
   },
   {
     "name": "Handwritten CloudFormation",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "tools",
     "isNew": "TRUE",
     "status": "new",

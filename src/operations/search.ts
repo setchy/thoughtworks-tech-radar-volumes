@@ -1,4 +1,5 @@
 import { FILES, SEARCHABLE_FIELDS } from '../shared/constants.ts';
+import { blipTimelineEntryListSchema } from '../shared/schemas.ts';
 import type {
   BlipTimelineEntry,
   EnrichedBlip,
@@ -19,7 +20,10 @@ export function isValidSearchField(field: string): field is SearchableField {
 }
 
 export async function searchData(opts: SearchOpts): Promise<EnrichedBlip[]> {
-  const data = readJSONFile<BlipTimelineEntry[]>(FILES.DATA.MASTER);
+  const data = readJSONFile<BlipTimelineEntry[]>(
+    FILES.DATA.MASTER,
+    blipTimelineEntryListSchema,
+  );
   const keyword = opts.keyword.toLowerCase();
 
   const filtered = data.filter((entry) => {

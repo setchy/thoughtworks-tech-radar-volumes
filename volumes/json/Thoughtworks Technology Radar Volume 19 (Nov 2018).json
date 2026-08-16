@@ -163,7 +163,7 @@
   },
   {
     "name": "\"Handcranking\" of Hadoop clusters using config management tools",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "TRUE",
     "status": "new",
@@ -172,7 +172,7 @@
   },
   {
     "name": "Generic cloud usage",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "FALSE",
     "status": "no change",
@@ -181,7 +181,7 @@
   },
   {
     "name": "Layered microservices architecture",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "TRUE",
     "status": "new",
@@ -190,7 +190,7 @@
   },
   {
     "name": "Master data management",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "TRUE",
     "status": "new",
@@ -199,7 +199,7 @@
   },
   {
     "name": "Microservice envy",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "FALSE",
     "status": "no change",
@@ -208,7 +208,7 @@
   },
   {
     "name": "Request-response events in user-facing workflows",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "TRUE",
     "status": "new",
@@ -217,7 +217,7 @@
   },
   {
     "name": "RPA",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "techniques",
     "isNew": "TRUE",
     "status": "new",
@@ -415,7 +415,7 @@
   },
   {
     "name": "Data-hungry packages",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "platforms",
     "isNew": "TRUE",
     "status": "new",
@@ -424,7 +424,7 @@
   },
   {
     "name": "Low-code platforms",
-    "ring": "hold",
+    "ring": "caution",
     "quadrant": "platforms",
     "isNew": "TRUE",
     "status": "new",
