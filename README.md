@@ -38,6 +38,11 @@ The CSV, JSON and Google Sheets datasets are automatically checked for any updat
 > [!NOTE]
 > _Thoughtworks typically publish a new technology radar volume twice per year._
 
+### Data notes
+
+- **Canonical ring naming**: Thoughtworks renamed the "Hold" ring to "Caution" in Volume 34 (Apr 2026). Across all output formats (CSV, JSON, Google Sheets) the ring is reported using the canonical name `caution`, so the same ring is consistently named across the full dataset history.
+- **Missing descriptions**: Blips in Volumes 1-14 often have an empty description. This is not a data-processing gap — the source pages genuinely contain no description for those entries. Volumes 15+ always include descriptions.
+
 ## Command Line Interface (CLI)
 
 ### Getting Started
@@ -72,6 +77,7 @@ Commands:
                     description)
   filter [options]  filter master dataset by volume, quadrant, ring or status
   stats [options]   show statistics for the master dataset
+  validate [options] check the master dataset for data quality issues
   help [command]    display help for command
 
 Examples:
