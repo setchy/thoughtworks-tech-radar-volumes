@@ -46,6 +46,12 @@ The CSV, JSON and Google Sheets datasets are automatically checked for any updat
 pnpm i && pnpm start help
 ```
 
+The CLI runs directly on Node's native TypeScript support (Node 24+, no build step required). `pnpm start` is shorthand for `node src/index.ts`. Additional scripts:
+
+- `pnpm build` — compile to `dist/` with `tsc`
+- `pnpm typecheck` — run `tsc --noEmit` without emitting
+- `pnpm lint` / `pnpm lint:check` — format/lint with Biome
+
 ### Usage
 
 ```text

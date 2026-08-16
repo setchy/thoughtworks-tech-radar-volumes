@@ -1,11 +1,12 @@
-import { readJSONFile } from '../data/repository';
-import { FILES } from '../shared/constants';
+import { FILES } from '../shared/constants.ts';
 import type {
   BlipStatus,
   BlipTimelineEntry,
   EnrichedBlip,
-} from '../shared/types';
-import { getStatus } from './utils';
+} from '../shared/types.ts';
+
+import { readJSONFile } from '../data/repository.ts';
+import { getStatus } from './utils.ts';
 
 type FilterOpts = {
   volume?: string | null;

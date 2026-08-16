@@ -1,11 +1,12 @@
-import { readJSONFile } from '../data/repository';
-import { FILES, SEARCHABLE_FIELDS } from '../shared/constants';
+import { FILES, SEARCHABLE_FIELDS } from '../shared/constants.ts';
 import type {
   BlipTimelineEntry,
   EnrichedBlip,
   SearchableField,
-} from '../shared/types';
-import { getStatus } from './utils';
+} from '../shared/types.ts';
+
+import { readJSONFile } from '../data/repository.ts';
+import { getStatus } from './utils.ts';
 
 type SearchOpts = {
   keyword: string;

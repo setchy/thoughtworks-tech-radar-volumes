@@ -1,13 +1,15 @@
 import { Command } from 'commander';
 
+import { logger } from '../shared/logger.ts';
+
 import {
   fetchCommand,
   filterCommand,
   searchCommand,
   statsCommand,
   volumesCommand,
-} from './commands';
-import { CLI_EXAMPLES } from './examples';
+} from './commands/index.ts';
+import { CLI_EXAMPLES } from './examples.ts';
 
 export function createCLI() {
   const program = new Command();
@@ -24,12 +26,12 @@ export function createCLI() {
   statsCommand(program);
 
   program.on('--help', () => {
-    console.log('');
-    console.log('Examples:');
+    logger.info('');
+    logger.info('Examples:');
     for (const example of CLI_EXAMPLES) {
-      console.log(`  ${example}`);
+      logger.info(`  ${example}`);
     }
-    console.log('');
+    logger.info('');
   });
 
   program.showSuggestionAfterError();

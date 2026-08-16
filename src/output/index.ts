@@ -1,16 +1,17 @@
 import _ from 'lodash';
 
-import { readJSONFile } from '../data/repository';
 import {
   FILES,
   normalizeRingName,
   QUADRANT_SORT_ORDER,
   RING_SORT_ORDER,
-} from '../shared/constants';
-import type { BlipTimelineEntry, ReportType } from '../shared/types';
-import { formatCSVDataset, generateCSV } from './csv';
-import { updateGoogleSheets } from './googleSheets';
-import { generateJSON } from './json';
+} from '../shared/constants.ts';
+import type { BlipTimelineEntry, ReportType } from '../shared/types.ts';
+
+import { readJSONFile } from '../data/repository.ts';
+import { formatCSVDataset, generateCSV } from './csv.ts';
+import { updateGoogleSheets } from './googleSheets.ts';
+import { generateJSON } from './json.ts';
 
 export function generateVolumes(reportType: ReportType) {
   const data = readJSONFile<BlipTimelineEntry[]>(FILES.DATA.MASTER);

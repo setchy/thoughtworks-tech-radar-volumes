@@ -1,8 +1,10 @@
 import type { Command } from 'commander';
 
-import { parseRadarSitemap } from '../../ingest/links';
-import { generateMasterData } from '../../ingest/timeline';
-import { generateVolumes } from '../../output';
+import { logger } from '../../shared/logger.ts';
+
+import { parseRadarSitemap } from '../../ingest/links/index.ts';
+import { generateMasterData } from '../../ingest/timeline/index.ts';
+import { generateVolumes } from '../../output/index.ts';
 
 export function fetchCommand(program: Command) {
   const fetchCmd = program
@@ -15,7 +17,7 @@ export function fetchCommand(program: Command) {
     .command('links')
     .description('fetch blip page links from sitemap')
     .action(() => {
-      console.log('fetching all radar blip page links from sitemap');
+      logger.info('fetching all radar blip page links from sitemap');
       parseRadarSitemap();
     });
 
@@ -23,7 +25,7 @@ export function fetchCommand(program: Command) {
     .command('data')
     .description('fetch detailed blip history and write data/master.json')
     .action(() => {
-      console.log('fetching detailed blip history from archive');
+      logger.info('fetching detailed blip history from archive');
       generateMasterData();
     });
 
@@ -31,11 +33,11 @@ export function fetchCommand(program: Command) {
     .command('all')
     .description('run links, data and generate volumes')
     .action(() => {
-      console.log('fetching all radar blip page links from sitemap');
+      logger.info('fetching all radar blip page links from sitemap');
       parseRadarSitemap().then(() => {
-        console.log('fetching detailed blip history from archive');
+        logger.info('fetching detailed blip history from archive');
         generateMasterData().then(() => {
-          console.log('generating all volumes');
+          logger.info('generating all volumes');
           generateVolumes('all');
         });
       });

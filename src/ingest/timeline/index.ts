@@ -3,16 +3,18 @@ import { exit } from 'node:process';
 import { load } from 'cheerio';
 import _ from 'lodash';
 
-import { readJSONFile, writeJSONFile } from '../../data/repository';
 import {
   FILES,
   getRingNameForVolume,
   normalizeRingName,
   QUADRANT_SORT_ORDER,
   RING_SORT_ORDER,
-} from '../../shared/constants';
-import type { BlipTimelineEntry, MasterData } from '../../shared/types';
-import { SELECTORS } from './selectors';
+} from '../../shared/constants.ts';
+import { logger } from '../../shared/logger.ts';
+import type { BlipTimelineEntry, MasterData } from '../../shared/types.ts';
+
+import { readJSONFile, writeJSONFile } from '../../data/repository.ts';
+import { SELECTORS } from './selectors.ts';
 import {
   getDescriptionHTMLFromBlipDOM,
   getPublishedDateFromBlipDOM,
@@ -20,7 +22,7 @@ import {
   getRelatedBlipsFromBlipDOM,
   getRingNameFromBlipDOM,
   getVolumeNameFromDate,
-} from './utils';
+} from './utils.ts';
 
 export async function generateMasterData() {
   const masterData: MasterData = {
@@ -29,12 +31,12 @@ export async function generateMasterData() {
 
   const radarLinks = readJSONFile<string[]>(FILES.DATA.LINKS);
 
-  console.log(
+  logger.info(
     `Commencing processing of ${radarLinks.length} blip timelines...`,
   );
 
   for (const [index, link] of radarLinks.entries()) {
-    console.log(
+    logger.info(
       `${index + 1} of ${radarLinks.length}: Extracting blip timeline from ${link}`,
     );
 
@@ -60,7 +62,7 @@ export async function extractBlipTimeline(
   const response = await fetch(blipURL);
 
   if (response.status === 403) {
-    console.error(
+    logger.error(
       'Encountered HTTP 403 Forbidden: Cloudflare has rate limited us...',
     );
     exit(1);

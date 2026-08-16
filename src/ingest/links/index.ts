@@ -1,7 +1,9 @@
 import _ from 'lodash';
 
-import { writeJSONFile } from '../../data/repository';
-import { FILES, URLS } from '../../shared/constants';
+import { FILES, URLS } from '../../shared/constants.ts';
+import { logger } from '../../shared/logger.ts';
+
+import { writeJSONFile } from '../../data/repository.ts';
 
 export async function parseRadarSitemap(): Promise<string[]> {
   const sitemap = await (await fetch(URLS.SITEMAP)).text();
@@ -20,7 +22,7 @@ export async function parseRadarSitemap(): Promise<string[]> {
   const uniqueLinks = _.uniq(links);
   writeJSONFile(FILES.DATA.LINKS, uniqueLinks);
 
-  console.log(`Found ${uniqueLinks.length} unique radar blip page links`);
+  logger.info(`Found ${uniqueLinks.length} unique radar blip page links`);
 
   return uniqueLinks;
 }

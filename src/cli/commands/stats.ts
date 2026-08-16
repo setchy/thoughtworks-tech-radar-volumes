@@ -1,7 +1,7 @@
 import type { Command } from 'commander';
 
-import { summarizeStats } from '../../operations';
-import { formatStats, validateOutputFormat } from '../formatters';
+import { summarizeStats } from '../../operations/index.ts';
+import { formatStats, validateOutputFormat } from '../formatters.ts';
 
 export function statsCommand(program: Command) {
   program

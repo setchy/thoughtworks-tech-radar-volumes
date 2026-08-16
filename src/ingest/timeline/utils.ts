@@ -3,8 +3,10 @@ import { load } from 'cheerio';
 import {
   NOT_FOUND_VOLUME_NUMBER,
   VOLUME_PUBLICATION_DATES,
-} from '../../shared/constants';
-import { SELECTORS } from './selectors';
+} from '../../shared/constants.ts';
+import { logger } from '../../shared/logger.ts';
+
+import { SELECTORS } from './selectors.ts';
 
 export function getRingNameFromBlipDOM(html: string): string {
   const $ = load(html);
@@ -40,7 +42,7 @@ export function getVolumeNameFromDate(publishedDate: string): number {
   const index = VOLUME_PUBLICATION_DATES.indexOf(publishedDate);
 
   if (index < 0) {
-    console.error(
+    logger.error(
       'ERROR: Publication volume not found in "VOLUME_PUBLICATION_DATES".  Please update the array with the new date->volume mappings',
     );
     return NOT_FOUND_VOLUME_NUMBER;

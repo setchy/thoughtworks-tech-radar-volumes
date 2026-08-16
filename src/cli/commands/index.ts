@@ -1,5 +1,5 @@
-export { fetchCommand } from './fetch';
-export { filterCommand } from './filter';
-export { searchCommand } from './search';
-export { statsCommand } from './stats';
-export { volumesCommand } from './volumes';
+export { fetchCommand } from './fetch.ts';
+export { filterCommand } from './filter.ts';
+export { searchCommand } from './search.ts';
+export { statsCommand } from './stats.ts';
+export { volumesCommand } from './volumes.ts';

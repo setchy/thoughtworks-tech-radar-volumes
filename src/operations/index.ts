@@ -1,3 +1,3 @@
-export { filterData } from './filter';
-export { isValidSearchField, searchData } from './search';
-export { type StatsOutput, summarizeStats } from './stats';
+export { filterData } from './filter.ts';
+export { isValidSearchField, searchData } from './search.ts';
+export { type StatsOutput, summarizeStats } from './stats.ts';

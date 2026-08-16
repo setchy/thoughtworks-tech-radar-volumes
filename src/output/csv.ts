@@ -1,11 +1,13 @@
-import { writeCSVFile } from '../data/repository';
+import { CSV_HEADERS, FILES } from '../shared/constants.ts';
+import { logger } from '../shared/logger.ts';
+import type { BlipTimelineEntry } from '../shared/types.ts';
+
+import { writeCSVFile } from '../data/repository.ts';
 import {
   escapeDescriptionHTML,
   getStatus,
   getVolumeFileName,
-} from '../operations/utils';
-import { CSV_HEADERS, FILES } from '../shared/constants';
-import type { BlipTimelineEntry } from '../shared/types';
+} from '../operations/utils.ts';
 
 export function formatCSVDataset(data: BlipTimelineEntry[]) {
   return data.map((blip) => [
@@ -27,7 +29,7 @@ export function generateCSV(volume: string, volumeData: BlipTimelineEntry[]) {
 
   const filename = `${FILES.VOLUMES.FOLDER}/csv/${getVolumeFileName(volume)}.csv`;
 
-  console.log('Creating CSV file', filename);
+  logger.info('Creating CSV file', filename);
 
   writeCSVFile(filename, csvData);
 }

@@ -1,8 +1,9 @@
 import _ from 'lodash';
 
-import { readJSONFile } from '../data/repository';
-import { FILES } from '../shared/constants';
-import type { BlipTimelineEntry } from '../shared/types';
+import { FILES } from '../shared/constants.ts';
+import type { BlipTimelineEntry } from '../shared/types.ts';
+
+import { readJSONFile } from '../data/repository.ts';
 
 type StatsOpts = {
   by?: 'volume' | 'quadrant' | 'ring' | 'all';

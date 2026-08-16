@@ -2,9 +2,11 @@ import { exit } from 'node:process';
 
 import { google } from 'googleapis';
 
-import { getVolumePublicationDate } from '../operations/utils';
-import { CSV_HEADERS, URLS } from '../shared/constants';
-import type { BlipTimelineEntry } from '../shared/types';
+import { CSV_HEADERS, URLS } from '../shared/constants.ts';
+import { logger } from '../shared/logger.ts';
+import type { BlipTimelineEntry } from '../shared/types.ts';
+
+import { getVolumePublicationDate } from '../operations/utils.ts';
 
 export async function updateGoogleSheets(
   volume: string,
@@ -27,7 +29,7 @@ export async function updateGoogleSheets(
   const privateKey = process.env.GOOGLE_PRIVATE_KEY;
 
   if (!sheetId || !clientEmail || !privateKey) {
-    console.error('Missing Sheet ID, Client Email or Private Key');
+    logger.error('Missing Sheet ID, Client Email or Private Key');
     exit(1);
   }
 
@@ -59,7 +61,7 @@ export async function updateGoogleSheets(
       throw error;
     }
 
-    console.warn(`Sheet ${sheetName} not found.  Creating new sheet...`);
+    logger.warn(`Sheet ${sheetName} not found.  Creating new sheet...`);
 
     try {
       await sheets.spreadsheets.batchUpdate({
@@ -83,7 +85,7 @@ export async function updateGoogleSheets(
         throw addError;
       }
 
-      console.warn(`Sheet ${sheetName} already exists.  Skipping creation.`);
+      logger.warn(`Sheet ${sheetName} already exists.  Skipping creation.`);
     }
   }
 
@@ -105,7 +107,7 @@ export async function updateGoogleSheets(
     },
   });
 
-  console.log(
+  logger.info(
     `Google Sheet ${sheetName} has been updated: ${URLS.GOOGLE_SHEET}${sheetId}&sheetName=${sheetName}`,
   );
 }

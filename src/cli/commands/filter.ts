@@ -1,9 +1,11 @@
 import type { Command } from 'commander';
 
-import { filterData } from '../../operations';
-import { BLIP_STATUSES } from '../../shared/constants';
-import type { BlipStatus } from '../../shared/types';
-import { formatEnrichedBlip, validateOutputFormat } from '../formatters';
+import { BLIP_STATUSES } from '../../shared/constants.ts';
+import { logger } from '../../shared/logger.ts';
+import type { BlipStatus } from '../../shared/types.ts';
+
+import { filterData } from '../../operations/index.ts';
+import { formatEnrichedBlip, validateOutputFormat } from '../formatters.ts';
 
 export function filterCommand(program: Command) {
   program
@@ -33,7 +35,7 @@ export function filterCommand(program: Command) {
           ? (String(opts.status).toLowerCase() as BlipStatus)
           : null;
         if (status && !BLIP_STATUSES.includes(status)) {
-          console.error(
+          logger.error(
             'ERROR: --status must be one of new|moved in|moved out|no change',
           );
           process.exit(1);

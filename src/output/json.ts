@@ -1,11 +1,13 @@
-import { writeJSONFile } from '../data/repository';
+import { FILES } from '../shared/constants.ts';
+import { logger } from '../shared/logger.ts';
+import type { BlipTimelineEntry } from '../shared/types.ts';
+
+import { writeJSONFile } from '../data/repository.ts';
 import {
   escapeDescriptionHTML,
   getStatus,
   getVolumeFileName,
-} from '../operations/utils';
-import { FILES } from '../shared/constants';
-import type { BlipTimelineEntry } from '../shared/types';
+} from '../operations/utils.ts';
 
 export function generateJSON(volume: string, volumeData: BlipTimelineEntry[]) {
   const data = volumeData.map((row) => ({
@@ -19,6 +21,6 @@ export function generateJSON(volume: string, volumeData: BlipTimelineEntry[]) {
   }));
 
   const filename = `${FILES.VOLUMES.FOLDER}/json/${getVolumeFileName(volume)}.json`;
-  console.log('Creating JSON file', filename);
+  logger.info('Creating JSON file', filename);
   writeJSONFile(filename, data);
 }
