@@ -1,7 +1,15 @@
 {
   "$schema": "https://biomejs.dev/schemas/2.5.8/schema.json",
   "files": {
-    "maxSize": 5242880
+    "maxSize": 5242880,
+    "includes": [
+      "src/**",
+      "test/**/*.ts",
+      "package.json",
+      "tsconfig.json",
+      "vitest.config.ts",
+      "biome.json"
+    ]
   },
   "assist": {
     "actions": {

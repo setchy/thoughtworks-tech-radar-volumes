@@ -136,7 +136,7 @@ function createBlipTimelineEntryFromPublication(
   return blipTimelineEntry;
 }
 
-function calculateBlipMovements(blipMasterData: MasterData) {
+export function calculateBlipMovements(blipMasterData: MasterData) {
   for (let i = 0; i < blipMasterData.blipEntries.length; i++) {
     if (i === 0) {
       blipMasterData.blipEntries[i].isNew = true;
