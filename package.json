@@ -23,7 +23,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.5.7",
+    "@biomejs/biome": "2.5.8",
     "@tsconfig/node24": "24.0.4",
     "@types/lodash": "4.17.25",
     "@types/node": "24.13.3",
@@ -38,7 +38,7 @@
   "engines": {
     "node": "24"
   },
-  "packageManager": "pnpm@11.20.0",
+  "packageManager": "pnpm@11.21.0",
   "lint-staged": {
     "*": "biome check --fix --no-errors-on-unmatched"
   }
