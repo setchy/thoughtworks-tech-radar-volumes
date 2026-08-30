@@ -212,7 +212,12 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p>Since we first mentioned them in 2014, <a href=\"\"https://www.thoughtworks.com/radar/platforms/web-components-standard\"\">web components</a> have become popular, and, on the whole, our experience has been positive. Similarly, we've voiced our support for rendering HTML on the server by cautioning against <a href=\"\"https://www.thoughtworks.com/radar/techniques/spa-by-default\"\">SPA by default</a> and by including frameworks such as <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/next-js\"\">Next.js</a> and <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/htmx\"\">htmx</a> in addition to traditional server-side frameworks. However, although it’s possible to combine both, it can also prove deeply problematic; that’s why we suggest avoiding <strong>web components for server-side-rendered (SSR) web apps</strong>. As a browser technology, it's not trivial to use web components on the server. Frameworks have sprung up to make this easier, sometimes even using a browser engine, but the complexity is still there. Worse than the issues with developer experience is the user experience: Page load performance is impacted when custom web components have to be loaded and hydrated in the browser, and even with pre-rendering and careful tweaking of the component, a \"\"flash of unstyled content\"\" or some layout shifting is all but unavoidable. The decision to forgo web components can have far-reaching consequences as one of our teams experienced when they had to move their design system away from the web components–based <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/stencil\"\">Stencil</a>.</p>\"",
-    "relatedBlips": ["Next.js", "htmx", "Web Components standard", "Stencil"]
+    "relatedBlips": [
+      "Next.js",
+      "htmx",
+      "Web Components standard",
+      "Stencil"
+    ]
   },
   {
     "name": "Colima",
@@ -230,7 +235,9 @@
     "isNew": "FALSE",
     "status": "moved in",
     "description": "\"<p>Events are common mechanisms in event-driven architecture or <a href=\"\"https://www.thoughtworks.com/radar/techniques/serverless-architecture\"\">serverless</a> applications. However, producers or cloud providers tend to support them in different forms, which prevents interoperability across platforms and infrastructures. <strong><a href=\"\"https://cloudevents.io/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">CloudEvents</a></strong> is a specification for describing event data in common formats to provide interoperability across services, platforms and systems. It provides SDKs in multiple languages so you can embed the spec into your application or toolchain. Our teams use it not only for cross-cloud platform purposes but also for domain event specification, among other scenarios. CloudEvents is hosted by the <a href=\"\"https://www.cncf.io/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Cloud Native Computing Foundation</a> (CNCF) and now runs as an incubator project that has been gaining increasing industry attention.</p>\"",
-    "relatedBlips": ["Serverless architecture"]
+    "relatedBlips": [
+      "Serverless architecture"
+    ]
   },
   {
     "name": "DataOps.live",
@@ -284,7 +291,9 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p><strong><a href=\"\"https://trino.io/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Trino</a></strong>, previously known as PrestoSQL, is an open-source, distributed SQL query engine designed for interactive analytic queries over big data. It is optimized to run both on-premise and in the cloud. It supports querying data where it lives, including Hive, Cassandra, relational databases and even proprietary data stores. For authentication mechanisms, it supports password-based authentication, LDAP and OAuth. For authorization and access control, Trino provides the ability to grant access at the catalog, schema and table levels. Our teams used resource groups spliced according to consumption patterns like visualization, reporting or machine learning use cases to manage and limit resource usage. The JMX-based monitoring provides a rich set of metrics to enable cost attribution at query or user level. Our teams use Trino as a gateway for data access across a variety of sources. When it comes to querying extremely large-scale data, Trino is a safe bet for our teams. <a href=\"\"https://www.thoughtworks.com/radar/platforms/presto\"\">Presto</a>, the <a href=\"\"https://trino.io/blog/2020/12/27/announcing-trino.html\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Facebook project</a> from which Trino originates, was first featured in the Radar in November 2015.</p>\"",
-    "relatedBlips": ["Apache Iceberg"]
+    "relatedBlips": [
+      "Apache Iceberg"
+    ]
   },
   {
     "name": "ActivityPub",
@@ -302,7 +311,11 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p><strong><a href=\"\"https://azure.microsoft.com/en-us/products/container-apps\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Azure Container Apps</a></strong> is a managed <a href=\"\"https://www.thoughtworks.com/radar/platforms/kubernetes\"\">Kubernetes</a> namespace as a service that streamlines the deployment of containerized workloads by eliminating the need for intricate maintenance of Kubernetes clusters and underlying infrastructure components, consequently diminishing operational and administrative burdens. However, it’s essential to tread carefully while considering this option; currently in its developmental phase, it has exhibited inconsistencies in the Azure portal's representation of its capabilities and encounters integration hurdles, particularly with the standard Terraform provider for Azure lagging in mirroring the tool's actual functionalities. Given all this, we recommend assessing this tool carefully.</p>\"",
-    "relatedBlips": ["Kubernetes", "Dapr", "KEDA"]
+    "relatedBlips": [
+      "Kubernetes",
+      "Dapr",
+      "KEDA"
+    ]
   },
   {
     "name": "Azure OpenAI Service",
@@ -392,7 +405,10 @@
     "isNew": "FALSE",
     "status": "no change",
     "description": "\"<p>Multi-team account management is a challenge in AWS, especially in setup and governance. <strong><a href=\"\"https://aws.amazon.com/controltower\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">AWS Control Tower</a></strong> addresses this challenge by simplifying setup and automating governance; it addresses regulatory requirements with guardrails. AWS Control Tower has a built-in Account Factory that helps automate the account provisioning workflow. Among other things, you can update, unmanage and close accounts that you create and provision through Account Factory. Due to its lack of automation and customization, Amazon introduced <a href=\"\"https://github.com/aws-ia/terraform-aws-control_tower_account_factory\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">AWS Control Tower Account Factory for Terraform (AFT)</a>. AFT allows you to provision customizations to send webhooks or take specific actions that allow for the integration with other tools to kick off jobs as part of the account creation process. One of the use cases leveraged by our team was to manage a set of out-of-the box items for accounts that were set-and-forget configurations for baselining and creating access for roles for <a href=\"\"https://www.thoughtworks.com/radar/platforms/github-actions\"\">GitHub Actions</a>. This resulted in providing developers with an account that’s security baselined with a fully integrated VPC, ready to receive workload via GitHub Actions. Our teams have reported great results using AWS Control Tower to manage accounts, as a single access control for multiple teams, and with leveraging AFT in their workloads.</p>\"",
-    "relatedBlips": ["Infrastructure as code", "GitHub Actions"]
+    "relatedBlips": [
+      "Infrastructure as code",
+      "GitHub Actions"
+    ]
   },
   {
     "name": "cdk-nag",
@@ -662,7 +678,10 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p><strong><a href=\"\"https://maestro.mobile.dev/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Maestro</a></strong> is a new cross-platform mobile UI test automation tool with built-in tolerance for flakiness and variance in application load times because of network or external factors. With a declarative YAML syntax, it makes it easy to write and maintain automated tests for mobile apps. It supports iOS and Android native apps, <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/react-native\"\">React Native</a> and <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/flutter\"\">Flutter</a> apps, as well as a variety of features for automating complex mobile UI interactions, such as tapping, scrolling and swiping. Maestro is distributed as a single binary for ease of use, runs in interpreted mode and makes it easy to author new tests thanks to features like continuous mode. Maestro still lacks specific features like support for iOS devices, but the tool is rapidly evolving.</p>\"",
-    "relatedBlips": ["React Native", "Flutter"]
+    "relatedBlips": [
+      "React Native",
+      "Flutter"
+    ]
   },
   {
     "name": "Open-source LLMs for coding",
@@ -734,7 +753,10 @@
     "isNew": "FALSE",
     "status": "moved in",
     "description": "\"<p><a href=\"\"https://www.getdbt.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\"><strong>dbt</strong></a> continues to be our tool of choice for data transformations in the ELT workflow. We like that it lends itself to engineering rigor and enables practices like modularity, testability and reusability of SQL-based transformations. dbt is available both as an open-source and commercial SaaS product and has a healthy ecosystem, including a community hub with packages for unit testing, data quality and data observability, to name a few. Packages worth highlighting include <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/dbt-expectations\"\">dbt-expectations</a> and <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/dbt-unit-testing\"\">dbt-unit-testing</a> which facilitate data quality checks and unit testing of the transformations, respectively. dbt <a href=\"\"https://docs.getdbt.com/docs/supported-data-platforms\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">integrates</a> well with a variety of cloud data warehouses, lakehouses and databases, including <a href=\"\"https://www.thoughtworks.com/radar/platforms/snowflake\"\">Snowflake</a>, <a href=\"\"https://www.thoughtworks.com/radar/platforms/bigquery\"\">BigQuery</a>, Redshift, Databricks and Postgres. When working with structured data where one can set up transformations as SQL, our teams prefer dbt — which is why we're moving it to Adopt.</p>\"",
-    "relatedBlips": ["Snowflake", "BigQuery"]
+    "relatedBlips": [
+      "Snowflake",
+      "BigQuery"
+    ]
   },
   {
     "name": "Playwright",
@@ -932,7 +954,10 @@
     "isNew": "FALSE",
     "status": "no change",
     "description": "\"<p><strong><a href=\"\"https://github.com/hwchase17/langchain\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">LangChain</a></strong> is a framework for building applications with large language models (LLMs). To build practical LLM products, you need to combine them with user- or domain-specific data which wasn’t part of the training. LangChain fills this niche with features like prompt management, chaining, <a href=\"\"https://python.langchain.com/docs/modules/agents/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">agents</a> and document loaders. The benefit of components like prompt templates and document loaders is that they can speed up your time to market. Although it's a popular choice for implementing <a href=\"\"https://www.thoughtworks.com/radar/techniques/retrieval-augmented-generation-rag\"\">Retrieval-Augmented Generation</a> applications and the <a href=\"\"https://www.thoughtworks.com/radar/techniques/react-prompting\"\">ReAct prompting</a> pattern, LangChain has been <a href=\"\"https://minimaxir.com/2023/07/langchain-problem/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">criticized</a> for being hard to use and overcomplicated. When choosing a tech stack for your LLM application, you may want to keep looking for similar frameworks — like <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/semantic-kernel\"\">Semantic Kernel</a> — in this fast-evolving space.</p>\"",
-    "relatedBlips": ["Semantic Kernel", "LiteLLM"]
+    "relatedBlips": [
+      "Semantic Kernel",
+      "LiteLLM"
+    ]
   },
   {
     "name": "LlamaIndex",
@@ -941,7 +966,9 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p><strong><a href=\"\"https://www.llamaindex.ai/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">LlamaIndex</a></strong> is a data framework designed to facilitate the integration of private or domain-specific data with large language models (LLMs). It offers tools for ingesting data from diverse sources — including APIs, databases and PDFs — and structures this data into a format that LLMs can easily consume. Through various types of \"\"engines,\"\" LlamaIndex enables natural language interactions with this structured data, making it accessible for applications ranging from query-based retrieval to conversational interfaces. Similar to <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/langchain\"\">LangChain</a>, LlamaIndex’s goal is to accelerate development with LLMs, but it takes more of a data framework approach.</p>\"",
-    "relatedBlips": ["Retrieval-augmented generation (RAG)"]
+    "relatedBlips": [
+      "Retrieval-augmented generation (RAG)"
+    ]
   },
   {
     "name": "promptfoo",

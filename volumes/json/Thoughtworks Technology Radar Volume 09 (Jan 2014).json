@@ -618,7 +618,9 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"\"",
-    "relatedBlips": ["BackstopJS"]
+    "relatedBlips": [
+      "BackstopJS"
+    ]
   },
   {
     "name": "Xamarin",

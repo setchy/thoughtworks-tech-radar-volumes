@@ -24,7 +24,9 @@
     "isNew": "FALSE",
     "status": "no change",
     "description": "\"\"",
-    "relatedBlips": ["Security sandwich"]
+    "relatedBlips": [
+      "Security sandwich"
+    ]
   },
   {
     "name": "BFF - Backend for frontends",
@@ -726,7 +728,10 @@
     "isNew": "FALSE",
     "status": "moved in",
     "description": "\"\"",
-    "relatedBlips": ["Vite", "Next.js"]
+    "relatedBlips": [
+      "Vite",
+      "Next.js"
+    ]
   },
   {
     "name": "Spring Boot",

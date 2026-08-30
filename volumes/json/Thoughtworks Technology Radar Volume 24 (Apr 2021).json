@@ -375,7 +375,9 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p>Since we first mentioned <a href=\"\"https://www.thoughtworks.com/radar/techniques/data-discoverability\"\">data discoverability</a> in the Radar, LinkedIn has evolved <a href=\"\"https://engineering.linkedin.com/blog/2016/03/open-sourcing-wherehows--a-data-discovery-and-lineage-portal\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">WhereHows</a> to <strong><a href=\"\"https://github.com/linkedin/datahub\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">DataHub</a></strong>, the next generation platform that addresses data discoverability via an extensible metadata system. Instead of crawling and pulling metadata, DataHub adopts a push-based model where individual components of the data ecosystem publish metadata via an API or a stream to the central platform. This push-based integration shifts the ownership from the central entity to individual teams making them accountable for their metadata. As more and more companies are trying to become data driven, having a system that helps with data discovery and understanding data quality and lineage is critical, and we recommend you assess DataHub in that capacity.</p>\"",
-    "relatedBlips": ["Data product thinking"]
+    "relatedBlips": [
+      "Data product thinking"
+    ]
   },
   {
     "name": "Feature Store",
@@ -438,7 +440,9 @@
     "isNew": "FALSE",
     "status": "no change",
     "description": "\"<p>We've seen interest in <strong><a href=\"\"https://pulumi.io/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Pulumi</a></strong> slowly but steadily rising. Pulumi fills a gaping hole in the infrastructure coding world where <a href=\"\"https://www.thoughtworks.com/radar/tools/terraform\"\">Terraform</a> maintains a firm hold. While Terraform is a tried-and-true standby, its declarative nature suffers from inadequate abstraction facilities and limited testability. Terraform is adequate when the infrastructure is entirely static, but dynamic infrastructure definitions call for a real programming language. Pulumi distinguishes itself by allowing configurations to be written in <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/typescript\"\">TypeScript</a>/JavaScript, <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/python-3\"\">Python</a> and <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/go-language\"\">Go</a> — no markup language or templating required. Pulumi is tightly focused on cloud-native architectures — including containers, serverless functions and data services — and provides good support for <a href=\"\"https://www.thoughtworks.com/radar/platforms/kubernetes\"\">Kubernetes</a>. Recently, <a href=\"\"https://www.thoughtworks.com/radar/platforms/aws-cloud-development-kit\"\">AWS CDK</a> has mounted a challenge, but Pulumi remains the only cloud-neutral tool in this area. We're anticipating wider Pulumi adoption in the future and looking forward to a viable tool and knowledge ecosystem emerging to support it.</p>\"",
-    "relatedBlips": ["Terraform"]
+    "relatedBlips": [
+      "Terraform"
+    ]
   },
   {
     "name": "Redpanda",
@@ -582,7 +586,9 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p><strong><a href=\"\"https://tuple.app/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Tuple</a></strong> is a relatively new tool optimized for remote paired programming, designed to fill the gap Slack left in the marketplace after abandoning Screenhero. Although it still exhibits some growing pains — platform availability is limited to Mac OS for now (with Linux support coming soon), and it has some UI quirks to work through — we've had good experience using it within those constraints. Unlike general-purpose video- and screen-sharing tools like Zoom, Tuple supports dual control with two mouse cursors, and unlike options such as <a href=\"\"https://www.thoughtworks.com/radar/tools/visual-studio-live-share\"\">Visual Studio Live Share</a>, it isn't tied to an IDE. Tuple supports voice and video calls, clipboard sharing, and lower latency than general-purpose tools; and its ability to let you draw and erase in your pair's screen with ease makes Tuple a very intuitive and developer-friendly tool.</p>\"",
-    "relatedBlips": ["Pragmatic remote pairing"]
+    "relatedBlips": [
+      "Pragmatic remote pairing"
+    ]
   },
   {
     "name": "Why Did You Render",
@@ -753,7 +759,10 @@
     "isNew": "FALSE",
     "status": "moved in",
     "description": "\"<p>Since we last wrote about <strong><a href=\"\"https://www.getdbt.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">dbt</a></strong>, we've used it in a few projects and like what we've seen. For example, we like that dbt makes the transformation part of ELT pipelines more accessible to consumers of the data as opposed to just the data engineers building the pipelines. It does this while encouraging good engineering practices such as versioning, automated testing and deployment. SQL continues to be the lingua franca of the data world (including databases, warehouses, query engines, data lakes and analytical platforms) and most of these systems support it to some extent. This allows dbt to be used against these systems for transformations by just building adaptors. The number of native connectors has grown to include <a href=\"\"https://www.thoughtworks.com/radar/platforms/snowflake\"\">Snowflake</a>, <a href=\"\"https://www.thoughtworks.com/radar/platforms/bigquery\"\">BigQuery</a>, Redshift and Postgres, as has the range of <a href=\"\"https://docs.getdbt.com/docs/available-adapters\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">community plugins</a>. We see tools like dbt helping data platforms become more \"\"self service\"\" capable.</p>\"",
-    "relatedBlips": ["Snowflake", "BigQuery"]
+    "relatedBlips": [
+      "Snowflake",
+      "BigQuery"
+    ]
   },
   {
     "name": "FastAPI",
@@ -879,7 +888,11 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p>So far, <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/flutter\"\">Flutter</a> has primarily supported native iOS and Android applications. However, the Flutter team's vision is to support building applications on every platform. <strong>Flutter for Web</strong> is one step in that direction — it allows us to build apps for iOS, Android and the browser from the same codebase. It has been available for over a year now on the \"\"Beta\"\" channel, but with the recent Flutter 2.0 release, Flutter for Web has hit the stable milestone. In the initial release of web support, the Flutter team is focusing on <a href=\"\"https://web.dev/what-are-pwas/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">progressive web apps</a>, <a href=\"\"https://en.wikipedia.org/wiki/Single-page_application\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">single-page apps</a> and expanding existing mobile apps to the web. The application and framework code (all in <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/google-dart\"\">Dart</a>) are compiled to JavaScript instead of ARM machine code, which is used for mobile applications. Flutter’s web engine offers a choice of two renderers: an HTML renderer, which uses HTML, CSS, Canvas and SVG, and a CanvasKit renderer that uses <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/webassembly\"\">WebAssembly</a> and WebGL to render Skia paint commands to the browser canvas. A few of our teams have started using Flutter for Web and like the initial results.</p>\"",
-    "relatedBlips": ["Flutter", "Progressive Web Applications", "WebAssembly"]
+    "relatedBlips": [
+      "Flutter",
+      "Progressive Web Applications",
+      "WebAssembly"
+    ]
   },
   {
     "name": "Jotai and Zustand",
@@ -915,7 +928,10 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p>The release of the <strong><a href=\"\"https://webpack.js.org/concepts/module-federation/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Webpack 5 Module Federation</a></strong> feature has been highly anticipated by developers of <a href=\"\"https://www.thoughtworks.com/radar/techniques/micro-frontends\"\">micro frontend</a> architectures. The feature introduces a more standardized way to optimize how module dependencies and shared code are managed and loaded. Module federation allows for the specification of shared modules, which helps with the deduplication of dependencies across micro frontends by loading code used by multiple modules only once. It also lets you distinguish between local and remote modules, where the remote modules are not actually part of the build itself but loaded asynchronously. Compared to build-time dependencies like npm packages, this can significantly simplify the deployment of a module update with many downstream dependencies. Be aware, though, that this requires you to bundle all of your micro frontends with Webpack, as opposed to approaches such as <a href=\"\"https://www.thoughtworks.com/radar/techniques/import-maps-for-micro-frontends\"\">import maps</a>, which might eventually become part of the W3C standard.</p>\"",
-    "relatedBlips": ["Rspack", "Vite"]
+    "relatedBlips": [
+      "Rspack",
+      "Vite"
+    ]
   },
   {
     "name": "React Hook Form",
@@ -924,7 +940,9 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p>Building forms for the web remains one of the perennial challenges of front-end development, in particular with <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/react-js\"\">React</a>. Many of our teams working with React have been using <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/formik\"\">Formik</a> to make this easier, but some are now assessing <strong><a href=\"\"https://react-hook-form.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">React Hook Form</a></strong> as a potential alternative. <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/react-hooks\"\">React Hooks</a> already existed when React Hook Form was created, so it could use them as a first-class concept: the framework is registering and tracking form elements as uncontrolled components via a hook, thereby significantly reducing the need for re-rendering. It's also quite lightweight in size and in the amount of boilerplate code needed.</p>\"",
-    "relatedBlips": ["shadcn"]
+    "relatedBlips": [
+      "shadcn"
+    ]
   },
   {
     "name": "River",
