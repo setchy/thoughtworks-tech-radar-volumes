@@ -200,8 +200,8 @@ importers:
         specifier: 5.0.0
         version: 5.0.0(@types/node@24.13.4)(vite@8.3.0(@types/node@24.13.4))
       zod:
-        specifier: 4.6.2
-        version: 4.6.2
+        specifier: 4.6.4
+        version: 4.6.4
 
 packages:
 
@@ -1051,8 +1051,8 @@ packages:
     engines: {node: '>=8'}
     hasBin: true
 
-  zod@4.6.2:
-    resolution: {integrity: sha512-lh5RCAGFa1Cm2hjtNwLQhSs/AsqdWnTQaBER9fEwN/88pSh7KOtJavtBx/0VlkN/uFd61SwYmljLMDAsHlvzBQ==}
+  zod@4.6.4:
+    resolution: {integrity: sha512-AXSD6hvGdvRjajG/l1cC+d6IrhH+sjmPKtYeQdJIK8MFJl3LyClzS+o/YsVC+zQZPupAaeH5skwwm8YqYH7BqA==}
 
 snapshots:
 
@@ -1736,4 +1736,4 @@ snapshots:
       siginfo: 2.0.0
       stackback: 0.0.2
 
-  zod@4.6.2: {}
+  zod@4.6.4: {}
