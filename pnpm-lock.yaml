@@ -185,8 +185,8 @@ importers:
         specifier: 15.0.0
         version: 15.0.0
       dotenv:
-        specifier: 18.0.4
-        version: 18.0.4
+        specifier: 18.0.5
+        version: 18.0.5
       googleapis:
         specifier: 182.0.0
         version: 182.0.0
@@ -606,8 +606,8 @@ packages:
   domutils@3.2.2:
     resolution: {integrity: sha512-6kZKyUajlDuqlHKVX1w7gyslj9MPIXzIFiz/rGu35uC1wMi+kMhQwGhl4lt9unC9Vb9INnY9Z3/ZA3+FhASLaw==}
 
-  dotenv@18.0.4:
-    resolution: {integrity: sha512-jGt9uI5BIxpVO15kvy+iEFqNAwxYClKWnkptLjSNPnFLC003Imd0ofr3aEVsbpHdSBdSsbcApNIlz4nbyGMwdA==}
+  dotenv@18.0.5:
+    resolution: {integrity: sha512-aBrGvt6KhjxbEnatqMWOMidftwsrCiCvqh1yNIGB9QyF0J+VcWkKDMsvYOEm7ZS82oiV+BT1sTOtIlAmUlTpwQ==}
     engines: {node: '>=12'}
     hasBin: true
 
@@ -1317,7 +1317,7 @@ snapshots:
       domelementtype: 2.3.0
       domhandler: 5.0.3
 
-  dotenv@18.0.4: {}
+  dotenv@18.0.5: {}
 
   dunder-proto@1.0.1:
     dependencies:
