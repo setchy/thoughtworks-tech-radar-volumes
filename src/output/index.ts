@@ -10,7 +10,7 @@ import { blipTimelineEntryListSchema } from '../shared/schemas.ts';
 import type { BlipTimelineEntry, ReportType } from '../shared/types.ts';
 
 import { readJSONFile } from '../data/repository.ts';
-import { formatCSVDataset, generateCSV } from './csv.ts';
+import { generateCSV } from './csv.ts';
 import { updateGoogleSheets } from './googleSheets.ts';
 import { generateJSON } from './json.ts';
 
@@ -48,4 +48,5 @@ export function generateVolumes(reportType: ReportType) {
   });
 }
 
-export { formatCSVDataset, generateCSV, generateJSON, updateGoogleSheets };
+export { formatCSVDataset } from './csv.ts';
+export { generateCSV, generateJSON, updateGoogleSheets };
