@@ -19,7 +19,7 @@ export function isValidSearchField(field: string): field is SearchableField {
   return SEARCHABLE_FIELDS.includes(field as SearchableField);
 }
 
-export async function searchData(opts: SearchOpts): Promise<EnrichedBlip[]> {
+export function searchData(opts: SearchOpts): EnrichedBlip[] {
   const data = readJSONFile<BlipTimelineEntry[]>(
     FILES.DATA.MASTER,
     blipTimelineEntryListSchema,
