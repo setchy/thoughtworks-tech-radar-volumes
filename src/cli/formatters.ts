@@ -23,7 +23,11 @@ export function validateOutputFormat(format: string): OutputFormat {
 }
 
 export function escapeCSV(value: unknown): string {
-  return `"${String(value ?? '').replace(/"/g, '""')}"`;
+  if (value == null) {
+    return '""';
+  }
+
+  return `"${String(value).replace(/"/g, '""')}"`;
 }
 
 export function formatEnrichedBlip(
