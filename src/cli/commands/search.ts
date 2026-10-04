@@ -23,7 +23,7 @@ export function searchCommand(program: Command) {
       'text',
     )
     .action(
-      async (opts: {
+      (opts: {
         keyword?: string;
         field?: string;
         volume?: string;
@@ -33,7 +33,7 @@ export function searchCommand(program: Command) {
           logger.error('ERROR: --keyword is required for search');
           process.exit(1);
         }
-        const results = await searchData({
+        const results = searchData({
           keyword: opts.keyword,
           field: opts.field,
           volume: opts.volume,
