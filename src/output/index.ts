@@ -1,4 +1,7 @@
-import _ from 'lodash';
+import forEach from 'lodash/forEach.js';
+import groupBy from 'lodash/groupBy.js';
+import indexOf from 'lodash/indexOf.js';
+import orderBy from 'lodash/orderBy.js';
 
 import {
   FILES,
@@ -20,12 +23,12 @@ export function generateVolumes(reportType: ReportType) {
     blipTimelineEntryListSchema,
   );
 
-  const groupedByVolumes = _.groupBy(data, 'volume');
+  const groupedByVolumes = groupBy(data, 'volume');
 
-  _.forEach(groupedByVolumes, (dataChunk, volume) => {
-    const sortedData = _.orderBy(dataChunk, [
-      (entry) => _.indexOf(QUADRANT_SORT_ORDER, entry.quadrant),
-      (entry) => _.indexOf(RING_SORT_ORDER, normalizeRingName(entry.ring)),
+  forEach(groupedByVolumes, (dataChunk, volume) => {
+    const sortedData = orderBy(dataChunk, [
+      (entry) => indexOf(QUADRANT_SORT_ORDER, entry.quadrant),
+      (entry) => indexOf(RING_SORT_ORDER, normalizeRingName(entry.ring)),
       (entry) => entry.name.toLowerCase(),
     ]);
 

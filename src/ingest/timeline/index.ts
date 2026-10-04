@@ -1,7 +1,9 @@
 import { exit } from 'node:process';
 
 import { load } from 'cheerio';
-import _ from 'lodash';
+import indexOf from 'lodash/indexOf.js';
+import orderBy from 'lodash/orderBy.js';
+import reverse from 'lodash/reverse.js';
 
 import {
   FILES,
@@ -44,10 +46,10 @@ export async function generateMasterData() {
     masterData.blipEntries.push(...blipMasterData.blipEntries);
   }
 
-  const sortedMasterData = _.orderBy(masterData.blipEntries, [
+  const sortedMasterData = orderBy(masterData.blipEntries, [
     'volume',
-    (entry) => _.indexOf(QUADRANT_SORT_ORDER, entry.quadrant),
-    (entry) => _.indexOf(RING_SORT_ORDER, normalizeRingName(entry.ring)),
+    (entry) => indexOf(QUADRANT_SORT_ORDER, entry.quadrant),
+    (entry) => indexOf(RING_SORT_ORDER, normalizeRingName(entry.ring)),
     'name',
   ]);
 
@@ -96,7 +98,7 @@ export async function extractBlipTimeline(
   }
 
   // Reverse the order so that it's easier to calculate the isNew, hasMovedIn, hasMovedOut boolean values
-  blipMasterData.blipEntries = _.reverse(blipMasterData.blipEntries);
+  blipMasterData.blipEntries = reverse(blipMasterData.blipEntries);
 
   calculateBlipMovements(blipMasterData);
 
@@ -143,12 +145,12 @@ export function calculateBlipMovements(blipMasterData: MasterData) {
     }
 
     if (i > 0) {
-      const currentRingIndex = _.indexOf(
+      const currentRingIndex = indexOf(
         RING_SORT_ORDER,
         normalizeRingName(blipMasterData.blipEntries[i].ring),
       );
 
-      const previousRingIndex = _.indexOf(
+      const previousRingIndex = indexOf(
         RING_SORT_ORDER,
         normalizeRingName(blipMasterData.blipEntries[i - 1].ring),
       );
