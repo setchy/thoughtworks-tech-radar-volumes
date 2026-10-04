@@ -24,7 +24,7 @@ export function filterCommand(program: Command) {
       'text',
     )
     .action(
-      async (opts: {
+      (opts: {
         volume?: string;
         quadrant?: string;
         ring?: string;
@@ -41,7 +41,7 @@ export function filterCommand(program: Command) {
           process.exit(1);
         }
 
-        const results = await filterData({
+        const results = filterData({
           volume: opts.volume,
           quadrant: opts.quadrant,
           ring: opts.ring,

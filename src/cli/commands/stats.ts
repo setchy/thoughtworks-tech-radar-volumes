@@ -17,8 +17,8 @@ export function statsCommand(program: Command) {
       'output format: text|json|jsonl|csv|table',
       'text',
     )
-    .action(async (opts: { by?: string; output?: string }) => {
-      const stats = await summarizeStats({
+    .action((opts: { by?: string; output?: string }) => {
+      const stats = summarizeStats({
         by: opts.by as 'volume' | 'quadrant' | 'ring' | 'all',
       });
       const format = validateOutputFormat(opts.output || 'text');
