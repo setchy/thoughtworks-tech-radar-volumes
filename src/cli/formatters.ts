@@ -27,7 +27,9 @@ export function escapeCSV(value: unknown): string {
     return '""';
   }
 
-  return `"${String(value).replaceAll('"', '""')}"`;
+  const stringified =
+    typeof value === 'string' ? value : (JSON.stringify(value) ?? '');
+  return `"${stringified.replaceAll('"', '""')}"`;
 }
 
 export function formatEnrichedBlip(
