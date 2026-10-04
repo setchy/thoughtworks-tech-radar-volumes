@@ -73,84 +73,80 @@ export function formatStats(
   format: OutputFormat,
   groupBy?: 'volume' | 'quadrant' | 'ring' | 'all',
 ): void {
-  if (format === 'json') {
-    logger.info(JSON.stringify(stats, null, 2));
-    return;
+  switch (format) {
+    case 'json':
+      logger.info(JSON.stringify(stats, null, 2));
+      return;
+    case 'jsonl':
+      printStatsJSONL(stats);
+      return;
+    case 'csv':
+      printStatsCSV(stats, groupBy);
+      return;
+    case 'table':
+      printStatsTable(stats, groupBy);
+      return;
+    default:
+      printStatsText(stats, groupBy);
   }
+}
 
-  if (format === 'jsonl') {
-    if (stats.byVolume)
-      logger.info(JSON.stringify({ by: 'volume', data: stats.byVolume }));
-    if (stats.byQuadrant)
-      logger.info(JSON.stringify({ by: 'quadrant', data: stats.byQuadrant }));
-    if (stats.byRing)
-      logger.info(JSON.stringify({ by: 'ring', data: stats.byRing }));
-    return;
-  }
+type StatsGroupBy = 'volume' | 'quadrant' | 'ring' | 'all' | undefined;
 
-  if (format === 'csv') {
-    const printCSV = (
-      obj: Record<string, number> | undefined,
-      header: string,
-    ) => {
-      logger.info(`${header},count`);
-      Object.entries(obj || {}).forEach(([k, v]) => {
+const STATS_DIMENSIONS = [
+  { key: 'volume', data: (stats: StatsOutput) => stats.byVolume },
+  { key: 'quadrant', data: (stats: StatsOutput) => stats.byQuadrant },
+  { key: 'ring', data: (stats: StatsOutput) => stats.byRing },
+] as const;
+
+function includesDimension(
+  groupBy: StatsGroupBy,
+  dimension: (typeof STATS_DIMENSIONS)[number]['key'],
+): boolean {
+  return groupBy === 'all' || groupBy === dimension;
+}
+
+function printStatsJSONL(stats: StatsOutput): void {
+  STATS_DIMENSIONS.forEach(({ key, data }) => {
+    if (data(stats))
+      logger.info(JSON.stringify({ by: key, data: data(stats) }));
+  });
+}
+
+function printStatsCSV(stats: StatsOutput, groupBy: StatsGroupBy): void {
+  STATS_DIMENSIONS.filter(({ key }) => includesDimension(groupBy, key)).forEach(
+    ({ key, data }, index) => {
+      if (groupBy === 'all' && index > 0) {
+        logger.info('');
+      }
+      logger.info(`${key},count`);
+      Object.entries(data(stats) || {}).forEach(([k, v]) => {
         logger.info(`${k},${v}`);
       });
-    };
+    },
+  );
+}
 
-    if (groupBy === 'volume' || groupBy === 'all')
-      printCSV(stats.byVolume, 'volume');
-    if (groupBy === 'quadrant' || groupBy === 'all') {
-      if (groupBy === 'all') logger.info('');
-      printCSV(stats.byQuadrant, 'quadrant');
-    }
-    if (groupBy === 'ring' || groupBy === 'all') {
-      if (groupBy === 'all') logger.info('');
-      printCSV(stats.byRing, 'ring');
-    }
-    return;
-  }
+function printStatsTable(stats: StatsOutput, groupBy: StatsGroupBy): void {
+  STATS_DIMENSIONS.filter(({ key }) => includesDimension(groupBy, key)).forEach(
+    ({ key, data }) => {
+      logger.info(`\nBy ${key}:`);
+      // eslint-disable-next-line no-console
+      logger.table(data(stats));
+    },
+  );
+  logger.info(`\nTotal blips: ${stats.total}`);
+}
 
-  if (format === 'table') {
-    if (groupBy === 'volume' || groupBy === 'all') {
-      logger.info('\nBy volume:');
-      // eslint-disable-next-line no-console
-      logger.table(stats.byVolume);
-    }
-    if (groupBy === 'quadrant' || groupBy === 'all') {
-      logger.info('\nBy quadrant:');
-      // eslint-disable-next-line no-console
-      logger.table(stats.byQuadrant);
-    }
-    if (groupBy === 'ring' || groupBy === 'all') {
-      logger.info('\nBy ring:');
-      // eslint-disable-next-line no-console
-      logger.table(stats.byRing);
-    }
-    logger.info(`\nTotal blips: ${stats.total}`);
-    return;
-  }
-
-  // default: text
+function printStatsText(stats: StatsOutput, groupBy: StatsGroupBy): void {
   logger.info('Statistics:');
-  if (groupBy === 'volume' || groupBy === 'all') {
-    logger.info('\nBy volume:');
-    Object.entries(stats.byVolume || {}).forEach(([k, v]) => {
-      logger.info(`  ${k}: ${v}`);
-    });
-  }
-  if (groupBy === 'quadrant' || groupBy === 'all') {
-    logger.info('\nBy quadrant:');
-    Object.entries(stats.byQuadrant || {}).forEach(([k, v]) => {
-      logger.info(`  ${k}: ${v}`);
-    });
-  }
-  if (groupBy === 'ring' || groupBy === 'all') {
-    logger.info('\nBy ring:');
-    Object.entries(stats.byRing || {}).forEach(([k, v]) => {
-      logger.info(`  ${k}: ${v}`);
-    });
-  }
+  STATS_DIMENSIONS.filter(({ key }) => includesDimension(groupBy, key)).forEach(
+    ({ key, data }) => {
+      logger.info(`\nBy ${key}:`);
+      Object.entries(data(stats) || {}).forEach(([k, v]) => {
+        logger.info(`  ${k}: ${v}`);
+      });
+    },
+  );
   logger.info(`\nTotal blips: ${stats.total}`);
 }
