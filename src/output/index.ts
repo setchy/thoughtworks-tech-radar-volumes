@@ -1,6 +1,5 @@
 import forEach from 'lodash/forEach.js';
 import groupBy from 'lodash/groupBy.js';
-import indexOf from 'lodash/indexOf.js';
 import orderBy from 'lodash/orderBy.js';
 
 import {
@@ -27,8 +26,8 @@ export function generateVolumes(reportType: ReportType) {
 
   forEach(groupedByVolumes, (dataChunk, volume) => {
     const sortedData = orderBy(dataChunk, [
-      (entry) => indexOf(QUADRANT_SORT_ORDER, entry.quadrant),
-      (entry) => indexOf(RING_SORT_ORDER, normalizeRingName(entry.ring)),
+      (entry) => QUADRANT_SORT_ORDER.indexOf(entry.quadrant),
+      (entry) => RING_SORT_ORDER.indexOf(normalizeRingName(entry.ring)),
       (entry) => entry.name.toLowerCase(),
     ]);
 
