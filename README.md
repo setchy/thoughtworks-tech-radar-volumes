@@ -1,6 +1,7 @@
 # Thoughtworks Technology Radar Volumes
 [![CI Workflow][ci-workflow-badge]][github-actions] 
 [![Refresh Workflow][refresh-workflow-badge]][github-actions] 
+[![Quality Gate Status][quality-badge]][quality] 
 [![Renovate enabled][renovate-badge]][renovate]
 
 > [!NOTE]  
@@ -244,6 +245,8 @@ The datasets are produced by a single TypeScript CLI that fetches the radar site
 [refresh-workflow-badge]: https://img.shields.io/github/actions/workflow/status/setchy/thoughtworks-tech-radar-volumes/data-refresh.yml?logo=github&label=Data+Refresh
 [renovate]: https://github.com/setchy/thoughtworks-tech-radar-volumes/issues/3
 [renovate-badge]: https://img.shields.io/badge/renovate-enabled-brightgreen.svg?logo=renovate&logoColor=white
+[quality]: https://sonarcloud.io/summary/new_code?id=setchy_thoughtworks-tech-radar-volumes
+[quality-badge]: https://img.shields.io/sonar/quality_gate/setchy_thoughtworks-tech-radar-volumes?server=https%3A%2F%2Fsonarcloud.io&logo=sonarqubecloud
 
 <!-- Volumes -->
 [volumes-latest-csv]: https://raw.githubusercontent.com/setchy/thoughtworks-tech-radar-volumes/main/volumes/csv/Thoughtworks%20Technology%20Radar%20Volume%2034%20(Apr%202026).csv
