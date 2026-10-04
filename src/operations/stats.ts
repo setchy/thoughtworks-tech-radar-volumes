@@ -17,9 +17,7 @@ export type StatsOutput = {
   byRing?: Record<string, number>;
 };
 
-export async function summarizeStats(
-  opts: StatsOpts = {},
-): Promise<StatsOutput> {
+export function summarizeStats(opts: StatsOpts = {}): StatsOutput {
   const data = readJSONFile<BlipTimelineEntry[]>(
     FILES.DATA.MASTER,
     blipTimelineEntryListSchema,

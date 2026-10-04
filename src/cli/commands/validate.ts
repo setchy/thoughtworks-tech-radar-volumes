@@ -9,7 +9,7 @@ export function validateCommand(program: Command) {
     .command('validate')
     .description('check the master dataset for data quality issues')
     .option('-o, --output <format>', 'output format: text|json', 'text')
-    .action(async (opts: { output?: string }) => {
+    .action((opts: { output?: string }) => {
       const health = summarizeHealth();
 
       const hasErrors =
