@@ -40,7 +40,8 @@ export async function generateMasterData() {
       `${index + 1} of ${radarLinks.length}: Extracting blip timeline from ${link}`,
     );
 
-    const blipMasterData: MasterData = await extractBlipTimeline(link);
+    // Fetch sequentially: concurrent requests trigger Cloudflare 403 rate-limiting
+    const blipMasterData: MasterData = await extractBlipTimeline(link); // NOSONAR
     masterData.blipEntries.push(...blipMasterData.blipEntries);
   }
 
