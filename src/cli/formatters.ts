@@ -27,7 +27,7 @@ export function escapeCSV(value: unknown): string {
     return '""';
   }
 
-  return `"${String(value).replace(/"/g, '""')}"`;
+  return `"${String(value).replaceAll('"', '""')}"`;
 }
 
 export function formatEnrichedBlip(
@@ -66,7 +66,7 @@ export function formatEnrichedBlip(
       results.forEach((r) => {
         logger.info(`${r.volume} • ${r.quadrant} • ${r.ring} • ${r.name}`);
         logger.info(
-          `  ${r.descriptionHtml?.slice(0, 200).replace(/\n/g, ' ')}${r.descriptionHtml && r.descriptionHtml.length > 200 ? '…' : ''}`,
+          `  ${r.descriptionHtml?.slice(0, 200).replaceAll('\n', ' ')}${r.descriptionHtml && r.descriptionHtml.length > 200 ? '…' : ''}`,
         );
       });
   }
