@@ -1,6 +1,7 @@
 {
   "name": "thoughtworks-tech-radar-volumes",
   "version": "1.0.0",
+  "private": true,
   "description": "CLI and complete volume dataset for Thoughtworks Technology Radars",
   "author": "Adam Setch @setchy",
   "homepage": "https://github.com/setchy/thoughtworks-tech-radar-volumes",
