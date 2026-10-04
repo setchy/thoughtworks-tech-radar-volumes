@@ -1,10 +1,25 @@
 {
-  "extends": "@tsconfig/node24/tsconfig.json",
+  "$schema": "https://www.schemastore.org/tsconfig",
   "compilerOptions": {
     "allowImportingTsExtensions": true,
+    "esModuleInterop": true,
+    "lib": [
+      "es2024",
+      "ESNext.Array",
+      "ESNext.Collection",
+      "ESNext.Error",
+      "ESNext.Iterator",
+      "ESNext.Promise"
+    ],
+    "module": "nodenext",
+    "moduleResolution": "node16",
+    "outDir": "dist",
     "rewriteRelativeImportExtensions": true,
     "rootDir": "src",
-    "outDir": "dist"
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "es2024",
+    "types": ["node"]
   },
   "exclude": ["test", "dist", "node_modules", "vitest.config.ts"]
 }
