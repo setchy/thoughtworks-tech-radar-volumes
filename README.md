@@ -1,13 +1,13 @@
 # Thoughtworks Technology Radar Volumes
-
-[![CI Workflow][ci-workflow-badge]][github-actions] [![Refresh Workflow][refresh-workflow-badge]][github-actions] [![Quality Gate Status][quality-badge]][quality] [![Renovate enabled][renovate-badge]][renovate]
+[![CI Workflow][ci-workflow-badge]][github-actions] [![Refresh Workflow][refresh-workflow-badge]][github-actions] [![Quality Gate Status][quality-badge]][quality] [![Renovate enabled][renovate-badge]][renovate] [![License][license-badge]][license]
 
 > 📡 A CLI and complete collection of datasets for the popular [Thoughtworks Technology Radar][tw-radar] — every volume, including all [archived editions][tw-archive].
 
 ![Thoughtworks Technology Radar Volumes][social]
 
-> [!NOTE]
-> _This repository is a personal project and is not officially affiliated with Thoughtworks._
+A CLI and complete collection of datasets for the Thoughtworks Technology Radar — every published volume normalized and published as **CSV**, **JSON**, and a combined **Google Sheets** document, kept fresh by an automated weekly pipeline.
+
+---
 
 ## ✨ Features
 
@@ -17,11 +17,22 @@
 - 🖥️ **Powerful CLI** — search, filter, stats, validate, and volume generation with `text`, `json`, `jsonl`, `csv`, and `table` output
 - 🏷️ **Canonical ring naming** — rings are reported consistently (e.g. `caution`) across the full dataset history
 
+## 🛠️ Built with
+
+- ⚡ [Node.js 24+][nodejs] — native TypeScript runtime, zero build step
+- 🖥️ [Commander][commander] — CLI framework
+- 🕸️ [Cheerio][cheerio] — fetching and parsing the radar site
+- 📊 [Google Sheets API][google-sheets] — combined dataset publishing
+- 🧪 [Vitest][vitest] — unit testing
+- 🧹 [Biome][biome] — linting and formatting
+- 📦 [pnpm][pnpm] — fast, disk-efficient package manager
+- 🤖 [GitHub Actions][github-actions] — CI and automated weekly refresh
+
 ## 🚀 Quick Start
 
 ### 📋 Prerequisites
 
-- Node.js 24+ (see `.nvmrc`) and [pnpm][pnpm]
+- 📦 Node.js 24+ (see `.nvmrc`) and [pnpm][pnpm]
 
 ### 🔧 Run the CLI
 
@@ -98,45 +109,46 @@ Contributions are welcome! 🎉
 - Open an [issue][github-issues] for bugs or feature requests.
 - See [CONTRIBUTING.md][contrib] for development setup, the full CLI reference, data refresh details, and troubleshooting.
 
-## 📄 License
+## 📜 License
 
-The code in this repository is licensed under the [ISC License][license]. 
+⚖️ The code in this repository is licensed under the [ISC License][license].
 
-The radar datasets remain © Thoughtworks and are redistributed under their published terms. 
+📊 The radar datasets remain © Thoughtworks and are redistributed under their published terms.
 
-This project is a personal project and is not officially affiliated with Thoughtworks.
+ℹ️ This project is a personal project and is not officially affiliated with Thoughtworks.
 
-<!-- LINK LABELS -->
-<!-- Web -->
-[setchy-radar]: https://radar.setchy.io
-[setchy-radars]: https://setchy.io/radars
+<!-- Links -->
+[social]: ./assets/social.png
 [github-issues]: https://github.com/setchy/thoughtworks-tech-radar-volumes/issues
-
-<!-- Badges -->
 [github-actions]: https://github.com/setchy/thoughtworks-tech-radar-volumes/actions
 [refresh-workflow-actions]: https://github.com/setchy/thoughtworks-tech-radar-volumes/actions/workflows/data-refresh.yml
+
 [ci-workflow-badge]: https://img.shields.io/github/actions/workflow/status/setchy/thoughtworks-tech-radar-volumes/ci.yml?logo=github&label=CI
 [refresh-workflow-badge]: https://img.shields.io/github/actions/workflow/status/setchy/thoughtworks-tech-radar-volumes/data-refresh.yml?logo=github&label=Data+Refresh
 [renovate]: https://github.com/setchy/thoughtworks-tech-radar-volumes/issues/3
 [renovate-badge]: https://img.shields.io/badge/renovate-enabled-brightgreen.svg?logo=renovate&logoColor=white
 [quality]: https://sonarcloud.io/summary/new_code?id=setchy_thoughtworks-tech-radar-volumes
 [quality-badge]: https://img.shields.io/sonar/quality_gate/setchy_thoughtworks-tech-radar-volumes?server=https%3A%2F%2Fsonarcloud.io&logo=sonarqubecloud
+[license-badge]: https://img.shields.io/github/license/setchy/thoughtworks-tech-radar-volumes?logo=github
+[license]: LICENSE
 
-<!-- Volumes -->
 [volumes-latest-csv]: https://raw.githubusercontent.com/setchy/thoughtworks-tech-radar-volumes/main/volumes/csv/Thoughtworks%20Technology%20Radar%20Volume%2034%20(Apr%202026).csv
 [volumes-csv]: https://github.com/setchy/thoughtworks-tech-radar-volumes/tree/main/volumes/csv
 [volumes-json]: https://github.com/setchy/thoughtworks-tech-radar-volumes/tree/main/volumes/json
 [volumes-google-sheets]: https://docs.google.com/spreadsheets/d/1VRXOw7EUGBIeM8Khd5GFocxOWT59HRJtqs9-WbB61FI/edit?usp=sharing
 
-<!-- Thoughtworks -->
+[setchy-radar]: https://radar.setchy.io
+[setchy-radars]: https://setchy.io/radars
 [tw-archive]: https://www.thoughtworks.com/radar/archive
 [tw-byor]: https://radar.thoughtworks.com/
 [tw-radar]: https://www.thoughtworks.com/radar
 [github-byor]: https://github.com/thoughtworks/build-your-own-radar
 
-<!-- Misc -->
-[social]: ./assets/social.png
-[pnpm]: https://pnpm.io
-
 [contrib]: CONTRIBUTING.md
-[license]: LICENSE
+[pnpm]: https://pnpm.io
+[nodejs]: https://nodejs.org
+[commander]: https://github.com/tj/commander.js
+[cheerio]: https://cheerio.js.org
+[google-sheets]: https://developers.google.com/sheets/api
+[vitest]: https://vitest.dev
+[biome]: https://biomejs.dev
