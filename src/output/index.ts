@@ -1,4 +1,3 @@
-import forEach from 'lodash/forEach.js';
 import groupBy from 'lodash/groupBy.js';
 import orderBy from 'lodash/orderBy.js';
 
@@ -16,15 +15,16 @@ import { generateCSV } from './csv.ts';
 import { updateGoogleSheets } from './googleSheets.ts';
 import { generateJSON } from './json.ts';
 
-export function generateVolumes(reportType: ReportType) {
+export async function generateVolumes(reportType: ReportType) {
   const data = readJSONFile<BlipTimelineEntry[]>(
     FILES.DATA.MASTER,
     blipTimelineEntryListSchema,
   );
 
   const groupedByVolumes = groupBy(data, 'volume');
+  const sheetUpdates: Promise<void>[] = [];
 
-  forEach(groupedByVolumes, (dataChunk, volume) => {
+  for (const [volume, dataChunk] of Object.entries(groupedByVolumes)) {
     const sortedData = orderBy(dataChunk, [
       (entry) => QUADRANT_SORT_ORDER.indexOf(entry.quadrant),
       (entry) => RING_SORT_ORDER.indexOf(normalizeRingName(entry.ring)),
@@ -39,15 +39,17 @@ export function generateVolumes(reportType: ReportType) {
         generateJSON(volume, sortedData);
         break;
       case 'google-sheets':
-        updateGoogleSheets(volume, sortedData);
+        sheetUpdates.push(updateGoogleSheets(volume, sortedData));
         break;
       default:
         generateCSV(volume, sortedData);
         generateJSON(volume, sortedData);
-        updateGoogleSheets(volume, sortedData);
+        sheetUpdates.push(updateGoogleSheets(volume, sortedData));
         break;
     }
-  });
+  }
+
+  await Promise.all(sheetUpdates);
 }
 
 export { formatCSVDataset } from './csv.ts';

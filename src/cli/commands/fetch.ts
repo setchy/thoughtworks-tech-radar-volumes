@@ -16,30 +16,28 @@ export function fetchCommand(program: Command) {
   fetchCmd
     .command('links')
     .description('fetch blip page links from sitemap')
-    .action(() => {
+    .action(async () => {
       logger.info('fetching all radar blip page links from sitemap');
-      parseRadarSitemap();
+      await parseRadarSitemap();
     });
 
   fetchCmd
     .command('data')
     .description('fetch detailed blip history and write data/master.json')
-    .action(() => {
+    .action(async () => {
       logger.info('fetching detailed blip history from archive');
-      generateMasterData();
+      await generateMasterData();
     });
 
   fetchCmd
     .command('all')
     .description('run links, data and generate volumes')
-    .action(() => {
+    .action(async () => {
       logger.info('fetching all radar blip page links from sitemap');
-      parseRadarSitemap().then(() => {
-        logger.info('fetching detailed blip history from archive');
-        generateMasterData().then(() => {
-          logger.info('generating all volumes');
-          generateVolumes('all');
-        });
-      });
+      await parseRadarSitemap();
+      logger.info('fetching detailed blip history from archive');
+      await generateMasterData();
+      logger.info('generating all volumes');
+      await generateVolumes('all');
     });
 }

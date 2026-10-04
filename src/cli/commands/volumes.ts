@@ -17,8 +17,8 @@ export function volumesCommand(program: Command) {
     .description(
       'generate publication volumes in specified format(s).\nInputs: requires `data/master.json`.\nOutput: generated volumes will be saved in `volumes/*`.\n',
     )
-    .action((type: ReportType) => {
+    .action(async (type: ReportType) => {
       logger.info(`generating ${type} volumes`);
-      generateVolumes(type);
+      await generateVolumes(type);
     });
 }
