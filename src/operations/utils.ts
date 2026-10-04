@@ -3,8 +3,8 @@ import type { BlipStatus, BlipTimelineEntry } from '../shared/types.ts';
 
 export function escapeDescriptionHTML(description: string): string {
   const escapedDescription = description
-    .replace(/"/g, '""')
-    .replace(/\n/g, '<br>');
+    .replaceAll('"', '""')
+    .replaceAll('\n', '<br>');
 
   return `"${escapedDescription}"`;
 }

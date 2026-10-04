@@ -99,7 +99,7 @@ export async function updateGoogleSheets(
     const i = Number.parseInt(index, 10);
     data[i][descriptionIndex] = data[i][descriptionIndex]
       .replace(/^"|"$/g, '')
-      .replace(/""/g, '"');
+      .replaceAll('""', '"');
   }
 
   await sheets.spreadsheets.values.update({
