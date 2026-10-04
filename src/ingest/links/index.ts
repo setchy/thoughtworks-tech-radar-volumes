@@ -17,7 +17,7 @@ export async function parseRadarSitemap(): Promise<string[]> {
     match = regex.exec(sitemap);
   }
 
-  links.sort();
+  links.sort((a, b) => a.localeCompare(b));
 
   const uniqueLinks = _.uniq(links);
   writeJSONFile(FILES.DATA.LINKS, uniqueLinks);
