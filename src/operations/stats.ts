@@ -1,4 +1,4 @@
-import _ from 'lodash';
+import countBy from 'lodash/countBy.js';
 
 import { canonicalizeRingName, FILES } from '../shared/constants.ts';
 import { blipTimelineEntryListSchema } from '../shared/schemas.ts';
@@ -17,17 +17,15 @@ export type StatsOutput = {
   byRing?: Record<string, number>;
 };
 
-export async function summarizeStats(
-  opts: StatsOpts = {},
-): Promise<StatsOutput> {
+export function summarizeStats(opts: StatsOpts = {}): StatsOutput {
   const data = readJSONFile<BlipTimelineEntry[]>(
     FILES.DATA.MASTER,
     blipTimelineEntryListSchema,
   );
 
-  const byVolume = _.countBy(data, (d) => String(d.volume));
-  const byQuadrant = _.countBy(data, (d) => String(d.quadrant));
-  const byRing = _.countBy(data, (d) => canonicalizeRingName(d.ring));
+  const byVolume = countBy(data, (d) => String(d.volume));
+  const byQuadrant = countBy(data, (d) => String(d.quadrant));
+  const byRing = countBy(data, (d) => canonicalizeRingName(d.ring));
 
   const total = data.length;
 

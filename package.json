@@ -1,6 +1,7 @@
 {
   "name": "thoughtworks-tech-radar-volumes",
   "version": "1.0.0",
+  "private": true,
   "description": "CLI and complete volume dataset for Thoughtworks Technology Radars",
   "author": "Adam Setch @setchy",
   "homepage": "https://github.com/setchy/thoughtworks-tech-radar-volumes",
@@ -29,7 +30,7 @@
     "@biomejs/biome": "2.5.15",
     "@tsconfig/node24": "24.0.5",
     "@types/lodash": "4.17.25",
-    "@types/node": "24.19.0",
+    "@types/node": "24.19.1",
     "cheerio": "1.2.0",
     "commander": "15.0.0",
     "dotenv": "18.0.5",

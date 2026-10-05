@@ -15,7 +15,7 @@ type FilterOpts = {
   ring?: string | null;
   status?: BlipStatus | null;
 };
-export async function filterData(opts: FilterOpts): Promise<EnrichedBlip[]> {
+export function filterData(opts: FilterOpts): EnrichedBlip[] {
   const data = readJSONFile<BlipTimelineEntry[]>(
     FILES.DATA.MASTER,
     blipTimelineEntryListSchema,

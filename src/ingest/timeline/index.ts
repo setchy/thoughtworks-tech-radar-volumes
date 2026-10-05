@@ -1,7 +1,7 @@
 import { exit } from 'node:process';
 
 import { load } from 'cheerio';
-import _ from 'lodash';
+import orderBy from 'lodash/orderBy.js';
 
 import {
   FILES,
@@ -40,14 +40,15 @@ export async function generateMasterData() {
       `${index + 1} of ${radarLinks.length}: Extracting blip timeline from ${link}`,
     );
 
-    const blipMasterData: MasterData = await extractBlipTimeline(link);
+    // Fetch sequentially: concurrent requests trigger Cloudflare 403 rate-limiting
+    const blipMasterData: MasterData = await extractBlipTimeline(link); // NOSONAR
     masterData.blipEntries.push(...blipMasterData.blipEntries);
   }
 
-  const sortedMasterData = _.orderBy(masterData.blipEntries, [
+  const sortedMasterData = orderBy(masterData.blipEntries, [
     'volume',
-    (entry) => _.indexOf(QUADRANT_SORT_ORDER, entry.quadrant),
-    (entry) => _.indexOf(RING_SORT_ORDER, normalizeRingName(entry.ring)),
+    (entry) => QUADRANT_SORT_ORDER.indexOf(entry.quadrant),
+    (entry) => RING_SORT_ORDER.indexOf(normalizeRingName(entry.ring)),
     'name',
   ]);
 
@@ -96,7 +97,7 @@ export async function extractBlipTimeline(
   }
 
   // Reverse the order so that it's easier to calculate the isNew, hasMovedIn, hasMovedOut boolean values
-  blipMasterData.blipEntries = _.reverse(blipMasterData.blipEntries);
+  blipMasterData.blipEntries.reverse();
 
   calculateBlipMovements(blipMasterData);
 
@@ -143,13 +144,11 @@ export function calculateBlipMovements(blipMasterData: MasterData) {
     }
 
     if (i > 0) {
-      const currentRingIndex = _.indexOf(
-        RING_SORT_ORDER,
+      const currentRingIndex = RING_SORT_ORDER.indexOf(
         normalizeRingName(blipMasterData.blipEntries[i].ring),
       );
 
-      const previousRingIndex = _.indexOf(
-        RING_SORT_ORDER,
+      const previousRingIndex = RING_SORT_ORDER.indexOf(
         normalizeRingName(blipMasterData.blipEntries[i - 1].ring),
       );
 

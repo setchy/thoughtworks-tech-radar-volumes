@@ -1,4 +1,5 @@
-import _ from 'lodash';
+import groupBy from 'lodash/groupBy.js';
+import orderBy from 'lodash/orderBy.js';
 
 import {
   FILES,
@@ -10,22 +11,23 @@ import { blipTimelineEntryListSchema } from '../shared/schemas.ts';
 import type { BlipTimelineEntry, ReportType } from '../shared/types.ts';
 
 import { readJSONFile } from '../data/repository.ts';
-import { formatCSVDataset, generateCSV } from './csv.ts';
+import { generateCSV } from './csv.ts';
 import { updateGoogleSheets } from './googleSheets.ts';
 import { generateJSON } from './json.ts';
 
-export function generateVolumes(reportType: ReportType) {
+export async function generateVolumes(reportType: ReportType) {
   const data = readJSONFile<BlipTimelineEntry[]>(
     FILES.DATA.MASTER,
     blipTimelineEntryListSchema,
   );
 
-  const groupedByVolumes = _.groupBy(data, 'volume');
+  const groupedByVolumes = groupBy(data, 'volume');
+  const sheetUpdates: Promise<void>[] = [];
 
-  _.forEach(groupedByVolumes, (dataChunk, volume) => {
-    const sortedData = _.orderBy(dataChunk, [
-      (entry) => _.indexOf(QUADRANT_SORT_ORDER, entry.quadrant),
-      (entry) => _.indexOf(RING_SORT_ORDER, normalizeRingName(entry.ring)),
+  for (const [volume, dataChunk] of Object.entries(groupedByVolumes)) {
+    const sortedData = orderBy(dataChunk, [
+      (entry) => QUADRANT_SORT_ORDER.indexOf(entry.quadrant),
+      (entry) => RING_SORT_ORDER.indexOf(normalizeRingName(entry.ring)),
       (entry) => entry.name.toLowerCase(),
     ]);
 
@@ -37,15 +39,18 @@ export function generateVolumes(reportType: ReportType) {
         generateJSON(volume, sortedData);
         break;
       case 'google-sheets':
-        updateGoogleSheets(volume, sortedData);
+        sheetUpdates.push(updateGoogleSheets(volume, sortedData));
         break;
       default:
         generateCSV(volume, sortedData);
         generateJSON(volume, sortedData);
-        updateGoogleSheets(volume, sortedData);
+        sheetUpdates.push(updateGoogleSheets(volume, sortedData));
         break;
     }
-  });
+  }
+
+  await Promise.all(sheetUpdates);
 }
 
-export { formatCSVDataset, generateCSV, generateJSON, updateGoogleSheets };
+export { formatCSVDataset } from './csv.ts';
+export { generateCSV, generateJSON, updateGoogleSheets };

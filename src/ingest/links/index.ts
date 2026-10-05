@@ -1,5 +1,3 @@
-import _ from 'lodash';
-
 import { FILES, URLS } from '../../shared/constants.ts';
 import { logger } from '../../shared/logger.ts';
 
@@ -17,9 +15,9 @@ export async function parseRadarSitemap(): Promise<string[]> {
     match = regex.exec(sitemap);
   }
 
-  links.sort();
+  links.sort((a, b) => a.localeCompare(b));
 
-  const uniqueLinks = _.uniq(links);
+  const uniqueLinks = [...new Set(links)];
   writeJSONFile(FILES.DATA.LINKS, uniqueLinks);
 
   logger.info(`Found ${uniqueLinks.length} unique radar blip page links`);

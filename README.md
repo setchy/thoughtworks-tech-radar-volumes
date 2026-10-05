@@ -1,258 +1,154 @@
 # Thoughtworks Technology Radar Volumes
-[![CI Workflow][ci-workflow-badge]][github-actions] 
-[![Refresh Workflow][refresh-workflow-badge]][github-actions] 
-[![Renovate enabled][renovate-badge]][renovate]
+[![CI Workflow][ci-workflow-badge]][github-actions] [![Refresh Workflow][refresh-workflow-badge]][github-actions] [![Quality Gate Status][quality-badge]][quality] [![Renovate enabled][renovate-badge]][renovate] [![License][license-badge]][license]
 
-> [!NOTE]  
-> _This repository is a personal project and is not officially affiliated with Thoughtworks_
+> 📡 A CLI and complete collection of datasets for the popular [Thoughtworks Technology Radar][tw-radar] — every volume, including all [archived editions][tw-archive].
 
-A CLI and complete collection of datasets for the popular [Thoughtworks Technology Radar][tw-radar], including all [archived volumes][tw-archive]
+![Thoughtworks Technology Radar Volumes][social]
 
-## Datasets
+A CLI and complete collection of datasets for the Thoughtworks Technology Radar — every published volume normalized and published as **CSV**, **JSON**, and a combined **Google Sheets** document, kept fresh by an automated weekly pipeline.
 
-### How to use
+---
 
-There are a few ways you can use to view the interactive technology radar
+## ✨ Features
 
-1.  My own hosted radar with enhancements - [radar.setchy.io][setchy-radar]
-2.  via my catalogue - [setchy.io/radars][setchy-radars]
-3.  Thoughtworks hosted radar - [radar.thoughtworks.com][tw-byor]
-4.  self-hosted BYOR radar - [thoughtworks/build-your-own-radar][github-byor]
+- 🗂️ **Complete archive** — every published radar volume, including archived ones, normalized into a single master dataset (34 volumes, ~3,300 blip entries)
+- 📄 **Three formats, one dataset** — each volume is published as CSV, JSON, and a combined Google Sheets document, all generated from the same source
+- 🔄 **Always fresh** — datasets are automatically re-checked weekly, and any changes land via an automated pull request
+- 🖥️ **Powerful CLI** — search, filter, stats, validate, and volume generation with `text`, `json`, `jsonl`, `csv`, and `table` output
+- 🏷️ **Canonical ring naming** — rings are reported consistently (e.g. `caution`) across the full dataset history
 
-### Available data formats
+## 🛠️ Built with
 
-The technology radar datasets are provided in three formats; CSV, JSON and a combined Google Sheets document.
+- ⚡ [Node.js 24+][nodejs] — native TypeScript runtime, zero build step
+- 🖥️ [Commander][commander] — CLI framework
+- 🕸️ [Cheerio][cheerio] — fetching and parsing the radar site
+- 📊 [Google Sheets API][google-sheets] — combined dataset publishing
+- 🧪 [Vitest][vitest] — unit testing
+- 🧹 [Biome][biome] — linting and formatting
+- 📦 [pnpm][pnpm] — fast, disk-efficient package manager
+- 🤖 [GitHub Actions][github-actions] — CI and automated weekly refresh
 
-> [!IMPORTANT]
-> _When using either the CSV or JSON data formats, please make sure to use the the GitHub RAW file URL (eg: [Volume 34 CSV][volumes-latest-csv])_
+## 🚀 Quick Start
 
--   <img src="./assets/icons/csv.png" width="26" height="26" alt="CSV"></img> [GitHub - Thoughtworks Volumes (CSV)][volumes-csv]
--   <img src="./assets/icons/json.png" width="26" height="26" alt="JSON"></img> [GitHub - Thoughtworks Volumes (JSON)][volumes-json]
--   <img src="./assets/icons/google-sheets.svg" width="24" height="24" alt="Google Sheets" /> [Google Sheets - Thoughtworks Technology Radar Volumes][volumes-google-sheets]
+### 📋 Prerequisites
 
+- 📦 Node.js 24+ (see `.nvmrc`) and [pnpm][pnpm]
 
-### How are the datasets updated?
+### 🔧 Run the CLI
 
-The CSV, JSON and Google Sheets datasets are automatically checked for any updates weekly. See the [Data Pipeline](#data-pipeline) section for how they are generated.
-
-> [!NOTE]
-> _Thoughtworks typically publish a new technology radar volume twice per year._
-
-### Data notes
-
-- **Canonical ring naming**: Thoughtworks renamed the "Hold" ring to "Caution" in Volume 34 (Apr 2026). Across all output formats (CSV, JSON, Google Sheets) the ring is reported using the canonical name `caution`, so the same ring is consistently named across the full dataset history.
-- **Missing descriptions**: Blips in Volumes 1-14 often have an empty description. This is not a data-processing gap — the source pages genuinely contain no description for those entries. Volumes 15+ always include descriptions.
-
-## Command Line Interface (CLI)
-
-### Getting Started
-
-```
+```shell
 pnpm i && pnpm start help
 ```
 
-The CLI runs directly on Node's native TypeScript support (Node 24+, no build step required). `pnpm start` is shorthand for `node src/index.ts`. Additional scripts:
+`pnpm start` is shorthand for `node src/index.ts` — no build step required. See the [CLI reference][contrib] in CONTRIBUTING.md for the full command documentation.
 
-- `pnpm build` — compile to `dist/` with `tsc`
-- `pnpm typecheck` — run `tsc --noEmit` without emitting
-- `pnpm lint` / `pnpm lint:check` — format/lint with Biome
+### 🗺️ View the radar
 
-### Usage
+1. 🎯 My hosted radar with enhancements — [radar.setchy.io][setchy-radar]
+2. 📚 Via my catalogue — [setchy.io/radars][setchy-radars]
+3. 🔍 Thoughtworks hosted radar — [radar.thoughtworks.com][tw-byor]
+4. 🛠️ Self-hosted BYOR radar — [thoughtworks/build-your-own-radar][github-byor]
+
+## 📊 Datasets
+
+### 📦 Available formats
+
+> [!IMPORTANT]
+> _When using either the CSV or JSON data formats, please make sure to use the GitHub RAW file URL (eg: [Volume 34 CSV][volumes-latest-csv])_
+
+-   <img src="./assets/icons/csv.png" width="26" height="26" alt="CSV"></img> **CSV** — [GitHub - Thoughtworks Volumes][volumes-csv]
+-   <img src="./assets/icons/json.png" width="26" height="26" alt="JSON"></img> **JSON** — [GitHub - Thoughtworks Volumes][volumes-json]
+-   <img src="./assets/icons/google-sheets.svg" width="24" height="24" alt="Google Sheets" /> **Google Sheets** — [Thoughtworks Technology Radar Volumes][volumes-google-sheets]
+
+### 📝 Data notes
+
+- **🏷️ Canonical ring naming**: Thoughtworks renamed the "Hold" ring to "Caution" in Volume 34 (Apr 2026). Across all output formats (CSV, JSON, Google Sheets) the ring is reported using the canonical name `caution`, so the same ring is consistently named across the full dataset history.
+- **📭 Missing descriptions**: Blips in Volumes 1-14 often have an empty description. This is not a data-processing gap — the source pages genuinely contain no description for those entries. Volumes 15+ always include descriptions.
+
+### 🔄 Refresh cadence
+
+- 📅 **Weekly checks** — a [GitHub Action][refresh-workflow-actions] re-fetches the datasets every Sunday; any changes are reviewed and merged via an automated pull request
+- 📈 **New volumes** — Thoughtworks typically publish a new technology radar volume **twice per year**, which is when the dataset grows
+- ⚡ **On-demand** — the refresh workflow can also be triggered manually at any time from the Actions tab
+
+For the full refresh pipeline, see [CONTRIBUTING.md][contrib]. 🔄
+
+## 🧭 Using the CLI
 
 ```text
 Usage: tech-radar-volumes [options] [command]
 
-A CLI tool to fetch and process ThoughtWorks Tech Radar data
-
-Options:
-  -V, --version     output the version number
-  -h, --help        display help for command
-
 Commands:
-  fetch             group commands for fetching/ingesting data
-  volumes [type]    generate publication volumes in specified format(s).
-                    Inputs: requires `data/master.json`.
-                    Output: generated volumes will be saved in `volumes/*`.
-  search [options]  search master dataset for a keyword (defaults to name and
-                    description)
-  filter [options]  filter master dataset by volume, quadrant, ring or status
-  stats [options]   show statistics for the master dataset
-  validate [options] check the master dataset for data quality issues
-  help [command]    display help for command
-
-Examples:
-  $ tech-radar-volumes
-  $ tech-radar-volumes fetch links
-  $ tech-radar-volumes fetch data
-  $ tech-radar-volumes volumes csv
-  $ tech-radar-volumes stats --by=quadrant -o json
-  $ tech-radar-volumes search -k react
-  $ tech-radar-volumes search -k "test cafe" -o json
-  $ tech-radar-volumes filter -v 10 -q "languages-and-frameworks" -o csv
-  $ tech-radar-volumes stats --by=volume -o table
-  $ tech-radar-volumes help volumes
-  $ tech-radar-volumes help
+  fetch      group commands for fetching/ingesting data
+  volumes    generate publication volumes in specified format(s)
+  search     search master dataset for a keyword (defaults to name and description)
+  filter     filter master dataset by volume, quadrant, ring or status
+  stats      show statistics for the master dataset
+  validate   check the master dataset for data quality issues
 ```
 
-#### Subcommands
+Try a few examples:
+
+```shell
+tech-radar-volumes search -k react
+tech-radar-volumes filter -v 10 -q "languages-and-frameworks" -o csv
+tech-radar-volumes stats --by=quadrant -o json
+tech-radar-volumes volumes json
+```
 
 > [!NOTE]
-> Commands that operate on existing data (`search`, `filter`, `stats`, `volumes`) require a populated `data/master.json` file. 
+> Commands that operate on existing data (`search`, `filter`, `stats`, `volumes`) require a populated `data/master.json` file.
 > Generate it with `tech-radar-volumes fetch data`.
 
-<details>
-<summary>volumes</summary>
+For the full command reference — options, subcommands and more examples — see [CONTRIBUTING.md][contrib]. 📚
 
-```text
-Usage: tech-radar-volumes volumes [options] [type]
+## 🤝 Contributing
 
-generate publication volumes in specified format(s).
-Inputs: requires `data/master.json`.
-Output: generated volumes will be saved in `volumes/*`.
+Contributions are welcome! 🎉
 
-Arguments:
-  type        type of report to generate (choices: "all", "csv", "json",
-              "google-sheets", default: "all")
+- Open an [issue][github-issues] for bugs or feature requests.
+- See [CONTRIBUTING.md][contrib] for development setup, the full CLI reference, data refresh details, and troubleshooting.
 
-Options:
-  -h, --help  display help for command
-```
-</details>
+## 📜 License
 
-<details>
-<summary>fetch</summary>
+⚖️ The code in this repository is licensed under the [ISC License][license].
 
-```text
-Usage: tech-radar-volumes fetch [options] [command]
+📊 The radar datasets remain © Thoughtworks and are redistributed under their published terms.
 
-group commands for fetching/ingesting data
+ℹ️ This project is a personal project and is not officially affiliated with Thoughtworks.
 
-Options:
-  -h, --help      display help for command
-
-Commands:
-  links           fetch blip page links from sitemap
-  data            fetch detailed blip history and write data/master.json
-  all             run links, data and generate volumes
-  help [command]  display help for command
-```
-</details>
-
-<details>
-<summary>search</summary>
-
-```text
-Usage: tech-radar-volumes search [options]
-
-search master dataset for a keyword (defaults to name and description)
-
-Options:
-  -k, --keyword <keyword>  keyword to search for
-  -f, --field <field>      specific field to search (name, quadrant, ring,
-                           description)
-  -v, --volume <volume>    filter by volume number or name
-  -o, --output <format>    output format: text|json|jsonl|csv|table (default:
-                           "text")
-  -h, --help               display help for command
-```
-</details>
-
-<details>
-<summary>filter</summary>
-
-```text
-Usage: tech-radar-volumes filter [options]
-
-filter master dataset by volume, quadrant, ring or status
-
-Options:
-  -v, --volume <volume>      filter by volume number or name
-  -q, --quadrant <quadrant>  filter by quadrant
-  -r, --ring <ring>          filter by ring
-  -s, --status <status>      filter by status (new|moved in|moved out|no change)
-  -o, --output <format>      output format: text|json|jsonl|csv|table (default:
-                             "text")
-  -h, --help                 display help for command
-```
-</details>
-
-<details>
-<summary>stats</summary>
-
-```text
-Usage: tech-radar-volumes stats [options]
-
-show statistics for the master dataset
-
-Options:
-  -b, --by <group>       group stats by: volume|quadrant|ring|all (default:
-                         "all")
-  -o, --output <format>  output format: text|json|jsonl|csv|table (default:
-                         "text")
-  -h, --help             display help for command
-```
-</details>
-
-## Data Pipeline
-
-The datasets are produced by a single TypeScript CLI that fetches the radar sitemap, scrapes each blip's timeline, and regenerates every volume from the combined dataset:
-
-```
-┌──────────────────────────────────────────────────────────────────────┐
-│                         DATA PIPELINE OVERVIEW                       │
-│                                                                      │
-│                        thoughtworks.com/radar                        │
-│                              │                                       │
-│                              ▼   fetch sitemap                       │
-│  ┌──────────────────┐  (regex + sort)  ┌──────────────────┐          │
-│  │    Radar Sitemap │ ─────────────────▶│   search-links   │          │
-│  │       .xml       │                   │      .json       │ ~1,938   │
-│  └──────────────────┘                   └────────┬─────────┘  links  │
-│                                                  │                  │
-│                                                  ▼  per blip        │
-│                                     ┌───────────────────────┐        │
-│                                     │  extractBlipTimeline  │        │
-│                                     │  fetch + parse        │        │
-│                                     │  (cheerio DOM scrape) │        │
-│                                     └───────────┬───────────┘        │
-│                                                 ▼                   │
-│                              ┌────────────────────────┐  ~3,309     │
-│                              │     search-data.json   │   rows      │
-│                              │  (combined master set) │  34 volumes │
-│                              └───────────┬────────────┘             │
-│                                          ▼                          │
-│                      ┌───────────────────┼───────────────────┐      │
-│                      ▼                   ▼                   ▼      │
-│               ┌──────────────┐   ┌──────────────┐   ┌──────────────┐│
-│               │  CSV × 34    │   │  JSON × 34   │   │Google Sheets ││
-│               └──────────────┘   └──────────────┘   └──────────────┘│
-│                                                                      │
-│   Weekly GitHub Action → fetch all → lint → automated PR             │
-└──────────────────────────────────────────────────────────────────────┘
-```
-
-
-
-<!-- LINK LABELS -->
-<!-- Web -->
-[setchy-radar]: https://radar.setchy.io
-[setchy-radars]: https://setchy.io/radars
-
-<!-- Badges -->
+<!-- Links -->
+[social]: ./assets/social.png
+[github-issues]: https://github.com/setchy/thoughtworks-tech-radar-volumes/issues
 [github-actions]: https://github.com/setchy/thoughtworks-tech-radar-volumes/actions
+[refresh-workflow-actions]: https://github.com/setchy/thoughtworks-tech-radar-volumes/actions/workflows/data-refresh.yml
+
 [ci-workflow-badge]: https://img.shields.io/github/actions/workflow/status/setchy/thoughtworks-tech-radar-volumes/ci.yml?logo=github&label=CI
 [refresh-workflow-badge]: https://img.shields.io/github/actions/workflow/status/setchy/thoughtworks-tech-radar-volumes/data-refresh.yml?logo=github&label=Data+Refresh
 [renovate]: https://github.com/setchy/thoughtworks-tech-radar-volumes/issues/3
 [renovate-badge]: https://img.shields.io/badge/renovate-enabled-brightgreen.svg?logo=renovate&logoColor=white
+[quality]: https://sonarcloud.io/summary/new_code?id=setchy_thoughtworks-tech-radar-volumes
+[quality-badge]: https://img.shields.io/sonar/quality_gate/setchy_thoughtworks-tech-radar-volumes?server=https%3A%2F%2Fsonarcloud.io&logo=sonarqubecloud
+[license-badge]: https://img.shields.io/github/license/setchy/thoughtworks-tech-radar-volumes?logo=github
+[license]: LICENSE
 
-<!-- Volumes -->
 [volumes-latest-csv]: https://raw.githubusercontent.com/setchy/thoughtworks-tech-radar-volumes/main/volumes/csv/Thoughtworks%20Technology%20Radar%20Volume%2034%20(Apr%202026).csv
 [volumes-csv]: https://github.com/setchy/thoughtworks-tech-radar-volumes/tree/main/volumes/csv
 [volumes-json]: https://github.com/setchy/thoughtworks-tech-radar-volumes/tree/main/volumes/json
 [volumes-google-sheets]: https://docs.google.com/spreadsheets/d/1VRXOw7EUGBIeM8Khd5GFocxOWT59HRJtqs9-WbB61FI/edit?usp=sharing
 
-<!-- Thoughtworks -->
+[setchy-radar]: https://radar.setchy.io
+[setchy-radars]: https://setchy.io/radars
 [tw-archive]: https://www.thoughtworks.com/radar/archive
 [tw-byor]: https://radar.thoughtworks.com/
 [tw-radar]: https://www.thoughtworks.com/radar
 [github-byor]: https://github.com/thoughtworks/build-your-own-radar
+
+[contrib]: CONTRIBUTING.md
+[pnpm]: https://pnpm.io
+[nodejs]: https://nodejs.org
+[commander]: https://github.com/tj/commander.js
+[cheerio]: https://cheerio.js.org
+[google-sheets]: https://developers.google.com/sheets/api
+[vitest]: https://vitest.dev
+[biome]: https://biomejs.dev
