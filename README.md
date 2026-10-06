@@ -1,7 +1,7 @@
 # Thoughtworks Technology Radar Volumes
 [![CI Workflow][ci-workflow-badge]][github-actions] [![Refresh Workflow][refresh-workflow-badge]][github-actions] [![Quality Gate Status][quality-badge]][quality] [![Renovate enabled][renovate-badge]][renovate] [![License][license-badge]][license]
 
-> 📡 A CLI and complete collection of datasets for the popular [Thoughtworks Technology Radar][tw-radar] — every volume, including all [archived editions][tw-archive].
+> 📡 **From blip to big picture:** follow technology ideas through the [Thoughtworks Technology Radar][tw-radar], from today’s signals back through every [archived edition][tw-archive].
 
 ![Thoughtworks Technology Radar Volumes][social]
 
