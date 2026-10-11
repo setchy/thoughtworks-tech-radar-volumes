@@ -188,8 +188,8 @@ importers:
         specifier: 18.0.6
         version: 18.0.6
       googleapis:
-        specifier: 184.0.0
-        version: 184.0.0
+        specifier: 185.0.0
+        version: 185.0.0
       lodash:
         specifier: 4.18.1
         version: 4.18.1
@@ -711,8 +711,8 @@ packages:
     resolution: {integrity: sha512-UJBElspYPJb0+fI8q0LxARw1hPnwd9yd5NqhKqEUPxjhnB1jdsRP7rlRTBp69JS5Vo10bCiRE9+ISsIG2A+Ttg==}
     engines: {node: '>=22'}
 
-  googleapis@184.0.0:
-    resolution: {integrity: sha512-idQwo/hxlV32JyCZpApc/w8dz9pQLQhk/x370VfReimW4TzMqvcVE6DP13Vn1SnW7BEJcnJ7TLaWbWv91mhz2w==}
+  googleapis@185.0.0:
+    resolution: {integrity: sha512-w/rO9+ank7JpAj65X6DzUoSLbxvHtsTf4F2kD9+8AScA3KEzDjeTFOUFVldDSePSuRSlpJkP/s36fMaqgFX3sw==}
     engines: {node: '>=22.0.0'}
 
   gopd@1.2.0:
@@ -1434,7 +1434,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  googleapis@184.0.0:
+  googleapis@185.0.0:
     dependencies:
       google-auth-library: 11.1.0
       googleapis-common: 9.1.0
