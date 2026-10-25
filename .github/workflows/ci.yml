@@ -23,7 +23,7 @@ jobs:
           persist-credentials: false
 
       - name: Setup pnpm and Node
-        uses: pnpm/setup@v3.1.1
+        uses: pnpm/setup@v3.1.2
         with:
           node-version-file: '.nvmrc'
           cache: true
@@ -41,7 +41,7 @@ jobs:
           persist-credentials: false
 
       - name: Setup pnpm and Node
-        uses: pnpm/setup@v3.1.1
+        uses: pnpm/setup@v3.1.2
         with:
           node-version-file: '.nvmrc'
           cache: true
