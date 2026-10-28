@@ -30,7 +30,7 @@
     "@biomejs/biome": "2.6.3",
     "@tsconfig/node24": "24.0.5",
     "@types/lodash": "4.17.27",
-    "@types/node": "24.19.2",
+    "@types/node": "26.6.5",
     "cheerio": "1.2.0",
     "commander": "15.0.0",
     "dotenv": "18.0.9",
@@ -48,12 +48,12 @@
     },
     "runtime": {
       "name": "node",
-      "version": "24.22.2",
+      "version": "26.13.0",
       "onFail": "warn"
     }
   },
   "engines": {
-    "node": "24"
+    "node": "26"
   },
   "lint-staged": {
     "*": "biome check --fix --no-errors-on-unmatched"
