@@ -1,4 +1,5 @@
 # Thoughtworks Technology Radar Volumes
+
 [![CI Workflow][ci-workflow-badge]][github-actions] [![Refresh Workflow][refresh-workflow-badge]][github-actions] [![Quality Gate Status][quality-badge]][quality] [![Renovate enabled][renovate-badge]][renovate] [![License][license-badge]][license]
 
 > 📡 **From blip to big picture:** follow technology ideas through the [Thoughtworks Technology Radar][tw-radar], from today’s signals back through every [archived edition][tw-archive].
@@ -55,7 +56,6 @@ pnpm i && pnpm start help
 
 > [!IMPORTANT]
 > _When using either the CSV or JSON data formats, please make sure to use the GitHub RAW file URL (eg: [Volume 34 CSV][volumes-latest-csv])_
-
 -   <img src="./assets/icons/csv.png" width="26" height="26" alt="CSV"></img> **CSV** — [GitHub - Thoughtworks Volumes][volumes-csv]
 -   <img src="./assets/icons/json.png" width="26" height="26" alt="JSON"></img> **JSON** — [GitHub - Thoughtworks Volumes][volumes-json]
 -   <img src="./assets/icons/google-sheets.svg" width="24" height="24" alt="Google Sheets" /> **Google Sheets** — [Thoughtworks Technology Radar Volumes][volumes-google-sheets]
@@ -122,7 +122,6 @@ Contributions are welcome! 🎉
 [github-issues]: https://github.com/setchy/thoughtworks-tech-radar-volumes/issues
 [github-actions]: https://github.com/setchy/thoughtworks-tech-radar-volumes/actions
 [refresh-workflow-actions]: https://github.com/setchy/thoughtworks-tech-radar-volumes/actions/workflows/data-refresh.yml
-
 [ci-workflow-badge]: https://img.shields.io/github/actions/workflow/status/setchy/thoughtworks-tech-radar-volumes/ci.yml?logo=github&label=CI
 [refresh-workflow-badge]: https://img.shields.io/github/actions/workflow/status/setchy/thoughtworks-tech-radar-volumes/data-refresh.yml?logo=github&label=Data+Refresh
 [renovate]: https://github.com/setchy/thoughtworks-tech-radar-volumes/issues/3
@@ -131,19 +130,16 @@ Contributions are welcome! 🎉
 [quality-badge]: https://img.shields.io/sonar/quality_gate/setchy_thoughtworks-tech-radar-volumes?server=https%3A%2F%2Fsonarcloud.io&logo=sonarqubecloud
 [license-badge]: https://img.shields.io/github/license/setchy/thoughtworks-tech-radar-volumes?logo=github
 [license]: LICENSE
-
 [volumes-latest-csv]: https://raw.githubusercontent.com/setchy/thoughtworks-tech-radar-volumes/main/volumes/csv/Thoughtworks%20Technology%20Radar%20Volume%2034%20(Apr%202026).csv
 [volumes-csv]: https://github.com/setchy/thoughtworks-tech-radar-volumes/tree/main/volumes/csv
 [volumes-json]: https://github.com/setchy/thoughtworks-tech-radar-volumes/tree/main/volumes/json
 [volumes-google-sheets]: https://docs.google.com/spreadsheets/d/1VRXOw7EUGBIeM8Khd5GFocxOWT59HRJtqs9-WbB61FI/edit?usp=sharing
-
 [setchy-radar]: https://radar.setchy.io
 [setchy-radars]: https://setchy.io/radars
 [tw-archive]: https://www.thoughtworks.com/radar/archive
 [tw-byor]: https://radar.thoughtworks.com/
 [tw-radar]: https://www.thoughtworks.com/radar
 [github-byor]: https://github.com/thoughtworks/build-your-own-radar
-
 [contrib]: CONTRIBUTING.md
 [pnpm]: https://pnpm.io
 [nodejs]: https://nodejs.org

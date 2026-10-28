@@ -1,32 +1,32 @@
 name: Google Sheets Sync
 
 on:
-    workflow_dispatch: # This allows manual triggering from the GitHub Actions UI.
+  workflow_dispatch: # This allows manual triggering from the GitHub Actions UI.
 
 jobs:
-    refresh:
-        runs-on: ubuntu-latest
+  refresh:
+    runs-on: ubuntu-latest
 
-        steps:
-            - name: Checkout code
-              uses: actions/checkout@v7.0.1
-              with:
-                persist-credentials: false
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v7.0.1
+        with:
+          persist-credentials: false
 
-            - name: Setup pnpm and Node
-              uses: pnpm/setup@v3.1.2
-              with:
-                  node-version-file: ".nvmrc"
-                  cache: true
-                  require-lockfile: true
+      - name: Setup pnpm and Node
+        uses: pnpm/setup@v3.1.2
+        with:
+          node-version-file: ".nvmrc"
+          cache: true
+          require-lockfile: true
 
-            - name: Update Google Sheets
-              env:
-                  GOOGLE_SHEET_ID: ${{ vars.GOOGLE_SHEET_ID }}
-                  GOOGLE_CLIENT_EMAIL: ${{ secrets.GOOGLE_CLIENT_EMAIL }}
-                  GOOGLE_PRIVATE_KEY: ${{ secrets.GOOGLE_PRIVATE_KEY }}
-              run: |
-                  export GOOGLE_SHEET_ID=$GOOGLE_SHEET_ID
-                  export GOOGLE_CLIENT_EMAIL=$GOOGLE_CLIENT_EMAIL
-                  export GOOGLE_PRIVATE_KEY=$GOOGLE_PRIVATE_KEY
-                  pnpm start volumes google-sheets
+      - name: Update Google Sheets
+        env:
+          GOOGLE_SHEET_ID: ${{ vars.GOOGLE_SHEET_ID }}
+          GOOGLE_CLIENT_EMAIL: ${{ secrets.GOOGLE_CLIENT_EMAIL }}
+          GOOGLE_PRIVATE_KEY: ${{ secrets.GOOGLE_PRIVATE_KEY }}
+        run: |
+          export GOOGLE_SHEET_ID=$GOOGLE_SHEET_ID
+          export GOOGLE_CLIENT_EMAIL=$GOOGLE_CLIENT_EMAIL
+          export GOOGLE_PRIVATE_KEY=$GOOGLE_PRIVATE_KEY
+          pnpm start volumes google-sheets
