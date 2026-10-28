@@ -17,14 +17,14 @@ pnpm start help
 
 ### 📜 Scripts
 
-| Command | Description |
-| --- | --- |
-| `pnpm start` | Run the CLI (`node src/index.ts`) |
-| `pnpm build` | Compile to `dist/` with `tsc` |
-| `pnpm typecheck` | Run `tsc --noEmit` without emitting |
-| `pnpm lint` | Auto-fix formatting/linting with [Biome][biome] |
-| `pnpm lint:check` | Check formatting/linting with Biome |
-| `pnpm test` | Run the [Vitest][vitest] test suite |
+| Command           | Description                                     |
+| ----------------- | ----------------------------------------------- |
+| `pnpm start`      | Run the CLI (`node src/index.ts`)               |
+| `pnpm build`      | Compile to `dist/` with `tsc`                   |
+| `pnpm typecheck`  | Run `tsc --noEmit` without emitting             |
+| `pnpm lint`       | Auto-fix formatting/linting with [Biome][biome] |
+| `pnpm lint:check` | Check formatting/linting with Biome             |
+| `pnpm test`       | Run the [Vitest][vitest] test suite             |
 
 ## 📦 Project structure
 

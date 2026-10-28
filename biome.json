@@ -8,7 +8,16 @@
       "package.json",
       "tsconfig.json",
       "vitest.config.ts",
-      "biome.json"
+      "biome.json",
+      "**/*.md",
+      "**/*.yml",
+      "**/*.yaml",
+      "!**/pnpm-lock.yaml",
+      "!**/pnpm-workspace.yaml",
+      "!.github/prompts",
+      "!.github/skills",
+      "!**/.opencode",
+      "!**/openspec"
     ]
   },
   "assist": {
@@ -62,6 +71,22 @@
   "json": {
     "parser": {
       "allowComments": true
+    }
+  },
+  "markdown": {
+    "formatter": {
+      "enabled": true
+    },
+    "linter": {
+      "enabled": true
+    }
+  },
+  "yaml": {
+    "formatter": {
+      "enabled": true
+    },
+    "linter": {
+      "enabled": true
     }
   },
   "vcs": {

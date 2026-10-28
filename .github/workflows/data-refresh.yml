@@ -1,52 +1,52 @@
 name: Refresh Volumes
 
 on:
-    schedule:
-        - cron: "0 0 * * 0" # Runs every Sunday at midnight UTC. You can customize the schedule using cron syntax.
-    workflow_dispatch: # This allows manual triggering from the GitHub Actions UI.
+  schedule:
+    - cron: "0 0 * * 0" # Runs every Sunday at midnight UTC. You can customize the schedule using cron syntax.
+  workflow_dispatch: # This allows manual triggering from the GitHub Actions UI.
 
 jobs:
-    refresh:
-        runs-on: ubuntu-latest
+  refresh:
+    runs-on: ubuntu-latest
 
-        steps:
-            - name: Checkout code
-              uses: actions/checkout@v7.0.1
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v7.0.1
 
-            - name: Setup pnpm and Node
-              uses: pnpm/setup@v3.1.2
-              with:
-                  node-version-file: ".nvmrc"
-                  cache: true
-                  require-lockfile: true
+      - name: Setup pnpm and Node
+        uses: pnpm/setup@v3.1.2
+        with:
+          node-version-file: ".nvmrc"
+          cache: true
+          require-lockfile: true
 
-            - name: Refresh Radar Datasets
-              env:
-                  GOOGLE_SHEET_ID: ${{ vars.GOOGLE_SHEET_ID }}
-                  GOOGLE_CLIENT_EMAIL: ${{ secrets.GOOGLE_CLIENT_EMAIL }}
-                  GOOGLE_PRIVATE_KEY: ${{ secrets.GOOGLE_PRIVATE_KEY }}
-              run: |
-                  export GOOGLE_SHEET_ID=$GOOGLE_SHEET_ID
-                  export GOOGLE_CLIENT_EMAIL=$GOOGLE_CLIENT_EMAIL
-                  export GOOGLE_PRIVATE_KEY=$GOOGLE_PRIVATE_KEY
-                  pnpm start fetch all
-                  pnpm lint
+      - name: Refresh Radar Datasets
+        env:
+          GOOGLE_SHEET_ID: ${{ vars.GOOGLE_SHEET_ID }}
+          GOOGLE_CLIENT_EMAIL: ${{ secrets.GOOGLE_CLIENT_EMAIL }}
+          GOOGLE_PRIVATE_KEY: ${{ secrets.GOOGLE_PRIVATE_KEY }}
+        run: |
+          export GOOGLE_SHEET_ID=$GOOGLE_SHEET_ID
+          export GOOGLE_CLIENT_EMAIL=$GOOGLE_CLIENT_EMAIL
+          export GOOGLE_PRIVATE_KEY=$GOOGLE_PRIVATE_KEY
+          pnpm start fetch all
+          pnpm lint
 
-            - name: Create Pull Request
-              env:
-                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-              run: |
-                  git config user.name "github-actions[bot]"
-                  git config user.email "github-actions[bot]@users.noreply.github.com"
-                  git checkout -B automated/volume-updates
-                  git add -A
-                  git diff --staged --quiet && echo "No changes to commit" && exit 0
-                  git commit -m "Automated dataset refresh"
-                  git push origin automated/volume-updates --force
-                  gh pr create \
-                      --title "Radar Volumes Refresh" \
-                      --body "Refresh technology radar datasets from latest sources." \
-                      --label "data-refresh" \
-                      --reviewer setchy \
-                      --base main \
-                  || echo "PR already exists, skipping creation"
+      - name: Create Pull Request
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -B automated/volume-updates
+          git add -A
+          git diff --staged --quiet && echo "No changes to commit" && exit 0
+          git commit -m "Automated dataset refresh"
+          git push origin automated/volume-updates --force
+          gh pr create \
+              --title "Radar Volumes Refresh" \
+              --body "Refresh technology radar datasets from latest sources." \
+              --label "data-refresh" \
+              --reviewer setchy \
+              --base main \
+          || echo "PR already exists, skipping creation"
