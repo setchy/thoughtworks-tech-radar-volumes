@@ -27,6 +27,7 @@ jobs:
         with:
           node-version-file: '.nvmrc'
           cache: true
+          require-lockfile: true
 
       - run: pnpm lint:check
 
@@ -45,6 +46,7 @@ jobs:
         with:
           node-version-file: '.nvmrc'
           cache: true
+          require-lockfile: true
 
       - run: pnpm typecheck
       - run: pnpm test
