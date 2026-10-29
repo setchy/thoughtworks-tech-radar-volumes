@@ -20,4 +20,3 @@ jobs:
     uses: setchy/renovate-config/.github/workflows/renovate-config-validator.yml@main
     permissions:
       contents: read
-
