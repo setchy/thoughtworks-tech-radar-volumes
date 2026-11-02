@@ -24,6 +24,7 @@ pnpm start help
 | `pnpm typecheck`  | Run `tsc --noEmit` without emitting             |
 | `pnpm lint`       | Auto-fix formatting/linting with [Biome][biome] |
 | `pnpm lint:check` | Check formatting/linting with Biome             |
+| `pnpm lint:ci`    | Check with GitHub annotations (CI)              |
 | `pnpm test`       | Run the [Vitest][vitest] test suite             |
 
 ## 📦 Project structure
@@ -252,7 +253,7 @@ pnpm lint:check
 - **Tests** — [Vitest][vitest] under `test/`
 - **Formatting & linting** — [Biome][biome]; run `pnpm lint` to auto-fix
 
-The [CI workflow][github-actions] runs `pnpm lint:check`, `pnpm typecheck` and `pnpm test` on every push and pull request to `main`, so make sure everything passes locally before submitting a PR.
+The [CI workflow][github-actions] runs `pnpm lint:ci`, `pnpm typecheck` and `pnpm test` on every push and pull request to `main`, so make sure everything passes locally before submitting a PR.
 
 ## 🛠️ Troubleshooting
 

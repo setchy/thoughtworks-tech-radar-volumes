@@ -29,7 +29,7 @@ jobs:
           cache: true
           require-lockfile: true
 
-      - run: pnpm lint:check
+      - run: pnpm lint:ci
 
   test:
     name: vitest
