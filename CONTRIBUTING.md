@@ -205,13 +205,13 @@ The datasets are produced by a single TypeScript CLI that fetches the radar site
 │                                                 ▼                   │
 │                              ┌────────────────────────┐  ~3,309     │
 │                              │     search-data.json   │   rows      │
-│                              │  (combined master set) │  34 volumes │
+│                              │  (combined master set) │  35 volumes │
 │                              └───────────┬────────────┘             │
 │                                          ▼                          │
 │                      ┌───────────────────┼───────────────────┐      │
 │                      ▼                   ▼                   ▼      │
 │               ┌──────────────┐   ┌──────────────┐   ┌──────────────┐│
-│               │  CSV × 34    │   │  JSON × 34   │   │Google Sheets ││
+│               │  CSV × 35    │   │  JSON × 35   │   │Google Sheets ││
 │               └──────────────┘   └──────────────┘   └──────────────┘│
 │                                                                      │
 │   Weekly GitHub Action → fetch all → lint → automated PR             │

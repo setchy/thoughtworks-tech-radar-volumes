@@ -12,7 +12,7 @@ A CLI and complete collection of datasets for the Thoughtworks Technology Radar 
 
 ## ✨ Features
 
-- 🗂️ **Complete archive** — every published radar volume, including archived ones, normalized into a single master dataset (34 volumes, ~3,300 blip entries)
+- 🗂️ **Complete archive** — every published radar volume, including archived ones, normalized into a single master dataset (35 volumes, ~3,300 blip entries)
 - 📄 **Three formats, one dataset** — each volume is published as CSV, JSON, and a combined Google Sheets document, all generated from the same source
 - 🔄 **Always fresh** — datasets are automatically re-checked weekly, and any changes land via an automated pull request
 - 🖥️ **Powerful CLI** — search, filter, stats, validate, and volume generation with `text`, `json`, `jsonl`, `csv`, and `table` output
@@ -55,7 +55,7 @@ pnpm i && pnpm start help
 ### 📦 Available formats
 
 > [!IMPORTANT]
-> _When using either the CSV or JSON data formats, please make sure to use the GitHub RAW file URL (eg: [Volume 34 CSV][volumes-latest-csv])_
+> _When using either the CSV or JSON data formats, please make sure to use the GitHub RAW file URL (eg: [Volume 35 CSV][volumes-latest-csv])_
 -   <img src="./assets/icons/csv.png" width="26" height="26" alt="CSV"></img> **CSV** — [GitHub - Thoughtworks Volumes][volumes-csv]
 -   <img src="./assets/icons/json.png" width="26" height="26" alt="JSON"></img> **JSON** — [GitHub - Thoughtworks Volumes][volumes-json]
 -   <img src="./assets/icons/google-sheets.svg" width="24" height="24" alt="Google Sheets" /> **Google Sheets** — [Thoughtworks Technology Radar Volumes][volumes-google-sheets]
@@ -130,7 +130,7 @@ Contributions are welcome! 🎉
 [quality-badge]: https://img.shields.io/sonar/quality_gate/setchy_thoughtworks-tech-radar-volumes?server=https%3A%2F%2Fsonarcloud.io&logo=sonarqubecloud
 [license-badge]: https://img.shields.io/github/license/setchy/thoughtworks-tech-radar-volumes?logo=github
 [license]: LICENSE
-[volumes-latest-csv]: https://raw.githubusercontent.com/setchy/thoughtworks-tech-radar-volumes/main/volumes/csv/Thoughtworks%20Technology%20Radar%20Volume%2034%20(Apr%202026).csv
+[volumes-latest-csv]: https://raw.githubusercontent.com/setchy/thoughtworks-tech-radar-volumes/main/volumes/csv/Thoughtworks%20Technology%20Radar%20Volume%2035%20(Nov%202026).csv
 [volumes-csv]: https://github.com/setchy/thoughtworks-tech-radar-volumes/tree/main/volumes/csv
 [volumes-json]: https://github.com/setchy/thoughtworks-tech-radar-volumes/tree/main/volumes/json
 [volumes-google-sheets]: https://docs.google.com/spreadsheets/d/1VRXOw7EUGBIeM8Khd5GFocxOWT59HRJtqs9-WbB61FI/edit?usp=sharing
