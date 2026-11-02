@@ -24,6 +24,7 @@
     "typecheck": "tsc --noEmit",
     "lint": "biome check --fix",
     "lint:check": "biome check",
+    "lint:ci": "biome ci --reporter=github",
     "test": "vitest run"
   },
   "devDependencies": {
