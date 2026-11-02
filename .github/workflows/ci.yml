@@ -49,4 +49,4 @@ jobs:
           require-lockfile: true
 
       - run: pnpm typecheck
-      - run: pnpm test
+      - run: pnpm test:ci

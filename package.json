@@ -29,7 +29,8 @@
     "format:check": "biome format .",
     "check": "biome check .",
     "check:fix": "biome check --write .",
-    "test": "vitest run"
+    "test": "vitest run",
+    "test:ci": "vitest run --reporter=default --reporter=github-actions"
   },
   "devDependencies": {
     "@biomejs/biome": "2.6.4",
