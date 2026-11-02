@@ -30,7 +30,7 @@ jobs:
           export GOOGLE_CLIENT_EMAIL=$GOOGLE_CLIENT_EMAIL
           export GOOGLE_PRIVATE_KEY=$GOOGLE_PRIVATE_KEY
           pnpm start fetch all
-          pnpm lint
+          pnpm check:fix
 
       - name: Create Pull Request
         env:

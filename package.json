@@ -22,9 +22,13 @@
     "start": "node src/index.ts",
     "build": "tsc",
     "typecheck": "tsc --noEmit",
-    "lint": "biome check --fix",
-    "lint:check": "biome check",
+    "lint": "biome lint --fix .",
+    "lint:check": "biome lint .",
     "lint:ci": "biome ci --reporter=github",
+    "format": "biome format --write .",
+    "format:check": "biome format .",
+    "check": "biome check .",
+    "check:fix": "biome check --write .",
     "test": "vitest run"
   },
   "devDependencies": {

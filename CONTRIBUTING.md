@@ -17,15 +17,19 @@ pnpm start help
 
 ### 📜 Scripts
 
-| Command           | Description                                     |
-| ----------------- | ----------------------------------------------- |
-| `pnpm start`      | Run the CLI (`node src/index.ts`)               |
-| `pnpm build`      | Compile to `dist/` with `tsc`                   |
-| `pnpm typecheck`  | Run `tsc --noEmit` without emitting             |
-| `pnpm lint`       | Auto-fix formatting/linting with [Biome][biome] |
-| `pnpm lint:check` | Check formatting/linting with Biome             |
-| `pnpm lint:ci`    | Check with GitHub annotations (CI)              |
-| `pnpm test`       | Run the [Vitest][vitest] test suite             |
+| Command             | Description                              |
+| ------------------- | ---------------------------------------- |
+| `pnpm start`        | Run the CLI (`node src/index.ts`)        |
+| `pnpm build`        | Compile to `dist/` with `tsc`            |
+| `pnpm typecheck`    | Run `tsc --noEmit` without emitting      |
+| `pnpm lint`         | Apply lint fixes with [Biome][biome]     |
+| `pnpm lint:check`   | Check lint only with Biome               |
+| `pnpm lint:ci`      | Combined CI gate with GitHub annotations |
+| `pnpm format`       | Format files with Biome                  |
+| `pnpm format:check` | Check formatting only                    |
+| `pnpm check`        | Check lint, formatting, and import order |
+| `pnpm check:fix`    | Apply all Biome fixes                    |
+| `pnpm test`         | Run the [Vitest][vitest] test suite      |
 
 ## 📦 Project structure
 
@@ -246,12 +250,12 @@ The [Refresh Volumes workflow][data-refresh-actions] runs every **Sunday at midn
 ```shell
 pnpm typecheck
 pnpm test
-pnpm lint:check
+pnpm check
 ```
 
 - **Type checking** — `tsc --noEmit`
 - **Tests** — [Vitest][vitest] under `test/`
-- **Formatting & linting** — [Biome][biome]; run `pnpm lint` to auto-fix
+- **Formatting & linting** — [Biome][biome]; run `pnpm check:fix` to auto-fix
 
 The [CI workflow][github-actions] runs `pnpm lint:ci`, `pnpm typecheck` and `pnpm test` on every push and pull request to `main`, so make sure everything passes locally before submitting a PR.
 
