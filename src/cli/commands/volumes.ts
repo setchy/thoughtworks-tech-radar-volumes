@@ -15,10 +15,10 @@ export function volumesCommand(program: Command) {
         .default('all'),
     )
     .description(
-      'generate publication volumes in specified format(s).\nInputs: requires `data/master.json`.\nOutput: generated volumes will be saved in `volumes/*`.\n',
+      'generate publication volumes and dataset metrics.\nInputs: requires `data/master.json`.\nOutput: generated volumes will be saved in `volumes/*` and `data/volume-metrics.json`.\n',
     )
     .action(async (type: ReportType) => {
-      logger.info(`generating ${type} volumes`);
+      logger.info(`generating ${type} output`);
       await generateVolumes(type);
     });
 }

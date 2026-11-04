@@ -3,6 +3,7 @@ export const CLI_EXAMPLES = [
   '$ tech-radar-volumes fetch links',
   '$ tech-radar-volumes fetch data',
   '$ tech-radar-volumes volumes csv',
+  '$ tech-radar-volumes volumes metrics',
   '$ tech-radar-volumes stats --by=quadrant -o json',
   '$ tech-radar-volumes search -k react',
   '$ tech-radar-volumes search -k "test cafe" -o json',

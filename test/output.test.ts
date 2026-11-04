@@ -1,9 +1,13 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 
-import type { BlipTimelineEntry } from '../src/shared/types.ts';
+import type {
+  BlipTimelineEntry,
+  VolumeMetricsData,
+} from '../src/shared/types.ts';
 
 import { formatCSVDataset } from '../src/output/csv.ts';
 import { generateJSON } from '../src/output/json.ts';
+import { generateVolumeMetrics } from '../src/output/metrics.ts';
 
 const writtenJSON: unknown[] = [];
 
@@ -55,6 +59,29 @@ describe('formatCSVDataset', () => {
   it('joins related blips with semicolons', () => {
     const rows = formatCSVDataset([makeEntry({ relatedBlips: ['X', 'Y'] })]);
     expect(rows[0][6]).toBe('X;Y');
+  });
+});
+
+describe('generateVolumeMetrics', () => {
+  beforeEach(() => {
+    writtenJSON.length = 0;
+  });
+
+  it('writes the per-volume metrics index', () => {
+    generateVolumeMetrics([
+      makeEntry({ name: 'A', isNew: true }),
+      makeEntry({ name: 'B', ring: 'hold', hasMovedIn: true }),
+    ]);
+
+    const metrics = writtenJSON[0] as VolumeMetricsData;
+
+    expect(metrics.volumes).toHaveLength(1);
+    expect(metrics.volumes[0]).toMatchObject({
+      volume: 1,
+      total: 2,
+      status: { new: 1, movedIn: 1, movedOut: 0, noChange: 0 },
+      rings: { adopt: 1, trial: 0, assess: 0, caution: 1 },
+    });
   });
 });
 

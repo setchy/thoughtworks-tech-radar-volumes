@@ -35,11 +35,11 @@ pnpm start help
 
 - `src/cli/` — Commander-based CLI wiring, `commands/` and `examples.ts`
 - `src/ingest/` — data fetching: `links/` (sitemap parsing) and `timeline/` (per-blip history scraping)
-- `src/operations/` — pure data operations: `search`, `filter`, `stats`, `health`
-- `src/output/` — dataset writers: `csv.ts`, `json.ts`, `googleSheets.ts`
+- `src/operations/` — pure data operations: `search`, `filter`, `stats`, `health`, `metrics`
+- `src/output/` — dataset writers: `csv.ts`, `json.ts`, `googleSheets.ts`, `metrics.ts`
 - `src/data/` — shared data structures (e.g. `repository.ts`)
 - `src/shared/` — constants, zod schemas, types and logger
-- `data/` — generated datasets: `search-links.json` and `search-data.json`
+- `data/` — generated datasets: `search-links.json`, `search-data.json` and `volume-metrics.json`
 - `volumes/` — generated publication volumes (`csv/`, `json/`)
 - `test/` — Vitest test suite, with `test/fixtures/`
 - `assets/` — icons and social image used in the README
@@ -72,6 +72,7 @@ Examples:
   $ tech-radar-volumes fetch links
   $ tech-radar-volumes fetch data
   $ tech-radar-volumes volumes csv
+  $ tech-radar-volumes volumes metrics
   $ tech-radar-volumes stats --by=quadrant -o json
   $ tech-radar-volumes search -k react
   $ tech-radar-volumes search -k "test cafe" -o json
@@ -90,13 +91,14 @@ Examples:
 ```text
 Usage: tech-radar-volumes volumes [options] [type]
 
-generate publication volumes in specified format(s).
+generate publication volumes and dataset metrics.
 Inputs: requires `data/master.json`.
-Output: generated volumes will be saved in `volumes/*`.
+Output: generated volumes will be saved in `volumes/*` and
+`data/volume-metrics.json`.
 
 Arguments:
   type        type of report to generate (choices: "all", "csv", "json",
-              "google-sheets", default: "all")
+              "google-sheets", "metrics", default: "all")
 
 Options:
   -h, --help  display help for command
@@ -218,6 +220,8 @@ The datasets are produced by a single TypeScript CLI that fetches the radar site
 └──────────────────────────────────────────────────────────────────────┘
 ```
 
+The same run also writes `data/volume-metrics.json`, a derived per-volume summary of blip counts, movement and ring/quadrant distribution.
+
 ### Locally
 
 ```shell
@@ -225,7 +229,9 @@ pnpm start fetch all
 pnpm lint
 ```
 
-This runs `links`, `data` and regenerates all volumes. Outputs land in `data/` and `volumes/`.
+This runs `links`, `data` and regenerates all volumes. Outputs land in `data/` and `volumes/`, including the derived `data/volume-metrics.json` index.
+
+To regenerate only the metrics index, run `pnpm start volumes metrics`.
 
 ### ☁️ Google Sheets
 

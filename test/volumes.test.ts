@@ -1,6 +1,9 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 
-import type { BlipTimelineEntry } from '../src/shared/types.ts';
+import type {
+  BlipTimelineEntry,
+  VolumeMetricsData,
+} from '../src/shared/types.ts';
 
 import { generateVolumes } from '../src/output/index.ts';
 
@@ -68,6 +71,10 @@ vi.mock('../src/data/repository.ts', () => ({
   },
 }));
 
+vi.mock('../src/output/googleSheets.ts', () => ({
+  updateGoogleSheets: vi.fn().mockResolvedValue(undefined),
+}));
+
 describe('generateVolumes', () => {
   beforeEach(() => {
     writtenCSVs.length = 0;
@@ -99,5 +106,29 @@ describe('generateVolumes', () => {
     const rows = contents as Array<Record<string, unknown>>;
     expect(rows).toHaveLength(1);
     expect(rows[0].name).toBe('Delta');
+  });
+
+  it('writes only the metrics index for the metrics report', async () => {
+    await generateVolumes('metrics');
+
+    expect(writtenCSVs).toHaveLength(0);
+    expect(writtenJSONs).toHaveLength(1);
+
+    const [filename, contents] = writtenJSONs[0];
+    expect(filename).toBe('data/volume-metrics.json');
+    expect((contents as VolumeMetricsData).volumes).toHaveLength(2);
+  });
+
+  it('writes the metrics index as part of the full pipeline', async () => {
+    await generateVolumes('all');
+
+    const metrics = writtenJSONs.find(
+      ([filename]) => filename === 'data/volume-metrics.json',
+    );
+    expect(metrics).toBeDefined();
+    if (!metrics) {
+      throw new Error('Missing data/volume-metrics.json output');
+    }
+    expect((metrics[1] as VolumeMetricsData).volumes).toHaveLength(2);
   });
 });

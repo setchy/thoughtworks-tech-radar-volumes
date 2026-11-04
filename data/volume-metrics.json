@@ -1,0 +1,949 @@
+{
+  "volumes": [
+    {
+      "volume": 1,
+      "publishedDate": "Jan 2010",
+      "total": 38,
+      "status": {
+        "new": 38,
+        "movedIn": 0,
+        "movedOut": 0,
+        "noChange": 0
+      },
+      "rings": {
+        "adopt": 9,
+        "trial": 11,
+        "assess": 14,
+        "caution": 4
+      },
+      "quadrants": {
+        "techniques": 10,
+        "platforms": 14,
+        "tools": 7,
+        "languages-and-frameworks": 7
+      },
+      "files": {
+        "csv": "volumes/csv/Thoughtworks Technology Radar Volume 01 (Jan 2010).csv",
+        "json": "volumes/json/Thoughtworks Technology Radar Volume 01 (Jan 2010).json"
+      }
+    },
+    {
+      "volume": 2,
+      "publishedDate": "Apr 2010",
+      "total": 59,
+      "status": {
+        "new": 31,
+        "movedIn": 7,
+        "movedOut": 1,
+        "noChange": 20
+      },
+      "rings": {
+        "adopt": 16,
+        "trial": 15,
+        "assess": 20,
+        "caution": 8
+      },
+      "quadrants": {
+        "techniques": 13,
+        "platforms": 24,
+        "tools": 13,
+        "languages-and-frameworks": 9
+      },
+      "files": {
+        "csv": "volumes/csv/Thoughtworks Technology Radar Volume 02 (Apr 2010).csv",
+        "json": "volumes/json/Thoughtworks Technology Radar Volume 02 (Apr 2010).json"
+      }
+    },
+    {
+      "volume": 3,
+      "publishedDate": "Aug 2010",
+      "total": 70,
+      "status": {
+        "new": 16,
+        "movedIn": 6,
+        "movedOut": 0,
+        "noChange": 48
+      },
+      "rings": {
+        "adopt": 21,
+        "trial": 19,
+        "assess": 22,
+        "caution": 8
+      },
+      "quadrants": {
+        "techniques": 17,
+        "platforms": 27,
+        "tools": 16,
+        "languages-and-frameworks": 10
+      },
+      "files": {
+        "csv": "volumes/csv/Thoughtworks Technology Radar Volume 03 (Aug 2010).csv",
+        "json": "volumes/json/Thoughtworks Technology Radar Volume 03 (Aug 2010).json"
+      }
+    },
+    {
+      "volume": 4,
+      "publishedDate": "Jan 2011",
+      "total": 74,
+      "status": {
+        "new": 19,
+        "movedIn": 5,
+        "movedOut": 0,
+        "noChange": 50
+      },
+      "rings": {
+        "adopt": 17,
+        "trial": 29,
+        "assess": 22,
+        "caution": 6
+      },
+      "quadrants": {
+        "techniques": 23,
+        "platforms": 21,
+        "tools": 18,
+        "languages-and-frameworks": 12
+      },
+      "files": {
+        "csv": "volumes/csv/Thoughtworks Technology Radar Volume 04 (Jan 2011).csv",
+        "json": "volumes/json/Thoughtworks Technology Radar Volume 04 (Jan 2011).json"
+      }
+    },
+    {
+      "volume": 5,
+      "publishedDate": "Jul 2011",
+      "total": 84,
+      "status": {
+        "new": 32,
+        "movedIn": 9,
+        "movedOut": 0,
+        "noChange": 43
+      },
+      "rings": {
+        "adopt": 23,
+        "trial": 26,
+        "assess": 22,
+        "caution": 13
+      },
+      "quadrants": {
+        "techniques": 30,
+        "platforms": 17,
+        "tools": 24,
+        "languages-and-frameworks": 13
+      },
+      "files": {
+        "csv": "volumes/csv/Thoughtworks Technology Radar Volume 05 (Jul 2011).csv",
+        "json": "volumes/json/Thoughtworks Technology Radar Volume 05 (Jul 2011).json"
+      }
+    },
+    {
+      "volume": 6,
+      "publishedDate": "Mar 2012",
+      "total": 104,
+      "status": {
+        "new": 46,
+        "movedIn": 2,
+        "movedOut": 0,
+        "noChange": 56
+      },
+      "rings": {
+        "adopt": 23,
+        "trial": 39,
+        "assess": 22,
+        "caution": 20
+      },
+      "quadrants": {
+        "techniques": 35,
+        "platforms": 29,
+        "tools": 25,
+        "languages-and-frameworks": 15
+      },
+      "files": {
+        "csv": "volumes/csv/Thoughtworks Technology Radar Volume 06 (Mar 2012).csv",
+        "json": "volumes/json/Thoughtworks Technology Radar Volume 06 (Mar 2012).json"
+      }
+    },
+    {
+      "volume": 7,
+      "publishedDate": "Oct 2012",
+      "total": 107,
+      "status": {
+        "new": 56,
+        "movedIn": 12,
+        "movedOut": 2,
+        "noChange": 37
+      },
+      "rings": {
+        "adopt": 23,
+        "trial": 47,
+        "assess": 21,
+        "caution": 16
+      },
+      "quadrants": {
+        "techniques": 28,
+        "platforms": 26,
+        "tools": 30,
+        "languages-and-frameworks": 23
+      },
+      "files": {
+        "csv": "volumes/csv/Thoughtworks Technology Radar Volume 07 (Oct 2012).csv",
+        "json": "volumes/json/Thoughtworks Technology Radar Volume 07 (Oct 2012).json"
+      }
+    },
+    {
+      "volume": 8,
+      "publishedDate": "May 2013",
+      "total": 104,
+      "status": {
+        "new": 47,
+        "movedIn": 11,
+        "movedOut": 1,
+        "noChange": 45
+      },
+      "rings": {
+        "adopt": 26,
+        "trial": 37,
+        "assess": 30,
+        "caution": 11
+      },
+      "quadrants": {
+        "techniques": 28,
+        "platforms": 23,
+        "tools": 29,
+        "languages-and-frameworks": 24
+      },
+      "files": {
+        "csv": "volumes/csv/Thoughtworks Technology Radar Volume 08 (May 2013).csv",
+        "json": "volumes/json/Thoughtworks Technology Radar Volume 08 (May 2013).json"
+      }
+    },
+    {
+      "volume": 9,
+      "publishedDate": "Jan 2014",
+      "total": 94,
+      "status": {
+        "new": 50,
+        "movedIn": 9,
+        "movedOut": 1,
+        "noChange": 34
+      },
+      "rings": {
+        "adopt": 17,
+        "trial": 34,
+        "assess": 31,
+        "caution": 12
+      },
+      "quadrants": {
+        "techniques": 25,
+        "platforms": 23,
+        "tools": 25,
+        "languages-and-frameworks": 21
+      },
+      "files": {
+        "csv": "volumes/csv/Thoughtworks Technology Radar Volume 09 (Jan 2014).csv",
+        "json": "volumes/json/Thoughtworks Technology Radar Volume 09 (Jan 2014).json"
+      }
+    },
+    {
+      "volume": 10,
+      "publishedDate": "Jul 2014",
+      "total": 107,
+      "status": {
+        "new": 52,
+        "movedIn": 14,
+        "movedOut": 0,
+        "noChange": 41
+      },
+      "rings": {
+        "adopt": 11,
+        "trial": 44,
+        "assess": 39,
+        "caution": 13
+      },
+      "quadrants": {
+        "techniques": 28,
+        "platforms": 23,
+        "tools": 30,
+        "languages-and-frameworks": 26
+      },
+      "files": {
+        "csv": "volumes/csv/Thoughtworks Technology Radar Volume 10 (Jul 2014).csv",
+        "json": "volumes/json/Thoughtworks Technology Radar Volume 10 (Jul 2014).json"
+      }
+    },
+    {
+      "volume": 11,
+      "publishedDate": "Jan 2015",
+      "total": 104,
+      "status": {
+        "new": 47,
+        "movedIn": 11,
+        "movedOut": 1,
+        "noChange": 45
+      },
+      "rings": {
+        "adopt": 7,
+        "trial": 44,
+        "assess": 40,
+        "caution": 13
+      },
+      "quadrants": {
+        "techniques": 30,
+        "platforms": 22,
+        "tools": 30,
+        "languages-and-frameworks": 22
+      },
+      "files": {
+        "csv": "volumes/csv/Thoughtworks Technology Radar Volume 11 (Jan 2015).csv",
+        "json": "volumes/json/Thoughtworks Technology Radar Volume 11 (Jan 2015).json"
+      }
+    },
+    {
+      "volume": 12,
+      "publishedDate": "May 2015",
+      "total": 92,
+      "status": {
+        "new": 33,
+        "movedIn": 9,
+        "movedOut": 1,
+        "noChange": 49
+      },
+      "rings": {
+        "adopt": 9,
+        "trial": 31,
+        "assess": 41,
+        "caution": 11
+      },
+      "quadrants": {
+        "techniques": 24,
+        "platforms": 24,
+        "tools": 28,
+        "languages-and-frameworks": 16
+      },
+      "files": {
+        "csv": "volumes/csv/Thoughtworks Technology Radar Volume 12 (May 2015).csv",
+        "json": "volumes/json/Thoughtworks Technology Radar Volume 12 (May 2015).json"
+      }
+    },
+    {
+      "volume": 13,
+      "publishedDate": "Nov 2015",
+      "total": 102,
+      "status": {
+        "new": 52,
+        "movedIn": 10,
+        "movedOut": 1,
+        "noChange": 39
+      },
+      "rings": {
+        "adopt": 13,
+        "trial": 35,
+        "assess": 42,
+        "caution": 12
+      },
+      "quadrants": {
+        "techniques": 30,
+        "platforms": 26,
+        "tools": 30,
+        "languages-and-frameworks": 16
+      },
+      "files": {
+        "csv": "volumes/csv/Thoughtworks Technology Radar Volume 13 (Nov 2015).csv",
+        "json": "volumes/json/Thoughtworks Technology Radar Volume 13 (Nov 2015).json"
+      }
+    },
+    {
+      "volume": 14,
+      "publishedDate": "Apr 2016",
+      "total": 106,
+      "status": {
+        "new": 44,
+        "movedIn": 16,
+        "movedOut": 2,
+        "noChange": 44
+      },
+      "rings": {
+        "adopt": 10,
+        "trial": 41,
+        "assess": 45,
+        "caution": 10
+      },
+      "quadrants": {
+        "techniques": 27,
+        "platforms": 27,
+        "tools": 25,
+        "languages-and-frameworks": 27
+      },
+      "files": {
+        "csv": "volumes/csv/Thoughtworks Technology Radar Volume 14 (Apr 2016).csv",
+        "json": "volumes/json/Thoughtworks Technology Radar Volume 14 (Apr 2016).json"
+      }
+    },
+    {
+      "volume": 15,
+      "publishedDate": "Nov 2016",
+      "total": 111,
+      "status": {
+        "new": 45,
+        "movedIn": 13,
+        "movedOut": 1,
+        "noChange": 52
+      },
+      "rings": {
+        "adopt": 14,
+        "trial": 41,
+        "assess": 46,
+        "caution": 10
+      },
+      "quadrants": {
+        "techniques": 22,
+        "platforms": 29,
+        "tools": 31,
+        "languages-and-frameworks": 29
+      },
+      "files": {
+        "csv": "volumes/csv/Thoughtworks Technology Radar Volume 15 (Nov 2016).csv",
+        "json": "volumes/json/Thoughtworks Technology Radar Volume 15 (Nov 2016).json"
+      }
+    },
+    {
+      "volume": 16,
+      "publishedDate": "Mar 2017",
+      "total": 104,
+      "status": {
+        "new": 47,
+        "movedIn": 4,
+        "movedOut": 0,
+        "noChange": 53
+      },
+      "rings": {
+        "adopt": 9,
+        "trial": 31,
+        "assess": 55,
+        "caution": 9
+      },
+      "quadrants": {
+        "techniques": 23,
+        "platforms": 30,
+        "tools": 23,
+        "languages-and-frameworks": 28
+      },
+      "files": {
+        "csv": "volumes/csv/Thoughtworks Technology Radar Volume 16 (Mar 2017).csv",
+        "json": "volumes/json/Thoughtworks Technology Radar Volume 16 (Mar 2017).json"
+      }
+    },
+    {
+      "volume": 17,
+      "publishedDate": "Nov 2017",
+      "total": 105,
+      "status": {
+        "new": 65,
+        "movedIn": 9,
+        "movedOut": 0,
+        "noChange": 31
+      },
+      "rings": {
+        "adopt": 4,
+        "trial": 35,
+        "assess": 60,
+        "caution": 6
+      },
+      "quadrants": {
+        "techniques": 25,
+        "platforms": 28,
+        "tools": 22,
+        "languages-and-frameworks": 30
+      },
+      "files": {
+        "csv": "volumes/csv/Thoughtworks Technology Radar Volume 17 (Nov 2017).csv",
+        "json": "volumes/json/Thoughtworks Technology Radar Volume 17 (Nov 2017).json"
+      }
+    },
+    {
+      "volume": 18,
+      "publishedDate": "May 2018",
+      "total": 104,
+      "status": {
+        "new": 48,
+        "movedIn": 11,
+        "movedOut": 0,
+        "noChange": 45
+      },
+      "rings": {
+        "adopt": 6,
+        "trial": 36,
+        "assess": 59,
+        "caution": 3
+      },
+      "quadrants": {
+        "techniques": 24,
+        "platforms": 29,
+        "tools": 26,
+        "languages-and-frameworks": 25
+      },
+      "files": {
+        "csv": "volumes/csv/Thoughtworks Technology Radar Volume 18 (May 2018).csv",
+        "json": "volumes/json/Thoughtworks Technology Radar Volume 18 (May 2018).json"
+      }
+    },
+    {
+      "volume": 19,
+      "publishedDate": "Nov 2018",
+      "total": 93,
+      "status": {
+        "new": 73,
+        "movedIn": 9,
+        "movedOut": 1,
+        "noChange": 10
+      },
+      "rings": {
+        "adopt": 1,
+        "trial": 36,
+        "assess": 47,
+        "caution": 9
+      },
+      "quadrants": {
+        "techniques": 25,
+        "platforms": 23,
+        "tools": 27,
+        "languages-and-frameworks": 18
+      },
+      "files": {
+        "csv": "volumes/csv/Thoughtworks Technology Radar Volume 19 (Nov 2018).csv",
+        "json": "volumes/json/Thoughtworks Technology Radar Volume 19 (Nov 2018).json"
+      }
+    },
+    {
+      "volume": 20,
+      "publishedDate": "Apr 2019",
+      "total": 98,
+      "status": {
+        "new": 63,
+        "movedIn": 29,
+        "movedOut": 0,
+        "noChange": 6
+      },
+      "rings": {
+        "adopt": 14,
+        "trial": 34,
+        "assess": 45,
+        "caution": 5
+      },
+      "quadrants": {
+        "techniques": 19,
+        "platforms": 20,
+        "tools": 28,
+        "languages-and-frameworks": 31
+      },
+      "files": {
+        "csv": "volumes/csv/Thoughtworks Technology Radar Volume 20 (Apr 2019).csv",
+        "json": "volumes/json/Thoughtworks Technology Radar Volume 20 (Apr 2019).json"
+      }
+    },
+    {
+      "volume": 21,
+      "publishedDate": "Nov 2019",
+      "total": 96,
+      "status": {
+        "new": 77,
+        "movedIn": 14,
+        "movedOut": 1,
+        "noChange": 4
+      },
+      "rings": {
+        "adopt": 9,
+        "trial": 33,
+        "assess": 48,
+        "caution": 6
+      },
+      "quadrants": {
+        "techniques": 28,
+        "platforms": 22,
+        "tools": 26,
+        "languages-and-frameworks": 20
+      },
+      "files": {
+        "csv": "volumes/csv/Thoughtworks Technology Radar Volume 21 (Nov 2019).csv",
+        "json": "volumes/json/Thoughtworks Technology Radar Volume 21 (Nov 2019).json"
+      }
+    },
+    {
+      "volume": 22,
+      "publishedDate": "May 2020",
+      "total": 98,
+      "status": {
+        "new": 56,
+        "movedIn": 25,
+        "movedOut": 0,
+        "noChange": 17
+      },
+      "rings": {
+        "adopt": 13,
+        "trial": 44,
+        "assess": 34,
+        "caution": 7
+      },
+      "quadrants": {
+        "techniques": 27,
+        "platforms": 20,
+        "tools": 27,
+        "languages-and-frameworks": 24
+      },
+      "files": {
+        "csv": "volumes/csv/Thoughtworks Technology Radar Volume 22 (May 2020).csv",
+        "json": "volumes/json/Thoughtworks Technology Radar Volume 22 (May 2020).json"
+      }
+    },
+    {
+      "volume": 23,
+      "publishedDate": "Oct 2020",
+      "total": 99,
+      "status": {
+        "new": 60,
+        "movedIn": 26,
+        "movedOut": 1,
+        "noChange": 12
+      },
+      "rings": {
+        "adopt": 11,
+        "trial": 33,
+        "assess": 49,
+        "caution": 6
+      },
+      "quadrants": {
+        "techniques": 26,
+        "platforms": 14,
+        "tools": 33,
+        "languages-and-frameworks": 26
+      },
+      "files": {
+        "csv": "volumes/csv/Thoughtworks Technology Radar Volume 23 (Oct 2020).csv",
+        "json": "volumes/json/Thoughtworks Technology Radar Volume 23 (Oct 2020).json"
+      }
+    },
+    {
+      "volume": 24,
+      "publishedDate": "Apr 2021",
+      "total": 104,
+      "status": {
+        "new": 76,
+        "movedIn": 20,
+        "movedOut": 0,
+        "noChange": 8
+      },
+      "rings": {
+        "adopt": 8,
+        "trial": 44,
+        "assess": 42,
+        "caution": 10
+      },
+      "quadrants": {
+        "techniques": 33,
+        "platforms": 19,
+        "tools": 26,
+        "languages-and-frameworks": 26
+      },
+      "files": {
+        "csv": "volumes/csv/Thoughtworks Technology Radar Volume 24 (Apr 2021).csv",
+        "json": "volumes/json/Thoughtworks Technology Radar Volume 24 (Apr 2021).json"
+      }
+    },
+    {
+      "volume": 25,
+      "publishedDate": "Oct 2021",
+      "total": 96,
+      "status": {
+        "new": 68,
+        "movedIn": 13,
+        "movedOut": 2,
+        "noChange": 13
+      },
+      "rings": {
+        "adopt": 6,
+        "trial": 46,
+        "assess": 42,
+        "caution": 2
+      },
+      "quadrants": {
+        "techniques": 17,
+        "platforms": 18,
+        "tools": 30,
+        "languages-and-frameworks": 31
+      },
+      "files": {
+        "csv": "volumes/csv/Thoughtworks Technology Radar Volume 25 (Oct 2021).csv",
+        "json": "volumes/json/Thoughtworks Technology Radar Volume 25 (Oct 2021).json"
+      }
+    },
+    {
+      "volume": 26,
+      "publishedDate": "Mar 2022",
+      "total": 93,
+      "status": {
+        "new": 64,
+        "movedIn": 15,
+        "movedOut": 0,
+        "noChange": 14
+      },
+      "rings": {
+        "adopt": 5,
+        "trial": 41,
+        "assess": 43,
+        "caution": 4
+      },
+      "quadrants": {
+        "techniques": 22,
+        "platforms": 19,
+        "tools": 29,
+        "languages-and-frameworks": 23
+      },
+      "files": {
+        "csv": "volumes/csv/Thoughtworks Technology Radar Volume 26 (Mar 2022).csv",
+        "json": "volumes/json/Thoughtworks Technology Radar Volume 26 (Mar 2022).json"
+      }
+    },
+    {
+      "volume": 27,
+      "publishedDate": "Oct 2022",
+      "total": 103,
+      "status": {
+        "new": 69,
+        "movedIn": 24,
+        "movedOut": 1,
+        "noChange": 9
+      },
+      "rings": {
+        "adopt": 13,
+        "trial": 41,
+        "assess": 44,
+        "caution": 5
+      },
+      "quadrants": {
+        "techniques": 26,
+        "platforms": 24,
+        "tools": 26,
+        "languages-and-frameworks": 27
+      },
+      "files": {
+        "csv": "volumes/csv/Thoughtworks Technology Radar Volume 27 (Oct 2022).csv",
+        "json": "volumes/json/Thoughtworks Technology Radar Volume 27 (Oct 2022).json"
+      }
+    },
+    {
+      "volume": 28,
+      "publishedDate": "Apr 2023",
+      "total": 107,
+      "status": {
+        "new": 86,
+        "movedIn": 16,
+        "movedOut": 0,
+        "noChange": 5
+      },
+      "rings": {
+        "adopt": 10,
+        "trial": 41,
+        "assess": 52,
+        "caution": 4
+      },
+      "quadrants": {
+        "techniques": 23,
+        "platforms": 21,
+        "tools": 36,
+        "languages-and-frameworks": 27
+      },
+      "files": {
+        "csv": "volumes/csv/Thoughtworks Technology Radar Volume 28 (Apr 2023).csv",
+        "json": "volumes/json/Thoughtworks Technology Radar Volume 28 (Apr 2023).json"
+      }
+    },
+    {
+      "volume": 29,
+      "publishedDate": "Sep 2023",
+      "total": 107,
+      "status": {
+        "new": 78,
+        "movedIn": 20,
+        "movedOut": 0,
+        "noChange": 9
+      },
+      "rings": {
+        "adopt": 8,
+        "trial": 56,
+        "assess": 41,
+        "caution": 2
+      },
+      "quadrants": {
+        "techniques": 23,
+        "platforms": 16,
+        "tools": 41,
+        "languages-and-frameworks": 27
+      },
+      "files": {
+        "csv": "volumes/csv/Thoughtworks Technology Radar Volume 29 (Sep 2023).csv",
+        "json": "volumes/json/Thoughtworks Technology Radar Volume 29 (Sep 2023).json"
+      }
+    },
+    {
+      "volume": 30,
+      "publishedDate": "Apr 2024",
+      "total": 105,
+      "status": {
+        "new": 82,
+        "movedIn": 11,
+        "movedOut": 1,
+        "noChange": 11
+      },
+      "rings": {
+        "adopt": 5,
+        "trial": 37,
+        "assess": 58,
+        "caution": 5
+      },
+      "quadrants": {
+        "techniques": 18,
+        "platforms": 26,
+        "tools": 40,
+        "languages-and-frameworks": 21
+      },
+      "files": {
+        "csv": "volumes/csv/Thoughtworks Technology Radar Volume 30 (Apr 2024).csv",
+        "json": "volumes/json/Thoughtworks Technology Radar Volume 30 (Apr 2024).json"
+      }
+    },
+    {
+      "volume": 31,
+      "publishedDate": "Oct 2024",
+      "total": 105,
+      "status": {
+        "new": 73,
+        "movedIn": 21,
+        "movedOut": 0,
+        "noChange": 11
+      },
+      "rings": {
+        "adopt": 11,
+        "trial": 39,
+        "assess": 50,
+        "caution": 5
+      },
+      "quadrants": {
+        "techniques": 23,
+        "platforms": 18,
+        "tools": 34,
+        "languages-and-frameworks": 30
+      },
+      "files": {
+        "csv": "volumes/csv/Thoughtworks Technology Radar Volume 31 (Oct 2024).csv",
+        "json": "volumes/json/Thoughtworks Technology Radar Volume 31 (Oct 2024).json"
+      }
+    },
+    {
+      "volume": 32,
+      "publishedDate": "Apr 2025",
+      "total": 104,
+      "status": {
+        "new": 73,
+        "movedIn": 19,
+        "movedOut": 0,
+        "noChange": 12
+      },
+      "rings": {
+        "adopt": 11,
+        "trial": 37,
+        "assess": 48,
+        "caution": 8
+      },
+      "quadrants": {
+        "techniques": 22,
+        "platforms": 27,
+        "tools": 32,
+        "languages-and-frameworks": 23
+      },
+      "files": {
+        "csv": "volumes/csv/Thoughtworks Technology Radar Volume 32 (Apr 2025).csv",
+        "json": "volumes/json/Thoughtworks Technology Radar Volume 32 (Apr 2025).json"
+      }
+    },
+    {
+      "volume": 33,
+      "publishedDate": "Nov 2025",
+      "total": 114,
+      "status": {
+        "new": 85,
+        "movedIn": 17,
+        "movedOut": 3,
+        "noChange": 9
+      },
+      "rings": {
+        "adopt": 12,
+        "trial": 37,
+        "assess": 59,
+        "caution": 6
+      },
+      "quadrants": {
+        "techniques": 31,
+        "platforms": 26,
+        "tools": 27,
+        "languages-and-frameworks": 30
+      },
+      "files": {
+        "csv": "volumes/csv/Thoughtworks Technology Radar Volume 33 (Nov 2025).csv",
+        "json": "volumes/json/Thoughtworks Technology Radar Volume 33 (Nov 2025).json"
+      }
+    },
+    {
+      "volume": 34,
+      "publishedDate": "Apr 2026",
+      "total": 118,
+      "status": {
+        "new": 87,
+        "movedIn": 17,
+        "movedOut": 1,
+        "noChange": 13
+      },
+      "rings": {
+        "adopt": 17,
+        "trial": 30,
+        "assess": 62,
+        "caution": 9
+      },
+      "quadrants": {
+        "techniques": 41,
+        "platforms": 25,
+        "tools": 32,
+        "languages-and-frameworks": 20
+      },
+      "files": {
+        "csv": "volumes/csv/Thoughtworks Technology Radar Volume 34 (Apr 2026).csv",
+        "json": "volumes/json/Thoughtworks Technology Radar Volume 34 (Apr 2026).json"
+      }
+    },
+    {
+      "volume": 35,
+      "publishedDate": "Nov 2026",
+      "total": 117,
+      "status": {
+        "new": 87,
+        "movedIn": 18,
+        "movedOut": 0,
+        "noChange": 12
+      },
+      "rings": {
+        "adopt": 11,
+        "trial": 49,
+        "assess": 47,
+        "caution": 10
+      },
+      "quadrants": {
+        "techniques": 45,
+        "platforms": 22,
+        "tools": 36,
+        "languages-and-frameworks": 14
+      },
+      "files": {
+        "csv": "volumes/csv/Thoughtworks Technology Radar Volume 35 (Nov 2026).csv",
+        "json": "volumes/json/Thoughtworks Technology Radar Volume 35 (Nov 2026).json"
+      }
+    }
+  ]
+}
