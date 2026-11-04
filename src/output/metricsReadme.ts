@@ -25,6 +25,18 @@ const EMPTY_VOLUMES_ERROR =
 
 const formatNumber = (value: number) => value.toLocaleString('en-US');
 
+const BLIPS_BADGE_ICON = readFileSync(
+  'assets/icons/satellite-dish.svg',
+  'utf-8',
+)
+  .replace(/<!--[\s\S]*?-->/g, '')
+  .replace(/\s+/g, ' ')
+  .trim();
+
+const BLIPS_BADGE_LOGO = encodeURIComponent(
+  `data:image/svg+xml;base64,${Buffer.from(BLIPS_BADGE_ICON).toString('base64')}`,
+);
+
 const rawFileUrl = (path: string) => `${GITHUB_RAW_BASE}/${encodeURI(path)}`;
 
 const formatGoogleSheetLink = (sheetGid: number | null) =>
@@ -94,7 +106,7 @@ export function formatBlipsBadgeMarkdown(data: VolumeMetricsData): string {
 
   return [
     README_BLIPS_BADGE_START,
-    `[blips-badge]: https://img.shields.io/badge/blips-${formattedBlips}-blue?logo=satellite`,
+    `[blips-badge]: https://img.shields.io/badge/blips-${formattedBlips}-blue?logo=${BLIPS_BADGE_LOGO}`,
     README_BLIPS_BADGE_END,
   ].join('\n');
 }

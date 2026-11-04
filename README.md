@@ -179,7 +179,7 @@ Contributions are welcome! 🎉
 [license-badge]: https://img.shields.io/github/license/setchy/thoughtworks-tech-radar-volumes?logo=github
 [license]: LICENSE
 <!-- blips-badge:start -->
-[blips-badge]: https://img.shields.io/badge/blips-3%2C426-blue?logo=satellite
+[blips-badge]: https://img.shields.io/badge/blips-3%2C426-blue?logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiPiA8cGF0aCBkPSJNMTggMTJhNiA2IDAgMDAtNi02IiAvPiA8cGF0aCBkPSJNMi44MjQgMTAuNDU5YTggOCAwIDAwMTAuNzE3IDEwLjcxN2MuNTU4LS4yNzYuNjIzLTEuMDEyLjE4My0xLjQ1MmwtOS40NDgtOS40NDhjLS40NC0uNDQtMS4xNzYtLjM3NS0xLjQ1Mi4xODMiIC8%2BIDxwYXRoIGQ9Ik0yMiAxMkExMCAxMCAwIDAwMTIgMiIgLz4gPHBhdGggZD0ibTkgMTUgNC00IiAvPiA8L3N2Zz4%3D
 <!-- blips-badge:end -->
 [volume-metrics]: data/volume-metrics.json
 <!-- volume-latest-links:start -->
