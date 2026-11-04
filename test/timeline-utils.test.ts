@@ -68,6 +68,7 @@ describe('getVolumeNameFromDate', () => {
   it('maps a known publication date to its volume number', () => {
     expect(getVolumeNameFromDate('Jan 2010')).toBe(1);
     expect(getVolumeNameFromDate('Apr 2026')).toBe(34);
+    expect(getVolumeNameFromDate('Nov 2026')).toBe(35);
   });
 
   it('returns 100 for an unknown publication date', () => {

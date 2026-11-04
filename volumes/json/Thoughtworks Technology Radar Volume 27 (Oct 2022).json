@@ -25,7 +25,8 @@
     "status": "no change",
     "description": "\"<p>We continue to recommend that teams carry out <strong><a href=\"\"https://www.owasp.org/index.php/Category:Threat_Modeling\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">threat modeling</a></strong> — a set of techniques to help you identify and classify potential threats during the development process — but we want to emphasize that this is not a one-off activity only done at the start of projects; teams need to avoid the <a href=\"\"https://www.thoughtworks.com/radar/techniques/security-sandwich\"\">security sandwich</a>. This is because throughout the lifetime of any software, new threats will emerge and existing ones will continue to evolve thanks to external events and ongoing changes to requirements and architecture. This means that threat modeling needs to be repeated periodically — the frequency of repetition will depend on the circumstances and will need to consider factors such as the cost of running the exercise and the potential risk to the business. When used in conjunction with other techniques, such as establishing cross-functional security requirements to address common risks in the project's technologies and using automated security scanners, threat modeling can be a powerful asset.</p>\"",
     "relatedBlips": [
-      "Security sandwich"
+      "MITRE ATLAS",
+      "Toxic flow analysis for AI"
     ]
   },
   {
@@ -368,7 +369,10 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p>Modern observability relies on collecting and aggregating an exhaustive set of granular metrics to fully understand, predict and analyze system behavior. But when applied to a cloud native system composed of many redundant and cooperating processes and hosts, the cardinality (or number of unique time series) becomes unwieldy because it grows exponentially with each additional service, container, node, cluster, etc. When dealing with high-cardinality data, we've found that <a href=\"\"https://victoriametrics.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\"><strong>VictoriaMetrics</strong></a> performs well. VictoriaMetrics is particularly useful for operating <a href=\"\"https://www.thoughtworks.com/radar/platforms/kubernetes\"\">Kubernetes</a>-hosted <a href=\"\"https://www.thoughtworks.com/radar/techniques/microservices\"\">microservice</a> architectures, and the VictoriaMetrics operator makes it easy for teams to implement their own monitoring in a self-service way. We also like its componentized architecture and ability to continue collecting metrics even when the central server is unavailable. Although our team has been happy with VictoriaMetrics, this is a rapidly evolving area, and we'd recommend keeping an eye on other high-performance, <a href=\"\"https://www.thoughtworks.com/radar/tools/prometheus\"\">Prometheus</a>-compatible time series databases such as <a href=\"\"https://cortexmetrics.io/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Cortex</a> or <a href=\"\"https://thanos.io/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Thanos</a>.</p>\"",
-    "relatedBlips": []
+    "relatedBlips": [
+      "OpenTelemetry",
+      "Prometheus"
+    ]
   },
   {
     "name": "Bun",

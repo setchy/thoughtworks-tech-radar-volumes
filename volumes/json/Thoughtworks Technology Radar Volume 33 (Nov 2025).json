@@ -137,8 +137,8 @@
     "status": "new",
     "description": "\"<p>In the past we blipped the <a href=\"\"https://www.thoughtworks.com/radar/techniques/tailored-service-templates\"\">tailored service templates</a> pattern, which helped organizations adopting microservices by providing sensible defaults to bootstrap new services and integrate them seamlessly with existing infrastructure. Over time, however, code drift between these templates and existing services tends to grow as new dependencies, frameworks and architectural patterns emerge. To maintain good practices and architectural consistency — especially in the age of <a href=\"\"https://www.thoughtworks.com/radar/techniques/team-of-coding-agents\"\">coding agents</a> — we’ve been experimenting with <a href=\"\"https://martinfowler.com/articles/exploring-gen-ai/anchoring-to-reference.html\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">anchoring coding agents to a reference application</a>. This pattern guides generative code agents by providing a live, compilable reference application instead of static prompt examples. A <a href=\"\"https://www.thoughtworks.com/radar/platforms/model-context-protocol-mcp\"\">Model Context Protocol (MCP)</a> server exposes both reference template code and commit diffs, enabling agents to detect drift and propose repairs. This approach transforms static templates into living, adaptable blueprints that AI can reference intelligently — maintaining consistency, reducing divergence and improving control over AI-driven scaffolding as systems evolve.</p>\"",
     "relatedBlips": [
-      "Model Context Protocol (MCP)",
-      "Team of coding agents"
+      "OpenWiki",
+      "Agent-maintained knowledge bases"
     ]
   },
   {
@@ -234,6 +234,7 @@
     "status": "moved out",
     "description": "\"<p>We’ve observed steady progress in the development of <strong>small language models </strong>(SLMs) across several volumes of the Technology Radar. With growing interest in building agentic solutions, we’re seeing increasing evidence that SLMs can power agentic AI efficiently. Most current agentic workflows are focused on narrow, repetitive tasks that don’t require advanced reasoning, making them a good match for SLMs. Continued advancements in SLMs such as Phi-3, SmolLM2 and DeepSeek suggest that SLMs offer sufficient capability for these tasks — with the added benefits of lower cost, reduced latency and lower resource consumption compared to LLMs. It’s worth considering SLMs as the default choice for agentic workflows, reserving larger, more resource-intensive LLMs only when necessary.</p>\"",
     "relatedBlips": [
+      "Apple Core AI",
       "Model distillation"
     ]
   },
@@ -276,7 +277,7 @@
     "status": "new",
     "description": "\"<p>The now-familiar joke that the S in MCP stands for “security” hides a very real problem. When agents communicate with one another — through tool invocation or API calls — they can quickly encounter what's become known as the <a href=\"\"https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">lethal trifecta</a>: access to private data, exposure to untrusted content and the ability to communicate externally. Agents with all three are highly vulnerable. Because LLMs tend to follow instructions in their input, content that includes a directive to exfiltrate data to an untrusted source can easily lead to data leaks. One emerging technique to mitigate this risk is <strong><a href=\"\"https://invariantlabs.ai/blog/toxic-flow-analysis\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">toxic flow analysis</a></strong>, which examines the flow graph of an agentic system to identify potentially unsafe data paths for further investigation. While still in its early stages, toxic flow analysis represents one of several promising approaches to detecting the new attack vectors that agentic systems and MCP servers are increasingly exposed to.</p>\"",
     "relatedBlips": [
-      "OpenClaw",
+      "Threat modeling",
       "Agent Skills",
       "Agent Scan"
     ]
@@ -288,7 +289,11 @@
     "isNew": "FALSE",
     "status": "no change",
     "description": "\"<p>AI is lowering the barriers for noncoders to build and integrate software themselves, instead of waiting for the IT department to get around to their requirements. While we’re excited about the potential this unlocks, we’re also wary of the first signs of <strong>AI-accelerated shadow IT</strong>. No-code workflow automation platforms now support AI API integration (e.g., OpenAI or Anthropic), making it tempting to use AI as duct tape — stitching together integrations that previously weren’t possible, such as turning chat messages in one system into ERP API calls via AI. At the same time, AI coding assistants are becoming more agentic, enabling noncoders with basic training to build internal utility applications.</p><br><p>This has all the hallmarks of the next evolution of the spreadsheets that still power critical processes in some enterprises — but with a much bigger footprint. Left unchecked, this new shadow IT could lead to a proliferation of ungoverned, potentially insecure applications, scattering data across more and more systems. Organizations should be aware of these risks and carefully weigh the trade-offs between rapid problem-solving and long-term stability.</p>\"",
-    "relatedBlips": []
+    "relatedBlips": [
+      "OpenAI Codex",
+      "Enterprise harness",
+      "Claude Code"
+    ]
   },
   {
     "name": "Capacity-driven development",
@@ -423,6 +428,17 @@
     ]
   },
   {
+    "name": "LiteLLM",
+    "ring": "trial",
+    "quadrant": "platforms",
+    "isNew": "FALSE",
+    "status": "no change",
+    "description": "\"<p><strong><a href=\"\"https://github.com/BerriAI/litellm?utm_source=chatgpt.com\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">LiteLLM</a></strong> is an SDK that provides seamless integration with multiple LLM providers through a standardized <a href=\"\"https://platform.openai.com/docs/guides/text-generation/chat-completions-api\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">OpenAI API format</a>. It supports a wide range of <a href=\"\"https://docs.litellm.ai/docs/providers\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">providers and models</a>, offering a unified interface for text completion, embeddings and image generation. By abstracting provider-specific API differences, LiteLLM simplifies integration and automatically routes requests to the correct model endpoint. It also includes production-grade features such as guardrails, caching, logging, rate limiting and load balancing through its <a href=\"\"https://docs.litellm.ai/docs/simple_proxy?utm_source=chatgpt.com\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">proxy framework</a>. As organizations embed AI-powered applications more deeply into workflows, governance and observability become essential. Our teams have been using LiteLLM as an <a href=\"\"https://www.cloudflare.com/en-gb/developer-platform/products/ai-gateway/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">AI gateway</a> to standardize, secure and gain visibility into enterprise-wide AI usage.</p>\"",
+    "relatedBlips": [
+      "agentgateway"
+    ]
+  },
+  {
     "name": "Model Context Protocol (MCP)",
     "ring": "trial",
     "quadrant": "platforms",
@@ -538,7 +554,7 @@
     "quadrant": "platforms",
     "isNew": "TRUE",
     "status": "new",
-    "description": "\"<p><strong><a href=\"\"https://www.groundcover.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">groundcover</a></strong> is a cloud-native observability platform that unifies logs, traces, metrics and Kubernetes events in a single pane of glass. It leverages <a href=\"\"https://www.thoughtworks.com/radar/platforms/ebpf\"\">eBPF</a> to capture granular observability data with zero code instrumentation — that is, without inserting agents or SDKs into application code. groundcover’s eBPF sensor runs on a dedicated node in each monitored cluster, operating independently from the applications it observes. Key features include deep kernel-level visibility, a <a href=\"\"https://docs.groundcover.com/?_gl=1*ruvtje*_gcl_au*OTE5OTA1MzMuMTc1OTgxNjg4NQ..#bring-your-own-cloud-byoc-architecture\"\">bring-your-own-cloud (BYOC) architecture</a> for data privacy and a data volume–agnostic pricing model that keeps costs predictable.</p>\"",
+    "description": "\"<p><strong><a href=\"\"https://www.groundcover.com/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">groundcover</a></strong> is a cloud-native observability platform that unifies logs, traces, metrics and Kubernetes events in a single pane of glass. It leverages <a href=\"\"https://www.thoughtworks.com/radar/platforms/ebpf\"\">eBPF</a> to capture granular observability data with zero code instrumentation — that is, without inserting agents or SDKs into application code. groundcover’s eBPF sensor runs on a dedicated node in each monitored cluster, operating independently from the applications it observes. Key features include deep kernel-level visibility, a <a href=\"\"https://docs.groundcover.com/?_gl=1*ruvtje*_gcl_au*OTE5OTA1MzMuMTc1OTgxNjg4NQ..#bring-your-own-cloud-byoc-architecture\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">bring-your-own-cloud (BYOC) architecture</a> for data privacy and a data volume–agnostic pricing model that keeps costs predictable.</p>\"",
     "relatedBlips": [
       "eBPF"
     ]
@@ -585,7 +601,9 @@
     "isNew": "FALSE",
     "status": "no change",
     "description": "\"<p><strong><a href=\"\"https://restate.dev\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Restate</a></strong> is a durable execution platform designed to address complex distributed system challenges when building stateful, fault-tolerant applications. It logs every step via execution journaling, ensuring fault-tolerance, reliable recovery and exactly-once communication across services. The platform’s key architectural advantage lies in separating application logic into three durable service types: Basic Services for stateless functions; Virtual Objects to model concurrent, stateful entities; and Workflows to orchestrate complex, multi-step processes. We’ve been carefully assessing Restate in a large insurance system and are quite happy with its performance so far.</p>\"",
-    "relatedBlips": []
+    "relatedBlips": [
+      "Temporal"
+    ]
   },
   {
     "name": "SkyPilot",
@@ -891,7 +909,7 @@
     "quadrant": "tools",
     "isNew": "TRUE",
     "status": "new",
-    "description": "\"<p><strong><a href=\"\"https://github.com/oraios/serena\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Serena</a></strong> is a powerful coding toolkit that equips coding agents such as Claude Code with IDE-like capabilities for semantic code retrieval and editing. By operating at the symbol level and understanding the relational structure of code, Serena greatly improves token efficiency. Instead of reading entire files or relying on crude string replacements, coding agents can use precise Serena <a href=\"\"https://github.com/oraios/serena?tab=readme-ov-file#list-of-tools\"\">tools</a> such as find_symbol, find_referencing_symbols and insert_after_symbol to locate and edit code. Although the impact is minimal on small projects, this efficiency is extremely valuable as the codebase grows.</p>\"",
+    "description": "\"<p><strong><a href=\"\"https://github.com/oraios/serena\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Serena</a></strong> is a powerful coding toolkit that equips coding agents such as Claude Code with IDE-like capabilities for semantic code retrieval and editing. By operating at the symbol level and understanding the relational structure of code, Serena greatly improves token efficiency. Instead of reading entire files or relying on crude string replacements, coding agents can use precise Serena <a href=\"\"https://github.com/oraios/serena?tab=readme-ov-file#list-of-tools\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">tools</a> such as find_symbol, find_referencing_symbols and insert_after_symbol to locate and edit code. Although the impact is minimal on small projects, this efficiency is extremely valuable as the codebase grows.</p>\"",
     "relatedBlips": []
   },
   {
@@ -958,7 +976,7 @@
     "quadrant": "languages-and-frameworks",
     "isNew": "FALSE",
     "status": "moved in",
-    "description": "\"<p><strong><a href=\"\"https://github.com/confident-ai/deepeval\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">DeepEval</a></strong> is an open-source, Python-based evaluation framework for assessing LLM performance. It can be used to evaluate <a href=\"\"https://www.thoughtworks.com/radar/techniques/retrieval-augmented-generation-rag\"\">retrieval-augmented generation (RAG)</a> and other applications built with frameworks such as <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/llamaindex\"\">LlamaIndex</a> or <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/langchain\"\">LangChain</a>, as well as to baseline and benchmark models. DeepEval goes beyond word-matching scores, assessing accuracy, relevance and consistency to provide more reliable evaluation in real-world scenarios. It includes metrics such as hallucination detection, answer relevancy and hyperparameter optimization and supports <a href=\"\"https://github.com/confident-ai/deepeval?tab=readme-ov-file#geval\"\">GEval</a> for creating custom, use case–specific metrics. Our teams are using DeepEval to fine-tune agentic outputs using the <a href=\"\"https://www.thoughtworks.com/radar/techniques/llm-as-a-judge\"\">LLM as a judge</a> technique. It integrates with pytest and CI/CD pipelines, making it easy to adopt and valuable for continuous evaluation. For teams building LLM-based applications in regulated environments, <a href=\"\"https://github.com/UKGovernmentBEIS/inspect_ai\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Inspect AI</a>, developed by the UK AI Safety Institute, offers an alternative with stronger focus on auditing and compliance.</p>\"",
+    "description": "\"<p><strong><a href=\"\"https://github.com/confident-ai/deepeval\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">DeepEval</a></strong> is an open-source, Python-based evaluation framework for assessing LLM performance. It can be used to evaluate <a href=\"\"https://www.thoughtworks.com/radar/techniques/retrieval-augmented-generation-rag\"\">retrieval-augmented generation (RAG)</a> and other applications built with frameworks such as <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/llamaindex\"\">LlamaIndex</a> or <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/langchain\"\">LangChain</a>, as well as to baseline and benchmark models. DeepEval goes beyond word-matching scores, assessing accuracy, relevance and consistency to provide more reliable evaluation in real-world scenarios. It includes metrics such as hallucination detection, answer relevancy and hyperparameter optimization and supports <a href=\"\"https://github.com/confident-ai/deepeval?tab=readme-ov-file#geval\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">GEval</a> for creating custom, use case–specific metrics. Our teams are using DeepEval to fine-tune agentic outputs using the <a href=\"\"https://www.thoughtworks.com/radar/techniques/llm-as-a-judge\"\">LLM as a judge</a> technique. It integrates with pytest and CI/CD pipelines, making it easy to adopt and valuable for continuous evaluation. For teams building LLM-based applications in regulated environments, <a href=\"\"https://github.com/UKGovernmentBEIS/inspect_ai\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Inspect AI</a>, developed by the UK AI Safety Institute, offers an alternative with stronger focus on auditing and compliance.</p>\"",
     "relatedBlips": [
       "Retrieval-augmented generation (RAG)",
       "LlamaIndex",
@@ -975,15 +993,6 @@
     "relatedBlips": [
       "Model Context Protocol (MCP)"
     ]
-  },
-  {
-    "name": "LiteLLM",
-    "ring": "trial",
-    "quadrant": "languages-and-frameworks",
-    "isNew": "FALSE",
-    "status": "no change",
-    "description": "\"<p><strong><a href=\"\"https://github.com/BerriAI/litellm?utm_source=chatgpt.com\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">LiteLLM</a></strong> is an SDK that provides seamless integration with multiple LLM providers through a standardized <a href=\"\"https://platform.openai.com/docs/guides/text-generation/chat-completions-api\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">OpenAI API format</a>. It supports a wide range of <a href=\"\"https://docs.litellm.ai/docs/providers\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">providers and models</a>, offering a unified interface for text completion, embeddings and image generation. By abstracting provider-specific API differences, LiteLLM simplifies integration and automatically routes requests to the correct model endpoint. It also includes production-grade features such as guardrails, caching, logging, rate limiting and load balancing through its <a href=\"\"https://docs.litellm.ai/docs/simple_proxy?utm_source=chatgpt.com\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">proxy framework</a>. As organizations embed AI-powered applications more deeply into workflows, governance and observability become essential. Our teams have been using LiteLLM as an <a href=\"\"https://www.cloudflare.com/en-gb/developer-platform/products/ai-gateway/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">AI gateway</a> to standardize, secure and gain visibility into enterprise-wide AI usage.</p>\"",
-    "relatedBlips": []
   },
   {
     "name": "MLForecast",
@@ -1155,14 +1164,18 @@
     "relatedBlips": []
   },
   {
-    "name": "kagent",
+    "name": "Kagent",
     "ring": "assess",
     "quadrant": "languages-and-frameworks",
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p><strong><a href=\"\"https://kagent.dev/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Kagent</a></strong> is an open-source framework for running agentic AI inside Kubernetes clusters. It enables LLM-based agents to plan and execute operational tasks such as diagnosing issues, remediating configurations or interacting with observability tools through Kubernetes-native APIs and Model Context Protocol (MCP) integrations. Its goal is to bring \"\"AgentOps\"\" to cloud-native infrastructure by combining declarative management with autonomous reasoning.</p><br><p>As a CNCF Sandbox project, Kagent should be introduced with care, particularly given the risks of granting LLMs operational management capabilities. Techniques such as <a href=\"\"https://www.thoughtworks.com/radar/techniques/toxic-flow-analysis-for-ai\"\">toxic flow analysis</a> can be especially valuable when assessing and mitigating these risks.</p>\"",
     "relatedBlips": [
-      "Toxic flow analysis for AI"
+      "Model Context Protocol (MCP)",
+      "Agent-to-Agent (A2A) Protocol",
+      "OpenTelemetry",
+      "GitOps",
+      "Kubernetes"
     ]
   },
   {
@@ -1225,7 +1238,7 @@
     "quadrant": "languages-and-frameworks",
     "isNew": "TRUE",
     "status": "new",
-    "description": "\"<p><strong><a href=\"\"https://github.com/Arize-ai/openinference\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">OpenInference</a></strong> is a set of conventions and plugins; it’s complementary to <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/opentelemetry\"\">OpenTelemetry</a> and designed to observe AI applications. It provides standardized instrumentation for machine-learning frameworks and <a href=\"\"https://github.com/Arize-ai/openinference/tree/main?tab=readme-ov-file#libraries\"\">libraries</a>, which helps developers trace LLM invocations along with surrounding context such as vector store retrievals or external tool calls to APIs and search engines. Spans can be exported to any OTEL-compatible collector, ensuring alignment with existing telemetry pipelines. We previously blipped <a href=\"\"https://www.thoughtworks.com/radar/platforms/langfuse\"\">Langfuse</a>, a commonly used LLM observability platform — the <a href=\"\"https://langfuse.com/guides/cookbook/otel_integration_arize\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">OpenInference SDK</a> can log traces into Langfuse and other OpenTelemetry-compatible observability platforms.</p>\"",
+    "description": "\"<p><strong><a href=\"\"https://github.com/Arize-ai/openinference\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">OpenInference</a></strong> is a set of conventions and plugins; it’s complementary to <a href=\"\"https://www.thoughtworks.com/radar/languages-and-frameworks/opentelemetry\"\">OpenTelemetry</a> and designed to observe AI applications. It provides standardized instrumentation for machine-learning frameworks and <a href=\"\"https://github.com/Arize-ai/openinference/tree/main?tab=readme-ov-file#libraries\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">libraries</a>, which helps developers trace LLM invocations along with surrounding context such as vector store retrievals or external tool calls to APIs and search engines. Spans can be exported to any OTEL-compatible collector, ensuring alignment with existing telemetry pipelines. We previously blipped <a href=\"\"https://www.thoughtworks.com/radar/platforms/langfuse\"\">Langfuse</a>, a commonly used LLM observability platform — the <a href=\"\"https://langfuse.com/guides/cookbook/otel_integration_arize\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">OpenInference SDK</a> can log traces into Langfuse and other OpenTelemetry-compatible observability platforms.</p>\"",
     "relatedBlips": [
       "Langfuse",
       "OpenTelemetry"

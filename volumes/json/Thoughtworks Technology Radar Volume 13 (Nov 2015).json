@@ -52,7 +52,8 @@
     "status": "moved in",
     "description": "\"<p>With the number of high-profile security breaches in the past months, software development teams no longer need convincing that they must place an emphasis on writing secure software and dealing with their users’ data in a responsible way. The teams face a steep learning curve, though, and the vast number of potential threats - ranging from organized crime and government spying to teenagers who attack systems 'for the lulz' can be overwhelming. <a href=\"\"https://www.owasp.org/index.php/Category:Threat_Modeling\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\"><strong>Threat modeling</strong></a> provides a set of techniques, mostly from a defensive perspective, that help you understand and classify potential threats. Turned into 'evil-user stories', threat models can give a team a manageable and effective approach to making their systems more secure.</p>\"",
     "relatedBlips": [
-      "Security sandwich"
+      "MITRE ATLAS",
+      "Toxic flow analysis for AI"
     ]
   },
   {
@@ -911,7 +912,11 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p>Building systems using microservices requires us to think more deeply about failure isolation and testing. *<em><a href=\"\"https://lamport.azurewebsites.net/tla/tla.html\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">TLA+</a> *</em>is a formal specification language that can be useful in both these scenarios. For failure isolation, TLA+ can be used to identify invariants in your system that can be monitored directly. An invariant can be the ratio of number of requests to one service to the number of requests to a second service, for example. Any change in this ratio would lead to an alert. TLA+ is also being used to identify subtle design flaws in distributed systems. Amazon, for example, used model-checking based on a formal specification written in TLA+ to identify subtle bugs in Dynamo DB before it was released to the public. For most systems, the investment required to create the formal specification and then perform model checking is probably too great; however, for critical systems - complex ones, or those with many users - we think it’s very valuable to have another tool in our toolbox.</p>\"",
-    "relatedBlips": []
+    "relatedBlips": [
+      "Quint",
+      "Mutation testing",
+      "Property-based unit testing"
+    ]
   },
   {
     "name": "Traveling Ruby",

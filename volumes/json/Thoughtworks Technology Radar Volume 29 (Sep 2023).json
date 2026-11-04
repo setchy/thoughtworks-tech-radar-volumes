@@ -323,7 +323,7 @@
     "quadrant": "platforms",
     "isNew": "TRUE",
     "status": "new",
-    "description": "\"<p>With the huge interest in generative AI, many solutions have sprung up to access the major models. If considering or already using Azure, then it's worth assessing <strong><a href=\"\"https://azure.microsoft.com/en-us/products/ai-services/openai-service/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Azure OpenAI Service</a></strong>. It provides access to OpenAI's GPT-4, GPT-35-Turbo and Embeddings models through a REST API, a Python SDK and a web-based interface. The models can be adapted to tasks such as content generation, summarization, semantic search and natural language to code translation. Fine-tuning is also available via few-shot learning and the customization of hyperparameters. In comparison to OpenAI's own API, Azure OpenAI Service benefits from Azure's enterprise-grade security and compliance features; it's also available in more regions, although <a href=\"\"https://azure.microsoft.com/en-us/explore/global-infrastructure/products-by-region/?regions=all&amp;products=cognitive-services\"\">availability is limited</a> for each of the larger geographic regions, and, as of writing, India is not included.</p>\"",
+    "description": "\"<p>With the huge interest in generative AI, many solutions have sprung up to access the major models. If considering or already using Azure, then it's worth assessing <strong><a href=\"\"https://azure.microsoft.com/en-us/products/ai-services/openai-service/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Azure OpenAI Service</a></strong>. It provides access to OpenAI's GPT-4, GPT-35-Turbo and Embeddings models through a REST API, a Python SDK and a web-based interface. The models can be adapted to tasks such as content generation, summarization, semantic search and natural language to code translation. Fine-tuning is also available via few-shot learning and the customization of hyperparameters. In comparison to OpenAI's own API, Azure OpenAI Service benefits from Azure's enterprise-grade security and compliance features; it's also available in more regions, although <a href=\"\"https://azure.microsoft.com/en-us/explore/global-infrastructure/products-by-region/?regions=all&amp;products=cognitive-services\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">availability is limited</a> for each of the larger geographic regions, and, as of writing, India is not included.</p>\"",
     "relatedBlips": []
   },
   {
@@ -971,13 +971,15 @@
     ]
   },
   {
-    "name": "promptfoo",
+    "name": "Promptfoo",
     "ring": "assess",
     "quadrant": "languages-and-frameworks",
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p><strong><a href=\"\"https://github.com/promptfoo/promptfoo\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">promptfoo</a></strong> enables test-driven <a href=\"\"https://www.thoughtworks.com/radar/techniques/prompt-engineering\"\">prompt engineering</a>. While integrating LLMs in applications, tuning of the prompts to produce optimal, consistent outputs can be time-consuming. You can use promptfoo both as a CLI and a library to systematically test prompts against predefined test cases. The test case, along with assertions, can be set up in a simple YAML config file. This config includes the prompts being tested, the model provider, the assertions and the variable values that will be substituted in the prompts. promptfoo supports many assertions, including checking for equality, JSON structure, similarity, custom functions or even using an LLM to grade the model outputs. If you're looking to automate feedback on prompt and model quality, do assess promptfoo.</p>\"",
-    "relatedBlips": []
+    "relatedBlips": [
+      "Stateful guardrails"
+    ]
   },
   {
     "name": "Semantic Kernel",

@@ -48,7 +48,8 @@
     "status": "no change",
     "description": "\"<p>In the rapidly evolving AI-driven landscape of software development, <strong><a href=\"\"https://martinfowler.com/articles/agile-threat-modelling.html\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">threat modeling</a></strong> is more crucial than ever for building secure software while maintaining agility and avoiding the <a href=\"\"https://www.thoughtworks.com/radar/techniques/security-sandwich\"\">security sandwich</a>. Threat modeling — a set of techniques for identifying and classifying potential threats — applies across various contexts, <a href=\"\"https://aws.amazon.com/blogs/security/threat-modeling-your-generative-ai-workload-to-evaluate-security-risk/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">including generative AI applications</a>, which introduce <a href=\"\"https://nazneen-rupawalla.gitbook.io/learn-write-share/security-bits/threat-modelling-for-ai-changing-the-way-you-view-trust-boundaries\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">unique security risks</a>. To be effective, it must be performed regularly throughout the software lifecycle and works best alongside other security practices. These include defining cross-functional security requirements to address common risks in the project's technologies and leveraging automated security scanners for continuous monitoring.</p>\"",
     "relatedBlips": [
-      "Security sandwich"
+      "MITRE ATLAS",
+      "Toxic flow analysis for AI"
     ]
   },
   {
@@ -96,7 +97,7 @@
     "quadrant": "techniques",
     "isNew": "TRUE",
     "status": "new",
-    "description": "\"<p><a href=\"\"https://csrc.nist.gov/glossary/term/least_privilege\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Least privilege</a> ensures users and systems have only the minimum access required to perform their tasks. Privileged credential abuse is a major factor in <a href=\"\"https://www.infosecinstitute.com/resources/secure-coding/least-privilege-vulnerabilities-exploitation-case-study/#:%7E:text=rights%20to%20the%20minimum%20they,need%20to%20perform%20their%20job\"\">security breaches</a>, with privilege escalation being a common attack vector. Attackers often start with low-level access and exploit software vulnerabilities or misconfigurations to gain administrator privileges, especially when accounts have excessive or unnecessary rights. Another overlooked risk is standing privileges — continuously available privileged access that expands the attack surface. <strong>Just-in-time privileged access management (JIT PAM)</strong> mitigates this by granting access only when needed and revoking it immediately after, minimizing exposure. A true least-privilege security model ensures that users, applications and systems have only the necessary rights for the shortest required duration — a critical requirement for compliance and regulatory security. Our teams have implemented this through an automated workflow that triggers a lightweight approval process, assigns temporary roles with restricted access and enforces time to live (TTL) for each role, ensuring privileges expire automatically once the task is completed.</p>\"",
+    "description": "\"<p><a href=\"\"https://csrc.nist.gov/glossary/term/least_privilege\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Least privilege</a> ensures users and systems have only the minimum access required to perform their tasks. Privileged credential abuse is a major factor in <a href=\"\"https://www.infosecinstitute.com/resources/secure-coding/least-privilege-vulnerabilities-exploitation-case-study/#:%7E:text=rights%20to%20the%20minimum%20they,need%20to%20perform%20their%20job\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">security breaches</a>, with privilege escalation being a common attack vector. Attackers often start with low-level access and exploit software vulnerabilities or misconfigurations to gain administrator privileges, especially when accounts have excessive or unnecessary rights. Another overlooked risk is standing privileges — continuously available privileged access that expands the attack surface. <strong>Just-in-time privileged access management (JIT PAM)</strong> mitigates this by granting access only when needed and revoking it immediately after, minimizing exposure. A true least-privilege security model ensures that users, applications and systems have only the necessary rights for the shortest required duration — a critical requirement for compliance and regulatory security. Our teams have implemented this through an automated workflow that triggers a lightweight approval process, assigns temporary roles with restricted access and enforces time to live (TTL) for each role, ensuring privileges expire automatically once the task is completed.</p>\"",
     "relatedBlips": []
   },
   {
@@ -131,6 +132,7 @@
     "status": "no change",
     "description": "\"<p>The recent announcement of <a href=\"\"https://www.thoughtworks.com/radar/platforms/deepseek-r1\"\">DeepSeek R1</a> is a great example of why <strong>small language models</strong> (SLMs) continue to be interesting. The full-size R1 has 671 billion parameters and requires about 1,342 GB of VRAM in order to run, only achievable using a \"\"mini cluster\"\" of eight state-of-the-art NVIDIA GPUs. But <a href=\"\"https://www.thoughtworks.com/en-ca/insights/blog/generative-ai/demystifying-deepseek\"\">DeepSeek</a> is also available <a href=\"\"https://venturebeat.com/ai/deepseeks-r1-and-openais-deep-research-just-redefined-ai-rag-distillation-and-custom-models-will-never-be-the-same/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">\"\"distilled\"\"</a> into Qwen and Llama — smaller, open-weight models — effectively transferring its abilities and allowing it to be run on much more modest hardware. Though the model gives up some performance at those smaller sizes, it still allows a huge leap in performance over previous SLMs. The SLM space continues to innovate elsewhere, too. Since the last Radar, Meta introduced <a href=\"\"https://ai.meta.com/blog/llama-3-2-connect-2024-vision-edge-mobile-devices/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Llama 3.2</a> at 1B and 3B sizes, Microsoft released <a href=\"\"https://techcommunity.microsoft.com/blog/aiplatformblog/introducing-phi-4-microsoft%E2%80%99s-newest-small-language-model-specializing-in-comple/4357090\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Phi-4</a>, offering high-quality results with a 14B model, and Google released <a href=\"\"https://developers.googleblog.com/en/introducing-paligemma-2-mix/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">PaliGemma 2</a>, a vision-language model at 3B, 10B and 28B sizes. These are just a few of the models currently being released at smaller sizes and definitely an important trend to continue to watch.</p>\"",
     "relatedBlips": [
+      "Apple Core AI",
       "Model distillation"
     ]
   },
@@ -203,7 +205,11 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p>AI is lowering the barriers for noncoders to build and integrate software themselves, instead of waiting for the IT department to get around to their requirements. While we’re excited about the potential this unlocks, we’re also wary of the first signs of <strong>AI-accelerated shadow IT</strong>. No-code workflow automation platforms now support AI API integration (e.g., OpenAI or Anthropic), making it tempting to use AI as duct tape — stitching together integrations that previously weren’t possible, such as turning chat messages in one system into ERP API calls via AI. At the same time, AI coding assistants are becoming more agentic, enabling noncoders with basic training to build internal utility applications.</p><br><br><p>This has all the hallmarks of the next evolution of the spreadsheets that still power critical processes in some enterprises — but with a much bigger footprint. Left unchecked, this new shadow IT could lead to a proliferation of ungoverned, potentially insecure applications, scattering data across more and more systems. Organizations should be aware of these risks and carefully weigh the trade-offs between rapid problem-solving and long-term stability.</p>\"",
-    "relatedBlips": []
+    "relatedBlips": [
+      "OpenAI Codex",
+      "Enterprise harness",
+      "Claude Code"
+    ]
   },
   {
     "name": "Complacency with AI-generated code",
@@ -217,16 +223,15 @@
     ]
   },
   {
-    "name": "Local coding assistants",
+    "name": "Local coding models",
     "ring": "caution",
     "quadrant": "techniques",
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p>Organizations remain wary of third-party AI coding assistants, particularly due to concerns about code confidentiality. As a result, many developers are considering using <strong>local coding assistants</strong> — AI that runs entirely on their machines — eliminating the need to send code to external servers. However, local assistants still lag behind their cloud-based counterparts, which rely on larger, more capable models. Even on high-end developer machines, smaller models remain limited in their capabilities. We've found that they struggle with complex prompts, lack the necessary context window for larger problems and often cannot trigger tool integrations or function calls. These capabilities are especially essential to <a href=\"\"https://www.thoughtworks.com/radar/techniques/software-engineering-agents\"\">agentic workflows</a>, which is the cutting edge in coding assistance right now.</p><br><br><p>So while we recommend to proceed with low expectations, there are some capabilities that are valid locally. Some popular IDEs do now embed smaller models into their core features, such as Xcode's predictive code completion and <a href=\"\"https://blog.jetbrains.com/blog/2024/04/04/full-line-code-completion-in-jetbrains-ides-all-you-need-to-know\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">JetBrains' full-line code completion</a>. And locally runnable LLMs like <a href=\"\"https://ollama.com/library/qwen2.5-coder\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Qwen Coder</a> are a step forward for local inline suggestions and handling simple coding queries. You can test these capabilities with <a href=\"\"https://www.thoughtworks.com/radar/tools/continue\"\">Continue</a>, which supports the integration of local models via runtimes like <a href=\"\"https://www.thoughtworks.com/radar/tools/ollama\"\">Ollama</a>.</p>\"",
     "relatedBlips": [
-      "Software engineering agents",
-      "Continue",
-      "Ollama"
+      "Blanket frontier model usage",
+      "Open-weight models"
     ]
   },
   {
@@ -497,7 +502,9 @@
     "isNew": "TRUE",
     "status": "new",
     "description": "\"<p><strong><a href=\"\"https://restate.dev/\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Restate</a></strong> is a durable execution platform, similar to <a href=\"\"https://www.thoughtworks.com/radar/platforms/temporal\"\">Temporal</a>, developed by the original creators of Apache Flink. Feature-wise it offers workflows as code, stateful event processing, the saga pattern and durable state machines. Written in Rust and deployed as a single binary, it uses a distributed log to record events, implemented using a virtual consensus algorithm based on <strong><a href=\"\"https://arxiv.org/pdf/1608.06696v1\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\">Flexible Paxos</a></strong>; this ensures durability in the event of node failure. SDKs are available for the usual suspects: Java, Go, Rust and TypeScript. We still maintain that it's best to avoid distributed transactions in distributed systems, because of both the additional complexity and the inevitable additional operational overhead involved. However, this platform is worth assessing if you can’t avoid distributed transactions in your environment.</p>\"",
-    "relatedBlips": []
+    "relatedBlips": [
+      "Temporal"
+    ]
   },
   {
     "name": "Supabase",
