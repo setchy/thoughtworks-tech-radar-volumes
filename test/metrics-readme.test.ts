@@ -3,9 +3,13 @@ import { describe, expect, it } from 'vitest';
 import type { VolumeMetricsData } from '../src/shared/types.ts';
 
 import {
+  formatLatestLinksMarkdown,
   formatVolumeMetricsMarkdown,
+  README_LATEST_LINKS_END,
+  README_LATEST_LINKS_START,
   README_METRICS_END,
   README_METRICS_START,
+  replaceLatestLinksSection,
   replaceVolumeMetricsSection,
 } from '../src/output/metricsReadme.ts';
 
@@ -64,11 +68,64 @@ describe('formatVolumeMetricsMarkdown', () => {
     expect(markdown).toMatch(
       /\| \*\*Total\*\*\s+\|\s+\| \*\*155\*\* \| \*\*125\*\* \|\s+\*\*18\*\* \|\s+\*\*0\*\* \|\s+\*\*12\*\* \|/,
     );
-    expect(markdown).toContain('Latest: **Volume 35 (Nov 2026)** — 117 blips.');
+    expect(markdown).not.toContain('Latest:');
+    expect(markdown).toContain('> [!IMPORTANT]');
+    expect(markdown).toContain(
+      '(eg: [latest volume CSV][volumes-latest-csv] or [latest volume JSON][volumes-latest-json])',
+    );
+    expect(markdown).toContain(
+      '-   <img src="./assets/icons/csv.png" width="26" height="26" alt="CSV"></img> **CSV** — [GitHub - Thoughtworks Volumes][volumes-csv]',
+    );
+    expect(markdown).toContain(
+      '-   <img src="./assets/icons/json.png" width="26" height="26" alt="JSON"></img> **JSON** — [GitHub - Thoughtworks Volumes][volumes-json]',
+    );
+    expect(markdown).toContain(
+      '-   <img src="./assets/icons/google-sheets.svg" width="24" height="24" alt="Google Sheets" /> **Google Sheets** — [Thoughtworks Technology Radar Volumes][volumes-google-sheets]',
+    );
+  });
+
+  it('links each volume to its CSV, JSON and Google Sheets files', () => {
+    const markdown = formatVolumeMetricsMarkdown(metrics);
+
+    expect(markdown).toContain(
+      '[CSV](volumes/csv/Thoughtworks%20Technology%20Radar%20Volume%2001%20(Jan%202010).csv)',
+    );
+    expect(markdown).toContain(
+      '[JSON](volumes/json/Thoughtworks%20Technology%20Radar%20Volume%2001%20(Jan%202010).json)',
+    );
+    expect(markdown).toContain('[Sheets][volumes-google-sheets]');
   });
 
   it('throws when there are no volumes', () => {
     expect(() => formatVolumeMetricsMarkdown({ volumes: [] })).toThrow(
+      /without radar volumes/,
+    );
+  });
+});
+
+describe('formatLatestLinksMarkdown', () => {
+  it('formats raw GitHub links for the latest volume files', () => {
+    const markdown = formatLatestLinksMarkdown(metrics);
+
+    expect(markdown).toContain(
+      '[volumes-latest-csv]: https://raw.githubusercontent.com/setchy/thoughtworks-tech-radar-volumes/main/volumes/csv/Thoughtworks%20Technology%20Radar%20Volume%2035%20(Nov%202026).csv',
+    );
+    expect(markdown).toContain(
+      '[volumes-latest-json]: https://raw.githubusercontent.com/setchy/thoughtworks-tech-radar-volumes/main/volumes/json/Thoughtworks%20Technology%20Radar%20Volume%2035%20(Nov%202026).json',
+    );
+    expect(markdown).toContain(
+      '[volumes-csv]: https://github.com/setchy/thoughtworks-tech-radar-volumes/tree/main/volumes/csv',
+    );
+    expect(markdown).toContain(
+      '[volumes-json]: https://github.com/setchy/thoughtworks-tech-radar-volumes/tree/main/volumes/json',
+    );
+    expect(markdown).toContain(
+      '[volumes-google-sheets]: https://docs.google.com/spreadsheets/d/1VRXOw7EUGBIeM8Khd5GFocxOWT59HRJtqs9-WbB61FI/edit?usp=sharing',
+    );
+  });
+
+  it('throws when there are no volumes', () => {
+    expect(() => formatLatestLinksMarkdown({ volumes: [] })).toThrow(
       /without radar volumes/,
     );
   });
@@ -87,5 +144,17 @@ describe('replaceVolumeMetricsSection', () => {
     expect(() => replaceVolumeMetricsSection('README', 'new')).toThrow(
       /markers/,
     );
+  });
+});
+
+describe('replaceLatestLinksSection', () => {
+  it('replaces only the marked latest links', () => {
+    const readme = `before\n${README_LATEST_LINKS_START}\nold\n${README_LATEST_LINKS_END}\nafter`;
+
+    expect(replaceLatestLinksSection(readme, 'new')).toBe('before\nnew\nafter');
+  });
+
+  it('throws when the markers are missing', () => {
+    expect(() => replaceLatestLinksSection('README', 'new')).toThrow(/markers/);
   });
 });
