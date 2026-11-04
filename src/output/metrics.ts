@@ -3,13 +3,50 @@ import { logger } from '../shared/logger.ts';
 import { volumeMetricsDataSchema } from '../shared/schemas.ts';
 import type { BlipTimelineEntry, VolumeMetricsData } from '../shared/types.ts';
 
-import { writeJSONFile } from '../data/repository.ts';
+import { readJSONFile, writeJSONFile } from '../data/repository.ts';
 import { summarizeVolumeMetrics } from '../operations/metrics.ts';
 
-export function generateVolumeMetrics(data: BlipTimelineEntry[]) {
+function getSheetName(volume: number, publishedDate: string) {
+  return `Vol ${volume} (${publishedDate})`;
+}
+
+function readExistingSheetGids(): Map<string, number> {
+  const gids = new Map<string, number>();
+
+  try {
+    const existing = readJSONFile<VolumeMetricsData>(
+      FILES.DATA.METRICS,
+      volumeMetricsDataSchema,
+    );
+
+    for (const volume of existing.volumes) {
+      if (volume.sheetGid !== null) {
+        gids.set(
+          getSheetName(volume.volume, volume.publishedDate),
+          volume.sheetGid,
+        );
+      }
+    }
+  } catch {
+    // A missing or stale metrics file should not block regenerating it.
+  }
+
+  return gids;
+}
+
+export function generateVolumeMetrics(
+  data: BlipTimelineEntry[],
+  sheetGids?: Map<string, number>,
+) {
   const metrics: VolumeMetricsData = {
     volumes: summarizeVolumeMetrics(data),
   };
+  const gids = sheetGids ?? readExistingSheetGids();
+
+  for (const volume of metrics.volumes) {
+    volume.sheetGid =
+      gids.get(getSheetName(volume.volume, volume.publishedDate)) ?? null;
+  }
 
   volumeMetricsDataSchema.parse(metrics);
 

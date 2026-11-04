@@ -25,7 +25,8 @@
       "files": {
         "csv": "volumes/csv/Thoughtworks Technology Radar Volume 01 (Jan 2010).csv",
         "json": "volumes/json/Thoughtworks Technology Radar Volume 01 (Jan 2010).json"
-      }
+      },
+      "sheetGid": 0
     },
     {
       "volume": 2,
@@ -52,7 +53,8 @@
       "files": {
         "csv": "volumes/csv/Thoughtworks Technology Radar Volume 02 (Apr 2010).csv",
         "json": "volumes/json/Thoughtworks Technology Radar Volume 02 (Apr 2010).json"
-      }
+      },
+      "sheetGid": 1781022360
     },
     {
       "volume": 3,
@@ -79,7 +81,8 @@
       "files": {
         "csv": "volumes/csv/Thoughtworks Technology Radar Volume 03 (Aug 2010).csv",
         "json": "volumes/json/Thoughtworks Technology Radar Volume 03 (Aug 2010).json"
-      }
+      },
+      "sheetGid": 626817796
     },
     {
       "volume": 4,
@@ -106,7 +109,8 @@
       "files": {
         "csv": "volumes/csv/Thoughtworks Technology Radar Volume 04 (Jan 2011).csv",
         "json": "volumes/json/Thoughtworks Technology Radar Volume 04 (Jan 2011).json"
-      }
+      },
+      "sheetGid": 267486723
     },
     {
       "volume": 5,
@@ -133,7 +137,8 @@
       "files": {
         "csv": "volumes/csv/Thoughtworks Technology Radar Volume 05 (Jul 2011).csv",
         "json": "volumes/json/Thoughtworks Technology Radar Volume 05 (Jul 2011).json"
-      }
+      },
+      "sheetGid": 309646524
     },
     {
       "volume": 6,
@@ -160,7 +165,8 @@
       "files": {
         "csv": "volumes/csv/Thoughtworks Technology Radar Volume 06 (Mar 2012).csv",
         "json": "volumes/json/Thoughtworks Technology Radar Volume 06 (Mar 2012).json"
-      }
+      },
+      "sheetGid": 345280840
     },
     {
       "volume": 7,
@@ -187,7 +193,8 @@
       "files": {
         "csv": "volumes/csv/Thoughtworks Technology Radar Volume 07 (Oct 2012).csv",
         "json": "volumes/json/Thoughtworks Technology Radar Volume 07 (Oct 2012).json"
-      }
+      },
+      "sheetGid": 751612636
     },
     {
       "volume": 8,
@@ -214,7 +221,8 @@
       "files": {
         "csv": "volumes/csv/Thoughtworks Technology Radar Volume 08 (May 2013).csv",
         "json": "volumes/json/Thoughtworks Technology Radar Volume 08 (May 2013).json"
-      }
+      },
+      "sheetGid": 1746737824
     },
     {
       "volume": 9,
@@ -241,7 +249,8 @@
       "files": {
         "csv": "volumes/csv/Thoughtworks Technology Radar Volume 09 (Jan 2014).csv",
         "json": "volumes/json/Thoughtworks Technology Radar Volume 09 (Jan 2014).json"
-      }
+      },
+      "sheetGid": 320354828
     },
     {
       "volume": 10,
@@ -268,7 +277,8 @@
       "files": {
         "csv": "volumes/csv/Thoughtworks Technology Radar Volume 10 (Jul 2014).csv",
         "json": "volumes/json/Thoughtworks Technology Radar Volume 10 (Jul 2014).json"
-      }
+      },
+      "sheetGid": 1785878056
     },
     {
       "volume": 11,
@@ -295,7 +305,8 @@
       "files": {
         "csv": "volumes/csv/Thoughtworks Technology Radar Volume 11 (Jan 2015).csv",
         "json": "volumes/json/Thoughtworks Technology Radar Volume 11 (Jan 2015).json"
-      }
+      },
+      "sheetGid": 2051357646
     },
     {
       "volume": 12,
@@ -322,7 +333,8 @@
       "files": {
         "csv": "volumes/csv/Thoughtworks Technology Radar Volume 12 (May 2015).csv",
         "json": "volumes/json/Thoughtworks Technology Radar Volume 12 (May 2015).json"
-      }
+      },
+      "sheetGid": 1583894441
     },
     {
       "volume": 13,
@@ -349,7 +361,8 @@
       "files": {
         "csv": "volumes/csv/Thoughtworks Technology Radar Volume 13 (Nov 2015).csv",
         "json": "volumes/json/Thoughtworks Technology Radar Volume 13 (Nov 2015).json"
-      }
+      },
+      "sheetGid": 1097036371
     },
     {
       "volume": 14,
@@ -376,7 +389,8 @@
       "files": {
         "csv": "volumes/csv/Thoughtworks Technology Radar Volume 14 (Apr 2016).csv",
         "json": "volumes/json/Thoughtworks Technology Radar Volume 14 (Apr 2016).json"
-      }
+      },
+      "sheetGid": 2129658591
     },
     {
       "volume": 15,
@@ -403,7 +417,8 @@
       "files": {
         "csv": "volumes/csv/Thoughtworks Technology Radar Volume 15 (Nov 2016).csv",
         "json": "volumes/json/Thoughtworks Technology Radar Volume 15 (Nov 2016).json"
-      }
+      },
+      "sheetGid": 1719937698
     },
     {
       "volume": 16,
@@ -430,7 +445,8 @@
       "files": {
         "csv": "volumes/csv/Thoughtworks Technology Radar Volume 16 (Mar 2017).csv",
         "json": "volumes/json/Thoughtworks Technology Radar Volume 16 (Mar 2017).json"
-      }
+      },
+      "sheetGid": 175167706
     },
     {
       "volume": 17,
@@ -457,7 +473,8 @@
       "files": {
         "csv": "volumes/csv/Thoughtworks Technology Radar Volume 17 (Nov 2017).csv",
         "json": "volumes/json/Thoughtworks Technology Radar Volume 17 (Nov 2017).json"
-      }
+      },
+      "sheetGid": 1878840051
     },
     {
       "volume": 18,
@@ -484,7 +501,8 @@
       "files": {
         "csv": "volumes/csv/Thoughtworks Technology Radar Volume 18 (May 2018).csv",
         "json": "volumes/json/Thoughtworks Technology Radar Volume 18 (May 2018).json"
-      }
+      },
+      "sheetGid": 857983539
     },
     {
       "volume": 19,
@@ -511,7 +529,8 @@
       "files": {
         "csv": "volumes/csv/Thoughtworks Technology Radar Volume 19 (Nov 2018).csv",
         "json": "volumes/json/Thoughtworks Technology Radar Volume 19 (Nov 2018).json"
-      }
+      },
+      "sheetGid": 776059796
     },
     {
       "volume": 20,
@@ -538,7 +557,8 @@
       "files": {
         "csv": "volumes/csv/Thoughtworks Technology Radar Volume 20 (Apr 2019).csv",
         "json": "volumes/json/Thoughtworks Technology Radar Volume 20 (Apr 2019).json"
-      }
+      },
+      "sheetGid": 24483134
     },
     {
       "volume": 21,
@@ -565,7 +585,8 @@
       "files": {
         "csv": "volumes/csv/Thoughtworks Technology Radar Volume 21 (Nov 2019).csv",
         "json": "volumes/json/Thoughtworks Technology Radar Volume 21 (Nov 2019).json"
-      }
+      },
+      "sheetGid": 661773183
     },
     {
       "volume": 22,
@@ -592,7 +613,8 @@
       "files": {
         "csv": "volumes/csv/Thoughtworks Technology Radar Volume 22 (May 2020).csv",
         "json": "volumes/json/Thoughtworks Technology Radar Volume 22 (May 2020).json"
-      }
+      },
+      "sheetGid": 1815055190
     },
     {
       "volume": 23,
@@ -619,7 +641,8 @@
       "files": {
         "csv": "volumes/csv/Thoughtworks Technology Radar Volume 23 (Oct 2020).csv",
         "json": "volumes/json/Thoughtworks Technology Radar Volume 23 (Oct 2020).json"
-      }
+      },
+      "sheetGid": 876098616
     },
     {
       "volume": 24,
@@ -646,7 +669,8 @@
       "files": {
         "csv": "volumes/csv/Thoughtworks Technology Radar Volume 24 (Apr 2021).csv",
         "json": "volumes/json/Thoughtworks Technology Radar Volume 24 (Apr 2021).json"
-      }
+      },
+      "sheetGid": 286764606
     },
     {
       "volume": 25,
@@ -673,7 +697,8 @@
       "files": {
         "csv": "volumes/csv/Thoughtworks Technology Radar Volume 25 (Oct 2021).csv",
         "json": "volumes/json/Thoughtworks Technology Radar Volume 25 (Oct 2021).json"
-      }
+      },
+      "sheetGid": 291039304
     },
     {
       "volume": 26,
@@ -700,7 +725,8 @@
       "files": {
         "csv": "volumes/csv/Thoughtworks Technology Radar Volume 26 (Mar 2022).csv",
         "json": "volumes/json/Thoughtworks Technology Radar Volume 26 (Mar 2022).json"
-      }
+      },
+      "sheetGid": 805888397
     },
     {
       "volume": 27,
@@ -727,7 +753,8 @@
       "files": {
         "csv": "volumes/csv/Thoughtworks Technology Radar Volume 27 (Oct 2022).csv",
         "json": "volumes/json/Thoughtworks Technology Radar Volume 27 (Oct 2022).json"
-      }
+      },
+      "sheetGid": 883422844
     },
     {
       "volume": 28,
@@ -754,7 +781,8 @@
       "files": {
         "csv": "volumes/csv/Thoughtworks Technology Radar Volume 28 (Apr 2023).csv",
         "json": "volumes/json/Thoughtworks Technology Radar Volume 28 (Apr 2023).json"
-      }
+      },
+      "sheetGid": 1329715985
     },
     {
       "volume": 29,
@@ -781,7 +809,8 @@
       "files": {
         "csv": "volumes/csv/Thoughtworks Technology Radar Volume 29 (Sep 2023).csv",
         "json": "volumes/json/Thoughtworks Technology Radar Volume 29 (Sep 2023).json"
-      }
+      },
+      "sheetGid": 879957481
     },
     {
       "volume": 30,
@@ -808,7 +837,8 @@
       "files": {
         "csv": "volumes/csv/Thoughtworks Technology Radar Volume 30 (Apr 2024).csv",
         "json": "volumes/json/Thoughtworks Technology Radar Volume 30 (Apr 2024).json"
-      }
+      },
+      "sheetGid": 824198696
     },
     {
       "volume": 31,
@@ -835,7 +865,8 @@
       "files": {
         "csv": "volumes/csv/Thoughtworks Technology Radar Volume 31 (Oct 2024).csv",
         "json": "volumes/json/Thoughtworks Technology Radar Volume 31 (Oct 2024).json"
-      }
+      },
+      "sheetGid": 407606344
     },
     {
       "volume": 32,
@@ -862,7 +893,8 @@
       "files": {
         "csv": "volumes/csv/Thoughtworks Technology Radar Volume 32 (Apr 2025).csv",
         "json": "volumes/json/Thoughtworks Technology Radar Volume 32 (Apr 2025).json"
-      }
+      },
+      "sheetGid": 1795552018
     },
     {
       "volume": 33,
@@ -889,7 +921,8 @@
       "files": {
         "csv": "volumes/csv/Thoughtworks Technology Radar Volume 33 (Nov 2025).csv",
         "json": "volumes/json/Thoughtworks Technology Radar Volume 33 (Nov 2025).json"
-      }
+      },
+      "sheetGid": 543182406
     },
     {
       "volume": 34,
@@ -916,7 +949,8 @@
       "files": {
         "csv": "volumes/csv/Thoughtworks Technology Radar Volume 34 (Apr 2026).csv",
         "json": "volumes/json/Thoughtworks Technology Radar Volume 34 (Apr 2026).json"
-      }
+      },
+      "sheetGid": 308125978
     },
     {
       "volume": 35,
@@ -943,7 +977,8 @@
       "files": {
         "csv": "volumes/csv/Thoughtworks Technology Radar Volume 35 (Nov 2026).csv",
         "json": "volumes/json/Thoughtworks Technology Radar Volume 35 (Nov 2026).json"
-      }
+      },
+      "sheetGid": 1228527504
     }
   ]
 }

@@ -12,7 +12,7 @@ import type { BlipTimelineEntry, ReportType } from '../shared/types.ts';
 
 import { readJSONFile } from '../data/repository.ts';
 import { generateCSV } from './csv.ts';
-import { updateGoogleSheets } from './googleSheets.ts';
+import { fetchGoogleSheetGids, updateGoogleSheets } from './googleSheets.ts';
 import { generateJSON } from './json.ts';
 import { generateVolumeMetrics } from './metrics.ts';
 import { updateReadmeMetrics } from './metricsReadme.ts';
@@ -23,11 +23,8 @@ export async function generateVolumes(reportType: ReportType) {
     blipTimelineEntryListSchema,
   );
 
-  if (reportType === 'all' || reportType === 'metrics') {
-    updateReadmeMetrics(generateVolumeMetrics(data));
-  }
-
   if (reportType === 'metrics') {
+    updateReadmeMetrics(generateVolumeMetrics(data));
     return;
   }
 
@@ -60,7 +57,18 @@ export async function generateVolumes(reportType: ReportType) {
   }
 
   await Promise.all(sheetUpdates);
+
+  if (reportType === 'all' || reportType === 'google-sheets') {
+    const sheetGids = await fetchGoogleSheetGids();
+    updateReadmeMetrics(generateVolumeMetrics(data, sheetGids));
+  }
 }
 
 export { formatCSVDataset } from './csv.ts';
-export { generateCSV, generateJSON, generateVolumeMetrics, updateGoogleSheets };
+export {
+  fetchGoogleSheetGids,
+  generateCSV,
+  generateJSON,
+  generateVolumeMetrics,
+  updateGoogleSheets,
+};

@@ -13,8 +13,10 @@ const GITHUB_RAW_BASE =
   'https://raw.githubusercontent.com/setchy/thoughtworks-tech-radar-volumes/main';
 const GITHUB_VOLUMES_BASE =
   'https://github.com/setchy/thoughtworks-tech-radar-volumes/tree/main/volumes';
-const GOOGLE_SHEETS_URL =
-  'https://docs.google.com/spreadsheets/d/1VRXOw7EUGBIeM8Khd5GFocxOWT59HRJtqs9-WbB61FI/edit?usp=sharing';
+const GOOGLE_SHEET_ID = '1VRXOw7EUGBIeM8Khd5GFocxOWT59HRJtqs9-WbB61FI';
+const GOOGLE_SHEETS_URL = `https://docs.google.com/spreadsheets/d/${GOOGLE_SHEET_ID}/edit?usp=sharing`;
+const googleSheetGidUrl = (gid: number) =>
+  `https://docs.google.com/spreadsheets/d/${GOOGLE_SHEET_ID}/edit#gid=${gid}`;
 
 const EMPTY_VOLUMES_ERROR =
   'Cannot format a README summary without radar volumes';
@@ -22,6 +24,11 @@ const EMPTY_VOLUMES_ERROR =
 const formatNumber = (value: number) => value.toLocaleString('en-US');
 
 const rawFileUrl = (path: string) => `${GITHUB_RAW_BASE}/${encodeURI(path)}`;
+
+const formatGoogleSheetLink = (sheetGid: number | null) =>
+  sheetGid === null
+    ? '[Sheets][volumes-google-sheets]'
+    : `[Sheets](${googleSheetGidUrl(sheetGid)})`;
 
 type Alignment = 'left' | 'right';
 
@@ -105,7 +112,7 @@ export function formatVolumeMetricsMarkdown(data: VolumeMetricsData): string {
     formatNumber(volume.status.noChange),
     `[CSV](${encodeURI(volume.files.csv)})`,
     `[JSON](${encodeURI(volume.files.json)})`,
-    '[Sheets][volumes-google-sheets]',
+    formatGoogleSheetLink(volume.sheetGid),
   ]);
 
   rows.push([

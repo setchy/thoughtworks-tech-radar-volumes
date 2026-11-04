@@ -31,6 +31,7 @@ const metrics: VolumeMetricsData = {
         csv: 'volumes/csv/Thoughtworks Technology Radar Volume 01 (Jan 2010).csv',
         json: 'volumes/json/Thoughtworks Technology Radar Volume 01 (Jan 2010).json',
       },
+      sheetGid: null,
     },
     {
       volume: 35,
@@ -48,6 +49,7 @@ const metrics: VolumeMetricsData = {
         csv: 'volumes/csv/Thoughtworks Technology Radar Volume 35 (Nov 2026).csv',
         json: 'volumes/json/Thoughtworks Technology Radar Volume 35 (Nov 2026).json',
       },
+      sheetGid: 12345,
     },
   ],
 };
@@ -94,6 +96,9 @@ describe('formatVolumeMetricsMarkdown', () => {
       '[JSON](volumes/json/Thoughtworks%20Technology%20Radar%20Volume%2001%20(Jan%202010).json)',
     );
     expect(markdown).toContain('[Sheets][volumes-google-sheets]');
+    expect(markdown).toContain(
+      '[Sheets](https://docs.google.com/spreadsheets/d/1VRXOw7EUGBIeM8Khd5GFocxOWT59HRJtqs9-WbB61FI/edit#gid=12345)',
+    );
   });
 
   it('throws when there are no volumes', () => {

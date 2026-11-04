@@ -5,6 +5,7 @@ import type {
   VolumeMetricsData,
 } from '../src/shared/types.ts';
 
+import { fetchGoogleSheetGids } from '../src/output/googleSheets.ts';
 import { generateVolumes } from '../src/output/index.ts';
 import { updateReadmeMetrics } from '../src/output/metricsReadme.ts';
 
@@ -74,6 +75,7 @@ vi.mock('../src/data/repository.ts', () => ({
 
 vi.mock('../src/output/googleSheets.ts', () => ({
   updateGoogleSheets: vi.fn().mockResolvedValue(undefined),
+  fetchGoogleSheetGids: vi.fn().mockResolvedValue(new Map()),
 }));
 
 vi.mock('../src/output/metricsReadme.ts', () => ({
@@ -138,5 +140,14 @@ describe('generateVolumes', () => {
     }
     expect((metrics[1] as VolumeMetricsData).volumes).toHaveLength(2);
     expect(updateReadmeMetrics).toHaveBeenCalledWith(metrics[1]);
+    expect(fetchGoogleSheetGids).toHaveBeenCalled();
+  });
+
+  it('refreshes metrics with sheet gids for the google-sheets report', async () => {
+    await generateVolumes('google-sheets');
+
+    expect(fetchGoogleSheetGids).toHaveBeenCalled();
+    expect(writtenJSONs).toHaveLength(1);
+    expect(writtenJSONs[0][0]).toBe('data/volume-metrics.json');
   });
 });
