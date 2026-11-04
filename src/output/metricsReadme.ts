@@ -94,7 +94,7 @@ export function formatBlipsBadgeMarkdown(data: VolumeMetricsData): string {
 
   return [
     README_BLIPS_BADGE_START,
-    `[blips-badge]: https://img.shields.io/badge/blips-${formattedBlips}-blue?logo=radar`,
+    `[blips-badge]: https://img.shields.io/badge/blips-${formattedBlips}-blue?logo=satellite`,
     README_BLIPS_BADGE_END,
   ].join('\n');
 }

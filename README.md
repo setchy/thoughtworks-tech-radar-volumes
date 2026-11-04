@@ -179,7 +179,7 @@ Contributions are welcome! 🎉
 [license-badge]: https://img.shields.io/github/license/setchy/thoughtworks-tech-radar-volumes?logo=github
 [license]: LICENSE
 <!-- blips-badge:start -->
-[blips-badge]: https://img.shields.io/badge/blips-3%2C426-blue?logo=radar
+[blips-badge]: https://img.shields.io/badge/blips-3%2C426-blue?logo=satellite
 <!-- blips-badge:end -->
 [volume-metrics]: data/volume-metrics.json
 <!-- volume-latest-links:start -->
