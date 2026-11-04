@@ -1,6 +1,6 @@
 # Thoughtworks Technology Radar Volumes
 
-[![CI Workflow][ci-workflow-badge]][github-actions] [![Refresh Workflow][refresh-workflow-badge]][github-actions] [![Quality Gate Status][quality-badge]][quality] [![Renovate enabled][renovate-badge]][renovate] [![License][license-badge]][license]
+[![CI Workflow][ci-workflow-badge]][github-actions] [![Refresh Workflow][refresh-workflow-badge]][github-actions] [![Quality Gate Status][quality-badge]][quality] [![Renovate enabled][renovate-badge]][renovate] [![License][license-badge]][license] [![Blips][blips-badge]][volume-metrics]
 
 > 📡 **From blip to big picture:** follow technology ideas through the [Thoughtworks Technology Radar][tw-radar], from today’s signals back through every [archived edition][tw-archive].
 
@@ -178,6 +178,10 @@ Contributions are welcome! 🎉
 [quality-badge]: https://img.shields.io/sonar/quality_gate/setchy_thoughtworks-tech-radar-volumes?server=https%3A%2F%2Fsonarcloud.io&logo=sonarqubecloud
 [license-badge]: https://img.shields.io/github/license/setchy/thoughtworks-tech-radar-volumes?logo=github
 [license]: LICENSE
+<!-- blips-badge:start -->
+[blips-badge]: https://img.shields.io/badge/blips-3%2C426-blue
+<!-- blips-badge:end -->
+[volume-metrics]: data/volume-metrics.json
 <!-- volume-latest-links:start -->
 [volumes-latest-csv]: https://raw.githubusercontent.com/setchy/thoughtworks-tech-radar-volumes/main/volumes/csv/Thoughtworks%20Technology%20Radar%20Volume%2035%20(Nov%202026).csv
 [volumes-latest-json]: https://raw.githubusercontent.com/setchy/thoughtworks-tech-radar-volumes/main/volumes/json/Thoughtworks%20Technology%20Radar%20Volume%2035%20(Nov%202026).json
