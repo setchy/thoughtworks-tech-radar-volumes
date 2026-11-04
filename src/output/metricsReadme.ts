@@ -26,7 +26,7 @@ function formatTable(
       : cell.padEnd(widths[index]);
 
   const formatRow = (cells: string[]) =>
-    `| ${cells.map(formatCell).join(' | ')} |`;
+    `| ${cells.map((cell, index) => formatCell(cell, index)).join(' | ')} |`;
 
   const separator = `| ${widths
     .map((width, index) =>
@@ -40,7 +40,8 @@ function formatTable(
 }
 
 export function formatVolumeMetricsMarkdown(data: VolumeMetricsData): string {
-  if (data.volumes.length === 0) {
+  const [firstVolume] = data.volumes;
+  if (!firstVolume) {
     throw new Error('Cannot format a README summary without radar volumes');
   }
 
@@ -55,8 +56,9 @@ export function formatVolumeMetricsMarkdown(data: VolumeMetricsData): string {
     { blips: 0, new: 0, movedIn: 0, movedOut: 0, noChange: 0 },
   );
 
-  const latest = data.volumes.reduce((current, volume) =>
-    volume.volume > current.volume ? volume : current,
+  const latest = data.volumes.reduce(
+    (current, volume) => (volume.volume > current.volume ? volume : current),
+    firstVolume,
   );
 
   const rows = data.volumes.map((volume) => [
