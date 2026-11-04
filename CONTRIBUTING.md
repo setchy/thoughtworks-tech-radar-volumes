@@ -193,7 +193,7 @@ The datasets are produced by a single TypeScript CLI that fetches the radar site
 │                              ▼   fetch sitemap                       │
 │  ┌──────────────────┐  (regex + sort)  ┌──────────────────┐          │
 │  │    Radar Sitemap │ ─────────────────▶│   search-links   │          │
-│  │       .xml       │                   │      .json       │ ~1,938   │
+│  │       .xml       │                   │      .json       │ ~2,025   │
 │  └──────────────────┘                   └────────┬─────────┘  links  │
 │                                                  │                  │
 │                                                  ▼  per blip        │
@@ -203,7 +203,7 @@ The datasets are produced by a single TypeScript CLI that fetches the radar site
 │                                     │  (cheerio DOM scrape) │        │
 │                                     └───────────┬───────────┘        │
 │                                                 ▼                   │
-│                              ┌────────────────────────┐  ~3,309     │
+│                              ┌────────────────────────┐  ~3,426     │
 │                              │     search-data.json   │   rows      │
 │                              │  (combined master set) │  35 volumes │
 │                              └───────────┬────────────┘             │

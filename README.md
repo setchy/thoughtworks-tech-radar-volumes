@@ -12,7 +12,7 @@ A CLI and complete collection of datasets for the Thoughtworks Technology Radar 
 
 ## ✨ Features
 
-- 🗂️ **Complete archive** — every published radar volume, including archived ones, normalized into a single master dataset (35 volumes, ~3,300 blip entries)
+- 🗂️ **Complete archive** — every published radar volume, including archived ones, normalized into a single master dataset (35 volumes, ~3,400 blip entries)
 - 📄 **Three formats, one dataset** — each volume is published as CSV, JSON, and a combined Google Sheets document, all generated from the same source
 - 🔄 **Always fresh** — datasets are automatically re-checked weekly, and any changes land via an automated pull request
 - 🖥️ **Powerful CLI** — search, filter, stats, validate, and volume generation with `text`, `json`, `jsonl`, `csv`, and `table` output

@@ -25,7 +25,8 @@
     "status": "no change",
     "description": "\"<p>With the number of high-profile security breaches in the past months, software development teams no longer need convincing that they must place an emphasis on writing secure software and dealing with their users' data in a responsible way. The teams face a steep learning curve, though, and the vast number of potential threats—ranging from organized crime and government spying to teenagers who attack systems \"\"for the lulz\"\"—can be overwhelming. <a href=\"\"https://www.owasp.org/index.php/Category:Threat_Modeling\"\" target=\"\"_blank\"\" aria-label=\"\"This is an external link. Opens in new tab\"\" class=\"\"pop-out\"\"><strong>Threat modeling</strong></a> provides a set of techniques that help you identify and classify potential threats early in the development process. It is important to understand that it is only part of a strategy to stay ahead of threats. When used in conjunction with techniques such as establishing cross-functional security requirements to address common risks in the technologies a project uses and using automated security scanners, threat modeling can be a powerful asset.</p>\"",
     "relatedBlips": [
-      "Security sandwich"
+      "MITRE ATLAS",
+      "Toxic flow analysis for AI"
     ]
   },
   {
