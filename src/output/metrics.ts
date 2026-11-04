@@ -15,4 +15,6 @@ export function generateVolumeMetrics(data: BlipTimelineEntry[]) {
 
   logger.info('Creating volume metrics file', FILES.DATA.METRICS);
   writeJSONFile(FILES.DATA.METRICS, metrics);
+
+  return metrics;
 }

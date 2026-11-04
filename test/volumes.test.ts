@@ -6,6 +6,7 @@ import type {
 } from '../src/shared/types.ts';
 
 import { generateVolumes } from '../src/output/index.ts';
+import { updateReadmeMetrics } from '../src/output/metricsReadme.ts';
 
 const masterData: BlipTimelineEntry[] = [
   {
@@ -75,10 +76,15 @@ vi.mock('../src/output/googleSheets.ts', () => ({
   updateGoogleSheets: vi.fn().mockResolvedValue(undefined),
 }));
 
+vi.mock('../src/output/metricsReadme.ts', () => ({
+  updateReadmeMetrics: vi.fn(),
+}));
+
 describe('generateVolumes', () => {
   beforeEach(() => {
     writtenCSVs.length = 0;
     writtenJSONs.length = 0;
+    vi.clearAllMocks();
   });
 
   it('groups master data into per-volume CSV files', () => {
@@ -117,6 +123,7 @@ describe('generateVolumes', () => {
     const [filename, contents] = writtenJSONs[0];
     expect(filename).toBe('data/volume-metrics.json');
     expect((contents as VolumeMetricsData).volumes).toHaveLength(2);
+    expect(updateReadmeMetrics).toHaveBeenCalledWith(contents);
   });
 
   it('writes the metrics index as part of the full pipeline', async () => {
@@ -130,5 +137,6 @@ describe('generateVolumes', () => {
       throw new Error('Missing data/volume-metrics.json output');
     }
     expect((metrics[1] as VolumeMetricsData).volumes).toHaveLength(2);
+    expect(updateReadmeMetrics).toHaveBeenCalledWith(metrics[1]);
   });
 });

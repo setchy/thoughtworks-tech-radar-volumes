@@ -15,6 +15,7 @@ import { generateCSV } from './csv.ts';
 import { updateGoogleSheets } from './googleSheets.ts';
 import { generateJSON } from './json.ts';
 import { generateVolumeMetrics } from './metrics.ts';
+import { updateReadmeMetrics } from './metricsReadme.ts';
 
 export async function generateVolumes(reportType: ReportType) {
   const data = readJSONFile<BlipTimelineEntry[]>(
@@ -23,7 +24,7 @@ export async function generateVolumes(reportType: ReportType) {
   );
 
   if (reportType === 'all' || reportType === 'metrics') {
-    generateVolumeMetrics(data);
+    updateReadmeMetrics(generateVolumeMetrics(data));
   }
 
   if (reportType === 'metrics') {

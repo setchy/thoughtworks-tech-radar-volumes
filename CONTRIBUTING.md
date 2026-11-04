@@ -231,7 +231,7 @@ pnpm lint
 
 This runs `links`, `data` and regenerates all volumes. Outputs land in `data/` and `volumes/`, including the derived `data/volume-metrics.json` index.
 
-To regenerate only the metrics index, run `pnpm start volumes metrics`.
+To regenerate only the metrics index, run `pnpm start volumes metrics`. That command also refreshes the generated volume-metrics summary in `README.md`.
 
 ### ☁️ Google Sheets
 
