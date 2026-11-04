@@ -10,6 +10,7 @@ export const FILES = {
   DATA: {
     LINKS: 'data/search-links.json',
     MASTER: 'data/search-data.json',
+    METRICS: 'data/volume-metrics.json',
   },
   VOLUMES: {
     FOLDER: 'volumes',
@@ -67,17 +68,25 @@ export const VOLUME_PUBLICATION_DATES = [
 
 export const NOT_FOUND_VOLUME_NUMBER = 100;
 
-export const QUADRANT_SORT_ORDER = [
+export const QUADRANT_NAMES = [
   'techniques',
   'platforms',
   'tools',
   'languages-and-frameworks',
-];
+] as const;
+
+export type Quadrant = (typeof QUADRANT_NAMES)[number];
+
+export const QUADRANT_SORT_ORDER: readonly string[] = QUADRANT_NAMES;
 
 // From Apr 2026 (Volume 34), Thoughtworks renamed "Hold" to "Caution". Both are treated as equivalent.
 export const CAUTION_RENAME_VOLUME = 34;
 
-export const RING_SORT_ORDER = ['adopt', 'trial', 'assess', 'caution'];
+export const RING_NAMES = ['adopt', 'trial', 'assess', 'caution'] as const;
+
+export type Ring = (typeof RING_NAMES)[number];
+
+export const RING_SORT_ORDER: readonly string[] = RING_NAMES;
 
 // Returns the canonical ring name for a given volume: 'caution' for vol 34+, 'hold' for earlier.
 export function getRingNameForVolume(ring: string, volume: number): string {
@@ -107,7 +116,13 @@ export const BLIP_STATUSES = [
   'no change',
 ] as const;
 
-export const REPORT_TYPES = ['all', 'csv', 'json', 'google-sheets'] as const;
+export const REPORT_TYPES = [
+  'all',
+  'csv',
+  'json',
+  'google-sheets',
+  'metrics',
+] as const;
 
 export const SEARCHABLE_FIELDS = [
   'name',

@@ -1,6 +1,8 @@
 import type {
   BLIP_STATUSES,
+  Quadrant,
   REPORT_TYPES,
+  Ring,
   SEARCHABLE_FIELDS,
 } from './constants.ts';
 
@@ -23,6 +25,30 @@ export interface BlipTimelineEntry {
 
 export interface EnrichedBlip extends BlipTimelineEntry {
   status: BlipStatus;
+}
+
+export interface VolumeStatusMetrics {
+  new: number;
+  movedIn: number;
+  movedOut: number;
+  noChange: number;
+}
+
+export interface VolumeMetrics {
+  volume: number;
+  publishedDate: string;
+  total: number;
+  status: VolumeStatusMetrics;
+  rings: Record<Ring, number>;
+  quadrants: Record<Quadrant, number>;
+  files: {
+    csv: string;
+    json: string;
+  };
+}
+
+export interface VolumeMetricsData {
+  volumes: VolumeMetrics[];
 }
 
 export type BlipStatus = (typeof BLIP_STATUSES)[number];

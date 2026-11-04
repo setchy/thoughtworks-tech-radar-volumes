@@ -14,12 +14,21 @@ import { readJSONFile } from '../data/repository.ts';
 import { generateCSV } from './csv.ts';
 import { updateGoogleSheets } from './googleSheets.ts';
 import { generateJSON } from './json.ts';
+import { generateVolumeMetrics } from './metrics.ts';
 
 export async function generateVolumes(reportType: ReportType) {
   const data = readJSONFile<BlipTimelineEntry[]>(
     FILES.DATA.MASTER,
     blipTimelineEntryListSchema,
   );
+
+  if (reportType === 'all' || reportType === 'metrics') {
+    generateVolumeMetrics(data);
+  }
+
+  if (reportType === 'metrics') {
+    return;
+  }
 
   const groupedByVolumes = groupBy(data, 'volume');
   const sheetUpdates: Promise<void>[] = [];
@@ -53,4 +62,4 @@ export async function generateVolumes(reportType: ReportType) {
 }
 
 export { formatCSVDataset } from './csv.ts';
-export { generateCSV, generateJSON, updateGoogleSheets };
+export { generateCSV, generateJSON, generateVolumeMetrics, updateGoogleSheets };
