@@ -8,6 +8,8 @@ export const README_METRICS_START = '<!-- volume-metrics:start -->';
 export const README_METRICS_END = '<!-- volume-metrics:end -->';
 export const README_LATEST_LINKS_START = '<!-- volume-latest-links:start -->';
 export const README_LATEST_LINKS_END = '<!-- volume-latest-links:end -->';
+export const README_BLIPS_BADGE_START = '<!-- blips-badge:start -->';
+export const README_BLIPS_BADGE_END = '<!-- blips-badge:end -->';
 
 const GITHUB_RAW_BASE =
   'https://raw.githubusercontent.com/setchy/thoughtworks-tech-radar-volumes/main';
@@ -83,6 +85,17 @@ export function formatLatestLinksMarkdown(data: VolumeMetricsData): string {
     `[volumes-json]: ${GITHUB_VOLUMES_BASE}/json`,
     `[volumes-google-sheets]: ${GOOGLE_SHEETS_URL}`,
     README_LATEST_LINKS_END,
+  ].join('\n');
+}
+
+export function formatBlipsBadgeMarkdown(data: VolumeMetricsData): string {
+  const blips = data.volumes.reduce((sum, volume) => sum + volume.total, 0);
+  const formattedBlips = formatNumber(blips).replaceAll(',', '%2C');
+
+  return [
+    README_BLIPS_BADGE_START,
+    `[blips-badge]: https://img.shields.io/badge/blips-${formattedBlips}-blue`,
+    README_BLIPS_BADGE_END,
   ].join('\n');
 }
 
@@ -205,6 +218,18 @@ export function replaceVolumeMetricsSection(
   );
 }
 
+export function replaceBlipsBadgeSection(
+  readme: string,
+  markdown: string,
+): string {
+  return replaceMarkedSection(
+    readme,
+    README_BLIPS_BADGE_START,
+    README_BLIPS_BADGE_END,
+    markdown,
+  );
+}
+
 export function replaceLatestLinksSection(
   readme: string,
   markdown: string,
@@ -219,8 +244,12 @@ export function replaceLatestLinksSection(
 
 export function updateReadmeMetrics(data: VolumeMetricsData) {
   const readme = readFileSync(README_PATH, 'utf-8');
-  const withMetrics = replaceVolumeMetricsSection(
+  const withBadge = replaceBlipsBadgeSection(
     readme,
+    formatBlipsBadgeMarkdown(data),
+  );
+  const withMetrics = replaceVolumeMetricsSection(
+    withBadge,
     formatVolumeMetricsMarkdown(data),
   );
   const updated = replaceLatestLinksSection(

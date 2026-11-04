@@ -3,12 +3,16 @@ import { describe, expect, it } from 'vitest';
 import type { VolumeMetricsData } from '../src/shared/types.ts';
 
 import {
+  formatBlipsBadgeMarkdown,
   formatLatestLinksMarkdown,
   formatVolumeMetricsMarkdown,
+  README_BLIPS_BADGE_END,
+  README_BLIPS_BADGE_START,
   README_LATEST_LINKS_END,
   README_LATEST_LINKS_START,
   README_METRICS_END,
   README_METRICS_START,
+  replaceBlipsBadgeSection,
   replaceLatestLinksSection,
   replaceVolumeMetricsSection,
 } from '../src/output/metricsReadme.ts';
@@ -133,6 +137,22 @@ describe('formatLatestLinksMarkdown', () => {
     expect(() => formatLatestLinksMarkdown({ volumes: [] })).toThrow(
       /without radar volumes/,
     );
+  });
+});
+
+describe('formatBlipsBadgeMarkdown', () => {
+  it('formats the total blips badge', () => {
+    expect(formatBlipsBadgeMarkdown(metrics)).toContain(
+      '[blips-badge]: https://img.shields.io/badge/blips-155-blue',
+    );
+  });
+});
+
+describe('replaceBlipsBadgeSection', () => {
+  it('replaces only the badge label', () => {
+    const readme = `before\n${README_BLIPS_BADGE_START}\nold\n${README_BLIPS_BADGE_END}\nafter`;
+
+    expect(replaceBlipsBadgeSection(readme, 'new')).toBe('before\nnew\nafter');
   });
 });
 
