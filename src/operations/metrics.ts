@@ -74,6 +74,7 @@ export function summarizeVolumeMetrics(
           csv: `${FILES.VOLUMES.FOLDER}/csv/${filename}.csv`,
           json: `${FILES.VOLUMES.FOLDER}/json/${filename}.json`,
         },
+        sheetGid: null,
       };
     });
 }

@@ -47,6 +47,7 @@ export const volumeMetricsSchema = z.object({
     csv: z.string(),
     json: z.string(),
   }),
+  sheetGid: z.number().int().nonnegative().nullable().default(null),
 }) satisfies z.ZodType<VolumeMetrics>;
 
 export const volumeMetricsDataSchema = z.object({

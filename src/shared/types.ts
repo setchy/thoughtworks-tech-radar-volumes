@@ -45,6 +45,7 @@ export interface VolumeMetrics {
     csv: string;
     json: string;
   };
+  sheetGid: number | null;
 }
 
 export interface VolumeMetricsData {

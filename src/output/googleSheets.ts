@@ -12,22 +12,7 @@ import type { BlipTimelineEntry } from '../shared/types.ts';
 
 import { getVolumePublicationDate } from '../operations/utils.ts';
 
-export async function updateGoogleSheets(
-  volume: string,
-  volumeData: BlipTimelineEntry[],
-) {
-  const data = volumeData.map((blip) => [
-    blip.name,
-    canonicalizeRingName(blip.ring),
-    blip.quadrant,
-    blip.isNew.toString().toUpperCase(),
-    // getStatus omitted here; CSV dataset previously prepended headers elsewhere
-    '',
-    blip.descriptionHtml,
-  ]);
-  data.unshift(CSV_HEADERS);
-
-  const sheetName = `Vol ${volume} (${getVolumePublicationDate(volume)})`;
+function getGoogleSheetsClient() {
   const sheetId = process.env.GOOGLE_SHEET_ID;
   const clientEmail = process.env.GOOGLE_CLIENT_EMAIL;
   const privateKey = process.env.GOOGLE_PRIVATE_KEY;
@@ -45,10 +30,32 @@ export async function updateGoogleSheets(
     scopes: ['https://www.googleapis.com/auth/spreadsheets'],
   });
 
-  const sheets = google.sheets({
-    version: 'v4',
-    auth,
-  });
+  return {
+    sheetId,
+    sheets: google.sheets({
+      version: 'v4',
+      auth,
+    }),
+  };
+}
+
+export async function updateGoogleSheets(
+  volume: string,
+  volumeData: BlipTimelineEntry[],
+) {
+  const data = volumeData.map((blip) => [
+    blip.name,
+    canonicalizeRingName(blip.ring),
+    blip.quadrant,
+    blip.isNew.toString().toUpperCase(),
+    // getStatus omitted here; CSV dataset previously prepended headers elsewhere
+    '',
+    blip.descriptionHtml,
+  ]);
+  data.unshift(CSV_HEADERS);
+
+  const sheetName = `Vol ${volume} (${getVolumePublicationDate(volume)})`;
+  const { sheetId, sheets } = getGoogleSheetsClient();
 
   try {
     const _response = await sheets.spreadsheets.values.get({
@@ -114,4 +121,29 @@ export async function updateGoogleSheets(
   logger.info(
     `Google Sheet ${sheetName} has been updated: ${URLS.GOOGLE_SHEET}${sheetId}&sheetName=${sheetName}`,
   );
+}
+
+/**
+ * Returns the numeric Google Sheets tab id (gid) for every sheet, keyed by title.
+ * Deep links need the gid; tab names alone do not work in public sheet URLs.
+ */
+export async function fetchGoogleSheetGids(): Promise<Map<string, number>> {
+  const { sheetId, sheets } = getGoogleSheetsClient();
+  const response = await sheets.spreadsheets.get({
+    spreadsheetId: sheetId,
+    fields: 'sheets.properties(sheetId,title)',
+  });
+
+  const gids = new Map<string, number>();
+
+  for (const sheet of response.data.sheets ?? []) {
+    const title = sheet.properties?.title;
+    const gid = sheet.properties?.sheetId;
+
+    if (title !== undefined && title !== null && gid != null) {
+      gids.set(title, gid);
+    }
+  }
+
+  return gids;
 }

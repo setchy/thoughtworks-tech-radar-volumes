@@ -56,6 +56,7 @@ describe('summarizeVolumeMetrics', () => {
       volume: 1,
       publishedDate: 'Jan 2010',
       total: 4,
+      sheetGid: null,
       status: { new: 1, movedIn: 1, movedOut: 1, noChange: 1 },
       rings: { adopt: 1, trial: 1, assess: 1, caution: 1 },
       quadrants: {
