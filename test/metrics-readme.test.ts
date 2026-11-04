@@ -27,6 +27,7 @@ const metrics: VolumeMetricsData = {
         csv: 'volumes/csv/Thoughtworks Technology Radar Volume 01 (Jan 2010).csv',
         json: 'volumes/json/Thoughtworks Technology Radar Volume 01 (Jan 2010).json',
       },
+      sheetGid: null,
     },
     {
       volume: 35,
@@ -44,6 +45,7 @@ const metrics: VolumeMetricsData = {
         csv: 'volumes/csv/Thoughtworks Technology Radar Volume 35 (Nov 2026).csv',
         json: 'volumes/json/Thoughtworks Technology Radar Volume 35 (Nov 2026).json',
       },
+      sheetGid: null,
     },
   ],
 };

@@ -81,7 +81,19 @@ describe('generateVolumeMetrics', () => {
       total: 2,
       status: { new: 1, movedIn: 1, movedOut: 0, noChange: 0 },
       rings: { adopt: 1, trial: 0, assess: 0, caution: 1 },
+      sheetGid: null,
     });
+  });
+
+  it('includes provided Google Sheets gids', () => {
+    generateVolumeMetrics(
+      [makeEntry({ name: 'A' })],
+      new Map([['Vol 1 (Jan 2010)', 12345]]),
+    );
+
+    const metrics = writtenJSON[0] as VolumeMetricsData;
+
+    expect(metrics.volumes[0].sheetGid).toBe(12345);
   });
 });
 

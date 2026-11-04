@@ -220,7 +220,7 @@ The datasets are produced by a single TypeScript CLI that fetches the radar site
 └──────────────────────────────────────────────────────────────────────┘
 ```
 
-The same run also writes `data/volume-metrics.json`, a derived per-volume summary of blip counts, movement and ring/quadrant distribution.
+The same run also writes `data/volume-metrics.json`, a derived per-volume summary of blip counts, movement, ring/quadrant distribution and Google Sheets tab gids.
 
 ### Locally
 
