@@ -8,5 +8,9 @@
   },
   "[typescript]": {
     "editor.defaultFormatter": "biomejs.biome"
+  },
+  "sonarlint.connectedMode.project": {
+    "connectionId": "setchy",
+    "projectKey": "setchy_thoughtworks-tech-radar-volumes"
   }
 }
