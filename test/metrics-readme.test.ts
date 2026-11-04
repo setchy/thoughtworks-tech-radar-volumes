@@ -143,7 +143,7 @@ describe('formatLatestLinksMarkdown', () => {
 describe('formatBlipsBadgeMarkdown', () => {
   it('formats the total blips badge', () => {
     expect(formatBlipsBadgeMarkdown(metrics)).toContain(
-      '[blips-badge]: https://img.shields.io/badge/blips-155-blue?logo=radar',
+      '[blips-badge]: https://img.shields.io/badge/blips-155-blue?logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2C',
     );
   });
 });
