@@ -182,8 +182,8 @@ importers:
         specifier: 1.2.0
         version: 1.2.0
       commander:
-        specifier: 15.0.0
-        version: 15.0.0
+        specifier: 15.1.0
+        version: 15.1.0
       dotenv:
         specifier: 18.0.9
         version: 18.0.9
@@ -577,8 +577,8 @@ packages:
     resolution: {integrity: sha512-WDrybc/gKFpTYQutKIK6UvfcuxijIZfMfXaYm8NMsPQxSYvf+13fXUJ4rztGGbJcBQ/GF55gvrZ0Bc0bj/mqvg==}
     engines: {node: '>=20.18.1'}
 
-  commander@15.0.0:
-    resolution: {integrity: sha512-z67u4ZhzCL/Tydu1lJARtEZYWbWaN7oYLHbsuzocr6y4N6WZAagG3RQ4FW61V1/0+jImpj293XfrcYnd1qxtPg==}
+  commander@15.1.0:
+    resolution: {integrity: sha512-cgnQ88TRrWcC7pVq46RzJVRMktu3W2RcbnoidnfBsl1bmDCBwJS/udcIZpKoCrbAYYaCqsz1yZCVIgbIaU3ddQ==}
     engines: {node: '>=22.12.0'}
 
   css-select@5.2.2:
@@ -1299,7 +1299,7 @@ snapshots:
       undici: 7.30.2
       whatwg-mimetype: 4.0.0
 
-  commander@15.0.0: {}
+  commander@15.1.0: {}
 
   css-select@5.2.2:
     dependencies:
