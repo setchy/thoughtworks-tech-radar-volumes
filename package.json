@@ -33,7 +33,7 @@
     "test:ci": "vitest run --reporter=default --reporter=github-actions"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.6.7",
+    "@biomejs/biome": "2.6.8",
     "@tsconfig/node26": "26.0.2",
     "@types/lodash": "4.17.27",
     "@types/node": "26.6.6",
