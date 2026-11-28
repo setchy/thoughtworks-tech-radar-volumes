@@ -36,7 +36,7 @@
     "@biomejs/biome": "2.6.8",
     "@tsconfig/node26": "26.0.2",
     "@types/lodash": "4.17.27",
-    "@types/node": "26.6.6",
+    "@types/node": "26.6.10",
     "cheerio": "1.2.0",
     "commander": "15.1.0",
     "dotenv": "18.0.10",
